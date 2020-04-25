@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Generated with glade 3.22.1 -->
+<interface>
+    <requires lib="gtk+" version="3.20"/>
+    <object class="GtkApplicationWindow" id="MainWindow">
+        <property name="can_focus">False</property>
+        <property name="default_width">683</property>
+        <property name="default_height">384</property>
+        <property name="title" translatable="yes">Box layout vertical</property>
+        <property name="icon">../../../assets/icons/icon.png</property>
+        <child>
+            <placeholder/>
+        </child>
+        <child>
+            <object class="GtkBox" id="box_vertical">
+                <property name="visible">True</property>
+                <property name="can_focus">False</property>
+                <property name="orientation">vertical</property>
+                <property name="border_width">12</property>
+                <property name="spacing">12</property>
+                <property name="homogeneous">True</property>
+                <child>
+                    <object class="GtkButton" id="btn_top_1">
+                        <property name="label" translatable="yes">Botão 1</property>
+                        <property name="visible">True</property>
+                        <property name="can_focus">True</property>
+                        <property name="receives_default">True</property>
+                    </object>
+                    <packing>
+                        <property name="expand">False</property>
+                        <property name="fill">True</property>
+                        <property name="position">0</property>
+                    </packing>
+                </child>
+                <child>
+                    <object class="GtkButton" id="btn_top_2">
+                        <property name="label" translatable="yes">Botão 2</property>
+                        <property name="visible">True</property>
+                        <property name="can_focus">True</property>
+                        <property name="receives_default">True</property>
+                    </object>
+                    <packing>
+                        <property name="expand">False</property>
+                        <property name="fill">True</property>
+                        <property name="position">1</property>
+                    </packing>
+                </child>
+                <child>
+                    <object class="GtkButton" id="btn_top_3">
+                        <property name="label" translatable="yes">Botão 3</property>
+                        <property name="visible">True</property>
+                        <property name="can_focus">True</property>
+                        <property name="receives_default">True</property>
+                    </object>
+                    <packing>
+                        <property name="expand">False</property>
+                        <property name="fill">True</property>
+                        <property name="position">2</property>
+                    </packing>
+                </child>
+                <child>
+                    <object class="GtkButton" id="btn_bottom_3">
+                        <property name="label" translatable="yes">Botão 3</property>
+                        <property name="visible">True</property>
+                        <property name="can_focus">True</property>
+                        <property name="receives_default">True</property>
+                    </object>
+                    <packing>
+                        <property name="expand">False</property>
+                        <property name="fill">True</property>
+                        <property name="position">3</property>
+                    </packing>
+                </child>
+                <child>
+                    <object class="GtkButton" id="btn_bottom_2">
+                        <property name="label" translatable="yes">Botão 2</property>
+                        <property name="visible">True</property>
+                        <property name="can_focus">True</property>
+                        <property name="receives_default">True</property>
+                    </object>
+                    <packing>
+                        <property name="expand">False</property>
+                        <property name="fill">True</property>
+                        <property name="position">4</property>
+                    </packing>
+                </child>
+                <child>
+                    <object class="GtkButton" id="btn_bottom_1">
+                        <property name="label" translatable="yes">Botão 1</property>
+                        <property name="visible">True</property>
+                        <property name="can_focus">True</property>
+                        <property name="receives_default">True</property>
+                    </object>
+                    <packing>
+                        <property name="expand">False</property>
+                        <property name="fill">True</property>
+                        <property name="pack_type">end</property>
+                        <property name="position">5</property>
+                    </packing>
+                </child>
+            </object>
+        </child>
+    </object>
+</interface>

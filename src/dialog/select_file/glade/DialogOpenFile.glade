@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Generated with glade 3.22.1 -->
+<interface>
+    <requires lib="gtk+" version="3.20"/>
+    <object class="GtkFileChooserDialog" id="DialogOpenFile">
+        <property name="can_focus">False</property>
+        <property name="title" translatable="yes">Abrir arquivo</property>
+        <property name="type_hint">dialog</property>
+        <property name="action">open</property>
+        <child type="action">
+            <object class="GtkButton" id="btn_cancel">
+                <property name="label" translatable="yes">Cancelar</property>
+                <property name="visible">True</property>
+                <property name="can_focus">True</property>
+                <property name="receives_default">True</property>
+                <style>
+                    <class name="destructive-action"/>
+                </style>
+            </object>
+        </child>
+        <child type="action">
+            <object class="GtkButton" id="btn_open">
+                <property name="label" translatable="yes">Abrir</property>
+                <property name="visible">True</property>
+                <property name="can_focus">True</property>
+                <property name="receives_default">True</property>
+            </object>
+        </child>
+        <action-widgets>
+            <action-widget response="-6">btn_cancel</action-widget>
+            <action-widget response="-5">btn_open</action-widget>
+        </action-widgets>
+    </object>
+    <object class="GtkFileFilter" id="any_filter">
+        <patterns>
+            <pattern>*</pattern>
+        </patterns>
+    </object>
+    <object class="GtkFileFilter" id="png_filter">
+        <mime-types>
+            <mime-type>image/png</mime-type>
+        </mime-types>
+        <patterns>
+            <pattern>*.png</pattern>
+        </patterns>
+    </object>
+    <object class="GtkFileFilter" id="python_filter">
+        <mime-types>
+            <mime-type>text/x-python</mime-type>
+        </mime-types>
+        <patterns>
+            <pattern>*.py</pattern>
+        </patterns>
+    </object>
+    <object class="GtkFileFilter" id="txt_filter">
+        <mime-types>
+            <mime-type>text/plain</mime-type>
+        </mime-types>
+        <patterns>
+            <pattern>*.txt</pattern>
+        </patterns>
+    </object>
+</interface>

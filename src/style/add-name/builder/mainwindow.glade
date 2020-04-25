@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<interface>
+    <requires lib="gtk+" version="3.24"/>
+    <template class="MainWindow" parent="GtkApplicationWindow">
+        <property name="can_focus">False</property>
+        <property name="default_width">683</property>
+        <property name="default_height">384</property>
+        <property name="title">Aplicando estilo via propriedade name</property>
+        <property name="icon">../../../assets/icons/icon.png</property>
+        <child>
+            <object class="GtkBox">
+                <property name="visible">True</property>
+                <property name="can_focus">False</property>
+                <property name="border_width">12</property>
+                <property name="orientation">vertical</property>
+                <child>
+                    <object class="GtkLabel">
+                        <property name="name">lbl-bg-black</property>
+                        <property name="visible">True</property>
+                        <property name="can_focus">False</property>
+                        <property name="label" translatable="yes">Label com cor de fundo preta.</property>
+                    </object>
+                    <packing>
+                        <property name="expand">False</property>
+                        <property name="fill">True</property>
+                        <property name="position">0</property>
+                    </packing>
+                </child>
+            </object>
+        </child>
+    </template>
+</interface>
