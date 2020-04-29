@@ -84,6 +84,25 @@ Exemplos de código podem ser vistos na pasta `src` deste repositório.
 - [Sinais e slots com arquivo de interface do Gnome Builder](./src/signals-and-slots/builder).
 - [Sinais e slots com arquivo com Python](./src/signals-and-slots).
 
+### Menus
+
+- [GTK Menu](./src/menus/menu).
+
+    ![GTK menu](./docs/imgs/menus/menu.png)
+    
+- [GTK Popover](./src/menus/popover).
+
+    ![GTK popover](./docs/imgs/menus/popover.png)
+    
+- [GTK MenuBar](./src/menus/menubar).
+
+    ![GTK menubar](./docs/imgs/menus/menubar.png)
+
+- [GTK ToolBar](./src/menus/toolbar).
+
+    ![GTK toolbar](./docs/imgs/menus/toolbar.png)
+
+
 ### Style
 
 > **OBS**: Ao utilizar `background-color` deve-se utilizar `background-image: none;`.
