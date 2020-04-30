@@ -112,18 +112,23 @@ Exemplos de código podem ser vistos na pasta `src` deste repositório.
 > **OBS**: Alguns widgets utilizam uma imagem de fundo em alguns casos pode ser interessante remover essa imagem com `background-image: none;`.
 
 - [Carregando uma arquivo css](./docs/style-load-css-file.md)
+    
     ![Carregando uma arquivo css](./docs/imgs/style/python-load-custom-css-wayland.png)
     
 - [Adicionar classe a um widget](./docs/style-add-class.md)
+    
     ![Adicionar classe a um widget](./docs/imgs/style/widget-class.png)
     
 - [Adicionar nome a um widget](./docs/style-add-name.md)
+    
     ![Adicionar nome a um widget](./docs/imgs/style/widget-name.png)
 
 - [Ativando e desativando o dark mode (modo escuro)](./docs/style-dark-mode.md).
+    
     ![Ativando e desativando o dark mode (modo escuro)](./docs/imgs/style/dark-mode.gif)
 
 - [Utilizando ícones standard e symbolic](./src/gnome-icons).
+    
     ![Utilizando ícones standard e symbolic](./docs/imgs/icons/icons-standard-symbolic.png)
 
 ### Layouts
