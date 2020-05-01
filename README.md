@@ -153,7 +153,7 @@ Exemplos de código podem ser vistos na pasta `src` deste repositório.
 
 ##### Widgets
 
-ToDo
+- [GTK entry (entry, search, autocomplete)](./src/widgets/entry).
 
 ---
 
