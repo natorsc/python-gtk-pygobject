@@ -55,7 +55,10 @@ Exemplos de código podem ser vistos na pasta `src` deste repositório.
 
 ## GTK
 
+- [GTK icon browser](./docs/gtk-icon-browser.md).
+- [GtkInspector](./docs/gtk-inspector.md).
 - [Criando uma janela com Python e GTK](./docs/creating-main-window.md).
+
 
 ## Criar executáveis
 
@@ -154,6 +157,7 @@ Exemplos de código podem ser vistos na pasta `src` deste repositório.
 ##### Widgets
 
 - [GTK entry (entry, search, autocomplete)](./src/widgets/entry).
+- [GTK ListStore)](./src/widgets/liststore).
 
 ---
 
