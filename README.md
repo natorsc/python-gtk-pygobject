@@ -156,8 +156,27 @@ Exemplos de código podem ser vistos na pasta `src` deste repositório.
 
 ##### Widgets
 
-- [GTK entry (entry, search, autocomplete)](./src/widgets/entry).
-- [GTK ListStore)](./src/widgets/liststore).
+- [GTK Entry](./src/widgets/entry):
+    - [Auto completar ao digitar](./src/widgets/entry/autocomplete).
+        
+        ![Auto completar ao digitar](./docs/imgs/widgets/entry/autocomplete.gif)
+        
+    - [Pesquisar ao digitar](./src/widgets/entry/search).
+    
+        ![Pesquisar ao digitar](./docs/imgs/widgets/entry/search.gif)
+        
+- GTK TreeView:
+    - [Ordenando itens ao clicar no cabeçalho da coluna](./src/widgets/treeview/sort).
+        
+        ![Ordenando itens ao clicar no cabeçalho da coluna](./docs/imgs/widgets/treeview/sort.gif)
+        
+    - [Realizado a edição do valor na celular](./src/widgets/treeview/editable).
+        
+        ![Realizado a edição do valor na celular](./docs/imgs/widgets/treeview/editable.gif)
+    
+    - [Utilizando filtro](./src/widgets/treeview/filter).
+    
+        ![Utilizando filtro](./docs/imgs/widgets/treeview/filter.gif)
 
 ---
 
@@ -175,20 +194,20 @@ Exemplos de código podem ser vistos na pasta `src` deste repositório.
 - [dialer_cycle_button](./src/librem5-libhandy/dialer_cycle_button.py).
 - [dialog](./src/librem5-libhandy/dialog.py).
 - [dialog utilizando classe (os botões ficam direntes?)](./src/librem5-libhandy/dialog_with_class.py).
-- [enums](#).
-- [expander_row](#).
-- [header_bar](#).
-- [header_group](#).
-- [leaflet](#).
-- [mod](#).
-- [preferences_group](#).
-- [preferences_page](#).
-- [preferences_row](#).
-- [preferences_window](#).
-- [search_bar](#).
-- [squeezer](#).
-- [title_bar](#).
-- [value_object](#).
-- [versions](#).
-- [view_switcher_bar](#).
-- [view_switcher](#).
+- enums.
+- expander_row.
+- header_bar.
+- header_group.
+- leaflet.
+- mod.
+- preferences_group.
+- preferences_page.
+- preferences_row.
+- preferences_window.
+- search_bar.
+- squeezer.
+- title_bar.
+- value_object.
+- versions.
+- view_switcher_bar.
+- view_switcher.

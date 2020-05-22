@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-"""GTK ListStore."""
+"""GTK SearchEntry, realizando pesquisas."""
 import sqlite3
 
 import gi
@@ -11,28 +11,17 @@ from gi.repository import Gtk
 @Gtk.Template(filename='MainWindow.glade')
 class MainWindow(Gtk.ApplicationWindow):
     __gtype_name__ = 'MainWindow'
-    con = sqlite3.connect('../../data/db.sqlite3')
+    con = sqlite3.connect('../../../data/db.sqlite3')
     cur = con.cursor()
 
     revealer = Gtk.Template.Child(name='revealer')
-    search_entry = Gtk.Template.Child(name='searchentry')
     liststore = Gtk.Template.Child(name='liststore')
 
     def __init__(self):
         super().__init__()
-        brazilian_states = self.populate_liststore()
+        brazilian_states = self.get_brazilian_states()
         for state in brazilian_states:
             self.liststore.append(row=state)
-
-    def populate_liststore(self):
-        query = 'SELECT rowid, state FROM brazilian_states;'
-        self.cur.execute(query)
-        return self.cur.fetchall()
-
-    def find_rows(self, state):
-        query = 'SELECT rowid, state FROM brazilian_states WHERE state LIKE "%"||?||"%";'
-        self.cur.execute(query, (state,))
-        return self.cur.fetchall()
 
     @Gtk.Template.Callback()
     def show_hide_search(self, widget):
@@ -43,22 +32,30 @@ class MainWindow(Gtk.ApplicationWindow):
             self.revealer.set_reveal_child(reveal_child=True)
 
     @Gtk.Template.Callback()
-    def search(self, widget):
+    def on_search_changed(self, widget):
+        # Pegando o texto do entry.
         entry_text = widget.get_text()
         if entry_text:
-            rows = self.find_rows(state=entry_text)
+            # Buscando no banco.
+            rows = self.search_state(state=entry_text)
+            # Limpando os valores existentes no `Gtk.ListStore()`.
             self.liststore.clear()
+            # Adicionando novos valores.
             for row in rows:
                 self.liststore.append(row=row)
         else:
+            # Caso o entry esteja vazio.
             self.liststore.clear()
 
-    @Gtk.Template.Callback()
-    def on_doble_click_row(self, TreeView, index, TreeViewColumn):
-        TreeSelection = TreeView.get_selection()
-        liststore, treeiter = TreeSelection.get_selected()
-        value = liststore.get_value(iter=treeiter, column=1)
-        self.search_entry.set_text(value)
+    def get_brazilian_states(self):
+        query = 'SELECT rowid, state FROM brazilian_states;'
+        data = self.cur.execute(query)
+        return data.fetchall()
+
+    def search_state(self, state):
+        query = 'SELECT rowid, state FROM brazilian_states WHERE state LIKE "%"||?||"%";'
+        data = self.cur.execute(query, (state,))
+        return data.fetchall()
 
 
 if __name__ == '__main__':
