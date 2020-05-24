@@ -154,8 +154,13 @@ Exemplos de código podem ser vistos na pasta `src` deste repositório.
 - [stack_layout_stacksidebar](./src/layouts/stack_stacksidebar).
 - [stack_layout_stackswitcher](./src/layouts/stack_switcher).
 
-##### Widgets
+### Widgets
 
+- [TargetEntry (drag and drop)](./src/drag-n-drop/)
+    
+    [![Python com GTK: drag and drop](http://img.youtube.com/vi/r1dAO3VJVz0/0.jpg)](http://www.youtube.com/watch?v=r1dAO3VJVz0 "Python com GTK: drag and drop")
+    *Ao clicar na imagem o YouTube será aberto (ao tentar gravar uma Gif o resultado não ficou legal)*
+    
 - [GTK Entry](./src/widgets/entry):
     - [Auto completar ao digitar](./src/widgets/entry/autocomplete).
         
