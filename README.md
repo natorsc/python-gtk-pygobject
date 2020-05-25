@@ -63,6 +63,7 @@ Exemplos de código podem ser vistos na pasta `src` deste repositório.
 ## Criar executáveis
 
 - [Criando executáveis com Cx_Freeze no Windows](./docs/cxfreeze-windows.md).
+    - [Script `config_dlls.py`](./src/generate-executable/list-dlls/).
 - [Criando executáveis com Cx_Freeze no Linux](./docs/cxfreeze-linux.md).
 
 ## Extra

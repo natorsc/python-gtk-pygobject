@@ -9,7 +9,8 @@ from cx_Freeze import Executable, setup
 base = None
 
 build_exe_options = {
-    'excludes': ['tkinter', 'wx', 'email', 'pydoc_data', 'curses'],
+    # 'excludes': ['tkinter', 'wx', 'email', 'pydoc_data', 'curses'],
+    'excludes': ['tkinter'],
     'include_files': ['icons'],
     'packages': ['gi'],
 }
