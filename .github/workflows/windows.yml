@@ -18,5 +18,6 @@ jobs:
          msys2do pacman -S --noconfirm mingw-w64-x86_64-glade
          msys2do pacman -S --noconfirm mingw-w64-x86_64-python3-pip
          msys2do pacman -S --noconfirm mingw-w64-x86_64-python3-gobject
+         msys2do pacman -S --noconfirm mingw-w64-x86_64-gobject-introspection-runtime
          msys2do pip3 install cx-Freeze
          msys2do sh build-msi.sh
