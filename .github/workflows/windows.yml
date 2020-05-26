@@ -10,19 +10,14 @@ jobs:
     runs-on: windows-latest
     steps:
     - uses: actions/checkout@v2
-#    - uses: numworks/setup-msys2@v1
     - name: Set PATH to MSYS2
       run: echo "::add-path::c:/msys64/usr/bin"
-    - name: Try MSYS2
+    - name: Install packages and build msi
       run: |
-         pacman -S --noconfirm mingw-w64-x86_64-gtk3
-#         msys2do pacman -S --noconfirm mingw-w64-x86_64-gtk3
-#         msys2do pacman -S --noconfirm mingw-w64-x86_64-glade
-#         msys2do pacman -S --noconfirm mingw-w64-x86_64-python3-pip
-#         msys2do pacman -S --noconfirm mingw-w64-x86_64-python3-gobject
-#         msys2do pacman -S --noconfirm mingw-w64-x86_64-gobject-introspection-runtime
-#         msys2do pip3 install cx-Freeze
-#         msys2do sh build-msi.sh
-#        $path = ([System.Environment]::GetEnvironmentVariable('PATH', 'Machine').Split(';') | Where-Object { $_ -notmatch 'Git' }) -join ';'
-#        [System.Environment]::SetEnvironmentVariable('PATH', $path, 'Machine')
-
+        pacman -S --noconfirm mingw-w64-x86_64-gtk3
+        pacman -S --noconfirm mingw-w64-x86_64-glade
+        pacman -S --noconfirm mingw-w64-x86_64-python3-pip
+        pacman -S --noconfirm mingw-w64-x86_64-python3-gobject
+        pip3 install cx-Freeze
+        cd src/generate-executable/_cx_freeze
+        python3 setup.py bdist_msi
