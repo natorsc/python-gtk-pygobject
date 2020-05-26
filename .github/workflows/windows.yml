@@ -13,3 +13,5 @@ jobs:
     - uses: numworks/setup-msys2@v1
     - name: Try MSYS2
       run: msys2do uname -a
+      run: msys2do pwd
+      run: msys2do ls -lR
