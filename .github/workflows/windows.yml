@@ -19,4 +19,4 @@ jobs:
          msys2do pacman -S --noconfirm mingw-w64-x86_64-python3-pip
          msys2do pacman -S --noconfirm mingw-w64-x86_64-python3-gobject
          msys2do pip3 install cx-Freeze
-         msys2do (cd src/generate-executable/_cx_freeze; python3 setup.py bdist_msi)
+         msys2do sh build-msi.sh
