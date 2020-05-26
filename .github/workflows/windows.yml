@@ -10,14 +10,14 @@ jobs:
     runs-on: windows-latest
     steps:
     - uses: actions/checkout@v2
-    - uses: numworks/setup-msys2@v1
+#    - uses: numworks/setup-msys2@v1
     - name: Try MSYS2
       run: |
-         msys2do pacman -S --noconfirm mingw-w64-x86_64-toolchain
-         msys2do pacman -S --noconfirm mingw-w64-x86_64-gtk3
-         msys2do pacman -S --noconfirm mingw-w64-x86_64-glade
-         msys2do pacman -S --noconfirm mingw-w64-x86_64-python3-pip
-         msys2do pacman -S --noconfirm mingw-w64-x86_64-python3-gobject
-         msys2do pacman -S --noconfirm mingw-w64-x86_64-gobject-introspection-runtime
-         msys2do pip3 install cx-Freeze
-         msys2do sh build-msi.sh
+         c:\msys64\usr\bin\pacman -S --noconfirm mingw-w64-x86_64-gtk3
+#         msys2do pacman -S --noconfirm mingw-w64-x86_64-gtk3
+#         msys2do pacman -S --noconfirm mingw-w64-x86_64-glade
+#         msys2do pacman -S --noconfirm mingw-w64-x86_64-python3-pip
+#         msys2do pacman -S --noconfirm mingw-w64-x86_64-python3-gobject
+#         msys2do pacman -S --noconfirm mingw-w64-x86_64-gobject-introspection-runtime
+#         msys2do pip3 install cx-Freeze
+#         msys2do sh build-msi.sh
