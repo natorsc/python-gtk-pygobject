@@ -15,7 +15,7 @@ jobs:
       run: |
         bash -l -c "uname -a"
         bash -l -c "pwd"
-        bash -l -c "ls -lR"
+        bash -l -c "echo $PATH"
 #        bash -l -c "pacman -S mingw-w64-x86_64-gtk3"
 #        msys2do pacman -S mingw-w64-x86_64-glade
 #        msys2do pacman -S mingw-w64-x86_64-python3-gobject
