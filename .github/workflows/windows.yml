@@ -13,7 +13,9 @@ jobs:
 #    - uses: numworks/setup-msys2@v1
     - name: Try MSYS2
       run: |
-         c:\msys64\usr\bin\pacman -S --noconfirm mingw-w64-x86_64-gtk3
+        $path = ([System.Environment]::GetEnvironmentVariable('PATH', 'Machine').Split(';') | Where-Object { $_ -notmatch 'Git' }) -join ';'
+        [System.Environment]::SetEnvironmentVariable('PATH', $path, 'Machine')
+        c:\msys64\usr\bin\pacman -S --noconfirm mingw-w64-x86_64-gtk3
 #         msys2do pacman -S --noconfirm mingw-w64-x86_64-gtk3
 #         msys2do pacman -S --noconfirm mingw-w64-x86_64-glade
 #         msys2do pacman -S --noconfirm mingw-w64-x86_64-python3-pip
@@ -21,3 +23,4 @@ jobs:
 #         msys2do pacman -S --noconfirm mingw-w64-x86_64-gobject-introspection-runtime
 #         msys2do pip3 install cx-Freeze
 #         msys2do sh build-msi.sh
+
