@@ -13,6 +13,7 @@ jobs:
     - uses: numworks/setup-msys2@v1
     - name: Try MSYS2
       run: |
-        msys2do uname -a
-        msys2do pwd
-        msys2do ls -lR
+        msys2do pacman -S mingw-w64-x86_64-gtk3
+        msys2do pacman -S mingw-w64-x86_64-glade
+        msys2do pacman -S mingw-w64-x86_64-python3-gobject
+        msys2do cd src/generate-executable/_cx_freeze && python setup.py bdist_msi
