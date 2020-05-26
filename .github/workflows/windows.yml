@@ -13,14 +13,13 @@ jobs:
     - name: Set PATH to MSYS2
       run: |
         echo "::add-path::c:/msys64/usr/bin"
-        echo "::add-path::c:/msys64/bin"
+        echo "::add-path::c:/msys64/mingw64/bin"
     - name: Install packages and build msi
       run: |
         pacman -S --noconfirm mingw-w64-x86_64-gtk3
         pacman -S --noconfirm mingw-w64-x86_64-glade
         pacman -S --noconfirm mingw-w64-x86_64-python3-pip
         pacman -S --noconfirm mingw-w64-x86_64-python3-gobject
-        dir c:\msys64\bin
-        c:\msys64\bin\pip install cx-Freeze
+        pip3 install cx-Freeze
         cd src/generate-executable/_cx_freeze
-        c:\msys64\bin\python3 setup.py bdist_msi
+        python3 setup.py bdist_msi
