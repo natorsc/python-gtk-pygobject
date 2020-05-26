@@ -11,7 +11,9 @@ jobs:
     steps:
     - uses: actions/checkout@v2
     - name: Set PATH to MSYS2
-      run: echo "::add-path::c:/msys64/usr/bin"
+      run: |
+        echo "::add-path::c:/msys64/usr/bin"
+        echo "::add-path::c:/msys64/bin"
     - name: Install packages and build msi
       run: |
         pacman -S --noconfirm mingw-w64-x86_64-gtk3
