@@ -16,4 +16,4 @@ jobs:
         msys2do pacman -S mingw-w64-x86_64-gtk3
         msys2do pacman -S mingw-w64-x86_64-glade
         msys2do pacman -S mingw-w64-x86_64-python3-gobject
-        msys2do cd src/generate-executable/_cx_freeze && python setup.py bdist_msi
+        msys2do cd src/generate-executable/_cx_freeze && pwd # python setup.py bdist_msi
