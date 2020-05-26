@@ -13,11 +13,7 @@ jobs:
 #    - uses: numworks/setup-msys2@v1
     - name: Try MSYS2
       run: |
-        bash -l -c "uname -a"
-        bash -l -c "pwd"
-        bash -l -c "echo $PATH"
-        bash -l -c "find /usr -name pacman.exe -print"
-#        bash -l -c "/usr/bin/pacman -S mingw-w64-x86_64-gtk3"
+         pacman -S mingw-w64-x86_64-gtk3
 #        msys2do pacman -S mingw-w64-x86_64-glade
 #        msys2do pacman -S mingw-w64-x86_64-python3-gobject
 #        cd src/generate-executable/_cx_freeze
