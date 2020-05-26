@@ -23,3 +23,8 @@ jobs:
         pip3 install cx-Freeze
         cd src/generate-executable/_cx_freeze
         python3 setup.py bdist_msi
+    - name: Upload a Build Artifact
+      uses: actions/upload-artifact@v2
+      with:
+        name: MyApp-Win64-msi
+        path: src/generate-executable/_cx_freeze/dist/MyApp-0.0.1-mingw.msi
