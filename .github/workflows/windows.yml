@@ -20,6 +20,6 @@ jobs:
         pacman -S --noconfirm mingw-w64-x86_64-glade
         pacman -S --noconfirm mingw-w64-x86_64-python3-pip
         pacman -S --noconfirm mingw-w64-x86_64-python3-gobject
-        pip3 install cx-Freeze
+        c:/msys64/bin/pip3 install cx-Freeze
         cd src/generate-executable/_cx_freeze
-        python3 setup.py bdist_msi
+        c:/msys64/bin/python3 setup.py bdist_msi
