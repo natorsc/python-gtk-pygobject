@@ -157,7 +157,8 @@ Exemplos de código podem ser vistos na pasta `src` deste repositório.
 
 ### Widgets
 
-- [TargetEntry (drag and drop)](./src/drag-n-drop/)
+- [Radio button](./src/widgets/radio-button)
+- [TargetEntry (drag and drop)](./src/drag-n-drop)
     
     ![TargetEntry (drag and drop)](./docs/imgs/drag-and-drop/drag-and-drop.gif)
     
