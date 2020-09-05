@@ -145,7 +145,7 @@ Vamos começar com o arquivo de interface (`xml`) do Gnome Glade:
         <property name="title" translatable="yes">Python com GTK</property>
         <property name="default_width">683</property>
         <property name="default_height">384</property>
-        <property name="icon">../../assets/icons/icon.png</property>
+        <property name="icon">../../../../images/icons/icon.png</property>
         <child>
             <placeholder/>
         </child>
@@ -204,7 +204,7 @@ Código de interface do Gnome Builder:
         <property name="title" translatable="yes">Python com GTK</property>
         <property name="default_width">683</property>
         <property name="default_height">384</property>
-        <property name="icon">../../assets/icons/icon.png</property>
+        <property name="icon">../../../../images/icons/icon.png</property>
         <child>
             <placeholder/>
         </child>

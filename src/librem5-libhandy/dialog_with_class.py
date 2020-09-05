@@ -23,7 +23,7 @@ class MainWindow(Gtk.ApplicationWindow):
         self.set_title(title='Handy.Dialog')
         self.set_default_size(width=768 / 2, height=1366 / 2)
         self.set_position(position=Gtk.WindowPosition.CENTER)
-        self.set_default_icon_from_file(filename='../assets/icons/icon.png')
+        self.set_default_icon_from_file(filename='../../../images/icons/icon.png')
         self.set_border_width(border_width=10)
 
         # Box vertical que irá comportar os botões que chamam os diálogos de mensagem.

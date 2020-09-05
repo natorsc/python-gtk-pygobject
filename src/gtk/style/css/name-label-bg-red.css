@@ -1,0 +1,5 @@
+/* # = Seletor utilizado para a propriedade name do widget. */
+#label-bg-red {
+    background-color: darkred;
+    color           : white;
+}

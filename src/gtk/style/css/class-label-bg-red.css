@@ -1,0 +1,5 @@
+/* . (ponto) = Seletor utilizado para a classe do widget. */
+.label-bg-red {
+    background-color: darkred;
+    color           : white;
+}

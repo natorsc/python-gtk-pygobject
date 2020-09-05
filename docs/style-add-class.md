@@ -51,7 +51,7 @@ class MainWindow(Gtk.ApplicationWindow):
         self.set_title(title='Aplicando estilo via classe')
         self.set_default_size(width=1366 / 2, height=768 / 2)
         self.set_position(position=Gtk.WindowPosition.CENTER)
-        self.set_default_icon_from_file(filename='../../assets/icons/icon.png')
+        self.set_default_icon_from_file(filename='../../../../images/icons/icon.png')
 
         hbbox = Gtk.ButtonBox.new(orientation=Gtk.Orientation.HORIZONTAL)
         hbbox.set_halign(align=Gtk.Align.CENTER)

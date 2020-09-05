@@ -39,7 +39,7 @@ win = Gtk.ApplicationWindow()
 win.set_title(title='Exemplo de discador com Python (libhandy)')
 win.set_default_size(width=768 / 2, height=1366 / 2)
 win.set_position(position=Gtk.WindowPosition.CENTER)
-win.set_default_icon_from_file(filename='../assets/icons/icon.png')
+win.set_default_icon_from_file(filename='../../../images/icons/icon.png')
 win.set_border_width(border_width=10)
 
 # Criando do discador.
