@@ -2,28 +2,13 @@
 <!-- Generated with glade 3.36.0 -->
 <interface>
   <requires lib="gtk+" version="3.22"/>
-  <object class="GtkFileFilter" id="filefilter">
-    <mime-types>
-      <mime-type>image/png</mime-type>
-      <mime-type>text/x-python</mime-type>
-      <mime-type>text/plain</mime-type>
-      <mime-type>*</mime-type>
-    </mime-types>
-    <patterns>
-      <pattern>*.png</pattern>
-      <pattern>*.py</pattern>
-      <pattern>*.txt</pattern>
-      <pattern>Todos</pattern>
-    </patterns>
-  </object>
-  <object class="GtkFileChooserDialog" id="DialogSaveFile">
+  <object class="GtkFileChooserDialog" id="DialogSelectFolder">
     <property name="can_focus">False</property>
-    <property name="default_width">260</property>
-    <property name="default_height">260</property>
+    <property name="title" translatable="yes">Selecionar pasta</property>
+    <property name="modal">True</property>
+    <property name="icon">../../../../assets/icons/icon.png</property>
     <property name="type_hint">dialog</property>
-    <property name="action">save</property>
-    <property name="do_overwrite_confirmation">True</property>
-    <property name="filter">filefilter</property>
+    <property name="action">select-folder</property>
     <child internal-child="vbox">
       <object class="GtkBox">
         <property name="can_focus">False</property>
@@ -34,7 +19,7 @@
             <property name="can_focus">False</property>
             <property name="layout_style">end</property>
             <child>
-              <object class="GtkButton" id="btn-cancel">
+              <object class="GtkButton" id="btn_cancel">
                 <property name="label" translatable="yes">Cancelar</property>
                 <property name="visible">True</property>
                 <property name="can_focus">True</property>
@@ -50,8 +35,8 @@
               </packing>
             </child>
             <child>
-              <object class="GtkButton" id="btn-save">
-                <property name="label" translatable="yes">Salvar</property>
+              <object class="GtkButton" id="btn_select">
+                <property name="label" translatable="yes">OK</property>
                 <property name="visible">True</property>
                 <property name="can_focus">True</property>
                 <property name="receives_default">True</property>
@@ -78,20 +63,8 @@
       </object>
     </child>
     <action-widgets>
-      <action-widget response="-6">btn-cancel</action-widget>
-      <action-widget response="-5">btn-save</action-widget>
-    </action-widgets>
-    <child type="titlebar">
-      <object class="GtkHeaderBar" id="HeaderBar">
-        <property name="visible">True</property>
-        <property name="can_focus">False</property>
-        <property name="title" translatable="yes">Dialogo</property>
-        <property name="subtitle" translatable="yes">Salvar arquivo</property>
-      </object>
-    </child>
-    <action-widgets>
-      <action-widget response="-6">btn-cancel</action-widget>
-      <action-widget response="-5">btn-save</action-widget>
+      <action-widget response="-6">btn_cancel</action-widget>
+      <action-widget response="-5">btn_select</action-widget>
     </action-widgets>
   </object>
 </interface>

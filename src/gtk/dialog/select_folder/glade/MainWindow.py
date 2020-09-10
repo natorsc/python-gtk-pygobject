@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-"""Dialogo para selecionar arquivo."""
+"""Dialogo para selecionar pasta."""
 from pathlib import Path
 
 import gi
@@ -17,32 +17,14 @@ class Handler:
 
     def open_dialog(self, widget):
         builder = Gtk.Builder.new()
-        builder.add_from_file(filename='./DialogSelectFile.glade')
+        builder.add_from_file(filename='./DialogSelectFolder.glade')
 
         select_multiple = self.check_button.get_active()
-        dialog = builder.get_object(name='DialogSelectFile')
+        dialog = builder.get_object(name='DialogSelectFolder')
         # Defininido se a seleção será multipla ou não
         dialog.set_select_multiple(select_multiple=select_multiple)
         # Pasta onde o diálogo será aberto.
         dialog.set_current_folder(filename=str(self.home))
-
-        # Criando e adicionando filtros.
-        txt_filter = Gtk.FileFilter()
-        txt_filter.set_name(name='txt')
-        txt_filter.add_pattern(pattern='.txt')
-        txt_filter.add_mime_type(mime_type='text/plain')
-        dialog.add_filter(filter=txt_filter)
-
-        py_filter = Gtk.FileFilter()
-        py_filter.set_name(name='python')
-        py_filter.add_pattern(pattern='.py')
-        py_filter.add_mime_type(mime_type='text/x-python')
-        dialog.add_filter(filter=py_filter)
-
-        all_filter = Gtk.FileFilter()
-        all_filter.set_name(name='todos')
-        all_filter.add_pattern(pattern='*')
-        dialog.add_filter(filter=all_filter)
 
         # É obrigatório utilizar ``show_all()``.
         dialog.show_all()
@@ -55,13 +37,13 @@ class Handler:
             if select_multiple:
                 print('Botão SALVAR pressionado')
                 print('CheckBox ESTÁ marcado')
-                print(f'Caminho até os arquivos: {dialog.get_filenames()}')
-                print(f'URI dos arquivos: {dialog.get_uris()}')
+                print(f'Caminho até as pastas: {dialog.get_filenames()}')
+                print(f'URI das pastas: {dialog.get_uris()}')
             else:
                 print('Botão SALVAR pressionado')
                 print('CheckBox NÃO está marcado')
-                print(f'Caminho até o arquivo: {dialog.get_filename()}')
-                print(f'URI do arquivo: {dialog.get_uri()}')
+                print(f'Caminho até a pasta: {dialog.get_filename()}')
+                print(f'URI da pasta: {dialog.get_uri()}')
 
         dialog.destroy()
 

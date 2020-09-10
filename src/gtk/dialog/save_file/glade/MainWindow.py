@@ -1,5 +1,9 @@
 # -*- coding: utf-8 -*-
-"""Dialogo para selecionar arquivo."""
+"""Dialogo para salvar arquivo.
+
+Para testar está sendo salvo um arquivo do tipo ``txt`` com um texto
+qualquer.
+"""
 from pathlib import Path
 
 import gi
@@ -13,16 +17,15 @@ class Handler:
     home = Path.home()
 
     def __init__(self):
-        self.check_button = builder.get_object(name='check_button')
+        pass
 
     def open_dialog(self, widget):
         builder = Gtk.Builder.new()
-        builder.add_from_file(filename='./DialogSelectFile.glade')
+        builder.add_from_file(filename='./DialogSaveFile.glade')
 
-        select_multiple = self.check_button.get_active()
-        dialog = builder.get_object(name='DialogSelectFile')
-        # Defininido se a seleção será multipla ou não
-        dialog.set_select_multiple(select_multiple=select_multiple)
+        dialog = builder.get_object(name='DialogSaveFile')
+        # Nome inicial do arquivo.
+        dialog.set_current_name(name='novo-arquivo.txt')
         # Pasta onde o diálogo será aberto.
         dialog.set_current_folder(filename=str(self.home))
 
@@ -44,24 +47,19 @@ class Handler:
         all_filter.add_pattern(pattern='*')
         dialog.add_filter(filter=all_filter)
 
-        # É obrigatório utilizar ``show_all()``.
-        dialog.show_all()
-
         # Executando o dialogo e recebendo a resposta.
         response = dialog.run()
 
         # Verificando a resposta recebida.
         if response == Gtk.ResponseType.OK:
-            if select_multiple:
-                print('Botão SALVAR pressionado')
-                print('CheckBox ESTÁ marcado')
-                print(f'Caminho até os arquivos: {dialog.get_filenames()}')
-                print(f'URI dos arquivos: {dialog.get_uris()}')
-            else:
-                print('Botão SALVAR pressionado')
-                print('CheckBox NÃO está marcado')
-                print(f'Caminho até o arquivo: {dialog.get_filename()}')
-                print(f'URI do arquivo: {dialog.get_uri()}')
+            print('Botão SALVAR pressionado')
+            print(f'Caminho até o arquivo: {dialog.get_filename()}')
+            print(f'URI até o arquivo: {dialog.get_uri()}')
+            file = dialog.get_filename()
+            with open(file=file, mode='w') as f:
+                text = 'Olá Mundo.'
+                f.write(text)
+                f.close()
 
         dialog.destroy()
 

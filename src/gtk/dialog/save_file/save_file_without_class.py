@@ -1,5 +1,9 @@
 # -*- coding: utf-8 -*-
-"""Dialogo para selecionar pasta."""
+"""Dialogo para salvar arquivo.
+
+Para testar está sendo salvo um arquivo do tipo ``txt`` com um texto
+qualquer.
+"""
 import sys
 from pathlib import Path
 
@@ -16,7 +20,7 @@ class MainWindow(Gtk.ApplicationWindow):
     def __init__(self, **kwargs):
         super().__init__(**kwargs)
 
-        self.set_title(title='Janela de diálogo do tipo selecionar pasta')
+        self.set_title(title='Janela de diálogo do tipo salvar')
         self.set_default_size(width=1366 / 2, height=768 / 2)
         self.set_position(position=Gtk.WindowPosition.CENTER)
         self.set_default_icon_from_file(filename='../../../assets/icons/icon.png')
@@ -25,31 +29,29 @@ class MainWindow(Gtk.ApplicationWindow):
         vbox.set_border_width(border_width=12)
         self.add(vbox)
 
-        button_save_file = Gtk.Button.new_with_label('Selecionar pasta')
+        button_save_file = Gtk.Button.new_with_label('Salvar arquivo')
         button_save_file.connect('clicked', self.open_dialog)
         vbox.add(button_save_file)
-
-        self.check_button = Gtk.CheckButton.new_with_label(label='\tSelecionar várias pastas?')
-        vbox.add(self.check_button)
 
         self.show_all()
 
     def open_dialog(self, widget):
-        select_multiple = self.check_button.get_active()
         dialog = Gtk.FileChooserDialog(parent=self)
-        dialog.set_title(title='Selecionar pasta')
+        dialog.set_title(title='Salvar Arquivo')
         dialog.set_modal(modal=True)
         # Tipo de ação que o dialogo irá executar.
-        dialog.set_action(action=Gtk.FileChooserAction.SELECT_FOLDER)
-        # Defininido se a seleção será multipla ou não
-        dialog.set_select_multiple(select_multiple=select_multiple)
+        dialog.set_action(action=Gtk.FileChooserAction.SAVE)
+        # Nome inicial do arquivo.
+        dialog.set_current_name(name='novo-arquivo.txt')
         # Pasta onde o diálogo será aberto.
         dialog.set_current_folder(filename=str(self.home))
+        # Adicionando confirmação de sobrescrita.
+        dialog.set_do_overwrite_confirmation(do_overwrite_confirmation=True)
 
         # Botões que serão exibidos.
         dialog.add_buttons(
             Gtk.STOCK_CANCEL, Gtk.ResponseType.CANCEL,
-            Gtk.STOCK_OK, Gtk.ResponseType.OK
+            Gtk.STOCK_SAVE, Gtk.ResponseType.OK
         )
 
         # Adicionando class action nos botões.
@@ -63,24 +65,37 @@ class MainWindow(Gtk.ApplicationWindow):
         )
         btn_save.get_style_context().add_class(class_name='suggested-action')
 
-        # É obrigatório utilizar ``show_all()``.
-        dialog.show_all()
+        # Criando e adicionando filtros.
+        txt_filter = Gtk.FileFilter()
+        txt_filter.set_name(name='txt')
+        txt_filter.add_pattern(pattern='.txt')
+        txt_filter.add_mime_type(mime_type='text/plain')
+        dialog.add_filter(filter=txt_filter)
+
+        py_filter = Gtk.FileFilter()
+        py_filter.set_name(name='python')
+        py_filter.add_pattern(pattern='.py')
+        py_filter.add_mime_type(mime_type='text/x-python')
+        dialog.add_filter(filter=py_filter)
+
+        all_filter = Gtk.FileFilter()
+        all_filter.set_name(name='todos')
+        all_filter.add_pattern(pattern='*')
+        dialog.add_filter(filter=all_filter)
 
         # Executando o dialogo e recebendo a resposta.
         response = dialog.run()
 
         # Verificando a resposta recebida.
         if response == Gtk.ResponseType.OK:
-            if select_multiple:
-                print('Botão SALVAR pressionado')
-                print('CheckBox ESTÁ marcado')
-                print(f'Caminho até as pastas: {dialog.get_filenames()}')
-                print(f'URI das pastas: {dialog.get_uris()}')
-            else:
-                print('Botão SALVAR pressionado')
-                print('CheckBox NÃO está marcado')
-                print(f'Caminho até a pasta: {dialog.get_filename()}')
-                print(f'URI da pasta: {dialog.get_uri()}')
+            print('Botão SALVAR pressionado')
+            print(f'Caminho até o arquivo: {dialog.get_filename()}')
+            print(f'URI até o arquivo: {dialog.get_uri()}')
+            file = dialog.get_filename()
+            with open(file=file, mode='w') as f:
+                text = 'Olá Mundo.'
+                f.write(text)
+                f.close()
 
         dialog.destroy()
 
