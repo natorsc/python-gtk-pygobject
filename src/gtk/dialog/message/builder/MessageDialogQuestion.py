@@ -11,20 +11,12 @@ gi.require_version(namespace='Gtk', version='3.0')
 from gi.repository import Gtk
 
 
-@Gtk.Template(filename='./MessageDialogQuestion.glade')
+@Gtk.Template(filename='./MessageDialogQuestion.ui')
 class MessageDialogQuestion(Gtk.MessageDialog):
     __gtype_name__ = 'MessageDialogQuestion'
 
-    btn_yes = Gtk.Template.Child(name='btn_yes')
-    bnt_no = Gtk.Template.Child(name='bnt_no')
-
-    def __init__(self, **kwargs):
-        super().__init__(**kwargs)
-        # Adicionando class action nos botões.
-        self.btn_yes.get_style_context().add_class(class_name='suggested-action')
-        self.btn_no.get_style_context().add_class(class_name='destructive-action')
-
-
+    def __init__(self):
+        super().__init__()
 
 
 if __name__ == '__main__':

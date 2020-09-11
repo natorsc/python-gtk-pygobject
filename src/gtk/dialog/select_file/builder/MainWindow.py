@@ -22,7 +22,8 @@ class MainWindow(Gtk.ApplicationWindow):
     @Gtk.Template.Callback()
     def open_dialog(self, widget):
         select_multiple = self.check_button.get_active()
-        dialog = DialogSelectFile(parent=self, select_multiple=select_multiple)
+        dialog = DialogSelectFile(select_multiple=select_multiple)
+        dialog.set_transient_for(parent=self)
 
         # Executando a janela de dialogo e aguardando uma resposta.
         response = dialog.run()

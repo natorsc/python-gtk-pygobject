@@ -39,36 +39,35 @@ Exemplos de código podem ser vistos na pasta `src` deste repositório.
 
 # Tutoriais
 
-- [Como instalar o msys2 no Windows (Obrigatório)](./docs/install-msys2-windows.md).
-- [Como instalar o PyGObject for Windows (não recomendado)](./docs/install-pygi-windows.md).
-- [Configurando o ambiente de desenvolvimento](./docs/set-dev-env.md).
+- [Como instalar o msys2 no Windows (Obrigatório)](https://codigoninja.dev/2020/09/08/python-gtk-instalar-msys2-windows/).
+- [Como instalar o PyGObject for Windows (não recomendado)](https://codigoninja.dev/2020/09/08/python-gtk-instalar-pygobject-windows/).
+- [Configurando o ambiente de desenvolvimento](https://codigoninja.dev/2020/09/08/python-gtk-configurando-ambiente-desenvolvimento/).
 
 ## IDEs e RADs
 
-- [Como Instalar o Gnome Builder](./docs/install-gnome-builder.md).
-- [Como Instalar o Gnome Glade](./docs/install-gnome-glade.md).
+- [Como Instalar o Gnome Builder](https://codigoninja.dev/2020/09/08/python-gtk-instalar-gnome-builder/).
+- [Como Instalar o Gnome Glade](https://codigoninja.dev/2020/09/08/python-gtk-instalar-gnome-glade/).
 
 ## Purism Librem 5
 
-- [Como Instalar a biblioteca libhandy](./docs/install-purism-libhandy.md).
-- [Executando o PureOS (Phosh) via VM](./docs/phosh.md).
+- [Como Instalar a biblioteca libhandy](https://codigoninja.dev/2020/09/08/python-gtk-instalar-biblioteca-libhandy/).
+- [Executando o PureOS (Phosh) via VM](https://codigoninja.dev/2020/09/08/python-gtk-pureos-phosh/).
 
 ## GTK
 
-- [GTK icon browser](./docs/gtk-icon-browser.md).
-- [GtkInspector](./docs/gtk-inspector.md).
-- [Criando uma janela com Python e GTK](./docs/creating-main-window.md).
+- [GTK icon browser](https://codigoninja.dev/2020/09/08/python-gtk-instalar-icon-browser/).
+- [Como ativar o GtkInspector](https://codigoninja.dev/2020/09/08/python-gtk-ativar-gtkinspector/).
+- [Criando uma janela com Python e GTK](https://codigoninja.dev/2020/09/08/python-gtk-criando-janela/).
 
 
 ## Criar executáveis
 
-- [Criando executáveis com Cx_Freeze no Windows](./docs/cxfreeze-windows.md).
-    - [Script `config_dlls.py`](./src/generate-executable/list-dlls/).
-- [Criando executáveis com Cx_Freeze no Linux](./docs/cxfreeze-linux.md).
+- [Criando executáveis com Cx_Freeze no Windows](https://codigoninja.dev/2020/09/08/python-gtk-criando-executavel-cxfreeze-windows/).
+- [Criando executáveis com Cx_Freeze no Linux](https://codigoninja.dev/2020/09/08/python-gtk-criando-executavel-cxfreeze-linux/).
 
 ## Extra
 
-- [Como instalar Python no Linux e Windows](./docs/install-python.md).
+- [Como instalar Python no Linux e Windows](https://codigoninja.dev/2020/09/07/instalar-linguagem-python-linux-windows/).
 
 ---
 
@@ -90,21 +89,33 @@ Exemplos de código podem ser vistos na pasta `src` deste repositório.
 
 ### Diálogos
 
-- [Diálogo para salvar arquivo (Gnome Builder)](src/dialog/save_file/builder).
-- [Diálogo para salvar arquivo (Gnome Glade)](src/dialog/save_file/glade).
-- [Diálogo para salvar arquivo (Python)](src/dialog/save_file).
+- [Diálogo personalizado (Gnome Builder)](./src/gtk/dialog/custom/builder).
+- [Diálogo personalizado (Gnome Glade)](./src/gtk/dialog/custom/glade).
+- [Diálogo personalizado (Python)](./src/gtk/dialog/custom).
+
+![GTK diálogo personalizado](https://codigoninja.dev/media/git/pygobject/dialog-custom.png)
+
+- [Diálogo de mensagem (Gnome Builder)](./src/gtk/dialog/message/builder).
+- [Diálogo de mensagem (Gnome Glade)](./src/gtk/dialog/message/glade).
+- [Diálogo de mensagem (Python)](./src/gtk/dialog/message).
+
+![GTK diálogo de mensagem](https://codigoninja.dev/media/git/pygobject/dialog-message.png)
+
+- [Diálogo para salvar arquivo (Gnome Builder)](./src/gtk/dialog/save_file/builder).
+- [Diálogo para salvar arquivo (Gnome Glade)](./src/gtk/dialog/save_file/glade).
+- [Diálogo para salvar arquivo (Python)](./src/gtk/dialog/save_file).
 
 ![GTK diálogo para salvar arquivo](https://codigoninja.dev/media/git/pygobject/dialog-save-file.png)
 
-- [Diálogo para selecionar arquivo (Gnome Builder)](src/dialog/select_file/builder).
-- [Diálogo para selecionar arquivo (Gnome Glade)](src/dialog/select_file/glade).
-- [Diálogo para selecionar arquivo (Python)](src/dialog/select_file).
+- [Diálogo para selecionar arquivo (Gnome Builder)](./src/gtk/dialog/select_file/builder).
+- [Diálogo para selecionar arquivo (Gnome Glade)](./src/gtk/dialog/select_file/glade).
+- [Diálogo para selecionar arquivo (Python)](./src/gtk/dialog/select_file).
 
 ![GTK diálogo para selecionar arquivo](https://codigoninja.dev/media/git/pygobject/dialog-select-file.png)
 
-- [Diálogo para selecionar pasta (Gnome Builder)](src/dialog/select_folder/builder).
-- [Diálogo para selecionar pasta (Gnome Glade)](src/dialog/select_folder/glade).
-- [Diálogo para selecionar pasta (Python)](src/dialog/select_folder).
+- [Diálogo para selecionar pasta (Gnome Builder)](./src/gtk/dialog/select_folder/builder).
+- [Diálogo para selecionar pasta (Gnome Glade)](./src/gtk/dialog/select_folder/glade).
+- [Diálogo para selecionar pasta (Python)](./src/gtk/dialog/select_folder).
 
 ![GTK diálogo para selecionar pasta](https://codigoninja.dev/media/git/pygobject/dialog-select-folder.png)
 

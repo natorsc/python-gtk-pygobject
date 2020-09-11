@@ -22,14 +22,11 @@
             <property name="can_focus">False</property>
             <property name="layout_style">end</property>
             <child>
-              <object class="GtkButton" id="button1">
-                <property name="label" translatable="yes">Sim</property>
+              <object class="GtkButton" id="button3">
+                <property name="label" translatable="yes">Cancelar</property>
                 <property name="visible">True</property>
                 <property name="can_focus">True</property>
                 <property name="receives_default">True</property>
-                <style>
-                  <class name="suggested-action"/>
-                </style>
               </object>
               <packing>
                 <property name="expand">True</property>
@@ -54,11 +51,14 @@
               </packing>
             </child>
             <child>
-              <object class="GtkButton" id="button3">
-                <property name="label" translatable="yes">Cancelar</property>
+              <object class="GtkButton" id="button1">
+                <property name="label" translatable="yes">Sim</property>
                 <property name="visible">True</property>
                 <property name="can_focus">True</property>
                 <property name="receives_default">True</property>
+                <style>
+                  <class name="suggested-action"/>
+                </style>
               </object>
               <packing>
                 <property name="expand">True</property>
@@ -76,9 +76,9 @@
       </object>
     </child>
     <action-widgets>
-      <action-widget response="-8">button1</action-widget>
-      <action-widget response="-9">button2</action-widget>
       <action-widget response="-6">button3</action-widget>
+      <action-widget response="-9">button2</action-widget>
+      <action-widget response="-8">button1</action-widget>
     </action-widgets>
     <child type="titlebar">
       <placeholder/>

@@ -14,7 +14,7 @@ from MessageDialogQuestion import MessageDialogQuestion
 from MessageDialogWarning import MessageDialogWarning
 
 
-@Gtk.Template(filename='./MainWindow.glade')
+@Gtk.Template(filename='./MainWindow.ui')
 class MainWindow(Gtk.ApplicationWindow):
     __gtype_name__ = 'MainWindow'
 
@@ -23,8 +23,8 @@ class MainWindow(Gtk.ApplicationWindow):
 
     @Gtk.Template.Callback()
     def open_message_dialog_info(self, widget):
-        dialog = MessageDialogInfo(parent=self)
-        # dialog.set_transient_for(parent=win)
+        dialog = MessageDialogInfo()
+        dialog.set_transient_for(parent=self)
         response = dialog.run()
         if response == Gtk.ResponseType.OK:
             print('Botão OK pressionado')
@@ -34,8 +34,8 @@ class MainWindow(Gtk.ApplicationWindow):
 
     @Gtk.Template.Callback()
     def open_message_dialog_warning(self, widget):
-        dialog = MessageDialogWarning(parent=self)
-        # dialog.set_transient_for(parent=self)
+        dialog = MessageDialogWarning()
+        dialog.set_transient_for(parent=self)
         response = dialog.run()
         dialog.destroy()
 
@@ -57,15 +57,6 @@ class MainWindow(Gtk.ApplicationWindow):
     def open_message_dialog_other(self, widget):
         dialog = MessageDialogOther()
         dialog.set_transient_for(parent=self)
-        # Adicionando class action nos botões.
-        btn_no = dialog.get_widget_for_response(
-            response_id=Gtk.ResponseType.NO,
-        )
-        btn_no.get_style_context().add_class(class_name='destructive-action')
-        btn_yes = dialog.get_widget_for_response(
-            response_id=Gtk.ResponseType.YES,
-        )
-        btn_yes.get_style_context().add_class(class_name='suggested-action')
         response = dialog.run()
         dialog.destroy()
 

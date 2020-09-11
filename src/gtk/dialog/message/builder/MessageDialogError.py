@@ -11,12 +11,12 @@ gi.require_version(namespace='Gtk', version='3.0')
 from gi.repository import Gtk
 
 
-@Gtk.Template(filename='./MessageDialogError.glade')
+@Gtk.Template(filename='./MessageDialogError.ui')
 class MessageDialogError(Gtk.MessageDialog):
     __gtype_name__ = 'MessageDialogError'
 
-    def __init__(self, **kwargs):
-        super().__init__(**kwargs)
+    def __init__(self):
+        super().__init__()
 
 
 if __name__ == '__main__':

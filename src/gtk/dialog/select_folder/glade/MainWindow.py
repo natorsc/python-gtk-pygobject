@@ -21,6 +21,8 @@ class Handler:
 
         select_multiple = self.check_button.get_active()
         dialog = builder.get_object(name='DialogSelectFolder')
+        # Definindo a janela pai.
+        dialog.set_transient_for(parent=win)
         # Defininido se a seleção será multipla ou não
         dialog.set_select_multiple(select_multiple=select_multiple)
         # Pasta onde o diálogo será aberto.

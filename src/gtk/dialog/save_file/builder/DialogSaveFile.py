@@ -19,8 +19,8 @@ class DialogSaveFile(Gtk.FileChooserDialog):
     # Definindo o diretório padrão.
     home = Path.home()
 
-    def __init__(self, **kwargs):
-        super().__init__(**kwargs)
+    def __init__(self):
+        super().__init__()
         # Nome inicial do arquivo.
         self.set_current_name(name='novo-arquivo.txt')
         # Pasta onde o diálogo será aberto.

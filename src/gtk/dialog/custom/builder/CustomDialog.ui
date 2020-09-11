@@ -2,7 +2,7 @@
 <!-- Generated with glade 3.36.0 -->
 <interface>
   <requires lib="gtk+" version="3.22"/>
-  <object class="GtkDialog" id="CustomDialog">
+  <template class="CustomDialog" parent="GtkDialog">
     <property name="can_focus">False</property>
     <property name="border_width">12</property>
     <property name="title" translatable="yes">Janela de dialogo personalizada</property>
@@ -116,5 +116,5 @@
     <child type="titlebar">
       <placeholder/>
     </child>
-  </object>
+  </template>
 </interface>

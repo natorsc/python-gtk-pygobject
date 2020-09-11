@@ -1,24 +1,25 @@
 # -*- coding: utf-8 -*-
 """Janela de diálogo personalizada."""
+import sys
 
 import gi
 
 gi.require_version(namespace='Gtk', version='3.0')
-from gi.repository import Gtk
+from gi.repository import Gio, Gtk
 
 
 class MainWindow(Gtk.ApplicationWindow):
-    def __init__(self):
-        super().__init__()
+    def __init__(self, **kwargs):
+        super().__init__(**kwargs)
 
         # Configurando a janela principal.
         self.set_title(title='Janela de diálogo personalizada')
         self.set_default_size(width=1366 / 2, height=768 / 2)
         self.set_position(position=Gtk.WindowPosition.CENTER)
         self.set_default_icon_from_file(filename='../../../../images/icons/icon.png')
-        self.set_border_width(border_width=10)
 
-        vbox = Gtk.Box.new(orientation=Gtk.Orientation.VERTICAL, spacing=10)
+        vbox = Gtk.Box.new(orientation=Gtk.Orientation.VERTICAL, spacing=6)
+        vbox.set_border_width(border_width=12)
         self.add(widget=vbox)
 
         button_open_dialog = Gtk.Button.new_with_label(
@@ -30,8 +31,11 @@ class MainWindow(Gtk.ApplicationWindow):
         self.label = Gtk.Label.new(str='Valor digitado no dialogo:')
         vbox.pack_end(child=self.label, expand=True, fill=True, padding=0)
 
+        self.show_all()
+
     def open_dialog(self, button):
-        dialog = CustomDialog(parent=self)
+        dialog = CustomDialog()
+        dialog.set_transient_for(parent=self)
 
         response = dialog.run()
         print(f'Resposta do diálogo = {response}.')
@@ -57,37 +61,33 @@ class MainWindow(Gtk.ApplicationWindow):
 
 
 class CustomDialog(Gtk.Dialog):
-    """Classe herda de ``Gtk.Dialog``.
-
-    Está classe está criando um dialogo personalizado.
-    """
-
-    def __init__(self, parent=None):
-        """Construtor.
-
-        :param parent: Widget ao qual o dialogo pertence.
-        """
+    def __init__(self):
         super().__init__()
-        self.set_title(title='Janela de diálogo personalizada.')
-        self.set_transient_for(parent=parent)
-        self.add_buttons(
-            # Gtk.STOCK_OK é uma constante do Gtk, pode ser utilizada uma
-            # string no lugar da constante.
-            Gtk.STOCK_YES, Gtk.ResponseType.YES,
-            Gtk.STOCK_NO, Gtk.ResponseType.NO
-        )
+        self.set_title(title='Janela de dialogo personalizada')
 
-        # Adicionando um botão por vez.
-        # Utilizando um texto e id de resposta personalizada ao invés de
-        # constantes do GTK.
+        # Adicionando 1 botão.
         self.add_button(button_text='Talvez', response_id=5000)
+        # Adicionando mais de 1 botão.
+        self.add_buttons(
+            '_Não', Gtk.ResponseType.NO,
+            '_Sim', Gtk.ResponseType.YES,
+        )
+        # Adicionando class action nos botões.
+        btn_no = self.get_widget_for_response(
+            response_id=Gtk.ResponseType.NO,
+        )
+        btn_no.get_style_context().add_class(class_name='destructive-action')
+        btn_yes = self.get_widget_for_response(
+            response_id=Gtk.ResponseType.YES,
+        )
+        btn_yes.get_style_context().add_class(class_name='suggested-action')
 
-        # Acessando a área de conteúdo da janela de dialogo para poder
-        # adicionar novos widgets dentro dessa área.
+        # Acessando o box.
         content_area = self.get_content_area()
         # configurando.
-        content_area.set_border_width(border_width=10)
-        content_area.set_spacing(spacing=10)
+        content_area.set_halign(align=Gtk.Align.CENTER)
+        content_area.set_border_width(border_width=12)
+        content_area.set_spacing(spacing=6)
 
         label = Gtk.Label.new(str='Um texto qualquer')
         content_area.add(widget=label)
@@ -99,16 +99,30 @@ class CustomDialog(Gtk.Dialog):
         self.entry.set_placeholder_text(text='Digite um texto qualquer.')
         content_area.add(widget=self.entry)
 
-        # É obrigatório utilizar ``show_all()`` senão ``get_content_area()``
-        # não adiciona os widgets.
         self.show_all()
 
     def get_entry_text(self):
         return self.entry.get_text()
 
 
+class Application(Gtk.Application):
+    def __init__(self):
+        super().__init__(application_id='br.natorsc.Exemplo',
+                         flags=Gio.ApplicationFlags.FLAGS_NONE)
+
+    def do_startup(self):
+        Gtk.Application.do_startup(self)
+
+    def do_activate(self):
+        win = self.props.active_window
+        if not win:
+            win = MainWindow(application=self)
+        win.present()
+
+    def do_shutdown(self):
+        Gtk.Application.do_shutdown(self)
+
+
 if __name__ == '__main__':
-    win = MainWindow()
-    win.connect('destroy', Gtk.main_quit)
-    win.show_all()
-    Gtk.main()
+    app = Application()
+    app.run(sys.argv)

@@ -36,7 +36,8 @@ class MainWindow(Gtk.ApplicationWindow):
 
     def open_dialog(self, widget):
         select_multiple = self.check_button.get_active()
-        dialog = Gtk.FileChooserDialog(parent=self)
+        dialog = Gtk.FileChooserDialog()
+        dialog.set_transient_for(parent=self)
         dialog.set_title(title='Selecionar Arquivo')
         dialog.set_modal(modal=True)
         # Tipo de ação que o dialogo irá executar.

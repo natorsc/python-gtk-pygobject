@@ -15,9 +15,13 @@ def load_ui_file(filename):
 
 class Handler:
 
+    def __init__(self):
+        pass
+
     def open_message_dialog_info(self, widget):
         builder = load_ui_file(filename='./MessageDialogInfo.glade')
         dialog = builder.get_object(name='MessageDialogInfo')
+        # Definindo a janela pai.
         dialog.set_transient_for(parent=win)
         response = dialog.run()
         if response == Gtk.ResponseType.OK:

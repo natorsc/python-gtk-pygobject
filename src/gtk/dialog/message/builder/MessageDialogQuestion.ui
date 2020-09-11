@@ -1,16 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- Generated with glade 3.36.0 -->
+<!-- Generated with glade 3.22.0 -->
 <interface>
   <requires lib="gtk+" version="3.22"/>
-  <template class="MessageDialogOther" parent="GtkMessageDialog">
+  <template class="MessageDialogQuestion" parent="GtkMessageDialog">
     <property name="can_focus">False</property>
     <property name="border_width">12</property>
-    <property name="title" translatable="yes">Janela de mensagem do tipo OTHER</property>
+    <property name="title" translatable="yes">Janela de mensagem do tipo QUESTION</property>
+    <property name="modal">True</property>
     <property name="type_hint">dialog</property>
-    <property name="message_type">other</property>
-    <property name="text" translatable="yes">&lt;span foreground="red"&gt;Texto primário&lt;/span&gt; da janela de diálogo &lt;big&gt;OTHER&lt;/big&gt;</property>
+    <property name="message_type">question</property>
+    <property name="text" translatable="yes">&lt;span foreground="red"&gt;Texto primário&lt;/span&gt; da janela de diálogo &lt;big&gt;QUESTION&lt;/big&gt;</property>
     <property name="use_markup">True</property>
-    <property name="secondary_text" translatable="yes">&lt;span foreground="orange"&gt;Texto secundário&lt;/span&gt; da janela de diálogo &lt;b&gt;OTHER&lt;/b&gt;</property>
+    <property name="secondary_text" translatable="yes">&lt;span foreground="orange"&gt;Texto secundário&lt;/span&gt; da janela de diálogo &lt;b&gt;QUESTION&lt;/b&gt;</property>
     <property name="secondary_use_markup">True</property>
     <child internal-child="vbox">
       <object class="GtkBox">
@@ -23,22 +24,6 @@
             <property name="layout_style">end</property>
             <child>
               <object class="GtkButton" id="button1">
-                <property name="label" translatable="yes">Sim</property>
-                <property name="visible">True</property>
-                <property name="can_focus">True</property>
-                <property name="receives_default">True</property>
-                <style>
-                  <class name="suggested-action"/>
-                </style>
-              </object>
-              <packing>
-                <property name="expand">True</property>
-                <property name="fill">True</property>
-                <property name="position">0</property>
-              </packing>
-            </child>
-            <child>
-              <object class="GtkButton" id="button2">
                 <property name="label" translatable="yes">Não</property>
                 <property name="visible">True</property>
                 <property name="can_focus">True</property>
@@ -50,20 +35,23 @@
               <packing>
                 <property name="expand">True</property>
                 <property name="fill">True</property>
-                <property name="position">1</property>
+                <property name="position">0</property>
               </packing>
             </child>
             <child>
-              <object class="GtkButton" id="button3">
-                <property name="label" translatable="yes">Cancelar</property>
+              <object class="GtkButton" id="button2">
+                <property name="label" translatable="yes">Sim</property>
                 <property name="visible">True</property>
                 <property name="can_focus">True</property>
                 <property name="receives_default">True</property>
+                <style>
+                  <class name="suggested-action"/>
+                </style>
               </object>
               <packing>
                 <property name="expand">True</property>
                 <property name="fill">True</property>
-                <property name="position">2</property>
+                <property name="position">1</property>
               </packing>
             </child>
           </object>
@@ -76,9 +64,8 @@
       </object>
     </child>
     <action-widgets>
-      <action-widget response="-8">button1</action-widget>
-      <action-widget response="-9">button2</action-widget>
-      <action-widget response="-6">button3</action-widget>
+      <action-widget response="-9">button1</action-widget>
+      <action-widget response="-8">button2</action-widget>
     </action-widgets>
     <child type="titlebar">
       <placeholder/>

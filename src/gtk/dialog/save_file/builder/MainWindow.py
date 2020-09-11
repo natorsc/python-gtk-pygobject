@@ -23,7 +23,8 @@ class MainWindow(Gtk.ApplicationWindow):
 
     @Gtk.Template.Callback()
     def open_dialog(self, widget):
-        dialog = DialogSaveFile(parent=self)
+        dialog = DialogSaveFile()
+        dialog.set_transient_for(parent=self)
 
         # Executando a janela de dialogo e aguardando uma resposta.
         response = dialog.run()

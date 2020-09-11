@@ -24,6 +24,8 @@ class Handler:
         builder.add_from_file(filename='./DialogSaveFile.glade')
 
         dialog = builder.get_object(name='DialogSaveFile')
+        # Definindo a janela pai.
+        dialog.set_transient_for(parent=win)
         # Nome inicial do arquivo.
         dialog.set_current_name(name='novo-arquivo.txt')
         # Pasta onde o diálogo será aberto.

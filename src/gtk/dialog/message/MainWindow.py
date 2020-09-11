@@ -44,7 +44,8 @@ class MainWindow(Gtk.ApplicationWindow):
         self.show_all()
 
     def open_message_dialog_info(self, widget):
-        dialog = MessageDialogInfo(parent=self)
+        dialog = MessageDialogInfo()
+        dialog.set_transient_for(parent=self)
         response = dialog.run()
         # Verificando qual botão foi clicado.
         if response == Gtk.ResponseType.OK:
@@ -54,29 +55,33 @@ class MainWindow(Gtk.ApplicationWindow):
         dialog.destroy()
 
     def open_message_dialog_warning(self, widget):
-        dialog = MessageDialogWarning(parent=self)
+        dialog = MessageDialogWarning()
+        dialog.set_transient_for(parent=self)
         response = dialog.run()
         dialog.destroy()
 
     def open_message_dialog_question(self, widget):
-        dialog = MessageDialogQuestion(parent=self)
+        dialog = MessageDialogQuestion()
+        dialog.set_transient_for(parent=self)
         response = dialog.run()
         dialog.destroy()
 
     def open_message_dialog_error(self, widget):
-        dialog = MessageDialogError(parent=self)
+        dialog = MessageDialogError()
+        dialog.set_transient_for(parent=self)
         response = dialog.run()
         dialog.destroy()
 
     def open_message_dialog_other(self, widget):
-        dialog = MessageDialogOther(parent=self)
+        dialog = MessageDialogOther()
+        dialog.set_transient_for(parent=self)
         response = dialog.run()
         dialog.destroy()
 
 
 class MessageDialogInfo(Gtk.MessageDialog):
-    def __init__(self, parent=None):
-        super().__init__(parent=parent)
+    def __init__(self):
+        super().__init__()
         self.props.message_type = Gtk.MessageType.INFO
         self.set_title(title='Janela de mensagem do tipo INFO')
         self.set_markup(
@@ -92,8 +97,8 @@ class MessageDialogInfo(Gtk.MessageDialog):
 
 
 class MessageDialogWarning(Gtk.MessageDialog):
-    def __init__(self, parent=None):
-        super().__init__(parent=parent)
+    def __init__(self):
+        super().__init__()
         self.props.message_type = Gtk.MessageType.WARNING
         self.set_title(title='Janela de mensagem do tipo WARNING')
         self.set_markup(
@@ -109,8 +114,8 @@ class MessageDialogWarning(Gtk.MessageDialog):
 
 
 class MessageDialogQuestion(Gtk.MessageDialog):
-    def __init__(self, parent=None):
-        super().__init__(parent=parent)
+    def __init__(self):
+        super().__init__()
         self.props.message_type = Gtk.MessageType.QUESTION
         self.set_title(title='Janela de mensagem do tipo QUESTION')
         self.set_markup(
@@ -122,8 +127,8 @@ class MessageDialogQuestion(Gtk.MessageDialog):
                            'da janela de diálogo <b>QUESTION</b>',
         )
         self.add_buttons(
-            '_Sim', Gtk.ResponseType.YES,
             '_Não', Gtk.ResponseType.NO,
+            '_Sim', Gtk.ResponseType.YES,
         )
         # Adicionando class action nos botões.
         btn_no = self.get_widget_for_response(
@@ -139,8 +144,8 @@ class MessageDialogQuestion(Gtk.MessageDialog):
 
 
 class MessageDialogError(Gtk.MessageDialog):
-    def __init__(self, parent=None):
-        super().__init__(parent=parent)
+    def __init__(self):
+        super().__init__()
         self.props.message_type = Gtk.MessageType.ERROR
         self.set_title(title='Janela de mensagem do tipo ERROR')
         self.set_markup(
@@ -156,8 +161,8 @@ class MessageDialogError(Gtk.MessageDialog):
 
 
 class MessageDialogOther(Gtk.MessageDialog):
-    def __init__(self, parent=None):
-        super().__init__(parent=parent)
+    def __init__(self):
+        super().__init__()
         self.props.message_type = Gtk.MessageType.OTHER
         self.set_title(title='Janela de mensagem do tipo OTHER')
         self.set_markup(
@@ -169,9 +174,9 @@ class MessageDialogOther(Gtk.MessageDialog):
                            'da janela de diálogo <b>OTHER</b>',
         )
         self.add_buttons(
-            '_Sim', Gtk.ResponseType.YES,
-            '_Não', Gtk.ResponseType.NO,
             '_Cancelar', Gtk.ResponseType.CANCEL,
+            '_Não', Gtk.ResponseType.NO,
+            '_Sim', Gtk.ResponseType.YES,
         )
         # Adicionando class action nos botões.
         btn_no = self.get_widget_for_response(

@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-"""Janela de diálogo personalizado com Gnome Glade."""
+"""Janela de diálogo personalizada."""
 
 import gi
 
@@ -18,10 +18,10 @@ class Handler:
 
         entry = builder.get_object(name='entry')
 
-        custom_dialog = builder.get_object(name='CustomDialog')
-        custom_dialog.set_transient_for(parent=win)
+        dialog = builder.get_object(name='CustomDialog')
+        dialog.set_transient_for(parent=win)
 
-        response = custom_dialog.run()
+        response = dialog.run()
         print(f'Resposta do diálogo = {response}.')
 
         # Verificando qual botão foi pressionado.
@@ -41,14 +41,12 @@ class Handler:
             print('Botão TALVEZ pressionado')
             self.label.set_text(str=f'Botão TALVEZ pressionado')
 
-        custom_dialog.destroy()
+        dialog.destroy()
 
 
 if __name__ == '__main__':
     builder = Gtk.Builder.new()
     builder.add_from_file(filename='./MainWindow.glade')
-    # Listando todos os widgets disponíveis no arquivo de interface.
-    # print(builder.get_objects())
     builder.connect_signals(obj_or_map=Handler())
 
     win = builder.get_object(name='MainWindow')

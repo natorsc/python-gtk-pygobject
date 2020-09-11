@@ -15,9 +15,9 @@ class DialogSelectFile(Gtk.FileChooserDialog):
     # Definindo o diretório padrão.
     home = Path.home()
 
-    def __init__(self, **kwargs):
-        super().__init__(**kwargs)
-        self.select_multiple = kwargs['select_multiple']
+    def __init__(self, select_multiple):
+        super().__init__()
+        self.select_multiple = select_multiple
 
         # Defininido se a seleção será multipla ou não
         self.set_select_multiple(select_multiple=self.select_multiple)

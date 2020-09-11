@@ -36,7 +36,8 @@ class MainWindow(Gtk.ApplicationWindow):
         self.show_all()
 
     def open_dialog(self, widget):
-        dialog = Gtk.FileChooserDialog(parent=self)
+        dialog = Gtk.FileChooserDialog()
+        dialog.set_transient_for(parent=self)
         dialog.set_title(title='Salvar Arquivo')
         dialog.set_modal(modal=True)
         # Tipo de ação que o dialogo irá executar.

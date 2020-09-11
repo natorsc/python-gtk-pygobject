@@ -1,16 +1,17 @@
 # -*- coding: utf-8 -*-
 """Janela de diálogo do tipo MessageDialog."""
+import sys
 
 import gi
 
 gi.require_version(namespace='Gtk', version='3.0')
-from gi.repository import Gtk
+from gi.repository import Gio, Gtk
 
 
 class MainWindow(Gtk.ApplicationWindow):
 
-    def __init__(self):
-        super().__init__()
+    def __init__(self, **kwargs):
+        super().__init__(**kwargs)
 
         self.set_title(title='Janela de diálogo do tipo mensagem')
         self.set_default_size(width=1366 / 2, height=768 / 2)
@@ -41,8 +42,11 @@ class MainWindow(Gtk.ApplicationWindow):
         button_other.connect('clicked', self.open_message_dialog_other)
         vbox.add(widget=button_other)
 
+        self.show_all()
+
     def open_message_dialog_infor(self, widget):
-        dialog = Gtk.MessageDialog(parent=self)
+        dialog = Gtk.MessageDialog()
+        dialog.set_transient_for(parent=self)
         dialog.props.message_type = Gtk.MessageType.INFO
         dialog.set_title(title='Janela de mensagem do tipo INFO')
         dialog.set_markup(
@@ -63,7 +67,8 @@ class MainWindow(Gtk.ApplicationWindow):
         dialog.destroy()
 
     def open_message_dialog_warning(self, widget):
-        dialog = Gtk.MessageDialog(parent=self)
+        dialog = Gtk.MessageDialog()
+        dialog.set_transient_for(parent=self)
         dialog.props.message_type = Gtk.MessageType.WARNING
         dialog.set_title(title='Janela de mensagem do tipo WARNING')
         dialog.set_markup(
@@ -79,7 +84,8 @@ class MainWindow(Gtk.ApplicationWindow):
         dialog.destroy()
 
     def open_message_dialog_question(self, widget):
-        dialog = Gtk.MessageDialog(parent=self)
+        dialog = Gtk.MessageDialog()
+        dialog.set_transient_for(parent=self)
         dialog.props.message_type = Gtk.MessageType.QUESTION
         dialog.set_title(title='Janela de mensagem do tipo QUESTION')
         dialog.set_markup(
@@ -91,8 +97,8 @@ class MainWindow(Gtk.ApplicationWindow):
                            'da janela de diálogo <b>QUESTION</b>',
         )
         dialog.add_buttons(
-            '_Sim', Gtk.ResponseType.YES,
             '_Não', Gtk.ResponseType.NO,
+            '_Sim', Gtk.ResponseType.YES,
         )
         # Adicionando class action nos botões.
         btn_no = dialog.get_widget_for_response(
@@ -108,7 +114,8 @@ class MainWindow(Gtk.ApplicationWindow):
         dialog.destroy()
 
     def open_message_dialog_error(self, widget):
-        dialog = Gtk.MessageDialog(parent=self)
+        dialog = Gtk.MessageDialog()
+        dialog.set_transient_for(parent=self)
         dialog.props.message_type = Gtk.MessageType.ERROR
         dialog.set_title(title='Janela de mensagem do tipo ERROR')
         dialog.set_markup(
@@ -124,7 +131,8 @@ class MainWindow(Gtk.ApplicationWindow):
         dialog.destroy()
 
     def open_message_dialog_other(self, widget):
-        dialog = Gtk.MessageDialog(parent=self)
+        dialog = Gtk.MessageDialog()
+        dialog.set_transient_for(parent=self)
         dialog.props.message_type = Gtk.MessageType.OTHER
         dialog.set_title(title='Janela de mensagem do tipo OTHER')
         dialog.set_markup(
@@ -136,9 +144,9 @@ class MainWindow(Gtk.ApplicationWindow):
                            'da janela de diálogo <b>OTHER</b>',
         )
         dialog.add_buttons(
-            '_Sim', Gtk.ResponseType.YES,
-            '_Não', Gtk.ResponseType.NO,
             '_Cancelar', Gtk.ResponseType.CANCEL,
+            '_Não', Gtk.ResponseType.NO,
+            '_Sim', Gtk.ResponseType.YES,
         )
         # Adicionando class action nos botões.
         btn_no = dialog.get_widget_for_response(
@@ -154,8 +162,24 @@ class MainWindow(Gtk.ApplicationWindow):
         dialog.destroy()
 
 
+class Application(Gtk.Application):
+    def __init__(self):
+        super().__init__(application_id='br.natorsc.Exemplo',
+                         flags=Gio.ApplicationFlags.FLAGS_NONE)
+
+    def do_startup(self):
+        Gtk.Application.do_startup(self)
+
+    def do_activate(self):
+        win = self.props.active_window
+        if not win:
+            win = MainWindow(application=self)
+        win.present()
+
+    def do_shutdown(self):
+        Gtk.Application.do_shutdown(self)
+
+
 if __name__ == '__main__':
-    win = MainWindow()
-    win.connect('destroy', Gtk.main_quit)
-    win.show_all()
-    Gtk.main()
+    app = Application()
+    app.run(sys.argv)
