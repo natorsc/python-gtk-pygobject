@@ -1,15 +1,16 @@
 # -*- coding: utf-8 -*-
 """Drag and Drop."""
+import sys
 
 import gi
 
 gi.require_version(namespace='Gtk', version='3.0')
-from gi.repository import Gtk, Gdk
+from gi.repository import Gio, Gtk, Gdk
 
 
 class MainWindow(Gtk.ApplicationWindow):
-    def __init__(self):
-        super().__init__()
+    def __init__(self, **kwargs):
+        super().__init__(**kwargs)
         self.set_title(title='Drag and Drop')
         self.set_default_size(width=1366 / 2, height=768 / 2)
         self.set_default_icon_from_file(filename='../../../images/icons/icon.png')
@@ -33,6 +34,8 @@ class MainWindow(Gtk.ApplicationWindow):
         drop_area.connect('drag-data-received', self.on_drag_data_received)
         vbox.pack_start(child=drop_area, expand=True, fill=True, padding=0)
 
+        self.show_all()
+
     def on_drag_data_received(self, widget, drag_context, x, y, data, info, timestamp):
         print('Widget que recebeu o arquivo (connect()) :', widget)
         print('Drag context                             :', drag_context)
@@ -43,8 +46,24 @@ class MainWindow(Gtk.ApplicationWindow):
         print(f'Arquivo foi solta na janela na posição x={x} e y={y}')
 
 
+class Application(Gtk.Application):
+    def __init__(self):
+        super().__init__(application_id='br.natorsc.Exemplo',
+                         flags=Gio.ApplicationFlags.FLAGS_NONE)
+
+    def do_startup(self):
+        Gtk.Application.do_startup(self)
+
+    def do_activate(self):
+        win = self.props.active_window
+        if not win:
+            win = MainWindow(application=self)
+        win.present()
+
+    def do_shutdown(self):
+        Gtk.Application.do_shutdown(self)
+
+
 if __name__ == '__main__':
-    win = MainWindow()
-    win.connect('destroy', Gtk.main_quit)
-    win.show_all()
-    Gtk.main()
+    app = Application()
+    app.run(sys.argv)
