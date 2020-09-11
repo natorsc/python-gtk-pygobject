@@ -6,8 +6,9 @@
     <property name="can_focus">False</property>
     <property name="border_width">12</property>
     <property name="title" translatable="yes">Janela de mensagem do tipo INFO</property>
+    <property name="modal">True</property>
     <property name="type_hint">dialog</property>
-    <property name="buttons">ok-cancel</property>
+    <property name="buttons">ok</property>
     <property name="text" translatable="yes">&lt;span foreground="red"&gt;Texto primário&lt;/span&gt; da janela de diálogo &lt;big&gt;INFO&lt;/big&gt;</property>
     <property name="use_markup">True</property>
     <property name="secondary_text" translatable="yes">&lt;span foreground="orange"&gt;Texto secundário&lt;/span&gt; da janela de diálogo &lt;b&gt;INFO&lt;/b&gt;</property>
@@ -29,6 +30,9 @@
           </packing>
         </child>
       </object>
+    </child>
+    <child type="titlebar">
+      <placeholder/>
     </child>
   </object>
 </interface>

@@ -70,8 +70,8 @@ class DialogSelectFile(Gtk.FileChooserDialog):
 
         # Botões que serão exibidos.
         self.add_buttons(
-            Gtk.STOCK_CANCEL, Gtk.ResponseType.CANCEL,
-            Gtk.STOCK_OK, Gtk.ResponseType.OK
+            '_Cancelar', Gtk.ResponseType.CANCEL,
+            '_OK', Gtk.ResponseType.OK
         )
 
         # Adicionando class action nos botões.

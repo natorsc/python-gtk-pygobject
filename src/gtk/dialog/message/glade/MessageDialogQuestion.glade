@@ -8,7 +8,7 @@
     <property name="title" translatable="yes">Janela de mensagem do tipo QUESTION</property>
     <property name="type_hint">dialog</property>
     <property name="message_type">question</property>
-    <property name="buttons">ok-cancel</property>
+    <property name="buttons">yes-no</property>
     <property name="text" translatable="yes">&lt;span foreground="red"&gt;Texto primário&lt;/span&gt; da janela de diálogo &lt;big&gt;QUESTION&lt;/big&gt;</property>
     <property name="use_markup">True</property>
     <property name="secondary_text" translatable="yes">&lt;span foreground="orange"&gt;Texto secundário&lt;/span&gt; da janela de diálogo &lt;b&gt;QUESTION&lt;/b&gt;</property>
@@ -30,6 +30,9 @@
           </packing>
         </child>
       </object>
+    </child>
+    <child type="titlebar">
+      <placeholder/>
     </child>
   </object>
 </interface>

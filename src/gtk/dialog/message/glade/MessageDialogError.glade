@@ -8,6 +8,7 @@
     <property name="title" translatable="yes">Janela de mensagem do tipo ERROR</property>
     <property name="type_hint">dialog</property>
     <property name="message_type">error</property>
+    <property name="buttons">ok</property>
     <property name="text" translatable="yes">&lt;span foreground="red"&gt;Texto primário&lt;/span&gt; da janela de diálogo &lt;big&gt;ERROR&lt;/big&gt;</property>
     <property name="use_markup">True</property>
     <property name="secondary_text" translatable="yes">&lt;span foreground="orange"&gt;Texto secundário&lt;/span&gt; da janela de diálogo &lt;b&gt;ERROR&lt;/b&gt;</property>
@@ -23,32 +24,6 @@
             <property name="can_focus">False</property>
             <property name="homogeneous">True</property>
             <property name="layout_style">end</property>
-            <child>
-              <object class="GtkButton" id="button2">
-                <property name="label" translatable="yes">Cancelar</property>
-                <property name="visible">True</property>
-                <property name="can_focus">True</property>
-                <property name="receives_default">True</property>
-              </object>
-              <packing>
-                <property name="expand">True</property>
-                <property name="fill">True</property>
-                <property name="position">0</property>
-              </packing>
-            </child>
-            <child>
-              <object class="GtkButton" id="button1">
-                <property name="label" translatable="yes">OK</property>
-                <property name="visible">True</property>
-                <property name="can_focus">True</property>
-                <property name="receives_default">True</property>
-              </object>
-              <packing>
-                <property name="expand">True</property>
-                <property name="fill">True</property>
-                <property name="position">1</property>
-              </packing>
-            </child>
           </object>
           <packing>
             <property name="expand">False</property>
@@ -58,9 +33,8 @@
         </child>
       </object>
     </child>
-    <action-widgets>
-      <action-widget response="-6">button2</action-widget>
-      <action-widget response="-5">button1</action-widget>
-    </action-widgets>
+    <child type="titlebar">
+      <placeholder/>
+    </child>
   </object>
 </interface>

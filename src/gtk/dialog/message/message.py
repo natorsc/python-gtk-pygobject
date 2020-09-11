@@ -1,15 +1,16 @@
 # -*- coding: utf-8 -*-
 """Janela de diálogo do tipo MessageDialog."""
+import sys
 
 import gi
 
 gi.require_version(namespace='Gtk', version='3.0')
-from gi.repository import Gtk
+from gi.repository import Gio, Gtk
 
 
 class MainWindow(Gtk.ApplicationWindow):
-    def __init__(self):
-        super().__init__()
+    def __init__(self, **kwargs):
+        super().__init__(**kwargs)
 
         self.set_title(title='Janela de diálogo do tipo MessageDialog.')
         self.set_default_size(width=1366 / 2, height=768 / 2)
@@ -39,6 +40,8 @@ class MainWindow(Gtk.ApplicationWindow):
         button_other = Gtk.Button.new_with_label(label='Abrir janela de mensagem OTHER')
         button_other.connect('clicked', self.open_message_dialog_other)
         vbox.add(widget=button_other)
+
+        self.show_all()
 
     def open_message_dialog_info(self, widget):
         dialog = MessageDialogInfo(parent=self)
@@ -73,86 +76,134 @@ class MainWindow(Gtk.ApplicationWindow):
 
 class MessageDialogInfo(Gtk.MessageDialog):
     def __init__(self, parent=None):
-        super().__init__(parent=parent, message_type=Gtk.MessageType.INFO,
-                         buttons=Gtk.ButtonsType.OK_CANCEL)
+        super().__init__(parent=parent)
+        self.props.message_type = Gtk.MessageType.INFO
         self.set_title(title='Janela de mensagem do tipo INFO')
         self.set_markup(
             str='<span foreground="red">Texto primário</span> da janela de '
-                'diálogo <big>INFO</big>'
+                'diálogo <big>INFO</big>',
         )
         self.format_secondary_markup(
             message_format='<span foreground="orange">Texto secundário</span> '
-                           'da janela de diálogo <b>INFO</b>'
+                           'da janela de diálogo <b>INFO</b>',
         )
+        self.add_button(button_text='_OK', response_id=Gtk.ResponseType.OK)
         self.show_all()
 
 
 class MessageDialogWarning(Gtk.MessageDialog):
     def __init__(self, parent=None):
-        super().__init__(parent=parent, message_type=Gtk.MessageType.WARNING,
-                         buttons=Gtk.ButtonsType.OK_CANCEL)
+        super().__init__(parent=parent)
+        self.props.message_type = Gtk.MessageType.WARNING
         self.set_title(title='Janela de mensagem do tipo WARNING')
         self.set_markup(
             str='<span foreground="red">Texto primário</span> da janela de '
-                'diálogo <big>WARNING</big>'
+                'diálogo <big>WARNING</big>',
         )
         self.format_secondary_markup(
             message_format='<span foreground="orange">Texto secundário</span> '
-                           'da janela de diálogo <b>WARNING</b>'
+                           'da janela de diálogo <b>WARNING</b>',
         )
+        self.add_button(button_text='_OK', response_id=Gtk.ResponseType.OK)
         self.show_all()
 
 
 class MessageDialogQuestion(Gtk.MessageDialog):
     def __init__(self, parent=None):
-        super().__init__(parent=parent, message_type=Gtk.MessageType.QUESTION,
-                         buttons=Gtk.ButtonsType.OK_CANCEL)
+        super().__init__(parent=parent)
+        self.props.message_type = Gtk.MessageType.QUESTION
         self.set_title(title='Janela de mensagem do tipo QUESTION')
         self.set_markup(
             str='<span foreground="red">Texto primário</span> da janela de '
-                'diálogo <big>QUESTION</big>'
+                'diálogo <big>QUESTION</big>',
         )
         self.format_secondary_markup(
             message_format='<span foreground="orange">Texto secundário</span> '
-                           'da janela de diálogo <b>QUESTION</b>'
+                           'da janela de diálogo <b>QUESTION</b>',
         )
+        self.add_buttons(
+            '_Sim', Gtk.ResponseType.YES,
+            '_Não', Gtk.ResponseType.NO,
+        )
+        # Adicionando class action nos botões.
+        btn_no = self.get_widget_for_response(
+            response_id=Gtk.ResponseType.NO,
+        )
+        btn_no.get_style_context().add_class(class_name='destructive-action')
+
+        btn_yes = self.get_widget_for_response(
+            response_id=Gtk.ResponseType.YES,
+        )
+        btn_yes.get_style_context().add_class(class_name='suggested-action')
         self.show_all()
 
 
 class MessageDialogError(Gtk.MessageDialog):
     def __init__(self, parent=None):
-        super().__init__(parent=parent, message_type=Gtk.MessageType.ERROR,
-                         buttons=Gtk.ButtonsType.OK_CANCEL)
+        super().__init__(parent=parent)
+        self.props.message_type = Gtk.MessageType.ERROR
         self.set_title(title='Janela de mensagem do tipo ERROR')
         self.set_markup(
             str='<span foreground="red">Texto primário</span> da janela de '
-                'diálogo <big>ERROR</big>'
+                'diálogo <big>ERROR</big>',
         )
         self.format_secondary_markup(
             message_format='<span foreground="orange">Texto secundário</span> '
-                           'da janela de diálogo <b>ERROR</b>'
+                           'da janela de diálogo <b>ERROR</b>',
         )
+        self.add_button(button_text='_OK', response_id=Gtk.ResponseType.OK)
         self.show_all()
 
 
 class MessageDialogOther(Gtk.MessageDialog):
     def __init__(self, parent=None):
-        super().__init__(parent=parent, message_type=Gtk.MessageType.OTHER,
-                         buttons=Gtk.ButtonsType.OK_CANCEL)
+        super().__init__(parent=parent)
+        self.props.message_type = Gtk.MessageType.OTHER
         self.set_title(title='Janela de mensagem do tipo OTHER')
         self.set_markup(
             str='<span foreground="red">Texto primário</span> da janela de '
-                'diálogo <big>OTHER</big>'
+                'diálogo <big>OTHER</big>',
         )
         self.format_secondary_markup(
             message_format='<span foreground="orange">Texto secundário</span> '
-                           'da janela de diálogo <b>OTHER</b>'
+                           'da janela de diálogo <b>OTHER</b>',
         )
+        self.add_buttons(
+            '_Sim', Gtk.ResponseType.YES,
+            '_Não', Gtk.ResponseType.NO,
+            '_Cancelar', Gtk.ResponseType.CANCEL,
+        )
+        # Adicionando class action nos botões.
+        btn_no = self.get_widget_for_response(
+            response_id=Gtk.ResponseType.NO,
+        )
+        btn_no.get_style_context().add_class(class_name='destructive-action')
+
+        btn_yes = self.get_widget_for_response(
+            response_id=Gtk.ResponseType.YES,
+        )
+        btn_yes.get_style_context().add_class(class_name='suggested-action')
         self.show_all()
 
 
+class Application(Gtk.Application):
+    def __init__(self):
+        super().__init__(application_id='br.natorsc.Exemplo',
+                         flags=Gio.ApplicationFlags.FLAGS_NONE)
+
+    def do_startup(self):
+        Gtk.Application.do_startup(self)
+
+    def do_activate(self):
+        win = self.props.active_window
+        if not win:
+            win = MainWindow(application=self)
+        win.present()
+
+    def do_shutdown(self):
+        Gtk.Application.do_shutdown(self)
+
+
 if __name__ == '__main__':
-    win = MainWindow()
-    win.connect('destroy', Gtk.main_quit)
-    win.show_all()
-    Gtk.main()
+    app = Application()
+    app.run(sys.argv)

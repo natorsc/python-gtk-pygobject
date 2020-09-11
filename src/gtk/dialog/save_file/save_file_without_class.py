@@ -50,8 +50,8 @@ class MainWindow(Gtk.ApplicationWindow):
 
         # Botões que serão exibidos.
         dialog.add_buttons(
-            Gtk.STOCK_CANCEL, Gtk.ResponseType.CANCEL,
-            Gtk.STOCK_SAVE, Gtk.ResponseType.OK
+            '_Cancelar', Gtk.ResponseType.CANCEL,
+            '_Salvar', Gtk.ResponseType.OK
         )
 
         # Adicionando class action nos botões.

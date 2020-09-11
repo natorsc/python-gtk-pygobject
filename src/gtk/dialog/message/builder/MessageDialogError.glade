@@ -2,16 +2,16 @@
 <!-- Generated with glade 3.36.0 -->
 <interface>
   <requires lib="gtk+" version="3.22"/>
-  <object class="GtkMessageDialog" id="MessageDialogWarning">
+  <template class="MessageDialogError" parent="GtkMessageDialog">
     <property name="can_focus">False</property>
     <property name="border_width">12</property>
-    <property name="title" translatable="yes">Janela de mensagem do tipo WARNING</property>
+    <property name="title" translatable="yes">Janela de mensagem do tipo ERROR</property>
     <property name="type_hint">dialog</property>
-    <property name="message_type">warning</property>
+    <property name="message_type">error</property>
     <property name="buttons">ok</property>
-    <property name="text" translatable="yes">&lt;span foreground="red"&gt;Texto primário&lt;/span&gt; da janela de diálogo &lt;big&gt;WARNING&lt;/big&gt;</property>
+    <property name="text" translatable="yes">&lt;span foreground="red"&gt;Texto primário&lt;/span&gt; da janela de diálogo &lt;big&gt;ERROR&lt;/big&gt;</property>
     <property name="use_markup">True</property>
-    <property name="secondary_text" translatable="yes">&lt;span foreground="orange"&gt;Texto secundário&lt;/span&gt; da janela de diálogo &lt;b&gt;WARNING&lt;/b&gt;</property>
+    <property name="secondary_text" translatable="yes">&lt;span foreground="orange"&gt;Texto secundário&lt;/span&gt; da janela de diálogo &lt;b&gt;ERROR&lt;/b&gt;</property>
     <property name="secondary_use_markup">True</property>
     <child internal-child="vbox">
       <object class="GtkBox">
@@ -20,7 +20,9 @@
         <property name="spacing">6</property>
         <child internal-child="action_area">
           <object class="GtkButtonBox">
+            <property name="visible">True</property>
             <property name="can_focus">False</property>
+            <property name="homogeneous">True</property>
             <property name="layout_style">end</property>
           </object>
           <packing>
@@ -34,5 +36,5 @@
     <child type="titlebar">
       <placeholder/>
     </child>
-  </object>
+  </template>
 </interface>
