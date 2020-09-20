@@ -191,7 +191,7 @@ Exemplos de código podem ser vistos na pasta `src` deste repositório.
 - [Radio button](./src/widgets/radio-button)
 - [TargetEntry (drag and drop)](./src/drag-n-drop)
     
-    ![TargetEntry (drag and drop)](./docs/imgs/drag-and-drop/drag-and-drop.gif)
+![TargetEntry (drag and drop)](./docs/imgs/drag-and-drop/drag-and-drop.gif)
     
 - [GTK Entry](./src/widgets/entry):
     - [Auto completar ao digitar](./src/widgets/entry/autocomplete).

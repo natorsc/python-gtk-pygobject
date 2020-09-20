@@ -19,7 +19,7 @@
         <property name="border_width">12</property>
         <property name="orientation">vertical</property>
         <child>
-          <object class="GtkLabel" id="drop-area">
+          <object class="GtkLabel" id="drop_area">
             <property name="visible">True</property>
             <property name="can_focus">False</property>
             <property name="label" translatable="yes">Arraste e solte o arquivo aqui</property>

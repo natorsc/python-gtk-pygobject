@@ -15,29 +15,23 @@ class MainWindow(Gtk.ApplicationWindow):
         self.set_default_size(width=1366 / 2, height=768 / 2)
         self.set_default_icon_from_file(filename='../../../images/icons/icon.png')
 
-        vbox = Gtk.Box.new(orientation=Gtk.Orientation.VERTICAL, spacing=12)
+        vbox = Gtk.Box.new(orientation=Gtk.Orientation.HORIZONTAL, spacing=12)
         vbox.set_border_width(border_width=12)
         self.add(widget=vbox)
 
-        drop_area = DropArea()
-        vbox.pack_start(child=drop_area, expand=True, fill=True, padding=0)
-
-        self.show_all()
-
-
-class DropArea(Gtk.Label):
-    def __init__(self):
-        super().__init__()
-        self.set_label(str='Arraste e solte o arquivo aqui')
-        self.drag_dest_set(
+        drop_area = Gtk.Label.new(str='Arraste e solte o arquivo aqui')
+        drop_area.drag_dest_set(
             flags=Gtk.DestDefaults.ALL,
             targets=[],
             actions=Gdk.DragAction.COPY,
         )
-        self.drag_dest_add_image_targets()
-        self.drag_dest_add_text_targets()
-        self.drag_dest_add_uri_targets()
-        self.connect('drag-data-received', self.on_drag_data_received)
+        drop_area.drag_dest_add_image_targets()
+        drop_area.drag_dest_add_text_targets()
+        drop_area.drag_dest_add_uri_targets()
+        drop_area.connect('drag-data-received', self.on_drag_data_received)
+        vbox.pack_start(child=drop_area, expand=True, fill=True, padding=0)
+
+        self.show_all()
 
     def on_drag_data_received(self, widget, context, x, y, data, info, time):
         print('ARGS:')
