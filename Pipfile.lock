@@ -25,10 +25,10 @@
         },
         "pygobject": {
             "hashes": [
-                "sha256:012a589aec687bfa809a1ff9f5cd775dc7f6fcec1a6bc7fe88e1002a68f8ba34"
+                "sha256:051b950f509f2e9f125add96c1493bde987c527f7a0c15a1f7b69d6d1c3cd8e6"
             ],
             "index": "pypi",
-            "version": "==3.36.1"
+            "version": "==3.38.0"
         },
         "pygobject-stubs": {
             "hashes": [
@@ -78,11 +78,11 @@
         },
         "isort": {
             "hashes": [
-                "sha256:92533892058de0306e51c88f22ece002a209dc8e80288aa3cec6d443060d584f",
-                "sha256:a200d47b7ee8b7f7d0a9646650160c4a51b6a91a9413fd31b1da2c4de789f5d3"
+                "sha256:171c5f365791073426b5ed3a156c2081a47f88c329161fd28228ff2da4c97ddb",
+                "sha256:ba91218eee31f1e300ecc079ef0c524cea3fc41bfbb979cbdf5fd3a889e3cfed"
             ],
             "markers": "python_version >= '3.6' and python_version < '4.0'",
-            "version": "==5.5.1"
+            "version": "==5.5.2"
         },
         "lazy-object-proxy": {
             "hashes": [
@@ -135,10 +135,10 @@
         },
         "pyinstaller-hooks-contrib": {
             "hashes": [
-                "sha256:5b6e06ba6072499189f5b8e1623d5f0414962941aac370ee4f842de25455be5b",
-                "sha256:74936d044f319cd7a9dca322b46a818fcb6e2af1c67af62e8a6a3121eb2863d2"
+                "sha256:4935b2b48c2a38ab4f8f80d77147781642bff7d31748fca07d26dbdeeefb560d",
+                "sha256:71982f32883309e89675bfd10093cdcaca4f894bce11a91a34559b8224cf5e63"
             ],
-            "version": "==2020.7"
+            "version": "==2020.8"
         },
         "pylint": {
             "hashes": [
