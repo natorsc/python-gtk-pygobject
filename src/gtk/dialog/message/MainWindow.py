@@ -9,16 +9,17 @@ from gi.repository import Gio, Gtk
 
 
 class MainWindow(Gtk.ApplicationWindow):
+
     def __init__(self, **kwargs):
         super().__init__(**kwargs)
 
         self.set_title(title='Janela de diálogo do tipo MessageDialog.')
         self.set_default_size(width=1366 / 2, height=768 / 2)
         self.set_position(position=Gtk.WindowPosition.CENTER)
-        self.set_default_icon_from_file(filename='../../../../images/icons/icon.png')
+        self.set_default_icon_from_file(filename='../../../assets/icons/icon.png')
 
         vbox = Gtk.Box.new(orientation=Gtk.Orientation.VERTICAL, spacing=10)
-        vbox.set_border_width(border_width=10)
+        vbox.set_border_width(border_width=12)
         self.add(widget=vbox)
 
         button_info = Gtk.Button.new_with_label(label='Abrir janela de mensagem INFO')
@@ -80,8 +81,10 @@ class MainWindow(Gtk.ApplicationWindow):
 
 
 class MessageDialogInfo(Gtk.MessageDialog):
+
     def __init__(self):
         super().__init__()
+
         self.props.message_type = Gtk.MessageType.INFO
         self.set_title(title='Janela de mensagem do tipo INFO')
         self.set_markup(
@@ -97,8 +100,10 @@ class MessageDialogInfo(Gtk.MessageDialog):
 
 
 class MessageDialogWarning(Gtk.MessageDialog):
+
     def __init__(self):
         super().__init__()
+
         self.props.message_type = Gtk.MessageType.WARNING
         self.set_title(title='Janela de mensagem do tipo WARNING')
         self.set_markup(
@@ -114,8 +119,10 @@ class MessageDialogWarning(Gtk.MessageDialog):
 
 
 class MessageDialogQuestion(Gtk.MessageDialog):
+
     def __init__(self):
         super().__init__()
+
         self.props.message_type = Gtk.MessageType.QUESTION
         self.set_title(title='Janela de mensagem do tipo QUESTION')
         self.set_markup(
@@ -144,8 +151,10 @@ class MessageDialogQuestion(Gtk.MessageDialog):
 
 
 class MessageDialogError(Gtk.MessageDialog):
+
     def __init__(self):
         super().__init__()
+
         self.props.message_type = Gtk.MessageType.ERROR
         self.set_title(title='Janela de mensagem do tipo ERROR')
         self.set_markup(
@@ -161,8 +170,10 @@ class MessageDialogError(Gtk.MessageDialog):
 
 
 class MessageDialogOther(Gtk.MessageDialog):
+
     def __init__(self):
         super().__init__()
+
         self.props.message_type = Gtk.MessageType.OTHER
         self.set_title(title='Janela de mensagem do tipo OTHER')
         self.set_markup(
@@ -192,6 +203,7 @@ class MessageDialogOther(Gtk.MessageDialog):
 
 
 class Application(Gtk.Application):
+
     def __init__(self):
         super().__init__(application_id='br.natorsc.Exemplo',
                          flags=Gio.ApplicationFlags.FLAGS_NONE)

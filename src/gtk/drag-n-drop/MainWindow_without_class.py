@@ -9,11 +9,14 @@ from gi.repository import Gio, Gtk, Gdk
 
 
 class MainWindow(Gtk.ApplicationWindow):
+
     def __init__(self, **kwargs):
         super().__init__(**kwargs)
+
         self.set_title(title='Drag and Drop')
         self.set_default_size(width=1366 / 2, height=768 / 2)
-        self.set_default_icon_from_file(filename='../../../images/icons/icon.png')
+        self.set_position(position=Gtk.WindowPosition.CENTER)
+        self.set_default_icon_from_file(filename='../../assets/icons/icon.png')
 
         vbox = Gtk.Box.new(orientation=Gtk.Orientation.HORIZONTAL, spacing=12)
         vbox.set_border_width(border_width=12)

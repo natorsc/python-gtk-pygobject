@@ -18,7 +18,7 @@ class MainWindow(Gtk.ApplicationWindow):
         self.set_title(title='Grid Layout')
         self.set_default_size(width=1366 / 2, height=768 / 2)
         self.set_position(position=Gtk.WindowPosition.CENTER)
-        self.set_default_icon_from_file(filename='../../../../images/icons/icon.png')
+        self.set_default_icon_from_file(filename='../../../assets/icons/icon.png')
 
 
         grid = Gtk.Grid.new()

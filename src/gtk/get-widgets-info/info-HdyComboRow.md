@@ -1,8 +1,8 @@
 # Informações do widget HdyComboRow
 
-**Versão do GTK**: 3.24.10 - 3.24.10
+**Versão do GTK**: 3.24.23 - 3.24.23
 
-**Versão do PyGObject**: (3, 32, 2)
+**Versão do PyGObject**: (3, 38, 0)
 
 # Propriedades:
 

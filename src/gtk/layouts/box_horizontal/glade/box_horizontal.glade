@@ -7,7 +7,7 @@
         <property name="default_width">683</property>
         <property name="default_height">384</property>
         <property name="title" translatable="yes">Box layout horizontal</property>
-        <property name="icon">../../../../../images/icons/icon.png</property>
+        <property name="icon">../../../../assets/icons/icon.png</property>
         <child>
             <placeholder/>
         </child>

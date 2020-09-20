@@ -21,6 +21,7 @@ class DialogSaveFile(Gtk.FileChooserDialog):
 
     def __init__(self):
         super().__init__()
+
         # Nome inicial do arquivo.
         self.set_current_name(name='novo-arquivo.txt')
         # Pasta onde o diálogo será aberto.
@@ -58,7 +59,4 @@ class DialogSaveFile(Gtk.FileChooserDialog):
 
 
 if __name__ == '__main__':
-    dialog = DialogSaveFile()
-    response = dialog.run()
-    print(response)
-    dialog.destroy()
+    pass

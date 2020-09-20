@@ -14,7 +14,7 @@ class MainWindow(Gtk.ApplicationWindow):
         self.set_title(title='Overlay Layout')
         self.set_default_size(width=1366 / 2, height=768 / 2)
         self.set_position(position=Gtk.WindowPosition.CENTER)
-        self.set_default_icon_from_file(filename='../../../../images/icons/icon.png')
+        self.set_default_icon_from_file(filename='../../../assets/icons/icon.png')
         self.set_border_width(border_width=12)
 
         botao1 = Gtk.Button.new_with_label(label='Botão 1')

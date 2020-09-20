@@ -16,12 +16,9 @@ class CustomDialog(Gtk.Dialog):
     def __init__(self):
         super().__init__()
 
-
     def get_entry_text(self):
         return self.entry.get_text()
 
 
 if __name__ == '__main__':
-    custom_dialog = CustomDialog(parent=None)
-    response = custom_dialog.run()
-    print(response)
+    pass

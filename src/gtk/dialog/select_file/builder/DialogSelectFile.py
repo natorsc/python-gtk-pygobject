@@ -17,6 +17,7 @@ class DialogSelectFile(Gtk.FileChooserDialog):
 
     def __init__(self, select_multiple):
         super().__init__()
+
         self.select_multiple = select_multiple
 
         # Defininido se a seleção será multipla ou não
@@ -59,7 +60,4 @@ class DialogSelectFile(Gtk.FileChooserDialog):
 
 
 if __name__ == '__main__':
-    dialog = DialogSelectFile()
-    response = dialog.run()
-    print(response)
-    dialog.destroy()
+    pass
