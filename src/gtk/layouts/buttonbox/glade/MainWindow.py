@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-"""Contêiner do tipo ActionBar Layout."""
+"""Contêiner do tipo ButtonBox Layout."""
 
 import gi
 
