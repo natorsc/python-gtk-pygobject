@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-"""Gerando executáveis com Cx_freeze."""
+"""Gerando um executável com Cx_Freeze."""
 import sys
 
 import gi
@@ -13,7 +13,7 @@ class MainWindow(Gtk.ApplicationWindow):
     def __init__(self, **kwargs):
         super().__init__(**kwargs)
 
-        self.set_title(title='Gerando executáveis com Cx_freeze.')
+        self.set_title(title='Gerando um executável com Cx_Freeze')
         self.set_default_size(width=1366 / 2, height=768 / 2)
         self.set_position(position=Gtk.WindowPosition.CENTER)
         self.set_default_icon_from_file(filename='./icons/icon.png')

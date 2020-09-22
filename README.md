@@ -80,6 +80,8 @@ Exemplos de código podem ser vistos na pasta `src` deste repositório.
 * [Lendo arquivos interface do Gnome Glade](https://github.com/natorsc/gui-python-gtk/tree/master/src/main-window/glade).
 * [Criando a janela com Python](https://github.com/natorsc/gui-python-gtk/tree/master/src/main-window).
 
+![Python e GTK Janela principal](https://codigoninja.dev/media/git/pygobject/python-gtk-mainwindow.png)
+
 ### Layouts
 
 * [Actionbar com Gnome Builder](https://github.com/natorsc/gui-python-gtk/tree/master/src/gtk/layouts/actionbar/builder).
@@ -224,45 +226,43 @@ Exemplos de código podem ser vistos na pasta `src` deste repositório.
 
 ![GTK drag and drop (arrastar e soltar)](https://codigoninja.dev/media/git/pygobject/drag-and-drop.png)
 
----
-
-# Falta revisar
-
 ### Signals e slots
 
 * [Com Gnome Builder](https://github.com/natorsc/gui-python-gtk/tree/master/src/signals-and-slots/builder).
 * [Com Gnome Glade](https://github.com/natorsc/gui-python-gtk/tree/master/src/signals-and-slots/glade).
 * [Com Python](https://github.com/natorsc/gui-python-gtk/tree/master/src/signals-and-slots).
 
+![GTK signals e slots](https://codigoninja.dev/media/git/pygobject/signal-and-slots.png)
+
 ### Menus
 
-* [GTK Menu](https://github.com/natorsc/gui-python-gtk/tree/master/src/menus/menu).
+* [GTK Menu com Gnome Builder](https://github.com/natorsc/gui-python-gtk/tree/master/src/menus/menu/builder).
+* [GTK Menu com Gnome Glade](https://github.com/natorsc/gui-python-gtk/tree/master/src/menus/menu/glade).
+* [GTK Menu com Python](https://github.com/natorsc/gui-python-gtk/tree/master/src/menus/menu).
 
-    
+![GTK menu](https://codigoninja.dev/media/git/pygobject/menu.gif)
 
-![GTK menu](./docs/imgs/menus/menu.png)
+* [GTK menu Popover com Gnome Builder](https://github.com/natorsc/gui-python-gtk/tree/master/src/menus/popover/builder).
+* [GTK menu Popover com Gnome Glade](https://github.com/natorsc/gui-python-gtk/tree/master/src/menus/popover/glade).
+* [GTK menu Popover com Python](https://github.com/natorsc/gui-python-gtk/tree/master/src/menus/popover). 
 
-    
+![GTK menu popover](https://codigoninja.dev/media/git/pygobject/menu-popover.gif)   
 
-* [GTK Popover](https://github.com/natorsc/gui-python-gtk/tree/master/src/menus/popover).
+* [GTK MenuBar com Gnome Builder](https://github.com/natorsc/gui-python-gtk/tree/master/src/menus/menubar/builder).
+* [GTK MenuBar com Gnome Glade](https://github.com/natorsc/gui-python-gtk/tree/master/src/menus/menubar/glade).
+* [GTK MenuBar com Python](https://github.com/natorsc/gui-python-gtk/tree/master/src/menus/menubar).
 
-    
+![GTK menubar](https://codigoninja.dev/media/git/pygobject/menubar.gif)
 
-![GTK popover](./docs/imgs/menus/popover.png)
+* [GTK menu ToolBar com Gnome Builder](https://github.com/natorsc/gui-python-gtk/tree/master/src/menus/toolbar/builder).
+* [GTK menu ToolBar com Gnome Glade](https://github.com/natorsc/gui-python-gtk/tree/master/src/menus/toolbar/glade).
+* [GTK menu ToolBar com Python](https://github.com/natorsc/gui-python-gtk/tree/master/src/menus/toolbar/builder).
 
-    
+![GTK menu toolbar](https://codigoninja.dev/media/git/pygobject/menu-toolbar.png)
 
-* [GTK MenuBar](https://github.com/natorsc/gui-python-gtk/tree/master/src/menus/menubar).
+---
 
-    
-
-![GTK menubar](./docs/imgs/menus/menubar.png)
-
-* [GTK ToolBar](https://github.com/natorsc/gui-python-gtk/tree/master/src/menus/toolbar).
-
-    
-
-![GTK toolbar](./docs/imgs/menus/toolbar.png)
+# Revisar, atualizar e corrigir
 
 ### Style
 
@@ -274,45 +274,23 @@ Exemplos de código podem ser vistos na pasta `src` deste repositório.
 
 * [Carregando uma arquivo css](./docs/style-load-css-file.md)
 
-    
-
-    
-
 ![Carregando uma arquivo css](./docs/imgs/style/python-load-custom-css-wayland.png)
-
-    
 
 * [Adicionar classe a um widget](./docs/style-add-class.md)
 
-    
-
-    
 
 ![Adicionar classe a um widget](./docs/imgs/style/widget-class.png)
 
-    
-
 * [Adicionar nome a um widget](./docs/style-add-name.md)
 
-    
-
-    
 
 ![Adicionar nome a um widget](./docs/imgs/style/widget-name.png)
 
 * [Ativando e desativando o dark mode (modo escuro)](./docs/style-dark-mode.md).
 
-    
-
-    
-
 ![Ativando e desativando o dark mode (modo escuro)](./docs/imgs/style/dark-mode.gif)
 
 * [Utilizando ícones standard e symbolic](https://github.com/natorsc/gui-python-gtk/tree/master/src/gnome-icons).
-
-    
-
-    
 
 ![Utilizando ícones standard e symbolic](./docs/imgs/icons/icons-standard-symbolic.png)
 
@@ -321,54 +299,25 @@ Exemplos de código podem ser vistos na pasta `src` deste repositório.
 * [Radio button](https://github.com/natorsc/gui-python-gtk/tree/master/src/widgets/radio-button)
 * [TargetEntry (drag and drop)](https://github.com/natorsc/gui-python-gtk/tree/master/src/drag-n-drop)
 
-    
-
-    
-
 * [GTK Entry](https://github.com/natorsc/gui-python-gtk/tree/master/src/widgets/entry):
     - [Auto completar ao digitar](https://github.com/natorsc/gui-python-gtk/tree/master/src/widgets/entry/autocomplete).
 
-        
-        
-
 ![Auto completar ao digitar](./docs/imgs/widgets/entry/autocomplete.gif)
-
-        
 
     - [Pesquisar ao digitar](https://github.com/natorsc/gui-python-gtk/tree/master/src/widgets/entry/search).
 
-    
-
-        
-
 ![Pesquisar ao digitar](./docs/imgs/widgets/entry/search.gif)
-
-        
 
 * GTK TreeView:
     - [Ordenando itens ao clicar no cabeçalho da coluna](https://github.com/natorsc/gui-python-gtk/tree/master/src/widgets/treeview/sort).
 
-        
-        
-
 ![Ordenando itens ao clicar no cabeçalho da coluna](./docs/imgs/widgets/treeview/sort.gif)
-
-        
 
     - [Realizado a edição do valor na celular](https://github.com/natorsc/gui-python-gtk/tree/master/src/widgets/treeview/editable).
 
-        
-        
-
 ![Realizado a edição do valor na celular](./docs/imgs/widgets/treeview/editable.gif)
 
-    
-
     - [Utilizando filtro](https://github.com/natorsc/gui-python-gtk/tree/master/src/widgets/treeview/filter).
-
-    
-
-        
 
 ![Utilizando filtro](./docs/imgs/widgets/treeview/filter.gif)
 

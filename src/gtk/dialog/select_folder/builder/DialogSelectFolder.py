@@ -8,7 +8,7 @@ gi.require_version(namespace='Gtk', version='3.0')
 from gi.repository import Gtk
 
 
-@Gtk.Template(filename='./DialogSelectFolder.glade')
+@Gtk.Template(filename='./DialogSelectFolder.ui')
 class DialogSelectFolder(Gtk.FileChooserDialog):
     __gtype_name__ = 'DialogSelectFolder'
 

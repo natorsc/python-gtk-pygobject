@@ -8,6 +8,7 @@ from gi.repository import Gtk
 
 
 class Handler:
+
     def __init__(self):
         flowbox = builder.get_object(name='flowbox')
 
@@ -24,4 +25,5 @@ if __name__ == '__main__':
     win = builder.get_object(name='MainWindow')
     win.connect('destroy', Gtk.main_quit)
     win.show_all()
+
     Gtk.main()

@@ -8,6 +8,7 @@ from gi.repository import Gtk
 
 
 class Handler:
+
     def __init__(self):
         self.fixed = builder.get_object(name='fixed')
 
@@ -25,4 +26,5 @@ if __name__ == '__main__':
     win = builder.get_object(name='MainWindow')
     win.connect('destroy', Gtk.main_quit)
     win.show_all()
+
     Gtk.main()

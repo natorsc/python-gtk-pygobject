@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<!-- Generated with glade 3.38.0 -->
 <interface>
-    <requires lib="gtk+" version="3.20"/>
+  <requires lib="gtk+" version="3.24"/>
     <template class="MainWindow" parent="GtkApplicationWindow">
         <property name="can_focus">False</property>
         <property name="default_width">683</property>
         <property name="default_height">384</property>
-        <property name="title" translatable="yes">Gerado com Cx_freeze</property>
+        <property name="title" translatable="yes">Gerando um executável com Cx_Freeze</property>
         <property name="icon">./icons/icon.png</property>
         <child>
             <placeholder/>

@@ -9,6 +9,9 @@ from gi.repository import Gtk
 
 class Handler:
 
+    def __init__(self):
+        pass
+
     @staticmethod
     def _send_mail(widget):
         print('Você clicou no botão que tem o icone de enviar/receber email')
@@ -30,4 +33,5 @@ if __name__ == '__main__':
     win = builder.get_object(name='MainWindow')
     win.connect('destroy', Gtk.main_quit)
     win.show_all()
+
     Gtk.main()

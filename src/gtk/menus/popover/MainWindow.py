@@ -1,15 +1,19 @@
 # -*- coding: utf-8 -*-
-"""Menu popover."""
+"""GTK menu popover."""
+
+import sys
 
 import gi
 
 gi.require_version(namespace='Gtk', version='3.0')
-from gi.repository import Gtk, Gdk
+from gi.repository import Gio, Gtk, Gdk
 
 
 class MainWindow(Gtk.ApplicationWindow):
-    def __init__(self):
-        super().__init__()
+
+    def __init__(self, **kwargs):
+        super().__init__(**kwargs)
+
         self.set_title(title='Menu popover')
         self.set_default_size(width=1366 / 2, height=768 / 2)
         self.set_position(position=Gtk.WindowPosition.CENTER)
@@ -31,7 +35,7 @@ class MainWindow(Gtk.ApplicationWindow):
         # Botão que irá conter o popover.
         menu_button = Gtk.MenuButton.new()
         menu_button.add(widget=menu_button_image)
-        menu_button.connect('clicked', self._show_menu)
+        menu_button.connect('clicked', self.show_menu)
         # Adicionando o botão no headerbar.
         headerbar.pack_end(child=menu_button)
 
@@ -46,7 +50,7 @@ class MainWindow(Gtk.ApplicationWindow):
 
         # Utilizando `Gtk.EventBox.new()`.
         item1_eventbox = Gtk.EventBox.new()
-        item1_eventbox.connect('button-press-event', self._event_box_callback)
+        item1_eventbox.connect('button-press-event', self.event_box_callback)
         item1 = Gtk.Label.new(str='Item 1')
         item1_eventbox.add(item1)
         vbox.pack_start(child=item1_eventbox, expand=True, fill=True, padding=0)
@@ -55,7 +59,7 @@ class MainWindow(Gtk.ApplicationWindow):
         item2 = Gtk.Label.new(str='Item 2')
         item2.set_has_window(True)
         item2.set_events(Gdk.EventMask.BUTTON_PRESS_MASK)
-        item2.connect('button-press-event', self._event_button_press)
+        item2.connect('button-press-event', self.event_button_press)
         vbox.pack_start(child=item2, expand=True, fill=True, padding=0)
 
         # Separador.
@@ -65,24 +69,27 @@ class MainWindow(Gtk.ApplicationWindow):
         # Utilizando `ModelButton()`.
         item3 = Gtk.ModelButton.new()
         item3.set_label(label='Sobre')
-        item3.connect('clicked', self._about)
+        item3.connect('clicked', self.about)
         vbox.pack_start(child=item3, expand=True, fill=True, padding=0)
 
-    def _show_menu(self, widget):
+        self.show_all()
+
+    def show_menu(self, widget):
         self.menu.show_all()
 
-    def _event_box_callback(self, GtkEventBox, GdkEventButton):
+    def event_box_callback(self, GtkEventBox, GdkEventButton):
         widget = GtkEventBox.get_child()
         print(widget.get_label())
         self.menu.popdown()
 
-    def _event_button_press(self, widget, GdkEventButton):
+    def event_button_press(self, widget, GdkEventButton):
         print(widget.get_label())
         self.menu.popdown()
 
-    def _about(self, widget):
+    def about(self, widget):
         self.menu.popdown()
         about = Gtk.AboutDialog.new()
+        about.set_transient_for(parent=self)
         about.set_authors(authors=['Renato Cruz'])
         about.set_comments(
             comments='Lorem ipsum dolor sit amet, consectetur adipiscing elit, '
@@ -94,8 +101,25 @@ class MainWindow(Gtk.ApplicationWindow):
         about.destroy()
 
 
+class Application(Gtk.Application):
+
+    def __init__(self):
+        super().__init__(application_id='br.natorsc.Exemplo',
+                         flags=Gio.ApplicationFlags.FLAGS_NONE)
+
+    def do_startup(self):
+        Gtk.Application.do_startup(self)
+
+    def do_activate(self):
+        win = self.props.active_window
+        if not win:
+            win = MainWindow(application=self)
+        win.present()
+
+    def do_shutdown(self):
+        Gtk.Application.do_shutdown(self)
+
+
 if __name__ == '__main__':
-    win = MainWindow()
-    win.connect('destroy', Gtk.main_quit)
-    win.show_all()
-    Gtk.main()
+    app = Application()
+    app.run(sys.argv)

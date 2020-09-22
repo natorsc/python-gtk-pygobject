@@ -8,6 +8,7 @@ from gi.repository import Gtk, Gdk
 
 
 class Handler:
+
     def __init__(self):
         drop_area = builder.get_object(name='drop_area')
         drop_area.drag_dest_set(
@@ -51,4 +52,5 @@ if __name__ == '__main__':
     win = builder.get_object(name='MainWindow')
     win.connect('destroy', Gtk.main_quit)
     win.show_all()
+
     Gtk.main()

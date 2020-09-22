@@ -20,7 +20,7 @@ gi.require_version(namespace='Gtk', version='3.0')
 from gi.repository import Gtk
 
 
-def _on_button_clicked(button):
+def on_button_clicked(button):
     """Método é chamado quando o botão da interface é pressionado.
 
     Caso haja algum texto/caractere no campo de entrada de texto o
@@ -37,22 +37,23 @@ def _on_button_clicked(button):
 
 
 if __name__ == '__main__':
+    # Dicionário para registrar os métodos.
+    # Nome da chave deve ser o mesmo que foi criado no arquivo de interface.
+    handlers = {
+        'on_button_clicked': on_button_clicked
+    }
+
     builder = Gtk.Builder.new()
     builder.add_from_file(filename='window-with-signal.glade')
+    # Conectando os sinais da interface com os métodos criados no Python.
+    builder.connect_signals(obj_or_map=handlers)
 
     # Acessando os widgets do arquivo de inteface.
     label = builder.get_object(name='label')
     entry = builder.get_object(name='entry')
 
-    # Dicionário para registrar os métodos.
-    # Nome da chave deve ser o mesmo que foi criado no arquivo de interface.
-    handlers = {
-        '_on_button_clicked': _on_button_clicked
-    }
-
-    # Conectando os sinais da interface com os métodos criados no Python.
-    builder.connect_signals(obj_or_map=handlers)
     win = builder.get_object(name='MainWindow')
     win.connect('destroy', Gtk.main_quit)
     win.show_all()
+
     Gtk.main()

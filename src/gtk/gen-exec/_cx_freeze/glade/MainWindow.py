@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-"""."""
+"""Gerando um executável com Cx_Freeze."""
 
 import gi
 
@@ -8,6 +8,7 @@ from gi.repository import Gtk
 
 
 class Handler:
+
     def __init__(self):
 
         # Acessando widgets do arquivo de interface.

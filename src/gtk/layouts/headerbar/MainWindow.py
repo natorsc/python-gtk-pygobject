@@ -23,7 +23,6 @@ class MainWindow(Gtk.ApplicationWindow):
         self.set_default_icon_from_file(filename='../../../assets/icons/icon.png')
         self.set_border_width(border_width=12)
 
-
         headerbar = Gtk.HeaderBar.new()
         # Definindo o título que será exibido na barra.
         # O titulo definido aqui sobrescreve o titulo da janela principal.

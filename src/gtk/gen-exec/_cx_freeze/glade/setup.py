@@ -10,7 +10,7 @@ base = None
 
 build_exe_options = {
     'excludes': ['tkinter', 'wx', 'email', 'pydoc_data', 'curses'],
-    'include_files': ['icons'],
+    'include_files': ['icons', 'MainWindow.glade'],
     'packages': ['gi'],
 }
 

@@ -12,7 +12,7 @@ gi.require_version(namespace='Gtk', version='3.0')
 from gi.repository import Gtk
 
 
-@Gtk.Template(filename='./DialogSaveFile.glade')
+@Gtk.Template(filename='./DialogSaveFile.ui')
 class DialogSaveFile(Gtk.FileChooserDialog):
     __gtype_name__ = 'DialogSaveFile'
 

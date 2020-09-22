@@ -10,7 +10,7 @@ from gi.repository import Gio, Gtk
 from DialogSelectFile import DialogSelectFile
 
 
-@Gtk.Template(filename='./MainWindow.glade')
+@Gtk.Template(filename='./MainWindow.ui')
 class MainWindow(Gtk.ApplicationWindow):
     __gtype_name__ = 'MainWindow'
 
