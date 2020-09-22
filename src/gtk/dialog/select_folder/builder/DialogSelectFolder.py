@@ -8,7 +8,7 @@ gi.require_version(namespace='Gtk', version='3.0')
 from gi.repository import Gtk
 
 
-@Gtk.Template(filename='./DialogSelectFolder.glade')
+@Gtk.Template(filename='./DialogSelectFolder.ui')
 class DialogSelectFolder(Gtk.FileChooserDialog):
     __gtype_name__ = 'DialogSelectFolder'
 
@@ -17,6 +17,7 @@ class DialogSelectFolder(Gtk.FileChooserDialog):
 
     def __init__(self, select_multiple):
         super().__init__()
+
         self.select_multiple = select_multiple
 
         # Defininido se a seleção será multipla ou não
@@ -41,7 +42,4 @@ class DialogSelectFolder(Gtk.FileChooserDialog):
 
 
 if __name__ == '__main__':
-    dialog = DialogSelectFolder()
-    response = dialog.run()
-    print(response)
-    dialog.destroy()
+    pass

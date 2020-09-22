@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-"""Gtk popover menu."""
+"""GTK menu popover."""
 
 import gi
 
@@ -8,13 +8,17 @@ from gi.repository import Gtk, GdkPixbuf
 
 
 class Handler:
-    logo = GdkPixbuf.Pixbuf.new_from_file(filename='../../../../../images/icons/icon.png')
+    logo = GdkPixbuf.Pixbuf.new_from_file(filename='../../../../assets/icons/icon.png')
+
+    def __init__(self):
+        pass
 
     def menu_item_clicked(self, widget):
         print(widget.props.text)
 
     def about(self, widget):
         about = Gtk.AboutDialog.new()
+        about.set_transient_for(parent=win)
         about.set_logo(logo=self.logo)
         about.set_authors(authors=('Renato Cruz',))
         about.set_comments(

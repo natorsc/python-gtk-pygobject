@@ -8,6 +8,7 @@ from gi.repository import Gtk
 
 
 class Handler:
+
     def __init__(self):
         # Acessando widgets do arquivo de interface.
         self.label = builder.get_object(name='label')

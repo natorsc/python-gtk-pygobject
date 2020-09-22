@@ -7,10 +7,7 @@ import sqlite3
 class ConnectDB:
 
     def __init__(self):
-        if __name__ == '__main__':
-            self.con = sqlite3.connect('../../../files/databases/gtk/devdb.sqlite3')
-        else:
-            self.con = sqlite3.connect('../../../files/assets/databases/tkinter/db.sqlite3')
+        self.con = sqlite3.connect('../../data/db.sqlite3')
 
         # Criando o cursor que irá executar os comandos SQL (instruções DML, DDL, etc).
         self.cur = self.con.cursor()

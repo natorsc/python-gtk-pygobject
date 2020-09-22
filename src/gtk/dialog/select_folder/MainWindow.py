@@ -10,6 +10,7 @@ from gi.repository import Gio, Gtk
 
 
 class MainWindow(Gtk.ApplicationWindow):
+
     def __init__(self, **kwargs):
         super().__init__(**kwargs)
 
@@ -53,6 +54,7 @@ class DialogSelectFile(Gtk.FileChooserDialog):
 
     def __init__(self, select_multiple):
         super().__init__()
+
         self.select_multiple = select_multiple
 
         self.set_title(title='Selecionar pasta')
@@ -98,6 +100,7 @@ class DialogSelectFile(Gtk.FileChooserDialog):
 
 
 class Application(Gtk.Application):
+
     def __init__(self):
         super().__init__(application_id='br.natorsc.Exemplo',
                          flags=Gio.ApplicationFlags.FLAGS_NONE)

@@ -14,6 +14,7 @@ from gi.repository import Gio, Gtk
 
 
 class MainWindow(Gtk.ApplicationWindow):
+
     def __init__(self, **kwargs):
         super().__init__(**kwargs)
 
@@ -53,6 +54,7 @@ class DialogSaveFile(Gtk.FileChooserDialog):
 
     def __init__(self):
         super().__init__()
+
         self.set_title(title='Salvar Arquivo')
         self.set_modal(modal=True)
         # Tipo de ação que o dialogo irá executar.
@@ -114,6 +116,7 @@ class DialogSaveFile(Gtk.FileChooserDialog):
 
 
 class Application(Gtk.Application):
+
     def __init__(self):
         super().__init__(application_id='br.natorsc.Exemplo',
                          flags=Gio.ApplicationFlags.FLAGS_NONE)
