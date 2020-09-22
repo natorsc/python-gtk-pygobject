@@ -18,15 +18,16 @@ from gi.repository import Gtk
 
 
 class Handler:
+
     def __init__(self):
         # Acessando widgets do arquivo de interface.
         self.label = builder.get_object(name='label')
         self.entry = builder.get_object(name='entry')
 
         button = builder.get_object(name='button')
-        button.connect('clicked', self._on_button_clicked)
+        button.connect('clicked', self.on_button_clicked)
 
-    def _on_button_clicked(self, button):
+    def on_button_clicked(self, button):
         """Método é chamado quando o botão da interface é pressionado.
 
         Caso haja algum texto/caractere no campo de entrada de texto o
@@ -45,11 +46,11 @@ class Handler:
 if __name__ == '__main__':
     builder = Gtk.Builder.new()
     builder.add_from_file(filename='window-without-signal.glade')
-
     # Conectando os sinais da interface com os métodos criados no Python.
     builder.connect_signals(obj_or_map=Handler())
 
     win = builder.get_object(name='MainWindow')
     win.connect('destroy', Gtk.main_quit)
     win.show_all()
+
     Gtk.main()

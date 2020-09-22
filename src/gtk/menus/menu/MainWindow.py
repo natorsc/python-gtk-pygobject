@@ -1,19 +1,23 @@
 # -*- coding: utf-8 -*-
 """GTK Menu."""
 
+import sys
+
 import gi
 
 gi.require_version(namespace='Gtk', version='3.0')
-from gi.repository import Gtk
+from gi.repository import Gio, Gtk
 
 
 class MainWindow(Gtk.ApplicationWindow):
-    def __init__(self):
-        super().__init__()
+
+    def __init__(self, **kwargs):
+        super().__init__(**kwargs)
+
         self.set_title(title='GTK Menu')
         self.set_default_size(width=1366 / 2, height=768 / 2)
         self.set_position(position=Gtk.WindowPosition.CENTER)
-        self.set_default_icon_from_file(filename='../../../../images/icons/icon.png')
+        self.set_default_icon_from_file(filename='../../../assets/icons/icon.png')
 
         # Criando headerbar.
         headerbar = Gtk.HeaderBar.new()
@@ -36,6 +40,7 @@ class MainWindow(Gtk.ApplicationWindow):
 
         # Criando o menu.
         menu = Gtk.Menu.new()
+        menu.props.rect_anchor_dx = -30
         menu.set_border_width(border_width=6)
         menu_button.set_popup(menu=menu)
 
@@ -60,11 +65,14 @@ class MainWindow(Gtk.ApplicationWindow):
         # Construindo o menu.
         menu.show_all()
 
+        self.show_all()
+
     def menu_item_clicked(self, widget):
         print(widget.get_label())
 
     def about(self, widget):
         about = Gtk.AboutDialog.new()
+        about.set_transient_for(parent=self)
         about.set_authors(authors=['Renato Cruz'])
         about.set_comments(
             comments='Lorem ipsum dolor sit amet, consectetur adipiscing elit, '
@@ -76,8 +84,25 @@ class MainWindow(Gtk.ApplicationWindow):
         about.destroy()
 
 
+class Application(Gtk.Application):
+
+    def __init__(self):
+        super().__init__(application_id='br.natorsc.Exemplo',
+                         flags=Gio.ApplicationFlags.FLAGS_NONE)
+
+    def do_startup(self):
+        Gtk.Application.do_startup(self)
+
+    def do_activate(self):
+        win = self.props.active_window
+        if not win:
+            win = MainWindow(application=self)
+        win.present()
+
+    def do_shutdown(self):
+        Gtk.Application.do_shutdown(self)
+
+
 if __name__ == '__main__':
-    win = MainWindow()
-    win.connect('destroy', Gtk.main_quit)
-    win.show_all()
-    Gtk.main()
+    app = Application()
+    app.run(sys.argv)

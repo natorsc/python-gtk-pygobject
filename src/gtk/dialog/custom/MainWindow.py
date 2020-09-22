@@ -9,6 +9,7 @@ from gi.repository import Gio, Gtk
 
 
 class MainWindow(Gtk.ApplicationWindow):
+
     def __init__(self, **kwargs):
         super().__init__(**kwargs)
 
@@ -16,7 +17,7 @@ class MainWindow(Gtk.ApplicationWindow):
         self.set_title(title='Janela de diálogo personalizada')
         self.set_default_size(width=1366 / 2, height=768 / 2)
         self.set_position(position=Gtk.WindowPosition.CENTER)
-        self.set_default_icon_from_file(filename='../../../../images/icons/icon.png')
+        self.set_default_icon_from_file(filename='../../../assets/icons/icon.png')
 
         vbox = Gtk.Box.new(orientation=Gtk.Orientation.VERTICAL, spacing=6)
         vbox.set_border_width(border_width=12)
@@ -61,6 +62,7 @@ class MainWindow(Gtk.ApplicationWindow):
 
 
 class CustomDialog(Gtk.Dialog):
+
     def __init__(self):
         super().__init__()
         self.set_title(title='Janela de dialogo personalizada')
@@ -106,6 +108,7 @@ class CustomDialog(Gtk.Dialog):
 
 
 class Application(Gtk.Application):
+
     def __init__(self):
         super().__init__(application_id='br.natorsc.Exemplo',
                          flags=Gio.ApplicationFlags.FLAGS_NONE)

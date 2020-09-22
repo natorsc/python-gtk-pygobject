@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Generated with glade 3.38.0 -->
+<interface>
+  <requires lib="gtk+" version="3.24"/>
+    <template class="MainWindow" parent="GtkApplicationWindow">
+        <property name="can_focus">False</property>
+        <property name="title" translatable="yes">GTK Toolbar</property>
+        <property name="default_width">683</property>
+        <property name="default_height">384</property>
+        <property name="icon">../../../../assets/icons/icon.png</property>
+        <child type="titlebar">
+            <placeholder/>
+        </child>
+        <child>
+            <object class="GtkBox">
+                <property name="visible">True</property>
+                <property name="can_focus">False</property>
+                <property name="orientation">vertical</property>
+                <child>
+                    <object class="GtkToolbar">
+                        <property name="visible">True</property>
+                        <property name="can_focus">False</property>
+                        <child>
+                            <object class="GtkToolButton" id="exit">
+                                <property name="visible">True</property>
+                                <property name="can_focus">False</property>
+                                <property name="label" translatable="yes">Sair</property>
+                                <property name="use_underline">True</property>
+                                <property name="icon_name">application-exit-symbolic</property>
+                                <signal name="clicked" handler="menu_item_clicked" swapped="no"/>
+                            </object>
+                            <packing>
+                                <property name="expand">False</property>
+                                <property name="homogeneous">True</property>
+                            </packing>
+                        </child>
+                        <child>
+                            <object class="GtkToolButton" id="about">
+                                <property name="visible">True</property>
+                                <property name="can_focus">False</property>
+                                <property name="label" translatable="yes">Sobre</property>
+                                <property name="use_underline">True</property>
+                                <property name="icon_name">help-about-symbolic</property>
+                                <signal name="clicked" handler="about" swapped="no"/>
+                            </object>
+                            <packing>
+                                <property name="expand">False</property>
+                                <property name="homogeneous">True</property>
+                            </packing>
+                        </child>
+                    </object>
+                    <packing>
+                        <property name="expand">False</property>
+                        <property name="fill">True</property>
+                        <property name="position">0</property>
+                    </packing>
+                </child>
+                <child>
+                    <placeholder/>
+                </child>
+            </object>
+        </child>
+    </template>
+</interface>

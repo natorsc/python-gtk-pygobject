@@ -13,6 +13,7 @@ class Handler:
     home = Path.home()
 
     def __init__(self):
+
         self.check_button = builder.get_object(name='check_button')
 
     def open_dialog(self, widget):

@@ -10,7 +10,6 @@ from gi.repository import Gio, Gtk
 from CustomDialog import CustomDialog
 
 
-# Parâmetros aceitos: @Gtk.Template(string, filename, resource_path)
 @Gtk.Template(filename='./MainWindow.ui')
 class MainWindow(Gtk.ApplicationWindow):
     __gtype_name__ = 'MainWindow'
@@ -48,6 +47,7 @@ class MainWindow(Gtk.ApplicationWindow):
 
 
 class Application(Gtk.Application):
+
     def __init__(self):
         super().__init__(application_id='br.natorsc.Exemplo',
                          flags=Gio.ApplicationFlags.FLAGS_NONE)
