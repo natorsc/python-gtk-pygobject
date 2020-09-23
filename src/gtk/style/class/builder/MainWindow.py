@@ -23,30 +23,12 @@ def load_custom_css(file):
     )
 
 
+@Gtk.Template(filename='MainWindow.ui')
 class MainWindow(Gtk.ApplicationWindow):
+    __gtype_name__ = 'MainWindow'
 
     def __init__(self, **kwargs):
         super().__init__(**kwargs)
-
-        self.set_title(title='Lendo e aplicando estilo com css personalizado')
-        self.set_default_size(width=1366 / 2, height=768 / 2)
-        self.set_position(position=Gtk.WindowPosition.CENTER)
-        self.set_default_icon_from_file(filename='../../../assets/icons/icon.png')
-
-        vbox = Gtk.Box.new(orientation=Gtk.Orientation.VERTICAL, spacing=6)
-        vbox.set_border_width(border_width=12)
-        self.add(widget=vbox)
-
-        for i in range(1, 3):
-            label = Gtk.Label.new(str=f'Label {i} COM classe label-bg-red')
-            label.get_style_context().add_class(class_name='label-bg-red')
-            vbox.pack_start(child=label, expand=True, fill=True, padding=0)
-
-        for i in range(1, 3):
-            label = Gtk.Label.new(str=f'Label {i} SEM classe label-bg-red')
-            vbox.pack_start(child=label, expand=True, fill=True, padding=0)
-
-        self.show_all()
 
 
 class Application(Gtk.Application):
@@ -59,7 +41,7 @@ class Application(Gtk.Application):
         Gtk.Application.do_startup(self)
 
         # Carregando e aplicando o arquivo de css personalizado.
-        load_custom_css(file='../../../data/css/class-label-bg-red.css')
+        load_custom_css(file='../../../../data/css/class-label-bg-red.css')
 
     def do_activate(self):
         win = self.props.active_window

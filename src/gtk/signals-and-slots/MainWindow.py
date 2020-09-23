@@ -1,5 +1,6 @@
 # -*- coding: utf-8 -*-
 """Signal e Slots."""
+
 import sys
 
 import gi
