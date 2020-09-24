@@ -228,41 +228,37 @@ Exemplos de código podem ser vistos na pasta `src` deste repositório.
 
 ### Signals e slots
 
-* [Com Gnome Builder](https://github.com/natorsc/gui-python-gtk/tree/master/src/signals-and-slots/builder).
-* [Com Gnome Glade](https://github.com/natorsc/gui-python-gtk/tree/master/src/signals-and-slots/glade).
-* [Com Python](https://github.com/natorsc/gui-python-gtk/tree/master/src/signals-and-slots).
+* [Com Gnome Builder](https://github.com/natorsc/gui-python-gtk/tree/master/src/gtk/signals-and-slots/builder).
+* [Com Gnome Glade](https://github.com/natorsc/gui-python-gtk/tree/master/src/gtk/signals-and-slots/glade).
+* [Com Python](https://github.com/natorsc/gui-python-gtk/tree/master/src/gtk/signals-and-slots).
 
 ![GTK signals e slots](https://codigoninja.dev/media/git/pygobject/signal-and-slots.png)
 
 ### Menus
 
-* [GTK Menu com Gnome Builder](https://github.com/natorsc/gui-python-gtk/tree/master/src/menus/menu/builder).
-* [GTK Menu com Gnome Glade](https://github.com/natorsc/gui-python-gtk/tree/master/src/menus/menu/glade).
-* [GTK Menu com Python](https://github.com/natorsc/gui-python-gtk/tree/master/src/menus/menu).
+* [GTK Menu com Gnome Builder](https://github.com/natorsc/gui-python-gtk/tree/master/src/gtk/menus/menu/builder).
+* [GTK Menu com Gnome Glade](https://github.com/natorsc/gui-python-gtk/tree/master/src/gtk/menus/menu/glade).
+* [GTK Menu com Python](https://github.com/natorsc/gui-python-gtk/tree/master/src/gtk/menus/menu).
 
 ![GTK menu](https://codigoninja.dev/media/git/pygobject/menu.gif)
 
-* [GTK menu Popover com Gnome Builder](https://github.com/natorsc/gui-python-gtk/tree/master/src/menus/popover/builder).
-* [GTK menu Popover com Gnome Glade](https://github.com/natorsc/gui-python-gtk/tree/master/src/menus/popover/glade).
-* [GTK menu Popover com Python](https://github.com/natorsc/gui-python-gtk/tree/master/src/menus/popover). 
+* [GTK menu Popover com Gnome Builder](https://github.com/natorsc/gui-python-gtk/tree/master/src/gtk/menus/popover/builder).
+* [GTK menu Popover com Gnome Glade](https://github.com/natorsc/gui-python-gtk/tree/master/src/gtk/menus/popover/glade).
+* [GTK menu Popover com Python](https://github.com/natorsc/gui-python-gtk/tree/master/src/menus/gtk/popover). 
 
 ![GTK menu popover](https://codigoninja.dev/media/git/pygobject/menu-popover.gif)   
 
-* [GTK MenuBar com Gnome Builder](https://github.com/natorsc/gui-python-gtk/tree/master/src/menus/menubar/builder).
-* [GTK MenuBar com Gnome Glade](https://github.com/natorsc/gui-python-gtk/tree/master/src/menus/menubar/glade).
-* [GTK MenuBar com Python](https://github.com/natorsc/gui-python-gtk/tree/master/src/menus/menubar).
+* [GTK MenuBar com Gnome Builder](https://github.com/natorsc/gui-python-gtk/tree/master/src/gtk/menus/menubar/builder).
+* [GTK MenuBar com Gnome Glade](https://github.com/natorsc/gui-python-gtk/tree/master/src/gtk/menus/menubar/glade).
+* [GTK MenuBar com Python](https://github.com/natorsc/gui-python-gtk/tree/master/src/menus/gtk/menubar).
 
 ![GTK menubar](https://codigoninja.dev/media/git/pygobject/menubar.gif)
 
-* [GTK menu ToolBar com Gnome Builder](https://github.com/natorsc/gui-python-gtk/tree/master/src/menus/toolbar/builder).
-* [GTK menu ToolBar com Gnome Glade](https://github.com/natorsc/gui-python-gtk/tree/master/src/menus/toolbar/glade).
-* [GTK menu ToolBar com Python](https://github.com/natorsc/gui-python-gtk/tree/master/src/menus/toolbar/builder).
+* [GTK menu ToolBar com Gnome Builder](https://github.com/natorsc/gui-python-gtk/tree/master/src/gtk/menus/toolbar/builder).
+* [GTK menu ToolBar com Gnome Glade](https://github.com/natorsc/gui-python-gtk/tree/master/src/gtk/menus/toolbar/glade).
+* [GTK menu ToolBar com Python](https://github.com/natorsc/gui-python-gtk/tree/master/src/gtk/menus/toolbar/builder).
 
 ![GTK menu toolbar](https://codigoninja.dev/media/git/pygobject/menu-toolbar.png)
-
----
-
-# Revisar, atualizar e corrigir
 
 ### Style
 
@@ -272,14 +268,27 @@ Exemplos de código podem ser vistos na pasta `src` deste repositório.
 
 > **OBS**: Alguns widgets utilizam uma imagem de fundo em alguns casos pode ser interessante remover essa imagem com `background-image: none;` .
 
+* [Adicionar classe a um widget com Gnome Builder](https://github.com/natorsc/gui-python-gtk/tree/master/src/gtk/style/class/builder)
+* [Adicionar classe a um widget com Gnome Glade](https://github.com/natorsc/gui-python-gtk/tree/master/src/gtk/style/class/glade)
+* [Adicionar classe a um widget com Python](https://github.com/natorsc/gui-python-gtk/tree/master/src/gtk/style/class)
+
+![GTK Adicionar classe a um widget](https://codigoninja.dev/media/git/pygobject/style-class.png)
+
+* [Dark Mode (modo escuro) com Gnome Builder](https://github.com/natorsc/gui-python-gtk/tree/master/src/gtk/style/darkmode/builder)
+* [Dark Mode (modo escuro) com  com Gnome Glade](https://github.com/natorsc/gui-python-gtk/tree/master/src/gtk/style/darkmode/glade)
+* [Dark Mode (modo escuro) com  com Python](https://github.com/natorsc/gui-python-gtk/tree/master/src/gtk/style/darkmode)
+
+![GTK Dark Mode (modo escuro)](https://codigoninja.dev/media/git/pygobject/style-dark-mode.gif)
+
+---
+
+# Revisar, atualizar e corrigir
+
 * [Carregando uma arquivo css](./docs/style-load-css-file.md)
 
 ![Carregando uma arquivo css](./docs/imgs/style/python-load-custom-css-wayland.png)
 
-* [Adicionar classe a um widget](./docs/style-add-class.md)
 
-
-![Adicionar classe a um widget](./docs/imgs/style/widget-class.png)
 
 * [Adicionar nome a um widget](./docs/style-add-name.md)
 
