@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-"""Utilizando name para aplicar um estilo personalizado (CSS)."""
+"""Utilizando alguns seletores CSS do GTK."""
 
 import gi
 
@@ -21,29 +21,22 @@ def load_custom_css(file):
     )
 
 
+@Gtk.Template(filename='./MainWindow.ui')
 class MainWindow(Gtk.ApplicationWindow):
+    __gtype_name__ = 'MainWindow'
+
+    entry = Gtk.Template.Child(name='entry')
+    label = Gtk.Template.Child(name='label')
 
     def __init__(self, **kwargs):
         super().__init__(**kwargs)
 
-        self.set_title(title='Utilizando name para aplicar um estilo personalizado (CSS)')
-        self.set_default_size(width=1366 / 2, height=768 / 2)
-        self.set_position(position=Gtk.WindowPosition.CENTER)
-
-        vbox = Gtk.Box.new(orientation=Gtk.Orientation.VERTICAL, spacing=12)
-        vbox.set_border_width(border_width=12)
-        self.add(widget=vbox)
-
-        for i in range(1, 3):
-            label = Gtk.Label.new(str=f'Label {i} COM propriedade name')
-            label.set_name(name='label-bg-red')
-            vbox.pack_start(child=label, expand=True, fill=True, padding=0)
-
-        for i in range(1, 3):
-            label = Gtk.Label.new(str=f'Label {i} SEM propriedade name')
-            vbox.pack_start(child=label, expand=True, fill=True, padding=0)
-
-        self.show_all()
+    @Gtk.Template.Callback()
+    def _on_button_clicked(self, button):
+        if self.entry.get_text():
+            self.label.set_label(str=self.entry.get_text())
+        else:
+            self.label.set_label(str='Digite algo no campo acima!')
 
 
 class Application(Gtk.Application):
@@ -56,7 +49,7 @@ class Application(Gtk.Application):
         Gtk.Application.do_startup(self)
 
         # Carregando e aplicando o arquivo de css personalizado.
-        load_custom_css(file='../../../data/css/name-label-bg-red.css')
+        load_custom_css(file='../../../../data/css/custom.css')
 
     def do_activate(self):
         win = self.props.active_window

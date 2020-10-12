@@ -1,6 +1,5 @@
 # -*- coding: utf-8 -*-
 """Ícones standard e symbolic."""
-import sys
 
 import gi
 
@@ -109,5 +108,7 @@ class Application(Gtk.Application):
 
 
 if __name__ == '__main__':
+    import sys
+
     app = Application()
     app.run(sys.argv)

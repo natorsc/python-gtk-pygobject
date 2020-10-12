@@ -1,7 +1,5 @@
 # -*- coding: utf-8 -*-
-"""Lendo e aplicando estilo através de um arquivo css personalizado."""
-
-import sys
+"""Utilizando class para aplicar um estilo personalizado (CSS)."""
 
 import gi
 
@@ -54,5 +52,7 @@ class Application(Gtk.Application):
 
 
 if __name__ == '__main__':
+    import sys
+
     app = Application()
     app.run(sys.argv)

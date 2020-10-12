@@ -25,7 +25,7 @@ class Handler:
 
     def __init__(self):
         # Carregando e aplicando o arquivo de css personalizado.
-        load_custom_css(file='../../../../data/css/class-label-bg-red.css')
+        load_custom_css(file='../../../../data/css/name-label-bg-red.css')
 
 
 if __name__ == '__main__':

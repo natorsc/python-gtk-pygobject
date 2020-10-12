@@ -1,8 +1,6 @@
 # -*- coding: utf-8 -*-
 """Lendo e aplicando estilo através de um arquivo css personalizado."""
 
-import sys
-
 import gi
 
 gi.require_version(namespace='Gtk', version='3.0')
@@ -52,5 +50,7 @@ class Application(Gtk.Application):
 
 
 if __name__ == '__main__':
+    import sys
+
     app = Application()
     app.run(sys.argv)

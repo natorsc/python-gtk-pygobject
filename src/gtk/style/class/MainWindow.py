@@ -1,7 +1,5 @@
 # -*- coding: utf-8 -*-
-"""Lendo e aplicando estilo através de um arquivo css personalizado."""
-
-import sys
+"""Utilizando class para aplicar um estilo personalizado (CSS)."""
 
 import gi
 
@@ -28,7 +26,7 @@ class MainWindow(Gtk.ApplicationWindow):
     def __init__(self, **kwargs):
         super().__init__(**kwargs)
 
-        self.set_title(title='Lendo e aplicando estilo com css personalizado')
+        self.set_title(title='Utilizando class para aplicar um estilo personalizado (CSS)')
         self.set_default_size(width=1366 / 2, height=768 / 2)
         self.set_position(position=Gtk.WindowPosition.CENTER)
         self.set_default_icon_from_file(filename='../../../assets/icons/icon.png')
@@ -72,5 +70,7 @@ class Application(Gtk.Application):
 
 
 if __name__ == '__main__':
+    import sys
+
     app = Application()
     app.run(sys.argv)

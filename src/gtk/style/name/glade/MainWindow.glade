@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- Generated with glade 3.38.0 -->
+<!-- Generated with glade 3.38.1 -->
 <interface>
   <requires lib="gtk+" version="3.24"/>
   <object class="GtkApplicationWindow" id="MainWindow">
     <property name="can-focus">False</property>
-    <property name="title" translatable="yes">Utilizando class para aplicar um estilo personalizado (CSS)</property>
+    <property name="title" translatable="yes">Utilizando name para aplicar um estilo personalizado (CSS)</property>
     <property name="default-width">683</property>
     <property name="default-height">384</property>
     <property name="icon">../../../../assets/icons/icon.png</property>
@@ -17,12 +17,10 @@
         <property name="spacing">6</property>
         <child>
           <object class="GtkLabel">
+            <property name="name">label-bg-red</property>
             <property name="visible">True</property>
             <property name="can-focus">False</property>
-            <property name="label" translatable="yes">Label 1 COM classe label-bg-red</property>
-            <style>
-              <class name="label-bg-red"/>
-            </style>
+            <property name="label" translatable="yes">Label 1 COM name label-bg-red</property>
           </object>
           <packing>
             <property name="expand">True</property>
@@ -32,12 +30,10 @@
         </child>
         <child>
           <object class="GtkLabel">
+            <property name="name">label-bg-red</property>
             <property name="visible">True</property>
             <property name="can-focus">False</property>
-            <property name="label" translatable="yes">Label 2 COM classe label-bg-red</property>
-            <style>
-              <class name="label-bg-red"/>
-            </style>
+            <property name="label" translatable="yes">Label 2 COM name label-bg-red</property>
           </object>
           <packing>
             <property name="expand">True</property>
@@ -49,7 +45,7 @@
           <object class="GtkLabel">
             <property name="visible">True</property>
             <property name="can-focus">False</property>
-            <property name="label" translatable="yes">Label 1 SEM classe label-bg-red</property>
+            <property name="label" translatable="yes">Label 1 SEM name label-bg-red</property>
           </object>
           <packing>
             <property name="expand">True</property>
@@ -61,7 +57,7 @@
           <object class="GtkLabel">
             <property name="visible">True</property>
             <property name="can-focus">False</property>
-            <property name="label" translatable="yes">Label 2 SEM classe label-bg-red</property>
+            <property name="label" translatable="yes">Label 2 SEM name label-bg-red</property>
           </object>
           <packing>
             <property name="expand">True</property>

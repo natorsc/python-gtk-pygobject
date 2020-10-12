@@ -1,13 +1,27 @@
 # -*- coding: utf-8 -*-
-"""Exemplo de ícones standard e symbolic."""
+"""Utilizando class para aplicar um estilo personalizado (CSS)."""
 
 import gi
 
 gi.require_version(namespace='Gtk', version='3.0')
-from gi.repository import Gio, Gtk
+from gi.repository import Gio, Gtk, Gdk
 
 
-@Gtk.Template(filename='./MainWindow.ui')
+def load_custom_css(file):
+    css_provider = Gtk.CssProvider.new()
+    css_provider.load_from_path(path=file)
+
+    screen = Gdk.Screen()
+
+    style_context = Gtk.StyleContext.new()
+    style_context.add_provider_for_screen(
+        screen=screen.get_default(),
+        provider=css_provider,
+        priority=Gtk.STYLE_PROVIDER_PRIORITY_APPLICATION,
+    )
+
+
+@Gtk.Template(filename='MainWindow.ui')
 class MainWindow(Gtk.ApplicationWindow):
     __gtype_name__ = 'MainWindow'
 
@@ -23,6 +37,9 @@ class Application(Gtk.Application):
 
     def do_startup(self):
         Gtk.Application.do_startup(self)
+
+        # Carregando e aplicando o arquivo de css personalizado.
+        load_custom_css(file='../../../../data/css/name-label-bg-red.css')
 
     def do_activate(self):
         win = self.props.active_window

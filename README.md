@@ -220,7 +220,7 @@ Exemplos de código podem ser vistos na pasta `src` deste repositório.
 
 ![GTK diálogo para selecionar pasta](https://codigoninja.dev/media/git/pygobject/dialog-select-folder.png)
 
-### Dialogo de impressão, configuração de página e exportar
+### Dialogo de impressão, configuração de página e exportar para PDF
 
 * [Imprimindo e exportando para pdf com Gnome Builder](https://github.com/natorsc/gui-python-gtk/tree/master/src/gtk/printer/builder)
 * [Imprimindo e exportando para pdf com Gnome Glade](https://github.com/natorsc/gui-python-gtk/tree/master/src/gtk/printer/glade)
@@ -284,34 +284,35 @@ Exemplos de código podem ser vistos na pasta `src` deste repositório.
 
 ![GTK Adicionar classe a um widget](https://codigoninja.dev/media/git/pygobject/style-class.png)
 
+* [Adicionar um nome a um widget com Gnome Builder](https://github.com/natorsc/gui-python-gtk/tree/master/src/gtk/style/name/builder)
+* [Adicionar um nome a um widget com Gnome Glade](https://github.com/natorsc/gui-python-gtk/tree/master/src/gtk/style/name/glade)
+* [Adicionar um nome a um widget com Python](https://github.com/natorsc/gui-python-gtk/tree/master/src/gtk/style/name)
+
+![GTK Adicionar nome a um widget](https://codigoninja.dev/media/git/pygobject/style-name.png)
+
+* [CSS selectors com Gnome Builder](https://github.com/natorsc/gui-python-gtk/tree/master/src/gtk/style/selectors/builder)
+* [CSS selectors com Gnome Glade](https://github.com/natorsc/gui-python-gtk/tree/master/src/gtk/style/selectors/glade)
+* [CSS selectors com Python](https://github.com/natorsc/gui-python-gtk/tree/master/src/gtk/selectors/name)
+
+![GTK CSS selectors](https://codigoninja.dev/media/git/pygobject/style-selectors.png)
+
 * [Dark Mode (modo escuro) com Gnome Builder](https://github.com/natorsc/gui-python-gtk/tree/master/src/gtk/style/darkmode/builder)
 * [Dark Mode (modo escuro) com  com Gnome Glade](https://github.com/natorsc/gui-python-gtk/tree/master/src/gtk/style/darkmode/glade)
 * [Dark Mode (modo escuro) com  com Python](https://github.com/natorsc/gui-python-gtk/tree/master/src/gtk/style/darkmode)
 
 ![GTK Dark Mode (modo escuro)](https://codigoninja.dev/media/git/pygobject/style-dark-mode.gif)
 
+### Ícones standard e symbolic
+
+* [Utilizando ícones standard e symbolic com Gnome Builder](https://github.com/natorsc/gui-python-gtk/tree/master/src/gnome-icons/builder).
+* [Utilizando ícones standard e symbolic com Gnome Glade](https://github.com/natorsc/gui-python-gtk/tree/master/src/gnome-icons/glade).
+* [Utilizando ícones standard e symbolic com Python](https://github.com/natorsc/gui-python-gtk/tree/master/src/gnome-icons).
+
+![GTK utilizando ícones standard e symbolic](https://codigoninja.dev/media/git/pygobject/icons-standard-symbolic.png)
+
 ---
 
 # Revisar, atualizar e corrigir
-
-* [Carregando uma arquivo css](./docs/style-load-css-file.md)
-
-![Carregando uma arquivo css](./docs/imgs/style/python-load-custom-css-wayland.png)
-
-
-
-* [Adicionar nome a um widget](./docs/style-add-name.md)
-
-
-![Adicionar nome a um widget](./docs/imgs/style/widget-name.png)
-
-* [Ativando e desativando o dark mode (modo escuro)](./docs/style-dark-mode.md).
-
-![Ativando e desativando o dark mode (modo escuro)](./docs/imgs/style/dark-mode.gif)
-
-* [Utilizando ícones standard e symbolic](https://github.com/natorsc/gui-python-gtk/tree/master/src/gnome-icons).
-
-![Utilizando ícones standard e symbolic](./docs/imgs/icons/icons-standard-symbolic.png)
 
 ### Widgets
 

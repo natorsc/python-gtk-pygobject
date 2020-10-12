@@ -1,6 +1,5 @@
 # -*- coding: utf-8 -*-
-"""Utilizando class para aplicar um estilo personalizado (CSS)."""
-
+"""Utilizando alguns seletores CSS do GTK."""
 import gi
 
 gi.require_version(namespace='Gtk', version='3.0')
@@ -24,17 +23,26 @@ def load_custom_css(file):
 class Handler:
 
     def __init__(self):
+
         # Carregando e aplicando o arquivo de css personalizado.
-        load_custom_css(file='../../../../data/css/class-label-bg-red.css')
+        load_custom_css(file='../../../../data/css/custom.css')
+
+        # Acessando widgets do arquivo de interface.
+        self.label = builder.get_object(name='label')
+        self.entry = builder.get_object(name='entry')
+
+    def _on_button_clicked(self, button):
+        if self.entry.get_text():
+            self.label.set_label(str=self.entry.get_text())
+        else:
+            self.label.set_label(str='Digite algo no campo acima!')
 
 
 if __name__ == '__main__':
     builder = Gtk.Builder.new()
     builder.add_from_file(filename='./MainWindow.glade')
     builder.connect_signals(obj_or_map=Handler())
-
     win = builder.get_object(name='MainWindow')
     win.connect('destroy', Gtk.main_quit)
     win.show_all()
-
     Gtk.main()
