@@ -310,23 +310,25 @@ Exemplos de código podem ser vistos na pasta `src` deste repositório.
 
 ![GTK utilizando ícones standard e symbolic](https://codigoninja.dev/media/git/pygobject/icons-standard-symbolic.png)
 
----
+### Widgets
+
+#### Entry
+
+* [Auto completar ao digitar com Gnome Builder](https://github.com/natorsc/gui-python-gtk/tree/master/src/widgets/entry/autocomplete/builder).
+* [Auto completar ao digitar com Gnome Glade](https://github.com/natorsc/gui-python-gtk/tree/master/src/widgets/entry/autocomplete/glade).
+* [Auto completar ao digitar com Python](https://github.com/natorsc/gui-python-gtk/tree/master/src/widgets/entry/autocomplete).
+
+![GTK entry auto completar ao digitar](https://codigoninja.dev/media/git/pygobject/entry-auto-complete.gif)
+
+* [Pesquisa Gnome Builder](https://github.com/natorsc/gui-python-gtk/tree/master/src/widgets/entry/search/builder).
+* [Pesquisa com Gnome Glade](https://github.com/natorsc/gui-python-gtk/tree/master/src/widgets/entry/search/glade).
+* [Pesquisa com Python](https://github.com/natorsc/gui-python-gtk/tree/master/src/widgets/entry/search).
+
+![GTK entry auto completar ao digitar](https://codigoninja.dev/media/git/pygobject/entry-search.gif)
 
 # Revisar, atualizar e corrigir
 
-### Widgets
-
 * [Radio button](https://github.com/natorsc/gui-python-gtk/tree/master/src/widgets/radio-button)
-* [TargetEntry (drag and drop)](https://github.com/natorsc/gui-python-gtk/tree/master/src/drag-n-drop)
-
-* [GTK Entry](https://github.com/natorsc/gui-python-gtk/tree/master/src/widgets/entry):
-    - [Auto completar ao digitar](https://github.com/natorsc/gui-python-gtk/tree/master/src/widgets/entry/autocomplete).
-
-![Auto completar ao digitar](./docs/imgs/widgets/entry/autocomplete.gif)
-
-    - [Pesquisar ao digitar](https://github.com/natorsc/gui-python-gtk/tree/master/src/widgets/entry/search).
-
-![Pesquisar ao digitar](./docs/imgs/widgets/entry/search.gif)
 
 * GTK TreeView:
     - [Ordenando itens ao clicar no cabeçalho da coluna](https://github.com/natorsc/gui-python-gtk/tree/master/src/widgets/treeview/sort).
@@ -342,6 +344,8 @@ Exemplos de código podem ser vistos na pasta `src` deste repositório.
 ![Utilizando filtro](./docs/imgs/widgets/treeview/filter.gif)
 
 ---
+
+
 
 ## Purism Librem 5
 
