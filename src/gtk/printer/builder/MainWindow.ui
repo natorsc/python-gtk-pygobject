@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Generated with glade 3.38.1 -->
+<interface>
+    <requires lib="gtk+" version="3.24"/>
+    <object class="GtkTextBuffer" id="text_view_buffer"/>
+    <template class="MainWindow" parent="GtkApplicationWindow">
+        <property name="can-focus">False</property>
+        <property name="title" translatable="yes">Operações de impressão com Gtk.PrintOperation()</property>
+        <property name="default-width">683</property>
+        <property name="default-height">384</property>
+        <property name="icon">../../../assets/icons/icon.png</property>
+        <child>
+            <object class="GtkBox">
+                <property name="visible">True</property>
+                <property name="can-focus">False</property>
+                <property name="border-width">12</property>
+                <property name="orientation">vertical</property>
+                <child>
+                    <object class="GtkTextView" id="text_view">
+                        <property name="visible">True</property>
+                        <property name="can-focus">True</property>
+                        <property name="buffer">text_view_buffer</property>
+                    </object>
+                    <packing>
+                        <property name="expand">True</property>
+                        <property name="fill">True</property>
+                        <property name="position">0</property>
+                    </packing>
+                </child>
+                <child>
+                    <object class="GtkButtonBox">
+                        <property name="visible">True</property>
+                        <property name="can-focus">False</property>
+                        <property name="halign">center</property>
+                        <property name="spacing">6</property>
+                        <property name="layout-style">start</property>
+                        <child>
+                            <object class="GtkButton">
+                                <property name="label" translatable="yes">Imprimir</property>
+                                <property name="visible">True</property>
+                                <property name="can-focus">True</property>
+                                <property name="receives-default">True</property>
+                                <signal name="clicked" handler="open_print_dialog" swapped="no"/>
+                            </object>
+                            <packing>
+                                <property name="expand">True</property>
+                                <property name="fill">True</property>
+                                <property name="position">0</property>
+                            </packing>
+                        </child>
+                        <child>
+                            <object class="GtkButton">
+                                <property name="label" translatable="yes">Visualizar</property>
+                                <property name="visible">True</property>
+                                <property name="can-focus">True</property>
+                                <property name="receives-default">True</property>
+                                <signal name="clicked" handler="open_preview" swapped="no"/>
+                            </object>
+                            <packing>
+                                <property name="expand">True</property>
+                                <property name="fill">True</property>
+                                <property name="position">1</property>
+                            </packing>
+                        </child>
+                        <child>
+                            <object class="GtkButton">
+                                <property name="label" translatable="yes">Configurar página</property>
+                                <property name="visible">True</property>
+                                <property name="can-focus">True</property>
+                                <property name="receives-default">True</property>
+                                <signal name="clicked" handler="open_page_setup_dialog" swapped="no"/>
+                            </object>
+                            <packing>
+                                <property name="expand">True</property>
+                                <property name="fill">True</property>
+                                <property name="position">2</property>
+                            </packing>
+                        </child>
+                        <child>
+                            <object class="GtkButton">
+                                <property name="label" translatable="yes">Exportar para PDF</property>
+                                <property name="visible">True</property>
+                                <property name="can-focus">True</property>
+                                <property name="receives-default">True</property>
+                                <signal name="clicked" handler="export_to_pdf" swapped="no"/>
+                            </object>
+                            <packing>
+                                <property name="expand">True</property>
+                                <property name="fill">True</property>
+                                <property name="position">3</property>
+                            </packing>
+                        </child>
+                    </object>
+                    <packing>
+                        <property name="expand">False</property>
+                        <property name="fill">True</property>
+                        <property name="padding">6</property>
+                        <property name="position">1</property>
+                    </packing>
+                </child>
+            </object>
+        </child>
+    </template>
+</interface>

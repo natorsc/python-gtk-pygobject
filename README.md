@@ -37,6 +37,8 @@ Exemplos de código podem ser vistos na pasta `src` deste repositório.
 
 > Em caso de problemas entre em contato para que o material possa ser melhorado.
 
+---
+
 # Tutoriais
 
 * [Como instalar o msys2 no Windows (Obrigatório)](https://codigoninja.dev/2020/09/08/python-gtk-instalar-msys2-windows/).
@@ -217,6 +219,14 @@ Exemplos de código podem ser vistos na pasta `src` deste repositório.
 * [Selecionar pasta com Python](https://github.com/natorsc/gui-python-gtk/tree/master/src/gtk/dialog/select_folder).
 
 ![GTK diálogo para selecionar pasta](https://codigoninja.dev/media/git/pygobject/dialog-select-folder.png)
+
+### Dialogo de impressão, configuração de página e exportar
+
+* [Imprimindo e exportando para pdf com Gnome Builder](https://github.com/natorsc/gui-python-gtk/tree/master/src/gtk/printer/builder)
+* [Imprimindo e exportando para pdf com Gnome Glade](https://github.com/natorsc/gui-python-gtk/tree/master/src/gtk/printer/glade)
+* [Imprimindo e exportando para pdf com Python](https://github.com/natorsc/gui-python-gtk/tree/master/src/gtk/printer)
+
+![GTK imprindo e exportand para pdf](https://codigoninja.dev/media/git/pygobject/dialog-printer.png)
 
 ### Drag and drop (Arrastar e soltar)
 
