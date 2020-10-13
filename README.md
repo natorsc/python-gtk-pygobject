@@ -314,38 +314,59 @@ Exemplos de código podem ser vistos na pasta `src` deste repositório.
 
 #### Entry
 
-* [Auto completar ao digitar com Gnome Builder](https://github.com/natorsc/gui-python-gtk/tree/master/src/widgets/entry/autocomplete/builder).
-* [Auto completar ao digitar com Gnome Glade](https://github.com/natorsc/gui-python-gtk/tree/master/src/widgets/entry/autocomplete/glade).
-* [Auto completar ao digitar com Python](https://github.com/natorsc/gui-python-gtk/tree/master/src/widgets/entry/autocomplete).
+* [GTK Entry com Gnome Builder](https://github.com/natorsc/gui-python-gtk/tree/master/src/widgets/entry/builder).
+* [GTK Entry com Gnome Glade](https://github.com/natorsc/gui-python-gtk/tree/master/src/widgets/entry/glade).
+* [GTK Entry com Python](https://github.com/natorsc/gui-python-gtk/tree/master/src/widgets/entry/).
 
-![GTK entry auto completar ao digitar](https://codigoninja.dev/media/git/pygobject/entry-auto-complete.gif)
+![GTK Entry](https://codigoninja.dev/media/git/pygobject/entry.png)
 
-* [Pesquisa Gnome Builder](https://github.com/natorsc/gui-python-gtk/tree/master/src/widgets/entry/search/builder).
-* [Pesquisa com Gnome Glade](https://github.com/natorsc/gui-python-gtk/tree/master/src/widgets/entry/search/glade).
-* [Pesquisa com Python](https://github.com/natorsc/gui-python-gtk/tree/master/src/widgets/entry/search).
+#### EntryCompletion
 
-![GTK entry auto completar ao digitar](https://codigoninja.dev/media/git/pygobject/entry-search.gif)
+* [GTK EntryCompletion com Gnome Builder](https://github.com/natorsc/gui-python-gtk/tree/master/src/widgets/entry-completion/builder).
+* [GTK EntryCompletion com Gnome Glade](https://github.com/natorsc/gui-python-gtk/tree/master/src/widgets/entry-completion/glade).
+* [GTK EntryCompletion com Python](https://github.com/natorsc/gui-python-gtk/tree/master/src/widgets/entry-completion).
 
-# Revisar, atualizar e corrigir
+![GTK EntryCompletion](https://codigoninja.dev/media/git/pygobject/entry-completion.gif)
 
-* [Radio button](https://github.com/natorsc/gui-python-gtk/tree/master/src/widgets/radio-button)
+#### RadioButton
 
-* GTK TreeView:
-    - [Ordenando itens ao clicar no cabeçalho da coluna](https://github.com/natorsc/gui-python-gtk/tree/master/src/widgets/treeview/sort).
+* [GTK RadioButton com  Gnome Builder](https://github.com/natorsc/gui-python-gtk/tree/master/src/widgets/radio-button/builder).
+* [GTK RadioButton com Gnome Glade](https://github.com/natorsc/gui-python-gtk/tree/master/src/widgets/radio-button/glade).
+* [GTK RadioButton com Python](https://github.com/natorsc/gui-python-gtk/tree/master/src/widgets/radio-button).
 
-![Ordenando itens ao clicar no cabeçalho da coluna](./docs/imgs/widgets/treeview/sort.gif)
+![GTK RadioButton](https://codigoninja.dev/media/git/pygobject/radio-button.png)
 
-    - [Realizado a edição do valor na celular](https://github.com/natorsc/gui-python-gtk/tree/master/src/widgets/treeview/editable).
+#### SearchEntry
 
-![Realizado a edição do valor na celular](./docs/imgs/widgets/treeview/editable.gif)
+* [GTK SearchEntry com Gnome Builder](https://github.com/natorsc/gui-python-gtk/tree/master/src/widgets/search-entry/builder).
+* [GTK SearchEntry com Gnome Glade](https://github.com/natorsc/gui-python-gtk/tree/master/src/widgets/search-entry/glade).
+* [GTK SearchEntry com Python](https://github.com/natorsc/gui-python-gtk/tree/master/src/widgets/search-entry).
 
-    - [Utilizando filtro](https://github.com/natorsc/gui-python-gtk/tree/master/src/widgets/treeview/filter).
+![GTK SearchEntry](https://codigoninja.dev/media/git/pygobject/search-entry.gif)
 
-![Utilizando filtro](./docs/imgs/widgets/treeview/filter.gif)
+#### Treeview
+
+* [GTK TreeView editar célula Gnome Builder](https://github.com/natorsc/gui-python-gtk/tree/master/src/widgets/treeview/editable/builder).
+* [GTK TreeView editar célula Gnome Glade](https://github.com/natorsc/gui-python-gtk/tree/master/src/widgets/treeview/editable/glade).
+* [GTK TreeView editar célula Python](https://github.com/natorsc/gui-python-gtk/tree/master/src/widgets/treeview/editable).
+
+![GTK TreeView editar célula](https://codigoninja.dev/media/git/pygobject/treeview-editable.gif)
+
+* [GTK TreeView filtro com botões no Gnome Builder](https://github.com/natorsc/gui-python-gtk/tree/master/src/widgets/treeview/filter/builder).
+* [GTK TreeView filtro com botões no Gnome Glade](https://github.com/natorsc/gui-python-gtk/tree/master/src/widgets/treeview/filter/glade).
+* [GTK TreeView filtro com botões no Python](https://github.com/natorsc/gui-python-gtk/tree/master/src/widgets/treeview/filter).
+
+![GTK TreeView ordenando pelo cabeçalho](https://codigoninja.dev/media/git/pygobject/treeview-filter.gif)
+
+* [GTK TreeView ordenando pelo cabeçalho com Gnome Builder](https://github.com/natorsc/gui-python-gtk/tree/master/src/widgets/treeview/sort/builder).
+* [GTK TreeView ordenando pelo cabeçalho com Gnome Glade](https://github.com/natorsc/gui-python-gtk/tree/master/src/widgets/treeview/sort/glade).
+* [GTK TreeView ordenando pelo cabeçalho com Python](https://github.com/natorsc/gui-python-gtk/tree/master/src/widgets/treeview/sort).
+
+![GTK TreeView ordenando pelo cabeçalho](https://codigoninja.dev/media/git/pygobject/treeview-sort.gif)
 
 ---
 
-
+# Criar, Revisar, atualizar e corrigir ⬇
 
 ## Purism Librem 5
 

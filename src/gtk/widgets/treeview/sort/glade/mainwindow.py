@@ -21,11 +21,11 @@ class Handler:
     ]
 
     def __init__(self):
-        self.liststore = builder.get_object(name='liststore')
+        self.list_store = builder.get_object(name='list_store')
 
         shuffle(self.brazilian_states)
         for state in self.brazilian_states:
-            self.liststore.append(row=state)
+            self.list_store.append(row=state)
 
 
 if __name__ == '__main__':

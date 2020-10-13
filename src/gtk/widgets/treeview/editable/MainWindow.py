@@ -4,7 +4,7 @@
 import gi
 
 gi.require_version(namespace='Gtk', version='3.0')
-from gi.repository import Gtk, Pango, GObject
+from gi.repository import Gtk, Gio, Pango, GObject
 
 
 class MainWindow(Gtk.ApplicationWindow):
@@ -19,12 +19,13 @@ class MainWindow(Gtk.ApplicationWindow):
         (27, 'Tocantins'),
     ]
 
-    def __init__(self):
-        super().__init__()
+    def __init__(self, **kwargs):
+        super().__init__(**kwargs)
+
         self.set_title(title='GTK TreeView, realizado a edição do valor na celula')
         self.set_default_size(width=1366 / 2, height=768 / 2)
         self.set_position(position=Gtk.WindowPosition.CENTER)
-        self.set_default_icon_from_file(filename='../../../../../images/icons/icon.png')
+        self.set_default_icon_from_file(filename='../../../../assets/icons/icon.png')
 
         vbox = Gtk.Box.new(orientation=Gtk.Orientation.VERTICAL, spacing=12)
         vbox.set_border_width(border_width=12)
@@ -35,14 +36,14 @@ class MainWindow(Gtk.ApplicationWindow):
         vbox.pack_end(child=scrolledwindow, expand=True, fill=True, padding=0)
 
         # Criando um modelo com `Gtk.ListStore()`.
-        self.liststore = Gtk.ListStore.new([GObject.TYPE_INT, GObject.TYPE_STRING])
+        self.list_store = Gtk.ListStore.new([GObject.TYPE_INT, GObject.TYPE_STRING])
 
         # Adicionando os dados no `Gtk.ListStore()`.
         for state in self.brazilian_states:
-            self.liststore.append(row=state)
+            self.list_store.append(row=state)
 
         # Criando um `Gtk.TreeView()`.
-        treeview = Gtk.TreeView.new_with_model(model=self.liststore)
+        treeview = Gtk.TreeView.new_with_model(model=self.list_store)
         scrolledwindow.add(widget=treeview)
 
         # Nome das colunas (title).
@@ -72,18 +73,39 @@ class MainWindow(Gtk.ApplicationWindow):
             # Adicionando a coluna no `Gtk.TreeView()`.
             treeview.append_column(column=treeviewcolumn)
 
+        self.show_all()
+
     def on_cell_edited(self, widget, row, value, column):
         # Alterando o valor diretamente no ListStore, contudo a alteração poderia
         # ser enviada para algum banco de dados.
         if column == 0:
             if value:
-                self.liststore[row][column] = int(value)
+                self.list_store[row][column] = int(value)
         else:
-            self.liststore[row][column] = value
+            self.list_store[row][column] = value
+
+
+class Application(Gtk.Application):
+
+    def __init__(self):
+        super().__init__(application_id='br.natorsc.Exemplo',
+                         flags=Gio.ApplicationFlags.FLAGS_NONE)
+
+    def do_startup(self):
+        Gtk.Application.do_startup(self)
+
+    def do_activate(self):
+        win = self.props.active_window
+        if not win:
+            win = MainWindow(application=self)
+        win.present()
+
+    def do_shutdown(self):
+        Gtk.Application.do_shutdown(self)
 
 
 if __name__ == '__main__':
-    win = MainWindow()
-    win.connect('destroy', Gtk.main_quit)
-    win.show_all()
-    Gtk.main()
+    import sys
+
+    app = Application()
+    app.run(sys.argv)

@@ -4,13 +4,10 @@
 import gi
 
 gi.require_version(namespace='Gtk', version='3.0')
-from gi.repository import Gtk, Gio
+from gi.repository import Gtk, GObject, Gio
 
 
-@Gtk.Template(filename='MainWindow.glade')
 class MainWindow(Gtk.ApplicationWindow):
-    __gtype_name__ = 'MainWindow'
-
     brazilian_states = [
         (1, 'Acre'), (2, 'Alagoas'), (3, 'Amapá'), (4, 'Amazonas'),
         (5, 'Bahia'), (6, 'Ceará'), (7, 'Distrito Federal'), (8, 'Espírito Santo'),
@@ -22,13 +19,29 @@ class MainWindow(Gtk.ApplicationWindow):
         (27, 'Tocantins'),
     ]
 
-    liststore = Gtk.Template.Child(name='liststore')
-
     def __init__(self, **kwargs):
         super().__init__(**kwargs)
 
+        self.set_title(title='GTK EntryCompletion, auto completar ao digitar')
+        self.set_default_size(width=1366 / 2, height=768 / 2)
+        self.set_position(position=Gtk.WindowPosition.CENTER)
+        self.set_default_icon_from_file(filename='../../../assets/icons/icon.png')
+
+        vbox = Gtk.Box.new(orientation=Gtk.Orientation.VERTICAL, spacing=12)
+        vbox.set_border_width(border_width=12)
+        self.add(widget=vbox)
+
+        liststore = Gtk.ListStore.new([GObject.TYPE_INT, GObject.TYPE_STRING])
         for state in self.brazilian_states:
-            self.liststore.append(row=state)
+            liststore.append(row=state)
+
+        completion = Gtk.EntryCompletion.new()
+        completion.set_model(model=liststore)
+        completion.set_text_column(column=1)
+
+        entry = Gtk.Entry.new()
+        entry.set_completion(completion=completion)
+        vbox.add(widget=entry)
 
         self.show_all()
 

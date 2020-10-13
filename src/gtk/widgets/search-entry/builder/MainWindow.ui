@@ -19,7 +19,7 @@
     <property name="can-focus">False</property>
     <property name="default-width">683</property>
     <property name="default-height">384</property>
-    <property name="icon">../../../../../assets/icons/icon.png</property>
+    <property name="icon">../../../../assets/icons/icon.png</property>
     <child>
       <object class="GtkBox">
         <property name="visible">True</property>

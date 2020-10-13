@@ -1,8 +1,6 @@
 # -*- coding: utf-8 -*-
 """Utilizando uma classe para criar e configurar a janela principal."""
 
-import sys
-
 # Importando a biblioteca gnome introspection.
 import gi
 
@@ -53,5 +51,7 @@ class Application(Gtk.Application):
 
 
 if __name__ == '__main__':
+    import sys
+
     app = Application()
     app.run(sys.argv)

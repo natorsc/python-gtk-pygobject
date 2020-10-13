@@ -1,10 +1,10 @@
 # -*- coding: utf-8 -*-
-"""GTK EntryCompletion, auto completar ao digitar."""
+"""Gtk.Entry()."""
 
 import gi
 
 gi.require_version(namespace='Gtk', version='3.0')
-from gi.repository import Gtk, Gio
+from gi.repository import Gio, Gtk
 
 
 @Gtk.Template(filename='MainWindow.ui')
@@ -15,11 +15,12 @@ class MainWindow(Gtk.ApplicationWindow):
         super().__init__(**kwargs)
 
     @Gtk.Template.Callback()
-    def on_radiobutton_toggled(self, widget):
-        if widget.get_active():
-            print(f'Radio button {widget.get_label()} MARCADO')
-        else:
-            print(f'Radio button {widget.get_label()} DESMARCADO')
+    def on_key_enter_pressed(self, widget):
+        print(widget.get_text())
+
+    @Gtk.Template.Callback()
+    def on_icon_pressed(self, widget, icon, event):
+        print(widget.get_text())
 
 
 class Application(Gtk.Application):

@@ -20,18 +20,18 @@ class Handler:
     ]
 
     def __init__(self):
-        self.liststore = builder.get_object(name='liststore')
+        self.list_store = builder.get_object(name='list_store')
 
         for state in self.brazilian_states:
-            self.liststore.append(row=state)
+            self.list_store.append(row=state)
 
     def on_cell_edited(self, widget, row, value):
         column = widget.get_title().lower()
         if column == 'id':
             if value:
-                self.liststore[row][0] = int(value)
+                self.list_store[row][0] = int(value)
         else:
-            self.liststore[row][1] = value
+            self.list_store[row][1] = value
 
 
 if __name__ == '__main__':
