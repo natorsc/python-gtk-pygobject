@@ -1,11 +1,11 @@
 # -*- coding: utf-8 -*-
-"""Handy.ActionRow."""
+"""Handy.ActionRow()."""
 import gi
 
 gi.require_version('Gtk', '3.0')
-from gi.repository import Gtk
-
 gi.require_version('Handy', '0.0')
+
+from gi.repository import Gtk, Gio
 from gi.repository import Handy
 
 
@@ -14,35 +14,24 @@ class MainWindow(Gtk.ApplicationWindow):
     icons_standard = ['mail-send-receive', 'user-trash', 'face-smile',
                       'call-start', 'call-stop']
 
-    def __init__(self):
-        super().__init__()
+    def __init__(self, **kwargs):
+        super().__init__(**kwargs)
 
-        self.set_title(title='Handy.Dialog')
-        self.set_default_size(width=768 / 2, height=1366 / 2)
+        self.set_title(title='Handy.ActionRow')
+        self.set_default_size(width=1366 / 2, height=768 / 2)
         self.set_position(position=Gtk.WindowPosition.CENTER)
-        self.set_default_icon_from_file(filename='../../assets/icons/icon.png')
+        self.set_default_icon_from_file(filename='../assets/icons/icon.png')
         self.set_border_width(border_width=10)
 
         # Criando um scroll para que a janela principal possa comportar os widgets
         scrolled = Gtk.ScrolledWindow.new(hadjustment=None, vadjustment=None)
-
-        # Não é necessário declarar ``.set_policy()`` a menos que o scroll
-        # apresente algum comportamento estranho.
-        # scrolled.set_policy(
-        #     hscrollbar_policy=Gtk.PolicyType.EXTERNAL,
-        #     vscrollbar_policy=Gtk.PolicyType.EXTERNAL
-        # )
-
         self.add(widget=scrolled)
 
         list_box = Gtk.ListBox.new()
-        list_box.set_selection_mode(mode=Gtk.SelectionMode.NONE)
         list_box.connect('row-activated', self.on_row_clicked)
-        # self.add(list_box)
-        # vbox.pack_start(child=list_box, expand=True, fill=True, padding=0)
         scrolled.add(widget=list_box)
 
-        # Loop para criar os widgets.
+        # Loop para criar as linhas.
         for n in range(len(self.icons_standard)):
             # Criando e configurando ActionRow que será adicionada no listbox.
             hdy_action_row = Handy.ActionRow.new()
@@ -52,16 +41,38 @@ class MainWindow(Gtk.ApplicationWindow):
             # Adicionando a ActionRow no listbox.
             list_box.add(widget=hdy_action_row)
 
-    def on_row_clicked(self, listbox, listbox_row):
+        self.show_all()
+
+    def on_row_clicked(self, listbox, row):
         # Exibindo qual dos itens foi clicado.
-        print(f'Ícone da linha: {listbox_row.get_icon_name()}')
-        print(f'Titulo da linha: {listbox_row.get_title()}')
-        print(f'Sub titulo da linha: {listbox_row.get_subtitle()}')
-        print(f'Posição = {listbox_row.get_index()}')
+        print(f'Ícone da linha = {row.get_icon_name()}')
+        print(f'Titulo da linha = {row.get_title()}')
+        print(f'Sub titulo da linha = {row.get_subtitle()}')
+        print(f'Posição = {row.get_index()}')
+        print('---\n')
+
+
+class Application(Gtk.Application):
+
+    def __init__(self):
+        super().__init__(application_id='br.natorsc.Exemplo',
+                         flags=Gio.ApplicationFlags.FLAGS_NONE)
+
+    def do_startup(self):
+        Gtk.Application.do_startup(self)
+
+    def do_activate(self):
+        win = self.props.active_window
+        if not win:
+            win = MainWindow(application=self)
+        win.present()
+
+    def do_shutdown(self):
+        Gtk.Application.do_shutdown(self)
 
 
 if __name__ == '__main__':
-    win = MainWindow()
-    win.connect('destroy', Gtk.main_quit)
-    win.show_all()
-    Gtk.main()
+    import sys
+
+    app = Application()
+    app.run(sys.argv)

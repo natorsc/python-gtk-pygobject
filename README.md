@@ -366,13 +366,18 @@ Exemplos de código podem ser vistos na pasta `src` deste repositório.
 
 ---
 
-# Criar, Revisar, atualizar e corrigir ⬇
-
-## Purism Librem 5
+## Libhandy
 
 ### Widgets
 
-* [action_row](https://github.com/natorsc/gui-python-gtk/tree/master/src/librem5-libhandy/action_row.py).
+* [Libhandy ActionRow com Gnome Builder](https://github.com/natorsc/gui-python-gtk/tree/master/src/libhandy/action-row/builder/MainWindow.py).
+* [Libhandy ActionRow com Gnome Glade](https://github.com/natorsc/gui-python-gtk/tree/master/src/libhandy/action-row/glade/MainWindow.py).
+* [Libhandy ActionRow com Python](https://github.com/natorsc/gui-python-gtk/tree/master/src/libhandy/action-row/MainWindow.py).
+
+![Libhandy ActionRow](https://codigoninja.dev/media/git/pygobject/libhandy-action-row.png)
+
+# Criar, Revisar, atualizar e corrigir ⬇
+
 * [arrows](https://github.com/natorsc/gui-python-gtk/tree/master/src/librem5-libhandy/arrows.py).
 * [column](https://github.com/natorsc/gui-python-gtk/tree/master/src/librem5-libhandy/column.py).
 * [combo_row (não sei implementar ou ainda não funciona na versão que utilizei)]().
