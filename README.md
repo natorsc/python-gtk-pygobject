@@ -78,9 +78,9 @@ Exemplos de código podem ser vistos na pasta `src` deste repositório.
 
 ### Janela principal
 
-* [Lendo arquivos de interface do Gnome Builder](https://github.com/natorsc/gui-python-gtk/tree/master/src/main-window/builder).
-* [Lendo arquivos interface do Gnome Glade](https://github.com/natorsc/gui-python-gtk/tree/master/src/main-window/glade).
-* [Criando a janela com Python](https://github.com/natorsc/gui-python-gtk/tree/master/src/main-window).
+* [Lendo arquivos de interface do Gnome Builder](https://github.com/natorsc/gui-python-gtk/tree/master/src/gtk/application-window/builder).
+* [Lendo arquivos interface do Gnome Glade](https://github.com/natorsc/gui-python-gtk/tree/master/src/gtk/application-window/glade).
+* [Criando a janela com Python](https://github.com/natorsc/gui-python-gtk/tree/master/src/gtk/application-window).
 
 ![Python e GTK Janela principal](https://codigoninja.dev/media/git/pygobject/python-gtk-mainwindow.png)
 
@@ -370,17 +370,26 @@ Exemplos de código podem ser vistos na pasta `src` deste repositório.
 
 ### Widgets
 
-* [Libhandy ActionRow com Gnome Builder](https://github.com/natorsc/gui-python-gtk/tree/master/src/libhandy/action-row/builder/MainWindow.py).
-* [Libhandy ActionRow com Gnome Glade](https://github.com/natorsc/gui-python-gtk/tree/master/src/libhandy/action-row/glade/MainWindow.py).
-* [Libhandy ActionRow com Python](https://github.com/natorsc/gui-python-gtk/tree/master/src/libhandy/action-row/MainWindow.py).
+* [Libhandy ActionRow com Gnome Builder](https://github.com/natorsc/gui-python-gtk/tree/master/src/libhandy/action-row/builder).
+* [Libhandy ActionRow com Gnome Glade](https://github.com/natorsc/gui-python-gtk/tree/master/src/libhandy/action-row/glade).
+* [Libhandy ActionRow com Python](https://github.com/natorsc/gui-python-gtk/tree/master/src/libhandy/action-row).
 
 ![Libhandy ActionRow](https://codigoninja.dev/media/git/pygobject/libhandy-action-row.png)
 
+* Libhandy ApplicationWindow. Disponível a partir da versão 1.0?
+
+* Libhandy Arrows. Deprecated since version 0.0.12.
+
+* [Libhandy Column](https://github.com/natorsc/gui-python-gtk/tree/master/src/libhandy/column).
+
+![Libhandy Column](https://codigoninja.dev/media/git/pygobject/libhandy-column.png)
+
+* [Libhandy ComboRow](https://github.com/natorsc/gui-python-gtk/tree/master/src/libhandy/combo_row).
+
+![Libhandy ComboRow](https://codigoninja.dev/media/git/pygobject/libhandy-combo-row.png)
+
 # Criar, Revisar, atualizar e corrigir ⬇
 
-* [arrows](https://github.com/natorsc/gui-python-gtk/tree/master/src/librem5-libhandy/arrows.py).
-* [column](https://github.com/natorsc/gui-python-gtk/tree/master/src/librem5-libhandy/column.py).
-* [combo_row (não sei implementar ou ainda não funciona na versão que utilizei)]().
 * [dialer](https://github.com/natorsc/gui-python-gtk/tree/master/src/librem5-libhandy/dialer.py).
 * [dialer sem utilizar classe](https://github.com/natorsc/gui-python-gtk/tree/master/src/librem5-libhandy/dialer_without_class.py).
 * [dialer_button](https://github.com/natorsc/gui-python-gtk/tree/master/src/librem5-libhandy/dialer_button.py).
@@ -404,3 +413,43 @@ Exemplos de código podem ser vistos na pasta `src` deste repositório.
 * versions.
 * view_switcher_bar.
 * view_switcher.
+
+
+---
+
+
+
+
+
+
+* Handy.Avatar.
+* Handy.Carousel.
+* Handy.CarouselIndicatorDots.
+* Handy.CarouselIndicatorLines.
+* Handy.Clamp.
+* Handy.ComboRow.
+* Handy.Deck.
+* Handy.EnumValueObject.
+* Handy.ExpanderRow.
+* Handy.HeaderBar.
+* Handy.HeaderGroup.
+* Handy.HeaderGroupChild.
+* Handy.Keypad.
+* Handy.Leaflet.
+* Handy.PreferencesGroup.
+* Handy.PreferencesPage.
+* Handy.PreferencesRow.
+* Handy.PreferencesWindow.
+* Handy.SearchBar.
+* Handy.Squeezer.
+* Handy.SwipeGroup.
+* Handy.SwipeTracker.
+* Handy.TitleBar.
+* Handy.ValueObject.
+* Handy.ViewSwitcher.
+* Handy.ViewSwitcherBar.
+* Handy.ViewSwitcherTitle.
+* Handy.Window.
+* Handy.WindowHandle.
+
+
