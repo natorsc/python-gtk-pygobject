@@ -1,11 +1,12 @@
 # -*- coding: utf-8 -*-
 """Handy.Column()."""
+
 import gi
 
 gi.require_version('Gtk', '3.0')
-from gi.repository import Gio, Gtk
-
 gi.require_version('Handy', '0.0')
+
+from gi.repository import Gtk, Gio
 from gi.repository import Handy
 
 

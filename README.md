@@ -378,7 +378,7 @@ Exemplos de código podem ser vistos na pasta `src` deste repositório.
 
 * Libhandy ApplicationWindow. Disponível a partir da versão 1.0?
 
-* Libhandy Arrows. Deprecated since version 0.0.12.
+* Libhandy Arrows. Deprecated since version 0.0.12: Use e.g. Gtk.Image and CSS animation instead.
 
 * [Libhandy Column](https://github.com/natorsc/gui-python-gtk/tree/master/src/libhandy/column).
 
@@ -388,19 +388,30 @@ Exemplos de código podem ser vistos na pasta `src` deste repositório.
 
 ![Libhandy ComboRow](https://codigoninja.dev/media/git/pygobject/libhandy-combo-row.png)
 
+* Libhandy Dialer. Deprecated since version 0.0.12: use Handy.Keypad instead.
+* Libhandy DialerButton. Deprecated since version 0.0.12: This widget is considered a Handy.Dialer internal api.
+* Libhandy DialerCycleButton. Deprecated since version 0.0.12: This widget is considered a Handy.Dialer internal api.
+
+* [Libhandy Dialog](https://github.com/natorsc/gui-python-gtk/tree/master/src/libhandy/dialog).
+
+![Libhandy Dialog](https://codigoninja.dev/media/git/pygobject/libhandy-dialog.png)
+
+* [Libhandy ExpanderRow](https://github.com/natorsc/gui-python-gtk/tree/master/src/libhandy/expander-row).
+
+![Libhandy ExpanderRow](https://codigoninja.dev/media/git/pygobject/libhandy-expander-row.png)
+
+* [Libhandy HeaderBar](https://github.com/natorsc/gui-python-gtk/tree/master/src/libhandy/headerbar).
+
+![Libhandy HeaderBar](https://codigoninja.dev/media/git/pygobject/libhandy-headerbar.png)
+
+* [Libhandy HeaderGroup (Não sei implementar ainda)](https://github.com/natorsc/gui-python-gtk/tree/master/src/libhandy/headergroup).
+
+* [Libhandy Leaflet](https://github.com/natorsc/gui-python-gtk/tree/master/src/libhandy/Leaflet).
+
+![Libhandy Leaflet](https://codigoninja.dev/media/git/pygobject/libhandy-Leaflet.png)
+
 # Criar, Revisar, atualizar e corrigir ⬇
 
-* [dialer](https://github.com/natorsc/gui-python-gtk/tree/master/src/librem5-libhandy/dialer.py).
-* [dialer sem utilizar classe](https://github.com/natorsc/gui-python-gtk/tree/master/src/librem5-libhandy/dialer_without_class.py).
-* [dialer_button](https://github.com/natorsc/gui-python-gtk/tree/master/src/librem5-libhandy/dialer_button.py).
-* [dialer_cycle_button](https://github.com/natorsc/gui-python-gtk/tree/master/src/librem5-libhandy/dialer_cycle_button.py).
-* [dialog](https://github.com/natorsc/gui-python-gtk/tree/master/src/librem5-libhandy/dialog.py).
-* [dialog utilizando classe (os botões ficam direntes?)](https://github.com/natorsc/gui-python-gtk/tree/master/src/librem5-libhandy/dialog_with_class.py).
-* enums.
-* expander_row.
-* header_bar.
-* header_group.
-* leaflet.
 * mod.
 * preferences_group.
 * preferences_page.

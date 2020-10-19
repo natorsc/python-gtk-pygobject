@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-"""Handy.ActionRow()."""
+"""Handy.ExpanderRow()."""
 
 import gi
 
@@ -10,40 +10,46 @@ from gi.repository import Gtk, Gio
 from gi.repository import Handy
 
 
-@Gtk.Template(filename='MainWindow.ui')
 class MainWindow(Gtk.ApplicationWindow):
-    __gtype_name__ = 'MainWindow'
-
     # Nome dos ícones.
     icons_standard = ['mail-send-receive', 'user-trash', 'face-smile',
                       'call-start', 'call-stop']
 
-    # Acessar os widgets da interface com Gtk.Template.Child(name) aqui:
-    list_box = Gtk.Template.Child(name='list_box')
-
     def __init__(self, **kwargs):
         super().__init__(**kwargs)
 
+        self.set_title(title='Handy.ExpanderRow')
+        self.set_default_size(width=1366 / 2, height=768 / 2)
+        self.set_position(position=Gtk.WindowPosition.CENTER)
+        self.set_default_icon_from_file(filename='../../assets/icons/icon.png')
+        self.set_border_width(border_width=10)
+
+        # Criando um scroll para que a janela principal possa comportar os widgets
+        scrolled = Gtk.ScrolledWindow.new(hadjustment=None, vadjustment=None)
+        self.add(widget=scrolled)
+
+        list_box = Gtk.ListBox.new()
+        scrolled.add(widget=list_box)
+
         # Loop para criar as linhas.
         for n in range(len(self.icons_standard)):
-            # Criando e configurando ActionRow que será adicionada no listbox.
-            hdy_action_row = Handy.ActionRow.new()
+            text = Gtk.Label.new(
+                f'Texto {n}. Esse texto será exibido quando a linha for expandida.'
+            )
+            text.set_line_wrap(wrap=True)
+
+            # Criando e configurando ExpanderRow que será adicionada no listbox.
+            hdy_action_row = Handy.ExpanderRow.new()
             hdy_action_row.set_icon_name(icon_name=self.icons_standard[n - 1])
             hdy_action_row.set_title(title=f'Título {n}')
             hdy_action_row.set_subtitle(subtitle=f'subtítulo {n}')
+            # Adicionando o texto.
+            hdy_action_row.add(widget=text)
+
             # Adicionando a ActionRow no listbox.
-            self.list_box.add(widget=hdy_action_row)
+            list_box.add(widget=hdy_action_row)
 
         self.show_all()
-
-    @Gtk.Template.Callback()
-    def on_row_clicked(self, listbox, row):
-        # Exibindo qual dos itens foi clicado.
-        print(f'Ícone da linha = {row.get_icon_name()}')
-        print(f'Titulo da linha = {row.get_title()}')
-        print(f'Sub titulo da linha = {row.get_subtitle()}')
-        print(f'Posição = {row.get_index()}')
-        print('---\n')
 
 
 class Application(Gtk.Application):
