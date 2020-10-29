@@ -1,76 +1,8 @@
 > Em desenvolvimento e revisão
 
-> **OBS**: Este repositório tem um arquivo `Pipfile` , o mesmo **não** funciona no Windows, isso porque a instalação do GTK e Python **DEVEM** ser feitas pelo **msys2**.
+> **OBS**: Este repositório tem um arquivo `Pipfile` , o mesmo **não** funciona no Windows, uma vez que a instalação do GTK e Python **DEVEM** ser feitas pelo **msys2**.
 
----
-
-# GUI (graphical user interface) com Python e GTK
-
-Tutoriais e pequenos exemplos de código.
-
-## GTK
-
-O GTK é um **toolkit multiplataforma** para a criação de interfaces gráficas.
-
-Este toolkit utiliza [licença GNU LGPL](https://pt.wikipedia.org/wiki/GNU_Lesser_General_Public_License), o que permite a sua utilização para construção de softwares que seja livres ou proprietários.
-
-Foi desenvolvido inicialmente para o [GIMP](https://www.gimp.org/) (GNU Image Manipulation Program), por isso foi batizado de **GIMP Toolkit** ou simplesmente **GTK**.
-
-Originalmente criado por, Peter Mattis, Spencer Kimball e Josh MacDonald.
-
-O GTK+ é comumente utilizado na elaboração de aplicativos para o ambiente de desktop [GNOME](https://www.gnome.org/), contudo por ser multiplataforma pode ser executado sem problemas em diversos sistemas operacionais e ambientes gráficos.
-
-O toolkit é escrito em `C` , seu design é orientado a objeto com base no sistema de objetos da biblioteca `GLib` .
-
-Existe o suporte (bindings) a diversas linguagens de programação, contudo as linguagem que são suportadas **oficialmente** (até o momento que escrevo) são:
-
-* C++.
-* JavaScript.
-* Python.
-* Vala.
-
-## O que estou publicando?
-
-A ideia é apenas **estudar** e documentar a construção de interfaces gráficas com GTK e Python.
-
-Exemplos de código podem ser vistos na pasta `src` deste repositório.
-
-> Em caso de problemas entre em contato para que o material possa ser melhorado.
-
----
-
-# Tutoriais
-
-* [Como instalar o msys2 no Windows (Obrigatório)](https://codigoninja.dev/2020/09/08/python-gtk-instalar-msys2-windows/).
-* [Como instalar o PyGObject for Windows (não recomendado)](https://codigoninja.dev/2020/09/08/python-gtk-instalar-pygobject-windows/).
-* [Configurando o ambiente de desenvolvimento](https://codigoninja.dev/2020/09/08/python-gtk-configurando-ambiente-desenvolvimento/).
-
-## IDEs e RADs
-
-* [Como Instalar o Gnome Builder](https://codigoninja.dev/2020/09/08/python-gtk-instalar-gnome-builder/).
-* [Como Instalar o Gnome Glade](https://codigoninja.dev/2020/09/08/python-gtk-instalar-gnome-glade/).
-
-## Purism Librem 5
-
-* [Como Instalar a biblioteca libhandy](https://codigoninja.dev/2020/09/08/python-gtk-instalar-biblioteca-libhandy/).
-* [Executando o PureOS (Phosh) via VM](https://codigoninja.dev/2020/09/08/python-gtk-pureos-phosh/).
-
-## GTK
-
-* [GTK icon browser](https://codigoninja.dev/2020/09/08/python-gtk-instalar-icon-browser/).
-* [Como ativar o GtkInspector](https://codigoninja.dev/2020/09/08/python-gtk-ativar-gtkinspector/).
-* [Criando uma janela com Python e GTK](https://codigoninja.dev/2020/09/08/python-gtk-criando-janela/).
-
-## Criar executáveis
-
-* [Criando executáveis com Cx_Freeze no Windows](https://codigoninja.dev/2020/09/08/python-gtk-criando-executavel-cxfreeze-windows/).
-* [Criando executáveis com Cx_Freeze no Linux](https://codigoninja.dev/2020/09/08/python-gtk-criando-executavel-cxfreeze-linux/).
-
-## Extra
-
-* [Como instalar Python no Linux e Windows](https://codigoninja.dev/2020/09/07/instalar-linguagem-python-linux-windows/).
-
----
+Tutoriais migrados para o [site](https://codigoninja.dev/gtk/criando-interfaces-graficas-python-pygobject-gkt/) facilitando assim a localização dos conteúdos pelos menus ou mesmo pela pesquisa do site.
 
 # Código
 
