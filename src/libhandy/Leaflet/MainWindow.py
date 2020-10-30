@@ -10,7 +10,6 @@ from gi.repository import Gtk, Gio, GObject
 from gi.repository import Handy
 
 
-
 class MainWindow(Gtk.ApplicationWindow):
 
     def __init__(self, **kwargs):
@@ -29,7 +28,7 @@ class MainWindow(Gtk.ApplicationWindow):
         header_bar.set_show_close_button(setting=True)
         hdy_title_bar.add(widget=header_bar)
 
-        self.set_titlebar(hdy_title_bar)
+        self.set_titlebar(titlebar=hdy_title_bar)
 
         self.hdy_leaflet = Handy.Leaflet.new()
         self.hdy_leaflet.set_transition_type(
@@ -44,12 +43,7 @@ class MainWindow(Gtk.ApplicationWindow):
 
         text_page_1 = (
             '<span size="xx-large" weight="bold">Leaflet (Folheto)</span>\n\n'
-            '<span size="large">Exemplo de como utilizar o widget leaflet da '
-            'biblioteca libhandy.\n'
-            'Leaflets cria um interface de usuário adaptativa.\n'
-            'Quando a janela está pequena é exibido um botão que leva para '
-            'as proximas páginas.\n'
-            'A medida que a janela aumenta mais conteúdo é exibido.</span>'
+            '<span size="large">Clique no botão para ir para a página 2.</span>'
         )
         lbl_page_1 = Gtk.Label.new()
         lbl_page_1.set_line_wrap(wrap=True)
@@ -67,10 +61,8 @@ class MainWindow(Gtk.ApplicationWindow):
 
         text_page_2 = (
             '<span size="xx-large" weight="bold">Página 2</span>\n\n'
-            '<span size="large">Esse texto só será visível quando a janela for '
-            'grande ou quando o usuário clicar no botão <b>leia mais...</b>.\n'
-            'Altere o tamanho dá janela para visualizar as alterações.\n'
-            'Para retornar para a página 1 clique no botão <b>Voltar</b>.</span>'
+            '<span size="large">Para voltar clique no botão localizado '
+            'na barra de título</span>'
         )
         lbl_page_2 = Gtk.Label.new()
         lbl_page_2.set_line_wrap(wrap=True)
@@ -101,7 +93,7 @@ class MainWindow(Gtk.ApplicationWindow):
         self.show_all()
 
     def show_page(self, button, page):
-        self.hdy_leaflet.set_visible_child(page)
+        self.hdy_leaflet.set_visible_child(visible_child=page)
 
 
 class Application(Gtk.Application):
