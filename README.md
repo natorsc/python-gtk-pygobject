@@ -363,13 +363,13 @@ Tutoriais migrados para o [site](https://codigoninja.dev/gtk/criando-interfaces-
 
 ### Leaflet
 
-* [Libhandy Leaflet](https://github.com/natorsc/gui-python-gtk/tree/master/src/libhandy/Leaflet).
+* [Libhandy Leaflet](https://github.com/natorsc/gui-python-gtk/tree/master/src/libhandy/leaflet).
 
-![Libhandy Leaflet](https://codigoninja.dev/images/gtk/pygobject/widgets/libhandy-Leaflet.webp)
+![Libhandy Leaflet](https://codigoninja.dev/images/gtk/pygobject/widgets/libhandy-leaflet.webp)
 
-* [Sincronizando dois Leaflets e botão de voltar na barra de titulo](https://github.com/natorsc/gui-python-gtk/tree/master/src/libhandy/Leaflet).
+* [Sincronizando dois Leaflets e botão de voltar na barra de titulo](https://github.com/natorsc/gui-python-gtk/tree/master/src/libhandy/leaflet).
 
-![Libhandy Leaflet](https://codigoninja.dev/images/gtk/pygobject/widgets/libhandy-sync-Leaflet.webp)
+![Libhandy Leaflet](https://codigoninja.dev/images/gtk/pygobject/widgets/libhandy-sync-leaflet.webp)
 
 # Criar, Revisar, atualizar e corrigir ⬇
 
