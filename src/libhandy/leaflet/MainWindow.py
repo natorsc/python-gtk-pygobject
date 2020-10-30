@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-"""Handy.Leaflet. Não sei implementar"""
+"""Handy.Leaflet()."""
 
 import gi
 

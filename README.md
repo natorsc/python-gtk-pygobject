@@ -1,3 +1,5 @@
+ [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT) [![Please do not theme this app](https://stopthemingmy.app/badge.svg)](https://stopthemingmy.app) 
+
 > Em desenvolvimento e revisão
 
 > **OBS**: Este repositório tem um arquivo `Pipfile` , o mesmo **não** funciona no Windows, uma vez que a instalação do GTK e Python **DEVEM** ser feitas pelo **msys2**.
@@ -246,53 +248,61 @@ Tutoriais migrados para o [site](https://codigoninja.dev/gtk/criando-interfaces-
 
 #### Entry
 
-* [GTK Entry com Gnome Builder](https://github.com/natorsc/gui-python-gtk/tree/master/src/widgets/entry/builder).
-* [GTK Entry com Gnome Glade](https://github.com/natorsc/gui-python-gtk/tree/master/src/widgets/entry/glade).
-* [GTK Entry com Python](https://github.com/natorsc/gui-python-gtk/tree/master/src/widgets/entry/).
+* [GTK Entry com Gnome Builder](https://github.com/natorsc/gui-python-gtk/tree/master/src/gtk/widgets/entry/builder).
+* [GTK Entry com Gnome Glade](https://github.com/natorsc/gui-python-gtk/tree/master/src/gtk/widgets/entry/glade).
+* [GTK Entry com Python](https://github.com/natorsc/gui-python-gtk/tree/master/src/gtk/widgets/entry/).
 
 ![GTK Entry](https://codigoninja.dev/images/gtk/pygobject/widgets/entry.webp)
 
 #### EntryCompletion
 
-* [GTK EntryCompletion com Gnome Builder](https://github.com/natorsc/gui-python-gtk/tree/master/src/widgets/entry-completion/builder).
-* [GTK EntryCompletion com Gnome Glade](https://github.com/natorsc/gui-python-gtk/tree/master/src/widgets/entry-completion/glade).
-* [GTK EntryCompletion com Python](https://github.com/natorsc/gui-python-gtk/tree/master/src/widgets/entry-completion).
+* [GTK EntryCompletion com Gnome Builder](https://github.com/natorsc/gui-python-gtk/tree/master/src/gtk/widgets/entry-completion/builder).
+* [GTK EntryCompletion com Gnome Glade](https://github.com/natorsc/gui-python-gtk/tree/master/src/gtk/widgets/entry-completion/glade).
+* [GTK EntryCompletion com Python](https://github.com/natorsc/gui-python-gtk/tree/master/src/gtk/widgets/entry-completion).
 
 ![GTK EntryCompletion](https://codigoninja.dev/images/gtk/pygobject/widgets/entry-completion.webp)
 
 #### RadioButton
 
-* [GTK RadioButton com  Gnome Builder](https://github.com/natorsc/gui-python-gtk/tree/master/src/widgets/radio-button/builder).
-* [GTK RadioButton com Gnome Glade](https://github.com/natorsc/gui-python-gtk/tree/master/src/widgets/radio-button/glade).
-* [GTK RadioButton com Python](https://github.com/natorsc/gui-python-gtk/tree/master/src/widgets/radio-button).
+* [GTK RadioButton com  Gnome Builder](https://github.com/natorsc/gui-python-gtk/tree/master/src/gtk/widgets/radio-button/builder).
+* [GTK RadioButton com Gnome Glade](https://github.com/natorsc/gui-python-gtk/tree/master/src/gtk/widgets/radio-button/glade).
+* [GTK RadioButton com Python](https://github.com/natorsc/gui-python-gtk/tree/master/src/gtk/widgets/radio-button).
 
 ![GTK RadioButton](https://codigoninja.dev/images/gtk/pygobject/widgets/radio-button.webp)
 
+#### SearchBar
+
+* [GTK SearchBar com  Gnome Builder](https://github.com/natorsc/gui-python-gtk/tree/master/src/gtk/widgets/search-bar/builder).
+* [GTK SearchBar com Gnome Glade](https://github.com/natorsc/gui-python-gtk/tree/master/src/gtk/widgets/search-bar/glade).
+* [GTK SearchBar com Python](https://github.com/natorsc/gui-python-gtk/tree/master/src/gtk/widgets/search-bar).
+
+![GTK SearchBar](https://codigoninja.dev/images/gtk/pygobject/widgets/search-bar.webp)
+
 #### SearchEntry
 
-* [GTK SearchEntry com Gnome Builder](https://github.com/natorsc/gui-python-gtk/tree/master/src/widgets/search-entry/builder).
-* [GTK SearchEntry com Gnome Glade](https://github.com/natorsc/gui-python-gtk/tree/master/src/widgets/search-entry/glade).
-* [GTK SearchEntry com Python](https://github.com/natorsc/gui-python-gtk/tree/master/src/widgets/search-entry).
+* [GTK SearchEntry com Gnome Builder](https://github.com/natorsc/gui-python-gtk/tree/master/src/gtk/widgets/search-entry/builder).
+* [GTK SearchEntry com Gnome Glade](https://github.com/natorsc/gui-python-gtk/tree/master/src/gtk/widgets/search-entry/glade).
+* [GTK SearchEntry com Python](https://github.com/natorsc/gui-python-gtk/tree/master/src/gtk/widgets/search-entry).
 
 ![GTK SearchEntry](https://codigoninja.dev/images/gtk/pygobject/widgets/search-entry.webp)
 
 #### Treeview
 
-* [GTK TreeView editar célula Gnome Builder](https://github.com/natorsc/gui-python-gtk/tree/master/src/widgets/treeview/editable/builder).
-* [GTK TreeView editar célula Gnome Glade](https://github.com/natorsc/gui-python-gtk/tree/master/src/widgets/treeview/editable/glade).
-* [GTK TreeView editar célula Python](https://github.com/natorsc/gui-python-gtk/tree/master/src/widgets/treeview/editable).
+* [GTK TreeView editar célula Gnome Builder](https://github.com/natorsc/gui-python-gtk/tree/master/src/gtk/widgets/treeview/editable/builder).
+* [GTK TreeView editar célula Gnome Glade](https://github.com/natorsc/gui-python-gtk/tree/master/src/gtk/widgets/treeview/editable/glade).
+* [GTK TreeView editar célula Python](https://github.com/natorsc/gui-python-gtk/tree/master/src/gtk/widgets/treeview/editable).
 
 ![GTK TreeView editar célula](https://codigoninja.dev/images/gtk/pygobject/widgets/treeview-editable.webp)
 
-* [GTK TreeView filtro com botões no Gnome Builder](https://github.com/natorsc/gui-python-gtk/tree/master/src/widgets/treeview/filter/builder).
-* [GTK TreeView filtro com botões no Gnome Glade](https://github.com/natorsc/gui-python-gtk/tree/master/src/widgets/treeview/filter/glade).
-* [GTK TreeView filtro com botões no Python](https://github.com/natorsc/gui-python-gtk/tree/master/src/widgets/treeview/filter).
+* [GTK TreeView filtro com botões no Gnome Builder](https://github.com/natorsc/gui-python-gtk/tree/master/src/gtk/widgets/treeview/filter/builder).
+* [GTK TreeView filtro com botões no Gnome Glade](https://github.com/natorsc/gui-python-gtk/tree/master/src/gtk/widgets/treeview/filter/glade).
+* [GTK TreeView filtro com botões no Python](https://github.com/natorsc/gui-python-gtk/tree/master/src/gtk/widgets/treeview/filter).
 
 ![GTK TreeView ordenando pelo cabeçalho](https://codigoninja.dev/images/gtk/pygobject/widgets/treeview-filter.webp)
 
-* [GTK TreeView ordenando pelo cabeçalho com Gnome Builder](https://github.com/natorsc/gui-python-gtk/tree/master/src/widgets/treeview/sort/builder).
-* [GTK TreeView ordenando pelo cabeçalho com Gnome Glade](https://github.com/natorsc/gui-python-gtk/tree/master/src/widgets/treeview/sort/glade).
-* [GTK TreeView ordenando pelo cabeçalho com Python](https://github.com/natorsc/gui-python-gtk/tree/master/src/widgets/treeview/sort).
+* [GTK TreeView ordenando pelo cabeçalho com Gnome Builder](https://github.com/natorsc/gui-python-gtk/tree/master/src/gtk/widgets/treeview/sort/builder).
+* [GTK TreeView ordenando pelo cabeçalho com Gnome Glade](https://github.com/natorsc/gui-python-gtk/tree/master/src/gtk/widgets/treeview/sort/glade).
+* [GTK TreeView ordenando pelo cabeçalho com Python](https://github.com/natorsc/gui-python-gtk/tree/master/src/gtk/widgets/treeview/sort).
 
 ![GTK TreeView ordenando pelo cabeçalho](https://codigoninja.dev/images/gtk/pygobject/widgets/treeview-sort.webp)
 
@@ -363,21 +373,25 @@ Tutoriais migrados para o [site](https://codigoninja.dev/gtk/criando-interfaces-
 
 ### Leaflet
 
-* [Libhandy Leaflet](https://github.com/natorsc/gui-python-gtk/tree/master/src/libhandy/leaflet).
+* [Libhandy Leaflet com Python](https://github.com/natorsc/gui-python-gtk/tree/master/src/libhandy/leaflet).
 
 ![Libhandy Leaflet](https://codigoninja.dev/images/gtk/pygobject/widgets/libhandy-leaflet.webp)
 
-* [Sincronizando dois Leaflets e botão de voltar na barra de titulo](https://github.com/natorsc/gui-python-gtk/tree/master/src/libhandy/leaflet).
+* [Libhandy Leaflet com Python sincronizando dois Leaflets](https://github.com/natorsc/gui-python-gtk/tree/master/src/libhandy/leaflet).
 
 ![Libhandy Leaflet](https://codigoninja.dev/images/gtk/pygobject/widgets/libhandy-sync-leaflet.webp)
 
+
+#### SearchBar
+
+
+* [Libhandy SearchBar com Python](https://github.com/natorsc/gui-python-gtk/tree/master/src/libhandy/search-bar).
+
+![GTK SearchBar](https://codigoninja.dev/images/gtk/pygobject/widgets/libhandy-search-bar.webp)
+
 # Criar, Revisar, atualizar e corrigir ⬇
 
-* mod.
-* preferences_group.
-* preferences_page.
-* preferences_row.
-* preferences_window.
+
 * search_bar.
 * squeezer.
 * title_bar.
