@@ -33,6 +33,12 @@ class MainWindow(Gtk.ApplicationWindow):
         self.set_position(position=Gtk.WindowPosition.CENTER)
         self.set_default_icon_from_file(filename='../../../assets/icons/icon.png')
 
+        header_bar = Gtk.HeaderBar.new()
+        header_bar.set_title(title='Stack Layout')
+        header_bar.set_subtitle(subtitle='com StackSwitcher')
+        header_bar.set_show_close_button(setting=True)
+        self.set_titlebar(titlebar=header_bar)
+
         vbox = Gtk.Box.new(orientation=Gtk.Orientation.VERTICAL, spacing=6)
         vbox.set_border_width(border_width=12)
         self.add(widget=vbox)
@@ -64,7 +70,7 @@ class MainWindow(Gtk.ApplicationWindow):
 
         stack_switcher = Gtk.StackSwitcher.new()
         stack_switcher.set_stack(stack=stack)
-        vbox.pack_start(child=stack_switcher, expand=False, fill=False, padding=0)
+        header_bar.set_custom_title(title_widget=stack_switcher)
 
         self.show_all()
 
