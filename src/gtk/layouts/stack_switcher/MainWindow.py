@@ -64,7 +64,6 @@ class MainWindow(Gtk.ApplicationWindow):
 
         stack_switcher = Gtk.StackSwitcher.new()
         stack_switcher.set_stack(stack=stack)
-
         vbox.pack_start(child=stack_switcher, expand=False, fill=False, padding=0)
 
         self.show_all()

@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-"""Handy.HeaderBar()."""
+"""Handy.SearchBar()."""
 
 import gi
 
@@ -23,11 +23,11 @@ class MainWindow(Gtk.ApplicationWindow):
         # Conectando o evento de tecla pressionada à janela principal.
         self.connect('key-press-event', self.key_press_event)
 
-        header_bar = Gtk.HeaderBar.new()
-        header_bar.set_title(title='Handy.HeaderBar')
-        header_bar.set_subtitle(subtitle='Handy.HeaderBar')
-        header_bar.set_show_close_button(setting=True)
-        self.set_titlebar(titlebar=header_bar)
+        hdy_header_bar = Handy.HeaderBar.new()
+        hdy_header_bar.set_title(title='Handy.SearchBar')
+        hdy_header_bar.set_subtitle(subtitle='Handy.SearchBar')
+        hdy_header_bar.set_show_close_button(setting=True)
+        self.set_titlebar(titlebar=hdy_header_bar)
 
         btn_icon_search = Gtk.Image.new_from_icon_name(
             icon_name='system-search-symbolic',
@@ -37,7 +37,7 @@ class MainWindow(Gtk.ApplicationWindow):
         self.btn_search = Gtk.ToggleButton.new()
         self.btn_search.set_image(image=btn_icon_search)
         self.btn_search.connect('clicked', self.on_btn_search_clicled)
-        header_bar.pack_start(child=self.btn_search)
+        hdy_header_bar.pack_start(child=self.btn_search)
 
         vbox = Gtk.Box.new(orientation=Gtk.Orientation.VERTICAL, spacing=0)
         self.add(widget=vbox)

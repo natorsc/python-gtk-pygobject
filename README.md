@@ -1,12 +1,42 @@
  [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT) [![Please do not theme this app](https://stopthemingmy.app/badge.svg)](https://stopthemingmy.app) 
 
-> Em desenvolvimento e revisão
+# Criando interfaces gráficas com Python (PyGObject) e GTK
 
-> **OBS**: Este repositório tem um arquivo `Pipfile` , o mesmo **não** funciona no Windows, uma vez que a instalação do GTK e Python **DEVEM** ser feitas pelo **msys2**.
+## GTK
 
-Tutoriais migrados para o [site](https://codigoninja.dev/gtk/criando-interfaces-graficas-python-pygobject-gkt/), facilitando assim a localização dos conteúdos pelos menus ou mesmo pela pesquisa do site.
+O GTK é um **toolkit multiplataforma** para a criação de interfaces gráficas.
 
-# Código
+Este toolkit utiliza [licença GNU LGPL](https://pt.wikipedia.org/wiki/GNU_Lesser_General_Public_License), o que permite a sua utilização para construção de softwares que seja livres ou proprietários.
+
+Foi desenvolvido inicialmente para o [GIMP](https://www.gimp.org/) (GNU Image Manipulation Program), por isso foi batizado de **GIMP Toolkit** ou simplesmente **GTK**.
+
+Originalmente criado por, Peter Mattis, Spencer Kimball e Josh MacDonald.
+
+O GTK+ é comumente utilizado na elaboração de aplicativos para o ambiente de desktop [GNOME](https://www.gnome.org/), contudo por ser multiplataforma pode ser executado sem problemas em diversos sistemas operacionais e ambientes gráficos.
+
+O toolkit é escrito em `C` , seu design é orientado a objeto com base no sistema de objetos da biblioteca `GLib` .
+
+Existe o suporte (bindings) a diversas linguagens de programação, contudo as linguagem que são suportadas **oficialmente** (até o momento que escrevo) são:
+
+* C++.
+* C\#.
+* C.
+* JavaScript.
+* Python.
+* Rust.
+* Vala.
+
+## O que estou publicando?
+
+A ideia é apenas **estudar** e documentar a construção de interfaces gráficas com a linguagem de programação Python e o toolkit para construção de interfaces gráficas GTK.
+
+!!! note "Nota"
+
+    Em caso de problemas entre em contato para que o material possa ser melhorado.
+
+## Tutoriais
+
+[https://www.codigoninja.dev/gtk/criando-interfaces-graficas-python-pygobject/](https://www.codigoninja.dev/gtk/criando-interfaces-graficas-python-pygobject/)
 
 ## GTK
 
@@ -381,26 +411,35 @@ Tutoriais migrados para o [site](https://codigoninja.dev/gtk/criando-interfaces-
 
 ![Libhandy Leaflet](https://codigoninja.dev/images/gtk/pygobject/widgets/libhandy-sync-leaflet.webp)
 
-
-#### SearchBar
-
+### SearchBar
 
 * [Libhandy SearchBar com Python](https://github.com/natorsc/gui-python-gtk/tree/master/src/libhandy/search-bar).
 
-![GTK SearchBar](https://codigoninja.dev/images/gtk/pygobject/widgets/libhandy-search-bar.webp)
+![Libhandy SearchBar](https://codigoninja.dev/images/gtk/pygobject/widgets/libhandy-search-bar.webp)
+
+### Squeezer
+
+* Libhandy squeezer. Não sei implementar.
+
+### TitleBar
+
+* [Libhandy TitleBar com Python](https://github.com/natorsc/gui-python-gtk/tree/master/src/libhandy/title-bar).
+
+![Libhandy TitleBar](https://codigoninja.dev/images/gtk/pygobject/widgets/libhandy-title-bar.webp)
+
+### ViewSwitcher
+
+* [Libhandy ViewSwitcher com Python](https://github.com/natorsc/gui-python-gtk/tree/master/src/libhandy/view-switcher).
+
+![Libhandy ViewSwitcher](https://codigoninja.dev/images/gtk/pygobject/widgets/libhandy-view-switcher.webp)
+
+### ViewSwitcherBar
+
+* [Libhandy ViewSwitcherBar com Python](https://github.com/natorsc/gui-python-gtk/tree/master/src/libhandy/view-switcher-bar).
+
+![Libhandy ViewSwitcherBar](https://codigoninja.dev/images/gtk/pygobject/widgets/libhandy-view-switcher-bar.webp)
 
 # Criar, Revisar, atualizar e corrigir ⬇
-
-
-* search_bar.
-* squeezer.
-* title_bar.
-* value_object.
-* versions.
-* view_switcher_bar.
-* view_switcher.
-
----
 
 * Handy.Avatar.
 * Handy.Carousel.
@@ -431,5 +470,3 @@ Tutoriais migrados para o [site](https://codigoninja.dev/gtk/criando-interfaces-
 * Handy.ViewSwitcherTitle.
 * Handy.Window.
 * Handy.WindowHandle.
-
-
