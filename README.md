@@ -356,7 +356,33 @@ A ideia é apenas **estudar** e documentar a construção de interfaces gráfica
 
 * Libhandy Arrows. Deprecated since version 0.0.12: Use e.g. Gtk.Image and CSS animation instead.
 
+### Avatar
+
+* [Libhandy Avatar com Python](https://github.com/natorsc/gui-python-gtk/tree/master/src/libhandy/avatar).
+
+![Libhandy Avatar](https://codigoninja.dev/images/gtk/pygobject/widgets/libhandy-avatar.webp)
+
+### Carousel
+
+* [Libhandy Carousel com Python](https://github.com/natorsc/gui-python-gtk/tree/master/src/libhandy/carousel).
+
+![Libhandy Carousel](https://codigoninja.dev/images/gtk/pygobject/widgets/libhandy-carousel.webp)
+
+### CarouselIndicatorDots
+
+* [Libhandy CarouselIndicatorLines com Python](https://github.com/natorsc/gui-python-gtk/tree/master/src/libhandy/carousel-indicator-dots).
+
+![Libhandy CarouselIndicatorLines](https://codigoninja.dev/images/gtk/pygobject/widgets/libhandy-carousel-indicator-dots.webp)
+
+### CarouselIndicatorLines
+
+* [Libhandy CarouselIndicatorLines com Python](https://github.com/natorsc/gui-python-gtk/tree/master/src/libhandy/carousel-indicator-lines).
+
+![Libhandy CarouselIndicatorLines](https://codigoninja.dev/images/gtk/pygobject/widgets/libhandy-carousel-indicator-lines.webp)
+
 ### Column
+
+HdyColumn foi trocado pelo HdyClamp a partir da versão 1.0.
 
 * [Libhandy Column](https://github.com/natorsc/gui-python-gtk/tree/master/src/libhandy/column).
 
@@ -441,10 +467,6 @@ A ideia é apenas **estudar** e documentar a construção de interfaces gráfica
 
 # Criar, Revisar, atualizar e corrigir ⬇
 
-* Handy.Avatar.
-* Handy.Carousel.
-* Handy.CarouselIndicatorDots.
-* Handy.CarouselIndicatorLines.
 * Handy.Clamp.
 * Handy.ComboRow.
 * Handy.Deck.

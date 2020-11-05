@@ -19,7 +19,7 @@ import gi
 gi.require_version(namespace='Gtk', version='3.0')
 from gi.repository import Gtk, GObject
 
-gi.require_version('Handy', '0.0')
+gi.require_version('Handy', '1')
 from gi.repository import Handy
 
 

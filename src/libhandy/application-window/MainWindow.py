@@ -11,7 +11,7 @@ import gi
 # Isso porque um computador pode ter mais de uma versão do GTK.
 gi.require_version('Gtk', '3.0')
 # Definindo a versão da biblioteca libhandy.
-gi.require_version('Handy', '0.0')
+gi.require_version('Handy', '1')
 
 # Importando as bibliotecas Gio e GTK.
 from gi.repository import Gtk, Gio

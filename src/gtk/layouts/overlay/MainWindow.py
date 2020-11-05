@@ -29,7 +29,6 @@ class MainWindow(Gtk.ApplicationWindow):
         botao3.set_valign(Gtk.Align.CENTER)
 
         overlay = Gtk.Overlay.new()
-
         overlay.add_overlay(widget=botao1)
         overlay.add_overlay(widget=botao2)
         overlay.add_overlay(widget=botao3)
