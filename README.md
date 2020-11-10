@@ -467,7 +467,7 @@ HdyColumn foi trocado pelo HdyClamp a partir da versão 1.0.
 
 # Criar, Revisar, atualizar e corrigir ⬇
 
-* Handy.Clamp.
+
 * Handy.ComboRow.
 * Handy.Deck.
 * Handy.EnumValueObject.

@@ -11,6 +11,8 @@ from gi.repository import Handy
 
 
 class MainWindow(Gtk.ApplicationWindow):
+    icon_list = ['go-home-symbolic', 'system-search-symbolic',
+                 'contact-new-symbolic', 'mail-unread-symbolic']
 
     def __init__(self, **kwargs):
         super().__init__(**kwargs)
@@ -19,6 +21,12 @@ class MainWindow(Gtk.ApplicationWindow):
         self.set_default_size(width=1366 / 2, height=768 / 2)
         self.set_position(position=Gtk.WindowPosition.CENTER)
         self.set_default_icon_from_file(filename='../../assets/icons/icon.png')
+
+        hdy_header_bar = Handy.HeaderBar.new()
+        hdy_header_bar.set_title(title='Handy.ViewSwitcher')
+        hdy_header_bar.set_subtitle(subtitle='Handy.ViewSwitcher')
+        hdy_header_bar.set_show_close_button(setting=True)
+        self.set_titlebar(titlebar=hdy_header_bar)
 
         vbox = Gtk.Box.new(orientation=Gtk.Orientation.VERTICAL, spacing=6)
         self.add(widget=vbox)

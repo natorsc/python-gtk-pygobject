@@ -24,17 +24,17 @@ class MainWindow(Gtk.ApplicationWindow):
         hdy_header_bar.set_title(title='Handy.ViewSwitcher')
         hdy_header_bar.set_subtitle(subtitle='Handy.ViewSwitcher')
         hdy_header_bar.set_show_close_button(setting=True)
-        hdy_header_bar.set_centering_policy(centering_policy=Handy.CenteringPolicy.STRICT)
         self.set_titlebar(titlebar=hdy_header_bar)
 
         hdy_squeezer = Handy.Squeezer.new()
-        hdy_squeezer.connect("notify::visible-child", self.on_headerbar_squeezer_notify)
+        hdy_squeezer.connect("notify", self.on_headerbar_squeezer_notify)
         hdy_header_bar.set_custom_title(title_widget=hdy_squeezer)
 
         vbox = Gtk.Box.new(orientation=Gtk.Orientation.VERTICAL, spacing=6)
         self.add(widget=vbox)
 
         stack = Gtk.Stack.new()
+        hdy_header_bar.connect("notify", self.on_headerbar_squeezer_notify)
         stack.set_transition_type(
             transition=Gtk.StackTransitionType.SLIDE_LEFT_RIGHT
         )
@@ -72,8 +72,11 @@ class MainWindow(Gtk.ApplicationWindow):
         self.show_all()
 
     def on_headerbar_squeezer_notify(self, squeezer, event):
-        child = squeezer.get_visible_child()
-        # self.bottom_switcher.set_reveal(child != self.headerbar_switcher)
+        print(squeezer)
+        print(event)
+
+        # child = squeezer.get_visible_child()
+        # # self.bottom_switcher.set_reveal(child != self.headerbar_switcher)
 
 
 class Application(Gtk.Application):
