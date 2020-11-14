@@ -36,36 +36,36 @@ A ideia é apenas **estudar** e documentar a construção de interfaces gráfica
 
 ## Tutoriais
 
-[Criando o ambiente de desenvolvimento]([https://www.codigoninja.dev/gtk/criando-ambiente-desenvolvimento-python-pygobject/).
+- [Criando o ambiente de desenvolvimento]([https://www.codigoninja.dev/gtk/criando-ambiente-desenvolvimento-python-pygobject/).
 
 ### Windows
 
-[Criando um executável com o Cx_Freeze e listdlls](https://www.codigoninja.dev/gtk/criando-executavel-cx-freeze-windows-python-pygobject/).
-[Como instalar o PyGObject for Windows (não recomendado)](https://www.codigoninja.dev/gtk/instalar-pygobject-for-windows/).
+- [Criando um executável com o Cx_Freeze e listdlls](https://www.codigoninja.dev/gtk/criando-executavel-cx-freeze-windows-python-pygobject/).
+- [Como instalar o PyGObject for Windows (não recomendado)](https://www.codigoninja.dev/gtk/instalar-pygobject-for-windows/).
 
 ### Linux
 
-[Criando um executável com o Cx_Freeze](https://www.codigoninja.dev/gtk/criando-executavel-cx-freeze-linux-python-pygobject/).
+- [Criando um executável com o Cx_Freeze](https://www.codigoninja.dev/gtk/criando-executavel-cx-freeze-linux-python-pygobject/).
 
 ### Style
 
-[Exemplo de alguns seletores css no Gtk](https://www.codigoninja.dev/gtk/principais-seletores-css-python-pygobject/).
-[Alterando o estilo de um componete com a propriedade name](https://www.codigoninja.dev/gtk/adicionar-propriedade-name-widget-python-pygobject/).
-[Alterando o estilo de um componete com a tag class](https://www.codigoninja.dev/gtk/cadicionar-tag-class-widget-python-pygobject/).
-[Ativar e desativar o modo escuro (dark mode)](https://www.codigoninja.dev/gtk/utilizar-modo-escuro-dark-mode-python-pygobject/).
+- [Exemplo de alguns seletores css no Gtk](https://www.codigoninja.dev/gtk/principais-seletores-css-python-pygobject/).
+- [Alterando o estilo de um componete com a propriedade name](https://www.codigoninja.dev/gtk/adicionar-propriedade-name-widget-python-pygobject/).
+- [Alterando o estilo de um componete com a tag class](https://www.codigoninja.dev/gtk/cadicionar-tag-class-widget-python-pygobject/).
+- [Ativar e desativar o modo escuro (dark mode)](https://www.codigoninja.dev/gtk/utilizar-modo-escuro-dark-mode-python-pygobject/).
 
 ### Ferramentas
 
-[Ativando o Gkt Inspector](https://www.codigoninja.dev/gtk/ativar-gtk-inspector/).
-[Como instalar o Gnome Builder](https://www.codigoninja.dev/gtk/instalar-gnome-builder/).
-[Como instalar o Gnome Gnome Glade](https://www.codigoninja.dev/gtk/instalar-gnome-glade/).
-[Como instalar o Gtk icon browser](https://www.codigoninja.dev/gtk/instalar-gtk-icon-browser/).
+- [Ativando o Gkt Inspector](https://www.codigoninja.dev/gtk/ativar-gtk-inspector/).
+- [Como instalar o Gnome Builder](https://www.codigoninja.dev/gtk/instalar-gnome-builder/).
+- [Como instalar o Gnome Gnome Glade](https://www.codigoninja.dev/gtk/instalar-gnome-glade/).
+- [Como instalar o Gtk icon browser](https://www.codigoninja.dev/gtk/instalar-gtk-icon-browser/).
 
 ### Libhandy
 
-[Como instalar a biblioteca libhandy no Linux e Windows](https://www.codigoninja.dev/gtk/instalar-biblioteca-libhandy-python-pygobject/).
+- [Como instalar a biblioteca libhandy no Linux e Windows](https://www.codigoninja.dev/gtk/instalar-biblioteca-libhandy-python-pygobject/).
 
-## GTK
+## Código GTK
 
 ### Janela principal
 
@@ -365,7 +365,7 @@ A ideia é apenas **estudar** e documentar a construção de interfaces gráfica
 
 ---
 
-## Libhandy
+## Código Libhandy
 
 ### ActionRow
 
