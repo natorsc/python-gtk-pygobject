@@ -1,37 +1,41 @@
 # -*- coding: utf-8 -*-
-"""Gtk.ApplicationWindow()."""
+"""Handy.WindowHandle()."""
 
-# Importando a biblioteca gnome introspection.
 import gi
 
-# Definindo que o aplicativo deve ser executado no GTK 3.
-# Isso porque um computador pode ter mais de uma versão do GTK.
 gi.require_version(namespace='Gtk', version='3.0')
+gi.require_version('Handy', '1')
 
-# Importando os widgets do Gio e GTK.
-from gi.repository import Gio, Gtk
+from gi.repository import Gtk, Gio
+from gi.repository import Handy
 
 
 class MainWindow(Gtk.ApplicationWindow):
-    """Classe herda de ``Gtk.ApplicationWindow``."""
 
     def __init__(self, **kwargs):
-        """Construtor."""
         super().__init__(**kwargs)
 
-        # Configurando a janela principal.
-        self.set_title(title='Gtk.ApplicationWindow')
-        # Tamanho inicial da janela.
+        self.set_title(title='Handy.WindowHandle')
         self.set_default_size(width=1366 / 2, height=768 / 2)
-        # Tamanho minimo da janela.
-        self.set_size_request(width=1366 / 2, height=768 / 2)
         self.set_position(position=Gtk.WindowPosition.CENTER)
         self.set_default_icon_from_file(filename='../../assets/icons/icon.png')
 
-        # O seu código aqui:
-        # ...
+        vbox = Gtk.Box.new(orientation=Gtk.Orientation.VERTICAL, spacing=6)
+        self.add(widget=vbox)
+
+        hdy_window_handle = Handy.WindowHandle.new()
+        hdy_window_handle.connect('button-press-event', self.on_window_handle_clicked)
+        vbox.pack_start(child=hdy_window_handle, expand=True, fill=True, padding=0)
+
+        label = Gtk.Label.new(str='Clique no label')
+        hdy_window_handle.add(widget=label)
 
         self.show_all()
+
+    def on_window_handle_clicked(self, widget, event):
+        print('O label foi clicado')
+        print(widget)
+        print(event)
 
 
 class Application(Gtk.Application):

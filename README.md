@@ -295,9 +295,17 @@ A ideia é apenas **estudar** e documentar a construção de interfaces gráfica
 
 ### Ícones standard e symbolic
 
-* [Utilizando ícones standard e symbolic com Gnome Builder](https://github.com/natorsc/gui-python-gtk/tree/master/src/gnome-icons/builder).
-* [Utilizando ícones standard e symbolic com Gnome Glade](https://github.com/natorsc/gui-python-gtk/tree/master/src/gnome-icons/glade).
-* [Utilizando ícones standard e symbolic com Python](https://github.com/natorsc/gui-python-gtk/tree/master/src/gnome-icons).
+* [Utilizando ícones standard e symbolic com Gnome Builder](https://github.com/natorsc/gui-python-gtk/tree/master/src/gtk/gnome-icons/builder).
+* [Utilizando ícones standard e symbolic com Gnome Glade](https://github.com/natorsc/gui-python-gtk/tree/master/src/gtk/gnome-icons/glade).
+* [Utilizando ícones standard e symbolic com Python](https://github.com/natorsc/gui-python-gtk/tree/master/src/gtk/gnome-icons).
+
+![GTK utilizando ícones standard e symbolic](https://codigoninja.dev/images/gtk/pygobject/widgets/icons-standard-symbolic.webp)
+
+### Window
+
+* [GTK Window Gnome Builder](https://github.com/natorsc/gui-python-gtk/tree/master/src/gtk/window/builder).
+* [GTK Window com Gnome Glade](https://github.com/natorsc/gui-python-gtk/tree/master/src/gtk/window/glade).
+* [GTK Window com Python](https://github.com/natorsc/gui-python-gtk/tree/master/src/gtk/window).
 
 ![GTK utilizando ícones standard e symbolic](https://codigoninja.dev/images/gtk/pygobject/widgets/icons-standard-symbolic.webp)
 
@@ -362,6 +370,10 @@ A ideia é apenas **estudar** e documentar a construção de interfaces gráfica
 * [GTK TreeView ordenando pelo cabeçalho com Python](https://github.com/natorsc/gui-python-gtk/tree/master/src/gtk/widgets/treeview/sort).
 
 ![GTK TreeView ordenando pelo cabeçalho](https://codigoninja.dev/images/gtk/pygobject/widgets/treeview-sort.webp)
+
+* [GTK EventBox com Gnome Builder](https://github.com/natorsc/gui-python-gtk/tree/master/src/gtk/widgets/event-box/builder).
+* [GTK EventBox com Gnome Glade](https://github.com/natorsc/gui-python-gtk/tree/master/src/gtk/widgets/event-box/glade).
+* [GTK EventBox com Python](https://github.com/natorsc/gui-python-gtk/tree/master/src/gtk/widgets/event-box).
 
 ---
 
@@ -502,22 +514,12 @@ HdyColumn foi trocado pelo HdyClamp a partir da versão 1.0.
 
 ![Libhandy ViewSwitcherBar](https://codigoninja.dev/images/gtk/pygobject/widgets/libhandy-view-switcher-bar.webp)
 
-# Criar, Revisar, atualizar e corrigir ⬇
+### Window
 
-* Handy.Keypad.
-* Handy.Leaflet.
-* Handy.PreferencesGroup.
-* Handy.PreferencesPage.
-* Handy.PreferencesRow.
-* Handy.PreferencesWindow.
-* Handy.SearchBar.
-* Handy.Squeezer.
-* Handy.SwipeGroup.
-* Handy.SwipeTracker.
-* Handy.TitleBar.
-* Handy.ValueObject.
-* Handy.ViewSwitcher.
-* Handy.ViewSwitcherBar.
-* Handy.ViewSwitcherTitle.
-* Handy.Window.
-* Handy.WindowHandle.
+* [Libhandy Window com Python](https://github.com/natorsc/gui-python-gtk/tree/master/src/libhandy/window).
+
+### WindowHandle
+
+* [Libhandy WindowHandle com Python](https://github.com/natorsc/gui-python-gtk/tree/master/src/libhandy/window-handle).
+
+
