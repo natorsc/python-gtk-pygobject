@@ -18,7 +18,7 @@ class MainWindow(Gtk.ApplicationWindow):
         self.set_title(title='Handy.HeaderBar')
         self.set_default_size(width=1366 / 2, height=768 / 2)
         self.set_position(position=Gtk.WindowPosition.CENTER)
-        self.set_default_icon_from_file(filename='../assets/icons/icon.png')
+        self.set_default_icon_from_file(filename='../../assets/icons/icon.png')
         self.set_border_width(border_width=12)
 
         hdy_header_bar = Handy.HeaderBar.new()

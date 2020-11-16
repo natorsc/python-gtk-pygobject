@@ -22,27 +22,27 @@ class MainWindow(Gtk.ApplicationWindow):
         self.set_default_size(width=1366 / 2, height=768 / 2)
         self.set_position(position=Gtk.WindowPosition.CENTER)
         self.set_default_icon_from_file(filename='../../assets/icons/icon.png')
-        self.set_border_width(border_width=10)
 
         # Criando um scroll para que a janela principal possa comportar os widgets
         scrolled = Gtk.ScrolledWindow.new(hadjustment=None, vadjustment=None)
+        scrolled.set_border_width(border_width=12)
         self.add(widget=scrolled)
 
         list_box = Gtk.ListBox.new()
         scrolled.add(widget=list_box)
 
         # Loop para criar as linhas.
-        for n in range(len(self.icons_standard)):
+        for i, icon in enumerate(self.icons_standard):
             text = Gtk.Label.new(
-                f'Texto {n}. Esse texto será exibido quando a linha for expandida.'
+                f'Texto {i}. Esse texto será exibido quando a linha for expandida.'
             )
             text.set_line_wrap(wrap=True)
 
             # Criando e configurando ExpanderRow que será adicionada no listbox.
             hdy_action_row = Handy.ExpanderRow.new()
-            hdy_action_row.set_icon_name(icon_name=self.icons_standard[n - 1])
-            hdy_action_row.set_title(title=f'Título {n}')
-            hdy_action_row.set_subtitle(subtitle=f'subtítulo {n}')
+            hdy_action_row.set_icon_name(icon_name=icon)
+            hdy_action_row.set_title(title=f'Título {i}')
+            hdy_action_row.set_subtitle(subtitle=f'subtítulo {i}')
             # Adicionando o texto.
             hdy_action_row.add(widget=text)
 

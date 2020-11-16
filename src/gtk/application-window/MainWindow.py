@@ -21,7 +21,10 @@ class MainWindow(Gtk.ApplicationWindow):
 
         # Configurando a janela principal.
         self.set_title(title='Python com GTK')
+        # Tamanho inicial da janela.
         self.set_default_size(width=1366 / 2, height=768 / 2)
+        # Tamanho minimo da janela.
+        self.set_size_request(width=1366 / 2, height=768 / 2)
         self.set_position(position=Gtk.WindowPosition.CENTER)
         self.set_default_icon_from_file(filename='../../assets/icons/icon.png')
 

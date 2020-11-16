@@ -22,9 +22,6 @@ class MainWindow(Gtk.ApplicationWindow):
 
         # Para armazenar as barras de título.
         hdy_leaflet_title = Handy.Leaflet.new()
-        hdy_leaflet_title.set_transition_type(
-            transition=Handy.LeafletChildTransitionType.SLIDE,
-        )
 
         hdy_title_bar = Handy.TitleBar.new()
         hdy_title_bar.add(widget=hdy_leaflet_title)
@@ -32,9 +29,6 @@ class MainWindow(Gtk.ApplicationWindow):
 
         # Para armazenar as páginas.
         self.hdy_leaflet_content = Handy.Leaflet.new()
-        self.hdy_leaflet_content.set_transition_type(
-            transition=Handy.LeafletChildTransitionType.SLIDE,
-        )
         self.add(widget=self.hdy_leaflet_content)
 
         # Página 1

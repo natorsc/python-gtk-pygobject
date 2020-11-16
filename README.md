@@ -83,15 +83,15 @@ A ideia é apenas **estudar** e documentar a construção de interfaces gráfica
 
 ![Gtk layout do tipo actionbar](https://codigoninja.dev/images/gtk/pygobject/widgets/layout-action-bar.webp)
 
-* [Box horizontal com Gnome Builder](https://github.com/natorsc/gui-python-gtk/tree/master/src/gtk/layouts/box_horizontal/builder).
-* [Box horizontal com Gnome Glade](https://github.com/natorsc/gui-python-gtk/tree/master/src/gtk/layouts/box_horizontal/glade).
-* [Box horizontal com Python](https://github.com/natorsc/gui-python-gtk/tree/master/src/gtk/layouts/box_horizontal).
+* [Box horizontal com Gnome Builder](https://github.com/natorsc/gui-python-gtk/tree/master/src/gtk/layouts/box-horizontal/builder).
+* [Box horizontal com Gnome Glade](https://github.com/natorsc/gui-python-gtk/tree/master/src/gtk/layouts/box-horizontal/glade).
+* [Box horizontal com Python](https://github.com/natorsc/gui-python-gtk/tree/master/src/gtk/layouts/box-horizontal).
 
 ![Gtk layout do tipo box horizontal](https://codigoninja.dev/images/gtk/pygobject/widgets/layout-box-horizontal.webp)
 
-* [Box vertical com Gnome Builder](https://github.com/natorsc/gui-python-gtk/tree/master/src/gtk/layouts/box_vertical).
-* [Box vertical com Gnome Glade](https://github.com/natorsc/gui-python-gtk/tree/master/src/gtk/layouts/box_vertical).
-* [Box vertical com Python](https://github.com/natorsc/gui-python-gtk/tree/master/src/gtk/layouts/box_vertical).
+* [Box vertical com Gnome Builder](https://github.com/natorsc/gui-python-gtk/tree/master/src/gtk/layouts/box-vertical).
+* [Box vertical com Gnome Glade](https://github.com/natorsc/gui-python-gtk/tree/master/src/gtk/layouts/box-vertical).
+* [Box vertical com Python](https://github.com/natorsc/gui-python-gtk/tree/master/src/gtk/layouts/box-vertical).
 
 ![Gtk layout do tipo box vertical](https://codigoninja.dev/images/gtk/pygobject/widgets/layout-box-vertical.webp)
 
@@ -119,8 +119,8 @@ A ideia é apenas **estudar** e documentar a construção de interfaces gráfica
 
 ![Gtk layout do tipo grid](https://codigoninja.dev/images/gtk/pygobject/widgets/layout-grid.webp)
 
-* [Layout com Gnome Builder](https://github.com/natorsc/gui-python-gtk/tree/master/src/gtk/layouts/gtk_layout/builder).
-* [Layout com Gnome Glade](https://github.com/natorsc/gui-python-gtk/tree/master/src/gtk/layouts/gtk_layout/glade).
+* [Layout com Gnome Builder](https://github.com/natorsc/gui-python-gtk/tree/master/src/gtk/layouts/gtk-layout/builder).
+* [Layout com Gnome Glade](https://github.com/natorsc/gui-python-gtk/tree/master/src/gtk/layouts/gtk-layout/glade).
 * [Layout com Python](https://github.com/natorsc/gui-python-gtk/tree/master/src/gtk/layouts/gtk_layout).
 
 ![Gtk layout do tipo layout](https://codigoninja.dev/images/gtk/pygobject/widgets/layout-gtk.webp)
@@ -149,15 +149,15 @@ A ideia é apenas **estudar** e documentar a construção de interfaces gráfica
 
 ![Gtk layout do tipo overlay](https://codigoninja.dev/images/gtk/pygobject/widgets/layout-overlay.webp)
 
-* [Paned horizontal com Gnome Builder](https://github.com/natorsc/gui-python-gtk/tree/master/src/gtk/layouts/paned_horizontal/builder).
-* [Paned horizontal com Gnome Glade](https://github.com/natorsc/gui-python-gtk/tree/master/src/gtk/layouts/paned_horizontal/glade).
-* [Paned horizontal com Python](https://github.com/natorsc/gui-python-gtk/tree/master/src/gtk/layouts/paned_horizontal).
+* [Paned horizontal com Gnome Builder](https://github.com/natorsc/gui-python-gtk/tree/master/src/gtk/layouts/paned-horizontal/builder).
+* [Paned horizontal com Gnome Glade](https://github.com/natorsc/gui-python-gtk/tree/master/src/gtk/layouts/paned-horizontal/glade).
+* [Paned horizontal com Python](https://github.com/natorsc/gui-python-gtk/tree/master/src/gtk/layouts/paned-horizontal).
 
 ![Gtk layout do tipo paned horizontal](https://codigoninja.dev/images/gtk/pygobject/widgets/layout-paned-horizontal.webp)
 
-* [Paned vertical com Gnome Builder](https://github.com/natorsc/gui-python-gtk/tree/master/src/gtk/layouts/paned_vertical/builder).
-* [Paned vertical com Gnome Glade](https://github.com/natorsc/gui-python-gtk/tree/master/src/gtk/layouts/paned_vertical/glade).
-* [Paned vertical com Python](https://github.com/natorsc/gui-python-gtk/tree/master/src/gtk/layouts/paned_vertical).
+* [Paned vertical com Gnome Builder](https://github.com/natorsc/gui-python-gtk/tree/master/src/gtk/layouts/paned-vertical/builder).
+* [Paned vertical com Gnome Glade](https://github.com/natorsc/gui-python-gtk/tree/master/src/gtk/layouts/paned-vertical/glade).
+* [Paned vertical com Python](https://github.com/natorsc/gui-python-gtk/tree/master/src/gtk/layouts/paned-vertical).
 
 ![Gtk layout do tipo paned vertical](https://codigoninja.dev/images/gtk/pygobject/widgets/layout-paned-vertical.webp)
 
@@ -167,15 +167,15 @@ A ideia é apenas **estudar** e documentar a construção de interfaces gráfica
 
 ![Gtk layout do tipo revealer](https://codigoninja.dev/images/gtk/pygobject/widgets/layout-revealer.webp)
 
-* [Stack e stacksidebar com Gnome Builder](https://github.com/natorsc/gui-python-gtk/tree/master/src/gtk/layouts/stack_stacksidebar/builder).
-* [Stack e stacksidebar com Gnome Glade](https://github.com/natorsc/gui-python-gtk/tree/master/src/gtk/layouts/stack_stacksidebar/glade).
-* [Stack e stacksidebar com Python](https://github.com/natorsc/gui-python-gtk/tree/master/src/gtk/layouts/stack_stacksidebar).
+* [Stack e stacksidebar com Gnome Builder](https://github.com/natorsc/gui-python-gtk/tree/master/src/gtk/layouts/stack-stacksidebar/builder).
+* [Stack e stacksidebar com Gnome Glade](https://github.com/natorsc/gui-python-gtk/tree/master/src/gtk/layouts/stack-stacksidebar/glade).
+* [Stack e stacksidebar com Python](https://github.com/natorsc/gui-python-gtk/tree/master/src/gtk/layouts/stack-stacksidebar).
 
 ![Gtk layout do tipo stack com stacksidebar](https://codigoninja.dev/images/gtk/pygobject/widgets/layout-stack-stacksidebar.webp)
 
-* [Stack e stackswitcher com Gnome Builder](https://github.com/natorsc/gui-python-gtk/tree/master/src/gtk/layouts/stack_switcher/builder).
-* [Stack e stackswitcher com Gnome Glade](https://github.com/natorsc/gui-python-gtk/tree/master/src/gtk/layouts/stack_switcher/glade).
-* [Stack e stackswitcher com Python](https://github.com/natorsc/gui-python-gtk/tree/master/src/gtk/layouts/stack_switcher).
+* [Stack e stackswitcher com Gnome Builder](https://github.com/natorsc/gui-python-gtk/tree/master/src/gtk/layouts/stack-switcher/builder).
+* [Stack e stackswitcher com Gnome Glade](https://github.com/natorsc/gui-python-gtk/tree/master/src/gtk/layouts/stack-switcher/glade).
+* [Stack e stackswitcher com Python](https://github.com/natorsc/gui-python-gtk/tree/master/src/gtk/layouts/stack-switcher).
 
 ![Gtk layout do tipo stack com stackswitcher](https://codigoninja.dev/images/gtk/pygobject/widgets/layout-stack-stackswitcher.webp)
 
@@ -417,9 +417,13 @@ HdyColumn foi trocado pelo HdyClamp a partir da versão 1.0.
 
 ### ComboRow
 
-* [Libhandy ComboRow](https://github.com/natorsc/gui-python-gtk/tree/master/src/libhandy/combo_row).
+* [Libhandy ComboRow](https://github.com/natorsc/gui-python-gtk/tree/master/src/libhandy/combo-row).
 
 ![Libhandy ComboRow](https://codigoninja.dev/images/gtk/pygobject/widgets/libhandy-combo-row.webp)
+
+### Deck
+
+* [Libhandy Deck](https://github.com/natorsc/gui-python-gtk/tree/master/src/libhandy/deck) (não sei implementar).
 
 ### Dialer
 * Libhandy Dialer. Deprecated since version 0.0.12: use Handy.Keypad instead.
@@ -453,6 +457,12 @@ HdyColumn foi trocado pelo HdyClamp a partir da versão 1.0.
 ### HeaderGroup
 
 * [Libhandy HeaderGroup (Não sei implementar ainda)](https://github.com/natorsc/gui-python-gtk/tree/master/src/libhandy/headergroup).
+
+### Keypad
+
+* [Libhandy Keypad](https://github.com/natorsc/gui-python-gtk/tree/master/src/libhandy/keypad).
+
+![Libhandy Keypad](https://codigoninja.dev/images/gtk/pygobject/widgets/libhandy-keypad.webp)
 
 ### Leaflet
 
@@ -494,14 +504,6 @@ HdyColumn foi trocado pelo HdyClamp a partir da versão 1.0.
 
 # Criar, Revisar, atualizar e corrigir ⬇
 
-
-* Handy.ComboRow.
-* Handy.Deck.
-* Handy.EnumValueObject.
-* Handy.ExpanderRow.
-* Handy.HeaderBar.
-* Handy.HeaderGroup.
-* Handy.HeaderGroupChild.
 * Handy.Keypad.
 * Handy.Leaflet.
 * Handy.PreferencesGroup.

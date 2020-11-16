@@ -20,20 +20,13 @@ class MainWindow(Gtk.ApplicationWindow):
         self.set_position(position=Gtk.WindowPosition.CENTER)
         self.set_default_icon_from_file(filename='../../assets/icons/icon.png')
 
-        hdy_title_bar = Handy.TitleBar.new()
-
-        header_bar = Gtk.HeaderBar.new()
+        header_bar = Handy.HeaderBar.new()
         header_bar.set_title(title='Handy.Leaflet')
         header_bar.set_subtitle(subtitle='Handy.Leaflet')
         header_bar.set_show_close_button(setting=True)
-        hdy_title_bar.add(widget=header_bar)
-
-        self.set_titlebar(titlebar=hdy_title_bar)
+        self.set_titlebar(titlebar=header_bar)
 
         self.hdy_leaflet = Handy.Leaflet.new()
-        self.hdy_leaflet.set_transition_type(
-            transition=Handy.LeafletChildTransitionType.SLIDE,
-        )
         self.add(widget=self.hdy_leaflet)
 
         # Página 1
