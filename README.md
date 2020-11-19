@@ -311,11 +311,19 @@ A ideia é apenas **estudar** e documentar a construção de interfaces gráfica
 
 ### Widgets
 
+#### Calendar
+
+* [GTK Calendar com Gnome Builder](https://github.com/natorsc/gui-python-gtk/tree/master/src/gtk/widgets/calendar/builder).
+* [GTK Calendar com Gnome Glade](https://github.com/natorsc/gui-python-gtk/tree/master/src/gtk/widgets/calendar/glade).
+* [GTK Calendar com Python](https://github.com/natorsc/gui-python-gtk/tree/master/src/gtk/widgets/calendar).
+
+![GTK Calendar](https://codigoninja.dev/images/gtk/pygobject/widgets/calendar.webp)
+
 #### Entry
 
 * [GTK Entry com Gnome Builder](https://github.com/natorsc/gui-python-gtk/tree/master/src/gtk/widgets/entry/builder).
 * [GTK Entry com Gnome Glade](https://github.com/natorsc/gui-python-gtk/tree/master/src/gtk/widgets/entry/glade).
-* [GTK Entry com Python](https://github.com/natorsc/gui-python-gtk/tree/master/src/gtk/widgets/entry/).
+* [GTK Entry com Python](https://github.com/natorsc/gui-python-gtk/tree/master/src/gtk/widgets/entry).
 
 ![GTK Entry](https://codigoninja.dev/images/gtk/pygobject/widgets/entry.webp)
 
