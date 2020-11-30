@@ -36,34 +36,35 @@ A ideia é apenas **estudar** e documentar a construção de interfaces gráfica
 
 ## Tutoriais
 
-- [Criando o ambiente de desenvolvimento]([https://www.codigoninja.dev/gtk/criando-ambiente-desenvolvimento-python-pygobject/).
+- [Criando o ambiente de desenvolvimento]([https://codigoninja.dev/gtk3-pygobject-criando-ambiente-desenvolvimento/).
 
 ### Windows
 
-- [Criando um executável com o Cx_Freeze e listdlls](https://www.codigoninja.dev/gtk/criando-executavel-cx-freeze-windows-python-pygobject/).
-- [Como instalar o PyGObject for Windows (não recomendado)](https://www.codigoninja.dev/gtk/instalar-pygobject-for-windows/).
+- [Criando um executável com o Cx_Freeze e listdlls](https://codigoninja.dev/gtk3-pygobject-criando-executavel-cx-freeze-windows/).
+- [Como instalar o PyGObject for Windows (não recomendado)](https://codigoninja.dev/gtk3-instalar-pygobject-for-windows/).
 
 ### Linux
 
-- [Criando um executável com o Cx_Freeze](https://www.codigoninja.dev/gtk/criando-executavel-cx-freeze-linux-python-pygobject/).
+- [Criando um executável com o Cx_Freeze](https://codigoninja.dev/gtk3-pygobject-criando-executavel-cx-freeze-linux/).
 
 ### Style
 
-- [Exemplo de alguns seletores css no Gtk](https://www.codigoninja.dev/gtk/principais-seletores-css-python-pygobject/).
-- [Alterando o estilo de um componete com a propriedade name](https://www.codigoninja.dev/gtk/adicionar-propriedade-name-widget-python-pygobject/).
-- [Alterando o estilo de um componete com a tag class](https://www.codigoninja.dev/gtk/cadicionar-tag-class-widget-python-pygobject/).
-- [Ativar e desativar o modo escuro (dark mode)](https://www.codigoninja.dev/gtk/utilizar-modo-escuro-dark-mode-python-pygobject/).
+- [Exemplo de alguns seletores css no Gtk](https://codigoninja.dev/gtk3-pygobject-principais-seletores-css/).
+- [Alterando o estilo de um componete com a propriedade name](https://codigoninja.dev/gtk3-pygobject-adicionar-propriedade-name-widget/).
+- [Alterando o estilo de um componete com a tag class](https://codigoninja.dev/gtk3-pygobject-adicionar-tag-class-widget/).
+- [Ativar e desativar o modo escuro (dark mode)](https://codigoninja.dev/gtk3-pygobject-utilizar-modo-escuro-dark-mode/).
 
 ### Ferramentas
 
-- [Ativando o Gkt Inspector](https://www.codigoninja.dev/gtk/ativar-gtk-inspector/).
-- [Como instalar o Gnome Builder](https://www.codigoninja.dev/gtk/instalar-gnome-builder/).
-- [Como instalar o Gnome Gnome Glade](https://www.codigoninja.dev/gtk/instalar-gnome-glade/).
-- [Como instalar o Gtk icon browser](https://www.codigoninja.dev/gtk/instalar-gtk-icon-browser/).
+- [Ativando o Gkt Inspector](https://codigoninja.dev/gtk3-ativar-inspector/).
+- [Como instalar o Gnome Builder](https://codigoninja.dev/gnome-builder-instalar-linux/).
+- [Criando um projeto com o Gnome Builder](https://codigoninja.dev/gnome-builder-criar-projeto/).
+- [Como instalar o Gnome Gnome Glade](https://codigoninja.dev/gnome-glade-instalar/).
+- [Como instalar o Gtk icon browser](https://codigoninja.dev/gtk3-icon-browser/).
 
 ### Libhandy
 
-- [Como instalar a biblioteca libhandy no Linux e Windows](https://www.codigoninja.dev/gtk/instalar-biblioteca-libhandy-python-pygobject/).
+- [Como instalar a biblioteca libhandy no Linux e Windows](https://codigoninja.dev/gtk3-pygobject-instalar-biblioteca-libhandy/).
 
 ## Código GTK
 
@@ -73,7 +74,7 @@ A ideia é apenas **estudar** e documentar a construção de interfaces gráfica
 * [Lendo arquivos interface do Gnome Glade](https://github.com/natorsc/gui-python-gtk/tree/master/src/gtk/application-window/glade).
 * [Criando a janela com Python](https://github.com/natorsc/gui-python-gtk/tree/master/src/gtk/application-window).
 
-![Python e GTK Janela principal](https://codigoninja.dev/images/gtk/pygobject/widgets/python-gtk-mainwindow.webp)
+![Python e GTK Janela principal](https://codigoninja.dev/images/pygobject-gtk3-python-gtk-mainwindow.webp)
 
 ### Layouts
 
@@ -81,103 +82,103 @@ A ideia é apenas **estudar** e documentar a construção de interfaces gráfica
 * [Actionbar com Gnome Glade](https://github.com/natorsc/gui-python-gtk/tree/master/src/gtk/layouts/actionbar/glade).
 * [Actionbar com Python](https://github.com/natorsc/gui-python-gtk/tree/master/src/gtk/layouts/actionbar).
 
-![Gtk layout do tipo actionbar](https://codigoninja.dev/images/gtk/pygobject/widgets/layout-action-bar.webp)
+![Gtk layout do tipo actionbar](https://codigoninja.dev/images/pygobject-gtk3-layout-action-bar.webp)
 
 * [Box horizontal com Gnome Builder](https://github.com/natorsc/gui-python-gtk/tree/master/src/gtk/layouts/box-horizontal/builder).
 * [Box horizontal com Gnome Glade](https://github.com/natorsc/gui-python-gtk/tree/master/src/gtk/layouts/box-horizontal/glade).
 * [Box horizontal com Python](https://github.com/natorsc/gui-python-gtk/tree/master/src/gtk/layouts/box-horizontal).
 
-![Gtk layout do tipo box horizontal](https://codigoninja.dev/images/gtk/pygobject/widgets/layout-box-horizontal.webp)
+![Gtk layout do tipo box horizontal](https://codigoninja.dev/images/pygobject-gtk3-layout-box-horizontal.webp)
 
 * [Box vertical com Gnome Builder](https://github.com/natorsc/gui-python-gtk/tree/master/src/gtk/layouts/box-vertical).
 * [Box vertical com Gnome Glade](https://github.com/natorsc/gui-python-gtk/tree/master/src/gtk/layouts/box-vertical).
 * [Box vertical com Python](https://github.com/natorsc/gui-python-gtk/tree/master/src/gtk/layouts/box-vertical).
 
-![Gtk layout do tipo box vertical](https://codigoninja.dev/images/gtk/pygobject/widgets/layout-box-vertical.webp)
+![Gtk layout do tipo box vertical](https://codigoninja.dev/images/pygobject-gtk3-layout-box-vertical.webp)
 
 * [Button box com Gnome Bulder](https://github.com/natorsc/gui-python-gtk/tree/master/src/gtk/layouts/buttonbox/builder).
 * [Button box com Gnome Glade](https://github.com/natorsc/gui-python-gtk/tree/master/src/gtk/layouts/buttonbox/glade).
 * [Button box com Python](https://github.com/natorsc/gui-python-gtk/tree/master/src/gtk/layouts/buttonbox).
 
-![Gtk layout do tipo button box](https://codigoninja.dev/images/gtk/pygobject/widgets/layout-button-box.webp)
+![Gtk layout do tipo button box](https://codigoninja.dev/images/pygobject-gtk3-layout-button-box.webp)
 
 * [Fixed com Gnome Builder](https://github.com/natorsc/gui-python-gtk/tree/master/src/gtk/layouts/fixed/builder).
 * [Fixed com Gnome Glade](https://github.com/natorsc/gui-python-gtk/tree/master/src/gtk/layouts/fixed/Glade).
 * [Fixed com Python](https://github.com/natorsc/gui-python-gtk/tree/master/src/gtk/layouts/fixed).
 
-![Gtk layout do tipo fixed](https://codigoninja.dev/images/gtk/pygobject/widgets/layout-fixed.webp)
+![Gtk layout do tipo fixed](https://codigoninja.dev/images/pygobject-gtk3-layout-fixed.webp)
 
 * [Flowbox com Gnome Builder](https://github.com/natorsc/gui-python-gtk/tree/master/src/gtk/layouts/flowbox/builder).
 * [Flowbox com Gnome Glade](https://github.com/natorsc/gui-python-gtk/tree/master/src/gtk/layouts/flowbox/glade).
 * [Flowbox com Python](https://github.com/natorsc/gui-python-gtk/tree/master/src/gtk/layouts/flowbox).
 
-![Gtk layout do tipo flow box](https://codigoninja.dev/images/gtk/pygobject/widgets/layout-flow-box.webp)
+![Gtk layout do tipo flow box](https://codigoninja.dev/images/pygobject-gtk3-layout-flow-box.webp)
 
 * [Grid com Gnome Builder](https://github.com/natorsc/gui-python-gtk/tree/master/src/gtk/layouts/grid/builder).
 * [Grid com Gnome Glade](https://github.com/natorsc/gui-python-gtk/tree/master/src/gtk/layouts/grid/glade).
 * [Grid com Python](https://github.com/natorsc/gui-python-gtk/tree/master/src/gtk/layouts/grid).
 
-![Gtk layout do tipo grid](https://codigoninja.dev/images/gtk/pygobject/widgets/layout-grid.webp)
+![Gtk layout do tipo grid](https://codigoninja.dev/images/pygobject-gtk3-layout-grid.webp)
 
 * [Layout com Gnome Builder](https://github.com/natorsc/gui-python-gtk/tree/master/src/gtk/layouts/gtk-layout/builder).
 * [Layout com Gnome Glade](https://github.com/natorsc/gui-python-gtk/tree/master/src/gtk/layouts/gtk-layout/glade).
 * [Layout com Python](https://github.com/natorsc/gui-python-gtk/tree/master/src/gtk/layouts/gtk_layout).
 
-![Gtk layout do tipo layout](https://codigoninja.dev/images/gtk/pygobject/widgets/layout-gtk.webp)
+![Gtk layout do tipo layout](https://codigoninja.dev/images/pygobject-gtk3-layout-gtk.webp)
 
 * [Headerbar com Gnome Builder](https://github.com/natorsc/gui-python-gtk/tree/master/src/gtk/layouts/headerbar/builder).
 * [Headerbar com Gnome Glade](https://github.com/natorsc/gui-python-gtk/tree/master/src/gtk/layouts/headerbar/glade).
 * [Headerbar com Python](https://github.com/natorsc/gui-python-gtk/tree/master/src/gtk/layouts/headerbar).
 
-![Gtk layout do tipo header bar](https://codigoninja.dev/images/gtk/pygobject/widgets/layout-header-bar.webp)
+![Gtk layout do tipo header bar](https://codigoninja.dev/images/pygobject-gtk3-layout-header-bar.webp)
 
 * [Listbox com Gnome Builder](https://github.com/natorsc/gui-python-gtk/tree/master/src/gtk/layouts/listbox/builder).
 * [Listbox com Gnome Glade](https://github.com/natorsc/gui-python-gtk/tree/master/src/gtk/layouts/listbox/glade).
 * [Listbox com Python](https://github.com/natorsc/gui-python-gtk/tree/master/src/gtk/layouts/listbox).
 
-![Gtk layout do tipo list box](https://codigoninja.dev/images/gtk/pygobject/widgets/layout-list-box.webp)
+![Gtk layout do tipo list box](https://codigoninja.dev/images/pygobject-gtk3-layout-list-box.webp)
 
 * [Notebook com Gnome Builder](https://github.com/natorsc/gui-python-gtk/tree/master/src/gtk/layouts/notebook/builder).
 * [Notebook com Gnome Glade](https://github.com/natorsc/gui-python-gtk/tree/master/src/gtk/layouts/notebook/builder).
 * [Notebook com Python](https://github.com/natorsc/gui-python-gtk/tree/master/src/gtk/layouts/notebook).
 
-![Gtk layout do tipo notebook](https://codigoninja.dev/images/gtk/pygobject/widgets/layout-notebook.webp)
+![Gtk layout do tipo notebook](https://codigoninja.dev/images/pygobject-gtk3-layout-notebook.webp)
 
 * [Overlay com Gnome Builder](https://github.com/natorsc/gui-python-gtk/tree/master/src/gtk/layouts/overlay/builder).
 * [Overlay com Gnome Glade](https://github.com/natorsc/gui-python-gtk/tree/master/src/gtk/layouts/overlay/glade).
 * [Overlay com Python](https://github.com/natorsc/gui-python-gtk/tree/master/src/gtk/layouts/overlay).
 
-![Gtk layout do tipo overlay](https://codigoninja.dev/images/gtk/pygobject/widgets/layout-overlay.webp)
+![Gtk layout do tipo overlay](https://codigoninja.dev/images/pygobject-gtk3-layout-overlay.webp)
 
 * [Paned horizontal com Gnome Builder](https://github.com/natorsc/gui-python-gtk/tree/master/src/gtk/layouts/paned-horizontal/builder).
 * [Paned horizontal com Gnome Glade](https://github.com/natorsc/gui-python-gtk/tree/master/src/gtk/layouts/paned-horizontal/glade).
 * [Paned horizontal com Python](https://github.com/natorsc/gui-python-gtk/tree/master/src/gtk/layouts/paned-horizontal).
 
-![Gtk layout do tipo paned horizontal](https://codigoninja.dev/images/gtk/pygobject/widgets/layout-paned-horizontal.webp)
+![Gtk layout do tipo paned horizontal](https://codigoninja.dev/images/pygobject-gtk3-layout-paned-horizontal.webp)
 
 * [Paned vertical com Gnome Builder](https://github.com/natorsc/gui-python-gtk/tree/master/src/gtk/layouts/paned-vertical/builder).
 * [Paned vertical com Gnome Glade](https://github.com/natorsc/gui-python-gtk/tree/master/src/gtk/layouts/paned-vertical/glade).
 * [Paned vertical com Python](https://github.com/natorsc/gui-python-gtk/tree/master/src/gtk/layouts/paned-vertical).
 
-![Gtk layout do tipo paned vertical](https://codigoninja.dev/images/gtk/pygobject/widgets/layout-paned-vertical.webp)
+![Gtk layout do tipo paned vertical](https://codigoninja.dev/images/pygobject-gtk3-layout-paned-vertical.webp)
 
 * [Revealer com Gnome Builder](https://github.com/natorsc/gui-python-gtk/tree/master/src/gtk/layouts/revealer/builder).
 * [Revealer com Gnome Glade](https://github.com/natorsc/gui-python-gtk/tree/master/src/gtk/layouts/revealer/glade).
 * [Revealer com Python](https://github.com/natorsc/gui-python-gtk/tree/master/src/gtk/layouts/revealer).
 
-![Gtk layout do tipo revealer](https://codigoninja.dev/images/gtk/pygobject/widgets/layout-revealer.webp)
+![Gtk layout do tipo revealer](https://codigoninja.dev/images/pygobject-gtk3-layout-revealer.webp)
 
 * [Stack e stacksidebar com Gnome Builder](https://github.com/natorsc/gui-python-gtk/tree/master/src/gtk/layouts/stack-stacksidebar/builder).
 * [Stack e stacksidebar com Gnome Glade](https://github.com/natorsc/gui-python-gtk/tree/master/src/gtk/layouts/stack-stacksidebar/glade).
 * [Stack e stacksidebar com Python](https://github.com/natorsc/gui-python-gtk/tree/master/src/gtk/layouts/stack-stacksidebar).
 
-![Gtk layout do tipo stack com stacksidebar](https://codigoninja.dev/images/gtk/pygobject/widgets/layout-stack-stacksidebar.webp)
+![Gtk layout do tipo stack com stacksidebar](https://codigoninja.dev/images/pygobject-gtk3-layout-stack-stacksidebar.webp)
 
 * [Stack e stackswitcher com Gnome Builder](https://github.com/natorsc/gui-python-gtk/tree/master/src/gtk/layouts/stack-switcher/builder).
 * [Stack e stackswitcher com Gnome Glade](https://github.com/natorsc/gui-python-gtk/tree/master/src/gtk/layouts/stack-switcher/glade).
 * [Stack e stackswitcher com Python](https://github.com/natorsc/gui-python-gtk/tree/master/src/gtk/layouts/stack-switcher).
 
-![Gtk layout do tipo stack com stackswitcher](https://codigoninja.dev/images/gtk/pygobject/widgets/layout-stack-stackswitcher.webp)
+![Gtk layout do tipo stack com stackswitcher](https://codigoninja.dev/images/pygobject-gtk3-layout-stack-stackswitcher.webp)
 
 ### Diálogos
 
@@ -185,31 +186,31 @@ A ideia é apenas **estudar** e documentar a construção de interfaces gráfica
 * [Personalizado com Gnome Glade](https://github.com/natorsc/gui-python-gtk/tree/master/src/gtk/dialog/custom/glade).
 * [Personalizado com Python](https://github.com/natorsc/gui-python-gtk/tree/master/src/gtk/dialog/custom).
 
-![GTK diálogo personalizado](https://codigoninja.dev/images/gtk/pygobject/widgets/dialog-custom.webp)
+![GTK diálogo personalizado](https://codigoninja.dev/images/pygobject-gtk3-dialog-custom.webp)
 
 * [Mensagem com Gnome Builder](https://github.com/natorsc/gui-python-gtk/tree/master/src/gtk/dialog/message/builder).
 * [Mensagem com Gnome Glade](https://github.com/natorsc/gui-python-gtk/tree/master/src/gtk/dialog/message/glade).
 * [Mensagem com Python](https://github.com/natorsc/gui-python-gtk/tree/master/src/gtk/dialog/message).
 
-![GTK diálogo de mensagem](https://codigoninja.dev/images/gtk/pygobject/widgets/dialog-message.webp)
+![GTK diálogo de mensagem](https://codigoninja.dev/images/pygobject-gtk3-dialog-message.webp)
 
 * [Salvar arquivo com Gnome Builder](https://github.com/natorsc/gui-python-gtk/tree/master/src/gtk/dialog/save_file/builder).
 * [Salvar arquivo com Gnome Glade](https://github.com/natorsc/gui-python-gtk/tree/master/src/gtk/dialog/save_file/glade).
 * [Salvar arquivo com Python](https://github.com/natorsc/gui-python-gtk/tree/master/src/gtk/dialog/save_file).
 
-![GTK diálogo para salvar arquivo](https://codigoninja.dev/images/gtk/pygobject/widgets/dialog-save-file.webp)
+![GTK diálogo para salvar arquivo](https://codigoninja.dev/images/pygobject-gtk3-dialog-save-file.webp)
 
 * [Selecionar arquivo Gnome Builder](https://github.com/natorsc/gui-python-gtk/tree/master/src/gtk/dialog/select_file/builder).
 * [Selecionar arquivo Gnome Glade](https://github.com/natorsc/gui-python-gtk/tree/master/src/gtk/dialog/select_file/glade).
 * [Selecionar arquivo Python](https://github.com/natorsc/gui-python-gtk/tree/master/src/gtk/dialog/select_file).
 
-![GTK diálogo para selecionar arquivo](https://codigoninja.dev/images/gtk/pygobject/widgets/dialog-select-file.webp)
+![GTK diálogo para selecionar arquivo](https://codigoninja.dev/images/pygobject-gtk3-dialog-select-file.webp)
 
 * [Selecionar pasta com Gnome Builder](https://github.com/natorsc/gui-python-gtk/tree/master/src/gtk/dialog/select_folder/builder).
 * [Selecionar pasta com Gnome Glade](https://github.com/natorsc/gui-python-gtk/tree/master/src/gtk/dialog/select_folder/glade).
 * [Selecionar pasta com Python](https://github.com/natorsc/gui-python-gtk/tree/master/src/gtk/dialog/select_folder).
 
-![GTK diálogo para selecionar pasta](https://codigoninja.dev/images/gtk/pygobject/widgets/dialog-select-folder.webp)
+![GTK diálogo para selecionar pasta](https://codigoninja.dev/images/pygobject-gtk3-dialog-select-folder.webp)
 
 ### Dialogo de impressão, configuração de página e exportar para PDF
 
@@ -217,7 +218,7 @@ A ideia é apenas **estudar** e documentar a construção de interfaces gráfica
 * [Imprimindo e exportando para pdf com Gnome Glade](https://github.com/natorsc/gui-python-gtk/tree/master/src/gtk/printer/glade)
 * [Imprimindo e exportando para pdf com Python](https://github.com/natorsc/gui-python-gtk/tree/master/src/gtk/printer)
 
-![GTK imprindo e exportand para pdf](https://codigoninja.dev/images/gtk/pygobject/widgets/dialog-printer.webp)
+![GTK imprindo e exportand para pdf](https://codigoninja.dev/images/pygobject-gtk3-dialog-printer.webp)
 
 ### Drag and drop (Arrastar e soltar)
 
@@ -225,7 +226,7 @@ A ideia é apenas **estudar** e documentar a construção de interfaces gráfica
 * [Com Gnome Glade](https://github.com/natorsc/gui-python-gtk/tree/master/src/gtk/ddrag-and-drop/glade).
 * [Com Python](https://github.com/natorsc/gui-python-gtk/tree/master/src/gtk/drag-and-drop).
 
-![GTK drag and drop (arrastar e soltar)](https://codigoninja.dev/images/gtk/pygobject/widgets/drag-and-drop.webp)
+![GTK drag and drop (arrastar e soltar)](https://codigoninja.dev/images/pygobject-gtk3-drag-and-drop.webp)
 
 ### Signals e slots
 
@@ -233,7 +234,7 @@ A ideia é apenas **estudar** e documentar a construção de interfaces gráfica
 * [Com Gnome Glade](https://github.com/natorsc/gui-python-gtk/tree/master/src/gtk/signals-and-slots/glade).
 * [Com Python](https://github.com/natorsc/gui-python-gtk/tree/master/src/gtk/signals-and-slots).
 
-![GTK signals e slots](https://codigoninja.dev/images/gtk/pygobject/widgets/signal-and-slots.webp)
+![GTK signals e slots](https://codigoninja.dev/images/pygobject-gtk3-signal-and-slots.webp)
 
 ### Menus
 
@@ -241,25 +242,25 @@ A ideia é apenas **estudar** e documentar a construção de interfaces gráfica
 * [GTK Menu com Gnome Glade](https://github.com/natorsc/gui-python-gtk/tree/master/src/gtk/menus/menu/glade).
 * [GTK Menu com Python](https://github.com/natorsc/gui-python-gtk/tree/master/src/gtk/menus/menu).
 
-![GTK menu](https://codigoninja.dev/images/gtk/pygobject/widgets/menu.webp)
+![GTK menu](https://codigoninja.dev/images/pygobject-gtk3-menu.webp)
 
 * [GTK menu Popover com Gnome Builder](https://github.com/natorsc/gui-python-gtk/tree/master/src/gtk/menus/popover/builder).
 * [GTK menu Popover com Gnome Glade](https://github.com/natorsc/gui-python-gtk/tree/master/src/gtk/menus/popover/glade).
 * [GTK menu Popover com Python](https://github.com/natorsc/gui-python-gtk/tree/master/src/menus/gtk/popover). 
 
-![GTK menu popover](https://codigoninja.dev/images/gtk/pygobject/widgets/menu-popover.webp)   
+![GTK menu popover](https://codigoninja.dev/images/pygobject-gtk3-menu-popover.webp)   
 
 * [GTK MenuBar com Gnome Builder](https://github.com/natorsc/gui-python-gtk/tree/master/src/gtk/menus/menubar/builder).
 * [GTK MenuBar com Gnome Glade](https://github.com/natorsc/gui-python-gtk/tree/master/src/gtk/menus/menubar/glade).
 * [GTK MenuBar com Python](https://github.com/natorsc/gui-python-gtk/tree/master/src/menus/gtk/menubar).
 
-![GTK menubar](https://codigoninja.dev/images/gtk/pygobject/widgets/menubar.webp)
+![GTK menubar](https://codigoninja.dev/images/pygobject-gtk3-menubar.webp)
 
 * [GTK menu ToolBar com Gnome Builder](https://github.com/natorsc/gui-python-gtk/tree/master/src/gtk/menus/toolbar/builder).
 * [GTK menu ToolBar com Gnome Glade](https://github.com/natorsc/gui-python-gtk/tree/master/src/gtk/menus/toolbar/glade).
 * [GTK menu ToolBar com Python](https://github.com/natorsc/gui-python-gtk/tree/master/src/gtk/menus/toolbar/builder).
 
-![GTK menu toolbar](https://codigoninja.dev/images/gtk/pygobject/widgets/menu-toolbar.webp)
+![GTK menu toolbar](https://codigoninja.dev/images/pygobject-gtk3-menu-toolbar.webp)
 
 ### Style
 
@@ -273,25 +274,25 @@ A ideia é apenas **estudar** e documentar a construção de interfaces gráfica
 * [Adicionar classe a um widget com Gnome Glade](https://github.com/natorsc/gui-python-gtk/tree/master/src/gtk/style/class/glade)
 * [Adicionar classe a um widget com Python](https://github.com/natorsc/gui-python-gtk/tree/master/src/gtk/style/class)
 
-![GTK Adicionar classe a um widget](https://codigoninja.dev/images/gtk/pygobject/widgets/style-class.webp)
+![GTK Adicionar classe a um widget](https://codigoninja.dev/images/pygobject-gtk3-style-class.webp)
 
 * [Adicionar um nome a um widget com Gnome Builder](https://github.com/natorsc/gui-python-gtk/tree/master/src/gtk/style/name/builder)
 * [Adicionar um nome a um widget com Gnome Glade](https://github.com/natorsc/gui-python-gtk/tree/master/src/gtk/style/name/glade)
 * [Adicionar um nome a um widget com Python](https://github.com/natorsc/gui-python-gtk/tree/master/src/gtk/style/name)
 
-![GTK Adicionar nome a um widget](https://codigoninja.dev/images/gtk/pygobject/widgets/style-name.webp)
+![GTK Adicionar nome a um widget](https://codigoninja.dev/images/pygobject-gtk3-style-name.webp)
 
 * [CSS selectors com Gnome Builder](https://github.com/natorsc/gui-python-gtk/tree/master/src/gtk/style/selectors/builder)
 * [CSS selectors com Gnome Glade](https://github.com/natorsc/gui-python-gtk/tree/master/src/gtk/style/selectors/glade)
 * [CSS selectors com Python](https://github.com/natorsc/gui-python-gtk/tree/master/src/gtk/selectors/name)
 
-![GTK CSS selectors](https://codigoninja.dev/images/gtk/pygobject/widgets/style-selectors.webp)
+![GTK CSS selectors](https://codigoninja.dev/images/pygobject-gtk3-style-selectors.webp)
 
 * [Dark Mode (modo escuro) com Gnome Builder](https://github.com/natorsc/gui-python-gtk/tree/master/src/gtk/style/darkmode/builder)
 * [Dark Mode (modo escuro) com  com Gnome Glade](https://github.com/natorsc/gui-python-gtk/tree/master/src/gtk/style/darkmode/glade)
 * [Dark Mode (modo escuro) com  com Python](https://github.com/natorsc/gui-python-gtk/tree/master/src/gtk/style/darkmode)
 
-![GTK Dark Mode (modo escuro)](https://codigoninja.dev/images/gtk/pygobject/widgets/style-dark-mode.webp)
+![GTK Dark Mode (modo escuro)](https://codigoninja.dev/images/pygobject-gtk3-style-dark-mode.webp)
 
 ### Ícones standard e symbolic
 
@@ -299,7 +300,7 @@ A ideia é apenas **estudar** e documentar a construção de interfaces gráfica
 * [Utilizando ícones standard e symbolic com Gnome Glade](https://github.com/natorsc/gui-python-gtk/tree/master/src/gtk/gnome-icons/glade).
 * [Utilizando ícones standard e symbolic com Python](https://github.com/natorsc/gui-python-gtk/tree/master/src/gtk/gnome-icons).
 
-![GTK utilizando ícones standard e symbolic](https://codigoninja.dev/images/gtk/pygobject/widgets/icons-standard-symbolic.webp)
+![GTK utilizando ícones standard e symbolic](https://codigoninja.dev/images/pygobject-gtk3-icons-standard-symbolic.webp)
 
 ### Window
 
@@ -307,7 +308,7 @@ A ideia é apenas **estudar** e documentar a construção de interfaces gráfica
 * [GTK Window com Gnome Glade](https://github.com/natorsc/gui-python-gtk/tree/master/src/gtk/window/glade).
 * [GTK Window com Python](https://github.com/natorsc/gui-python-gtk/tree/master/src/gtk/window).
 
-![GTK utilizando ícones standard e symbolic](https://codigoninja.dev/images/gtk/pygobject/widgets/icons-standard-symbolic.webp)
+![GTK utilizando ícones standard e symbolic](https://codigoninja.dev/images/pygobject-gtk3-icons-standard-symbolic.webp)
 
 ### Widgets
 
@@ -317,7 +318,7 @@ A ideia é apenas **estudar** e documentar a construção de interfaces gráfica
 * [GTK Calendar com Gnome Glade](https://github.com/natorsc/gui-python-gtk/tree/master/src/gtk/widgets/calendar/glade).
 * [GTK Calendar com Python](https://github.com/natorsc/gui-python-gtk/tree/master/src/gtk/widgets/calendar).
 
-![GTK Calendar](https://codigoninja.dev/images/gtk/pygobject/widgets/calendar.webp)
+![GTK Calendar](https://codigoninja.dev/images/pygobject-gtk3-calendar.webp)
 
 #### Entry
 
@@ -325,7 +326,7 @@ A ideia é apenas **estudar** e documentar a construção de interfaces gráfica
 * [GTK Entry com Gnome Glade](https://github.com/natorsc/gui-python-gtk/tree/master/src/gtk/widgets/entry/glade).
 * [GTK Entry com Python](https://github.com/natorsc/gui-python-gtk/tree/master/src/gtk/widgets/entry).
 
-![GTK Entry](https://codigoninja.dev/images/gtk/pygobject/widgets/entry.webp)
+![GTK Entry](https://codigoninja.dev/images/pygobject-gtk3-entry.webp)
 
 #### EntryCompletion
 
@@ -333,7 +334,23 @@ A ideia é apenas **estudar** e documentar a construção de interfaces gráfica
 * [GTK EntryCompletion com Gnome Glade](https://github.com/natorsc/gui-python-gtk/tree/master/src/gtk/widgets/entry-completion/glade).
 * [GTK EntryCompletion com Python](https://github.com/natorsc/gui-python-gtk/tree/master/src/gtk/widgets/entry-completion).
 
-![GTK EntryCompletion](https://codigoninja.dev/images/gtk/pygobject/widgets/entry-completion.webp)
+![GTK EntryCompletion](https://codigoninja.dev/images/pygobject-gtk3-entry-completion.webp)
+
+#### EventBox
+
+* [GTK EventBox com Gnome Builder](https://github.com/natorsc/gui-python-gtk/tree/master/src/gtk/widgets/event-box/builder).
+* [GTK EventBox com Gnome Glade](https://github.com/natorsc/gui-python-gtk/tree/master/src/gtk/widgets/event-box/glade).
+* [GTK EventBox com Python](https://github.com/natorsc/gui-python-gtk/tree/master/src/gtk/widgets/event-box).
+
+![GTK EntryCompletion](https://codigoninja.dev/images/pygobject-gtk3-eventbox.webp.webp)
+
+#### InfoBar
+
+* [GTK InfoBar com Gnome Builder](https://github.com/natorsc/gui-python-gtk/tree/master/src/gtk/widgets/info-bar/builder).
+* [GTK InfoBar com Gnome Glade](https://github.com/natorsc/gui-python-gtk/tree/master/src/gtk/widgets/info-bar/glade).
+* [GTK InfoBar com Python](https://github.com/natorsc/gui-python-gtk/tree/master/src/gtk/widgets/info-bar).
+
+![GTK InfoBar](https://codigoninja.dev/images/pygobject-gtk3-infobar.webp)
 
 #### RadioButton
 
@@ -341,7 +358,7 @@ A ideia é apenas **estudar** e documentar a construção de interfaces gráfica
 * [GTK RadioButton com Gnome Glade](https://github.com/natorsc/gui-python-gtk/tree/master/src/gtk/widgets/radio-button/glade).
 * [GTK RadioButton com Python](https://github.com/natorsc/gui-python-gtk/tree/master/src/gtk/widgets/radio-button).
 
-![GTK RadioButton](https://codigoninja.dev/images/gtk/pygobject/widgets/radio-button.webp)
+![GTK RadioButton](https://codigoninja.dev/images/pygobject-gtk3-radio-button.webp)
 
 #### SearchBar
 
@@ -349,7 +366,7 @@ A ideia é apenas **estudar** e documentar a construção de interfaces gráfica
 * [GTK SearchBar com Gnome Glade](https://github.com/natorsc/gui-python-gtk/tree/master/src/gtk/widgets/search-bar/glade).
 * [GTK SearchBar com Python](https://github.com/natorsc/gui-python-gtk/tree/master/src/gtk/widgets/search-bar).
 
-![GTK SearchBar](https://codigoninja.dev/images/gtk/pygobject/widgets/search-bar.webp)
+![GTK SearchBar](https://codigoninja.dev/images/pygobject-gtk3-search-bar.webp)
 
 #### SearchEntry
 
@@ -357,7 +374,7 @@ A ideia é apenas **estudar** e documentar a construção de interfaces gráfica
 * [GTK SearchEntry com Gnome Glade](https://github.com/natorsc/gui-python-gtk/tree/master/src/gtk/widgets/search-entry/glade).
 * [GTK SearchEntry com Python](https://github.com/natorsc/gui-python-gtk/tree/master/src/gtk/widgets/search-entry).
 
-![GTK SearchEntry](https://codigoninja.dev/images/gtk/pygobject/widgets/search-entry.webp)
+![GTK SearchEntry](https://codigoninja.dev/images/pygobject-gtk3-search-entry.webp)
 
 #### Treeview
 
@@ -365,23 +382,19 @@ A ideia é apenas **estudar** e documentar a construção de interfaces gráfica
 * [GTK TreeView editar célula Gnome Glade](https://github.com/natorsc/gui-python-gtk/tree/master/src/gtk/widgets/treeview/editable/glade).
 * [GTK TreeView editar célula Python](https://github.com/natorsc/gui-python-gtk/tree/master/src/gtk/widgets/treeview/editable).
 
-![GTK TreeView editar célula](https://codigoninja.dev/images/gtk/pygobject/widgets/treeview-editable.webp)
+![GTK TreeView editar célula](https://codigoninja.dev/images/pygobject-gtk3-treeview-editable.webp)
 
 * [GTK TreeView filtro com botões no Gnome Builder](https://github.com/natorsc/gui-python-gtk/tree/master/src/gtk/widgets/treeview/filter/builder).
 * [GTK TreeView filtro com botões no Gnome Glade](https://github.com/natorsc/gui-python-gtk/tree/master/src/gtk/widgets/treeview/filter/glade).
 * [GTK TreeView filtro com botões no Python](https://github.com/natorsc/gui-python-gtk/tree/master/src/gtk/widgets/treeview/filter).
 
-![GTK TreeView ordenando pelo cabeçalho](https://codigoninja.dev/images/gtk/pygobject/widgets/treeview-filter.webp)
+![GTK TreeView ordenando pelo cabeçalho](https://codigoninja.dev/images/pygobject-gtk3-treeview-filter.webp)
 
 * [GTK TreeView ordenando pelo cabeçalho com Gnome Builder](https://github.com/natorsc/gui-python-gtk/tree/master/src/gtk/widgets/treeview/sort/builder).
 * [GTK TreeView ordenando pelo cabeçalho com Gnome Glade](https://github.com/natorsc/gui-python-gtk/tree/master/src/gtk/widgets/treeview/sort/glade).
 * [GTK TreeView ordenando pelo cabeçalho com Python](https://github.com/natorsc/gui-python-gtk/tree/master/src/gtk/widgets/treeview/sort).
 
-![GTK TreeView ordenando pelo cabeçalho](https://codigoninja.dev/images/gtk/pygobject/widgets/treeview-sort.webp)
-
-* [GTK EventBox com Gnome Builder](https://github.com/natorsc/gui-python-gtk/tree/master/src/gtk/widgets/event-box/builder).
-* [GTK EventBox com Gnome Glade](https://github.com/natorsc/gui-python-gtk/tree/master/src/gtk/widgets/event-box/glade).
-* [GTK EventBox com Python](https://github.com/natorsc/gui-python-gtk/tree/master/src/gtk/widgets/event-box).
+![GTK TreeView ordenando pelo cabeçalho](https://codigoninja.dev/images/pygobject-gtk3-treeview-sort.webp)
 
 ---
 
@@ -393,7 +406,7 @@ A ideia é apenas **estudar** e documentar a construção de interfaces gráfica
 * [Libhandy ActionRow com Gnome Glade](https://github.com/natorsc/gui-python-gtk/tree/master/src/libhandy/action-row/glade).
 * [Libhandy ActionRow com Python](https://github.com/natorsc/gui-python-gtk/tree/master/src/libhandy/action-row).
 
-![Libhandy ActionRow](https://codigoninja.dev/images/gtk/pygobject/widgets/libhandy-action-row.webp)
+![Libhandy ActionRow](https://codigoninja.dev/images/pygobject-gtk3-libhandy-action-row.webp)
 
 ### ApplicationWindow
 
@@ -407,25 +420,25 @@ A ideia é apenas **estudar** e documentar a construção de interfaces gráfica
 
 * [Libhandy Avatar com Python](https://github.com/natorsc/gui-python-gtk/tree/master/src/libhandy/avatar).
 
-![Libhandy Avatar](https://codigoninja.dev/images/gtk/pygobject/widgets/libhandy-avatar.webp)
+![Libhandy Avatar](https://codigoninja.dev/images/pygobject-gtk3-libhandy-avatar.webp)
 
 ### Carousel
 
 * [Libhandy Carousel com Python](https://github.com/natorsc/gui-python-gtk/tree/master/src/libhandy/carousel).
 
-![Libhandy Carousel](https://codigoninja.dev/images/gtk/pygobject/widgets/libhandy-carousel.webp)
+![Libhandy Carousel](https://codigoninja.dev/images/pygobject-gtk3-libhandy-carousel.webp)
 
 ### CarouselIndicatorDots
 
 * [Libhandy CarouselIndicatorLines com Python](https://github.com/natorsc/gui-python-gtk/tree/master/src/libhandy/carousel-indicator-dots).
 
-![Libhandy CarouselIndicatorLines](https://codigoninja.dev/images/gtk/pygobject/widgets/libhandy-carousel-indicator-dots.webp)
+![Libhandy CarouselIndicatorLines](https://codigoninja.dev/images/pygobject-gtk3-libhandy-carousel-indicator-dots.webp)
 
 ### CarouselIndicatorLines
 
 * [Libhandy CarouselIndicatorLines com Python](https://github.com/natorsc/gui-python-gtk/tree/master/src/libhandy/carousel-indicator-lines).
 
-![Libhandy CarouselIndicatorLines](https://codigoninja.dev/images/gtk/pygobject/widgets/libhandy-carousel-indicator-lines.webp)
+![Libhandy CarouselIndicatorLines](https://codigoninja.dev/images/pygobject-gtk3-libhandy-carousel-indicator-lines.webp)
 
 ### Column
 
@@ -433,13 +446,13 @@ HdyColumn foi trocado pelo HdyClamp a partir da versão 1.0.
 
 * [Libhandy Column](https://github.com/natorsc/gui-python-gtk/tree/master/src/libhandy/column).
 
-![Libhandy Column](https://codigoninja.dev/images/gtk/pygobject/widgets/libhandy-column.webp)
+![Libhandy Column](https://codigoninja.dev/images/pygobject-gtk3-libhandy-column.webp)
 
 ### ComboRow
 
 * [Libhandy ComboRow](https://github.com/natorsc/gui-python-gtk/tree/master/src/libhandy/combo-row).
 
-![Libhandy ComboRow](https://codigoninja.dev/images/gtk/pygobject/widgets/libhandy-combo-row.webp)
+![Libhandy ComboRow](https://codigoninja.dev/images/pygobject-gtk3-libhandy-combo-row.webp)
 
 ### Deck
 
@@ -460,19 +473,19 @@ HdyColumn foi trocado pelo HdyClamp a partir da versão 1.0.
 
 * [Libhandy Dialog](https://github.com/natorsc/gui-python-gtk/tree/master/src/libhandy/dialog).
 
-![Libhandy Dialog](https://codigoninja.dev/images/gtk/pygobject/widgets/libhandy-dialog.webp)
+![Libhandy Dialog](https://codigoninja.dev/images/pygobject-gtk3-libhandy-dialog.webp)
 
 ### ExpanderRow
 
 * [Libhandy ExpanderRow](https://github.com/natorsc/gui-python-gtk/tree/master/src/libhandy/expander-row).
 
-![Libhandy ExpanderRow](https://codigoninja.dev/images/gtk/pygobject/widgets/libhandy-expander-row.webp)
+![Libhandy ExpanderRow](https://codigoninja.dev/images/pygobject-gtk3-libhandy-expander-row.webp)
 
 ### HeaderBar
 
 * [Libhandy HeaderBar](https://github.com/natorsc/gui-python-gtk/tree/master/src/libhandy/headerbar).
 
-![Libhandy HeaderBar](https://codigoninja.dev/images/gtk/pygobject/widgets/libhandy-headerbar.webp)
+![Libhandy HeaderBar](https://codigoninja.dev/images/pygobject-gtk3-libhandy-headerbar.webp)
 
 ### HeaderGroup
 
@@ -482,23 +495,23 @@ HdyColumn foi trocado pelo HdyClamp a partir da versão 1.0.
 
 * [Libhandy Keypad](https://github.com/natorsc/gui-python-gtk/tree/master/src/libhandy/keypad).
 
-![Libhandy Keypad](https://codigoninja.dev/images/gtk/pygobject/widgets/libhandy-keypad.webp)
+![Libhandy Keypad](https://codigoninja.dev/images/pygobject-gtk3-libhandy-keypad.webp)
 
 ### Leaflet
 
 * [Libhandy Leaflet com Python](https://github.com/natorsc/gui-python-gtk/tree/master/src/libhandy/leaflet).
 
-![Libhandy Leaflet](https://codigoninja.dev/images/gtk/pygobject/widgets/libhandy-leaflet.webp)
+![Libhandy Leaflet](https://codigoninja.dev/images/pygobject-gtk3-libhandy-leaflet.webp)
 
 * [Libhandy Leaflet com Python sincronizando dois Leaflets](https://github.com/natorsc/gui-python-gtk/tree/master/src/libhandy/leaflet).
 
-![Libhandy Leaflet](https://codigoninja.dev/images/gtk/pygobject/widgets/libhandy-sync-leaflet.webp)
+![Libhandy Leaflet](https://codigoninja.dev/images/pygobject-gtk3-libhandy-sync-leaflet.webp)
 
 ### SearchBar
 
 * [Libhandy SearchBar com Python](https://github.com/natorsc/gui-python-gtk/tree/master/src/libhandy/search-bar).
 
-![Libhandy SearchBar](https://codigoninja.dev/images/gtk/pygobject/widgets/libhandy-search-bar.webp)
+![Libhandy SearchBar](https://codigoninja.dev/images/pygobject-gtk3-libhandy-search-bar.webp)
 
 ### Squeezer
 
@@ -508,19 +521,19 @@ HdyColumn foi trocado pelo HdyClamp a partir da versão 1.0.
 
 * [Libhandy TitleBar com Python](https://github.com/natorsc/gui-python-gtk/tree/master/src/libhandy/title-bar).
 
-![Libhandy TitleBar](https://codigoninja.dev/images/gtk/pygobject/widgets/libhandy-title-bar.webp)
+![Libhandy TitleBar](https://codigoninja.dev/images/pygobject-gtk3-libhandy-title-bar.webp)
 
 ### ViewSwitcher
 
 * [Libhandy ViewSwitcher com Python](https://github.com/natorsc/gui-python-gtk/tree/master/src/libhandy/view-switcher).
 
-![Libhandy ViewSwitcher](https://codigoninja.dev/images/gtk/pygobject/widgets/libhandy-view-switcher.webp)
+![Libhandy ViewSwitcher](https://codigoninja.dev/images/pygobject-gtk3-libhandy-view-switcher.webp)
 
 ### ViewSwitcherBar
 
 * [Libhandy ViewSwitcherBar com Python](https://github.com/natorsc/gui-python-gtk/tree/master/src/libhandy/view-switcher-bar).
 
-![Libhandy ViewSwitcherBar](https://codigoninja.dev/images/gtk/pygobject/widgets/libhandy-view-switcher-bar.webp)
+![Libhandy ViewSwitcherBar](https://codigoninja.dev/images/pygobject-gtk3-libhandy-view-switcher-bar.webp)
 
 ### Window
 
