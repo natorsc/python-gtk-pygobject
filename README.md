@@ -342,7 +342,7 @@ A ideia é apenas **estudar** e documentar a construção de interfaces gráfica
 * [GTK EventBox com Gnome Glade](https://github.com/natorsc/gui-python-gtk/tree/master/src/gtk/widgets/event-box/glade).
 * [GTK EventBox com Python](https://github.com/natorsc/gui-python-gtk/tree/master/src/gtk/widgets/event-box).
 
-![GTK EntryCompletion](https://codigoninja.dev/images/pygobject-gtk3-eventbox.webp.webp)
+![GTK EventBox](https://codigoninja.dev/images/pygobject-gtk3-eventbox.webp)
 
 #### InfoBar
 
