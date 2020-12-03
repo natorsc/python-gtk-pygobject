@@ -33,6 +33,8 @@ A ideia é apenas **estudar** e documentar a construção de interfaces gráfica
 !!! note "Nota"
 
     Em caso de problemas entre em contato para que o material possa ser melhorado.
+ 
+---
 
 ## Tutoriais
 
@@ -65,6 +67,18 @@ A ideia é apenas **estudar** e documentar a construção de interfaces gráfica
 ### Libhandy
 
 - [Como instalar a biblioteca libhandy no Linux e Windows](https://codigoninja.dev/gtk3-pygobject-instalar-biblioteca-libhandy/).
+
+---
+
+## Exemplos
+
+### Navegador web (WebKit2.WebView)
+
+* [WebKit2.WebView com Python](https://github.com/natorsc/gui-python-gtk/tree/master/src/gtk/examples/web-browser).
+
+![WebKit2 WebView](https://codigoninja.dev/images/pygobject-gtk3-webkit2-webview.webp)
+
+---
 
 ## Código GTK
 
@@ -375,6 +389,14 @@ A ideia é apenas **estudar** e documentar a construção de interfaces gráfica
 * [GTK SearchEntry com Python](https://github.com/natorsc/gui-python-gtk/tree/master/src/gtk/widgets/search-entry).
 
 ![GTK SearchEntry](https://codigoninja.dev/images/pygobject-gtk3-search-entry.webp)
+
+#### Separator
+
+* [GTK Separator com Gnome Builder](https://github.com/natorsc/gui-python-gtk/tree/master/src/gtk/widgets/separator/builder).
+* [GTK Separator com Gnome Glade](https://github.com/natorsc/gui-python-gtk/tree/master/src/gtk/widgets/separator/glade).
+* [GTK Separator com Python](https://github.com/natorsc/gui-python-gtk/tree/master/src/gtk/widgets/separator).
+
+![GTK Separator](https://codigoninja.dev/images/pygobject-gtk3-separator.webp)
 
 #### Treeview
 
