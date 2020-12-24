@@ -6,8 +6,6 @@ verify_ssl = true
 [dev-packages]
 pylint = "*"
 autopep8 = "*"
-cx-freeze = "*"
-pyinstaller = "*"
 
 [packages]
 pygobject-stubs = "*"

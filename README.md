@@ -289,6 +289,10 @@ GTK depende das siguintes bibliotecas:
 
 ![GTK menu toolbar](https://codigoninja.dev/images/pygobject-gtk3-menu-toolbar.webp)
 
+### Área de notificação
+
+* [GTK notification](https://github.com/natorsc/gui-python-gtk/tree/master/src/gtk/menus/toolbar/builder).
+
 ### Style
 
 > **OBS**: Ao utilizar `background-color` deve-se utilizar `background-image: none;` .
