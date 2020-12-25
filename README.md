@@ -343,6 +343,32 @@ GTK depende das siguintes bibliotecas:
 
 ### Widgets
 
+#### Botóes
+
+##### Button
+
+* [GTK Button com Python](https://github.com/natorsc/gui-python-gtk/tree/master/src/gtk/buttons/button).
+
+##### CheckButton
+
+* [GTK CheckButton com Python](https://github.com/natorsc/gui-python-gtk/tree/master/src/gtk/buttons/button).
+
+##### LinkButton
+
+* [GTK LinkButton com Python](https://github.com/natorsc/gui-python-gtk/tree/master/src/gtk/buttons/check-button).
+
+##### RadioButton
+
+* [GTK RadioButton com Python](https://github.com/natorsc/gui-python-gtk/tree/master/src/gtk/buttons/radio-button).
+
+##### SwitchButton
+
+* [GTK SwitchButton com Python](https://github.com/natorsc/gui-python-gtk/tree/master/src/gtk/buttons/switch-button).
+
+##### ToggleButton
+
+* [GTK ToggleButton com Python](https://github.com/natorsc/gui-python-gtk/tree/master/src/gtk/buttons/toggle-button).
+
 #### Calendar
 
 * [GTK Calendar com Gnome Builder](https://github.com/natorsc/gui-python-gtk/tree/master/src/gtk/widgets/calendar/builder).
@@ -414,6 +440,10 @@ GTK depende das siguintes bibliotecas:
 * [GTK Separator com Python](https://github.com/natorsc/gui-python-gtk/tree/master/src/gtk/widgets/separator).
 
 ![GTK Separator](https://codigoninja.dev/images/pygobject-gtk3-separator.webp)
+
+#### Spinner
+
+* [GTK Spinner com Python](https://github.com/natorsc/gui-python-gtk/tree/master/src/gtk/widgets/Spinner).
 
 #### Treeview
 

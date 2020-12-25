@@ -55,9 +55,9 @@ class MainWindow(Gtk.ApplicationWindow):
 
     def on_radiobutton_toggled(self, widget):
         if widget.get_active():
-            print(f'Radio button {widget.get_label()} MARCADO')
+            print(f'{widget.get_label()} - MARCADO')
         else:
-            print(f'Radio button {widget.get_label()} DESMARCADO')
+            print(f'{widget.get_label()} - DESMARCADO')
 
 
 class Application(Gtk.Application):
