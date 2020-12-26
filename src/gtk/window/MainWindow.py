@@ -36,7 +36,7 @@ class MainWindow(Gtk.ApplicationWindow):
         self.show_all()
 
     def on_button_clicked(self, widget):
-        window = Gtk.Window.new(Gtk.WindowType.TOPLEVEL)
+        window = Gtk.Window.new(type=Gtk.WindowType.TOPLEVEL)
         window.set_transient_for(parent=self)
         window.set_modal(modal=True)
         window.set_title(title='Gtk.Window')
