@@ -1,38 +1,31 @@
 # -*- coding: utf-8 -*-
 """Gtk.Window()."""
 
-# Importando a biblioteca gnome introspection.
 import gi
 
-# Definindo que o aplicativo deve ser executado no GTK 3.
-# Isso porque um computador pode ter mais de uma versão do GTK.
 gi.require_version(namespace='Gtk', version='3.0')
 
-# Importando os widgets do Gio e GTK.
 from gi.repository import Gio, Gtk
 
 
-# class MainWindow(Gtk.Window):
 class MainWindow(Gtk.ApplicationWindow):
-    """Classe herda de ``Gtk.ApplicationWindow``."""
 
     def __init__(self, **kwargs):
-        """Construtor."""
         super().__init__(**kwargs)
 
-        # Configurando a janela principal.
         self.set_title(title='Gtk.ApplicationWindow')
-        # Tamanho inicial da janela.
         self.set_default_size(width=1366 / 2, height=768 / 2)
-        # Tamanho minimo da janela.
-        self.set_size_request(width=1366 / 2, height=768 / 2)
         self.set_position(position=Gtk.WindowPosition.CENTER)
         self.set_default_icon_from_file(filename='../../assets/icons/icon.png')
 
+        vbox = Gtk.Box.new(orientation=Gtk.Orientation.VERTICAL, spacing=12)
+        vbox.set_border_width(border_width=12)
+        self.add(widget=vbox)
+
         # Widgets.
-        button = Gtk.Button.new_with_label('Clique Aqui')
+        button = Gtk.Button.new_with_label('Abrir janela')
         button.connect('clicked', self.on_button_clicked)
-        self.add(widget=button)
+        vbox.pack_start(child=button, expand=False, fill=True, padding=0)
         self.show_all()
 
     def on_button_clicked(self, widget):

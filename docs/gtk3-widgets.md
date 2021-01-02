@@ -2,13 +2,29 @@
 
 Alguns widgets do GTK 3 feitos com Python, Gnome Builder e Gnome Glade.
 
+## Gio Menu
+
+- [Python](https://github.com/natorsc/gui-python-gtk/tree/master/src/gtk3/gio-menu).
+
+![Gtk.Gio.Menu](./images/pygobject-gtk3-gio-menu.webp)
+
+---
+
+## Gio Simple Action
+
+- [Python](https://github.com/natorsc/gui-python-gtk/tree/master/src/gtk3/gio-simple-action).
+
+![Gio.SimpleAction](./images/pygobject-gtk3-gio-simple-action.webp)
+
+---
+
 ## Gtk ActionBar
 
 - [Gnome Builder](https://github.com/natorsc/gui-python-gtk/tree/master/src/gtk3/actionbar/builder).
 - [Gnome Glade](https://github.com/natorsc/gui-python-gtk/tree/master/src/gtk3/actionbar/glade).
 - [Python](https://github.com/natorsc/gui-python-gtk/tree/master/src/gtk3/actionbar).
 
-![Gtk.ActionBar](./images/pygobject-gtk3-actionbar.png)
+![Gtk.ActionBar](./images/pygobject-gtk3-actionbar.webp)
 
 ---
 
@@ -18,7 +34,7 @@ Alguns widgets do GTK 3 feitos com Python, Gnome Builder e Gnome Glade.
 - [Gnome Glade](https://github.com/natorsc/gui-python-gtk/tree/master/src/gtk3/applicationwindow/glade).
 - [Python](https://github.com/natorsc/gui-python-gtk/tree/master/src/gtk3/applicationwindow).
 
-![Gtk.ApplicationWindow](./images/pygobject-gtk3-applicationwindow.png)
+![Gtk.ApplicationWindow](./images/pygobject-gtk3-applicationwindow.webp)
 
 ---
 
@@ -28,7 +44,7 @@ Alguns widgets do GTK 3 feitos com Python, Gnome Builder e Gnome Glade.
 - [Gnome Glade](https://github.com/natorsc/gui-python-gtk/tree/master/src/gtk3/box-horizontal/glade).
 - [Python](https://github.com/natorsc/gui-python-gtk/tree/master/src/gtk3/box-horizontal).
 
-![Gtk.Box horizontal](./images/pygobject-gtk3-box-horizontal.png)
+![Gtk.Box horizontal](./images/pygobject-gtk3-box-horizontal.webp)
 
 ---
 
@@ -38,7 +54,7 @@ Alguns widgets do GTK 3 feitos com Python, Gnome Builder e Gnome Glade.
 - [Gnome Glade](https://github.com/natorsc/gui-python-gtk/tree/master/src/gtk3/box-vertical/glade).
 - [Python](https://github.com/natorsc/gui-python-gtk/tree/master/src/gtk3/box-vertical).
 
-![Gtk.Box vertical](./images/pygobject-gtk3-box-vertical.png)
+![Gtk.Box vertical](./images/pygobject-gtk3-box-vertical.webp)
 
 ---
 
@@ -48,7 +64,7 @@ Alguns widgets do GTK 3 feitos com Python, Gnome Builder e Gnome Glade.
 - [Gnome Glade](https://github.com/natorsc/gui-python-gtk/tree/master/src/gtk3/button/glade).
 - [Python](https://github.com/natorsc/gui-python-gtk/tree/master/src/gtk3/button).
 
-![Gtk.Button](./images/pygobject-gtk3-button.png)
+![Gtk.Button](./images/pygobject-gtk3-button.webp)
 
 ---
 
@@ -58,7 +74,7 @@ Alguns widgets do GTK 3 feitos com Python, Gnome Builder e Gnome Glade.
 - [Gnome Glade](https://github.com/natorsc/gui-python-gtk/tree/master/src/gtk3/buttonbox/glade).
 - [Python](https://github.com/natorsc/gui-python-gtk/tree/master/src/gtk3/buttonbox).
 
-![Gtk.ButtonBox](./images/pygobject-gtk3-buttonbox.png)
+![Gtk.ButtonBox](./images/pygobject-gtk3-buttonbox.webp)
 
 ---
 
@@ -68,7 +84,7 @@ Alguns widgets do GTK 3 feitos com Python, Gnome Builder e Gnome Glade.
 - [Gnome Glade](https://github.com/natorsc/gui-python-gtk/tree/master/src/gtk3/calendar/glade).
 - [Python](https://github.com/natorsc/gui-python-gtk/tree/master/src/gtk3/calendar).
 
-![Gtk.Calendar](./images/pygobject-gtk3-calendar.png)
+![Gtk.Calendar](./images/pygobject-gtk3-calendar.webp)
 
 ---
 
@@ -78,7 +94,7 @@ Alguns widgets do GTK 3 feitos com Python, Gnome Builder e Gnome Glade.
 - [Gnome Glade](https://github.com/natorsc/gui-python-gtk/tree/master/src/gtk3/calendar/glade).
 - [Python](https://github.com/natorsc/gui-python-gtk/tree/master/src/gtk3/calendar).
 
-![Gtk.Calendar](./images/pygobject-gtk3-calendar.png)
+![Gtk.Calendar](./images/pygobject-gtk3-calendar.webp)
 
 ---
 
@@ -88,7 +104,7 @@ Alguns widgets do GTK 3 feitos com Python, Gnome Builder e Gnome Glade.
 - [Gnome Glade](https://github.com/natorsc/gui-python-gtk/tree/master/src/gtk3/dialog/glade).
 - [Python](https://github.com/natorsc/gui-python-gtk/tree/master/src/gtk3/dialog).
 
-![Gtk.Dialog](./images/pygobject-gtk3-dialog.png)
+![Gtk.Dialog](./images/pygobject-gtk3-dialog.webp)
 
 ---
 
@@ -108,7 +124,7 @@ Alguns widgets do GTK 3 feitos com Python, Gnome Builder e Gnome Glade.
 - [Gnome Glade](https://github.com/natorsc/gui-python-gtk/tree/master/src/gtk3/entry/glade).
 - [Python](https://github.com/natorsc/gui-python-gtk/tree/master/src/gtk3/entry).
 
-![Gtk.Entry](./images/pygobject-gtk3-entry.png)
+![Gtk.Entry](./images/pygobject-gtk3-entry.webp)
 
 ---
 
@@ -118,7 +134,7 @@ Alguns widgets do GTK 3 feitos com Python, Gnome Builder e Gnome Glade.
 - [Gnome Glade](https://github.com/natorsc/gui-python-gtk/tree/master/src/gtk3/entry-completion/glade).
 - [Python](https://github.com/natorsc/gui-python-gtk/tree/master/src/gtk3/entry-completion).
 
-![Gtk.EntryCompletion](./images/pygobject-gtk3-entry-completion.gif)
+![Gtk.EntryCompletion](./images/pygobject-gtk3-entry-completion.webp)
 
 ---
 
@@ -128,37 +144,40 @@ Alguns widgets do GTK 3 feitos com Python, Gnome Builder e Gnome Glade.
 - [Gnome Glade](https://github.com/natorsc/gui-python-gtk/tree/master/src/gtk3/eventbox/glade).
 - [Python](https://github.com/natorsc/gui-python-gtk/tree/master/src/gtk3/eventbox).
 
-![Gtk.EventBox](./images/pygobject-gtk3-eventbox.png)
+![Gtk.EventBox](./images/pygobject-gtk3-eventbox.webp)
 
 ---
 
 ## Gtk FileChooserDialog folder
 
-Não recomendo a criação desse tipo de dialogo com o Gnome Builder ou mesmo com o Gnome Glade, uma vez que os dialogos criados neles não seguem as regras de estilo do GTK.
+Não recomendo a criação desse tipo de dialogo com o Gnome Builder ou mesmo com o Gnome Glade, uma vez que os dialogos
+criados neles não seguem as regras de estilo do GTK.
 
 - [Python](https://github.com/natorsc/gui-python-gtk/tree/master/src/gtk3/file-chooser-dialog-folder).
 
-![Gtk.FileChooserDialog folder](./images/pygobject-gtk3-file-chooser-dialog-folder.png)
+![Gtk.FileChooserDialog folder](./images/pygobject-gtk3-file-chooser-dialog-folder.webp)
 
 ---
 
 ## Gtk FileChooserDialog open
 
-Não recomendo a criação desse tipo de dialogo com o Gnome Builder ou mesmo com o Gnome Glade, uma vez que os dialogos criados neles não seguem as regras de estilo do GTK.
+Não recomendo a criação desse tipo de dialogo com o Gnome Builder ou mesmo com o Gnome Glade, uma vez que os dialogos
+criados neles não seguem as regras de estilo do GTK.
 
 - [Python](https://github.com/natorsc/gui-python-gtk/tree/master/src/gtk3/file-chooser-dialog-open).
 
-![Gtk.FileChooserDialog open](./images/pygobject-gtk3-file-chooser-dialog-open.png)
+![Gtk.FileChooserDialog open](./images/pygobject-gtk3-file-chooser-dialog-open.webp)
 
 ---
 
 ## Gtk FileChooserDialog save
 
-Não recomendo a criação desse tipo de dialogo com o Gnome Builder ou mesmo com o Gnome Glade, uma vez que os dialogos criados neles não seguem as regras de estilo do GTK.
+Não recomendo a criação desse tipo de dialogo com o Gnome Builder ou mesmo com o Gnome Glade, uma vez que os dialogos
+criados neles não seguem as regras de estilo do GTK.
 
 - [Python](https://github.com/natorsc/gui-python-gtk/tree/master/src/gtk3/file-chooser-dialog-save).
 
-![Gtk.FileChooserDialog save](./images/pygobject-gtk3-file-chooser-dialog-save.png)
+![Gtk.FileChooserDialog save](./images/pygobject-gtk3-file-chooser-dialog-save.webp)
 
 ---
 
@@ -168,7 +187,7 @@ Não recomendo a criação desse tipo de dialogo com o Gnome Builder ou mesmo co
 - [Gnome Glade](https://github.com/natorsc/gui-python-gtk/tree/master/src/gtk3/fixed/glade).
 - [Python](https://github.com/natorsc/gui-python-gtk/tree/master/src/gtk3/fixed).
 
-![Gtk.Fixed](./images/pygobject-gtk3-fixed.png)
+![Gtk.Fixed](./images/pygobject-gtk3-fixed.webp)
 
 ---
 
@@ -178,7 +197,7 @@ Não recomendo a criação desse tipo de dialogo com o Gnome Builder ou mesmo co
 - [Gnome Glade](https://github.com/natorsc/gui-python-gtk/tree/master/src/gtk3/flowbox/glade).
 - [Python](https://github.com/natorsc/gui-python-gtk/tree/master/src/gtk3/flowbox).
 
-![Gtk.FlowBox](./images/pygobject-gtk3-flowbox.gif)
+![Gtk.FlowBox](./images/pygobject-gtk3-flowbox.webp)
 
 ---
 
@@ -188,7 +207,7 @@ Não recomendo a criação desse tipo de dialogo com o Gnome Builder ou mesmo co
 - [Gnome Glade](https://github.com/natorsc/gui-python-gtk/tree/master/src/gtk3/grid/glade).
 - [Python](https://github.com/natorsc/gui-python-gtk/tree/master/src/gtk3/grid).
 
-![Gtk.Grid](./images/pygobject-gtk3-grid.png)
+![Gtk.Grid](./images/pygobject-gtk3-grid.webp)
 
 ---
 
@@ -198,7 +217,7 @@ Não recomendo a criação desse tipo de dialogo com o Gnome Builder ou mesmo co
 - [Gnome Glade](https://github.com/natorsc/gui-python-gtk/tree/master/src/gtk3/headerbar/glade).
 - [Python](https://github.com/natorsc/gui-python-gtk/tree/master/src/gtk3/headerbar).
 
-![Gtk.HeaderBar](./images/pygobject-gtk3-headerbar.png)
+![Gtk.HeaderBar](./images/pygobject-gtk3-headerbar.webp)
 
 ---
 
@@ -208,7 +227,7 @@ Não recomendo a criação desse tipo de dialogo com o Gnome Builder ou mesmo co
 - [Gnome Glade](https://github.com/natorsc/gui-python-gtk/tree/master/src/gtk3/image/glade).
 - [Python](https://github.com/natorsc/gui-python-gtk/tree/master/src/gtk3/image).
 
-![Gtk.Image](./images/pygobject-gtk3-image.png)
+![Gtk.Image](./images/pygobject-gtk3-image.webp)
 
 ---
 
@@ -218,7 +237,7 @@ Não recomendo a criação desse tipo de dialogo com o Gnome Builder ou mesmo co
 - [Gnome Glade](https://github.com/natorsc/gui-python-gtk/tree/master/src/gtk3/infobar/glade).
 - [Python](https://github.com/natorsc/gui-python-gtk/tree/master/src/gtk3/infobar).
 
-![Gtk.InfoBar](./images/pygobject-gtk3-infobar.png)
+![Gtk.InfoBar](./images/pygobject-gtk3-infobar.webp)
 
 ---
 
@@ -228,7 +247,7 @@ Não recomendo a criação desse tipo de dialogo com o Gnome Builder ou mesmo co
 - [Gnome Glade](https://github.com/natorsc/gui-python-gtk/tree/master/src/gtk3/layout/glade).
 - [Python](https://github.com/natorsc/gui-python-gtk/tree/master/src/gtk3/layout).
 
-![Gtk.Layout](./images/pygobject-gtk3-layout.png)
+![Gtk.Layout](./images/pygobject-gtk3-layout.webp)
 
 ---
 
@@ -238,7 +257,7 @@ Não recomendo a criação desse tipo de dialogo com o Gnome Builder ou mesmo co
 - [Gnome Glade](https://github.com/natorsc/gui-python-gtk/tree/master/src/gtk3/linkbutton/glade).
 - [Python](https://github.com/natorsc/gui-python-gtk/tree/master/src/gtk3/linkbutton).
 
-![Gtk.LinkButton](./images/pygobject-gtk3-linkbutton.png)
+![Gtk.LinkButton](./images/pygobject-gtk3-linkbutton.webp)
 
 ---
 
@@ -248,7 +267,7 @@ Não recomendo a criação desse tipo de dialogo com o Gnome Builder ou mesmo co
 - [Gnome Glade](https://github.com/natorsc/gui-python-gtk/tree/master/src/gtk3/listbox/glade).
 - [Python](https://github.com/natorsc/gui-python-gtk/tree/master/src/gtk3/listbox).
 
-![Gtk.ListBox](./images/pygobject-gtk3-listbox.png)
+![Gtk.ListBox](./images/pygobject-gtk3-listbox.webp)
 
 ---
 
@@ -258,7 +277,7 @@ Não recomendo a criação desse tipo de dialogo com o Gnome Builder ou mesmo co
 - [Gnome Glade](https://github.com/natorsc/gui-python-gtk/tree/master/src/gtk3/menu/glade).
 - [Python](https://github.com/natorsc/gui-python-gtk/tree/master/src/gtk3/menu).
 
-![Gtk.Menu](./images/pygobject-gtk3-menu.png)
+![Gtk.Menu](./images/pygobject-gtk3-menu.webp)
 
 ---
 
@@ -268,7 +287,7 @@ Não recomendo a criação desse tipo de dialogo com o Gnome Builder ou mesmo co
 - [Gnome Glade](https://github.com/natorsc/gui-python-gtk/tree/master/src/gtk3/menubar/glade).
 - [Python](https://github.com/natorsc/gui-python-gtk/tree/master/src/gtk3/menubar).
 
-![Gtk.MenuBar](./images/pygobject-gtk3-menubar.png)
+![Gtk.MenuBar](./images/pygobject-gtk3-menubar.webp)
 
 ---
 
@@ -278,17 +297,18 @@ Não recomendo a criação desse tipo de dialogo com o Gnome Builder ou mesmo co
 - [Gnome Glade](https://github.com/natorsc/gui-python-gtk/tree/master/src/gtk3/menubutton/glade).
 - [Python](https://github.com/natorsc/gui-python-gtk/tree/master/src/gtk3/menubutton).
 
-![Gtk.MenuButton](./images/pygobject-gtk3-menubutton.png)
+![Gtk.MenuButton](./images/pygobject-gtk3-menubutton.webp)
 
 ---
 
 ## Gtk MessageDialog
 
-Não recomendo a criação desse tipo de dialogo com o Gnome Builder ou mesmo com o Gnome Glade, uma vez que os dialogos criados neles não seguem as regras de estilo do GTK.
+Não recomendo a criação desse tipo de dialogo com o Gnome Builder ou mesmo com o Gnome Glade, uma vez que os dialogos
+criados neles não seguem as regras de estilo do GTK.
 
 - [Python](https://github.com/natorsc/gui-python-gtk/tree/master/src/gtk3/message-dialog).
 
-![Gtk.MessageDialog](./images/pygobject-gtk3-message-dialog.png)
+![Gtk.MessageDialog](./images/pygobject-gtk3-message-dialog.webp)
 
 ---
 
@@ -298,7 +318,7 @@ Não recomendo a criação desse tipo de dialogo com o Gnome Builder ou mesmo co
 - [Gnome Glade](https://github.com/natorsc/gui-python-gtk/tree/master/src/gtk3/notebook/glade).
 - [Python](https://github.com/natorsc/gui-python-gtk/tree/master/src/gtk3/notebook).
 
-![Gtk.Notebook](./images/pygobject-gtk3-notebook.png)
+![Gtk.Notebook](./images/pygobject-gtk3-notebook.webp)
 
 ---
 
@@ -306,7 +326,7 @@ Não recomendo a criação desse tipo de dialogo com o Gnome Builder ou mesmo co
 
 - [Python](https://github.com/natorsc/gui-python-gtk/tree/master/src/gtk3/notify).
 
-![Gtk.Notify](./images/pygobject-gtk3-notify.png)
+![Gtk.Notify](./images/pygobject-gtk3-notify.webp)
 
 ---
 
@@ -316,7 +336,7 @@ Não recomendo a criação desse tipo de dialogo com o Gnome Builder ou mesmo co
 - [Gnome Glade](https://github.com/natorsc/gui-python-gtk/tree/master/src/gtk3/overlay/glade).
 - [Python](https://github.com/natorsc/gui-python-gtk/tree/master/src/gtk3/overlay).
 
-![Gtk.Overlay](./images/pygobject-gtk3-overlay.png)
+![Gtk.Overlay](./images/pygobject-gtk3-overlay.webp)
 
 ---
 
@@ -326,7 +346,7 @@ Não recomendo a criação desse tipo de dialogo com o Gnome Builder ou mesmo co
 - [Gnome Glade](https://github.com/natorsc/gui-python-gtk/tree/master/src/gtk3/paned-horizontal/glade).
 - [Python](https://github.com/natorsc/gui-python-gtk/tree/master/src/gtk3/paned-horizontal).
 
-![Gtk.Paned horizontal](./images/pygobject-gtk3-paned-horizontal.png)
+![Gtk.Paned horizontal](./images/pygobject-gtk3-paned-horizontal.webp)
 
 ---
 
@@ -336,7 +356,7 @@ Não recomendo a criação desse tipo de dialogo com o Gnome Builder ou mesmo co
 - [Gnome Glade](https://github.com/natorsc/gui-python-gtk/tree/master/src/gtk3/paned-vertical/glade).
 - [Python](https://github.com/natorsc/gui-python-gtk/tree/master/src/gtk3/paned-vertical).
 
-![Gtk.Paned vertical](./images/pygobject-gtk3-paned-vertical.png)
+![Gtk.Paned vertical](./images/pygobject-gtk3-paned-vertical.webp)
 
 ---
 
@@ -346,7 +366,7 @@ Não recomendo a criação desse tipo de dialogo com o Gnome Builder ou mesmo co
 - [Gnome Glade](https://github.com/natorsc/gui-python-gtk/tree/master/src/gtk3/popover/glade).
 - [Python](https://github.com/natorsc/gui-python-gtk/tree/master/src/gtk3/popover).
 
-![Gtk.Popover](./images/pygobject-gtk3-popover.png)
+![Gtk.Popover](./images/pygobject-gtk3-popover.webp)
 
 ---
 
@@ -356,17 +376,238 @@ Não recomendo a criação desse tipo de dialogo com o Gnome Builder ou mesmo co
 - [Gnome Glade](https://github.com/natorsc/gui-python-gtk/tree/master/src/gtk3/print-operation/glade).
 - [Python](https://github.com/natorsc/gui-python-gtk/tree/master/src/gtk3/print-operation).
 
-![Gtk.PrintOperation](./images/pygobject-gtk3-print-operation.png)
+![Gtk.PrintOperation](./images/pygobject-gtk3-print-operation.webp)
 
 ---
 
+## Gtk RadioButton
+
+- [Gnome Builder](https://github.com/natorsc/gui-python-gtk/tree/master/src/gtk3/radiobutton/builder).
+- [Gnome Glade](https://github.com/natorsc/gui-python-gtk/tree/master/src/gtk3/radiobutton/glade).
+- [Python](https://github.com/natorsc/gui-python-gtk/tree/master/src/gtk3/radiobutton).
+
+![Gtk.RadioButton](./images/pygobject-gtk3-radiobutton.webp)
+
+---
+
+## Gtk Revealer
+
+- [Gnome Builder](https://github.com/natorsc/gui-python-gtk/tree/master/src/gtk3/revealer/builder).
+- [Gnome Glade](https://github.com/natorsc/gui-python-gtk/tree/master/src/gtk3/revealer/glade).
+- [Python](https://github.com/natorsc/gui-python-gtk/tree/master/src/gtk3/revealer).
+
+![Gtk.Revealer](./images/pygobject-gtk3-revealer.webp)
+
+---
+
+## Gtk SearchBar
+
+- [Gnome Builder](https://github.com/natorsc/gui-python-gtk/tree/master/src/gtk3/searchbar/builder).
+- [Gnome Glade](https://github.com/natorsc/gui-python-gtk/tree/master/src/gtk3/searchbar/glade).
+- [Python](https://github.com/natorsc/gui-python-gtk/tree/master/src/gtk3/searchbar).
+
+![Gtk.SearchBar](./images/pygobject-gtk3-searchbar.webp)
+
+---
+
+## Gtk SearchEntry
+
+- [Gnome Builder](https://github.com/natorsc/gui-python-gtk/tree/master/src/gtk3/searchentry/builder).
+- [Gnome Glade](https://github.com/natorsc/gui-python-gtk/tree/master/src/gtk3/searchentry/glade).
+- [Python](https://github.com/natorsc/gui-python-gtk/tree/master/src/gtk3/searchentry).
+
+![Gtk.SearchEntry](./images/pygobject-gtk3-searchentry.webp)
+
+---
+
+## Gtk Separator
+
+- [Gnome Builder](https://github.com/natorsc/gui-python-gtk/tree/master/src/gtk3/separator/builder).
+- [Gnome Glade](https://github.com/natorsc/gui-python-gtk/tree/master/src/gtk3/separator/glade).
+- [Python](https://github.com/natorsc/gui-python-gtk/tree/master/src/gtk3/separator).
+
+![Gtk.Separator](./images/pygobject-gtk3-separator.webp)
+
+---
+
+## Gtk Spinner
+
+- [Gnome Builder](https://github.com/natorsc/gui-python-gtk/tree/master/src/gtk3/spinner/builder).
+- [Gnome Glade](https://github.com/natorsc/gui-python-gtk/tree/master/src/gtk3/spinner/glade).
+- [Python](https://github.com/natorsc/gui-python-gtk/tree/master/src/gtk3/spinner).
+
+![Gtk.Spinner](./images/pygobject-gtk3-spinner.webp)
+
+---
+
+## Gtk StackSidebar
+
+- [Gnome Builder](https://github.com/natorsc/gui-python-gtk/tree/master/src/gtk3/stacksidebar/builder).
+- [Gnome Glade](https://github.com/natorsc/gui-python-gtk/tree/master/src/gtk3/stacksidebar/glade).
+- [Python](https://github.com/natorsc/gui-python-gtk/tree/master/src/gtk3/stacksidebar).
+
+![Gtk.StackSidebar](./images/pygobject-gtk3-stacksidebar.webp)
+
+---
+
+## Gtk StackSwitcher
+
+- [Gnome Builder](https://github.com/natorsc/gui-python-gtk/tree/master/src/gtk3/stackswitcher/builder).
+- [Gnome Glade](https://github.com/natorsc/gui-python-gtk/tree/master/src/gtk3/stackswitcher/glade).
+- [Python](https://github.com/natorsc/gui-python-gtk/tree/master/src/gtk3/stackswitcher).
+
+![Gtk.StackSwitcher](./images/pygobject-gtk3-stackswitcher.webp)
+
+---
+
+## Gtk Statusbar
+
+- [Gnome Builder](https://github.com/natorsc/gui-python-gtk/tree/master/src/gtk3/statusbar/builder).
+- [Gnome Glade](https://github.com/natorsc/gui-python-gtk/tree/master/src/gtk3/statusbar/glade).
+- [Python](https://github.com/natorsc/gui-python-gtk/tree/master/src/gtk3/statusbar).
+
+![Gtk.Statusbar](./images/pygobject-gtk3-statusbar.webp)
+
+---
+
+## Gtk Style add class
+
+- [Gnome Builder](https://github.com/natorsc/gui-python-gtk/tree/master/src/gtk3/style-add-class/builder).
+- [Gnome Glade](https://github.com/natorsc/gui-python-gtk/tree/master/src/gtk3/style-add-class/glade).
+- [Python](https://github.com/natorsc/gui-python-gtk/tree/master/src/gtk3/style-add-class).
+
+![Gtk.Style add class](./images/pygobject-gtk3-style-add-class.webp)
+
+---
+
+## Gtk Style Css Provider
+
+- [Gnome Builder](https://github.com/natorsc/gui-python-gtk/tree/master/src/gtk3/style-css-provider/builder).
+- [Gnome Glade](https://github.com/natorsc/gui-python-gtk/tree/master/src/gtk3/style-css-provider/glade).
+- [Python](https://github.com/natorsc/gui-python-gtk/tree/master/src/gtk3/style-css-provider).
+
+![Gtk.Style Css Provider](./images/pygobject-gtk3-style-css-provider.webp)
+
+---
+
+## Gtk Style dark mode
+
+- [Gnome Builder](https://github.com/natorsc/gui-python-gtk/tree/master/src/gtk3/dark-mode/builder).
+- [Gnome Glade](https://github.com/natorsc/gui-python-gtk/tree/master/src/gtk3/dark-mode/glade).
+- [Python](https://github.com/natorsc/gui-python-gtk/tree/master/src/gtk3/dark-mode).
+
+![Gtk.Style dark mode](./images/pygobject-gtk3-style-dark-mode.webp)
+
 ---
 
 
-## Gio Menu
 
-- [Python](https://github.com/natorsc/gui-python-gtk/tree/master/src/gtk3/gio-menu).
+## Gtk Style set name
 
-![Gtk.Gio.Menu](./images/pygobject-gtk3-gio-menu.png)
+- [Gnome Builder](https://github.com/natorsc/gui-python-gtk/tree/master/src/gtk3/style-set-name/builder).
+- [Gnome Glade](https://github.com/natorsc/gui-python-gtk/tree/master/src/gtk3/style-set-name/glade).
+- [Python](https://github.com/natorsc/gui-python-gtk/tree/master/src/gtk3/style-set-name).
+
+![Gtk.Style set name](./images/pygobject-gtk3-style-set-name.webp)
 
 ---
+
+## Gtk Switch
+
+- [Gnome Builder](https://github.com/natorsc/gui-python-gtk/tree/master/src/gtk3/switch/builder).
+- [Gnome Glade](https://github.com/natorsc/gui-python-gtk/tree/master/src/gtk3/switch/glade).
+- [Python](https://github.com/natorsc/gui-python-gtk/tree/master/src/gtk3/switch).
+
+![Gtk.Switch](./images/pygobject-gtk3-switch.webp)
+
+---
+
+## Gtk ToggleButton
+
+- [Gnome Builder](https://github.com/natorsc/gui-python-gtk/tree/master/src/gtk3/togglebutton/builder).
+- [Gnome Glade](https://github.com/natorsc/gui-python-gtk/tree/master/src/gtk3/togglebutton/glade).
+- [Python](https://github.com/natorsc/gui-python-gtk/tree/master/src/gtk3/togglebutton).
+
+![Gtk.ToggleButton](./images/pygobject-gtk3-togglebutton.webp)
+
+---
+
+## Gtk Toolbar
+
+- [Gnome Builder](https://github.com/natorsc/gui-python-gtk/tree/master/src/gtk3/toolbar/builder).
+- [Gnome Glade](https://github.com/natorsc/gui-python-gtk/tree/master/src/gtk3/toolbar/glade).
+- [Python](https://github.com/natorsc/gui-python-gtk/tree/master/src/gtk3/toolbar).
+
+![Gtk.Toolbar](./images/pygobject-gtk3-toolbar.webp)
+
+---
+
+## Gtk TreeView editable
+
+- [Gnome Builder](https://github.com/natorsc/gui-python-gtk/tree/master/src/gtk3/treeview-liststore-editable/builder).
+- [Gnome Glade](https://github.com/natorsc/gui-python-gtk/tree/master/src/gtk3/totreeview-liststore-editableolbar/glade)
+  .
+- [Python](https://github.com/natorsc/gui-python-gtk/tree/master/src/gtk3/treeview-liststore-editable).
+
+![Gtk.TreeView editable](./images/pygobject-gtk3-treeview-editable.webp)
+
+---
+
+## Gtk TreeView filter
+
+- [Gnome Builder](https://github.com/natorsc/gui-python-gtk/tree/master/src/gtk3/treeview-liststore-filter/builder).
+- [Gnome Glade](https://github.com/natorsc/gui-python-gtk/tree/master/src/gtk3/totreeview-liststore-filter/glade).
+- [Python](https://github.com/natorsc/gui-python-gtk/tree/master/src/gtk3/treeview-liststore-filter).
+
+![Gtk.TreeView filter](./images/pygobject-gtk3-treeview-filter.webp)
+
+---
+
+## Gtk TreeView sort
+
+- [Gnome Builder](https://github.com/natorsc/gui-python-gtk/tree/master/src/gtk3/treeview-liststore-sort/builder).
+- [Gnome Glade](https://github.com/natorsc/gui-python-gtk/tree/master/src/gtk3/totreeview-liststore-sort/glade).
+- [Python](https://github.com/natorsc/gui-python-gtk/tree/master/src/gtk3/treeview-liststore-sort).
+
+![Gtk.TreeView sort](./images/pygobject-gtk3-treeview-sort.webp)
+
+---
+
+## Gtk TreeView TreeStore
+
+- [Gnome Builder](https://github.com/natorsc/gui-python-gtk/tree/master/src/gtk3/treeview-treestore/builder).
+- [Gnome Glade](https://github.com/natorsc/gui-python-gtk/tree/master/src/gtk3/totreeview-treestore/glade).
+- [Python](https://github.com/natorsc/gui-python-gtk/tree/master/src/gtk3/treeview-treestore).
+
+![Gtk.TreeView TreeStore](./images/pygobject-gtk3-treeview-treestore.webp)
+
+---
+
+## Gtk Window
+
+- [Gnome Builder](https://github.com/natorsc/gui-python-gtk/tree/master/src/gtk3/window/builder).
+- [Gnome Glade](https://github.com/natorsc/gui-python-gtk/tree/master/src/gtk3/window/glade).
+- [Python](https://github.com/natorsc/gui-python-gtk/tree/master/src/gtk3/window).
+
+![Gtk.Window](./images/pygobject-gtk3-window.webp)
+
+---
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

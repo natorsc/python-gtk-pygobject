@@ -1,22 +1,11 @@
 # -*- coding: utf-8 -*-
-"""Signals e Slots utilizando-se um dicionário.
+"""Signal e Slots."""
 
-Neste arquivo o acesso ao método é feito utilizando:
-
-.. code-block:: xml
-
-    <signal name="clicked" handler="_on_button_clicked" swapped="no"/>
-
-No arquivo de interface o valor da variável `handler` do arquivo de interface
-deve ser o mesmo da chave do dicionário criado no Python.
-
-Neste caso não é necessário acessar o objeto do botão uma vez que não será
-utilizado o `connect()` para vincular o sinal a uma ação (slot).
-"""
 
 import gi
 
 gi.require_version(namespace='Gtk', version='3.0')
+
 from gi.repository import Gtk
 
 

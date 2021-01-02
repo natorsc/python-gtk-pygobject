@@ -1,34 +1,84 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- Generated with glade 3.38.2 -->
 <interface>
-  <requires lib="gtk+" version="3.24"/>
-
+    <requires lib="gtk+" version="3.24"/>
     <template class="MainWindow" parent="GtkApplicationWindow">
-        <property name="can_focus">False</property>
-        <property name="title" translatable="yes">Gtk.RadioButton</property>
-        <property name="default_width">683</property>
-        <property name="default_height">384</property>
-        <property name="icon">../../../../assets/icons/icon.png</property>
-        <child type="titlebar">
-            <placeholder/>
-        </child>
+        <property name="can-focus">False</property>
+        <property name="title" translatable="yes">Gtk.Separator</property>
+        <property name="default-width">683</property>
+        <property name="default-height">384</property>
+        <property name="icon">../../../assets/icons/icon.png</property>
         <child>
-            <object class="GtkButtonBox" id="radio-button-box">
+            <object class="GtkBox">
                 <property name="visible">True</property>
-                <property name="can_focus">False</property>
-                <property name="border_width">12</property>
-                <property name="orientation">vertical</property>
-                <property name="spacing">6</property>
-                <property name="layout_style">center</property>
+                <property name="can-focus">False</property>
+                <property name="border-width">12</property>
+                <property name="spacing">12</property>
                 <child>
-                    <object class="GtkRadioButton" id="radio-button-01">
-                        <property name="label" translatable="yes">Radio button 01</property>
+                    <object class="GtkBox">
                         <property name="visible">True</property>
-                        <property name="can_focus">True</property>
-                        <property name="receives_default">False</property>
-                        <property name="active">True</property>
-                        <property name="draw_indicator">True</property>
-                        <signal name="toggled" handler="on_radiobutton_toggled" swapped="no"/>
+                        <property name="can-focus">False</property>
+                        <property name="orientation">vertical</property>
+                        <property name="spacing">12</property>
+                        <child>
+                            <object class="GtkButton">
+                                <property name="label" translatable="yes">Botão 0</property>
+                                <property name="visible">True</property>
+                                <property name="can-focus">True</property>
+                                <property name="receives-default">True</property>
+                            </object>
+                            <packing>
+                                <property name="expand">False</property>
+                                <property name="fill">True</property>
+                                <property name="position">0</property>
+                            </packing>
+                        </child>
+                        <child>
+                            <object class="GtkSeparator">
+                                <property name="visible">True</property>
+                                <property name="can-focus">False</property>
+                            </object>
+                            <packing>
+                                <property name="expand">False</property>
+                                <property name="fill">True</property>
+                                <property name="position">1</property>
+                            </packing>
+                        </child>
+                        <child>
+                            <object class="GtkButton">
+                                <property name="label" translatable="yes">Botão 1</property>
+                                <property name="visible">True</property>
+                                <property name="can-focus">True</property>
+                                <property name="receives-default">True</property>
+                            </object>
+                            <packing>
+                                <property name="expand">False</property>
+                                <property name="fill">True</property>
+                                <property name="position">2</property>
+                            </packing>
+                        </child>
+                        <child>
+                            <object class="GtkSeparator">
+                                <property name="visible">True</property>
+                                <property name="can-focus">False</property>
+                            </object>
+                            <packing>
+                                <property name="expand">False</property>
+                                <property name="fill">True</property>
+                                <property name="position">3</property>
+                            </packing>
+                        </child>
+                    </object>
+                    <packing>
+                        <property name="expand">False</property>
+                        <property name="fill">True</property>
+                        <property name="position">0</property>
+                    </packing>
+                </child>
+                <child>
+                    <object class="GtkSeparator">
+                        <property name="visible">True</property>
+                        <property name="can-focus">False</property>
                     </object>
                     <packing>
                         <property name="expand">False</property>
@@ -37,51 +87,56 @@
                     </packing>
                 </child>
                 <child>
-                    <object class="GtkRadioButton" id="radio-button-02">
-                        <property name="label" translatable="yes">Radio button 02</property>
+                    <object class="GtkBox">
                         <property name="visible">True</property>
-                        <property name="can_focus">True</property>
-                        <property name="receives_default">False</property>
-                        <property name="draw_indicator">True</property>
-                        <property name="group">radio-button-01</property>
-                        <signal name="toggled" handler="on_radiobutton_toggled" swapped="no"/>
+                        <property name="can-focus">False</property>
+                        <property name="orientation">vertical</property>
+                        <child>
+                            <object class="GtkLabel">
+                                <property name="visible">True</property>
+                                <property name="can-focus">False</property>
+                                <property name="label" translatable="yes">Lorem Ipsum is simply dummy text of the
+                                    printing and typesetting industry (0)
+                                </property>
+                                <property name="wrap">True</property>
+                            </object>
+                            <packing>
+                                <property name="expand">True</property>
+                                <property name="fill">True</property>
+                                <property name="position">0</property>
+                            </packing>
+                        </child>
+                        <child>
+                            <object class="GtkSeparator">
+                                <property name="visible">True</property>
+                                <property name="can-focus">False</property>
+                            </object>
+                            <packing>
+                                <property name="expand">False</property>
+                                <property name="fill">True</property>
+                                <property name="position">1</property>
+                            </packing>
+                        </child>
+                        <child>
+                            <object class="GtkLabel">
+                                <property name="visible">True</property>
+                                <property name="can-focus">False</property>
+                                <property name="label" translatable="yes">Lorem Ipsum is simply dummy text of the
+                                    printing and typesetting industry (1)
+                                </property>
+                                <property name="wrap">True</property>
+                            </object>
+                            <packing>
+                                <property name="expand">True</property>
+                                <property name="fill">True</property>
+                                <property name="position">2</property>
+                            </packing>
+                        </child>
                     </object>
                     <packing>
                         <property name="expand">False</property>
                         <property name="fill">True</property>
                         <property name="position">2</property>
-                    </packing>
-                </child>
-                <child>
-                    <object class="GtkRadioButton" id="radio-button-03">
-                        <property name="label" translatable="yes">Radio button 03</property>
-                        <property name="visible">True</property>
-                        <property name="can_focus">True</property>
-                        <property name="receives_default">False</property>
-                        <property name="draw_indicator">True</property>
-                        <property name="group">radio-button-01</property>
-                        <signal name="toggled" handler="on_radiobutton_toggled" swapped="no"/>
-                    </object>
-                    <packing>
-                        <property name="expand">False</property>
-                        <property name="fill">True</property>
-                        <property name="position">3</property>
-                    </packing>
-                </child>
-                <child>
-                    <object class="GtkRadioButton" id="radio-button-04">
-                        <property name="label" translatable="yes">Radio button 04</property>
-                        <property name="visible">True</property>
-                        <property name="can_focus">True</property>
-                        <property name="receives_default">False</property>
-                        <property name="draw_indicator">True</property>
-                        <property name="group">radio-button-01</property>
-                        <signal name="toggled" handler="on_radiobutton_toggled" swapped="no"/>
-                    </object>
-                    <packing>
-                        <property name="expand">False</property>
-                        <property name="fill">True</property>
-                        <property name="position">4</property>
                     </packing>
                 </child>
             </object>

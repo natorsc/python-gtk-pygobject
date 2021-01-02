@@ -7,6 +7,7 @@ import gi
 # Definindo que o aplicativo deve ser executado no GTK 3.
 # Isso porque um computador pode ter mais de uma versão do GTK.
 gi.require_version(namespace='Gtk', version='3.0')
+
 from gi.repository import Gio, Gtk
 
 

@@ -1,10 +1,10 @@
 # -*- coding: utf-8 -*-
 """Gtk.Statusbar()."""
-import sys
 
 import gi
 
 gi.require_version(namespace='Gtk', version='3.0')
+
 from gi.repository import Gio, Gtk
 
 
@@ -43,7 +43,6 @@ class MainWindow(Gtk.ApplicationWindow):
             context_id=self.context_id,
             text='Texto que será exibido no statusbar.',
         )
-        print(self.message_id)
 
     def statusbar_remove_msg(self, widget):
         # self.statusbar.remove(
@@ -73,5 +72,7 @@ class Application(Gtk.Application):
 
 
 if __name__ == '__main__':
+    import sys
+
     app = Application()
     app.run(sys.argv)

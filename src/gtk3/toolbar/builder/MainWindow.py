@@ -1,11 +1,10 @@
 # -*- coding: utf-8 -*-
-"""GTK toolbar menu."""
-
-import sys
+"""Gtk.Toolbar()."""
 
 import gi
 
 gi.require_version(namespace='Gtk', version='3.0')
+
 from gi.repository import Gio, Gtk, GdkPixbuf
 
 
@@ -13,7 +12,7 @@ from gi.repository import Gio, Gtk, GdkPixbuf
 class MainWindow(Gtk.ApplicationWindow):
     __gtype_name__ = 'MainWindow'
 
-    logo = GdkPixbuf.Pixbuf.new_from_file(filename='../../../../assets/icons/icon.png')
+    logo = GdkPixbuf.Pixbuf.new_from_file(filename='../../../assets/icons/icon.png')
 
     def __init__(self, **kwargs):
         super().__init__(**kwargs)
@@ -58,5 +57,7 @@ class Application(Gtk.Application):
 
 
 if __name__ == '__main__':
+    import sys
+
     app = Application()
     app.run(sys.argv)

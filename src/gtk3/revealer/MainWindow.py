@@ -1,14 +1,10 @@
 # -*- coding: utf-8 -*-
-"""Container do tipo Revealer Layout.
-
-Revealer Layout tem a função de exibir ou ocultar widgets que estejam
-contidos dentro de si.
-"""
-import sys
+"""Gtk.Revealer()."""
 
 import gi
 
 gi.require_version(namespace='Gtk', version='3.0')
+
 from gi.repository import Gio, Gtk
 
 
@@ -17,7 +13,7 @@ class MainWindow(Gtk.ApplicationWindow):
     def __init__(self, **kwargs):
         super().__init__(**kwargs)
 
-        self.set_title(title='Revealer Layout')
+        self.set_title(title='Gtk.Revealer')
         self.set_default_size(width=1366 / 2, height=768 / 2)
         self.set_position(position=Gtk.WindowPosition.CENTER)
         self.set_default_icon_from_file(filename='../../assets/icons/icon.png')
@@ -79,5 +75,7 @@ class Application(Gtk.Application):
 
 
 if __name__ == '__main__':
+    import sys
+
     app = Application()
     app.run(sys.argv)

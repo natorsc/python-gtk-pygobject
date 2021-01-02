@@ -6,6 +6,7 @@ from pathlib import Path
 import gi
 
 gi.require_version(namespace='Gtk', version='3.0')
+
 from gi.repository import Gio, Gtk
 
 

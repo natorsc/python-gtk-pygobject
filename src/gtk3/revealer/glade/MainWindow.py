@@ -1,9 +1,10 @@
 # -*- coding: utf-8 -*-
-"""Contêiner do tipo Overlay Layout"""
+"""Gtk.Revealer()."""
 
 import gi
 
 gi.require_version(namespace='Gtk', version='3.0')
+
 from gi.repository import Gtk
 
 

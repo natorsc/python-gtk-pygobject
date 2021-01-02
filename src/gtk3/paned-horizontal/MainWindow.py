@@ -1,10 +1,10 @@
 # -*- coding: utf-8 -*-
 """Gtk.Paned() horizontal."""
 
-
 import gi
 
 gi.require_version(namespace='Gtk', version='3.0')
+
 from gi.repository import Gio, Gtk
 
 
@@ -63,5 +63,6 @@ class Application(Gtk.Application):
 
 if __name__ == '__main__':
     import sys
+
     app = Application()
     app.run(sys.argv)

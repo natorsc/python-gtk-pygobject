@@ -1,38 +1,38 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- Generated with glade 3.38.2 -->
 <interface>
-  <requires lib="gtk+" version="3.24"/>
-  <template class="MainWindow" parent="GtkApplicationWindow">
-    <property name="can-focus">False</property>
-    <property name="border-width">12</property>
-    <property name="title" translatable="yes">Gtk.LinkButton</property>
-    <property name="default-width">683</property>
-    <property name="default-height">384</property>
-    <property name="icon">../../../assets/icons/icon.png</property>
-    <child>
-      <object class="GtkBox">
-        <property name="visible">True</property>
+    <requires lib="gtk+" version="3.24"/>
+    <template class="MainWindow" parent="GtkApplicationWindow">
         <property name="can-focus">False</property>
-        <property name="orientation">vertical</property>
+        <property name="border-width">12</property>
+        <property name="title" translatable="yes">Gtk.LinkButton</property>
+        <property name="default-width">683</property>
+        <property name="default-height">384</property>
+        <property name="icon">../../../assets/icons/icon.png</property>
         <child>
-          <object class="GtkLinkButton">
-            <property name="label" translatable="yes">Clique aqui para abrir o link</property>
-            <property name="visible">True</property>
-            <property name="can-focus">True</property>
-            <property name="receives-default">True</property>
-            <property name="relief">none</property>
-            <property name="uri">https://www.google.com/</property>
-          </object>
-          <packing>
-            <property name="expand">False</property>
-            <property name="fill">True</property>
-            <property name="position">0</property>
-          </packing>
+            <object class="GtkBox">
+                <property name="visible">True</property>
+                <property name="can-focus">False</property>
+                <property name="orientation">vertical</property>
+                <child>
+                    <object class="GtkLinkButton">
+                        <property name="label" translatable="yes">Clique aqui para abrir o link</property>
+                        <property name="visible">True</property>
+                        <property name="can-focus">True</property>
+                        <property name="receives-default">True</property>
+                        <property name="relief">none</property>
+                        <property name="uri">https://www.google.com/</property>
+                    </object>
+                    <packing>
+                        <property name="expand">False</property>
+                        <property name="fill">True</property>
+                        <property name="position">0</property>
+                    </packing>
+                </child>
+                <child>
+                    <placeholder/>
+                </child>
+            </object>
         </child>
-        <child>
-          <placeholder/>
-        </child>
-      </object>
-    </child>
-  </template>
+    </template>
 </interface>

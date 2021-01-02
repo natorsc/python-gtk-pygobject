@@ -1,17 +1,10 @@
 # -*- coding: utf-8 -*-
-"""Gtk.Box() vertical.
-
-Neste gerenciador de layout os widgets são posicionados verticalmente.
-
-O posicionamento pode ser:
-
-- Do topo para a base ``pack_start()``.
-- Da base para o topo ``pack_end()``.
-"""
+"""Gtk.Box() vertical."""
 
 import gi
 
 gi.require_version(namespace='Gtk', version='3.0')
+
 from gi.repository import Gio, Gtk
 
 

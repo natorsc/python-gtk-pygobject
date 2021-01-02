@@ -1,20 +1,11 @@
 # -*- coding: utf-8 -*-
-"""Signals e Slots utilizando-se o `connect()`.
+"""Signal e Slots."""
 
-Neste exemplo o arquivo de interface não tem a tag:
-
-.. code-block:: xml
-
-    <signal name="clicked" handler="_on_button_clicked" swapped="no"/>
-
-Neste caso é necessário utilizar o `connect()` para vincular o sinal a uma ação
-(slot).
-"""
-import sys
 
 import gi
 
 gi.require_version(namespace='Gtk', version='3.0')
+
 from gi.repository import Gio, Gtk
 
 
@@ -68,5 +59,7 @@ class Application(Gtk.Application):
 
 
 if __name__ == '__main__':
+    import sys
+
     app = Application()
     app.run(sys.argv)

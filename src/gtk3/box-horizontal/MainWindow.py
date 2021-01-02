@@ -1,17 +1,10 @@
 # -*- coding: utf-8 -*-
-"""Gtk.Box() horizontal.
-
-Neste gerenciador de layout os widgets são posicionados horizontalmente.
-
-O posicionamento pode ser:
-
-- Da esquerda para a direita ``pack_start()``.
-- Da direita para a esquerda ``pack_end()``.
-"""
+"""Gtk.Box() horizontal."""
 
 import gi
 
 gi.require_version(namespace='Gtk', version='3.0')
+
 from gi.repository import Gio, Gtk
 
 

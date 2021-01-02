@@ -2,7 +2,8 @@
 
 # Criando interfaces gráficas com Python (PyGObject) e GTK
 
-Repostório com diversos exemplos de código e alguns tutoriais sobre a construção de interfaces gráficas com a linguagem de progração Python e o toolkit gráfico GTK.
+Repostório com diversos exemplos de código e alguns tutoriais sobre a construção de interfaces gráficas com a linguagem
+de progração Python e o toolkit gráfico GTK.
 
 ## O que estou publicando?
 
@@ -76,10 +77,8 @@ oficialmente** (até o momento que escrevo) são:
 
 ### Windows
 
-- [Criando um executável com o Cx_Freeze e listdlls](https://codigoninja.dev/gtk3-pygobject-criando-executavel-cx-freeze-windows/)
-  .
-- [Como instalar o PyGObject for Windows (não recomendado)](https://codigoninja.dev/gtk3-instalar-pygobject-for-windows/)
-  .
+- [Criando um executável com o Cx_Freeze e listdlls](https://codigoninja.dev/gtk3-pygobject-criando-executavel-cx-freeze-windows/).
+- [Como instalar o PyGObject for Windows (não recomendado)](https://codigoninja.dev/gtk3-instalar-pygobject-for-windows/).
 
 ### Linux
 
@@ -88,8 +87,8 @@ oficialmente** (até o momento que escrevo) são:
 ### Style
 
 - [Exemplo de alguns seletores css no Gtk](https://codigoninja.dev/gtk3-pygobject-principais-seletores-css/).
-- [Alterando o estilo de um componete com a propriedade name](https://codigoninja.dev/gtk3-pygobject-adicionar-propriedade-name-widget/).
-- [Alterando o estilo de um componete com a tag class](https://codigoninja.dev/gtk3-pygobject-adicionar-tag-class-widget/).
+- [Adicionando a propriedade name](https://codigoninja.dev/gtk3-pygobject-adicionar-propriedade-name-widget/).
+- [Adicionando a propriedade class](https://codigoninja.dev/gtk3-pygobject-adicionar-tag-class-widget/).
 - [Ativar e desativar o modo escuro (dark mode)](https://codigoninja.dev/gtk3-pygobject-utilizar-modo-escuro-dark-mode/).
 
 ### Ferramentas
@@ -107,6 +106,11 @@ oficialmente** (até o momento que escrevo) são:
 ---
 
 ## GTK 3
+
+### Gio
+
+- [Gio.Menu](./docs/gtk3-widgets.md#gio-menu).
+- [Gio.SimpleAction](./docs/gtk3-widgets.md#gio-simple-action).
 
 ### Widgets
 
@@ -146,18 +150,27 @@ oficialmente** (até o momento que escrevo) são:
 - [Gtk.Paned vertical](./docs/gtk3-widgets.md#gtk-paned-vertical).
 - [Gtk.Popover](./docs/gtk3-widgets.md#gtk-popover).
 - [Gtk.PrintOperation](./docs/gtk3-widgets.md#gtk-printoperation).
-
-
-
-
-
-
-
-
-
-
-
-- [Gio.Menu](./docs/gtk3-widgets.md#gio-menu).
+- [Gtk.RadioButton](./docs/gtk3-widgets.md#gtk-radiobutton).
+- [Gtk.Revealer](./docs/gtk3-widgets.md#gtk-revealer).
+- [Gtk.SearchBar](./docs/gtk3-widgets.md#gtk-searchbar).
+- [Gtk.SearchEntry](./docs/gtk3-widgets.md#gtk-searchentry).
+- [Gtk.Separator](./docs/gtk3-widgets.md#gtk-separator).
+- [Gtk.Spinner](./docs/gtk3-widgets.md#gtk-spinner).
+- [Gtk.StackSidebar](./docs/gtk3-widgets.md#gtk-stacksidebar).
+- [Gtk.StackSwitcher](./docs/gtk3-widgets.md#gtk-stackswitcher).
+- [Gtk.Statusbar](./docs/gtk3-widgets.md#gtk-statusbar).
+- [Gtk Style add class](./docs/gtk3-widgets.md#gtk-style-add-class).
+- [Gtk Style css provider](./docs/gtk3-widgets.md#gtk-style-css-provider).
+- [Gtk Style dark mode](./docs/gtk3-widgets.md#gtk-style-dark-mode).
+- [Gtk Style set name](./docs/gtk3-widgets.md#gtk-style-set-name).
+- [Gtk.switch](./docs/gtk3-widgets.md#gtk-switch).
+- [Gtk.ToggleButton](./docs/gtk3-widgets.md#gtk-togglebutton).
+- [Gtk.Toolbar](./docs/gtk3-widgets.md#gtk-toolbar).
+- [Gtk.TreeView editable](./docs/gtk3-widgets.md#gtk-treeview-editable).
+- [Gtk.TreeView filter](./docs/gtk3-widgets.md#gtk-treeview-filter).
+- [Gtk.TreeView sort](./docs/gtk3-widgets.md#gtk-treeview-sort).
+- [Gtk.TreeView TreeStore](./docs/gtk3-widgets.md#gtk-treeview-treestore).
+- [Gtk.Window](./docs/gtk3-widgets.md#gtk-window).
 
 ---
 
@@ -185,17 +198,21 @@ Os widgets que foram criados ou passaram por grandes aprimoramentos são:
 
 ### Widgets
 
+> Em construção.
+
 ---
 
 ## Libhandy Widgets
+
+> Em construção.
 
 ---
 
 ## Mockups
 
-> Em construção.
-
 Reimaginando a interface de alguns aplicativos famosos com GTK.
+
+> Em construção.
 
 ---
 

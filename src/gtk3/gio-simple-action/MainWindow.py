@@ -1,11 +1,10 @@
 # -*- coding: utf-8 -*-
-"""Gtk.MenuButton() com Gio.Menu()."""
-
-import sys
+"""Gtk.MenuButton() com Gio.SimpleAction()."""
 
 import gi
 
 gi.require_version(namespace='Gtk', version='3.0')
+
 from gi.repository import Gio, Gtk
 
 
@@ -14,15 +13,15 @@ class MainWindow(Gtk.ApplicationWindow):
     def __init__(self, **kwargs):
         super().__init__(**kwargs)
 
-        self.set_title(title='Gtk.MenuButton()')
+        self.set_title(title='Gio.SimpleAction')
         self.set_default_size(width=1366 / 2, height=768 / 2)
         self.set_position(position=Gtk.WindowPosition.CENTER)
         self.set_default_icon_from_file(filename='../../assets/icons/icon.png')
 
         # Criando headerbar.
         headerbar = Gtk.HeaderBar.new()
-        headerbar.set_title(title='Gtk.MenuButton')
-        headerbar.set_subtitle(subtitle='Gio.Menu')
+        headerbar.set_title(title='Gio.SimpleAction')
+        headerbar.set_subtitle(subtitle='Gio.SimpleAction')
         headerbar.set_show_close_button(setting=True)
         self.set_titlebar(titlebar=headerbar)
 
@@ -98,5 +97,7 @@ class Application(Gtk.Application):
 
 
 if __name__ == '__main__':
+    import sys
+
     app = Application()
     app.run(sys.argv)

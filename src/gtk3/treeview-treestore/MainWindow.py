@@ -1,9 +1,10 @@
 # -*- coding: utf-8 -*-
-"""Gtk.TreeView() com Gtk.TreeStore()."""
+"""Gtk.TreeView(), Gtk.TreeStore()."""
 
 import gi
 
 gi.require_version(namespace='Gtk', version='3.0')
+
 from gi.repository import Gtk, Gio, Pango, GObject
 
 
@@ -16,7 +17,7 @@ class MainWindow(Gtk.ApplicationWindow):
     def __init__(self, **kwargs):
         super().__init__(**kwargs)
 
-        self.set_title(title='Gtk.TreeView com Gtk.TreeStore')
+        self.set_title(title='Gtk.TreeView, Gtk.TreeStore')
         self.set_default_size(width=1366 / 2, height=768 / 2)
         self.set_position(position=Gtk.WindowPosition.CENTER)
         self.set_default_icon_from_file(filename='../../assets/icons/icon.png')
@@ -38,7 +39,7 @@ class MainWindow(Gtk.ApplicationWindow):
 
         # Criando um `Gtk.TreeView()`.
         treeview = Gtk.TreeView.new_with_model(model=tree_store)
-        treeview.connect('row-activated', self.teste)
+        treeview.connect('row-activated', self.on_row_double_click)
         scrolledwindow.add(widget=treeview)
 
         # Nome das colunas (title).
@@ -70,7 +71,7 @@ class MainWindow(Gtk.ApplicationWindow):
 
             self.show_all()
 
-    def teste(self, widget, tree_path, tree_view_column):
+    def on_row_double_click(self, widget, tree_path, tree_view_column):
         model = widget.get_model()
         tree_iter = model.get_iter(tree_path)
 

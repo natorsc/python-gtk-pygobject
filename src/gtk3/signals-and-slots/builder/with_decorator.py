@@ -1,23 +1,11 @@
 # -*- coding: utf-8 -*-
-"""Signals e Slots utilizando-se um decorador.
+"""Signal e Slots."""
 
-O acesso ao método é feito utilizando:
-
-.. code-block:: xml
-
-    <signal name="clicked" handler="_on_button_clicked" swapped="no"/>
-
-No arquivo de interface. O valor da variável `handler` do arquivo de interface
-deve ser o mesmo do método criado no Python.
-
-Neste caso não é necessário acessar o objeto do botão uma vez que não será
-utilizado o `connect()` para vincular o sinal a uma ação (slot).
-"""
-import sys
 
 import gi
 
 gi.require_version(namespace='Gtk', version='3.0')
+
 from gi.repository import Gio, Gtk
 
 
@@ -71,5 +59,7 @@ class Application(Gtk.Application):
 
 
 if __name__ == '__main__':
+    import sys
+
     app = Application()
     app.run(sys.argv)

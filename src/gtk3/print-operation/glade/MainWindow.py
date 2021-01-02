@@ -47,8 +47,6 @@ class Handler:
             length=-1,
         )
 
-
-
     def _print_operation(self):
         """Operação de impressão."""
         print_operation = Gtk.PrintOperation.new()
