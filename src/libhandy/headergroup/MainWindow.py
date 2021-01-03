@@ -1,5 +1,8 @@
 # -*- coding: utf-8 -*-
-"""Handy.HeaderGroup. Não sei implementar"""
+"""Handy.HeaderGroup().
+
+Não sei implementar.
+"""
 
 import gi
 

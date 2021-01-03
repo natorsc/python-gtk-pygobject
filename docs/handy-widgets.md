@@ -1,144 +1,181 @@
-## Código Libhandy
+# Widgets
 
-### ActionRow
+## Handy ActionRow
 
-* [Libhandy ActionRow com Gnome Builder](https://github.com/natorsc/gui-python-gtk/tree/master/src/libhandy/action-row/builder).
-* [Libhandy ActionRow com Gnome Glade](https://github.com/natorsc/gui-python-gtk/tree/master/src/libhandy/action-row/glade).
-* [Libhandy ActionRow com Python](https://github.com/natorsc/gui-python-gtk/tree/master/src/libhandy/action-row).
+- [Gnome Builder](https://github.com/natorsc/gui-python-gtk/tree/master/src/libhandy/actionrow/builder).
+- [Gnome Glade](https://github.com/natorsc/gui-python-gtk/tree/master/src/libhandy/actionrow/glade).
+- [Python](https://github.com/natorsc/gui-python-gtk/tree/master/src/libhandy/actionrow).
 
-![Libhandy ActionRow](https://codigoninja.dev/images/pygobject-gtk3-libhandy-action-row.webp)
+![Handy.ActionRow](https://codigoninja.dev/images/pygobject-libhandy-actionrow.webp)
 
-### ApplicationWindow
+---
 
-* Libhandy ApplicationWindow. Disponível a partir da versão 1.0?
+## Handy ApplicationWindow
 
-### Arrows
+Não está funcionando de forma adequada ou não sei implementar. Disponível a partir da versão 1.0?
 
-* Libhandy Arrows. Deprecated since version 0.0.12: Use e.g. Gtk.Image and CSS animation instead.
+- [Python](https://github.com/natorsc/gui-python-gtk/tree/master/src/libhandy/actionrow).
 
-### Avatar
+---
 
-* [Libhandy Avatar com Python](https://github.com/natorsc/gui-python-gtk/tree/master/src/libhandy/avatar).
+## Handy Avatar
 
-![Libhandy Avatar](https://codigoninja.dev/images/pygobject-gtk3-libhandy-avatar.webp)
+- [Python](https://github.com/natorsc/gui-python-gtk/tree/master/src/libhandy/avatar).
 
-### Carousel
+![Handy.Avatar](https://codigoninja.dev/images/pygobject-libhandy-avatar.webp)
 
-* [Libhandy Carousel com Python](https://github.com/natorsc/gui-python-gtk/tree/master/src/libhandy/carousel).
+---
 
-![Libhandy Carousel](https://codigoninja.dev/images/pygobject-gtk3-libhandy-carousel.webp)
+## Handy Carousel
 
-### CarouselIndicatorDots
+- [Python](https://github.com/natorsc/gui-python-gtk/tree/master/src/libhandy/carousel).
 
-* [Libhandy CarouselIndicatorLines com Python](https://github.com/natorsc/gui-python-gtk/tree/master/src/libhandy/carousel-indicator-dots).
+![Handy.Carousel](https://codigoninja.dev/images/pygobject-libhandy-carousel.webp)
 
-![Libhandy CarouselIndicatorLines](https://codigoninja.dev/images/pygobject-gtk3-libhandy-carousel-indicator-dots.webp)
+---
 
-### CarouselIndicatorLines
+## Handy Carousel Indicator Dots
 
-* [Libhandy CarouselIndicatorLines com Python](https://github.com/natorsc/gui-python-gtk/tree/master/src/libhandy/carousel-indicator-lines).
+- [Python](https://github.com/natorsc/gui-python-gtk/tree/master/src/libhandy/carousel-indicator-dots).
 
-![Libhandy CarouselIndicatorLines](https://codigoninja.dev/images/pygobject-gtk3-libhandy-carousel-indicator-lines.webp)
+![Handy.CarouselIndicatorDots](https://codigoninja.dev/images/pygobject-libhandy-carousel-indicator-dots.webp)
 
-### Column
+---
 
-HdyColumn foi trocado pelo HdyClamp a partir da versão 1.0.
+## Handy Carousel Indicator Lines
 
-* [Libhandy Column](https://github.com/natorsc/gui-python-gtk/tree/master/src/libhandy/column).
+[Python](https://github.com/natorsc/gui-python-gtk/tree/master/src/libhandy/carousel-indicator-lines).
 
-![Libhandy Column](https://codigoninja.dev/images/pygobject-gtk3-libhandy-column.webp)
+![Handy.CarouselIndicatorLines](https://codigoninja.dev/images/pygobject-libhandy-carousel-indicator-lines.webp)
 
-### ComboRow
+---
 
-* [Libhandy ComboRow](https://github.com/natorsc/gui-python-gtk/tree/master/src/libhandy/combo-row).
+### Handy Clamp
 
-![Libhandy ComboRow](https://codigoninja.dev/images/pygobject-gtk3-libhandy-combo-row.webp)
+- [Python](https://github.com/natorsc/gui-python-gtk/tree/master/src/libhandy/column).
 
-### Deck
+![Handy.Clamp](https://codigoninja.dev/images/pygobject-libhandy-clamp.webp)
 
-* [Libhandy Deck](https://github.com/natorsc/gui-python-gtk/tree/master/src/libhandy/deck) (não sei implementar).
+---
 
-### Dialer
-* Libhandy Dialer. Deprecated since version 0.0.12: use Handy.Keypad instead.
+## Handy ComboRow
 
-### DialerButton
+- [Python](https://github.com/natorsc/gui-python-gtk/tree/master/src/libhandy/comborow).
 
-* Libhandy DialerButton. Deprecated since version 0.0.12: This widget is considered a Handy.Dialer internal api.
+![Handy.ComboRow](https://codigoninja.dev/images/pygobject-libhandy-comborow.webp)
 
-### DialerCycleButton
+---
 
-* Libhandy DialerCycleButton. Deprecated since version 0.0.12: This widget is considered a Handy.Dialer internal api.
+## Handy Deck
 
-### Dialog
+Não sei implementar ou está não está funcionando.
 
-* [Libhandy Dialog](https://github.com/natorsc/gui-python-gtk/tree/master/src/libhandy/dialog).
+- [Python](https://github.com/natorsc/gui-python-gtk/tree/master/src/libhandy/deck) .
 
-![Libhandy Dialog](https://codigoninja.dev/images/pygobject-gtk3-libhandy-dialog.webp)
+---
 
-### ExpanderRow
+## Handy ExpanderRow
 
-* [Libhandy ExpanderRow](https://github.com/natorsc/gui-python-gtk/tree/master/src/libhandy/expander-row).
+* [Python](https://github.com/natorsc/gui-python-gtk/tree/master/src/libhandy/expanderrow).
 
-![Libhandy ExpanderRow](https://codigoninja.dev/images/pygobject-gtk3-libhandy-expander-row.webp)
+![Handy.ExpanderRow](https://codigoninja.dev/images/pygobject-gtk3-libhandy-expanderrow.webp)
 
-### HeaderBar
+---
 
-* [Libhandy HeaderBar](https://github.com/natorsc/gui-python-gtk/tree/master/src/libhandy/headerbar).
+## Handy HeaderBar
 
-![Libhandy HeaderBar](https://codigoninja.dev/images/pygobject-gtk3-libhandy-headerbar.webp)
+- [Python](https://github.com/natorsc/gui-python-gtk/tree/master/src/libhandy/headerbar).
 
-### HeaderGroup
+![Handy.HeaderBar](https://codigoninja.dev/images/pygobject-libhandy-headerbar.webp)
 
-* [Libhandy HeaderGroup (Não sei implementar ainda)](https://github.com/natorsc/gui-python-gtk/tree/master/src/libhandy/headergroup).
+---
 
-### Keypad
+## Handy HeaderGroup
 
-* [Libhandy Keypad](https://github.com/natorsc/gui-python-gtk/tree/master/src/libhandy/keypad).
+Não sei implementar.
 
-![Libhandy Keypad](https://codigoninja.dev/images/pygobject-gtk3-libhandy-keypad.webp)
+- [Python](https://github.com/natorsc/gui-python-gtk/tree/master/src/libhandy/headergroup).
 
-### Leaflet
+---
 
-* [Libhandy Leaflet com Python](https://github.com/natorsc/gui-python-gtk/tree/master/src/libhandy/leaflet).
+## Handy Keypad
 
-![Libhandy Leaflet](https://codigoninja.dev/images/pygobject-gtk3-libhandy-leaflet.webp)
+- [Python](https://github.com/natorsc/gui-python-gtk/tree/master/src/libhandy/keypad).
 
-* [Libhandy Leaflet com Python sincronizando dois Leaflets](https://github.com/natorsc/gui-python-gtk/tree/master/src/libhandy/leaflet).
+![Handy.Keypad](https://codigoninja.dev/images/pygobject-libhandy-keypad.webp)
 
-![Libhandy Leaflet](https://codigoninja.dev/images/pygobject-gtk3-libhandy-sync-leaflet.webp)
+---
 
-### SearchBar
+## Handy Leaflet
 
-* [Libhandy SearchBar com Python](https://github.com/natorsc/gui-python-gtk/tree/master/src/libhandy/search-bar).
+- [Python](https://github.com/natorsc/gui-python-gtk/tree/master/src/libhandy/leaflet).
 
-![Libhandy SearchBar](https://codigoninja.dev/images/pygobject-gtk3-libhandy-search-bar.webp)
+![Handy.Leaflet](https://codigoninja.dev/images/pygobject-libhandy-leaflet.webp)
 
-### Squeezer
+- [Python dois Leaflets](https://github.com/natorsc/gui-python-gtk/tree/master/src/libhandy/leaflet).
 
-* Libhandy squeezer. Não sei implementar.
+![Handy.Leaflet sync](https://codigoninja.dev/images/pygobject-libhandy-sync-leaflet.webp)
 
-### TitleBar
+---
 
-* [Libhandy TitleBar com Python](https://github.com/natorsc/gui-python-gtk/tree/master/src/libhandy/title-bar).
+## Handy SearchBar
 
-![Libhandy TitleBar](https://codigoninja.dev/images/pygobject-gtk3-libhandy-title-bar.webp)
+- [Python](https://github.com/natorsc/gui-python-gtk/tree/master/src/libhandy/searchbar).
 
-### ViewSwitcher
+![Handy.SearchBar](https://codigoninja.dev/images/pygobject-libhandy-searchbar.webp)
 
-* [Libhandy ViewSwitcher com Python](https://github.com/natorsc/gui-python-gtk/tree/master/src/libhandy/view-switcher).
+---
 
-![Libhandy ViewSwitcher](https://codigoninja.dev/images/pygobject-gtk3-libhandy-view-switcher.webp)
+## Handy Squeezer
 
-### ViewSwitcherBar
+Não sei implementar.
 
-* [Libhandy ViewSwitcherBar com Python](https://github.com/natorsc/gui-python-gtk/tree/master/src/libhandy/view-switcher-bar).
+- [Python](https://github.com/natorsc/gui-python-gtk/tree/master/src/libhandy/squeezer).
 
-![Libhandy ViewSwitcherBar](https://codigoninja.dev/images/pygobject-gtk3-libhandy-view-switcher-bar.webp)
+---
 
-### Window
+## Handy TitleBar
 
-* [Libhandy Window com Python](https://github.com/natorsc/gui-python-gtk/tree/master/src/libhandy/window).
+- [Python](https://github.com/natorsc/gui-python-gtk/tree/master/src/libhandy/titlebar).
 
-### WindowHandle
+![Handy.TitleBar](https://codigoninja.dev/images/pygobject-libhandy-titlebar.webp)
 
-* [Libhandy WindowHandle com Python](https://github.com/natorsc/gui-python-gtk/tree/master/src/libhandy/window-handle).
+---
+
+## Handy View Switcher
+
+- [Python](https://github.com/natorsc/gui-python-gtk/tree/master/src/libhandy/viewswitcher).
+
+![Handy.ViewSwitcher](https://codigoninja.dev/images/pygobject-libhandy-viewswitcher.webp)
+
+---
+
+## Handy View Switcher Bar
+
+- [Python](https://github.com/natorsc/gui-python-gtk/tree/master/src/libhandy/viewswitcherbar).
+
+![Handy-ViewSwitcherBar](https://codigoninja.dev/images/pygobject-gtk3-libhandy-viewswitcherbar.webp)
+
+---
+
+## Handy View Switcher Title
+
+- [Python](https://github.com/natorsc/gui-python-gtk/tree/master/src/libhandy/viewswitchertitle).
+
+![Handy-ViewSwitcherTitle](https://codigoninja.dev/images/pygobject-gtk3-libhandy-viewswitchertitle.webp)
+
+---
+
+## Handy Window
+
+Não sei implementar ou não está funcionando.
+
+- [Python](https://github.com/natorsc/gui-python-gtk/tree/master/src/libhandy/window).
+
+---
+
+## Handy Window Handle
+
+- [Python](https://github.com/natorsc/gui-python-gtk/tree/master/src/libhandy/windowhandle).
+
+---

@@ -1,5 +1,6 @@
 # -*- coding: utf-8 -*-
 """Handy.Carousel()."""
+
 import gi
 
 gi.require_version('Gtk', '3.0')
@@ -22,7 +23,6 @@ class MainWindow(Gtk.ApplicationWindow):
         vbox = Gtk.Box.new(orientation=Gtk.Orientation.VERTICAL, spacing=12)
         vbox.set_border_width(border_width=12)
         self.add(widget=vbox)
-
 
         label = Gtk.Label.new(str='Arraste com o mouse')
         vbox.pack_start(child=label, expand=False, fill=True, padding=0)

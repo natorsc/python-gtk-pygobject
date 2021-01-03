@@ -24,15 +24,15 @@ gi.require_version(namespace='Gtk', version='3.0')
 from gi.repository import Gio, Gtk
 
 
-class MainWindow(Gtk.Window):
-    """Classe herda de ``Gtk.Window``."""
+class MainWindow(Gtk.ApplicationWindow):
+    """Classe herda de ``Gtk.ApplicationWindow``."""
 
     def __init__(self, **kwargs):
         """Construtor."""
         super().__init__(**kwargs)
 
         # Configurando a janela principal.
-        self.set_title(title='Gtk.Window')
+        self.set_title(title='Gtk.ApplicationWindow')
         # Tamanho inicial da janela.
         self.set_default_size(width=1366 / 2, height=768 / 2)
         # Tamanho minimo da janela.
@@ -41,20 +41,17 @@ class MainWindow(Gtk.Window):
         self.set_default_icon_from_file(filename='../../assets/icons/icon.png')
 
         # O seu código aqui:
-        button = Gtk.Button.new_with_label('clique aqui')
-        button.connect('clicked', self.teste)
+        button = Gtk.Button.new_with_label(label='clique aqui')
+        button.connect('clicked', self.open_window)
         self.add(widget=button)
 
         self.show_all()
 
-    def teste(self, widget):
+    def open_window(self, widget):
         window = Handy.Window.new()
         window.set_transient_for(parent=self)
         window.set_modal(modal=True)
-        window.set_title(title='Outra janela')
-        window.set_default_size(width=1366 / 2, height=768 / 2)
-        window.set_size_request(width=1366 / 2, height=768 / 2)
-        window.set_position(position=Gtk.WindowPosition.CENTER)
+        window.set_title(title='Handy.Window')
         window.set_default_icon_from_file(filename='../../assets/icons/person.png')
         window.show_all()
 

@@ -16,8 +16,6 @@ class MainWindow(Gtk.ApplicationWindow):
         super().__init__(**kwargs)
 
         self.set_title(title='Handy.Keypad')
-        self.set_default_size(width=768 / 2, height=1366 / 2)
-        self.set_size_request(width=768 / 2, height=1366 / 2)
         self.set_resizable(resizable=False)
         self.set_position(position=Gtk.WindowPosition.CENTER)
         self.set_default_icon_from_file(filename='../../assets/icons/icon.png')

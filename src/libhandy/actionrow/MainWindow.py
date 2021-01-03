@@ -1,5 +1,6 @@
 # -*- coding: utf-8 -*-
 """Handy.ActionRow()."""
+
 import gi
 
 gi.require_version('Gtk', '3.0')
@@ -24,12 +25,11 @@ class MainWindow(Gtk.ApplicationWindow):
 
         # Criando um scroll para que a janela principal possa comportar os widgets
         scrolled = Gtk.ScrolledWindow.new(hadjustment=None, vadjustment=None)
+        scrolled.set_border_width(border_width=12)
         self.add(widget=scrolled)
 
         list_box = Gtk.ListBox.new()
-        self.set_border_width(border_width=12)
-        list_box.set_activate_on_single_click(single=True)
-        list_box.connect('row_activated', self.on_row_clicked)
+        list_box.connect('row-selected', self.on_row_clicked)
         scrolled.add(widget=list_box)
 
         # Loop para criar as linhas.
@@ -45,8 +45,6 @@ class MainWindow(Gtk.ApplicationWindow):
         self.show_all()
 
     def on_row_clicked(self, listbox, row):
-        print('aqui')
-        # Exibindo qual dos itens foi clicado.
         print(f'Ícone da linha = {row.get_icon_name()}')
         print(f'Titulo da linha = {row.get_title()}')
         print(f'Sub titulo da linha = {row.get_subtitle()}')

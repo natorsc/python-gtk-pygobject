@@ -1,5 +1,7 @@
 # -*- coding: utf-8 -*-
-"""Utilizando uma classe para criar e configurar a janela principal.
+"""Handy.ApplicationWindow().
+
+Utilizando uma classe para criar e configurar a janela principal.
 
 Disponível a partir da versão 1.0?
 """
@@ -27,7 +29,7 @@ class MainWindow(Handy.ApplicationWindow):
         super().__init__(**kwargs)
 
         # Configurando a janela principal.
-        self.set_title(title='Python com GTK e libhandy')
+        self.set_title(title='Handy.ApplicationWindow')
         self.set_default_size(width=1366 / 2, height=768 / 2)
         self.set_position(position=Gtk.WindowPosition.CENTER)
         self.set_default_icon_from_file(filename='../../assets/icons/icon.png')

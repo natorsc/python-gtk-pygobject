@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-"""Handy.Leaflet()."""
+"""Handy.Leaflet() sync."""
 
 import gi
 
@@ -15,7 +15,7 @@ class MainWindow(Gtk.ApplicationWindow):
     def __init__(self, **kwargs):
         super().__init__(**kwargs)
 
-        self.set_title(title='Handy.Leaflet')
+        self.set_title(title='Handy.Leaflet sync')
         self.set_default_size(width=1366 / 2, height=768 / 2)
         self.set_position(position=Gtk.WindowPosition.CENTER)
         self.set_default_icon_from_file(filename='../../assets/icons/icon.png')

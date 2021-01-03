@@ -202,9 +202,30 @@ Os widgets que foram criados ou passaram por grandes aprimoramentos são:
 
 ---
 
-## Libhandy Widgets
+## Libhandy
 
-> Em construção.
+### Widgets
+
+- [Handy.ActionRow](./docs/handy-widgets.md#handy-actionrow).
+- [Handy.ApplicationWindow](./docs/handy-widgets.md#handy-applicationwindow).
+- [Handy.Avatar](./docs/handy-widgets.md#handy-avatar).
+- [Handy.Carousel](./docs/handy-widgets.md#handy-avatar).
+- [Handy.CarouselIndicatorDots](./docs/handy-widgets.md#handy-carousel-indicator-dots).
+- [Handy.CarouselIndicatorLines](./docs/handy-widgets.md#handy-carousel-indicator-lines).
+- [Handy.Clamp](./docs/handy-widgets.md#handy-clamp).
+- [Handy.ComboRow](./docs/handy-widgets.md#handy-comborow).
+- [Handy.Deck](./docs/handy-widgets.md#handy-deck).
+- [Handy.ExpanderRow](./docs/handy-widgets.md#handy-expanderrow).
+- [Handy.HeaderBar](./docs/handy-widgets.md#handy-headerbar).
+- [Handy.HeaderGroup](./docs/handy-widgets.md#handy-headergroup).
+- [Handy.Leaflet](./docs/handy-widgets.md#handy-leaflet).
+- [Handy.SearchBar](./docs/handy-widgets.md#handy-searchbar).
+- [Handy.Squeezer](./docs/handy-widgets.md#handy-squeezer).
+- [Handy.ViewSwitcher](./docs/handy-widgets.md#handy-view-switcher).
+- [Handy.ViewSwitcherBar](./docs/handy-widgets.md#handy-view-switcher-bar).
+- [Handy.ViewSwitcherTitle](./docs/handy-widgets.md#handy-view-switcher-title).
+- [Handy.Window](./docs/handy-widgets.md#handy-window).
+- [Handy.WindowHandle](./docs/handy-widgets.md#handy-window-handle).
 
 ---
 
