@@ -6,7 +6,7 @@
 - [Gnome Glade](https://github.com/natorsc/gui-python-gtk/tree/master/src/libhandy/actionrow/glade).
 - [Python](https://github.com/natorsc/gui-python-gtk/tree/master/src/libhandy/actionrow).
 
-![Handy.ActionRow](https://codigoninja.dev/images/pygobject-libhandy-actionrow.webp)
+![Handy.ActionRow](./images/pygobject-libhandy-actionrow.webp)
 
 ---
 
@@ -22,7 +22,7 @@ Não está funcionando de forma adequada ou não sei implementar. Disponível a 
 
 - [Python](https://github.com/natorsc/gui-python-gtk/tree/master/src/libhandy/avatar).
 
-![Handy.Avatar](https://codigoninja.dev/images/pygobject-libhandy-avatar.webp)
+![Handy.Avatar](./images/pygobject-libhandy-avatar.webp)
 
 ---
 
@@ -30,7 +30,7 @@ Não está funcionando de forma adequada ou não sei implementar. Disponível a 
 
 - [Python](https://github.com/natorsc/gui-python-gtk/tree/master/src/libhandy/carousel).
 
-![Handy.Carousel](https://codigoninja.dev/images/pygobject-libhandy-carousel.webp)
+![Handy.Carousel](./images/pygobject-libhandy-carousel.webp)
 
 ---
 
@@ -38,7 +38,7 @@ Não está funcionando de forma adequada ou não sei implementar. Disponível a 
 
 - [Python](https://github.com/natorsc/gui-python-gtk/tree/master/src/libhandy/carousel-indicator-dots).
 
-![Handy.CarouselIndicatorDots](https://codigoninja.dev/images/pygobject-libhandy-carousel-indicator-dots.webp)
+![Handy.CarouselIndicatorDots](./images/pygobject-libhandy-carousel-indicator-dots.webp)
 
 ---
 
@@ -46,15 +46,15 @@ Não está funcionando de forma adequada ou não sei implementar. Disponível a 
 
 [Python](https://github.com/natorsc/gui-python-gtk/tree/master/src/libhandy/carousel-indicator-lines).
 
-![Handy.CarouselIndicatorLines](https://codigoninja.dev/images/pygobject-libhandy-carousel-indicator-lines.webp)
+![Handy.CarouselIndicatorLines](./images/pygobject-libhandy-carousel-indicator-lines.webp)
 
 ---
 
 ### Handy Clamp
 
-- [Python](https://github.com/natorsc/gui-python-gtk/tree/master/src/libhandy/column).
+Não sei implementar ou não está funcionando.
 
-![Handy.Clamp](https://codigoninja.dev/images/pygobject-libhandy-clamp.webp)
+- [Python](https://github.com/natorsc/gui-python-gtk/tree/master/src/libhandy/clamp).
 
 ---
 
@@ -62,13 +62,13 @@ Não está funcionando de forma adequada ou não sei implementar. Disponível a 
 
 - [Python](https://github.com/natorsc/gui-python-gtk/tree/master/src/libhandy/comborow).
 
-![Handy.ComboRow](https://codigoninja.dev/images/pygobject-libhandy-comborow.webp)
+![Handy.ComboRow](./images/pygobject-libhandy-comborow.webp)
 
 ---
 
 ## Handy Deck
 
-Não sei implementar ou está não está funcionando.
+Não sei implementar ou não está funcionando.
 
 - [Python](https://github.com/natorsc/gui-python-gtk/tree/master/src/libhandy/deck) .
 
@@ -78,7 +78,7 @@ Não sei implementar ou está não está funcionando.
 
 * [Python](https://github.com/natorsc/gui-python-gtk/tree/master/src/libhandy/expanderrow).
 
-![Handy.ExpanderRow](https://codigoninja.dev/images/pygobject-gtk3-libhandy-expanderrow.webp)
+![Handy.ExpanderRow](./images/pygobject-libhandy-expanderrow.webp)
 
 ---
 
@@ -86,13 +86,13 @@ Não sei implementar ou está não está funcionando.
 
 - [Python](https://github.com/natorsc/gui-python-gtk/tree/master/src/libhandy/headerbar).
 
-![Handy.HeaderBar](https://codigoninja.dev/images/pygobject-libhandy-headerbar.webp)
+![Handy.HeaderBar](./images/pygobject-libhandy-headerbar.webp)
 
 ---
 
 ## Handy HeaderGroup
 
-Não sei implementar.
+Não sei implementar ou não está funcionando.
 
 - [Python](https://github.com/natorsc/gui-python-gtk/tree/master/src/libhandy/headergroup).
 
@@ -102,7 +102,7 @@ Não sei implementar.
 
 - [Python](https://github.com/natorsc/gui-python-gtk/tree/master/src/libhandy/keypad).
 
-![Handy.Keypad](https://codigoninja.dev/images/pygobject-libhandy-keypad.webp)
+![Handy.Keypad](./images/pygobject-libhandy-keypad.webp)
 
 ---
 
@@ -110,11 +110,11 @@ Não sei implementar.
 
 - [Python](https://github.com/natorsc/gui-python-gtk/tree/master/src/libhandy/leaflet).
 
-![Handy.Leaflet](https://codigoninja.dev/images/pygobject-libhandy-leaflet.webp)
+![Handy.Leaflet](./images/pygobject-libhandy-leaflet.webp)
 
 - [Python dois Leaflets](https://github.com/natorsc/gui-python-gtk/tree/master/src/libhandy/leaflet).
 
-![Handy.Leaflet sync](https://codigoninja.dev/images/pygobject-libhandy-sync-leaflet.webp)
+![Handy.Leaflet sync](./images/pygobject-libhandy-leaflet-sync.webp)
 
 ---
 
@@ -122,13 +122,13 @@ Não sei implementar.
 
 - [Python](https://github.com/natorsc/gui-python-gtk/tree/master/src/libhandy/searchbar).
 
-![Handy.SearchBar](https://codigoninja.dev/images/pygobject-libhandy-searchbar.webp)
+![Handy.SearchBar](./images/pygobject-libhandy-searchbar.webp)
 
 ---
 
 ## Handy Squeezer
 
-Não sei implementar.
+Não sei implementar ou não está funcionando.
 
 - [Python](https://github.com/natorsc/gui-python-gtk/tree/master/src/libhandy/squeezer).
 
@@ -138,7 +138,7 @@ Não sei implementar.
 
 - [Python](https://github.com/natorsc/gui-python-gtk/tree/master/src/libhandy/titlebar).
 
-![Handy.TitleBar](https://codigoninja.dev/images/pygobject-libhandy-titlebar.webp)
+![Handy.TitleBar](./images/pygobject-libhandy-titlebar.webp)
 
 ---
 
@@ -146,7 +146,7 @@ Não sei implementar.
 
 - [Python](https://github.com/natorsc/gui-python-gtk/tree/master/src/libhandy/viewswitcher).
 
-![Handy.ViewSwitcher](https://codigoninja.dev/images/pygobject-libhandy-viewswitcher.webp)
+![Handy.ViewSwitcher](./images/pygobject-libhandy-viewswitcher.webp)
 
 ---
 
@@ -154,15 +154,17 @@ Não sei implementar.
 
 - [Python](https://github.com/natorsc/gui-python-gtk/tree/master/src/libhandy/viewswitcherbar).
 
-![Handy-ViewSwitcherBar](https://codigoninja.dev/images/pygobject-gtk3-libhandy-viewswitcherbar.webp)
+![Handy-ViewSwitcherBar](./images/pygobject-libhandy-viewswitcherbar.webp)
 
 ---
 
 ## Handy View Switcher Title
 
+Falta imagem.
+
 - [Python](https://github.com/natorsc/gui-python-gtk/tree/master/src/libhandy/viewswitchertitle).
 
-![Handy-ViewSwitcherTitle](https://codigoninja.dev/images/pygobject-gtk3-libhandy-viewswitchertitle.webp)
+![Handy-ViewSwitcherTitle](./images/pygobject-gtk3-libhandy-viewswitchertitle.webp)
 
 ---
 
@@ -175,6 +177,8 @@ Não sei implementar ou não está funcionando.
 ---
 
 ## Handy Window Handle
+
+Falta imagem.
 
 - [Python](https://github.com/natorsc/gui-python-gtk/tree/master/src/libhandy/windowhandle).
 
