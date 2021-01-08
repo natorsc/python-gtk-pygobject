@@ -77,12 +77,11 @@ if __name__ == '__main__':
     widget = Gtk.ListBoxRow()
 
     # Forma 1 de se coletar a versão do GTK+.
-    gtk_versao = '%d.%d.%d' % (Gtk.MAJOR_VERSION, Gtk.MINOR_VERSION,
-                               Gtk.MICRO_VERSION)
+    gtk_versao = f'{Gtk.MAJOR_VERSION}, {Gtk.MINOR_VERSION}, {Gtk.MICRO_VERSION}'
 
     # Forma 2 de se coletar a versão do GTK+.
-    gtk_versao1 = '%d.%d.%d' % (Gtk.get_major_version(), Gtk.get_minor_version(),
-                                Gtk.get_micro_version())
+    gtk_versao1 = f'{Gtk.get_major_version()}, {Gtk.get_minor_version()}, ' \
+                  f'{Gtk.get_micro_version()}'
 
     # Versão do PyGObject.
     pygobject_versao = GObject.pygobject_version
