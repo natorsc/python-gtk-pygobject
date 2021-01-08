@@ -196,6 +196,17 @@ Os widgets que foram criados ou passaram por grandes aprimoramentos são:
 - Shaders.
 - Accessibility.
 
+## Testando o GTK 4
+
+O GTK 4 juntamente com a libhandy 4 podem ser testados utilizando-se o template base que está disponível no repositório:
+
+[https://gitlab.gnome.org/tallero/helloworld](https://gitlab.gnome.org/tallero/helloworld).
+
+Para utilizar o mesmo basta abrir o Gnome Builder e clonar o repositório.
+
+![GTK 4 e libhandy 4](./docs/images/pygobject-gtk4-libhandy.webp)
+*GTK 4 e libhandy 4*
+
 ### Widgets
 
 > Em construção.
