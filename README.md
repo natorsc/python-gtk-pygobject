@@ -73,35 +73,33 @@ oficialmente** (até o momento que escrevo) são:
 
 ## Tutoriais
 
-- [Criando o ambiente de desenvolvimento](https://codigoninja.dev/gtk3-pygobject-criando-ambiente-desenvolvimento/).
+- [Criando o ambiente de desenvolvimento](https://codigoninja.dev/gtk/gtk3-pygobject-criando-ambiente-desenvolvimento/).
 
 ### Windows
 
-- [Criando um executável com o Cx_Freeze e listdlls](https://codigoninja.dev/gtk3-pygobject-criando-executavel-cx-freeze-windows/).
-- [Como instalar o PyGObject for Windows (não recomendado)](https://codigoninja.dev/gtk3-instalar-pygobject-for-windows/).
+- [Criando um executável com o Cx_Freeze e listdlls](https://codigoninja.dev/gtk/gtk3-pygobject-criando-executavel-cx-freeze-windows/).
+- [Como instalar o PyGObject for Windows (não recomendado)](https://codigoninja.dev/gtk/gtk3-instalar-pygobject-for-windows/).
 
 ### Linux
 
-- [Criando um executável com o Cx_Freeze](https://codigoninja.dev/gtk3-pygobject-criando-executavel-cx-freeze-linux/).
+- [Criando um executável com o Cx_Freeze](https://codigoninja.dev/gtk/gtk3-pygobject-criando-executavel-cx-freeze-linux/).
 
 ### Style
 
 - [Exemplo de alguns seletores css no Gtk](https://codigoninja.dev/gtk3-pygobject-principais-seletores-css/).
-- [Adicionando a propriedade name](https://codigoninja.dev/gtk3-pygobject-adicionar-propriedade-name-widget/).
-- [Adicionando a propriedade class](https://codigoninja.dev/gtk3-pygobject-adicionar-tag-class-widget/).
-- [Ativar e desativar o modo escuro (dark mode)](https://codigoninja.dev/gtk3-pygobject-utilizar-modo-escuro-dark-mode/).
+- [Ativar e desativar o modo escuro (dark mode)](https://codigoninja.dev/gtk/gtk3-pygobject-utilizar-modo-escuro-dark-mode/).
 
 ### Ferramentas
 
-- [Ativando o Gkt Inspector](https://codigoninja.dev/gtk3-ativar-inspector/).
-- [Como instalar o Gnome Builder](https://codigoninja.dev/gnome-builder-instalar-linux/).
-- [Criando um projeto com o Gnome Builder](https://codigoninja.dev/gnome-builder-criar-projeto/).
-- [Como instalar o Gnome Gnome Glade](https://codigoninja.dev/gnome-glade-instalar/).
-- [Como instalar o Gtk icon browser](https://codigoninja.dev/gtk3-icon-browser/).
+- [Ativando o Gkt Inspector](https://codigoninja.dev/gtk/ativar-ferramenta-gtk-Inspector/).
+- [Como instalar o Gnome Builder](https://codigoninja.dev/gtk/instalar-gnome-builder-linux/).
+- [Criando um projeto com o Gnome Builder](https://codigoninja.dev/gtk/criar-projeto-gnome-builder/).
+- [Como instalar o Gnome Gnome Glade](https://codigoninja.dev/gtk/instalar-gnome-glade/).
+- [Como instalar o Gtk icon browser](https://codigoninja.dev/gtk/instalar-gtk3-icon-browser/).
 
 ### Libhandy
 
-- [Como instalar a biblioteca libhandy no Linux e Windows](https://codigoninja.dev/gtk3-pygobject-instalar-biblioteca-libhandy/).
+- [Como instalar a biblioteca libhandy no Linux e Windows](https://codigoninja.dev/gtk/gtk3-pygobject-instalar-biblioteca-libhandy/).
 
 ---
 
