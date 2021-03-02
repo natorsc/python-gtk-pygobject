@@ -11,6 +11,7 @@ autopep8 = "*"
 pygobject-stubs = "*"
 pygobject = "*"
 sqlalchemy = "*"
+cx-freeze = "*"
 
 [requires]
 python_version = "3.9"
