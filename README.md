@@ -68,7 +68,7 @@ Existe o suporte a diversas linguagens de programação (bindings), contudo as l
 
 ### Style
 
-- ToDo.
+- [Python e GTK: Como ativar o modo escuro em aplicativos.](https://codigoninja.dev/python-e-gtk-como-ativar-o-modo-escuro-em-aplicativos/).
 
 ### Ferramentas
 
