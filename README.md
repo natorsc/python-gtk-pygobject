@@ -2,8 +2,8 @@
 
 # Criando interfaces gráficas com Python (PyGObject) e GTK
 
-Repostório com diversos exemplos de código e alguns tutoriais sobre a construção de interfaces gráficas com a linguagem
-de progração Python e o toolkit gráfico GTK.
+Repositório com diversos exemplos de código e alguns tutoriais sobre a construção de interfaces gráficas com a linguagem
+de programão Python e o toolkit gráfico GTK.
 
 ## O que estou publicando?
 
@@ -16,26 +16,22 @@ toolkit para construção de interfaces gráficas GTK.
 
 ## GTK
 
-O GTK é um **toolkit multiplataforma** para a criação de interfaces gráficas.
+O GTK é um toolkit multiplataforma para a criação de interfaces gráficas.
 
-Este toolkit utiliza [licença GNU LGPL](https://pt.wikipedia.org/wiki/GNU_Lesser_General_Public_License), o que permite
-a sua utilização para construção de softwares que seja livres ou proprietários.
+O mesmo utiliza licença GNU LGPL, o que permite a sua utilização para construção de softwares que sejam livres ou proprietários.
 
-Foi desenvolvido inicialmente para o [GIMP](https://www.gimp.org/) (GNU Image Manipulation Program), por isso foi
-batizado de **GIMP Toolkit** ou simplesmente **GTK**.
+Foi desenvolvido inicialmente para o GIMP (GNU Image Manipulation Program), por isso foi batizado de GIMP Toolkit ou simplesmente GTK.
 
 Originalmente criado por, Peter Mattis, Spencer Kimball e Josh MacDonald.
 
-O GTK+ é comumente utilizado na elaboração de aplicativos para o ambiente de desktop [GNOME](https://www.gnome.org/),
-contudo por ser multiplataforma pode ser executado sem problemas em diversos sistemas operacionais e ambientes gráficos.
+O GTK é comumente utilizado na elaboração de aplicativos para o ambiente de desktop GNOME, contudo por ser multiplataforma pode ser executado sem problemas em diversos sistemas operacionais e ambientes gráficos.
 
-O toolkit é escrito em `C` , seu design é orientado a objeto com base no sistema de objetos da biblioteca `GLib` .
+O toolkit é escrito em C e o seu design é orientado a objeto com base no sistema de objetos da biblioteca GLib.
 
-Existe o suporte (bindings) a diversas linguagens de programação, contudo as linguagem que são suportadas **
-oficialmente** (até o momento que escrevo) são:
+Existe o suporte a diversas linguagens de programação (bindings), contudo as linguagem que são suportadas oficialmente (até o momento que escrevo) são:
 
 - C++.
-- C\#.
+- C#.
 - C.
 - JavaScript.
 - Python.
@@ -46,60 +42,44 @@ oficialmente** (até o momento que escrevo) são:
 
 ## bibliotecas:
 
-- **GLib**: Biblioteca com utilitários de uso geral, não é específica para interfaces gráficas. GLib fornece muitos
-  tipos de dados úteis, macros, conversões de tipo, utilitários de string, utilitários de arquivo, uma abstração de loop
-  principal e assim por diante.
+- **GLib**: Biblioteca com utilitários de uso geral, não é específica para interfaces gráficas. GLib fornece muitos tipos de dados úteis, macros, conversões de tipo, utilitários de string, utilitários de arquivo, uma abstração de loop principal e assim por diante.
 - **GObject**: Biblioteca que fornece um sistema de tipos.
-- **GIO**: Uma API VFS (Virtual file system) moderna e fácil de usar, incluindo abstrações para arquivos, drives,
-  volumes, fluxo de IO, bem como programação de rede e comunicação DBus.
+- **GIO**: Uma API VFS (Virtual file system) moderna e fácil de usar, incluindo abstrações para arquivos, drives, volumes, fluxo de IO, bem como programação de rede e comunicação DBus.
 - **cairo**: Cairo é uma biblioteca de gráficos 2D com suporte para vários dispositivos de saída.
-- **Pango**: Pango é uma biblioteca para manipulação de texto internacionalizada. Ele gira em torno do objeto
-  PangoLayout, representando um parágrafo de texto. Pango fornece o motor para `GtkTextView`, `GtkLabel`, `GtkEntry` e
-  outros widgets que exibem texto.
-- **ATK**: ATK é o Kit de ferramentas de acessibilidade. Ele fornece um conjunto de interfaces genéricas que permitem
-  que tecnologias de acessibilidade interajam com uma interface gráfica de usuário. Por exemplo, um leitor de tela usa
-  ATK para descobrir o texto em uma interface e lê-lo para usuários cegos. Os widgets GTK possuem suporte integrado para
-  acessibilidade usando a estrutura ATK.
-- **GdkPixbuf**: Esta é uma pequena biblioteca que permite criar objetos GdkPixbuf ("buffer de pixel") a partir de dados
-  de imagem ou arquivos de imagem. Use um `GdkPixbuf` em combinação com `GtkImage` para exibir imagens.
-- **graphene**: Esta é uma pequena biblioteca que fornece operações e tipos de dados vetoriais e matriciais. O graphene
-  fornece implementações otimizadas usando vários conjuntos de instruções SIMD, como SSE.
-- **GDK**: GDK é a camada de abstração que permite ao GTK oferecer suporte a vários sistemas de janelas. O GDK fornece
-  recursos de sistema de janelas no Wayland, X11, Windows e OS X.
-- **GSK**: GSK é uma biblioteca para criar um gráfico de cena a partir de nós de renderização e renderizá-lo usando
-  diferentes APIs de renderização. GSK fornece renderizadores para OpenGL, Vulkan e Cairo.
+- **Pango**: Pango é uma biblioteca para manipulação de texto internacionalizada. Ele gira em torno do objeto PangoLayout, representando um parágrafo de texto. Pango fornece o motor para GtkTextView, GtkLabel, GtkEntry e outros widgets que exibem texto.
+- **ATK**: ATK é o Kit de ferramentas de acessibilidade. Ele fornece um conjunto de interfaces genéricas que permitem que tecnologias de acessibilidade interajam com uma interface gráfica de usuário. Por exemplo, um leitor de tela usa ATK para descobrir o texto em uma interface e lê-lo para usuários cegos. Os widgets GTK possuem suporte integrado para acessibilidade usando a estrutura ATK.
+- **GdkPixbuf**: Esta é uma pequena biblioteca que permite criar objetos GdkPixbuf (“buffer de pixel”) a partir de dados de imagem ou arquivos de imagem. Use um GdkPixbuf em combinação com GtkImage para exibir imagens.
+- **graphene**: Esta é uma pequena biblioteca que fornece operações e tipos de dados vetoriais e matriciais. O graphene fornece implementações otimizadas usando vários conjuntos de instruções SIMD, como SSE.
+- **GDK**: GDK é a camada de abstração que permite ao GTK oferecer suporte a vários sistemas de janelas. O GDK fornece recursos de sistema de janelas no Wayland, X11, Windows e OSX.
+- **GSK**: GSK é uma biblioteca para criar um gráfico de cena a partir de nós de renderização e renderizá-lo usando diferentes APIs de renderização. GSK fornece renderizadores para OpenGL, Vulkan e Cairo.
 
 ---
 
 ## Tutoriais
 
-- [Criando o ambiente de desenvolvimento](https://codigoninja.dev/gtk/gtk3-pygobject-criando-ambiente-desenvolvimento/).
-
 ### Windows
 
-- [Criando um executável com o Cx_Freeze e listdlls](https://codigoninja.dev/gtk/gtk3-pygobject-criando-executavel-cx-freeze-windows/).
-- [Como instalar o PyGObject for Windows (não recomendado)](https://codigoninja.dev/gtk/gtk3-instalar-pygobject-for-windows/).
+- [Python e GTK: Como instalar o msys2](https://codigoninja.dev/python-e-gtk-como-instalar-o-msys2/).
+- [Como configurar o ambiente de desenvolvimento GTK 3 no Windows](https://codigoninja.dev/como-configurar-o-ambiente-de-desenvolvimento-gtk-3-no-windows/).
 
 ### Linux
 
-- [Criando um executável com o Cx_Freeze](https://codigoninja.dev/gtk/gtk3-pygobject-criando-executavel-cx-freeze-linux/).
+- [Como configurar o ambiente de desenvolvimento GTK 3 no Linux](https://codigoninja.dev/como-configurar-o-ambiente-de-desenvolvimento-gtk-3-no-linux/).
 
 ### Style
 
-- [Exemplo de alguns seletores css no Gtk](https://codigoninja.dev/gtk3-pygobject-principais-seletores-css/).
-- [Ativar e desativar o modo escuro (dark mode)](https://codigoninja.dev/gtk/gtk3-pygobject-utilizar-modo-escuro-dark-mode/).
+- ToDo.
 
 ### Ferramentas
 
-- [Ativando o Gkt Inspector](https://codigoninja.dev/gtk/ativar-ferramenta-gtk-Inspector/).
-- [Como instalar o Gnome Builder](https://codigoninja.dev/gtk/instalar-gnome-builder-linux/).
-- [Criando um projeto com o Gnome Builder](https://codigoninja.dev/gtk/criar-projeto-gnome-builder/).
-- [Como instalar o Gnome Gnome Glade](https://codigoninja.dev/gtk/instalar-gnome-glade/).
-- [Como instalar o Gtk icon browser](https://codigoninja.dev/gtk/instalar-gtk3-icon-browser/).
+- [Como ativar a ferramenta GTK Inspector](https://codigoninja.dev/como-ativar-a-ferramenta-gtk-inspector/).
+- [Como instalar o IDE GNOME Builder no Linux](https://codigoninja.dev/como-instalar-o-ide-gnome-builder-no-linux/).
+- [Como instalar o Gnome Glade no Linux e Window](https://codigoninja.dev/como-instalar-o-gnome-glade-no-linux-e-window/).
+- [Como instalar o GTK 3 icon browser](https://codigoninja.dev/como-instalar-o-gtk-3-icon-browser/).
 
 ### Libhandy
 
-- [Como instalar a biblioteca libhandy no Linux e Windows](https://codigoninja.dev/gtk/gtk3-pygobject-instalar-biblioteca-libhandy/).
+- [Como instalar a biblioteca libhandy](https://codigoninja.dev/como-instalar-a-biblioteca-libhandy/).
 
 ---
 
