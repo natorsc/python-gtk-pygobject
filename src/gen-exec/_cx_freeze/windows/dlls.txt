@@ -1,112 +1,113 @@
-C:\msys64\mingw64\bin\python3.8.exe
-C:\WINDOWS\SYSTEM32\ntdll.dll
-C:\WINDOWS\System32\KERNEL32.DLL
-C:\WINDOWS\System32\KERNELBASE.dll
-C:\WINDOWS\System32\msvcrt.dll
-C:\msys64\mingw64\bin\libpython3.8.dll
-C:\WINDOWS\System32\ADVAPI32.dll
-C:\WINDOWS\System32\sechost.dll
-C:\WINDOWS\System32\RPCRT4.dll
-C:\WINDOWS\System32\USER32.dll
-C:\WINDOWS\System32\win32u.dll
-C:\WINDOWS\System32\GDI32.dll
-C:\msys64\mingw64\bin\libwinpthread-1.dll
-C:\WINDOWS\System32\gdi32full.dll
-C:\WINDOWS\System32\msvcp_win.dll
-C:\WINDOWS\System32\ucrtbase.dll
-C:\WINDOWS\System32\WS2_32.dll
-C:\WINDOWS\SYSTEM32\VERSION.dll
-C:\WINDOWS\System32\IMM32.DLL
-C:\WINDOWS\SYSTEM32\CRYPTSP.dll
-C:\WINDOWS\system32\rsaenh.dll
-C:\WINDOWS\System32\bcrypt.dll
-C:\WINDOWS\SYSTEM32\CRYPTBASE.dll
-C:\WINDOWS\System32\bcryptPrimitives.dll
-C:\msys64\mingw64\lib\python3.8\lib-dynload\_heapq-cpython-38.dll
-C:\msys64\mingw64\lib\python3.8\site-packages\gi\_gi-cpython-38.dll
-C:\msys64\mingw64\bin\libgirepository-1.0-1.dll
-C:\msys64\mingw64\bin\libgobject-2.0-0.dll
-C:\msys64\mingw64\bin\libglib-2.0-0.dll
-C:\msys64\mingw64\bin\libffi-7.dll
-C:\WINDOWS\System32\ole32.dll
-C:\WINDOWS\System32\combase.dll
-C:\WINDOWS\System32\SHELL32.dll
-C:\msys64\mingw64\bin\libgio-2.0-0.dll
-C:\msys64\mingw64\bin\libgmodule-2.0-0.dll
-C:\WINDOWS\SYSTEM32\DNSAPI.dll
-C:\WINDOWS\SYSTEM32\IPHLPAPI.DLL
-C:\msys64\mingw64\bin\libintl-8.dll
-C:\msys64\mingw64\bin\libpcre-1.dll
-C:\msys64\mingw64\bin\zlib1.dll
-C:\msys64\mingw64\bin\libiconv-2.dll
-C:\WINDOWS\System32\NSI.dll
-C:\msys64\mingw64\lib\python3.8\site-packages\gi\_gi_cairo-cpython-38.dll
-C:\msys64\mingw64\bin\libcairo-gobject-2.dll
-C:\msys64\mingw64\bin\libcairo-2.dll
-C:\WINDOWS\SYSTEM32\MSIMG32.dll
-C:\mingw64\bin\libgcc_s_seh-1.dll
-C:\msys64\mingw64\bin\libfontconfig-1.dll
-C:\msys64\mingw64\bin\libfreetype-6.dll
-C:\msys64\mingw64\bin\libpixman-1-0.dll
-C:\msys64\mingw64\bin\libpng16-16.dll
-C:\msys64\mingw64\bin\libbrotlidec.dll
-C:\msys64\mingw64\bin\libexpat-1.dll
-C:\msys64\mingw64\bin\libbz2-1.dll
-C:\msys64\mingw64\bin\libharfbuzz-0.dll
-C:\WINDOWS\SYSTEM32\USP10.dll
-C:\msys64\mingw64\bin\libbrotlicommon.dll
-C:\msys64\mingw64\bin\libgraphite2.dll
-C:\mingw64\bin\libstdc++-6.dll
-C:\msys64\mingw64\lib\python3.8\site-packages\cairo\_cairo-cpython-38.dll
-C:\msys64\mingw64\lib\python3.8\lib-dynload\_socket-cpython-38.dll
-C:\msys64\mingw64\lib\python3.8\lib-dynload\math-cpython-38.dll
-C:\msys64\mingw64\lib\python3.8\lib-dynload\select-cpython-38.dll
-C:\msys64\mingw64\bin\libpango-1.0-0.dll
-C:\msys64\mingw64\bin\libthai-0.dll
-C:\msys64\mingw64\bin\libfribidi-0.dll
-C:\WINDOWS\System32\SHLWAPI.dll
-C:\msys64\mingw64\bin\libdatrie-1.dll
-C:\msys64\mingw64\bin\libgdk_pixbuf-2.0-0.dll
-C:\WINDOWS\WinSxS\amd64_microsoft.windows.gdiplus_6595b64144ccf1df_1.1.19041.789_none_faf0a7e97612e7bb\gdiplus.dll
-C:\msys64\mingw64\bin\libgdk-3-0.dll
-C:\WINDOWS\System32\SETUPAPI.dll
-C:\WINDOWS\System32\cfgmgr32.dll
-C:\WINDOWS\SYSTEM32\dwmapi.dll
-C:\msys64\mingw64\bin\libpangocairo-1.0-0.dll
-C:\WINDOWS\SYSTEM32\WINMM.dll
-C:\msys64\mingw64\bin\libpangowin32-1.0-0.dll
-C:\msys64\mingw64\bin\libepoxy-0.dll
-C:\msys64\mingw64\bin\libpangoft2-1.0-0.dll
-C:\WINDOWS\system32\uxtheme.dll
-C:\WINDOWS\System32\MSCTF.dll
-C:\WINDOWS\System32\OLEAUT32.dll
-C:\WINDOWS\System32\shcore.dll
-C:\WINDOWS\SYSTEM32\DEVOBJ.dll
-C:\WINDOWS\System32\WINTRUST.dll
-C:\WINDOWS\System32\CRYPT32.dll
-C:\WINDOWS\SYSTEM32\MSASN1.dll
-C:\WINDOWS\SYSTEM32\kernel.appcore.dll
-C:\WINDOWS\System32\clbcatq.dll
-C:\msys64\mingw64\bin\libgtk-3-0.dll
-C:\WINDOWS\System32\comdlg32.dll
-C:\WINDOWS\WinSxS\amd64_microsoft.windows.common-controls_6595b64144ccf1df_6.0.19041.844_none_ca00b6081b84eb1d\COMCTL32.dll
-C:\msys64\mingw64\bin\libatk-1.0-0.dll
-C:\WINDOWS\SYSTEM32\WINSPOOL.DRV
-C:\WINDOWS\system32\winhttp.dll
-C:\WINDOWS\system32\mswsock.dll
-C:\WINDOWS\SYSTEM32\windows.storage.dll
-C:\WINDOWS\System32\Wldp.dll
-C:\WINDOWS\SYSTEM32\profapi.dll
-C:\WINDOWS\system32\propsys.dll
-C:\msys64\mingw64\lib\gdk-pixbuf-2.0\2.10.0\loaders\libpixbufloader-png.dll
-C:\WINDOWS\system32\IconCodecService.dll
-C:\WINDOWS\SYSTEM32\WindowsCodecs.dll
-C:\WINDOWS\SYSTEM32\mscms.dll
-C:\WINDOWS\SYSTEM32\USERENV.dll
-C:\WINDOWS\SYSTEM32\ColorAdapterClient.dll
-C:\WINDOWS\SYSTEM32\icm32.dll
-C:\WINDOWS\SYSTEM32\textinputframework.dll
-C:\WINDOWS\System32\CoreMessaging.dll
-C:\WINDOWS\System32\CoreUIComponents.dll
-C:\WINDOWS\SYSTEM32\wintypes.dll
-C:\WINDOWS\SYSTEM32\ntmarta.dll
+Base                Size      Path
+0x00000000a5040000  0x21000   C:\msys64\mingw64\bin\python3.8.exe
+0x0000000007df0000  0x1f5000  C:\WINDOWS\SYSTEM32\ntdll.dll
+0x0000000006670000  0xbd000   C:\WINDOWS\System32\KERNEL32.DLL
+0x0000000005870000  0x2c9000  C:\WINDOWS\System32\KERNELBASE.dll
+0x0000000006bc0000  0x9e000   C:\WINDOWS\System32\msvcrt.dll
+0x00000000a7450000  0x2ec000  C:\msys64\mingw64\bin\libpython3.8.dll
+0x0000000006520000  0xac000   C:\WINDOWS\System32\ADVAPI32.dll
+0x00000000065d0000  0x9c000   C:\WINDOWS\System32\sechost.dll
+0x0000000006730000  0x12b000  C:\WINDOWS\System32\RPCRT4.dll
+0x0000000005f30000  0x1a0000  C:\WINDOWS\System32\USER32.dll
+0x0000000005840000  0x22000   C:\WINDOWS\System32\win32u.dll
+0x0000000007130000  0x2a000   C:\WINDOWS\System32\GDI32.dll
+0x00000000056b0000  0x10b000  C:\WINDOWS\System32\gdi32full.dll
+0x0000000000fd0000  0x16000   C:\msys64\mingw64\bin\libwinpthread-1.dll
+0x0000000005610000  0x9d000   C:\WINDOWS\System32\msvcp_win.dll
+0x0000000005b40000  0x100000  C:\WINDOWS\System32\ucrtbase.dll
+0x0000000007430000  0x6b000   C:\WINDOWS\System32\WS2_32.dll
+0x00000000fb8f0000  0xa000    C:\WINDOWS\SYSTEM32\VERSION.dll
+0x0000000006260000  0x30000   C:\WINDOWS\System32\IMM32.DLL
+0x0000000005250000  0x18000   C:\WINDOWS\SYSTEM32\CRYPTSP.dll
+0x0000000004610000  0x34000   C:\WINDOWS\system32\rsaenh.dll
+0x0000000005590000  0x27000   C:\WINDOWS\System32\bcrypt.dll
+0x0000000004e40000  0xc000    C:\WINDOWS\SYSTEM32\CRYPTBASE.dll
+0x00000000057c0000  0x80000   C:\WINDOWS\System32\bcryptPrimitives.dll
+0x0000000002630000  0x10000   C:\msys64\mingw64\lib\python3.8\lib-dynload\_heapq-cpython-38.dll
+0x00000000f0850000  0x56000   C:\msys64\mingw64\lib\python3.8\site-packages\gi\_gi-cpython-38.dll
+0x00000000daaa0000  0x141000  C:\msys64\mingw64\bin\libglib-2.0-0.dll
+0x0000000007c80000  0x12a000  C:\WINDOWS\System32\ole32.dll
+0x0000000006860000  0x355000  C:\WINDOWS\System32\combase.dll
+0x00000000ffeb0000  0x3e000   C:\msys64\mingw64\bin\libgirepository-1.0-1.dll
+0x0000000007530000  0x742000  C:\WINDOWS\System32\SHELL32.dll
+0x00000000f07f0000  0x52000   C:\msys64\mingw64\bin\libgobject-2.0-0.dll
+0x00000000f07c0000  0x28000   C:\msys64\mingw64\bin\libintl-8.dll
+0x0000000000fc0000  0x10000   C:\msys64\mingw64\bin\libffi-7.dll
+0x0000000000fb0000  0xf000    C:\msys64\mingw64\bin\libgmodule-2.0-0.dll
+0x00000000a5bc0000  0x182000  C:\msys64\mingw64\bin\libgio-2.0-0.dll
+0x00000000049d0000  0xcb000   C:\WINDOWS\SYSTEM32\DNSAPI.dll
+0x0000000004980000  0x3b000   C:\WINDOWS\SYSTEM32\IPHLPAPI.DLL
+0x00000000e5630000  0x10b000  C:\msys64\mingw64\bin\libiconv-2.dll
+0x00000000f06e0000  0x4d000   C:\msys64\mingw64\bin\libpcre-1.dll
+0x00000000f06b0000  0x24000   C:\msys64\mingw64\bin\zlib1.dll
+0x0000000006510000  0x8000    C:\WINDOWS\System32\NSI.dll
+0x00000000ffea0000  0xe000    C:\msys64\mingw64\lib\python3.8\site-packages\gi\_gi_cairo-cpython-38.dll
+0x00000000f07a0000  0x11000   C:\msys64\mingw64\bin\libcairo-gobject-2.dll
+0x00000000e1810000  0x110000  C:\msys64\mingw64\bin\libcairo-2.dll
+0x00000000fe990000  0x7000    C:\WINDOWS\SYSTEM32\MSIMG32.dll
+0x0000000061440000  0x1a000   C:\mingw64\bin\libgcc_s_seh-1.dll
+0x00000000ef410000  0x54000   C:\msys64\mingw64\bin\libfontconfig-1.dll
+0x00000000e9740000  0xb8000   C:\msys64\mingw64\bin\libfreetype-6.dll
+0x00000000b1930000  0xae000   C:\msys64\mingw64\bin\libpixman-1-0.dll
+0x0000000068b40000  0x40000   C:\msys64\mingw64\bin\libpng16-16.dll
+0x00000000ef3d0000  0x37000   C:\msys64\mingw64\bin\libexpat-1.dll
+0x00000000f05c0000  0x16000   C:\msys64\mingw64\bin\libbrotlidec.dll
+0x00000000ef590000  0x1f000   C:\msys64\mingw64\bin\libbz2-1.dll
+0x00000000b0a70000  0xfc000   C:\msys64\mingw64\bin\libharfbuzz-0.dll
+0x00000000f82f0000  0x19000   C:\WINDOWS\SYSTEM32\USP10.dll
+0x00000000ecd20000  0x2c000   C:\msys64\mingw64\bin\libbrotlicommon.dll
+0x00000000eccf0000  0x2d000   C:\msys64\mingw64\bin\libgraphite2.dll
+0x000000006fc40000  0x163000  C:\mingw64\bin\libstdc++-6.dll
+0x00000000ec580000  0x32000   C:\msys64\mingw64\lib\python3.8\site-packages\cairo\_cairo-cpython-38.dll
+0x00000000ef4e0000  0x17000   C:\msys64\mingw64\lib\python3.8\lib-dynload\_socket-cpython-38.dll
+0x00000000eccd0000  0x18000   C:\msys64\mingw64\lib\python3.8\lib-dynload\math-cpython-38.dll
+0x00000000fe5c0000  0xd000    C:\msys64\mingw64\lib\python3.8\lib-dynload\select-cpython-38.dll
+0x00000000e98b0000  0x4f000   C:\msys64\mingw64\bin\libpango-1.0-0.dll
+0x0000000066880000  0x19000   C:\msys64\mingw64\bin\libthai-0.dll
+0x0000000007160000  0x55000   C:\WINDOWS\System32\SHLWAPI.dll
+0x00000000ecb20000  0x2b000   C:\msys64\mingw64\bin\libfribidi-0.dll
+0x0000000068ac0000  0x11000   C:\msys64\mingw64\bin\libdatrie-1.dll
+0x00000000ebfc0000  0x30000   C:\msys64\mingw64\bin\libgdk_pixbuf-2.0-0.dll
+0x00000000b34e0000  0x1ab000  C:\WINDOWS\WinSxS\amd64_microsoft.windows.gdiplus_6595b64144ccf1df_1.1.19041.789_none_faf0a7e97612e7bb\gdiplus.dll
+0x00000000a5920000  0x13a000  C:\msys64\mingw64\bin\libgdk-3-0.dll
+0x0000000006cc0000  0x469000  C:\WINDOWS\System32\SETUPAPI.dll
+0x00000000055c0000  0x4e000   C:\WINDOWS\System32\cfgmgr32.dll
+0x0000000003180000  0x2f000   C:\WINDOWS\SYSTEM32\dwmapi.dll
+0x00000000faf90000  0x27000   C:\WINDOWS\SYSTEM32\WINMM.dll
+0x00000000eca00000  0x18000   C:\msys64\mingw64\bin\libpangocairo-1.0-0.dll
+0x00000000a5770000  0x1af000  C:\msys64\mingw64\bin\libepoxy-0.dll
+0x00000000ea1e0000  0x1d000   C:\msys64\mingw64\bin\libpangowin32-1.0-0.dll
+0x00000000e9fb0000  0x1c000   C:\msys64\mingw64\bin\libpangoft2-1.0-0.dll
+0x0000000002fb0000  0x9e000   C:\WINDOWS\system32\uxtheme.dll
+0x00000000071c0000  0x115000  C:\WINDOWS\System32\MSCTF.dll
+0x00000000060d0000  0xcd000   C:\WINDOWS\System32\OLEAUT32.dll
+0x00000000061a0000  0xae000   C:\WINDOWS\System32\shcore.dll
+0x00000000052e0000  0x2c000   C:\WINDOWS\SYSTEM32\DEVOBJ.dll
+0x0000000005530000  0x60000   C:\WINDOWS\System32\WINTRUST.dll
+0x0000000005cf0000  0x15f000  C:\WINDOWS\System32\CRYPT32.dll
+0x00000000052a0000  0x12000   C:\WINDOWS\SYSTEM32\MSASN1.dll
+0x0000000003470000  0x12000   C:\WINDOWS\SYSTEM32\kernel.appcore.dll
+0x0000000006290000  0xa9000   C:\WINDOWS\System32\clbcatq.dll
+0x00000000a37f0000  0x714000  C:\msys64\mingw64\bin\libgtk-3-0.dll
+0x0000000005e50000  0xda000   C:\WINDOWS\System32\comdlg32.dll
+0x00000000e51e0000  0x29a000  C:\WINDOWS\WinSxS\amd64_microsoft.windows.common-controls_6595b64144ccf1df_6.0.19041.844_none_ca00b6081b84eb1d\COMCTL32.dll
+0x00000000e9370000  0x2e000   C:\msys64\mingw64\bin\libatk-1.0-0.dll
+0x00000000ee5a0000  0x8e000   C:\WINDOWS\SYSTEM32\WINSPOOL.DRV
+0x00000000ff050000  0x10c000  C:\WINDOWS\system32\winhttp.dll
+0x0000000004cc0000  0x6a000   C:\WINDOWS\system32\mswsock.dll
+0x0000000003670000  0x790000  C:\WINDOWS\SYSTEM32\windows.storage.dll
+0x0000000004ed0000  0x2c000   C:\WINDOWS\System32\Wldp.dll
+0x0000000005470000  0x1f000   C:\WINDOWS\SYSTEM32\profapi.dll
+0x0000000001760000  0xf7000   C:\WINDOWS\system32\propsys.dll
+0x00000000fe140000  0x10000   C:\msys64\mingw64\lib\gdk-pixbuf-2.0\2.10.0\loaders\libpixbufloader-png.dll
+0x00000000fec10000  0x9000    C:\WINDOWS\system32\IconCodecService.dll
+0x00000000fbb20000  0x1b4000  C:\WINDOWS\SYSTEM32\WindowsCodecs.dll
+0x00000000fb900000  0xae000   C:\WINDOWS\SYSTEM32\mscms.dll
+0x00000000053f0000  0x2e000   C:\WINDOWS\SYSTEM32\USERENV.dll
+0x00000000fb780000  0x11000   C:\WINDOWS\SYSTEM32\ColorAdapterClient.dll
+0x00000000e9c20000  0x43000   C:\WINDOWS\SYSTEM32\icm32.dll
+0x00000000f6d80000  0xfb000   C:\WINDOWS\SYSTEM32\textinputframework.dll
+0x0000000002850000  0x35e000  C:\WINDOWS\System32\CoreUIComponents.dll
+0x0000000002bb0000  0xf2000   C:\WINDOWS\System32\CoreMessaging.dll
+0x0000000004210000  0x33000   C:\WINDOWS\SYSTEM32\ntmarta.dll
+0x0000000002030000  0x154000  C:\WINDOWS\SYSTEM32\wintypes.dll

@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 """Python e GTK: Como criar um executável com Cx_Freeze no Windows."""
 
-import sys
+from sys import platform
 
 from cx_Freeze import Executable, setup
 
@@ -13,16 +13,22 @@ build_exe_options = {
     'packages': ['gi'],
 }
 
-if sys.platform == 'win32':
+if platform == 'win32':
     from windows.include_files import include_files
 
+    build_exe_options['include_files'] += [
+        ('C:/msys64/mingw64/lib/girepository-1.0', 'lib/girepository-1.0'),
+        ('C:/msys64/mingw64/lib/gdk-pixbuf-2.0', 'lib/gdk-pixbuf-2.0'),
+        ('C:/msys64/mingw64/lib/gtk-3.0', 'lib/gtk-3.0'),
+        ('C:/msys64/mingw64/share/glib-2.0', 'share/glib-2.0'),
+    ]
     build_exe_options['include_files'] += include_files
     build_exe_options['include_msvcr'] = True
 
-    if sys.platform == 'win32':
+    if platform == 'win32':
         base = 'Win32GUI'
 
-    if sys.platform == 'win64':
+    if platform == 'win64':
         base = 'Win64GUI'
 
 setup(

@@ -16,7 +16,6 @@ class MainWindow(Gtk.ApplicationWindow):
 
     def __init__(self, **kwargs):
         super().__init__(**kwargs)
-        # win32
 
     @Gtk.Template.Callback()
     def _on_button_clicked(self, button):
