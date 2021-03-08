@@ -1,0 +1,7 @@
+data/br.natorsc.CodigoNinja.desktop.in
+data/br.natorsc.CodigoNinja.appdata.xml.in
+data/br.natorsc.CodigoNinja.gschema.xml
+src/window.ui
+src/main.py
+src/window.py
+

@@ -61,6 +61,7 @@ Existe o suporte a diversas linguagens de programação (bindings), contudo as l
 
 - [Python e GTK: Como instalar o msys2](https://codigoninja.dev/python-e-gtk-como-instalar-o-msys2/).
 - [Como configurar o ambiente de desenvolvimento GTK 3 no Windows](https://codigoninja.dev/como-configurar-o-ambiente-de-desenvolvimento-gtk-3-no-windows/).
+- [Python e GTK: Como criar um executável com Cx_Freeze no Windows](https://codigoninja.dev/python-e-gtk-como-criar-um-executavel-com-cx_freeze-no-windows/).
 
 ### Linux
 
