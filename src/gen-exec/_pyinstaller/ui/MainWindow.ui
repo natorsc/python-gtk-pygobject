@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- Generated with glade 3.38.2 -->
 <interface>
-  <requires lib="gtk+" version="3.24"/>
+    <requires lib="gtk+" version="3.24"/>
     <template class="MainWindow" parent="GtkApplicationWindow">
         <property name="can_focus">False</property>
         <property name="default_width">683</property>
         <property name="default_height">384</property>
-        <property name="title" translatable="yes">Gerando um executável com PyInstaller</property>
+        <property name="title" translatable="yes">Python e GTK: Como criar um executável com Cx_Freeze no Windows.</property>
         <property name="icon">./icons/icon.png</property>
         <child>
             <placeholder/>

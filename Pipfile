@@ -12,6 +12,7 @@ pygobject-stubs = "*"
 pygobject = "*"
 sqlalchemy = "*"
 cx-freeze = "*"
+pyinstaller = "*"
 
 [requires]
 python_version = "3.9"

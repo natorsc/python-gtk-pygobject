@@ -1,5 +1,9 @@
 # -*- coding: utf-8 -*-
-"""Python e GTK: Como criar um executável com Cx_Freeze no Windows."""
+"""Python e GTK: Como criar um executável com Cx_Freeze no Windows.
+
+- Está funcionando no Microsoft Windows.
+- Não está funcionando no Linux (Fedora 34).
+"""
 
 from sys import platform
 
