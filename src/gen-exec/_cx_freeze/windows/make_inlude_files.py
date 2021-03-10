@@ -4,8 +4,33 @@
 Script para tratar os dados fornecidos pelo ListDLLs.
 """
 
+from os.path import isfile
 from re import compile
 from subprocess import check_output
+from urllib.request import urlretrieve
+from zipfile import ZipFile
+
+
+def extract_listdlls(filename):
+    """Não utilizar.
+
+    Falta testar.
+    """
+    zip_file = ZipFile(file=filename)
+    zip_file.extractall(path='.')
+    zip_file.close()
+
+
+def config_listdlls():
+    """Não utilizar.
+
+    Falta testar.
+    """
+    filename = 'ListDlls.zip'
+    if not isfile(filename):
+        url = 'https://download.sysinternals.com/files/ListDlls.zip'
+        urlretrieve(url, filename=filename)
+    extract_listdlls(filename=filename)
 
 
 def save(dlls: list):
