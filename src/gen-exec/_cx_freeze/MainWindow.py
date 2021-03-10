@@ -44,8 +44,19 @@ class Application(Gtk.Application):
         Gtk.Application.do_shutdown(self)
 
 
+def run_make_include_files():
+    import os
+    from windows.make_include_files import make_include_files_by_pid
+    pid = os.getpid()
+    make_include_files_by_pid(pid=pid, path='windows')
+
+
 if __name__ == '__main__':
     import sys
 
     app = Application()
+
+    # Gerando o arquivo include_files.py que será utilizado pelo Cx_Freeze.
+    # run_make_include_files()
+
     app.run(sys.argv)
