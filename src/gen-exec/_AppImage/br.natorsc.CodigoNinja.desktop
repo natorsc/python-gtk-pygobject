@@ -1,0 +1,9 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Terminal=false
+Name=Código Ninja
+Comment=Learning environment for Python
+Icon=/usr/share/icons/icon
+Exec=python3 MainWindow.py
+Categories=Education;
