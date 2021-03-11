@@ -1,3 +1,7 @@
+# AppImage
+appimage-builder-cache/
+AppDir/
+
 .bak
 # Pycharm
 .idea/

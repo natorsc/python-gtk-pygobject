@@ -7,7 +7,7 @@ gi.require_version(namespace='Gtk', version='3.0')
 from gi.repository import Gio, Gtk
 
 
-@Gtk.Template(filename='./ui/MainWindow.ui')
+@Gtk.Template(filename='src/ui/MainWindow.ui')
 class MainWindow(Gtk.ApplicationWindow):
     __gtype_name__ = 'MainWindow'
 

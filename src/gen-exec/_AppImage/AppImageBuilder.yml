@@ -8,7 +8,6 @@ script:
   - cp -r src/icons/icon.png AppDir/usr/share/icons/hicolor/256x256/apps/
   - cp -r src/icons/icon.png AppDir/usr/share/icons/
   - cp -r src AppDir/usr/
-  - cp br.natorsc.CodigoNinja.desktop AppDir/
   # Instalando dependêncies do aplicativo.
   # - python3 -m pip install --ignore-installed --prefix=/usr --root=AppDir -r ./requirements.txt
 
@@ -22,29 +21,30 @@ AppDir:
     version: 0.1.0
     # Entry point do interpretador Python.
     exec: usr/bin/python3
-    # Script python que será executado.usar '$@' para encaminhar parâmetros do CLI.
-    exec_args: $@ $APPDIR/usr/src/MainWindow.py
+    # Script python que será executado. Usar '$@' para encaminhar parâmetros do CLI.
+    exec_args: "${APPDIR}/usr/src/MainWindow.py"
+
 
   apt:
     arch: amd64
     sources:
-      - sourceline: 'deb [arch=amd64] http://archive.ubuntu.com/ubuntu/ focal main restricted universe multiverse'
-        key_url: 'http://keyserver.ubuntu.com/pks/lookup?op=get&search=0x3b4fe6acc0b21f32'
+      - sourceline: "deb [arch=amd64] http://archive.ubuntu.com/ubuntu/ focal main restricted universe multiverse"
+        key_url: "http://keyserver.ubuntu.com/pks/lookup?op=get&search=0x3b4fe6acc0b21f32"
 
     include:
       - python3
       - python3-pkg-resources
-      - python3-gobject
-    exclude: [ ]
+      - python3-gi
+    exclude: []
 
   runtime:
     version: "continuous"
     env:
-      PATH: '${APPDIR}/usr/bin:${PATH}'
+      PATH: "${APPDIR}/usr/bin:${PATH}"
       # Python home
-      PYTHONHOME: '${APPDIR}/usr'
+      PYTHONHOME: "${APPDIR}/usr"
       # Path para o diretório site-packages
-      PYTHONPATH: '${APPDIR}/usr/lib/python3.8/site-packages'
+      PYTHONPATH: "${APPDIR}/usr/lib/python3.8/site-packages"
 
 AppImage:
   arch: x86_64
