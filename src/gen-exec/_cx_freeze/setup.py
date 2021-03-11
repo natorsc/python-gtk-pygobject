@@ -1,8 +1,8 @@
 # -*- coding: utf-8 -*-
-"""Python e GTK: Como criar um executável com Cx_Freeze no Windows.
+"""Python e GTK: Como criar um executável.
 
-- Está funcionando no Microsoft Windows.
-- Não está funcionando no Linux (Fedora 34).
+- funcionando no Microsoft Windows (msys2) ✅.
+- Executável gerado no Ubuntu 20.04, falta testar em outros distribuição.
 """
 
 from sys import platform
@@ -44,7 +44,7 @@ setup(
     executables=[
         Executable(
             'MainWindow.py',
-            target_name='CodigoNinja',
+            target_name='br.natorsc.CodigoNinja',
             base=base,
             icon='icons/icon.ico',
         ),
