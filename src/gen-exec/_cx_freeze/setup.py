@@ -2,7 +2,8 @@
 """Python e GTK: Como criar um executável.
 
 - funcionando no Microsoft Windows (msys2) ✅.
-- Executável gerado no Ubuntu 20.04, falta testar em outros distribuição.
+- Executável gerado no Ubuntu 20.04, Testado no Fedora 34.
+    - Erro: ````.
 """
 
 from sys import platform

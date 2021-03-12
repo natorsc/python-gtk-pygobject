@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-"""Python e GTK: Como criar um executável com Cx_Freeze no Windows."""
+"""Python e GTK: Como criar um executável com Cx_Freeze."""
 
 import gi
 
