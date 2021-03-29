@@ -1,0 +1,28 @@
+[tool.poetry]
+name = "gui-python-gtk"
+version = "0.1.0"
+description = ""
+authors = ["natorsc <natorsc@gmail.com>"]
+maintainers = ["natorsc <natorsc@gmail.com>"]
+license = "MIT"
+readme = "README.md"
+homepage = "https://codigoninja.dev/"
+repository = "https://github.com/natorsc/gui-python-gtk"
+documentation = "https://codigoninja.dev/"
+keywords = ["Gtk", "PyGObject", "Python"]
+
+[tool.poetry.urls]
+issues = "https://github.com/natorsc/gui-python-gtk/issues"
+
+[tool.poetry.dependencies]
+python = "^3.9"
+PyGObject-stubs = "^0.0.2"
+PyGObject = "^3.40.0"
+
+[tool.poetry.dev-dependencies]
+pylint = "^2.7.2"
+autopep8 = "^1.5.6"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
