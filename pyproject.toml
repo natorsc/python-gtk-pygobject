@@ -1,7 +1,7 @@
 [tool.poetry]
 name = "gui-python-gtk"
 version = "0.1.0"
-description = ""
+description = "Criando interfaces gráficas com Python e GTK."
 authors = ["natorsc <natorsc@gmail.com>"]
 maintainers = ["natorsc <natorsc@gmail.com>"]
 license = "MIT"
