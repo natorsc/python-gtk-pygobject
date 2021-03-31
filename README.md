@@ -5,6 +5,10 @@
 Repositório com diversos exemplos de código e alguns tutoriais sobre a construção de interfaces gráficas com a linguagem
 de programão Python e o toolkit gráfico GTK.
 
+As diretrizes de estilo do GNOME pode ser vista na URL:
+
+- [https://developer.gnome.org/hig/stable/](https://developer.gnome.org/hig/stable/).
+
 ## O que estou publicando?
 
 A ideia é apenas **estudar** e documentar a construção de interfaces gráficas com a linguagem de programação Python e o
@@ -57,31 +61,8 @@ Existe o suporte a diversas linguagens de programação (bindings), contudo as l
 
 ## Tutoriais
 
-### Windows
-
-- [Python e GTK: Como instalar o msys2](https://codigoninja.dev/python-e-gtk-como-instalar-o-msys2/).
-- [Como configurar o ambiente de desenvolvimento GTK 3 no Windows](https://codigoninja.dev/como-configurar-o-ambiente-de-desenvolvimento-gtk-3-no-windows/).
-- [Python e GTK: Como criar um executável com Cx_Freeze no Windows](https://codigoninja.dev/python-e-gtk-como-criar-um-executavel-com-cx_freeze-no-windows/).
-- [Python e GTK: Como criar um instalador para Windows](https://codigoninja.dev/python-e-gtk-como-criar-um-instalador-para-windows/).
-
-### Linux
-
-- [Como configurar o ambiente de desenvolvimento GTK 3 no Linux](https://codigoninja.dev/como-configurar-o-ambiente-de-desenvolvimento-gtk-3-no-linux/).
-
-### Style
-
-- [Python e GTK: Como ativar o modo escuro em aplicativos.](https://codigoninja.dev/python-e-gtk-como-ativar-o-modo-escuro-em-aplicativos/).
-
-### Ferramentas
-
-- [Como ativar a ferramenta GTK Inspector](https://codigoninja.dev/como-ativar-a-ferramenta-gtk-inspector/).
-- [Como instalar o IDE GNOME Builder no Linux](https://codigoninja.dev/como-instalar-o-ide-gnome-builder-no-linux/).
-- [Como instalar o Gnome Glade no Linux e Window](https://codigoninja.dev/como-instalar-o-gnome-glade-no-linux-e-window/).
-- [Como instalar o GTK 3 icon browser](https://codigoninja.dev/como-instalar-o-gtk-3-icon-browser/).
-
-### Libhandy
-
-- [Como instalar a biblioteca libhandy](https://codigoninja.dev/como-instalar-a-biblioteca-libhandy/).
+- [https://codigoninja.dev/](https://codigoninja.dev/).
+- As diretrizes de esti
 
 ---
 
@@ -190,6 +171,24 @@ Para utilizar o mesmo basta abrir o Gnome Builder e clonar o repositório.
 ### Widgets
 
 > Em construção.
+
+---
+
+## Biblioteca (Library) Adwaita
+
+A libadwaita deve estar disponível a partir do GNOME 41.
+
+- [https://gitlab.gnome.org/GNOME/libadwaita/](https://gitlab.gnome.org/GNOME/libadwaita/).
+
+Essa nova biblioteca é um port da biblioteca Libhandy e tem como objetivo melhorar a experiência do usuário através de um UI/UX mais unificada em aplicativos GNOME.
+
+O padrão de design pode ser visto na URL:
+
+- [https://gitlab.gnome.org/Teams/Design/os-mockups/-/blob/master/lists/list-design-patterns.png](https://gitlab.gnome.org/Teams/Design/os-mockups/-/blob/master/lists/list-design-patterns.png).
+
+Documentação da biblioteca libadwaita:
+
+- [https://gnome.pages.gitlab.gnome.org/libadwaita/doc/](https://gnome.pages.gitlab.gnome.org/libadwaita/doc/)
 
 ---
 
