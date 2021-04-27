@@ -1,15 +1,11 @@
 # -*- coding: utf-8 -*-
-"""Notify.Notification().
+"""Gio.Notification() com Gio.Application().
 
-No Microsoft Windows é necessário instalar o pacote:
+No Microsoft Windows é exibido:
 
 ```bash
-pacman -S mingw-w64-x86_64-libnotify
+(MainWindow.py:6376): GLib-GIO-WARNING **: 15:10:59.027: Notifications are not yet supported on Windows.
 ```
-
-Notificação não funciona no Microsoft Windows:
-
-- [https://gitlab.gnome.org/GNOME/glib/-/issues/1234](https://gitlab.gnome.org/GNOME/glib/-/issues/1234).
 """
 
 import gi
@@ -17,25 +13,23 @@ import gi
 gi.require_version(namespace='Gtk', version='3.0')
 gi.require_version(namespace='Notify', version='0.7')
 
-from gi.repository import Gio, Gtk, Notify
+from gi.repository import Gio, Gtk
 
 
 class MainWindow(Gtk.ApplicationWindow):
 
     def __init__(self, **kwargs):
         super().__init__(**kwargs)
+        self.application = kwargs['application']
 
-        self.set_title(title='Notify.Notification')
+        self.set_title(title='Gio.Notification')
         self.set_default_size(width=1366 / 2, height=768 / 2)
         self.set_position(position=Gtk.WindowPosition.CENTER)
         self.set_default_icon_from_file(filename='../../assets/icons/icon.png')
 
-        self.application_id = kwargs['application'].get_application_id()
-        Notify.init(app_name=self.application_id)
-
         # Criando headerbar.
         headerbar = Gtk.HeaderBar.new()
-        headerbar.set_title(title='GTK Notify')
+        headerbar.set_title(title='Gio Notification')
         headerbar.set_subtitle(subtitle='Exibindo notificações.')
         headerbar.set_show_close_button(setting=True)
         self.set_titlebar(titlebar=headerbar)
@@ -51,31 +45,8 @@ class MainWindow(Gtk.ApplicationWindow):
         self.show_all()
 
     def show_notification(self, widget):
-        # Variável tem que ter self.
-        self.notification = Notify.Notification.new(
-            summary='Título do aplicativo',
-            body='Texto que será exibido na notificação',
-            icon='appointment-soon-symbolic')
-        self.notification.set_app_name(app_name=self.application_id)
-        self.notification.set_urgency(urgency=Notify.Urgency.NORMAL)
-        self.notification.add_action(
-            action='123456',
-            label='Texto do botão',
-            callback=self.notification_callback,
-            user_data=widget,
-        )
-        self.notification.connect('closed', self.on_notification_closed, widget)
-        self.notification.show()
-        widget.set_sensitive(sensitive=False)
-
-    def on_notification_closed(self, widget, button):
-        print('Método é executado SEMPRE que a notificação é fechada.')
-        button.set_sensitive(sensitive=True)
-
-    def notification_callback(self, widget, action, button):
-        print(widget)
-        print(action)
-        button.set_sensitive(sensitive=True)
+        notification = Gio.Notification.new(title='Título do aplicativo')
+        self.application.send_notification(None, notification)
 
 
 class Application(Gtk.Application):
