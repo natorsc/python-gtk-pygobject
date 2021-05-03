@@ -5,10 +5,6 @@
 Repositório com diversos exemplos de código e alguns tutoriais sobre a construção de interfaces gráficas com a linguagem
 de programão Python e o toolkit gráfico GTK.
 
-As diretrizes de estilo do GNOME pode ser vista na URL:
-
-- [https://developer.gnome.org/hig/stable/](https://developer.gnome.org/hig/stable/).
-
 ## O que estou publicando?
 
 A ideia é apenas **estudar** e documentar a construção de interfaces gráficas com a linguagem de programação Python e o
@@ -42,6 +38,10 @@ Existe o suporte a diversas linguagens de programação (bindings), contudo as l
 - Rust.
 - Vala.
 
+As diretrizes de estilo do GNOME (HIG) podem ser vistas em:
+
+- [https://developer.gnome.org/hig/stable/](https://developer.gnome.org/hig/stable/).
+
 ---
 
 ## bibliotecas:
@@ -62,7 +62,6 @@ Existe o suporte a diversas linguagens de programação (bindings), contudo as l
 ## Tutoriais
 
 - [https://codigoninja.dev/](https://codigoninja.dev/).
-- As diretrizes de esti
 
 ---
 
@@ -180,15 +179,57 @@ A libadwaita deve estar disponível a partir do GNOME 41.
 
 - [https://gitlab.gnome.org/GNOME/libadwaita/](https://gitlab.gnome.org/GNOME/libadwaita/).
 
-Essa nova biblioteca é um port da biblioteca Libhandy e tem como objetivo melhorar a experiência do usuário através de um UI/UX mais unificada em aplicativos GNOME.
+Essa nova biblioteca é baseada (fork) na biblioteca  Libhandy e tem como objetivo melhorar a experiência do usuário através de um UI/UX mais unificada em aplicativos GNOME.
 
-O padrão de design pode ser visto na URL:
+Alguns exemplos de design podem ser vistos em:
 
 - [https://gitlab.gnome.org/Teams/Design/os-mockups/-/blob/master/lists/list-design-patterns.png](https://gitlab.gnome.org/Teams/Design/os-mockups/-/blob/master/lists/list-design-patterns.png).
 
 Documentação da biblioteca libadwaita:
 
 - [https://gnome.pages.gitlab.gnome.org/libadwaita/doc/](https://gnome.pages.gitlab.gnome.org/libadwaita/doc/)
+
+### Widgets
+
+- [Adw.ActionRow](#).
+- [Adw.animation](#).
+- [Adw.ApplicationWindow](#).
+- [Adw.Avatar](#).
+- [Adw.Bin](#).
+- [Adw.CarouselIndicatorDots](#).
+- [Adw.CarouselIndicatorLines](#).
+- [Adw.Carousel](#).
+- [Adw.ClampLayout](#).
+- [Adw.ClampScrollable](#).
+- [Adw.Clamp](#).
+- [Adw.ComboRow](#).
+- [Adw.DeprecationMacros](#).
+- [Adw.EnumListModel](#).
+- [Adw.EnumValueObject](#).
+- [Adw.Enums](#).
+- [Adw.ExpanderRow](#).
+- [Adw.Flap](#).
+- [Adw.HeaderBar](#).
+- [Adw.Leaflet](#).
+- [Adw.Main](#).
+- [Adw.NavigationDirection](#).
+- [Adw.PreferencesGroup](#).
+- [Adw.PreferencesPage](#).
+- [Adw.PreferencesRow](#).
+- [Adw.PreferencesWindow](#).
+- [Adw.Squeezer](#).
+- [Adw.StatusPage](#).
+- [Adw.SwipeGroup](#).
+- [Adw.SwipeTracker](#).
+- [Adw.Swipeable](#).
+- [Adw.Types](#).
+- [Adw.ValueObject](#).
+- [Adw.Version](#).
+- [Adw.ViewSwitcherBar](#).
+- [Adw.ViewSwitcherTitle](#).
+- [Adw.ViewSwitcher](#).
+- [Adw.WindowTitle](#).
+- [Adw.Window](#).
 
 ---
 
