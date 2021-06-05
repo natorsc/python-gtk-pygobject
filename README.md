@@ -224,7 +224,7 @@ Documentação da biblioteca libadwaita:
 
 ## GTK 3 Libhandy
 
-> De prefeirencia por utilizar a biblioteca [libadwaita](#biblioteca-adwaita).
+> De prefeirencia por utilizar a biblioteca [libadwaita](#gtk-4-Libadwaita).
 
 ### Instalação
 
