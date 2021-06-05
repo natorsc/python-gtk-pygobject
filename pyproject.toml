@@ -9,7 +9,7 @@ readme = "README.md"
 homepage = "https://codigoninja.dev/"
 repository = "https://github.com/natorsc/gui-python-gtk"
 documentation = "https://codigoninja.dev/"
-keywords = ["Gtk", "PyGObject", "Python"]
+keywords = ["GTK 3", "GTK 4", "PyGObject", "Python 3"]
 
 [tool.poetry.urls]
 issues = "https://github.com/natorsc/gui-python-gtk/issues"
