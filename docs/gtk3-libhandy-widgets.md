@@ -6,7 +6,7 @@
 - [Gnome Glade](https://github.com/natorsc/gui-python-gtk/tree/master/src/gtk3-libhandy/actionrow/glade).
 - [Python](https://github.com/natorsc/gui-python-gtk/tree/master/src/gtk3-libhandy/actionrow).
 
-![Handy.ActionRow](images/gkt3-libhandy/pygobject-hdy-actionrow.webp)
+![Handy.ActionRow](images/gtk3-libhandy/pygobject-hdy-actionrow.webp)
 
 ---
 
@@ -22,7 +22,7 @@ Não está funcionando de forma adequada ou não sei implementar. Disponível a 
 
 - [Python](https://github.com/natorsc/gui-python-gtk/tree/master/src/gtk3-libhandy/avatar).
 
-![Handy.Avatar](images/gkt3-libhandy/pygobject-hdy-avatar.webp)
+![Handy.Avatar](images/gtk3-libhandy/pygobject-hdy-avatar.webp)
 
 ---
 
@@ -30,7 +30,7 @@ Não está funcionando de forma adequada ou não sei implementar. Disponível a 
 
 - [Python](https://github.com/natorsc/gui-python-gtk/tree/master/src/gtk3-libhandy/carousel).
 
-![Handy.Carousel](images/gkt3-libhandy/pygobject-hdy-carousel.webp)
+![Handy.Carousel](images/gtk3-libhandy/pygobject-hdy-carousel.webp)
 
 ---
 
@@ -38,7 +38,7 @@ Não está funcionando de forma adequada ou não sei implementar. Disponível a 
 
 - [Python](https://github.com/natorsc/gui-python-gtk/tree/master/src/gtk3-libhandy/carousel-indicator-dots).
 
-![Handy.CarouselIndicatorDots](images/gkt3-libhandy/pygobject-hdy-carousel-indicator-dots.webp)
+![Handy.CarouselIndicatorDots](images/gtk3-libhandy/pygobject-hdy-carousel-indicator-dots.webp)
 
 ---
 
@@ -46,7 +46,7 @@ Não está funcionando de forma adequada ou não sei implementar. Disponível a 
 
 [Python](https://github.com/natorsc/gui-python-gtk/tree/master/src/gtk3-libhandy/carousel-indicator-lines).
 
-![Handy.CarouselIndicatorLines](images/gkt3-libhandy/pygobject-hdy-carousel-indicator-lines.webp)
+![Handy.CarouselIndicatorLines](images/gtk3-libhandy/pygobject-hdy-carousel-indicator-lines.webp)
 
 ---
 
@@ -62,7 +62,7 @@ Não sei implementar ou não está funcionando.
 
 - [Python](https://github.com/natorsc/gui-python-gtk/tree/master/src/gtk3-libhandy/comborow).
 
-![Handy.ComboRow](images/gkt3-libhandy/pygobject-hdy-comborow.webp)
+![Handy.ComboRow](images/gtk3-libhandy/pygobject-hdy-comborow.webp)
 
 ---
 
@@ -78,7 +78,7 @@ Não sei implementar ou não está funcionando.
 
 * [Python](https://github.com/natorsc/gui-python-gtk/tree/master/src/gtk3-libhandy/expanderrow).
 
-![Handy.ExpanderRow](images/gkt3-libhandy/pygobject-hdy-expanderrow.webp)
+![Handy.ExpanderRow](images/gtk3-libhandy/pygobject-hdy-expanderrow.webp)
 
 ---
 
@@ -86,7 +86,7 @@ Não sei implementar ou não está funcionando.
 
 - [Python](https://github.com/natorsc/gui-python-gtk/tree/master/src/gtk3-libhandy/headerbar).
 
-![Handy.HeaderBar](images/gkt3-libhandy/pygobject-hdy-headerbar.webp)
+![Handy.HeaderBar](images/gtk3-libhandy/pygobject-hdy-headerbar.webp)
 
 ---
 
@@ -102,7 +102,7 @@ Não sei implementar ou não está funcionando.
 
 - [Python](https://github.com/natorsc/gui-python-gtk/tree/master/src/gtk3-libhandy/keypad).
 
-![Handy.Keypad](images/gkt3-libhandy/pygobject-hdy-keypad.webp)
+![Handy.Keypad](images/gtk3-libhandy/pygobject-hdy-keypad.webp)
 
 ---
 
@@ -110,11 +110,11 @@ Não sei implementar ou não está funcionando.
 
 - [Python](https://github.com/natorsc/gui-python-gtk/tree/master/src/gtk3-libhandy/leaflet).
 
-![Handy.Leaflet](images/gkt3-libhandy/pygobject-hdy-leaflet.webp)
+![Handy.Leaflet](images/gtk3-libhandy/pygobject-hdy-leaflet.webp)
 
 - [Python dois Leaflets](https://github.com/natorsc/gui-python-gtk/tree/master/src/gtk3-libhandy/leaflet).
 
-![Handy.Leaflet sync](images/gkt3-libhandy/pygobject-hdy-leaflet-sync.webp)
+![Handy.Leaflet sync](images/gtk3-libhandy/pygobject-hdy-leaflet-sync.webp)
 
 ---
 
@@ -122,7 +122,7 @@ Não sei implementar ou não está funcionando.
 
 - [Python](https://github.com/natorsc/gui-python-gtk/tree/master/src/gtk3-libhandy/searchbar).
 
-![Handy.SearchBar](images/gkt3-libhandy/pygobject-hdy-searchbar.webp)
+![Handy.SearchBar](images/gtk3-libhandy/pygobject-hdy-searchbar.webp)
 
 ---
 
@@ -138,7 +138,7 @@ Não sei implementar ou não está funcionando.
 
 - [Python](https://github.com/natorsc/gui-python-gtk/tree/master/src/gtk3-libhandy/titlebar).
 
-![Handy.TitleBar](images/gkt3-libhandy/pygobject-hdy-titlebar.webp)
+![Handy.TitleBar](images/gtk3-libhandy/pygobject-hdy-titlebar.webp)
 
 ---
 
@@ -146,7 +146,7 @@ Não sei implementar ou não está funcionando.
 
 - [Python](https://github.com/natorsc/gui-python-gtk/tree/master/src/gtk3-libhandy/viewswitcher).
 
-![Handy.ViewSwitcher](images/gkt3-libhandy/pygobject-hdy-viewswitcher.webp)
+![Handy.ViewSwitcher](images/gtk3-libhandy/pygobject-hdy-viewswitcher.webp)
 
 ---
 
@@ -154,7 +154,7 @@ Não sei implementar ou não está funcionando.
 
 - [Python](https://github.com/natorsc/gui-python-gtk/tree/master/src/gtk3-libhandy/viewswitcherbar).
 
-![Handy-ViewSwitcherBar](images/gkt3-libhandy/pygobject-hdy-viewswitcherbar.webp)
+![Handy-ViewSwitcherBar](images/gtk3-libhandy/pygobject-hdy-viewswitcherbar.webp)
 
 ---
 
@@ -164,7 +164,7 @@ Falta imagem.
 
 - [Python](https://github.com/natorsc/gui-python-gtk/tree/master/src/gtk3-libhandy/viewswitchertitle).
 
-![Handy-ViewSwitcherTitle](images/gkt3-libhandy/pygobject-gtk3-libhandy-viewswitchertitle.webp)
+![Handy-ViewSwitcherTitle](images/gtk3-libhandy/pygobject-gtk3-libhandy-viewswitchertitle.webp)
 
 ---
 

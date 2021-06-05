@@ -164,7 +164,9 @@ Os widgets que foram criados ou passaram por grandes aprimoramentos são:
 
 ## GTK 4 Libadwaita
 
-> A libadwaita deve estar disponível a partir do GNOME 41 ela irá substituir a biblioteca libhandy.
+> A libadwaita deve estar disponível a partir do GNOME 41, a mesma irá substituir a biblioteca libhandy.
+
+![Python e GTK4: Libadwaita](./docs/images/gtk4-libadwaita/gtk-4-pygobject-adw-applicationwindow.webp)
 
 Essa nova biblioteca é baseada na biblioteca  Libhandy e tem como objetivo melhorar a experiência do usuário através de um UI/UX mais unificada em aplicativos GNOME.
 
@@ -180,7 +182,7 @@ Documentação da biblioteca libadwaita:
 
 - [Adw.ActionRow](#).
 - [Adw.animation](#).
-- [Adw.ApplicationWindow](#).
+- [Adw.ApplicationWindow](./docs/gtk4-libadwaita-widgets.md#libadwaita-applicationwindow).
 - [Adw.Avatar](#).
 - [Adw.Bin](#).
 - [Adw.CarouselIndicatorDots](#).
@@ -238,7 +240,7 @@ sudo apt install libhandy
 sudo apt install libhandy-1
 ```
  
-![Python e GTK 3: libhandy 1](docs/images/gkt3-libhandy/pygobject-hdy-actionrow.webp)
+![Python e GTK 3: libhandy 1](docs/images/gtk3-libhandy/pygobject-hdy-actionrow.webp)
 *Python e GTK 3: libhandy 1*
 
 ### Widgets
