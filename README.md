@@ -138,7 +138,7 @@ As diretrizes de estilo do GNOME (HIG) podem ser vistas em:
 
 > Em construção.
 
-> Exemplos estarão disponíveis assim que o Gnome 40 estiver disponível nas principais distribuições Linux.
+![Python e GTK4: Gtk.ApplicationWindow](./docs/images/gtk4/gtk-4-pygobject-applicationwindow.webp)
 
 O GTK 4 foi lançado em 16 de dezembro 2020.
 
@@ -156,30 +156,17 @@ Os widgets que foram criados ou passaram por grandes aprimoramentos são:
 - Shaders.
 - Accessibility.
 
-## Testando o GTK 4
-
-O GTK 4 juntamente com a libhandy 4 podem ser testados utilizando-se o template base que está disponível no repositório:
-
-[https://gitlab.gnome.org/tallero/helloworld](https://gitlab.gnome.org/tallero/helloworld).
-
-Para utilizar o mesmo basta abrir o Gnome Builder e clonar o repositório.
-
-![GTK 4 e libhandy 4](./docs/images/pygobject-gtk4-libhandy.webp)
-*GTK 4 e libhandy 4*
-
 ### Widgets
 
-> Em construção.
+- [Gtk.ApplicationWindow](./docs/gtk4-widgets.md#gtk-applicationwindow).
 
 ---
 
-## Biblioteca (Library) Adwaita
+## GTK 4 Libadwaita
 
-A libadwaita deve estar disponível a partir do GNOME 41.
+> A libadwaita deve estar disponível a partir do GNOME 41 ela irá substituir a biblioteca libhandy.
 
-- [https://gitlab.gnome.org/GNOME/libadwaita/](https://gitlab.gnome.org/GNOME/libadwaita/).
-
-Essa nova biblioteca é baseada (fork) na biblioteca  Libhandy e tem como objetivo melhorar a experiência do usuário através de um UI/UX mais unificada em aplicativos GNOME.
+Essa nova biblioteca é baseada na biblioteca  Libhandy e tem como objetivo melhorar a experiência do usuário através de um UI/UX mais unificada em aplicativos GNOME.
 
 Alguns exemplos de design podem ser vistos em:
 
@@ -233,30 +220,49 @@ Documentação da biblioteca libadwaita:
 
 ---
 
-## Libhandy
+## GTK 3 Libhandy
+
+> De prefeirencia por utilizar a biblioteca [libadwaita](#biblioteca-adwaita).
+
+### Instalação
+
+#### Fedora
+
+```bash
+sudo apt install libhandy
+```
+
+#### Ubuntu
+
+```bash
+sudo apt install libhandy-1
+```
+ 
+![Python e GTK 3: libhandy 1](docs/images/gkt3-libhandy/pygobject-hdy-actionrow.webp)
+*Python e GTK 3: libhandy 1*
 
 ### Widgets
 
-- [Handy.ActionRow](./docs/handy-widgets.md#handy-actionrow).
-- [Handy.ApplicationWindow](./docs/handy-widgets.md#handy-applicationwindow).
-- [Handy.Avatar](./docs/handy-widgets.md#handy-avatar).
-- [Handy.Carousel](./docs/handy-widgets.md#handy-avatar).
-- [Handy.CarouselIndicatorDots](./docs/handy-widgets.md#handy-carousel-indicator-dots).
-- [Handy.CarouselIndicatorLines](./docs/handy-widgets.md#handy-carousel-indicator-lines).
-- [Handy.Clamp](./docs/handy-widgets.md#handy-clamp).
-- [Handy.ComboRow](./docs/handy-widgets.md#handy-comborow).
-- [Handy.Deck](./docs/handy-widgets.md#handy-deck).
-- [Handy.ExpanderRow](./docs/handy-widgets.md#handy-expanderrow).
-- [Handy.HeaderBar](./docs/handy-widgets.md#handy-headerbar).
-- [Handy.HeaderGroup](./docs/handy-widgets.md#handy-headergroup).
-- [Handy.Leaflet](./docs/handy-widgets.md#handy-leaflet).
-- [Handy.SearchBar](./docs/handy-widgets.md#handy-searchbar).
-- [Handy.Squeezer](./docs/handy-widgets.md#handy-squeezer).
-- [Handy.ViewSwitcher](./docs/handy-widgets.md#handy-view-switcher).
-- [Handy.ViewSwitcherBar](./docs/handy-widgets.md#handy-view-switcher-bar).
-- [Handy.ViewSwitcherTitle](./docs/handy-widgets.md#handy-view-switcher-title).
-- [Handy.Window](./docs/handy-widgets.md#handy-window).
-- [Handy.WindowHandle](./docs/handy-widgets.md#handy-window-handle).
+- [Handy.ActionRow](./docs/gtk3-libhandy-widgets.md#handy-actionrow).
+- [Handy.ApplicationWindow](./docs/gtk3-libhandy-widgets.md#handy-applicationwindow).
+- [Handy.Avatar](./docs/gtk3-libhandy-widgets.md#handy-avatar).
+- [Handy.Carousel](./docs/gtk3-libhandy-widgets.md#handy-avatar).
+- [Handy.CarouselIndicatorDots](./docs/gtk3-libhandy-widgets.md#handy-carousel-indicator-dots).
+- [Handy.CarouselIndicatorLines](./docs/gtk3-libhandy-widgets.md#handy-carousel-indicator-lines).
+- [Handy.Clamp](./docs/gtk3-libhandy-widgets.md#handy-clamp).
+- [Handy.ComboRow](./docs/gtk3-libhandy-widgets.md#handy-comborow).
+- [Handy.Deck](./docs/gtk3-libhandy-widgets.md#handy-deck).
+- [Handy.ExpanderRow](./docs/gtk3-libhandy-widgets.md#handy-expanderrow).
+- [Handy.HeaderBar](./docs/gtk3-libhandy-widgets.md#handy-headerbar).
+- [Handy.HeaderGroup](./docs/gtk3-libhandy-widgets.md#handy-headergroup).
+- [Handy.Leaflet](./docs/gtk3-libhandy-widgets.md#handy-leaflet).
+- [Handy.SearchBar](./docs/gtk3-libhandy-widgets.md#handy-searchbar).
+- [Handy.Squeezer](./docs/gtk3-libhandy-widgets.md#handy-squeezer).
+- [Handy.ViewSwitcher](./docs/gtk3-libhandy-widgets.md#handy-view-switcher).
+- [Handy.ViewSwitcherBar](./docs/gtk3-libhandy-widgets.md#handy-view-switcher-bar).
+- [Handy.ViewSwitcherTitle](./docs/gtk3-libhandy-widgets.md#handy-view-switcher-title).
+- [Handy.Window](./docs/gtk3-libhandy-widgets.md#handy-window).
+- [Handy.WindowHandle](./docs/gtk3-libhandy-widgets.md#handy-window-handle).
 
 ---
 
