@@ -61,7 +61,7 @@ As diretrizes de estilo do GNOME (HIG) podem ser vistas em:
 
 ## Tutoriais
 
-- [https://codigoninja.dev/](https://codigoninja.dev/).
+- [https://blog.codigoninja.dev/](https://blog.codigoninja.dev/).
 
 ---
 
