@@ -79,6 +79,7 @@ As diretrizes de estilo do GNOME (HIG) podem ser vistas em:
 - [Gtk.Box horizontal](./docs/gtk3-widgets.md#gtk-box-horizontal).
 - [Gtk.Box vertical](./docs/gtk3-widgets.md#gtk-box-vertical).
 - [Gtk.Button](./docs/gtk3-widgets.md#gtk-button).
+    - [Informações do widget](./docs/gtk-3/GtkButton.md)
 - [Gtk.ButtonBox](./docs/gtk3-widgets.md#gtk-buttonbox).
 - [Gtk.Calendar](./docs/gtk3-widgets.md#gtk-calendar).
 - [Gtk.CheckButton](./docs/gtk3-widgets.md#gtk-checkbutton).

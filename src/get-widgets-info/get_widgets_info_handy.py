@@ -53,7 +53,7 @@ def save_data():
     arquivo no formato ``*.md``.
     """
     # Abrindo o template.
-    with open('template.txt', mode='r') as f:
+    with open('../../data/template.txt', mode='r') as f:
         # Lendo o conteudo do arquivo.
         template = f.read()
         # Fechando o arquivo que foi aberto.
