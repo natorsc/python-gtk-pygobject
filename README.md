@@ -18,17 +18,21 @@ toolkit para construção de interfaces gráficas GTK.
 
 O GTK é um toolkit multiplataforma para a criação de interfaces gráficas.
 
-O mesmo utiliza licença GNU LGPL, o que permite a sua utilização para construção de softwares que sejam livres ou proprietários.
+O mesmo utiliza licença GNU LGPL, o que permite a sua utilização para construção de softwares que sejam livres ou
+proprietários.
 
-Foi desenvolvido inicialmente para o GIMP (GNU Image Manipulation Program), por isso foi batizado de GIMP Toolkit ou simplesmente GTK.
+Foi desenvolvido inicialmente para o GIMP (GNU Image Manipulation Program), por isso foi batizado de GIMP Toolkit ou
+simplesmente GTK.
 
 Originalmente criado por, Peter Mattis, Spencer Kimball e Josh MacDonald.
 
-O GTK é comumente utilizado na elaboração de aplicativos para o ambiente de desktop GNOME, contudo por ser multiplataforma pode ser executado sem problemas em diversos sistemas operacionais e ambientes gráficos.
+O GTK é comumente utilizado na elaboração de aplicativos para o ambiente de desktop GNOME, contudo por ser
+multiplataforma pode ser executado sem problemas em diversos sistemas operacionais e ambientes gráficos.
 
 O toolkit é escrito em C e o seu design é orientado a objeto com base no sistema de objetos da biblioteca GLib.
 
-Existe o suporte a diversas linguagens de programação (bindings), contudo as linguagem que são suportadas oficialmente (até o momento que escrevo) são:
+Existe o suporte a diversas linguagens de programação (bindings), contudo as linguagem que são suportadas oficialmente (
+até o momento que escrevo) são:
 
 - C++.
 - C#.
@@ -46,16 +50,28 @@ As diretrizes de estilo do GNOME (HIG) podem ser vistas em:
 
 ## bibliotecas:
 
-- **GLib**: Biblioteca com utilitários de uso geral, não é específica para interfaces gráficas. GLib fornece muitos tipos de dados úteis, macros, conversões de tipo, utilitários de string, utilitários de arquivo, uma abstração de loop principal e assim por diante.
+- **GLib**: Biblioteca com utilitários de uso geral, não é específica para interfaces gráficas. GLib fornece muitos
+  tipos de dados úteis, macros, conversões de tipo, utilitários de string, utilitários de arquivo, uma abstração de loop
+  principal e assim por diante.
 - **GObject**: Biblioteca que fornece um sistema de tipos.
-- **GIO**: Uma API VFS (Virtual file system) moderna e fácil de usar, incluindo abstrações para arquivos, drives, volumes, fluxo de IO, bem como programação de rede e comunicação DBus.
+- **GIO**: Uma API VFS (Virtual file system) moderna e fácil de usar, incluindo abstrações para arquivos, drives,
+  volumes, fluxo de IO, bem como programação de rede e comunicação DBus.
 - **cairo**: Cairo é uma biblioteca de gráficos 2D com suporte para vários dispositivos de saída.
-- **Pango**: Pango é uma biblioteca para manipulação de texto internacionalizada. Ele gira em torno do objeto PangoLayout, representando um parágrafo de texto. Pango fornece o motor para GtkTextView, GtkLabel, GtkEntry e outros widgets que exibem texto.
-- **ATK**: ATK é o Kit de ferramentas de acessibilidade. Ele fornece um conjunto de interfaces genéricas que permitem que tecnologias de acessibilidade interajam com uma interface gráfica de usuário. Por exemplo, um leitor de tela usa ATK para descobrir o texto em uma interface e lê-lo para usuários cegos. Os widgets GTK possuem suporte integrado para acessibilidade usando a estrutura ATK.
-- **GdkPixbuf**: Esta é uma pequena biblioteca que permite criar objetos GdkPixbuf (“buffer de pixel”) a partir de dados de imagem ou arquivos de imagem. Use um GdkPixbuf em combinação com GtkImage para exibir imagens.
-- **graphene**: Esta é uma pequena biblioteca que fornece operações e tipos de dados vetoriais e matriciais. O graphene fornece implementações otimizadas usando vários conjuntos de instruções SIMD, como SSE.
-- **GDK**: GDK é a camada de abstração que permite ao GTK oferecer suporte a vários sistemas de janelas. O GDK fornece recursos de sistema de janelas no Wayland, X11, Windows e OSX.
-- **GSK**: GSK é uma biblioteca para criar um gráfico de cena a partir de nós de renderização e renderizá-lo usando diferentes APIs de renderização. GSK fornece renderizadores para OpenGL, Vulkan e Cairo.
+- **Pango**: Pango é uma biblioteca para manipulação de texto internacionalizada. Ele gira em torno do objeto
+  PangoLayout, representando um parágrafo de texto. Pango fornece o motor para GtkTextView, GtkLabel, GtkEntry e outros
+  widgets que exibem texto.
+- **ATK**: ATK é o Kit de ferramentas de acessibilidade. Ele fornece um conjunto de interfaces genéricas que permitem
+  que tecnologias de acessibilidade interajam com uma interface gráfica de usuário. Por exemplo, um leitor de tela usa
+  ATK para descobrir o texto em uma interface e lê-lo para usuários cegos. Os widgets GTK possuem suporte integrado para
+  acessibilidade usando a estrutura ATK.
+- **GdkPixbuf**: Esta é uma pequena biblioteca que permite criar objetos GdkPixbuf (“buffer de pixel”) a partir de dados
+  de imagem ou arquivos de imagem. Use um GdkPixbuf em combinação com GtkImage para exibir imagens.
+- **graphene**: Esta é uma pequena biblioteca que fornece operações e tipos de dados vetoriais e matriciais. O graphene
+  fornece implementações otimizadas usando vários conjuntos de instruções SIMD, como SSE.
+- **GDK**: GDK é a camada de abstração que permite ao GTK oferecer suporte a vários sistemas de janelas. O GDK fornece
+  recursos de sistema de janelas no Wayland, X11, Windows e OSX.
+- **GSK**: GSK é uma biblioteca para criar um gráfico de cena a partir de nós de renderização e renderizá-lo usando
+  diferentes APIs de renderização. GSK fornece renderizadores para OpenGL, Vulkan e Cairo.
 
 ---
 
@@ -75,63 +91,105 @@ As diretrizes de estilo do GNOME (HIG) podem ser vistas em:
 ### Widgets
 
 - [Gtk.ActionBar](./docs/gtk3-widgets.md#gtk-actionbar).
+    - [Informações do widget](./docs/gtk-3-widgets-info/GtkActionBar.md).
 - [Gtk.ApplicationWindow](./docs/gtk3-widgets.md#gtk-applicationwindow).
+    - [Informações do widget](./docs/gtk-3-widgets-info/GtkApplicationWindow.md).
 - [Gtk.Box horizontal](./docs/gtk3-widgets.md#gtk-box-horizontal).
+    - [Informações do widget](./docs/gtk-3-widgets-info/GtkBox.md).
 - [Gtk.Box vertical](./docs/gtk3-widgets.md#gtk-box-vertical).
+    - [Informações do widget](./docs/gtk-3-widgets-info/GtkBox.md).
 - [Gtk.Button](./docs/gtk3-widgets.md#gtk-button).
-    - [Informações do widget](./docs/gtk-3/GtkButton.md)
+    - [Informações do widget](./docs/gtk-3-widgets-info/GtkButton.md).
 - [Gtk.ButtonBox](./docs/gtk3-widgets.md#gtk-buttonbox).
+    - [Informações do widget](./docs/gtk-3-widgets-info/GtkButtonBox.md).
 - [Gtk.Calendar](./docs/gtk3-widgets.md#gtk-calendar).
+    - [Informações do widget](./docs/gtk-3-widgets-info/GtkCalendar.md).
 - [Gtk.CheckButton](./docs/gtk3-widgets.md#gtk-checkbutton).
+    - [Informações do widget](./docs/gtk-3-widgets-info/GtkCheckButton.md).
 - [Gtk.Dialog](./docs/gtk3-widgets.md#gtk-dialog).
+    - [Informações do widget](./docs/gtk-3-widgets-info/GtkDialog.md).
 - [Gtk.DragAndDrop](./docs/gtk3-widgets.md#gtk-drag-and-drop).
 - [Gtk.Entry](./docs/gtk3-widgets.md#gtk-entry).
+    - [Informações do widget](./docs/gtk-3-widgets-info/GtkEntry.md).
 - [Gtk.EntryCompletion](./docs/gtk3-widgets.md#gtk-entrycompletion).
 - [Gtk.EventBox](./docs/gtk3-widgets.md#gtk-eventbox).
+    - [Informações do widget](./docs/gtk-3-widgets-info/GtkEventBox.md).
 - [Gtk.FileChooserDialog folder](./docs/gtk3-widgets.md#gtk-filechooserdialog-folder).
+    - [Informações do widget](./docs/gtk-3-widgets-info/GtkFileChooserDialog.md).
 - [Gtk.FileChooserDialog open](./docs/gtk3-widgets.md#gtk-filechooserdialog-open).
 - [Gtk.FileChooserDialog save](./docs/gtk3-widgets.md#gtk-filechooserdialog-save).
 - [Gtk.Fixed](./docs/gtk3-widgets.md#gtk-filechooserdialog-save).
+    - [Informações do widget](./docs/gtk-3-widgets-info/GtkFixed.md).
 - [Gtk.FlowBox](./docs/gtk3-widgets.md#gtk-flowbox).
+    - [Informações do widget](./docs/gtk-3-widgets-info/GtkFlowBox.md).
 - [Gtk.Grid](./docs/gtk3-widgets.md#gtk-grid).
+    - [Informações do widget](./docs/gtk-3-widgets-info/GtkGrid.md).
 - [Gtk.HeaderBar](./docs/gtk3-widgets.md#gtk-headerbar).
+    - [Informações do widget](./docs/gtk-3-widgets-info/GtkHeaderBar.md).
 - [Gtk.Image](./docs/gtk3-widgets.md#gtk-image).
+    - [Informações do widget](./docs/gtk-3-widgets-info/GtkImage.md).
 - [Gtk.InfoBar](./docs/gtk3-widgets.md#gtk-infobar).
+    - [Informações do widget](./docs/gtk-3-widgets-info/GtkInfoBar.md).
 - [Gtk.Layout](./docs/gtk3-widgets.md#gtk-layout).
+    - [Informações do widget](./docs/gtk-3-widgets-info/GtkLayout.md).
 - [Gtk.LinkButton](./docs/gtk3-widgets.md#gtk-linkbutton).
+    - [Informações do widget](./docs/gtk-3-widgets-info/GtkLinkButton.md).
 - [Gtk.ListBox](./docs/gtk3-widgets.md#gtk-listbox).
+    - [Informações do widget](./docs/gtk-3-widgets-info/GtkListBox.md).
 - [Gtk.Menu](./docs/gtk3-widgets.md#gtk-menu).
+    - [Informações do widget](./docs/gtk-3-widgets-info/GtkMenu.md).
 - [Gtk.MenuBar](./docs/gtk3-widgets.md#gtk-menubar).
+    - [Informações do widget](./docs/gtk-3-widgets-info/GtkMenuBar.md).
 - [Gtk.MenuButton](./docs/gtk3-widgets.md#gtk-menubutton).
+    - [Informações do widget](./docs/gtk-3-widgets-info/GtkMenuButton.md).
 - [Gtk.MessageDialog](./docs/gtk3-widgets.md#gtk-messagedialog).
+    - [Informações do widget](./docs/gtk-3-widgets-info/GtkMessageDialog.md).
 - [Gtk.Notebook](./docs/gtk3-widgets.md#gtk-notebook).
+    - [Informações do widget](./docs/gtk-3-widgets-info/GtkNotebook.md).
 - [Gtk.Notify](./docs/gtk3-widgets.md#gtk-notify).
 - [Gtk.Overlay](./docs/gtk3-widgets.md#gtk-overlay).
+    - [Informações do widget](./docs/gtk-3-widgets-info/GtkOverlay.md).
 - [Gtk.Paned horizontal](./docs/gtk3-widgets.md#gtk-paned-horizontal).
+    - [Informações do widget](./docs/gtk-3-widgets-info/GtkPaned.md).
 - [Gtk.Paned vertical](./docs/gtk3-widgets.md#gtk-paned-vertical).
 - [Gtk.Popover](./docs/gtk3-widgets.md#gtk-popover).
+    - [Informações do widget](./docs/gtk-3-widgets-info/GtkPopover.md).
 - [Gtk.PrintOperation](./docs/gtk3-widgets.md#gtk-printoperation).
 - [Gtk.RadioButton](./docs/gtk3-widgets.md#gtk-radiobutton).
+    - [Informações do widget](./docs/gtk-3-widgets-info/GtkRadioButton.md).
 - [Gtk.Revealer](./docs/gtk3-widgets.md#gtk-revealer).
+    - [Informações do widget](./docs/gtk-3-widgets-info/GtkRevealer.md).
 - [Gtk.SearchBar](./docs/gtk3-widgets.md#gtk-searchbar).
+    - [Informações do widget](./docs/gtk-3-widgets-info/GtkSearchBar.md).
 - [Gtk.SearchEntry](./docs/gtk3-widgets.md#gtk-searchentry).
+    - [Informações do widget](./docs/gtk-3-widgets-info/GtkSearchEntry.md).
 - [Gtk.Separator](./docs/gtk3-widgets.md#gtk-separator).
+    - [Informações do widget](./docs/gtk-3-widgets-info/GtkSeparator.md).
 - [Gtk.Spinner](./docs/gtk3-widgets.md#gtk-spinner).
+    - [Informações do widget](./docs/gtk-3-widgets-info/GtkSpinner.md).
 - [Gtk.StackSidebar](./docs/gtk3-widgets.md#gtk-stacksidebar).
+    - [Informações do widget](./docs/gtk-3-widgets-info/GtkStackSidebar.md).
 - [Gtk.StackSwitcher](./docs/gtk3-widgets.md#gtk-stackswitcher).
+    - [Informações do widget](./docs/gtk-3-widgets-info/GtkStackSwitcher.md).
 - [Gtk.Statusbar](./docs/gtk3-widgets.md#gtk-statusbar).
+    - [Informações do widget](./docs/gtk-3-widgets-info/GtkStatusbar.md).
 - [Gtk Style add class](./docs/gtk3-widgets.md#gtk-style-add-class).
 - [Gtk Style css provider](./docs/gtk3-widgets.md#gtk-style-css-provider).
 - [Gtk Style dark mode](./docs/gtk3-widgets.md#gtk-style-dark-mode).
 - [Gtk Style set name](./docs/gtk3-widgets.md#gtk-style-set-name).
-- [Gtk.switch](./docs/gtk3-widgets.md#gtk-switch).
+- [Gtk.Switch](./docs/gtk3-widgets.md#gtk-switch).
+    - [Informações do widget](./docs/gtk-3-widgets-info/GtkSwitch.md).
 - [Gtk.ToggleButton](./docs/gtk3-widgets.md#gtk-togglebutton).
+    - [Informações do widget](./docs/gtk-3-widgets-info/GtkToggleButton.md).
 - [Gtk.Toolbar](./docs/gtk3-widgets.md#gtk-toolbar).
+    - [Informações do widget](./docs/gtk-3-widgets-info/GtkToolbar.md).
 - [Gtk.TreeView editable](./docs/gtk3-widgets.md#gtk-treeview-editable).
+    - [Informações do widget](./docs/gtk-3-widgets-info/GtkTreeView.md).
 - [Gtk.TreeView filter](./docs/gtk3-widgets.md#gtk-treeview-filter).
 - [Gtk.TreeView sort](./docs/gtk3-widgets.md#gtk-treeview-sort).
 - [Gtk.TreeView TreeStore](./docs/gtk3-widgets.md#gtk-treeview-treestore).
 - [Gtk.Window](./docs/gtk3-widgets.md#gtk-window).
+    - [Informações do widget](./docs/gtk-3-widgets-info/GtkWindow.md).
 
 ---
 
@@ -169,11 +227,13 @@ Os widgets que foram criados ou passaram por grandes aprimoramentos são:
 
 ![Python e GTK4: Libadwaita](./docs/images/gtk4-libadwaita/gtk-4-pygobject-adw-applicationwindow.webp)
 
-Essa nova biblioteca é baseada na biblioteca  Libhandy e tem como objetivo melhorar a experiência do usuário através de um UI/UX mais unificada em aplicativos GNOME.
+Essa nova biblioteca é baseada na biblioteca Libhandy e tem como objetivo melhorar a experiência do usuário através de
+um UI/UX mais unificada em aplicativos GNOME.
 
 Alguns exemplos de design podem ser vistos em:
 
-- [https://gitlab.gnome.org/Teams/Design/os-mockups/-/blob/master/lists/list-design-patterns.png](https://gitlab.gnome.org/Teams/Design/os-mockups/-/blob/master/lists/list-design-patterns.png).
+- [https://gitlab.gnome.org/Teams/Design/os-mockups/-/blob/master/lists/list-design-patterns.png](https://gitlab.gnome.org/Teams/Design/os-mockups/-/blob/master/lists/list-design-patterns.png)
+  .
 
 Documentação da biblioteca libadwaita:
 
@@ -240,7 +300,7 @@ sudo apt install libhandy
 ```bash
 sudo apt install libhandy-1
 ```
- 
+
 ![Python e GTK 3: libhandy 1](docs/images/gtk3-libhandy/pygobject-hdy-actionrow.webp)
 *Python e GTK 3: libhandy 1*
 

@@ -33,7 +33,7 @@ def get_methods_set(widget):
     return [metodos for metodos in dir(widget) if metodos.startswith('set_')]
 
 
-def open_template(template='data/template.txt'):
+def open_template(template='data/template-gtk-widgets.txt'):
     with open(template, mode='r') as f:
         # Lendo o conteudo do arquivo.
         template = f.read()
@@ -64,8 +64,11 @@ def save_data(widget):
     widget_metodos_set = get_methods_set(widget=widget)
 
     template = open_template()
-    filename = f'{widget_name}.md'
-    file_path = Path().joinpath('docs', f'gtk-{MAJOR}', filename)
+
+    path = Path().joinpath('docs', f'gtk-{MAJOR}-widgets-info')
+    Path(path).mkdir(parents=True, exist_ok=True)
+
+    file_path = path.joinpath(f'{widget_name}.md')
     with open(file_path, mode='w') as f:
         f.write(
             template.format(
