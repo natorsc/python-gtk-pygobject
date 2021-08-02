@@ -3,27 +3,15 @@ name = "gui-python-gtk"
 version = "0.1.0"
 description = "Criando interfaces gráficas com Python e GTK."
 authors = ["natorsc <natorsc@gmail.com>"]
-maintainers = ["natorsc <natorsc@gmail.com>"]
 license = "MIT"
-readme = "README.md"
-homepage = "https://codigoninja.dev/"
-repository = "https://github.com/natorsc/gui-python-gtk"
-documentation = "https://codigoninja.dev/"
-keywords = ["GTK 3", "GTK 4", "PyGObject", "Python 3"]
-
-[tool.poetry.urls]
-issues = "https://github.com/natorsc/gui-python-gtk/issues"
 
 [tool.poetry.dependencies]
 python = "^3.9"
 PyGObject = "^3.40.1"
-PyGObject-stubs = "^0.0.2"
-
 
 [tool.poetry.dev-dependencies]
-pylint = "^2.9.3"
+pylint = "^2.9.6"
 autopep8 = "^1.5.7"
-
 
 [build-system]
 requires = ["poetry-core>=1.0.0"]
