@@ -1,5 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<schemalist gettext-domain="example">
-	<schema id="br.natorsc.example" path="/br/natorsc/example/">
-	</schema>
-</schemalist>

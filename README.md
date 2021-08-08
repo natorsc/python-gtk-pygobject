@@ -198,12 +198,24 @@ Documentação da biblioteca libadwaita:
 
 - [https://gnome.pages.gitlab.gnome.org/libadwaita/doc/](https://gnome.pages.gitlab.gnome.org/libadwaita/doc/)
 
+## Instalação
+
+### Arch Linux
+
+> Testes realizados com a versão: `1.0.0alpha.2-1`.
+
+```bash
+sudo pacman -S libadwaita
+```
+
+> Se o `sudo` não funcionar faça login como **root** e faça a instalação se o ``sudo``.
+
 ### Widgets
 
 - [Adw.ActionRow](#).
 - [Adw.animation](#).
-- [Adw.ApplicationWindow](./docs/gtk4-libadwaita-widgets.md#libadwaita-applicationwindow).
-- [Adw.Avatar](#).
+- [Adw.ApplicationWindow](#).
+- [Adw.Avatar](./docs/gtk4-widgets-libadwaita.md#avatar).
 - [Adw.Bin](#).
 - [Adw.CarouselIndicatorDots](#).
 - [Adw.CarouselIndicatorLines](#).

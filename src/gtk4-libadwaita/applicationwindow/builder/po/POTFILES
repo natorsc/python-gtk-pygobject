@@ -1,7 +1,0 @@
-data/br.natorsc.example.desktop.in
-data/br.natorsc.example.appdata.xml.in
-data/br.natorsc.example.gschema.xml
-src/window.ui
-src/main.py
-src/window.py
-

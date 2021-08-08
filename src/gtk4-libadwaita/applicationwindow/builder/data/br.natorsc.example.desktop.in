@@ -1,8 +1,0 @@
-[Desktop Entry]
-Name=example
-Exec=example
-Icon=br.natorsc.example
-Terminal=false
-Type=Application
-Categories=GTK;
-StartupNotify=true
