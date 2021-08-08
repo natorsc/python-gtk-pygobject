@@ -147,7 +147,7 @@ As diretrizes de estilo do GNOME (HIG) podem ser vistas em:
 - [Gtk.TreeView sort](./docs/gtk3-widgets.md#gtk-treeview-sort).
 - [Gtk.TreeView TreeStore](./docs/gtk3-widgets.md#gtk-treeview-treestore).
 - [Gtk.Window](./docs/gtk3-widgets.md#gtk-window).
-    
+
 ---
 
 ## GTK 4
@@ -175,6 +175,7 @@ Os widgets que foram criados ou passaram por grandes aprimoramentos são:
 ### Widgets
 
 - [Gtk.ApplicationWindow](./docs/gtk4-widgets.md#gtk-applicationwindow).
+- [Gtk.Box (horizontal)](./docs/gtk4-widgets.md#gtk-box-horizontal).
 
 ---
 

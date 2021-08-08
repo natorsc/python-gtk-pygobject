@@ -12,9 +12,13 @@ class MainWindow(Gtk.ApplicationWindow):
 
     def __init__(self, **kwargs):
         super().__init__(**kwargs)
+
         self.set_title(title='Python e GTK 4: Gtk.ApplicationWindow()')
+        # Tamanho inicial da janela.
         self.set_default_size(width=1366 / 2, height=768 / 2)
+        # Tamanho minimo da janela.
         self.set_size_request(width=1366 / 2, height=768 / 2)
+        
 
         # O seu código aqui:
         # ...
