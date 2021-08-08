@@ -77,7 +77,7 @@ As diretrizes de estilo do GNOME (HIG) podem ser vistas em:
 
 ## Tutoriais
 
-- [https://blog.codigoninja.dev/](https://blog.codigoninja.dev/).
+- [https://codigoninja.dev/](https://codigoninja.dev/).
 
 ---
 
@@ -91,106 +91,63 @@ As diretrizes de estilo do GNOME (HIG) podem ser vistas em:
 ### Widgets
 
 - [Gtk.ActionBar](./docs/gtk3-widgets.md#gtk-actionbar).
-    - [Informações do widget](./docs/gtk-3-widgets-info/GtkActionBar.md).
 - [Gtk.ApplicationWindow](./docs/gtk3-widgets.md#gtk-applicationwindow).
-    - [Informações do widget](./docs/gtk-3-widgets-info/GtkApplicationWindow.md).
 - [Gtk.Box horizontal](./docs/gtk3-widgets.md#gtk-box-horizontal).
-    - [Informações do widget](./docs/gtk-3-widgets-info/GtkBox.md).
 - [Gtk.Box vertical](./docs/gtk3-widgets.md#gtk-box-vertical).
-    - [Informações do widget](./docs/gtk-3-widgets-info/GtkBox.md).
 - [Gtk.Button](./docs/gtk3-widgets.md#gtk-button).
-    - [Informações do widget](./docs/gtk-3-widgets-info/GtkButton.md).
 - [Gtk.ButtonBox](./docs/gtk3-widgets.md#gtk-buttonbox).
-    - [Informações do widget](./docs/gtk-3-widgets-info/GtkButtonBox.md).
 - [Gtk.Calendar](./docs/gtk3-widgets.md#gtk-calendar).
-    - [Informações do widget](./docs/gtk-3-widgets-info/GtkCalendar.md).
 - [Gtk.CheckButton](./docs/gtk3-widgets.md#gtk-checkbutton).
-    - [Informações do widget](./docs/gtk-3-widgets-info/GtkCheckButton.md).
 - [Gtk.Dialog](./docs/gtk3-widgets.md#gtk-dialog).
-    - [Informações do widget](./docs/gtk-3-widgets-info/GtkDialog.md).
 - [Gtk.DragAndDrop](./docs/gtk3-widgets.md#gtk-drag-and-drop).
 - [Gtk.Entry](./docs/gtk3-widgets.md#gtk-entry).
-    - [Informações do widget](./docs/gtk-3-widgets-info/GtkEntry.md).
 - [Gtk.EntryCompletion](./docs/gtk3-widgets.md#gtk-entrycompletion).
 - [Gtk.EventBox](./docs/gtk3-widgets.md#gtk-eventbox).
-    - [Informações do widget](./docs/gtk-3-widgets-info/GtkEventBox.md).
 - [Gtk.FileChooserDialog folder](./docs/gtk3-widgets.md#gtk-filechooserdialog-folder).
-    - [Informações do widget](./docs/gtk-3-widgets-info/GtkFileChooserDialog.md).
 - [Gtk.FileChooserDialog open](./docs/gtk3-widgets.md#gtk-filechooserdialog-open).
 - [Gtk.FileChooserDialog save](./docs/gtk3-widgets.md#gtk-filechooserdialog-save).
 - [Gtk.Fixed](./docs/gtk3-widgets.md#gtk-filechooserdialog-save).
-    - [Informações do widget](./docs/gtk-3-widgets-info/GtkFixed.md).
 - [Gtk.FlowBox](./docs/gtk3-widgets.md#gtk-flowbox).
-    - [Informações do widget](./docs/gtk-3-widgets-info/GtkFlowBox.md).
 - [Gtk.Grid](./docs/gtk3-widgets.md#gtk-grid).
-    - [Informações do widget](./docs/gtk-3-widgets-info/GtkGrid.md).
 - [Gtk.HeaderBar](./docs/gtk3-widgets.md#gtk-headerbar).
-    - [Informações do widget](./docs/gtk-3-widgets-info/GtkHeaderBar.md).
 - [Gtk.Image](./docs/gtk3-widgets.md#gtk-image).
-    - [Informações do widget](./docs/gtk-3-widgets-info/GtkImage.md).
 - [Gtk.InfoBar](./docs/gtk3-widgets.md#gtk-infobar).
-    - [Informações do widget](./docs/gtk-3-widgets-info/GtkInfoBar.md).
 - [Gtk.Layout](./docs/gtk3-widgets.md#gtk-layout).
-    - [Informações do widget](./docs/gtk-3-widgets-info/GtkLayout.md).
 - [Gtk.LinkButton](./docs/gtk3-widgets.md#gtk-linkbutton).
-    - [Informações do widget](./docs/gtk-3-widgets-info/GtkLinkButton.md).
 - [Gtk.ListBox](./docs/gtk3-widgets.md#gtk-listbox).
-    - [Informações do widget](./docs/gtk-3-widgets-info/GtkListBox.md).
 - [Gtk.Menu](./docs/gtk3-widgets.md#gtk-menu).
-    - [Informações do widget](./docs/gtk-3-widgets-info/GtkMenu.md).
 - [Gtk.MenuBar](./docs/gtk3-widgets.md#gtk-menubar).
-    - [Informações do widget](./docs/gtk-3-widgets-info/GtkMenuBar.md).
 - [Gtk.MenuButton](./docs/gtk3-widgets.md#gtk-menubutton).
-    - [Informações do widget](./docs/gtk-3-widgets-info/GtkMenuButton.md).
 - [Gtk.MessageDialog](./docs/gtk3-widgets.md#gtk-messagedialog).
-    - [Informações do widget](./docs/gtk-3-widgets-info/GtkMessageDialog.md).
 - [Gtk.Notebook](./docs/gtk3-widgets.md#gtk-notebook).
-    - [Informações do widget](./docs/gtk-3-widgets-info/GtkNotebook.md).
 - [Gtk.Notify](./docs/gtk3-widgets.md#gtk-notify).
 - [Gtk.Overlay](./docs/gtk3-widgets.md#gtk-overlay).
-    - [Informações do widget](./docs/gtk-3-widgets-info/GtkOverlay.md).
 - [Gtk.Paned horizontal](./docs/gtk3-widgets.md#gtk-paned-horizontal).
-    - [Informações do widget](./docs/gtk-3-widgets-info/GtkPaned.md).
 - [Gtk.Paned vertical](./docs/gtk3-widgets.md#gtk-paned-vertical).
 - [Gtk.Popover](./docs/gtk3-widgets.md#gtk-popover).
-    - [Informações do widget](./docs/gtk-3-widgets-info/GtkPopover.md).
 - [Gtk.PrintOperation](./docs/gtk3-widgets.md#gtk-printoperation).
 - [Gtk.RadioButton](./docs/gtk3-widgets.md#gtk-radiobutton).
-    - [Informações do widget](./docs/gtk-3-widgets-info/GtkRadioButton.md).
 - [Gtk.Revealer](./docs/gtk3-widgets.md#gtk-revealer).
-    - [Informações do widget](./docs/gtk-3-widgets-info/GtkRevealer.md).
 - [Gtk.SearchBar](./docs/gtk3-widgets.md#gtk-searchbar).
-    - [Informações do widget](./docs/gtk-3-widgets-info/GtkSearchBar.md).
 - [Gtk.SearchEntry](./docs/gtk3-widgets.md#gtk-searchentry).
-    - [Informações do widget](./docs/gtk-3-widgets-info/GtkSearchEntry.md).
 - [Gtk.Separator](./docs/gtk3-widgets.md#gtk-separator).
-    - [Informações do widget](./docs/gtk-3-widgets-info/GtkSeparator.md).
 - [Gtk.Spinner](./docs/gtk3-widgets.md#gtk-spinner).
-    - [Informações do widget](./docs/gtk-3-widgets-info/GtkSpinner.md).
 - [Gtk.StackSidebar](./docs/gtk3-widgets.md#gtk-stacksidebar).
-    - [Informações do widget](./docs/gtk-3-widgets-info/GtkStackSidebar.md).
 - [Gtk.StackSwitcher](./docs/gtk3-widgets.md#gtk-stackswitcher).
-    - [Informações do widget](./docs/gtk-3-widgets-info/GtkStackSwitcher.md).
 - [Gtk.Statusbar](./docs/gtk3-widgets.md#gtk-statusbar).
-    - [Informações do widget](./docs/gtk-3-widgets-info/GtkStatusbar.md).
 - [Gtk Style add class](./docs/gtk3-widgets.md#gtk-style-add-class).
 - [Gtk Style css provider](./docs/gtk3-widgets.md#gtk-style-css-provider).
 - [Gtk Style dark mode](./docs/gtk3-widgets.md#gtk-style-dark-mode).
 - [Gtk Style set name](./docs/gtk3-widgets.md#gtk-style-set-name).
 - [Gtk.Switch](./docs/gtk3-widgets.md#gtk-switch).
-    - [Informações do widget](./docs/gtk-3-widgets-info/GtkSwitch.md).
 - [Gtk.ToggleButton](./docs/gtk3-widgets.md#gtk-togglebutton).
-    - [Informações do widget](./docs/gtk-3-widgets-info/GtkToggleButton.md).
 - [Gtk.Toolbar](./docs/gtk3-widgets.md#gtk-toolbar).
-    - [Informações do widget](./docs/gtk-3-widgets-info/GtkToolbar.md).
 - [Gtk.TreeView editable](./docs/gtk3-widgets.md#gtk-treeview-editable).
-    - [Informações do widget](./docs/gtk-3-widgets-info/GtkTreeView.md).
 - [Gtk.TreeView filter](./docs/gtk3-widgets.md#gtk-treeview-filter).
 - [Gtk.TreeView sort](./docs/gtk3-widgets.md#gtk-treeview-sort).
 - [Gtk.TreeView TreeStore](./docs/gtk3-widgets.md#gtk-treeview-treestore).
 - [Gtk.Window](./docs/gtk3-widgets.md#gtk-window).
-    - [Informações do widget](./docs/gtk-3-widgets-info/GtkWindow.md).
-
+    
 ---
 
 ## GTK 4

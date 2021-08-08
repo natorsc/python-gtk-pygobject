@@ -33,7 +33,7 @@ def get_methods_set(widget):
     return [metodos for metodos in dir(widget) if metodos.startswith('set_')]
 
 
-def open_template(template='data/template-gtk-widgets.txt'):
+def open_template(template='templatea/gtk-widgets.txt'):
     with open(template, mode='r') as f:
         # Lendo o conteudo do arquivo.
         template = f.read()

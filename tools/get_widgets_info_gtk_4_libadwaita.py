@@ -1,12 +1,15 @@
 # -*- coding: utf-8 -*-
-"""Script para coletar informações dos widgets (GTK 3)."""
+"""Script para coletar informações dos widgets (GTK 4)."""
 
 from pathlib import Path
 
 import gi
 
-gi.require_version(namespace='Gtk', version='3.0')
+gi.require_version(namespace='Gtk', version='4.0')
+gi.require_version(namespace='Adw', version='1')
+
 from gi.repository import Gtk, GObject
+from gi.repository import Adw
 
 
 def get_methods_get(widget):
@@ -33,7 +36,7 @@ def get_methods_set(widget):
     return [metodos for metodos in dir(widget) if metodos.startswith('set_')]
 
 
-def open_template(template='data/template-gtk-widgets.txt'):
+def open_template(template='templates/gtk-libadwaita.txt'):
     with open(template, mode='r') as f:
         # Lendo o conteudo do arquivo.
         template = f.read()
@@ -51,6 +54,7 @@ def save_data(widget):
     MINOR = str(Gtk.MINOR_VERSION)
     MICRO = str(Gtk.MICRO_VERSION)
     gtk_version = f'Marjor: {MAJOR}. Minor: {MINOR}. Micro: {MICRO}.'
+    libadwaita_version = Adw._version
     pygobject_version = GObject.pygobject_version
 
     widget_name = widget.get_name()
@@ -65,7 +69,7 @@ def save_data(widget):
 
     template = open_template()
 
-    path = Path().joinpath('docs', f'gtk-{MAJOR}-widgets-info')
+    path = Path().joinpath('docs', f'libadwaita-{libadwaita_version}')
     Path(path).mkdir(parents=True, exist_ok=True)
 
     file_path = path.joinpath(f'{widget_name}.md')
@@ -75,6 +79,7 @@ def save_data(widget):
                 widget_name,
                 gtk_version,
                 pygobject_version,
+                Adw._version,
                 '\n- '.join(sorted(widget_props)),
                 '\n- '.join(sorted(widget_signals)),
                 '\n- '.join(sorted(widget_metodos_get)),
@@ -85,6 +90,7 @@ def save_data(widget):
 
 
 if __name__ == '__main__':
-    widget = Gtk.Switch()
+    widget = Adw.Avatar()
+    print(Adw._version)
     save_data(widget=widget)
-    print(f'[!] {widget} Concluido [!]')
+    print('[!] Concluido [!]')
