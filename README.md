@@ -44,7 +44,7 @@ até o momento que escrevo) são:
 
 As diretrizes de estilo do GNOME (HIG) podem ser vistas em:
 
-- [https://developer.gnome.org/hig/stable/](https://developer.gnome.org/hig/stable/).
+- [https://developer.gnome.org/hig/](https://developer.gnome.org/hig/).
 
 ---
 
