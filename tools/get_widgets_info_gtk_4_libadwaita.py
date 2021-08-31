@@ -90,7 +90,6 @@ def save_data(widget):
 
 
 if __name__ == '__main__':
-    widget = Adw.Avatar()
-    print(Adw._version)
+    widget = Adw.ApplicationWindow()
     save_data(widget=widget)
     print('[!] Concluido [!]')
