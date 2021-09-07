@@ -1,4 +1,12 @@
-# Widgets
+# GTK 4 Widgets
+
+## Gtk ActionBar
+
+- [Python](../src/gtk4/actionbar).
+
+![Python e GTK 4: Gtk.ActionBar().](./images/gtk4/gtk-4-pygobject-actionbar.webp)
+
+---
 
 ## Gtk ApplicationWindow
 
@@ -24,3 +32,14 @@
 ![Python e GTK 4: Gtk.Box() vertical.](./images/gtk4/gtk-4-pygobject-box-vertical.webp)
 
 ---
+
+## Translator gettext
+
+- [Python](../src/gtk4/translator-gettext).
+
+![Python e GTK 4: Translator gettext.](./images/gtk4/gtk-4-pygobject-translator-gettext.webp)
+
+---
+
+
+gtk-4-pygobject-gettext

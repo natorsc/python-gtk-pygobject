@@ -174,9 +174,11 @@ Os widgets que foram criados ou passaram por grandes aprimoramentos são:
 
 ### Widgets
 
+- [Gtk.ActionBar](./docs/gtk4-widgets.md#gtk-actionbar).
 - [Gtk.ApplicationWindow](./docs/gtk4-widgets.md#gtk-applicationwindow).
 - [Gtk.Box (horizontal)](./docs/gtk4-widgets.md#gtk-box-horizontal).
 - [Gtk.Box (vertical)](./docs/gtk4-widgets.md#gtk-box-vertical).
+- [Translator (gettext)](./docs/gtk4-widgets.md#translator-gettext).
 
 ---
 
