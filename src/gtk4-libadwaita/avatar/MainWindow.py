@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-"""Python e GTK 4: Adw.Avatar()."""
+"""Python e GTK 4: PyGObject Adw.Avatar()."""
 
 import gi
 
@@ -15,17 +15,13 @@ class MainWindow(Gtk.ApplicationWindow):
     def __init__(self, **kwargs):
         super().__init__(**kwargs)
 
-        self.set_title(title='Python e GTK 4: Adw.Avatar()')
+        self.set_title(title='Python e GTK 4: PyGObject Adw.Avatar()')
         # Tamanho inicial da janela.
         self.set_default_size(width=1366 / 2, height=768 / 2)
         # Tamanho minimo da janela.
         self.set_size_request(width=1366 / 2, height=768 / 2)
 
         hbox = Gtk.Box.new(orientation=Gtk.Orientation.HORIZONTAL, spacing=12)
-        hbox.set_margin_bottom(12)
-        hbox.set_margin_end(12)
-        hbox.set_margin_start(12)
-        hbox.set_margin_top(12)
         # Adicionando o box na janela principal.
         self.set_child(child=hbox)
 

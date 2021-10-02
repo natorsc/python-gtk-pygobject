@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-"""Python e GTK 4: Adw.ActionRow()."""
+"""Python e GTK 4: PyGObject Adw.ActionRow()."""
 
 import gi
 
@@ -18,38 +18,41 @@ class MainWindow(Gtk.ApplicationWindow):
     def __init__(self, **kwargs):
         super().__init__(**kwargs)
 
-        self.set_title(title='Python e GTK 4: Adw.ActionRow()')
+        self.set_title(title='Python e GTK 4: PyGObject Adw.ActionRow()')
         # Tamanho inicial da janela.
         self.set_default_size(width=1366 / 2, height=768 / 2)
         # Tamanho minimo da janela.
         self.set_size_request(width=1366 / 2, height=768 / 2)
 
-        hbox = Gtk.Box.new(orientation=Gtk.Orientation.HORIZONTAL, spacing=12)
-        hbox.set_margin_bottom(12)
-        hbox.set_margin_end(12)
-        hbox.set_margin_start(12)
-        hbox.set_margin_top(12)
+        vbox = Gtk.Box.new(orientation=Gtk.Orientation.VERTICAL, spacing=12)
         # Adicionando o box na janela principal.
-        self.set_child(child=hbox)
+        self.set_child(child=vbox)
 
         # Criando um scroll para que a janela principal possa comportar os widgets
         scrolled = Gtk.ScrolledWindow.new()
-        # scrolled.set_border_width(border_width=12)
         self.set_child(child=scrolled)
 
         list_box = Gtk.ListBox.new()
+        list_box.set_margin_top(margin=12)
+        list_box.set_margin_end(margin=12)
+        list_box.set_margin_bottom(margin=12)
+        list_box.set_margin_start(margin=12)
         list_box.connect('row-selected', self.on_row_clicked)
         scrolled.set_child(child=list_box)
 
         # Loop para criar as linhas.
         for i, icon_name in enumerate(self.icons_standard):
             # Criando e configurando ActionRow que será adicionada no listbox.
-            hdy_action_row = Adw.ActionRow.new()
-            hdy_action_row.set_icon_name(icon_name=icon_name)
-            hdy_action_row.set_title(title=f'Título {i}')
-            hdy_action_row.set_subtitle(subtitle=f'subtítulo {i}')
+            adw_action_row = Adw.ActionRow.new()
+            adw_action_row.set_margin_top(margin=6)
+            adw_action_row.set_margin_end(margin=6)
+            adw_action_row.set_margin_bottom(margin=6)
+            adw_action_row.set_margin_start(margin=6)
+            adw_action_row.set_icon_name(icon_name=icon_name)
+            adw_action_row.set_title(title=f'Título {i}')
+            adw_action_row.set_subtitle(subtitle=f'subtítulo {i}')
             # Adicionando a ActionRow no listbox.
-            list_box.append(hdy_action_row)
+            list_box.append(adw_action_row)
 
     def on_row_clicked(self, listbox, row):
         print(f'Ícone da linha = {row.get_icon_name()}')

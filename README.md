@@ -210,13 +210,19 @@ Documentação da biblioteca libadwaita:
 sudo pacman -S libadwaita
 ```
 
+### openSUSE Tumbleweed
+
+```bash
+sudo zypper install libadwaita
+```
+
 > Se o `sudo` não funcionar faça login como **root** e faça a instalação se o ``sudo``.
 
 ### Widgets
 
 - [Adw.ActionRow](./docs/gtk4-widgets-libadwaita.md#actionrow).
 - [Adw.animation].
-- [Adw.ApplicationWindow](./docs/gtk4-widgets-libadwaita.md#applicationwindow).
+- [Adw.ApplicationWindow].
 - [Adw.Avatar](./docs/gtk4-widgets-libadwaita.md#avatar).
 - [Adw.Bin].
 - [Adw.Carousel](./docs/gtk4-widgets-libadwaita.md#carousel).

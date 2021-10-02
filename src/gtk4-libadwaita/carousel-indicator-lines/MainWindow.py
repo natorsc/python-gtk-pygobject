@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-"""Python e GTK 4: Adw.CarouselIndicatorLines()."""
+"""Python e GTK 4: PyGObject Adw.CarouselIndicatorLines()."""
 
 import gi
 
@@ -11,13 +11,11 @@ from gi.repository import Adw
 
 
 class MainWindow(Gtk.ApplicationWindow):
-    # Variável auxiliar
-    page_list = []
 
     def __init__(self, **kwargs):
         super().__init__(**kwargs)
 
-        self.set_title(title='Python e GTK 4: Adw.CarouselIndicatorLines()')
+        self.set_title(title='Python e GTK 4: PyGObject Adw.CarouselIndicatorLines()')
         # Tamanho inicial da janela.
         self.set_default_size(width=1366 / 2, height=768 / 2)
         # Tamanho minimo da janela.
@@ -42,15 +40,16 @@ class MainWindow(Gtk.ApplicationWindow):
         label = Gtk.Label.new(str='Arraste com o mouse ou clique nos botões laterais')
         vbox.append(child=label)
 
-        hdy_carousel = Adw.Carousel.new()
-        hdy_carousel.set_vexpand(True)
-        hdy_carousel.set_spacing(spacing=100)
-        vbox.append(child=hdy_carousel)
+        self.adw_carousel = Adw.Carousel.new()
+        self.adw_carousel.set_vexpand(True)
+        self.adw_carousel.set_spacing(spacing=24)
+        self.adw_carousel.connect('page-changed', self.on_page_changed)
+        vbox.append(child=self.adw_carousel)
 
         # Loop de repetição para criar os widgets.
         for n in range(10):
             page = Gtk.Box.new(orientation=Gtk.Orientation.VERTICAL, spacing=12)
-            hdy_carousel.insert(child=page, position=n)
+            self.adw_carousel.insert(child=page, position=n)
 
             label = Gtk.Label.new(str=f'Página {n}')
             page.append(child=label)
@@ -59,18 +58,14 @@ class MainWindow(Gtk.ApplicationWindow):
             self.page_list.append(page)
 
         hdy_carousel_indicator_dots = Adw.CarouselIndicatorLines.new()
-        hdy_carousel_indicator_dots.set_carousel(carousel=hdy_carousel)
+        hdy_carousel_indicator_dots.set_carousel(carousel=self.adw_carousel)
         vbox.append(child=hdy_carousel_indicator_dots)
 
         # Botões para movimentar o carousel.
         button_previous = Gtk.Button.new_from_icon_name(
             icon_name='go-previous-symbolic',
         )
-        button_previous.connect(
-            'clicked',
-            self.on_button_previous_clicked,
-            hdy_carousel,
-        )
+        button_previous.connect('clicked', self.on_button_previous_clicked)
         button_previous.set_halign(align=Gtk.Align.START)
         button_previous.set_valign(align=Gtk.Align.CENTER)
         overlay.add_overlay(widget=button_previous)
@@ -78,28 +73,27 @@ class MainWindow(Gtk.ApplicationWindow):
         button_next = Gtk.Button.new_from_icon_name(
             icon_name='go-next-symbolic',
         )
-        button_next.connect(
-            'clicked',
-            self.on_button_next_clicked,
-            hdy_carousel,
-        )
+        button_next.connect('clicked', self.on_button_next_clicked)
         button_next.set_halign(align=Gtk.Align.END)
         button_next.set_valign(align=Gtk.Align.CENTER)
         overlay.add_overlay(widget=button_next)
 
-    def on_button_previous_clicked(self, widget, carousel):
-        postion = int(carousel.get_position())
-        if postion == 0:
-            pass
-        else:
-            carousel.scroll_to(widget=self.page_list[postion - 1])
+    def on_page_changed(self, carousel, index):
+        print(f'Posição: {carousel.get_position()}')
+        print(f'índice: {index}')
 
-    def on_button_next_clicked(self, widget, carousel):
-        postion = int(carousel.get_position())
-        if (postion + 1) == carousel.get_n_pages():
-            carousel.scroll_to(widget=self.page_list[0])
-        else:
-            carousel.scroll_to(widget=self.page_list[postion + 1])
+    def on_button_previous_clicked(self, button):
+        position = self.adw_carousel.get_position()
+        if position > 0:
+            next_page = self.adw_carousel.get_nth_page(position - 1)
+            self.adw_carousel.scroll_to(widget=next_page)
+
+    def on_button_next_clicked(self, button):
+        position = self.adw_carousel.get_position()
+        pages = self.adw_carousel.get_n_pages()
+        if position < (pages - 1):
+            next_page = self.adw_carousel.get_nth_page(position + 1)
+            self.adw_carousel.scroll_to(widget=next_page)
 
 
 class Application(Gtk.Application):

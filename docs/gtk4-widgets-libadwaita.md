@@ -8,12 +8,6 @@
 
 ---
 
-## ApplicationWindow
-
-- [Python](../src/gtk4-libadwaita/applicationwindow).
-
----
-
 ## Avatar
 
 - [Python](../src/gtk4-libadwaita/avatar).
