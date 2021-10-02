@@ -47,15 +47,12 @@ class MainWindow(Gtk.ApplicationWindow):
         vbox.append(child=self.adw_carousel)
 
         # Loop de repetição para criar os widgets.
-        for n in range(2):
+        for n in range(1, 11):
             page = Gtk.Box.new(orientation=Gtk.Orientation.VERTICAL, spacing=12)
             self.adw_carousel.insert(child=page, position=n)
 
             label = Gtk.Label.new(str=f'Página {n}')
             page.append(child=label)
-
-            # Adicionando os widgets a uma lista.
-            self.page_list.append(page)
 
         adw_carousel_indicator_dots = Adw.CarouselIndicatorDots.new()
         adw_carousel_indicator_dots.set_carousel(carousel=self.adw_carousel)
