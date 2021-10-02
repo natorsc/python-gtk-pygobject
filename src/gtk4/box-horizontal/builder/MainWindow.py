@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-"""Python e GTK 4: PyGObject Gtk.ApplicationWindow()."""
+"""Python e GTK 4: PyGObject Gtk.Box() horizontal."""
 
 import gi
 
@@ -19,6 +19,10 @@ class MainWindow(Gtk.ApplicationWindow):
 
         # Configuração dos widgets aqui:
         # ...
+
+    @Gtk.Template.Callback()
+    def on_button_clicked(self, button):
+        print('Botão pressionado.')
 
 
 class Application(Gtk.Application):

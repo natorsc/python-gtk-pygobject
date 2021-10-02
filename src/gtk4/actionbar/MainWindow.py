@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-"""Python e GTK 4: Gtk.ActionBar()."""
+"""Python e GTK 4: PyGObject Gtk.ActionBar()."""
 
 import gi
 
@@ -16,17 +16,18 @@ class MainWindow(Gtk.ApplicationWindow):
     def __init__(self, **kwargs):
         super().__init__(**kwargs)
 
-        self.set_title(title='Python e GTK 4: Gtk.ActionBar()')
+        self.set_title(title='Python e GTK 4: PyGObject Gtk.ActionBar()')
         # Tamanho inicial da janela.
         self.set_default_size(width=1366 / 2, height=768 / 2)
         # Tamanho minimo da janela.
         self.set_size_request(width=1366 / 2, height=768 / 2)
 
         vbox = Gtk.Box.new(orientation=Gtk.Orientation.VERTICAL, spacing=0)
-        vbox.set_margin_bottom(12)
-        vbox.set_margin_end(12)
-        vbox.set_margin_start(12)
-        vbox.set_margin_top(12)
+        vbox.set_margin_top(margin=12)
+        vbox.set_margin_end(margin=12)
+        vbox.set_margin_bottom(margin=12)
+        vbox.set_margin_start(margin=12)
+
         vbox.set_valign(Gtk.Align.END)
         self.set_child(child=vbox)
 
@@ -38,7 +39,11 @@ class MainWindow(Gtk.ApplicationWindow):
             # Criando um botão com ícone dentro.
             button = Gtk.Button.new_from_icon_name(icon_name=icon)
             button.set_margin_end(6)
+            button.connect('clicked', self.on_button_clicked)
             actionbar.pack_start(child=button)
+
+    def on_button_clicked(self, button):
+        print('Botão pressionado.')
 
 
 class Application(Gtk.Application):

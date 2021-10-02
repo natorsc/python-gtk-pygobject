@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-"""Python e GTK 4: Gtk.ApplicationWindow()."""
+"""Python e GTK 4: PyGObject Gtk.ApplicationWindow()."""
 
 import gi
 
@@ -13,7 +13,7 @@ class MainWindow(Gtk.ApplicationWindow):
     def __init__(self, **kwargs):
         super().__init__(**kwargs)
 
-        self.set_title(title='Python e GTK 4: Gtk.ApplicationWindow()')
+        self.set_title(title='Python e GTK 4: PyGObject Gtk.ApplicationWindow()')
         # Tamanho inicial da janela.
         self.set_default_size(width=1366 / 2, height=768 / 2)
         # Tamanho minimo da janela.
