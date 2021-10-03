@@ -1,8 +1,0 @@
-[Desktop Entry]
-Name=codigoninja
-Exec=codigoninja
-Icon=br.natorsc.CodigoNinja
-Terminal=false
-Type=Application
-Categories=GTK;
-StartupNotify=true

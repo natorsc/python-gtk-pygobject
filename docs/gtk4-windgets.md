@@ -3,33 +3,45 @@
 ## Gtk ActionBar
 
 - [Python](../src/gtk4/actionbar).
+- [Template (arquivos de interface)](../src/gtk4/actionbar/template).
 
-![Python e GTK 4: Gtk.ActionBar().](./images/gtk4/gtk-4-pygobject-actionbar.webp)
+![Python e GTK 4: PyGObject Gtk.ActionBar().](./images/gtk4/gtk-4-pygobject-actionbar.webp)
 
 ---
 
 ## Gtk ApplicationWindow
 
-- [Gnome Builder](../src/gtk4/applicationwindow/builder).
 - [Python](../src/gtk4/applicationwindow).
+- [Template (arquivos de interface)](../src/gtk4/applicationwindow/template).
 
-![Python e GTK 4: Gtk.ApplicationWindow().](./images/gtk4/gtk-4-pygobject-applicationwindow.webp)
+![Python e GTK 4: PyGObject Gtk.ApplicationWindow().](./images/gtk4/gtk-4-pygobject-applicationwindow.webp)
 
 ---
 
 ## Gtk Box Horizontal
 
 - [Python](../src/gtk4/box-horizontal).
+- [Template (arquivos de interface)](../src/gtk4/box-horizontal/template).
 
-![Python e GTK 4: Gtk.Box() horizontal.](./images/gtk4/gtk-4-pygobject-box-horizontal.webp)
+![Python e GTK 4: PyGObject Gtk.Box() horizontal.](./images/gtk4/gtk-4-pygobject-box-horizontal.webp)
 
 ---
 
 ## Gtk Box Vertical
 
 - [Python](../src/gtk4/box-vertical).
+- [Template (arquivos de interface)](../src/gtk4/box-vertical/template).
 
-![Python e GTK 4: Gtk.Box() vertical.](./images/gtk4/gtk-4-pygobject-box-vertical.webp)
+![Python e GTK 4: PyGObject Gtk.Box() vertical.](./images/gtk4/gtk-4-pygobject-box-vertical.webp)
+
+---
+
+## Gtk Button
+
+- [Python](../src/gtk4/button).
+- [Template (arquivos de interface)](../src/gtk4/button/template).
+
+![Python e GTK 4: PyGObject Gtk.Button().](./images/gtk4/gtk-4-pygobject-button.webp)
 
 ---
 
@@ -40,6 +52,3 @@
 ![Python e GTK 4: Translator gettext.](./images/gtk4/gtk-4-pygobject-translator-gettext.webp)
 
 ---
-
-
-gtk-4-pygobject-gettext
