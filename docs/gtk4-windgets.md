@@ -45,6 +45,15 @@
 
 ---
 
+## Gtk Calendar
+
+- [Python](../src/gtk4/calendar).
+- [Template (arquivos de interface)](../src/gtk4/calendar/template).
+
+![Python e GTK 4: PyGObject Gtk.Calendar().](./images/gtk4/gtk-4-pygobject-calendar.webp)
+
+---
+
 ## Translator gettext
 
 - [Python](../src/gtk4/translator-gettext).
