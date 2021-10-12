@@ -180,6 +180,9 @@ Os widgets que foram criados ou passaram por grandes aprimoramentos são:
 - [Gtk.Box (vertical)](./docs/gtk4-widgets.md#gtk-box-vertical).
 - [Gtk.Button](./docs/gtk4-widgets.md#gtk-button).
 - [Gtk.Calendar](./docs/gtk4-widgets.md#gtk-calendar).
+- [Gtk.CheckButton](./docs/gtk4-widgets.md#gtk-checkbutton).
+- [Gtk.Dialog](./docs/gtk4-widgets.md#gtk-dialog).
+- [Gtk.DragAndDrop (Gtk.DragSource e Gtk.DropTarget)](./docs/gtk4-widgets.md#gtk-drag-and-drop).
 - [Translator (gettext)](./docs/gtk4-widgets.md#translator-gettext).
 
 ---

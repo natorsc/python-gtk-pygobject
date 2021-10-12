@@ -54,6 +54,31 @@
 
 ---
 
+## Gtk CheckButton
+
+- [Python](../src/gtk4/checkbutton).
+- [Template (arquivos de interface)](../src/gtk4/checkbutton/template).
+
+![Python e GTK 4: PyGObject Gtk.CheckButton().](./images/gtk4/gtk-4-pygobject-checkbutton.webp)
+
+---
+
+## Gtk Dialog
+
+- [Python](../src/gtk4/dialog).
+
+![Python e GTK 4: PyGObject Gtk.Dialog().](./images/gtk4/gtk-4-pygobject-dialog.webp)
+
+---
+
+## Gtk drag and drop
+
+- [Python](../src/gtk4/drag-and-drop).
+
+![Gtk.DragAndDrop (Gtk.DragSource e Gtk.DropTarget).](./images/gtk4/gtk-4-pygobject-drag-and-drop.webp)
+
+---
+
 ## Translator gettext
 
 - [Python](../src/gtk4/translator-gettext).
