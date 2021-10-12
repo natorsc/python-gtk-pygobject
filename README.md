@@ -1,4 +1,6 @@
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT) [![Please do not theme this app](https://stopthemingmy.app/badge.svg)](https://stopthemingmy.app)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
+[![Please do not theme this app](https://stopthemingmy.app/badge.svg)](https://stopthemingmy.app)
 
 # Criando interfaces gráficas com Python (PyGObject) e GTK
 
@@ -81,72 +83,9 @@ As diretrizes de estilo do GNOME (HIG) podem ser vistas em:
 
 ---
 
-## GTK 3
+## [GTK 3](./docs/gtk3-index.md)
 
-### Gio
-
-- [Gio.Menu](./docs/gtk3-widgets.md#gio-menu).
-- [Gio.SimpleAction](./docs/gtk3-widgets.md#gio-simple-action).
-
-### Widgets
-
-- [Gtk.ActionBar](./docs/gtk3-widgets.md#gtk-actionbar).
-- [Gtk.ApplicationWindow](./docs/gtk3-widgets.md#gtk-applicationwindow).
-- [Gtk.Box horizontal](./docs/gtk3-widgets.md#gtk-box-horizontal).
-- [Gtk.Box vertical](./docs/gtk3-widgets.md#gtk-box-vertical).
-- [Gtk.Button](./docs/gtk3-widgets.md#gtk-button).
-- [Gtk.ButtonBox](./docs/gtk3-widgets.md#gtk-buttonbox).
-- [Gtk.Calendar](./docs/gtk3-widgets.md#gtk-calendar).
-- [Gtk.CheckButton](./docs/gtk3-widgets.md#gtk-checkbutton).
-- [Gtk.Dialog](./docs/gtk3-widgets.md#gtk-dialog).
-- [Gtk.DragAndDrop](./docs/gtk3-widgets.md#gtk-drag-and-drop).
-- [Gtk.Entry](./docs/gtk3-widgets.md#gtk-entry).
-- [Gtk.EntryCompletion](./docs/gtk3-widgets.md#gtk-entrycompletion).
-- [Gtk.EventBox](./docs/gtk3-widgets.md#gtk-eventbox).
-- [Gtk.FileChooserDialog folder](./docs/gtk3-widgets.md#gtk-filechooserdialog-folder).
-- [Gtk.FileChooserDialog open](./docs/gtk3-widgets.md#gtk-filechooserdialog-open).
-- [Gtk.FileChooserDialog save](./docs/gtk3-widgets.md#gtk-filechooserdialog-save).
-- [Gtk.Fixed](./docs/gtk3-widgets.md#gtk-filechooserdialog-save).
-- [Gtk.FlowBox](./docs/gtk3-widgets.md#gtk-flowbox).
-- [Gtk.Grid](./docs/gtk3-widgets.md#gtk-grid).
-- [Gtk.HeaderBar](./docs/gtk3-widgets.md#gtk-headerbar).
-- [Gtk.Image](./docs/gtk3-widgets.md#gtk-image).
-- [Gtk.InfoBar](./docs/gtk3-widgets.md#gtk-infobar).
-- [Gtk.Layout](./docs/gtk3-widgets.md#gtk-layout).
-- [Gtk.LinkButton](./docs/gtk3-widgets.md#gtk-linkbutton).
-- [Gtk.ListBox](./docs/gtk3-widgets.md#gtk-listbox).
-- [Gtk.Menu](./docs/gtk3-widgets.md#gtk-menu).
-- [Gtk.MenuBar](./docs/gtk3-widgets.md#gtk-menubar).
-- [Gtk.MenuButton](./docs/gtk3-widgets.md#gtk-menubutton).
-- [Gtk.MessageDialog](./docs/gtk3-widgets.md#gtk-messagedialog).
-- [Gtk.Notebook](./docs/gtk3-widgets.md#gtk-notebook).
-- [Gtk.Notify](./docs/gtk3-widgets.md#gtk-notify).
-- [Gtk.Overlay](./docs/gtk3-widgets.md#gtk-overlay).
-- [Gtk.Paned horizontal](./docs/gtk3-widgets.md#gtk-paned-horizontal).
-- [Gtk.Paned vertical](./docs/gtk3-widgets.md#gtk-paned-vertical).
-- [Gtk.Popover](./docs/gtk3-widgets.md#gtk-popover).
-- [Gtk.PrintOperation](./docs/gtk3-widgets.md#gtk-printoperation).
-- [Gtk.RadioButton](./docs/gtk3-widgets.md#gtk-radiobutton).
-- [Gtk.Revealer](./docs/gtk3-widgets.md#gtk-revealer).
-- [Gtk.SearchBar](./docs/gtk3-widgets.md#gtk-searchbar).
-- [Gtk.SearchEntry](./docs/gtk3-widgets.md#gtk-searchentry).
-- [Gtk.Separator](./docs/gtk3-widgets.md#gtk-separator).
-- [Gtk.Spinner](./docs/gtk3-widgets.md#gtk-spinner).
-- [Gtk.StackSidebar](./docs/gtk3-widgets.md#gtk-stacksidebar).
-- [Gtk.StackSwitcher](./docs/gtk3-widgets.md#gtk-stackswitcher).
-- [Gtk.Statusbar](./docs/gtk3-widgets.md#gtk-statusbar).
-- [Gtk Style add class](./docs/gtk3-widgets.md#gtk-style-add-class).
-- [Gtk Style css provider](./docs/gtk3-widgets.md#gtk-style-css-provider).
-- [Gtk Style dark mode](./docs/gtk3-widgets.md#gtk-style-dark-mode).
-- [Gtk Style set name](./docs/gtk3-widgets.md#gtk-style-set-name).
-- [Gtk.Switch](./docs/gtk3-widgets.md#gtk-switch).
-- [Gtk.ToggleButton](./docs/gtk3-widgets.md#gtk-togglebutton).
-- [Gtk.Toolbar](./docs/gtk3-widgets.md#gtk-toolbar).
-- [Gtk.TreeView editable](./docs/gtk3-widgets.md#gtk-treeview-editable).
-- [Gtk.TreeView filter](./docs/gtk3-widgets.md#gtk-treeview-filter).
-- [Gtk.TreeView sort](./docs/gtk3-widgets.md#gtk-treeview-sort).
-- [Gtk.TreeView TreeStore](./docs/gtk3-widgets.md#gtk-treeview-treestore).
-- [Gtk.Window](./docs/gtk3-widgets.md#gtk-window).
+## [GTK 3 Libhandy](./docs/gtk3-libhandy-index.md)
 
 ---
 
@@ -191,19 +130,12 @@ Os widgets que foram criados ou passaram por grandes aprimoramentos são:
 
 > A libadwaita deve estar disponível a partir do GNOME 41, a mesma irá substituir a biblioteca libhandy.
 
-![Python e GTK4: Libadwaita](./docs/images/gtk4-libadwaita/gtk-4-pygobject-adw-applicationwindow.webp)
+![Python e GTK4: Libadwaita](./docs/images/gtk4-libadwaita/gtk-4-pygobject-adw-actionrow.webp)
 
 Essa nova biblioteca é baseada na biblioteca Libhandy e tem como objetivo melhorar a experiência do usuário através de
 um UI/UX mais unificada em aplicativos GNOME.
 
-Alguns exemplos de design podem ser vistos em:
-
-- [https://gitlab.gnome.org/Teams/Design/os-mockups/-/blob/master/lists/list-design-patterns.png](https://gitlab.gnome.org/Teams/Design/os-mockups/-/blob/master/lists/list-design-patterns.png)
-  .
-
-Documentação da biblioteca libadwaita:
-
-- [https://gnome.pages.gitlab.gnome.org/libadwaita/doc/](https://gnome.pages.gitlab.gnome.org/libadwaita/doc/)
+- [Documentação](https://gnome.pages.gitlab.gnome.org/libadwaita/doc/)
 
 ## Instalação
 
@@ -267,52 +199,6 @@ sudo zypper install libadwaita
 
 ---
 
-## GTK 3 Libhandy
-
-> De prefeirencia por utilizar a biblioteca [libadwaita](#gtk-4-Libadwaita).
-
-### Instalação
-
-#### Fedora
-
-```bash
-sudo apt install libhandy
-```
-
-#### Ubuntu
-
-```bash
-sudo apt install libhandy-1
-```
-
-![Python e GTK 3: libhandy 1](docs/images/gtk3-libhandy/pygobject-hdy-actionrow.webp)
-*Python e GTK 3: libhandy 1*
-
-### Widgets
-
-- [Handy.ActionRow](./docs/gtk3-libhandy-widgets.md#handy-actionrow).
-- [Handy.ApplicationWindow](./docs/gtk3-libhandy-widgets.md#handy-applicationwindow).
-- [Handy.Avatar](./docs/gtk3-libhandy-widgets.md#handy-avatar).
-- [Handy.Carousel](./docs/gtk3-libhandy-widgets.md#handy-avatar).
-- [Handy.CarouselIndicatorDots](./docs/gtk3-libhandy-widgets.md#handy-carousel-indicator-dots).
-- [Handy.CarouselIndicatorLines](./docs/gtk3-libhandy-widgets.md#handy-carousel-indicator-lines).
-- [Handy.Clamp](./docs/gtk3-libhandy-widgets.md#handy-clamp).
-- [Handy.ComboRow](./docs/gtk3-libhandy-widgets.md#handy-comborow).
-- [Handy.Deck](./docs/gtk3-libhandy-widgets.md#handy-deck).
-- [Handy.ExpanderRow](./docs/gtk3-libhandy-widgets.md#handy-expanderrow).
-- [Handy.HeaderBar](./docs/gtk3-libhandy-widgets.md#handy-headerbar).
-- [Handy.HeaderGroup](./docs/gtk3-libhandy-widgets.md#handy-headergroup).
-- [Handy.Leaflet](./docs/gtk3-libhandy-widgets.md#handy-leaflet).
-- [Handy.SearchBar](./docs/gtk3-libhandy-widgets.md#handy-searchbar).
-- [Handy.Squeezer](./docs/gtk3-libhandy-widgets.md#handy-squeezer).
-- [Handy.ViewSwitcher](./docs/gtk3-libhandy-widgets.md#handy-view-switcher).
-- [Handy.ViewSwitcherBar](./docs/gtk3-libhandy-widgets.md#handy-view-switcher-bar).
-- [Handy.ViewSwitcherTitle](./docs/gtk3-libhandy-widgets.md#handy-view-switcher-title).
-- [Handy.Window](./docs/gtk3-libhandy-widgets.md#handy-window).
-- [Handy.WindowHandle](./docs/gtk3-libhandy-widgets.md#handy-window-handle).
-
----
-
 ## Mockups
 
 Reimaginando a interface de alguns aplicativos famosos com GTK.
@@ -323,10 +209,6 @@ Reimaginando a interface de alguns aplicativos famosos com GTK.
 
 ## Exemplos
 
-### Navegador web (WebKit2.WebView)
-
-* [WebKit2.WebView com Python](https://github.com/natorsc/gui-python-gtk/tree/master/src/gtk/examples/web-browser).
-
-![WebKit2 WebView](https://codigoninja.dev/images/pygobject-gtk3-webkit2-webview.webp)
+> Em construção.
 
 ---
