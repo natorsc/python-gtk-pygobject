@@ -79,6 +79,31 @@
 
 ---
 
+## Gtk Entry
+
+- [Python](../src/gtk4/entry).
+- [Template (arquivos de interface)](../src/gtk4/entry/template).
+
+![Gtk.Entry().](./images/gtk4/gtk-4-pygobject-entry.webp)
+
+---
+
+## Gtk EntryCompletion
+
+- [Python](../src/gtk4/entry-completion).
+
+![Gtk.EntryCompletion().](./images/gtk4/gtk-4-pygobject-entry-completion.webp)
+
+---
+
+## Gtk FileChooserDialog folder
+
+- [Python](../src/gtk4/file-chooser-dialog-folder).
+
+![Gtk.FileChooserDialog() folder.](./images/gtk4/gtk-4-pygobject-file-chooser-dialog-folder.webp)
+
+---
+
 ## Translator gettext
 
 - [Python](../src/gtk4/translator-gettext).

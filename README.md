@@ -122,6 +122,9 @@ Os widgets que foram criados ou passaram por grandes aprimoramentos são:
 - [Gtk.CheckButton](./docs/gtk4-widgets.md#gtk-checkbutton).
 - [Gtk.Dialog](./docs/gtk4-widgets.md#gtk-dialog).
 - [Gtk.DragAndDrop (Gtk.DragSource e Gtk.DropTarget)](./docs/gtk4-widgets.md#gtk-drag-and-drop).
+- [Gtk.Entry](./docs/gtk4-widgets.md#gtk-entry).
+- [Gtk.EntryCompletion](./docs/gtk4-widgets.md#gtk-entrycompletion).
+- [Gtk.FileChooserDialog (folder)](./docs/gtk4-widgets.md#gtk-filechooserdialog-folder).
 - [Translator (gettext)](./docs/gtk4-widgets.md#translator-gettext).
 
 ---
