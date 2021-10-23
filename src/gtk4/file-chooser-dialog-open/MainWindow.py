@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-"""Python e GTK 4: PyGObject Gtk.FileChooserDialog() selecionar pasta."""
+"""Python e GTK 4: PyGObject Gtk.FileChooserDialog() selecionar arquivo."""
 from pathlib import Path
 
 import gi
@@ -17,8 +17,8 @@ class DialogSelecFolder(Gtk.FileChooserDialog):
         super().__init__(transient_for=parent, use_header_bar=True)
         self.select_multiple = select_multiple
 
-        self.set_action(action=Gtk.FileChooserAction.SELECT_FOLDER)
-        title = 'Selecionar pastas' if self.select_multiple else 'Selecionar pasta'
+        self.set_action(action=Gtk.FileChooserAction.OPEN)
+        title = 'Selecionar arquivos' if self.select_multiple else 'Selecionar arquivo'
         self.set_title(title=title)
         self.set_modal(modal=True)
         self.set_select_multiple(select_multiple=self.select_multiple)
@@ -41,6 +41,23 @@ class DialogSelecFolder(Gtk.FileChooserDialog):
             response_id=Gtk.ResponseType.CANCEL,
         )
         btn_cancel.get_style_context().add_class(class_name='destructive-action')
+
+        txt_filter = Gtk.FileFilter()
+        txt_filter.set_name(name='txt')
+        txt_filter.add_pattern(pattern='.txt')
+        txt_filter.add_mime_type(mime_type='text/plain')
+        self.add_filter(filter=txt_filter)
+
+        py_filter = Gtk.FileFilter()
+        py_filter.set_name(name='python')
+        py_filter.add_pattern(pattern='.py')
+        py_filter.add_mime_type(mime_type='text/x-python')
+        self.add_filter(filter=py_filter)
+
+        all_filter = Gtk.FileFilter()
+        all_filter.set_name(name='todos')
+        all_filter.add_pattern(pattern='*')
+        self.add_filter(filter=all_filter)
 
         self.show()
 
@@ -65,7 +82,7 @@ class MainWindow(Gtk.ApplicationWindow):
     def __init__(self, **kwargs):
         super().__init__(**kwargs)
 
-        self.set_title(title='Python e GTK 4: PyGObject Gtk.FileChooserDialog() selecionar pasta')
+        self.set_title(title='Python e GTK 4: PyGObject Gtk.FileChooserDialog() selecionar arquivo')
         # Tamanho inicial da janela.
         self.set_default_size(width=1366 / 2, height=768 / 2)
         # Tamanho minimo da janela.
@@ -82,11 +99,11 @@ class MainWindow(Gtk.ApplicationWindow):
         # No GTK 3: add().
         self.set_child(child=vbox)
 
-        button_save_file = Gtk.Button.new_with_label(label='Selecionar pasta')
+        button_save_file = Gtk.Button.new_with_label(label='Selecionar arquivo')
         button_save_file.connect('clicked', self.open_dialog)
         vbox.append(child=button_save_file)
 
-        self.check_button = Gtk.CheckButton.new_with_label(label='Selecionar várias pastas?')
+        self.check_button = Gtk.CheckButton.new_with_label(label='Selecionar vários arquivos?')
         vbox.append(child=self.check_button)
 
     def open_dialog(self, widget):

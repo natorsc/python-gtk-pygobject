@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-"""Python e GTK 4: PyGObject Gtk.FileChooserDialog() selecionar pasta."""
+"""Python e GTK 4: PyGObject Gtk.FileChooserDialog() salvar arquivo."""
 from pathlib import Path
 
 import gi
@@ -11,21 +11,22 @@ from gi.repository import Gio, Gtk
 
 class DialogSelecFolder(Gtk.FileChooserDialog):
     # Definindo o diretório padrão.
-    home = Path.home()
+    HOME = str(Path.home())
 
-    def __init__(self, parent, select_multiple):
+    def __init__(self, parent):
         super().__init__(transient_for=parent, use_header_bar=True)
-        self.select_multiple = select_multiple
 
-        self.set_action(action=Gtk.FileChooserAction.SELECT_FOLDER)
-        title = 'Selecionar pastas' if self.select_multiple else 'Selecionar pasta'
-        self.set_title(title=title)
+        self.set_action(action=Gtk.FileChooserAction.SAVE)
+        self.set_title(title='Salvar arquivo')
         self.set_modal(modal=True)
-        self.set_select_multiple(select_multiple=self.select_multiple)
+        # Nome inicial do arquivo.
+        self.set_current_name(name='novo-arquivo.txt')
         self.connect('response', self.dialog_response)
         self.set_current_folder(
-            Gio.File.new_for_path(path=str(self.home)),
+            Gio.File.new_for_path(self.HOME),
         )
+        # Adicionando confirmação de sobrescrita.
+        # self.set_do_overwrite_confirmation(do_overwrite_confirmation=True)
 
         # Criando os botões que ficarão na barra de título (Gtk.HeaderBar()).
         self.add_buttons(
@@ -47,17 +48,19 @@ class DialogSelecFolder(Gtk.FileChooserDialog):
     def dialog_response(self, widget, response):
         # Verificando qual botão foi pressionado.
         if response == Gtk.ResponseType.OK:
-            if self.select_multiple:
-                gliststore = self.get_files()
-                for glocalfile in gliststore:
-                    print(f'Nome da pasta selecionada: {glocalfile.get_basename()}')
-                    print(f'Caminho da pasta selecionada: {glocalfile.get_path()}\n')
-            else:
-                glocalfile = self.get_file()
-                print(f'Nome da pasta selecionada: {glocalfile.get_basename()}')
-                print(f'Caminho da pasta selecionada: {glocalfile.get_path()}')
+            glocalfile = self.get_file()
+            print(f'Nome do arquivo selecionada: {glocalfile.get_basename()}')
+            print(f'Caminho onde o arquivo será salvo: {glocalfile.get_path()}')
+
+            file_path = glocalfile.get_path()
+            self.save_file(file_path=file_path)
 
         widget.close()
+
+    def save_file(self, file_path):
+        with open(file=file_path, mode='w') as f:
+            f.write('Olá Mundo')
+            f.close()
 
 
 class MainWindow(Gtk.ApplicationWindow):
@@ -65,7 +68,7 @@ class MainWindow(Gtk.ApplicationWindow):
     def __init__(self, **kwargs):
         super().__init__(**kwargs)
 
-        self.set_title(title='Python e GTK 4: PyGObject Gtk.FileChooserDialog() selecionar pasta')
+        self.set_title(title='Python e GTK 4: PyGObject Gtk.FileChooserDialog() abrir arquivo')
         # Tamanho inicial da janela.
         self.set_default_size(width=1366 / 2, height=768 / 2)
         # Tamanho minimo da janela.
@@ -82,16 +85,12 @@ class MainWindow(Gtk.ApplicationWindow):
         # No GTK 3: add().
         self.set_child(child=vbox)
 
-        button_save_file = Gtk.Button.new_with_label(label='Selecionar pasta')
+        button_save_file = Gtk.Button.new_with_label(label='Salvar arquivo')
         button_save_file.connect('clicked', self.open_dialog)
         vbox.append(child=button_save_file)
 
-        self.check_button = Gtk.CheckButton.new_with_label(label='Selecionar várias pastas?')
-        vbox.append(child=self.check_button)
-
     def open_dialog(self, widget):
-        select_multiple = self.check_button.get_active()
-        DialogSelecFolder(parent=self, select_multiple=select_multiple)
+        DialogSelecFolder(parent=self)
 
 
 class Application(Gtk.Application):
