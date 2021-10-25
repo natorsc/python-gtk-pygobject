@@ -127,6 +127,7 @@ Os widgets que foram criados ou passaram por grandes aprimoramentos são:
 - [Gtk.FileChooserDialog (folder)](./docs/gtk4-widgets.md#gtk-filechooserdialog-folder).
 - [Gtk.FileChooserDialog (open)](./docs/gtk4-widgets.md#gtk-filechooserdialog-open).
 - [Gtk.FileChooserDialog (save)](./docs/gtk4-widgets.md#gtk-filechooserdialog-save).
+- [Gtk.Fixed](./docs/gtk4-widgets.md#gtk-fixed).
 - [Translator (gettext)](./docs/gtk4-widgets.md#translator-gettext).
 
 ---

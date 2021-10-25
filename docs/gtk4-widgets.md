@@ -75,7 +75,7 @@
 
 - [Python](../src/gtk4/drag-and-drop).
 
-![Gtk.DragAndDrop (Gtk.DragSource e Gtk.DropTarget).](./images/gtk4/gtk-4-pygobject-drag-and-drop.webp)
+![Python e GTK 4: Gtk.DragAndDrop (Gtk.DragSource e Gtk.DropTarget).](./images/gtk4/gtk-4-pygobject-drag-and-drop.webp)
 
 ---
 
@@ -84,7 +84,7 @@
 - [Python](../src/gtk4/entry).
 - [Template (arquivos de interface)](../src/gtk4/entry/template).
 
-![Gtk.Entry().](./images/gtk4/gtk-4-pygobject-entry.webp)
+![Python e GTK 4: Gtk.Entry().](./images/gtk4/gtk-4-pygobject-entry.webp)
 
 ---
 
@@ -92,7 +92,7 @@
 
 - [Python](../src/gtk4/entry-completion).
 
-![Gtk.EntryCompletion().](./images/gtk4/gtk-4-pygobject-entry-completion.webp)
+![Python e GTK 4: Gtk.EntryCompletion().](./images/gtk4/gtk-4-pygobject-entry-completion.webp)
 
 ---
 
@@ -100,7 +100,7 @@
 
 - [Python](../src/gtk4/file-chooser-dialog-folder).
 
-![Gtk.FileChooserDialog() folder.](./images/gtk4/gtk-4-pygobject-file-chooser-dialog-folder.webp)
+![Python e GTK 4: Gtk.FileChooserDialog() folder.](./images/gtk4/gtk-4-pygobject-file-chooser-dialog-folder.webp)
 
 ---
 
@@ -108,7 +108,7 @@
 
 - [Python](../src/gtk4/file-chooser-dialog-open).
 
-![Gtk.FileChooserDialog() selecionar arquivo.](./images/gtk4/gtk-4-pygobject-file-chooser-dialog-open.webp)
+![Python e GTK 4: Gtk.FileChooserDialog() selecionar arquivo.](./images/gtk4/gtk-4-pygobject-file-chooser-dialog-open.webp)
 
 ---
 
@@ -116,7 +116,15 @@
 
 - [Python](../src/gtk4/file-chooser-dialog-save).
 
-![Gtk.FileChooserDialog() salvar arquivo.](./images/gtk4/gtk-4-pygobject-file-chooser-dialog-save.webp)
+![Python e GTK 4: Gtk.FileChooserDialog() salvar arquivo.](./images/gtk4/gtk-4-pygobject-file-chooser-dialog-save.webp)
+
+---
+
+## Gtk Fixed
+
+- [Python](../src/gtk4/fixed).
+
+![Python e GTK 4: Gtk.Fixed().](./images/gtk4/gtk-4-pygobject-fixed.webp)
 
 ---
 
