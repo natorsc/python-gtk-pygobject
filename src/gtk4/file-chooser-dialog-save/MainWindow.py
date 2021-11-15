@@ -25,8 +25,6 @@ class DialogSelecFolder(Gtk.FileChooserDialog):
         self.set_current_folder(
             Gio.File.new_for_path(self.HOME),
         )
-        # Adicionando confirmação de sobrescrita.
-        # self.set_do_overwrite_confirmation(do_overwrite_confirmation=True)
 
         # Criando os botões que ficarão na barra de título (Gtk.HeaderBar()).
         self.add_buttons(

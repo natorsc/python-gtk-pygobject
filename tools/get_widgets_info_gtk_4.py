@@ -85,6 +85,6 @@ def save_data(widget):
 
 
 if __name__ == '__main__':
-    widget = Gtk.FileChooserDialog()
+    widget = Gtk.MenuButton()
     save_data(widget=widget)
     print('[!] Concluido [!]')

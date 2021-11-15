@@ -27,7 +27,6 @@ class MainWindow(Gtk.ApplicationWindow):
         vbox.set_margin_end(margin=12)
         vbox.set_margin_bottom(margin=12)
         vbox.set_margin_start(margin=12)
-
         vbox.set_valign(Gtk.Align.END)
         self.set_child(child=vbox)
 
