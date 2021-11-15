@@ -19,15 +19,6 @@ class MainWindow(Gtk.ApplicationWindow):
         # Tamanho minimo da janela.
         self.set_size_request(width=1366 / 6, height=768 / 6)
 
-        self.fixed = Gtk.Fixed.new()
-        self.fixed.set_margin_top(margin=12)
-        self.fixed.set_margin_end(margin=12)
-        self.fixed.set_margin_bottom(margin=12)
-        self.fixed.set_margin_start(margin=12)
-        # Adicionando o box na janela principal.
-        # No GTK 3: add().
-        self.set_child(child=self.fixed)
-
         scrolled_window = Gtk.ScrolledWindow.new()
         # Adicionando a barra de rolagem na janela principal.
         self.set_child(child=scrolled_window)

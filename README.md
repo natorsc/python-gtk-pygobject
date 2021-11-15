@@ -130,6 +130,7 @@ Os widgets que foram criados ou passaram por grandes aprimoramentos são:
 - [Gtk.Fixed](./docs/gtk4-widgets.md#gtk-fixed).
 - [Gtk.FlowBox](./docs/gtk4-widgets.md#gtk-flowbox).
 - [Gtk.Grid](./docs/gtk4-widgets.md#gtk-grid).
+- [Gtk.ListBox](./docs/gtk4-widgets.md#gtk-listbox).
 - [Gtk.MenuButton](./docs/gtk4-widgets.md#gtk-menubutton).
 - [Translator (gettext)](./docs/gtk4-widgets.md#translator-gettext).
 - [Gtk.Video](./docs/gtk4-widgets.md#gtk-video).

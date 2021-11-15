@@ -144,6 +144,14 @@
 
 ---
 
+## Gtk ListBox
+
+- [Python](../src/gtk4/listbox).
+
+![Python e GTK 4: Gtk.ListBox().](./images/gtk4/gtk-4-pygobject-listbox.webp)
+
+---
+
 ## Gtk MenuButton
 
 - [Python](../src/gtk4/menubutton).
