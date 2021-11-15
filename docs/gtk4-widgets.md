@@ -151,3 +151,11 @@
 ![Python e GTK 4: Translator gettext.](./images/gtk4/gtk-4-pygobject-translator-gettext.webp)
 
 ---
+
+## Gtk Video
+
+- [Python](../src/gtk4/video).
+
+![Python e GTK 4: Gtk.Video().](./images/gtk4/gtk-4-pygobject-video.webp)
+
+---

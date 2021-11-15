@@ -131,6 +131,7 @@ Os widgets que foram criados ou passaram por grandes aprimoramentos são:
 - [Gtk.FlowBox](./docs/gtk4-widgets.md#gtk-flowbox).
 - [Gtk.MenuButton](./docs/gtk4-widgets.md#gtk-menubutton).
 - [Translator (gettext)](./docs/gtk4-widgets.md#translator-gettext).
+- [Gtk.Video](./docs/gtk4-widgets.md#gtk-video).
 
 ---
 
