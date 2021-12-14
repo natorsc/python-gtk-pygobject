@@ -50,36 +50,9 @@ As diretrizes de estilo do GNOME (HIG) podem ser vistas em:
 
 ---
 
-## bibliotecas:
+## Tutoriais 🤓
 
-- **GLib**: Biblioteca com utilitários de uso geral, não é específica para interfaces gráficas. GLib fornece muitos
-  tipos de dados úteis, macros, conversões de tipo, utilitários de string, utilitários de arquivo, uma abstração de loop
-  principal e assim por diante.
-- **GObject**: Biblioteca que fornece um sistema de tipos.
-- **GIO**: Uma API VFS (Virtual file system) moderna e fácil de usar, incluindo abstrações para arquivos, drives,
-  volumes, fluxo de IO, bem como programação de rede e comunicação DBus.
-- **cairo**: Cairo é uma biblioteca de gráficos 2D com suporte para vários dispositivos de saída.
-- **Pango**: Pango é uma biblioteca para manipulação de texto internacionalizada. Ele gira em torno do objeto
-  PangoLayout, representando um parágrafo de texto. Pango fornece o motor para GtkTextView, GtkLabel, GtkEntry e outros
-  widgets que exibem texto.
-- **ATK**: ATK é o Kit de ferramentas de acessibilidade. Ele fornece um conjunto de interfaces genéricas que permitem
-  que tecnologias de acessibilidade interajam com uma interface gráfica de usuário. Por exemplo, um leitor de tela usa
-  ATK para descobrir o texto em uma interface e lê-lo para usuários cegos. Os widgets GTK possuem suporte integrado para
-  acessibilidade usando a estrutura ATK.
-- **GdkPixbuf**: Esta é uma pequena biblioteca que permite criar objetos GdkPixbuf (“buffer de pixel”) a partir de dados
-  de imagem ou arquivos de imagem. Use um GdkPixbuf em combinação com GtkImage para exibir imagens.
-- **graphene**: Esta é uma pequena biblioteca que fornece operações e tipos de dados vetoriais e matriciais. O graphene
-  fornece implementações otimizadas usando vários conjuntos de instruções SIMD, como SSE.
-- **GDK**: GDK é a camada de abstração que permite ao GTK oferecer suporte a vários sistemas de janelas. O GDK fornece
-  recursos de sistema de janelas no Wayland, X11, Windows e OSX.
-- **GSK**: GSK é uma biblioteca para criar um gráfico de cena a partir de nós de renderização e renderizá-lo usando
-  diferentes APIs de renderização. GSK fornece renderizadores para OpenGL, Vulkan e Cairo.
-
----
-
-## Tutoriais
-
-- [https://codigoninja.dev/](https://codigoninja.dev/).
+- [https://blog.codigoninja.dev/](https://blog.codigoninja.dev/).
 
 ---
 
@@ -87,11 +60,43 @@ As diretrizes de estilo do GNOME (HIG) podem ser vistas em:
 
 ## [GTK 3 Libhandy](./docs/gtk3-libhandy-index.md)
 
+> 📝 Conteúdo não está mais sendo atualizado. Focando no GTK 4.
+
+---
+
+## Arquitetura
+
+### Gtk 4
+
+![Arquitetura do GTK 4](./docs/images/gtk4/gtk-architecture.webp)
+
+#### bibliotecas:
+
+##### [GLib](https://docs.gtk.org/glib/)
+
+GLib é uma biblioteca central de baixo nível que forma a base do GTK. Ele fornece manipulação de estrutura de dados para C, wrappers de portabilidade e interfaces para funcionalidade de tempo de execução como um loop de eventos, threads, carregamento dinâmico e um sistema de objetos.
+
+##### [Pango](https://docs.gtk.org/Pango/)
+
+Pango é uma biblioteca para layout e renderização de texto com ênfase na internacionalização. Ele forma o núcleo do manuseio de texto e fonte para GTK.
+
+##### [Cairo](https://www.cairographics.org/)
+
+Cairo é uma biblioteca para gráficos 2D com suporte para vários dispositivos de saída (incluindo o X Window System, Win32) ao mesmo tempo em que produz uma saída consistente em todas as mídias, aproveitando a aceleração do hardware de exibição quando disponível.
+
+##### [GdkPixbuf](https://docs.gtk.org/gdk-pixbuf)
+
+GdkPixbuf é uma biblioteca para carregar ativos gráficos como ícones em vários formatos, como PNG, JPEG e GIF.
+
+##### [ATK](https://docs.gtk.org/atk/)
+
+ATK é uma biblioteca para um conjunto de interfaces que fornecem acessibilidade. Ao suportar as interfaces ATK, um aplicativo ou kit de ferramentas pode ser usado com ferramentas como leitores de tela, ampliadores e dispositivos de entrada alternativos.
+
 ---
 
 ## GTK 4
 
-> Em construção.
+> 🚜 Em construção 🏭.
 
 ![Python e GTK4: Gtk.ApplicationWindow](./docs/images/gtk4/gtk-4-pygobject-applicationwindow.webp)
 
@@ -152,10 +157,18 @@ um UI/UX mais unificada em aplicativos GNOME.
 
 ### Arch Linux
 
-> Testes realizados com a versão: `1.0.0alpha.2-1`.
-
 ```bash
 sudo pacman -S libadwaita
+```
+
+> Se o `sudo` não funcionar faça login como **root** e faça a instalação se o ``sudo``.
+
+### Fedora
+
+> 🚨 Fedora 35 ou superior.
+
+```bash
+sudo dnf install libadwaita
 ```
 
 ### openSUSE Tumbleweed
@@ -163,8 +176,6 @@ sudo pacman -S libadwaita
 ```bash
 sudo zypper install libadwaita
 ```
-
-> Se o `sudo` não funcionar faça login como **root** e faça a instalação se o ``sudo``.
 
 ### Widgets
 

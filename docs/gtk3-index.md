@@ -1,5 +1,32 @@
 # GTK 3
 
+## Arquitetura
+
+### bibliotecas:
+
+- **GLib**: Biblioteca com utilitários de uso geral, não é específica para interfaces gráficas. GLib fornece muitos
+  tipos de dados úteis, macros, conversões de tipo, utilitários de string, utilitários de arquivo, uma abstração de loop
+  principal e assim por diante.
+- **GObject**: Biblioteca que fornece um sistema de tipos.
+- **GIO**: Uma API VFS (Virtual file system) moderna e fácil de usar, incluindo abstrações para arquivos, drives,
+  volumes, fluxo de IO, bem como programação de rede e comunicação DBus.
+- **cairo**: Cairo é uma biblioteca de gráficos 2D com suporte para vários dispositivos de saída.
+- **Pango**: Pango é uma biblioteca para manipulação de texto internacionalizada. Ele gira em torno do objeto
+  PangoLayout, representando um parágrafo de texto. Pango fornece o motor para GtkTextView, GtkLabel, GtkEntry e outros
+  widgets que exibem texto.
+- **ATK**: ATK é o Kit de ferramentas de acessibilidade. Ele fornece um conjunto de interfaces genéricas que permitem
+  que tecnologias de acessibilidade interajam com uma interface gráfica de usuário. Por exemplo, um leitor de tela usa
+  ATK para descobrir o texto em uma interface e lê-lo para usuários cegos. Os widgets GTK possuem suporte integrado para
+  acessibilidade usando a estrutura ATK.
+- **GdkPixbuf**: Esta é uma pequena biblioteca que permite criar objetos GdkPixbuf (“buffer de pixel”) a partir de dados
+  de imagem ou arquivos de imagem. Use um GdkPixbuf em combinação com GtkImage para exibir imagens.
+- **graphene**: Esta é uma pequena biblioteca que fornece operações e tipos de dados vetoriais e matriciais. O graphene
+  fornece implementações otimizadas usando vários conjuntos de instruções SIMD, como SSE.
+- **GDK**: GDK é a camada de abstração que permite ao GTK oferecer suporte a vários sistemas de janelas. O GDK fornece
+  recursos de sistema de janelas no Wayland, X11, Windows e OSX.
+- **GSK**: GSK é uma biblioteca para criar um gráfico de cena a partir de nós de renderização e renderizá-lo usando
+  diferentes APIs de renderização. GSK fornece renderizadores para OpenGL, Vulkan e Cairo.
+
 ## Gio
 
 - [Gio.Menu](./gtk3-widgets.md#gio-menu).
