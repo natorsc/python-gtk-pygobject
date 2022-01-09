@@ -172,7 +172,15 @@
 
 - [Python](../src/gtk4/treeview-liststore-editable).
 
-![Python e GTK 4: Gtk.Video().](./images/gtk4/gtk-4-pygobject-treeview-editable.webp)
+![Python e GTK 4: Gtk.TreeView() editable.](./images/gtk4/gtk-4-pygobject-treeview-editable.webp)
+
+---
+
+## TreeView (filter)
+
+- [Python](../src/gtk4/treeview-liststore-filter).
+
+![Python e GTK 4: Gtk.TreeView() filter.](./images/gtk4/gtk-4-pygobject-treeview-filter.webp)
 
 ---
 

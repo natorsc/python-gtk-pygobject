@@ -128,6 +128,7 @@ criar e gerenciar os projetos.
 - [Gtk.MenuButton](./docs/gtk4-widgets.md#gtk-menubutton).
 - [Translator (gettext)](./docs/gtk4-widgets.md#translator-gettext).
 - [Gtk.TreeView editable.](./docs/gtk4-widgets.md#treeview-editable).
+- [Gtk.TreeView filter.](./docs/gtk4-widgets.md#treeview-filter).
 - [Gtk.Video](./docs/gtk4-widgets.md#gtk-video).
 
 ---

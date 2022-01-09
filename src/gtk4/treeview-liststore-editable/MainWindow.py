@@ -74,7 +74,6 @@ class MainWindow(Gtk.ApplicationWindow):
 
             # Configurando o rederizador da primeira coluna.
             if column_index == 0:
-                cell_render.props.weight_set = True
                 cell_render.set_property('weight_set', True)
                 cell_render.set_property('weight', Pango.Weight.BOLD)
 
