@@ -85,6 +85,6 @@ def save_data(widget):
 
 
 if __name__ == '__main__':
-    widget = Gtk.TreeViewColumn()
+    widget = Gtk.ListStore()
     save_data(widget=widget)
     print('[!] Concluido [!]')

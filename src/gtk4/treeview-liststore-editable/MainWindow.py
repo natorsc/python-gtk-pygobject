@@ -44,7 +44,14 @@ class MainWindow(Gtk.ApplicationWindow):
 
         # Adicionando os dados no `Gtk.ListStore()`.
         for state in self.brazilian_states:
-            # insert_with_values(linha, colunas, dados)
+            '''insert_with_values(linha, colunas, valores).
+            
+            - **linha**: Posição do item. (linha 1, linha 2, linha n, ...)
+            - **colunas**: Posição das colunas. O valor da coluna será validado 
+            por GObject.TYPE_INT. No caso deste exemplo a primeira coluna é um 
+            `int` (numero inteiro) e a segunda uma string (texto).
+            - **valores**: Uma `tupla` (ou lista) contendo os valores que serão exibidos.
+            '''
             self.list_store.insert_with_values(state[0], (0, 1), state)
 
         # Criando um `Gtk.TreeView()`.
