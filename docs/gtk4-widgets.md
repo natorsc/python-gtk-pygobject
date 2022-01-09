@@ -184,6 +184,14 @@
 
 ---
 
+## TreeView (sort)
+
+- [Python](../src/gtk4/treeview-liststore-sort).
+
+![Python e GTK 4: Gtk.TreeView() sort.](./images/gtk4/gtk-4-pygobject-treeview-sort.webp)
+
+---
+
 ## Gtk Video
 
 - [Python](../src/gtk4/video).

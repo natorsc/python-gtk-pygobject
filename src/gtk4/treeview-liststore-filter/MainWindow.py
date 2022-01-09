@@ -53,7 +53,6 @@ class MainWindow(Gtk.ApplicationWindow):
         # Adicionando os dados no `Gtk.ListStore()`.
         for row_index, data in enumerate(self.software_list):
             self.list_store.insert_with_values(row_index, (0, 1, 2), data)
-            # self.list_store.append(row=state)
 
         # Criando um `Gtk.TreeView()`.
         tree_view = Gtk.TreeView.new_with_model(model=self.list_store_lang_filter)
