@@ -168,6 +168,14 @@
 
 ---
 
+## TreeView (editable)
+
+- [Python](../src/gtk4/treeview-liststore-editable).
+
+![Python e GTK 4: Gtk.Video().](./images/gtk4/gtk-4-pygobject-treeview-editable.webp)
+
+---
+
 ## Gtk Video
 
 - [Python](../src/gtk4/video).

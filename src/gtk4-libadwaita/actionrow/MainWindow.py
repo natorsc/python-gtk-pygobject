@@ -33,6 +33,7 @@ class MainWindow(Gtk.ApplicationWindow):
         self.set_child(child=scrolled)
 
         list_box = Gtk.ListBox.new()
+        # list_box.set_selection_mode(False)
         list_box.set_margin_top(margin=12)
         list_box.set_margin_end(margin=12)
         list_box.set_margin_bottom(margin=12)

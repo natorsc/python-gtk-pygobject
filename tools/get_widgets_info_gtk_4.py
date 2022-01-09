@@ -53,7 +53,7 @@ def save_data(widget):
     gtk_version = f'Marjor: {MAJOR}. Minor: {MINOR}. Micro: {MICRO}.'
     pygobject_version = GObject.pygobject_version
 
-    widget_name = widget.get_name()
+    widget_name = 'widget.get_name()'
     # Props do widget.
     widget_props = dir(widget.props)
     # Signals do widget.
@@ -85,6 +85,6 @@ def save_data(widget):
 
 
 if __name__ == '__main__':
-    widget = Gtk.MenuButton()
+    widget = Gtk.TreeViewColumn()
     save_data(widget=widget)
     print('[!] Concluido [!]')

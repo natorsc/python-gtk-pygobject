@@ -103,18 +103,7 @@ ATK é uma biblioteca para um conjunto de interfaces que fornecem acessibilidade
 O GTK 4 foi lançado em 16 de dezembro 2020.
 
 No GTK 4 é desencorajado o uso do Gnome Glade, isso porque o Gnome Builder fornece uma forma padronizada e moderna de se
-criar e gerenciar projetos.
-
-Os widgets que foram criados ou passaram por grandes aprimoramentos são:
-
-- Data transfers.
-- Event controllers.
-- Layout managers.
-- Render nodes.
-- Media playback.
-- Scalable lists.
-- Shaders.
-- Accessibility.
+criar e gerenciar os projetos.
 
 ### Widgets
 
@@ -138,6 +127,7 @@ Os widgets que foram criados ou passaram por grandes aprimoramentos são:
 - [Gtk.ListBox](./docs/gtk4-widgets.md#gtk-listbox).
 - [Gtk.MenuButton](./docs/gtk4-widgets.md#gtk-menubutton).
 - [Translator (gettext)](./docs/gtk4-widgets.md#translator-gettext).
+- [Gtk.TreeView editable.](./docs/gtk4-widgets.md#treeview-editable).
 - [Gtk.Video](./docs/gtk4-widgets.md#gtk-video).
 
 ---
