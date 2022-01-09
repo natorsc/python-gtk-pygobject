@@ -15,9 +15,9 @@ class MainWindow(Gtk.ApplicationWindow):
 
         self.set_title(title='Python e GTK 4: PyGObject Gtk.Fixed()')
         # Tamanho inicial da janela.
-        self.set_default_size(width=1366 / 2, height=768 / 2)
+        self.set_default_size(width=int(1366 / 2), height=int(768 / 2))
         # Tamanho minimo da janela.
-        self.set_size_request(width=1366 / 2, height=768 / 2)
+        self.set_size_request(width=int(1366 / 2), height=int(768 / 2))
 
         self.fixed = Gtk.Fixed.new()
         self.fixed.set_margin_top(margin=12)

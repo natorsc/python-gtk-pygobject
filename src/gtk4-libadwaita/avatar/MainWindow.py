@@ -17,9 +17,9 @@ class MainWindow(Gtk.ApplicationWindow):
 
         self.set_title(title='Python e GTK 4: PyGObject Adw.Avatar()')
         # Tamanho inicial da janela.
-        self.set_default_size(width=1366 / 2, height=768 / 2)
+        self.set_default_size(width=int(1366 / 2), height=int(768 / 2))
         # Tamanho minimo da janela.
-        self.set_size_request(width=1366 / 2, height=768 / 2)
+        self.set_size_request(width=int(1366 / 2), height=int(768 / 2))
 
         hbox = Gtk.Box.new(orientation=Gtk.Orientation.HORIZONTAL, spacing=12)
         # Adicionando o box na janela principal.

@@ -15,9 +15,9 @@ class MainWindow(Gtk.ApplicationWindow):
 
         self.set_title(title='Python e GTK 4: PyGObject Gtk.MenuButton()')
         # Tamanho inicial da janela.
-        self.set_default_size(width=1366 / 2, height=768 / 2)
+        self.set_default_size(width=int(1366 / 2), height=int(768 / 2))
         # Tamanho minimo da janela.
-        self.set_size_request(width=1366 / 2, height=768 / 2)
+        self.set_size_request(width=int(1366 / 2), height=int(768 / 2))
 
         vbox = Gtk.Box.new(orientation=Gtk.Orientation.VERTICAL, spacing=12)
         vbox.set_homogeneous(homogeneous=True)

@@ -15,7 +15,7 @@ class MainWindow(Gtk.ApplicationWindow):
 
         self.set_title(title='Python e GTK 4: PyGObject Gtk.FlowBox()')
         # Tamanho inicial da janela.
-        self.set_default_size(width=1366 / 2, height=768 / 2)
+        self.set_default_size(width=int(1366 / 2), height=int(768 / 2))
         # Tamanho minimo da janela.
         self.set_size_request(width=1366 / 6, height=768 / 6)
 
