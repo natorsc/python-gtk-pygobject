@@ -144,6 +144,14 @@
 
 ---
 
+## Gtk Image
+
+- [Python](../src/gtk4/image).
+
+![Python e GTK 4: Gtk.Image().](./images/gtk4/gtk-4-pygobject-image.webp)
+
+---
+
 ## Gtk ListBox
 
 - [Python](../src/gtk4/listbox).
@@ -157,6 +165,22 @@
 - [Python](../src/gtk4/menubutton).
 
 ![Python e GTK 4: Gtk.MenuButton().](./images/gtk4/gtk-4-pygobject-menubutton.webp)
+
+---
+
+## Gtk Overlay
+
+- [Python](../src/gtk4/overlay).
+
+![Python e GTK 4: Gtk.Overlay().](./images/gtk4/gtk-4-pygobject-overlay.webp)
+
+---
+
+## Gtk Picture
+
+- [Python](../src/gtk4/picture).
+
+![Python e GTK 4: Gtk.Picture().](./images/gtk4/gtk-4-pygobject-picture.webp)
 
 ---
 

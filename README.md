@@ -124,8 +124,11 @@ criar e gerenciar os projetos.
 - [Gtk.Fixed](./docs/gtk4-widgets.md#gtk-fixed).
 - [Gtk.FlowBox](./docs/gtk4-widgets.md#gtk-flowbox).
 - [Gtk.Grid](./docs/gtk4-widgets.md#gtk-grid).
+- [Gtk.Image](./docs/gtk4-widgets.md#gtk-image).
 - [Gtk.ListBox](./docs/gtk4-widgets.md#gtk-listbox).
 - [Gtk.MenuButton](./docs/gtk4-widgets.md#gtk-menubutton).
+- [Gtk.Overlay](./docs/gtk4-widgets.md#gtk-overlay).
+- [Gtk.Picture](./docs/gtk4-widgets.md#gtk-picture).
 - [Translator (gettext)](./docs/gtk4-widgets.md#translator-gettext).
 - [Gtk.TreeView editable.](./docs/gtk4-widgets.md#treeview-editable).
 - [Gtk.TreeView filter.](./docs/gtk4-widgets.md#treeview-filter).
@@ -166,7 +169,7 @@ sudo dnf install libadwaita
 ### openSUSE Tumbleweed
 
 ```bash
-sudo zypper install libadwaita
+sudo zypper install libadwaita-devel
 ```
 
 ### Widgets
