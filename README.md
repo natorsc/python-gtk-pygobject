@@ -114,6 +114,7 @@ criar e gerenciar os projetos.
 - [Gtk.Button](./docs/gtk4-widgets.md#gtk-button).
 - [Gtk.Calendar](./docs/gtk4-widgets.md#gtk-calendar).
 - [Gtk.CheckButton](./docs/gtk4-widgets.md#gtk-checkbutton).
+- [Gtk.ComboBoxText](./docs/gtk4-widgets.md#gtk-comboboxtext).
 - [Gtk.Dialog](./docs/gtk4-widgets.md#gtk-dialog).
 - [Gtk.DragAndDrop (Gtk.DragSource e Gtk.DropTarget)](./docs/gtk4-widgets.md#gtk-drag-and-drop).
 - [Gtk.Entry](./docs/gtk4-widgets.md#gtk-entry).

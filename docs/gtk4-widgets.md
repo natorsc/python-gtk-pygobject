@@ -63,6 +63,14 @@
 
 ---
 
+## Gtk ComboBoxText
+
+- [Python](../src/gtk4/comboboxtext).
+
+![Python e GTK 4: PyGObject Gtk.ComboBoxText().](./images/gtk4/gtk-4-pygobject-comboboxtext.webp)
+
+---
+
 ## Gtk Dialog
 
 - [Python](../src/gtk4/dialog).
