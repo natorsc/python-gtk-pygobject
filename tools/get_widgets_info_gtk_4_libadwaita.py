@@ -90,6 +90,6 @@ def save_data(widget):
 
 
 if __name__ == '__main__':
-    widget = Adw.ComboRow()
+    widget = Adw.Flap()
     save_data(widget=widget)
     print('[!] Concluido [!]')

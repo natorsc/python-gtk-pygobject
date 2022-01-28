@@ -164,7 +164,7 @@ sudo pacman -S libadwaita
 > 🚨 Fedora 35 ou superior.
 
 ```bash
-sudo dnf install libadwaita
+sudo dnf install libadwaita-devel
 ```
 
 ### openSUSE Tumbleweed
@@ -175,14 +175,14 @@ sudo zypper install libadwaita-devel
 
 ### Widgets
 
-- [Adw.ActionRow](./docs/gtk4-widgets-libadwaita.md#actionrow).
+- [Adw.ActionRow](./docs/gtk4-widgets-libadwaita.md#adw-actionrow).
 - [Adw.animation].
 - [Adw.ApplicationWindow].
-- [Adw.Avatar](./docs/gtk4-widgets-libadwaita.md#avatar).
+- [Adw.Avatar](./docs/gtk4-widgets-libadwaita.md#adw-avatar).
 - [Adw.Bin].
-- [Adw.Carousel](./docs/gtk4-widgets-libadwaita.md#carousel).
-- [Adw.CarouselIndicatorDots](./docs/gtk4-widgets-libadwaita.md#carouselindicatordots).
-- [Adw.CarouselIndicatorLines](./docs/gtk4-widgets-libadwaita.md#carouselindicatorlines).
+- [Adw.Carousel](./docs/gtk4-widgets-libadwaita.md#adw-carousel).
+- [Adw.CarouselIndicatorDots](./docs/gtk4-widgets-libadwaita.md#adw-carouselindicatordots).
+- [Adw.CarouselIndicatorLines](./docs/gtk4-widgets-libadwaita.md#adw-carouselindicatorlines).
 - [Adw.ClampLayout].
 - [Adw.ClampScrollable].
 - [Adw.Clamp].
@@ -192,7 +192,7 @@ sudo zypper install libadwaita-devel
 - [Adw.EnumValueObject].
 - [Adw.Enums].
 - [Adw.ExpanderRow].
-- [Adw.Flap].
+- [Adw.Flap](./docs/gtk4-widgets-libadwaita.md#adw-flap).
 - [Adw.HeaderBar].
 - [Adw.Leaflet].
 - [Adw.Main].

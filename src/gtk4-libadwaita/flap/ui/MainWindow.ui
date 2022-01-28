@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<interface>
+    <requires lib="gtk" version="4.0"/>
+    <requires lib="libadwaita" version="1.0"/>
+    <template class="DeletarWindow" parent="GtkApplicationWindow">
+        <property name="default-height">384</property>
+        <property name="default-width">683</property>
+        <child type="titlebar">
+            <object class="GtkHeaderBar" id="header_bar">
+                <child type="start">
+                    <!-- Botão que abre e fecha o menu lateral. -->
+                    <object class="GtkToggleButton" id="flap_toggle_button">
+                        <property name="icon-name">sidebar-show-right-rtl-symbolic</property>
+                        <property name="tooltip-text" translatable="yes">Exibir/Ocultar barra lateral.</property>
+                        <property name="active">True</property>
+                        <signal name="clicked" handler="on_flap_button_toggled" swapped="no"/>
+                    </object>
+                </child>
+            </object>
+        </child>
+        <child>
+            <object class="GtkBox" id="vbox">
+                <property name="orientation">vertical</property>
+                <child>
+                    <!-- Flap (menu que se esconde). -->
+                    <object class="AdwFlap" id="flap">
+                        <property name="locked">True</property>
+                        <child type="content">
+                            <!-- Stack armazena as páginas. -->
+                            <!-- id será utilizado no stack. -->
+                            <object class="GtkStack" id="stack">
+                                <!-- Página 1. -->
+                                <child>
+                                    <object class="GtkStackPage">
+                                        <property name="name">page1</property>
+                                        <property name="title">Página 1</property>
+                                        <property name="child">
+                                            <object class="GtkBox" id="box_page_1">
+                                                <property name="orientation">vertical</property>
+                                                <child>
+                                                    <object class="GtkLabel">
+                                                        <property name="label">Página 1</property>
+                                                        <property name="halign">center</property>
+                                                        <property name="valign">center</property>
+                                                        <property name="hexpand">True</property>
+                                                        <property name="vexpand">True</property>
+                                                    </object>
+                                                </child>
+                                            </object>
+                                        </property>
+                                    </object>
+                                </child>
+                                <!-- Página 2. -->
+                                <child>
+                                    <object class="GtkStackPage">
+                                        <property name="name">page2</property>
+                                        <property name="title">Página 2</property>
+                                        <property name="child">
+                                            <object class="GtkBox" id="box_page_2">
+                                                <property name="orientation">vertical</property>
+                                                <child>
+                                                    <object class="GtkLabel">
+                                                        <property name="label">Página 2</property>
+                                                        <property name="halign">center</property>
+                                                        <property name="valign">center</property>
+                                                        <property name="hexpand">True</property>
+                                                        <property name="vexpand">True</property>
+                                                    </object>
+                                                </child>
+                                            </object>
+                                        </property>
+                                    </object>
+                                </child>
+                                <!-- Página 3. -->
+                                <child>
+                                    <object class="GtkStackPage">
+                                        <property name="name">page3</property>
+                                        <property name="title">Página 3</property>
+                                        <property name="child">
+                                            <!-- Conteúdo da página 3. -->
+                                            <object class="GtkBox" id="page3_box">
+                                                <property name="orientation">vertical</property>
+                                                <child>
+                                                    <object class="GtkLabel">
+                                                        <property name="label">Página 3</property>
+                                                        <property name="halign">center</property>
+                                                        <property name="valign">center</property>
+                                                        <property name="hexpand">True</property>
+                                                        <property name="vexpand">True</property>
+                                                    </object>
+                                                </child>
+                                            </object>
+                                        </property>
+                                    </object>
+                                </child>
+                            </object>
+                        </child>
+                        <!-- Criando o flap e colocando o StackSidebar dentro dele. -->
+                        <child type="flap">
+                            <!-- StackSidebar gerencia a troca das páginas. -->
+                            <object class="GtkStackSidebar" id="stack_sidebar">
+                                <!-- id que foi criado no widget (componente) stack. -->
+                                <property name="stack">stack</property>
+                            </object>
+                        </child>
+                    </object>
+                </child>
+            </object>
+        </child>
+    </template>
+</interface>

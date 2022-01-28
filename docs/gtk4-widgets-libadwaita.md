@@ -1,6 +1,6 @@
 # Libadwaita
 
-## ActionRow
+## Adw ActionRow
 
 - [Python](../src/gtk4-libadwaita/actionrow).
 
@@ -8,7 +8,7 @@
 
 ---
 
-## Avatar
+## Adw Avatar
 
 - [Python](../src/gtk4-libadwaita/avatar).
 
@@ -16,7 +16,7 @@
 
 ---
 
-## Carousel
+## Adw Carousel
 
 - [Python](../src/gtk4-libadwaita/carousel).
 
@@ -24,7 +24,7 @@
 
 ---
 
-## CarouselIndicatorDots
+## Adw CarouselIndicatorDots
 
 - [Python](../src/gtk4-libadwaita/carouselindicatordots).
 
@@ -37,5 +37,13 @@
 - [Python](../src/gtk4-libadwaita/carouselindicatorlines).
 
 ![Python e GTK 4: PyGObject Adw.CarouselIndicatorLines().](./images/gtk4-libadwaita/gtk-4-pygobject-adw-carouselindicatorlines.webp)
+
+---
+
+## Adw Flap
+
+- [Python](../src/gtk4-libadwaita/flap).
+
+![Python e GTK 4: PyGObject Adw.Flap().](./images/gtk4-libadwaita/gtk-4-pygobject-adw-flap.webp)
 
 ---
