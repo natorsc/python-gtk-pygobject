@@ -6,7 +6,7 @@ authors = ["natorsc <natorsc@gmail.com>"]
 license = "MIT"
 
 [tool.poetry.dependencies]
-python = "^3.9 || ^3.10"
+python = ">=3.9,<3.11"
 PyGObject = "^3.42.0"
 
 [tool.poetry.dev-dependencies]
