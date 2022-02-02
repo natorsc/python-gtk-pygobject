@@ -1,13 +1,19 @@
 # -*- coding: utf-8 -*-
-"""Python e GTK: Como criar um executável com Cx_Freeze."""
+"""Python e GTK 4: Criando executáveis com Cx_Freeze."""
+from pathlib import Path
 
 import gi
 
-gi.require_version(namespace='Gtk', version='3.0')
+gi.require_version(namespace='Gtk', version='4.0')
+
 from gi.repository import Gio, Gtk
 
+BASE_DIR = Path(__file__).resolve().parent
+UI_FILE = str(BASE_DIR.joinpath('ui', 'MainWindow.ui'))
 
-@Gtk.Template(filename='./ui/MainWindow.ui')
+
+# @Gtk.Template(string, filename, resource_path)
+@Gtk.Template(filename='ui/MainWindow.ui')
 class MainWindow(Gtk.ApplicationWindow):
     __gtype_name__ = 'MainWindow'
 
@@ -17,8 +23,11 @@ class MainWindow(Gtk.ApplicationWindow):
     def __init__(self, **kwargs):
         super().__init__(**kwargs)
 
+        # Configuração dos widgets aqui:
+        # ...
+
     @Gtk.Template.Callback()
-    def _on_button_clicked(self, button):
+    def on_button_clicked(self, widget):
         if self.entry.get_text():
             self.label.set_label(str=self.entry.get_text())
         else:
@@ -28,7 +37,7 @@ class MainWindow(Gtk.ApplicationWindow):
 class Application(Gtk.Application):
 
     def __init__(self):
-        super().__init__(application_id='br.natorsc.CodigoNinja',
+        super().__init__(application_id='br.natorsc.Exemplo',
                          flags=Gio.ApplicationFlags.FLAGS_NONE)
 
     def do_startup(self):
@@ -44,19 +53,8 @@ class Application(Gtk.Application):
         Gtk.Application.do_shutdown(self)
 
 
-def run_make_include_files():
-    import os
-    from windows.make_include_files import make_include_files_by_pid
-    pid = os.getpid()
-    make_include_files_by_pid(pid=pid, path='windows')
-
-
 if __name__ == '__main__':
     import sys
 
     app = Application()
-
-    # Gerando o arquivo include_files.py que será utilizado pelo Cx_Freeze.
-    # run_make_include_files()
-
     app.run(sys.argv)

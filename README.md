@@ -80,7 +80,9 @@ Sempre que possível escrevo tutoriais no meu blog pessoal:
 - [Gtk 4](#gtk-4).
   - [Widgets](#gtk-4-widgets)
 - [Gtk 4 libadwaita](#gtk-4-libadwaita).
+  - [Instalação](#libadwaita-instalacao). 
   - [Widgets](#libadwaita-widgets).
+- [Gerar executáveis](#gerar-executveis).
 - [Descontinuado](#descontinuado-deprecated).
 
 ---
@@ -192,7 +194,6 @@ GdkPixbuf é uma biblioteca para carregar ativos gráficos como ícones em vári
 
 ATK é uma biblioteca para um conjunto de interfaces que fornecem acessibilidade. Ao suportar as interfaces ATK, um aplicativo ou kit de ferramentas pode ser usado com ferramentas como leitores de tela, ampliadores e dispositivos de entrada alternativos.
 
-
 ### Gtk 4 Widgets
 
 ![Python e GTK4: Gtk.ApplicationWindow](./docs/images/gtk4/gtk-4-pygobject-applicationwindow.webp)
@@ -238,7 +239,7 @@ ATK é uma biblioteca para um conjunto de interfaces que fornecem acessibilidade
 
 A libadwaita deve estar disponível a partir do Gnome 41 ou 42, a mesma vem para substituir a biblioteca [libhandy](https://gitlab.gnome.org/GNOME/libhandy).
 
-### Instalação
+### Libadwaita instalacao
 
 #### Arch Linux
 
@@ -260,6 +261,12 @@ sudo dnf install libadwaita-devel
 
 ```bash
 sudo zypper install libadwaita-devel
+```
+
+#### Microsoft Windows
+
+```bash
+pacman -S mingw-w64-x86_64-libadwaita
 ```
 
 ### Libadwaita widgets
@@ -303,6 +310,17 @@ sudo zypper install libadwaita-devel
 - [Adw.ViewSwitcher].
 - [Adw.WindowTitle].
 - [Adw.Window].
+
+---
+
+## Distribuição
+
+> 📝 Até o momento em que escrevo a melhor forma de se distribuir um aplicativo feito com a linguagem de programação Python e o toolkit gráfico Gtk 4 é utilizando o Gnome Builder juntamente com Flatpak.
+
+### Gerar executáveis
+
+-[PyInstaller](./src/executables/_pyinstaller).
+-[Cx_Freeze](./src/executables/_cx_freeze).
 
 ---
 

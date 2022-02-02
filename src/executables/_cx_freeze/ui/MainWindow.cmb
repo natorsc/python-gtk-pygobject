@@ -1,0 +1,29 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<!DOCTYPE cambalache-project SYSTEM "cambalache-project.dtd">
+<cambalache-project version="0.8.2" target_tk="gtk-4.0">
+  <ui>
+	(1,None,"MainWindow.ui","MainWindow.ui",None,None,None,None,None,None)
+  </ui>
+  <object>
+	(1,1,"GtkApplicationWindow",None,None,None,None,None,None),
+	(1,2,"GtkBox",None,1,None,None,None,-1),
+	(1,3,"GtkEntry",None,2,None,None,None,None),
+	(1,4,"GtkLabel",None,2,None,None,None,1),
+	(1,5,"GtkButton",None,2,None,None,None,2)
+  </object>
+  <object_property>
+	(1,1,"GtkWindow","default-height","384",None,None,None,None),
+	(1,1,"GtkWindow","default-width","683",None,None,None,None),
+	(1,1,"GtkWindow","title","Python e GTK 4: Criando executáveis com Cx_Freeze.",None,None,None,None),
+	(1,2,"GtkBox","spacing","6",None,None,None,None),
+	(1,2,"GtkOrientable","orientation","vertical",None,None,None,None),
+	(1,2,"GtkWidget","margin-bottom","12",None,None,None,None),
+	(1,2,"GtkWidget","margin-end","12",None,None,None,None),
+	(1,2,"GtkWidget","margin-start","12",None,None,None,None),
+	(1,2,"GtkWidget","margin-top","12",None,None,None,None),
+	(1,3,"GtkEntry","placeholder-text","Digite algo",None,None,None,None),
+	(1,4,"GtkLabel","label","Digite algo no campo de texto e clique no botão.",None,None,None,None),
+	(1,4,"GtkWidget","vexpand","True",None,None,None,None),
+	(1,5,"GtkButton","label","Clique aqui",None,None,None,None)
+  </object_property>
+</cambalache-project>
