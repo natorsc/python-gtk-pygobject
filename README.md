@@ -319,8 +319,8 @@ pacman -S mingw-w64-x86_64-libadwaita
 
 ### Gerar executáveis
 
--[PyInstaller](./src/executables/_pyinstaller).
--[Cx_Freeze](./src/executables/_cx_freeze).
+- [PyInstaller](./src/executables/_pyinstaller).
+- [Cx_Freeze](./src/executables/_cx_freeze).
 
 ---
 
