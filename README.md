@@ -14,7 +14,7 @@
 
 ## Descrição
 
-Repositório criado para documentar e centralizar conteúdos, dicas, tutoriais e exemplos de código sobre a construção de interfaces com a linguagem de progração Python e o toolkit gráfico Gtk.
+Repositório criado para documentar e centralizar conteúdos, dicas, tutoriais e exemplos de código sobre a construção de interfaces com a linguagem de programação Python e o toolkit gráfico Gtk.
 
 ---
 
@@ -26,7 +26,7 @@ Repositório criado para documentar e centralizar conteúdos, dicas, tutoriais e
 
 ## 🛠 Tecnologias utilizadas
 
-Até o presente momento as seguintes tecnologias estão sendo utilizandas na construção do projeto:
+Até o presente momento as seguintes tecnologias estão sendo utilizadas na construção do projeto:
 
 [![Python](https://img.shields.io/static/v1?label=&message=Python&color=blue&logoColor=white&logo=python)](https://www.python.org/ "Ir para o site.")
 &nbsp;
@@ -48,7 +48,7 @@ Feito com 💙 por [Renato Cruz](https://github.com/natorsc) 🤜🤛 Entre em c
 &nbsp;
 [![Gtk](https://img.shields.io/static/v1?label=&message=E-mail&color=blue&logoColor=white&logo=gmail)](mailto:natorsc@gmail.com "Enviar e-mail.")
 &nbsp;
-[![Matrix](https://img.shields.io/static/v1?label=&message=Matrix&color=blue&logoColor=white&logo=matrix)](https://matrix.to/#/@natorsc:matrix.org "Entre em ccontato.")
+[![Matrix](https://img.shields.io/static/v1?label=&message=Matrix&color=blue&logoColor=white&logo=matrix)](https://matrix.to/#/@natorsc:matrix.org "Entre em contato.")
 
 Uma das playlist que costumo ouvir quando estou estudando ou codando:
 
@@ -62,7 +62,7 @@ Sempre que possível escrevo tutoriais no meu blog pessoal:
 
 ### Ko-Fi
 
-[![Ko-Fi](https://img.shields.io/static/v1?label=&message=Ko-Fi&color=orange&logoColor=white&logo=ko-fi)](https:// "Faça uma doação.")
+[![Ko-Fi](https://img.shields.io/static/v1?label=&message=Ko-Fi&color=orange&logoColor=white&logo=ko-fi)](https://ko-fi.com/natorsc "Faça uma doação.")
 
 ### Pix
 
@@ -156,7 +156,7 @@ Existe o suporte a diversas linguagens de programação (bindings), contudo as l
 - [Rust](https://www.rust-lang.org/pt-BR).
 - [Vala](https://wiki.gnome.org/Projects/Vala).
 
-Sempre que possível de preferencia por inicar um projeto utilizando o Gnome Builder.
+Sempre que possível de preferencia por iniciar um projeto utilizando o Gnome Builder.
 
 > 🚨 O Gnome Builder não está disponível para Microsoft Windows.
 
