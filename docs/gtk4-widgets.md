@@ -192,6 +192,14 @@
 
 ---
 
+## Gtk StackSidebar
+
+- [Python](../src/gtk4/stacksidebar).
+
+![Python e GTK 4: Gtk.StackSidebar().](./images/gtk4/gtk-4-pygobject-stacksidebar.webp)
+
+---
+
 ## Translator gettext
 
 - [Python](../src/gtk4/translator-gettext).

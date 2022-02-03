@@ -12,7 +12,7 @@
 
 [![License MIT](https://img.shields.io/static/v1?label=License&message=MIT&color=blue)](https://github.com/natorsc/gui-python-gtk)
 
-[![Matrix](https://img.shields.io/static/v1?label=&message=Sala&color=blue&logoColor=white&logo=matrix)](https://matrix.to/#/#pythonegtk4:matrix.org "Acessar sala do repositório.")
+[![Matrix](https://img.shields.io/static/v1?label=&message=Sala%20do%20repositório&color=blue&logoColor=white&logo=matrix)](https://matrix.to/#/#pythonegtk4:matrix.org "Acessar sala do repositório.")
 
 ## Descrição
 
@@ -225,6 +225,7 @@ ATK é uma biblioteca para um conjunto de interfaces que fornecem acessibilidade
 - [Gtk.MenuButton](./docs/gtk4-widgets.md#gtk-menubutton).
 - [Gtk.Overlay](./docs/gtk4-widgets.md#gtk-overlay).
 - [Gtk.Picture](./docs/gtk4-widgets.md#gtk-picture).
+- [Gtk.StackSidebar](./docs/gtk4-widgets.md#gtk-stacksidebar).
 - [Translator (gettext)](./docs/gtk4-widgets.md#translator-gettext).
 - [Gtk.TreeView editable.](./docs/gtk4-widgets.md#treeview-editable).
 - [Gtk.TreeView filter.](./docs/gtk4-widgets.md#treeview-filter).
