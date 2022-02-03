@@ -12,6 +12,8 @@
 
 [![License MIT](https://img.shields.io/static/v1?label=License&message=MIT&color=blue)](https://github.com/natorsc/gui-python-gtk)
 
+[![Matrix](https://img.shields.io/static/v1?label=&message=Sala&color=blue&logoColor=white&logo=matrix)](https://matrix.to/#/#pythonegtk4:matrix.org "Acessar sala do repositório.")
+
 ## Descrição
 
 Repositório criado para documentar e centralizar conteúdos, dicas, tutoriais e exemplos de código sobre a construção de interfaces com a linguagem de programação Python e o toolkit gráfico Gtk.
