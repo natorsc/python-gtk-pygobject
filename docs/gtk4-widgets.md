@@ -200,6 +200,14 @@
 
 ---
 
+## Gtk StackSwitcher
+
+- [Python](../src/gtk4/stackswitcher).
+
+![Python e GTK 4: Gtk.StackSwitcher().](./images/gtk4/gtk-4-pygobject-stackswitcher.webp)
+
+---
+
 ## Translator gettext
 
 - [Python](../src/gtk4/translator-gettext).
