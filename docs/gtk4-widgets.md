@@ -200,6 +200,14 @@
 
 ---
 
+## Gtk Signal e Slots
+
+- [Python](../src/gtk4/signal-and-slots).
+
+![Python e GTK 4: Gtk Signal e Slots.](./images/gtk4/gtk-4-pygobject-signal-e-slots.webp)
+
+---
+
 ## Gtk StackSidebar
 
 - [Python](../src/gtk4/stacksidebar).
