@@ -152,6 +152,14 @@
 
 ---
 
+## Gtk HeaderBar
+
+- [Python](../src/gtk4/headerbar).
+
+![Python e GTK 4: Gtk.HeaderBar().](./images/gtk4/gtk-4-pygobject-headerbar.webp)
+
+---
+
 ## Gtk Image
 
 - [Python](../src/gtk4/image).
