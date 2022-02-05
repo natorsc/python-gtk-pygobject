@@ -271,3 +271,11 @@
 ![Python e GTK 4: Gtk.Video().](./images/gtk4/gtk-4-pygobject-video.webp)
 
 ---
+
+## Gtk Window
+
+- [Python](../src/gtk4/window).
+
+![Python e GTK 4: Gtk.Window().](./images/gtk4/gtk-4-pygobject-window.webp)
+
+---
