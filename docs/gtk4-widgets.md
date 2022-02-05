@@ -200,6 +200,14 @@
 
 ---
 
+## Gtk Popover
+
+- [Python](../src/gtk4/popover).
+
+![Python e GTK 4: Gtk.Popover().](./images/gtk4/gtk-4-pygobject-popover.webp)
+
+---
+
 ## Gtk Signal e Slots
 
 - [Python](../src/gtk4/signal-and-slots).
@@ -221,6 +229,22 @@
 - [Python](../src/gtk4/stackswitcher).
 
 ![Python e GTK 4: Gtk.StackSwitcher().](./images/gtk4/gtk-4-pygobject-stackswitcher.webp)
+
+---
+
+## Gtk Style add class
+
+- [Python](../src/gtk4/style-add-class).
+
+![Python e GTK 4: Style add class.](./images/gtk4/gtk-4-pygobject-style-add-class.webp)
+
+---
+
+## Gtk Style dark mode
+
+- [Python](../src/gtk4/style-dark-mode).
+
+![Python e GTK 4: Style dark mode.](./images/gtk4/gtk-4-pygobject-style-dark-mode.webp)
 
 ---
 

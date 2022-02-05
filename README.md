@@ -111,6 +111,7 @@ Sempre que possível escrevo tutoriais no meu blog pessoal:
 - [Documentação Gtk 4](https://docs.gtk.org/gtk4/).
 - [Documentação libadwaita](https://gnome.pages.gitlab.gnome.org/libadwaita/doc/).
 - [Guia para desenvolvedores](https://developer.gnome.org/).
+- [GNOME Human Interface Guidelines](https://teams.pages.gitlab.gnome.org/Design/hig-www/index.html).
 
 ### Softwares
 
@@ -226,14 +227,17 @@ ATK é uma biblioteca para um conjunto de interfaces que fornecem acessibilidade
 - [Gtk.MenuButton](./docs/gtk4-widgets.md#gtk-menubutton).
 - [Gtk.Overlay](./docs/gtk4-widgets.md#gtk-overlay).
 - [Gtk.Picture](./docs/gtk4-widgets.md#gtk-picture).
+- [Gtk.Popover](./docs/gtk4-widgets.md#gtk-popover).
 - [Gtk Signal e Slots](./docs/gtk4-widgets.md#gtk-signal-e-slots).
 - [Gtk.StackSidebar](./docs/gtk4-widgets.md#gtk-stacksidebar).
 - [Gtk.StackSwitcher](./docs/gtk4-widgets.md#gtk-stackswitcher).
+- [Gtk Style add class](./docs/gtk4-widgets.md#gtk-style-add-class).
+- [Gtk Style dark mode](./docs/gtk4-widgets.md#gtk-style-dark-mode).
 - [Gtk.Switch](./docs/gtk4-widgets.md#gtk-switch).
 - [Translator (gettext)](./docs/gtk4-widgets.md#translator-gettext).
-- [Gtk.TreeView editable.](./docs/gtk4-widgets.md#treeview-editable).
-- [Gtk.TreeView filter.](./docs/gtk4-widgets.md#treeview-filter).
-- [Gtk.TreeView sort.](./docs/gtk4-widgets.md#treeview-sort).
+- [Gtk.TreeView editable](./docs/gtk4-widgets.md#treeview-editable).
+- [Gtk.TreeView filter](./docs/gtk4-widgets.md#treeview-filter).
+- [Gtk.TreeView sort](./docs/gtk4-widgets.md#treeview-sort).
 - [Gtk.Video](./docs/gtk4-widgets.md#gtk-video).
 - [Gtk.Window](./docs/gtk4-widgets.md#gtk-window).
 
