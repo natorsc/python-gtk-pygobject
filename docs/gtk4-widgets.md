@@ -208,6 +208,14 @@
 
 ---
 
+## Gtk Switch
+
+- [Python](../src/gtk4/switch).
+
+![Python e GTK 4: Gtk.switch().](./images/gtk4/gtk-4-pygobject-switch.webp)
+
+---
+
 ## Translator gettext
 
 - [Python](../src/gtk4/translator-gettext).
