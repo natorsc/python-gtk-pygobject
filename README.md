@@ -113,7 +113,10 @@ Sempre que possível escrevo tutoriais no meu blog pessoal:
 - [Guia para desenvolvedores](https://developer.gnome.org/).
 - [GNOME Human Interface Guidelines](https://teams.pages.gitlab.gnome.org/Design/hig-www/index.html).
 
+
 ### Softwares
+
+- [Lisca com varios aplicativos Gnome/Gtk](https://apps.gnome.org/pt-BR/#circle).
 
 #### Depuração
 
