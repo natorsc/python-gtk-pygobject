@@ -46,19 +46,17 @@ Até o presente momento as seguintes tecnologias estão sendo utilizadas na cons
 
 Feito com 💙 por [Renato Cruz](https://github.com/natorsc) 🤜🤛 Entre em contato!
 
-[![LinkedIn](https://img.shields.io/static/v1?label=&message=LinkedIn&color=blue&logoColor=white&logo=linkedin)](https://www.linkedin.com/in/natorsc/ "Ir para o Linkedin.")
+[![E-mail](https://img.shields.io/static/v1?label=&message=E-mail&color=red&logoColor=white&logo=gmail)](mailto:natorsc@gmail.com "Enviar e-mail.")
 &nbsp;
-[![Gtk](https://img.shields.io/static/v1?label=&message=E-mail&color=blue&logoColor=white&logo=gmail)](mailto:natorsc@gmail.com "Enviar e-mail.")
-&nbsp;
-[![Matrix](https://img.shields.io/static/v1?label=&message=Matrix&color=blue&logoColor=white&logo=matrix)](https://matrix.to/#/@natorsc:matrix.org "Entre em contato.")
+[![WhatsApp](https://img.shields.io/static/v1?label=&message=Whatsapp&color=green&logoColor=white&logo=whatsapp)](https://wa.me/message/MS34ROSPOMKTP1 "Entre em contato.")
 
-Uma das playlist que costumo ouvir quando estou estudando ou codando:
+Uma das playlist que costumo ouvir quando estou estudando ou "codando":
 
 [![Spotify](https://img.shields.io/static/v1?label=&message=Spotify&color=darkgreen&logoColor=white&logo=spotify)](https://open.spotify.com/playlist/1xf3u29puXlnrWO7MsaHL5?si=A-LgwRJXSvOno_e6trpi5w&utm_source=copy-link "Acessar playlist.")
 
 Sempre que possível escrevo tutoriais no meu blog pessoal:
 
-[![Blog](https://img.shields.io/static/v1?label=&message=Blog&color=blue&logoColor=white&logo=hashnode)](https://blog.codigoninja.dev/ "Ir para o blog.")
+[![Blog](https://img.shields.io/static/v1?label=&message=Blog&color=grey&logoColor=white&logo=hashnode)](https://blog.codigoninja.dev/ "Ir para o blog.")
 
 ## Doações
 
