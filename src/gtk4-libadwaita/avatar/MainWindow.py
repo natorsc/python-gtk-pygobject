@@ -56,7 +56,7 @@ class MainWindow(Gtk.ApplicationWindow):
         hbox.append(child=avatar_03)
 
 
-class Application(Gtk.Application):
+class Application(Adw.Application):
 
     def __init__(self):
         super().__init__(application_id='br.natorsc.Exemplo',

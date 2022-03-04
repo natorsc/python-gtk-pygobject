@@ -93,7 +93,7 @@ class MainWindow(Gtk.ApplicationWindow):
             self.adw_carousel.scroll_to(widget=next_page)
 
 
-class Application(Gtk.Application):
+class Application(Adw.Application):
 
     def __init__(self):
         super().__init__(application_id='br.natorsc.Exemplo',
