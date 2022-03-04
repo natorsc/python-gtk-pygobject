@@ -2,7 +2,7 @@
 <interface>
     <requires lib="gtk" version="4.0"/>
     <requires lib="libadwaita" version="1.0"/>
-    <template class="DeletarWindow" parent="GtkApplicationWindow">
+    <template class="MainWindow" parent="GtkApplicationWindow">
         <property name="default-height">384</property>
         <property name="default-width">683</property>
         <child type="titlebar">

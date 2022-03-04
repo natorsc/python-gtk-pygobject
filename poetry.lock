@@ -71,7 +71,7 @@ python-versions = ">=2.6, !=3.0.*, !=3.1.*, !=3.2.*"
 
 [[package]]
 name = "importlib-metadata"
-version = "4.10.1"
+version = "4.11.2"
 description = "Read metadata from Python packages"
 category = "dev"
 optional = false
@@ -81,9 +81,9 @@ python-versions = ">=3.7"
 zipp = ">=0.5"
 
 [package.extras]
-docs = ["sphinx", "jaraco.packaging (>=8.2)", "rst.linker (>=1.9)"]
+docs = ["sphinx", "jaraco.packaging (>=9)", "rst.linker (>=1.9)"]
 perf = ["ipython"]
-testing = ["pytest (>=6)", "pytest-checkdocs (>=2.4)", "pytest-flake8", "pytest-cov", "pytest-enabler (>=1.0.1)", "packaging", "pyfakefs", "flufl.flake8", "pytest-perf (>=0.9.2)", "pytest-black (>=0.3.7)", "pytest-mypy", "importlib-resources (>=1.3)"]
+testing = ["pytest (>=6)", "pytest-checkdocs (>=2.4)", "pytest-flake8", "pytest-cov", "pytest-enabler (>=1.0.1)", "packaging", "pyfakefs", "flufl.flake8", "pytest-perf (>=0.9.2)", "pytest-black (>=0.3.7)", "pytest-mypy (>=0.9.1)", "importlib-resources (>=1.3)"]
 
 [[package]]
 name = "isort"
@@ -136,14 +136,14 @@ python-versions = "*"
 
 [[package]]
 name = "patchelf"
-version = "0.14.3.0"
+version = "0.14.5.0"
 description = "A small utility to modify the dynamic linker and RPATH of ELF executables."
 category = "dev"
 optional = false
 python-versions = "*"
 
 [package.extras]
-test = ["pytest"]
+test = ["pytest", "importlib-metadata"]
 
 [[package]]
 name = "pefile"
@@ -158,7 +158,7 @@ future = "*"
 
 [[package]]
 name = "platformdirs"
-version = "2.4.1"
+version = "2.5.1"
 description = "A small Python module for determining appropriate platform-specific dirs, e.g. a \"user data dir\"."
 category = "dev"
 optional = false
@@ -227,11 +227,11 @@ hook_testing = ["pytest (>=2.7.3)", "execnet (>=1.5.0)", "psutil"]
 
 [[package]]
 name = "pyinstaller-hooks-contrib"
-version = "2022.0"
+version = "2022.2"
 description = "Community maintained hooks for PyInstaller"
 category = "dev"
 optional = false
-python-versions = "*"
+python-versions = ">=3.7"
 
 [[package]]
 name = "pylint"
@@ -268,7 +268,7 @@ python-versions = ">=2.6, !=3.0.*, !=3.1.*, !=3.2.*"
 
 [[package]]
 name = "typing-extensions"
-version = "4.0.1"
+version = "4.1.1"
 description = "Backported and Experimental Type Hints for Python 3.6+"
 category = "dev"
 optional = false
@@ -348,8 +348,8 @@ future = [
     {file = "future-0.18.2.tar.gz", hash = "sha256:b1bead90b70cf6ec3f0710ae53a525360fa360d306a86583adc6bf83a4db537d"},
 ]
 importlib-metadata = [
-    {file = "importlib_metadata-4.10.1-py3-none-any.whl", hash = "sha256:899e2a40a8c4a1aec681feef45733de8a6c58f3f6a0dbed2eb6574b4387a77b6"},
-    {file = "importlib_metadata-4.10.1.tar.gz", hash = "sha256:951f0d8a5b7260e9db5e41d429285b5f451e928479f19d80818878527d36e95e"},
+    {file = "importlib_metadata-4.11.2-py3-none-any.whl", hash = "sha256:d16e8c1deb60de41b8e8ed21c1a7b947b0bc62fab7e1d470bcdf331cea2e6735"},
+    {file = "importlib_metadata-4.11.2.tar.gz", hash = "sha256:b36ffa925fe3139b2f6ff11d6925ffd4fa7bc47870165e3ac260ac7b4f91e6ac"},
 ]
 isort = [
     {file = "isort-5.10.1-py3-none-any.whl", hash = "sha256:6f62d78e2f89b4500b080fe3a81690850cd254227f27f75c3a0c491a1f351ba7"},
@@ -435,19 +435,19 @@ mccabe = [
     {file = "mccabe-0.6.1.tar.gz", hash = "sha256:dd8d182285a0fe56bace7f45b5e7d1a6ebcbf524e8f3bd87eb0f125271b8831f"},
 ]
 patchelf = [
-    {file = "patchelf-0.14.3.0-py2.py3-none-manylinux_2_17_aarch64.manylinux2014_aarch64.musllinux_1_1_aarch64.whl", hash = "sha256:04cdeea7b24d8daca78e885a113791cedb278eb164a1760c509702d6ed155a46"},
-    {file = "patchelf-0.14.3.0-py2.py3-none-manylinux_2_17_ppc64le.manylinux2014_ppc64le.musllinux_1_1_ppc64le.whl", hash = "sha256:fa208aee4b0e6b3f4dbd1bb2be82b1d2635e045e7dfe227b2095bb2e3db67811"},
-    {file = "patchelf-0.14.3.0-py2.py3-none-manylinux_2_17_s390x.manylinux2014_s390x.musllinux_1_1_s390x.whl", hash = "sha256:4b3ee96c6ac9b2059f038db2838bc0be4d119d3b5b8b0cc252e5cadd832a5ae5"},
-    {file = "patchelf-0.14.3.0-py2.py3-none-manylinux_2_5_i686.manylinux1_i686.musllinux_1_1_i686.whl", hash = "sha256:0c778f7af59bd781d187ea27556a1ad3e0dd044d85c77536a7c9d2cc027ff0fc"},
-    {file = "patchelf-0.14.3.0-py2.py3-none-manylinux_2_5_x86_64.manylinux1_x86_64.musllinux_1_1_x86_64.whl", hash = "sha256:a8dd89901f32f0ce93a5c995a8f9eb79908d43e3a70eaf6b8efe8643976e6a8c"},
-    {file = "patchelf-0.14.3.0.tar.gz", hash = "sha256:09ad55d9dff020ecab75d02ae592b6ff7997fc0428ce7ffb35213b3fdd79dad7"},
+    {file = "patchelf-0.14.5.0-py2.py3-none-manylinux_2_17_aarch64.manylinux2014_aarch64.musllinux_1_1_aarch64.whl", hash = "sha256:180b0688633c22463588acaaeb8b060147ad73627fb6221503ba4914d24938c9"},
+    {file = "patchelf-0.14.5.0-py2.py3-none-manylinux_2_17_ppc64le.manylinux2014_ppc64le.musllinux_1_1_ppc64le.whl", hash = "sha256:ee91f192e5009c7c4dc026f86ba2a6a9c6746d4a5535b211554fa4fce8dc8232"},
+    {file = "patchelf-0.14.5.0-py2.py3-none-manylinux_2_17_s390x.manylinux2014_s390x.musllinux_1_1_s390x.whl", hash = "sha256:d1bd07adfbf94bae79c4122e6674596ae0a21b5722a0fd8c23b0505810436aea"},
+    {file = "patchelf-0.14.5.0-py2.py3-none-manylinux_2_5_i686.manylinux1_i686.musllinux_1_1_i686.whl", hash = "sha256:b5ac50750572857eaf08dc1823f0c25bd18bb78b9ec8d304b8e8f6206f4cefe4"},
+    {file = "patchelf-0.14.5.0-py2.py3-none-manylinux_2_5_x86_64.manylinux1_x86_64.musllinux_1_1_x86_64.whl", hash = "sha256:9c360b978ac0949b4a4be79f8904d81c5e5d75f85c16cde40013543451297f4b"},
+    {file = "patchelf-0.14.5.0.tar.gz", hash = "sha256:d433eb851a9b8ab91ee1f4dbae6a8f7af859a44c5e157029cff028efe81922bf"},
 ]
 pefile = [
     {file = "pefile-2021.9.3.tar.gz", hash = "sha256:344a49e40a94e10849f0fe34dddc80f773a12b40675bf2f7be4b8be578bdd94a"},
 ]
 platformdirs = [
-    {file = "platformdirs-2.4.1-py3-none-any.whl", hash = "sha256:1d7385c7db91728b83efd0ca99a5afb296cab9d0ed8313a45ed8ba17967ecfca"},
-    {file = "platformdirs-2.4.1.tar.gz", hash = "sha256:440633ddfebcc36264232365d7840a970e75e1018d15b4327d11f91909045fda"},
+    {file = "platformdirs-2.5.1-py3-none-any.whl", hash = "sha256:bcae7cab893c2d310a711b70b24efb93334febe65f8de776ee320b517471e227"},
+    {file = "platformdirs-2.5.1.tar.gz", hash = "sha256:7535e70dfa32e84d4b34996ea99c5e432fa29a708d0f4e394bbcb2a8faa4f16d"},
 ]
 pycairo = [
     {file = "pycairo-1.20.1-cp310-cp310-win32.whl", hash = "sha256:736ffc618e851601e861a630293e5c910ef016b83b2d035a336f83a367bf56ab"},
@@ -486,8 +486,8 @@ pyinstaller = [
     {file = "pyinstaller-4.9.tar.gz", hash = "sha256:75a180a658871bc41f9cf94b6f90ffa54e98f5d6a7cdb02d7530f0360afe24f9"},
 ]
 pyinstaller-hooks-contrib = [
-    {file = "pyinstaller-hooks-contrib-2022.0.tar.gz", hash = "sha256:61b667f51b2525377fae30793f38fd9752a08032c72b209effabf707c840cc38"},
-    {file = "pyinstaller_hooks_contrib-2022.0-py2.py3-none-any.whl", hash = "sha256:29f0bd8fbb2ff6f2df60a0c147e5b5ad65ae5c1a982d90641a5f712de03fa161"},
+    {file = "pyinstaller-hooks-contrib-2022.2.tar.gz", hash = "sha256:ab1d14fe053016fff7b0c6aea51d980bac6d02114b04063b46ef7dac70c70e1e"},
+    {file = "pyinstaller_hooks_contrib-2022.2-py2.py3-none-any.whl", hash = "sha256:7605e440ccb55904cb2a87d72e83642ef176fb7030c77e52ac4d9679bb3d1537"},
 ]
 pylint = [
     {file = "pylint-2.12.2-py3-none-any.whl", hash = "sha256:daabda3f7ed9d1c60f52d563b1b854632fd90035bcf01443e234d3dc794e3b74"},
@@ -502,8 +502,8 @@ toml = [
     {file = "toml-0.10.2.tar.gz", hash = "sha256:b3bda1d108d5dd99f4a20d24d9c348e91c4db7ab1b749200bded2f839ccbe68f"},
 ]
 typing-extensions = [
-    {file = "typing_extensions-4.0.1-py3-none-any.whl", hash = "sha256:7f001e5ac290a0c0401508864c7ec868be4e701886d5b573a9528ed3973d9d3b"},
-    {file = "typing_extensions-4.0.1.tar.gz", hash = "sha256:4ca091dea149f945ec56afb48dae714f21e8692ef22a395223bcd328961b6a0e"},
+    {file = "typing_extensions-4.1.1-py3-none-any.whl", hash = "sha256:21c85e0fe4b9a155d0799430b0ad741cdce7e359660ccbd8b530613e8df88ce2"},
+    {file = "typing_extensions-4.1.1.tar.gz", hash = "sha256:1a9462dcc3347a79b1f1c0271fbe79e844580bb598bafa1ed208b94da3cdcd42"},
 ]
 wrapt = [
     {file = "wrapt-1.13.3-cp27-cp27m-macosx_10_9_x86_64.whl", hash = "sha256:e05e60ff3b2b0342153be4d1b597bbcfd8330890056b9619f4ad6b8d5c96a81a"},

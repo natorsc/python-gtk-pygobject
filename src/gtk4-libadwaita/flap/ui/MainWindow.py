@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-"""Python e GTK 4: PyGObject Gtk.ActionBar()."""
+"""Python e GTK 4: PyGObject Adw.Flap()."""
 
 import gi
 
@@ -12,10 +12,10 @@ from gi.repository import Gio, Gtk, Adw
 # @Gtk.Template(string, filename, resource_path)
 @Gtk.Template(filename='MainWindow.ui')
 class MainWindow(Gtk.ApplicationWindow):
-    __gtype_name__ = 'DeletarWindow'
+    __gtype_name__ = 'MainWindow'
 
     # Acessando o widget (componente) com id="flap".
-    flap = Gtk.Template.Child()
+    flap = Gtk.Template.Child(name='flap_toggle_button')
 
     def __init__(self, **kwargs):
         """Construtor."""
