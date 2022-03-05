@@ -310,6 +310,7 @@ pacman -S mingw-w64-x86_64-libadwaita
 - [Adw.PreferencesPage].
 - [Adw.PreferencesRow].
 - [Adw.PreferencesWindow].
+- [SplitButton](./docs/gtk4-widgets-libadwaita.md#adw-splitbutton).
 - [Adw.Squeezer].
 - [Adw.StatusPage].
 - [Adw.SwipeGroup].

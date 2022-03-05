@@ -47,3 +47,11 @@
 ![Python e GTK 4: PyGObject Adw.Flap().](./images/gtk4-libadwaita/gtk-4-pygobject-adw-flap.webp)
 
 ---
+
+## Adw SplitButton
+
+- [Python](../src/gtk4-libadwaita/split-button).
+
+![Python e GTK 4: PyGObject Adw.SplitButton().](./images/gtk4-libadwaita/gtk-4-pygobject-adw-split-button.webp)
+
+---
