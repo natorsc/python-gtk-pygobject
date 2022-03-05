@@ -208,6 +208,14 @@
 
 ---
 
+## Gtk PopoverMenu
+
+- [Python](../src/gtk4/popover-menu).
+
+![Python e GTK 4: Gtk.PopoverMenu().](./images/gtk4/gtk-4-pygobject-popover-menu.webp)
+
+---
+
 ## Gtk Signal e Slots
 
 - [Python](../src/gtk4/signal-and-slots).

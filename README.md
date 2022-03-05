@@ -229,6 +229,7 @@ ATK é uma biblioteca para um conjunto de interfaces que fornecem acessibilidade
 - [Gtk.Overlay](./docs/gtk4-widgets.md#gtk-overlay).
 - [Gtk.Picture](./docs/gtk4-widgets.md#gtk-picture).
 - [Gtk.Popover](./docs/gtk4-widgets.md#gtk-popover).
+- [Gtk.PopoverMenu](./docs/gtk4-widgets.md#gtk-popovermenu).
 - [Gtk Signal e Slots](./docs/gtk4-widgets.md#gtk-signal-e-slots).
 - [Gtk.StackSidebar](./docs/gtk4-widgets.md#gtk-stacksidebar).
 - [Gtk.StackSwitcher](./docs/gtk4-widgets.md#gtk-stackswitcher).
