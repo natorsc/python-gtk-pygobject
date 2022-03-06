@@ -216,6 +216,14 @@
 
 ---
 
+## Gtk RadioButton
+
+- [Python](../src/gtk4/radiobutton).
+
+![Python e GTK 4: Gtk.RadioButton().](./images/gtk4/gtk-4-pygobject-radiobutton.webp)
+
+---
+
 ## Gtk Signal e Slots
 
 - [Python](../src/gtk4/signal-and-slots).

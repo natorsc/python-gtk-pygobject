@@ -1,5 +1,8 @@
 # -*- coding: utf-8 -*-
-"""Python e GTK 4: PyGObject Gtk.CheckButton()."""
+"""Python e GTK 4: PyGObject Gtk.CheckButton() radio button.
+
+No Gtk 4 o RadioButton é um CheckButton que possui um group.
+"""
 
 import gi
 
@@ -13,7 +16,7 @@ class MainWindow(Gtk.ApplicationWindow):
     def __init__(self, **kwargs):
         super().__init__(**kwargs)
 
-        self.set_title(title='Python e GTK 4: PyGObject Gtk.CheckButton()')
+        self.set_title(title='Python e GTK 4: PyGObject Gtk.CheckButton() radio button')
         # Tamanho inicial da janela.
         self.set_default_size(width=int(1366 / 2), height=int(768 / 2))
         # Tamanho minimo da janela.
@@ -29,15 +32,27 @@ class MainWindow(Gtk.ApplicationWindow):
         # No GTK 3: add().
         self.set_child(child=vbox)
 
-        check_button = Gtk.CheckButton.new_with_label(label='Aceitar?')
-        check_button.connect('toggled', self.on_check_button_toggled)
-        vbox.append(child=check_button)
+        check_button_01 = Gtk.CheckButton.new_with_label(label='Item 01')
+        check_button_01.set_group(group=None)
+        check_button_01.connect('toggled', self.on_radio_button_toggled, '1')
+        vbox.append(child=check_button_01)
 
-    def on_check_button_toggled(self, widget):
+        check_button_02 = Gtk.CheckButton.new_with_label(label='Item 02')
+        check_button_02.set_group(group=check_button_01)
+        check_button_02.connect('toggled', self.on_radio_button_toggled, '2')
+        vbox.append(child=check_button_02)
+
+        check_button_03 = Gtk.CheckButton.new_with_label(label='Item 03')
+        check_button_03.set_group(group=check_button_01)
+        check_button_03.connect('toggled', self.on_radio_button_toggled, '3')
+        vbox.append(child=check_button_03)
+
+    def on_radio_button_toggled(self, widget, data):
         if widget.get_active():
-            print('Botão marcado')
+            state = 'Marcado'
         else:
-            print('Botão desmarcado')
+            state = 'desmarcado'
+        print(f'Botão {data} {state}')
 
 
 class Application(Gtk.Application):
