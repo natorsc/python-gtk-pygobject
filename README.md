@@ -174,7 +174,7 @@ No GTK 4 é desencorajado o uso do Gnome Glade, isso porque o Gnome Builder forn
 
 ### Arquitetura
 
-![Arquitetura do GTK 4](./docs/images/gtk4/gtk-architecture.webp)
+![Arquitetura do GTK 4](./docs/images/gtk4/gtk-4-architecture.webp)
 
 ### bibliotecas:
 
