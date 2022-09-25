@@ -19,7 +19,7 @@ Gtk ActionBar
 
    ..  literalinclude:: ../../src/gtk4-widgets/actionbar/MainWindow.py
 
-.. tab:: Python Ui
+.. tab:: Python load ui
 
    ..  literalinclude:: ../../src/gtk4-widgets/actionbar/ui/MainWindow.py
 
@@ -46,7 +46,7 @@ Gtk ApplicationWindow
 
    ..  literalinclude:: ../../src/gtk4-widgets/applicationwindow/MainWindow.py
 
-.. tab:: Python Ui
+.. tab:: Python load ui
 
    ..  literalinclude:: ../../src/gtk4-widgets/applicationwindow/ui/MainWindow.py
 
@@ -72,7 +72,11 @@ Gtk Box Horizontal
 .. tab:: Python
 
    ..  literalinclude:: ../../src/gtk4-widgets/box-horizontal/MainWindow.py
-   
+
+.. tab:: Python load ui
+
+   ..  literalinclude:: ../../src/gtk4-widgets/box-horizontal/ui/MainWindow.py
+
 .. tab:: UI
 
    ..  literalinclude:: ../../src/gtk4-widgets/box-horizontal/ui/MainWindow.ui
