@@ -31,7 +31,6 @@ class ExampleWindow(Gtk.ApplicationWindow):
         menu_button.set_menu_model(menu_model=menu_button_model)
         headerbar.pack_end(child=menu_button)
 
-        # O seu código aqui:
         vbox = Gtk.Box.new(orientation=Gtk.Orientation.VERTICAL, spacing=0)
         vbox.set_margin_top(margin=12)
         vbox.set_margin_end(margin=12)
