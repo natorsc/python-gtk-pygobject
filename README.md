@@ -1,4 +1,4 @@
-![Criando interfaces gráficas com Python (PyGObject) e Gtk 4](./docs/images/readme/python-gtk-4-do-zero-ao-app-1600x840.webp "Criando interfaces gráficas com Python (PyGObject) e Gtk 4")
+![Criando interfaces gráficas com Python (PyGObject) e Gtk 4](./docs/images/index/python-gtk-4-do-zero-ao-app-1600x840.webp "Criando interfaces gráficas com Python (PyGObject) e Gtk 4")
 
 <br>
 

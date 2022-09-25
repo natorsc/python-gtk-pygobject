@@ -99,6 +99,10 @@ Gtk Box Vertical
 .. tab:: Python
 
    ..  literalinclude:: ../../src/gtk4-widgets/box-vertical/MainWindow.py
+
+.. tab:: Python load ui
+
+   ..  literalinclude:: ../../src/gtk4-widgets/box-vertical/ui/MainWindow.py
    
 .. tab:: UI
 
