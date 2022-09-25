@@ -181,6 +181,10 @@ Gtk CheckButton
 
    ..  literalinclude:: ../../src/gtk4-widgets/checkbutton/MainWindow.py
 
+.. tab:: Python load ui
+
+   ..  literalinclude:: ../../src/gtk4-widgets/checkbutton/ui/MainWindow.py
+
 .. tab:: UI
 
    ..  literalinclude:: ../../src/gtk4-widgets/checkbutton/ui/MainWindow.ui
