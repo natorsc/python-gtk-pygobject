@@ -1,0 +1,79 @@
+using Gtk 4.0;
+using Adw 1;
+
+template ExampleWindow : ApplicationWindow {
+  title: "Python e GTK 4: PyGObject libadwaita Adw.Flap() ui file";
+  default-width: 683;
+  default-height: 384;
+
+  [titlebar]
+  HeaderBar header_bar {
+    [start]
+    ToggleButton {
+      icon-name: "sidebar-show-right-symbolic";
+      clicked => on_flap_button_toggled();
+    }
+
+    [end]
+    MenuButton {
+      icon-name: "open-menu-symbolic";
+      menu-model: primary_menu;
+    }
+  }
+
+  Adw.Flap adw_flap {
+    content: stack;
+    flap: stacksidebar;
+    locked: true;
+    reveal-flap: false;
+  }
+}
+
+StackSidebar stacksidebar {
+  stack: stack;
+}
+
+Stack stack {
+  StackPage {
+    name: "page01";
+    title: _("Página 01");
+    child: 
+    Box {
+      orientation: vertical;
+      spacing: 6;
+
+      Label {
+        label: "Página 01";
+        vexpand: true;
+      }
+    }
+
+    ;
+  }
+
+  StackPage page02 {
+    name: "page02";
+    title: _("Página 02");
+    child: 
+    Box {
+      orientation: vertical;
+      spacing: 6;
+
+      Label {
+        label: "Página 02";
+        vexpand: true;
+      }
+    }
+
+    ;
+  }
+}
+
+menu primary_menu {
+  section {
+    item {
+      label: _("Preferências");
+      action: "app.preferences";
+    }
+  }
+}

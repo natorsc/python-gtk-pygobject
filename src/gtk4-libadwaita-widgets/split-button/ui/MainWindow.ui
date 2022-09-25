@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<interface>
+    <requires lib="gtk" version="4.0"/>
+    <requires lib="adw" version="1.0"/>
+    <template class="ExampleWindow" parent="GtkApplicationWindow">
+        <property name="title">Python e GTK 4: PyGObject libadwaita Adw.SplitButton() ui file</property>
+        <property name="default-width">683</property>
+        <property name="default-height">384</property>
+        <child type="titlebar">
+            <object class="GtkHeaderBar" id="header_bar">
+                <child type="end">
+                    <object class="GtkMenuButton">
+                        <property name="icon-name">open-menu-symbolic</property>
+                        <property name="menu-model">primary_menu</property>
+                    </object>
+                </child>
+            </object>
+        </child>
+        <child>
+            <object class="GtkBox">
+                <property name="orientation">vertical</property>
+                <property name="margin-top">12</property>
+                <property name="margin-end">12</property>
+                <property name="margin-bottom">12</property>
+                <property name="margin-start">12</property>
+                <property name="spacing">12</property>
+                <child>
+                    <object class="AdwSplitButton">
+                        <property name="halign">center</property>
+                        <property name="popover">popover_menu</property>
+                        <signal name="clicked" handler="on_split_button_clicked" swapped="no"/>
+                        <property name="child">
+                            <object class="AdwButtonContent">
+                                <property name="icon-name">document-open-symbolic</property>
+                                <property name="label" translatable="yes">_Abrir</property>
+                                <property name="use-underline">True</property>
+                            </object>
+                        </property>
+                    </object>
+                </child>
+            </object>
+        </child>
+    </template>
+
+    <object class="GtkPopoverMenu" id="popover_menu">
+        <property name="menu-model">adw_split_button_menu</property>
+    </object>
+    <menu id='adw_split_button_menu'>
+        <section>
+            <item>
+                <attribute name='label' translatable='yes'>Item 01</attribute>
+                <attribute name='action'>app.split-button-menu-item-activate</attribute>
+            </item>
+            <submenu>
+                <attribute name='label' translatable='yes'>Submenu</attribute>
+                <item>
+                    <attribute name='label' translatable='yes'>Item 02</attribute>
+                    <attribute name='action'>app.split-button-menu-item-activate</attribute>
+                </item>
+            </submenu>
+            <section>
+                <attribute name='label' translatable='yes'>Editar</attribute>
+                <item>
+                    <attribute name='label' translatable='yes'>Item 03</attribute>
+                    <attribute name='action'>app.split-button-menu-item-activate</attribute>
+                </item>
+                <item>
+                    <attribute name='label' translatable='yes'>Item 04</attribute>
+                    <attribute name='action'>app.split-button-menu-item-activate</attribute>
+                </item>
+            </section>
+            <item>
+                <attribute name='label' translatable='yes'>Sair</attribute>
+                <attribute name='action'>app.quit</attribute>
+            </item>
+        </section>
+    </menu>
+
+    <menu id="primary_menu">
+        <section>
+            <item>
+                <attribute name="label" translatable="yes">_Preferences</attribute>
+                <attribute name="action">app.preferences</attribute>
+            </item>
+        </section>
+    </menu>
+</interface>

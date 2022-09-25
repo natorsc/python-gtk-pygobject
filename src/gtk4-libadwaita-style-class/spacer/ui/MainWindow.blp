@@ -1,0 +1,71 @@
+using Gtk 4.0;
+
+template ExampleWindow : ApplicationWindow {
+  title: "Python e GTK 4: PyGObject libadwaita style class spacer ui file";
+  default-width: 683;
+  default-height: 384;
+
+  [titlebar]
+  HeaderBar header_bar {
+    [end]
+    MenuButton {
+      icon-name: "open-menu-symbolic";
+      menu-model: primary_menu;
+    }
+  }
+
+  Box {
+    orientation: vertical;
+    margin-top: 12;
+    margin-end: 12;
+    margin-bottom: 12;
+    margin-start: 12;
+    spacing: 12;
+
+    Box {
+      orientation: horizontal;
+      spacing: 12;
+
+      Button {
+        label: "GtkSeparator →";
+      }
+
+      Separator {
+        orientation: vertical;
+      }
+
+      Button {
+        label: "GtkSeparator class spacer →";
+      }
+
+      Separator {
+        orientation: vertical;
+
+        styles [
+          "spacer",
+        ]
+      }
+
+      Separator {
+        orientation: vertical;
+
+        styles [
+          "spacer",
+        ]
+      }
+
+      Button {
+        label: "← GtkSeparator class spacer";
+      }
+    }
+  }
+}
+
+menu primary_menu {
+  section {
+    item {
+      label: _("Preferências");
+      action: "app.preferences";
+    }
+  }
+}

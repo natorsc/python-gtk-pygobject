@@ -1,0 +1,21 @@
+# Informações do widget **{}**
+
+- **GTK versão**: {}
+- **PyGObject versão**: {}.
+- **LibAdwaita versão**: {}.
+
+## Propriedades:
+
+- {}
+
+## Sinais (signals):
+
+- {}
+
+## Métodos GET:
+
+- {}
+
+## Métodos SET:
+
+- {}

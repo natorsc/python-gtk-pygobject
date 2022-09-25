@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<interface>
+    <requires lib="gtk" version="4.0"/>
+    <requires lib="adw" version="1.0"/>
+    <template class="ExampleWindow" parent="AdwApplicationWindow">
+        <property name="title">Python e GTK 4: PyGObject libadwaita Adw.Leaflet() ui file</property>
+        <property name="default-width">683</property>
+        <property name="default-height">384</property>
+        <child>
+            <object class="AdwLeaflet" id="leaflet">
+                <property name="can-navigate-back">True</property>
+                <child>
+                    <object class="GtkBox">
+                        <property name="orientation">vertical</property>
+                        <child>
+                            <object class="AdwHeaderBar">
+                                <binding name="show-end-title-buttons">
+                                    <lookup name="folded">leaflet</lookup>
+                                </binding>
+                                <property name="title-widget">
+                                    <object class="AdwWindowTitle">
+                                        <property name="title" translatable="yes">Sidebar</property>
+                                    </object>
+                                </property>
+                            </object>
+                        </child>
+                        <!-- sidebar -->
+                    </object>
+                </child>
+                <child>
+                    <object class="AdwLeafletPage">
+                        <property name="navigatable">False</property>
+                        <property name="child">
+                            <object class="GtkSeparator"/>
+                        </property>
+                    </object>
+                </child>
+                <child>
+                    <object class="GtkBox">
+                        <property name="orientation">vertical</property>
+                        <property name="hexpand">True</property>
+                        <child>
+                            <object class="AdwHeaderBar">
+                                <binding name="show-start-title-buttons">
+                                    <lookup name="folded">leaflet</lookup>
+                                </binding>
+                                <child>
+                                    <object class="GtkButton">
+                                        <binding name="visible">
+                                            <lookup name="folded">leaflet</lookup>
+                                        </binding>
+                                        <property name="icon-name">go-previous-symbolic</property>
+                                    </object>
+                                </child>
+                                <property name="title-widget">
+                                    <object class="AdwWindowTitle">
+                                        <property name="title" translatable="yes">Content</property>
+                                    </object>
+                                </property>
+                            </object>
+                        </child>
+                        <!-- content -->
+                    </object>
+                </child>
+            </object>
+        </child>
+    </template>
+
+    <menu id="primary_menu">
+        <section>
+            <item>
+                <attribute name="label" translatable="yes">_Preferences</attribute>
+                <attribute name="action">app.preferences</attribute>
+            </item>
+        </section>
+    </menu>
+</interface>

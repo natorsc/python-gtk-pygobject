@@ -1,0 +1,46 @@
+using Gtk 4.0;
+using Adw 1;
+
+template PreferencesWindow : Adw.PreferencesWindow {
+  title: "Python e GTK 4: PyGObject libadwaita Adw.PreferencesWindow() ui file";
+
+  Adw.PreferencesPage {
+    Adw.PreferencesGroup {
+      title: "AdwPreferencesPage";
+      description: "AdwPreferencesGroup";
+      header-suffix: header_suffix;
+
+      Adw.ActionRow {
+        icon-name: "edit-find-symbolic";
+        title: "Libadwaita";
+        subtitle: "Adw.ActionRow()";
+
+        Switch {
+          valign: center;
+          notify::active => on_switch_button_clicked();
+        }
+      }
+
+      Adw.ActionRow {
+        icon-name: "edit-find-symbolic";
+        title: "Libadwaita - Ao clicar na linha widget ativa e desativa\n                                ";
+        subtitle: "Adw.ActionRow()";
+        activatable-widget: switch;
+
+        Switch switch {
+          valign: center;
+          notify::active => on_switch_button_clicked();
+        }
+      }
+    }
+  }
+}
+
+Button header_suffix {
+  icon-name: "list-add-symbolic";
+  clicked => on_button_clicked();
+
+  styles [
+    "flat",
+  ]
+}

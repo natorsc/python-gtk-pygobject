@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<interface>
+    <requires lib="gtk" version="4.0"/>
+    <requires lib="adw" version="1.0"/>
+    <template class="PreferencesWindow" parent="AdwPreferencesWindow">
+        <property name="title">Python e GTK 4: PyGObject libadwaita Adw.PreferencesWindow() ui file</property>
+        <child>
+            <object class="AdwPreferencesPage">
+                <child>
+                    <object class="AdwPreferencesGroup">
+                        <property name="title">AdwPreferencesPage</property>
+                        <property name="description">AdwPreferencesGroup</property>
+                        <property name="header-suffix">header_suffix</property>
+                        <child>
+                            <object class="AdwActionRow">
+                                <property name="icon-name">edit-find-symbolic</property>
+                                <property name="title">Libadwaita</property>
+                                <property name="subtitle">Adw.ActionRow()</property>
+                                <child>
+                                    <object class="GtkSwitch">
+                                        <property name="valign">center</property>
+                                        <signal name="notify::active" handler="on_switch_button_clicked" swapped="no"/>
+                                    </object>
+                                </child>
+                            </object>
+                        </child>
+                        <child>
+                            <object class="AdwActionRow">
+                                <property name="icon-name">edit-find-symbolic</property>
+                                <property name="title">Libadwaita - Ao clicar na linha widget ativa e desativa
+                                </property>
+                                <property name="subtitle">Adw.ActionRow()</property>
+                                <property name="activatable-widget">switch</property>
+                                <child>
+                                    <object class="GtkSwitch" id="switch">
+                                        <property name="valign">center</property>
+                                        <signal name="notify::active" handler="on_switch_button_clicked" swapped="no"/>
+                                    </object>
+                                </child>
+                            </object>
+                        </child>
+                    </object>
+                </child>
+            </object>
+        </child>
+    </template>
+
+    <object class="GtkButton" id="header_suffix">
+        <property name="icon-name">list-add-symbolic</property>
+        <signal name="clicked" handler="on_button_clicked" swapped="no"/>
+        <style>
+            <class name="flat"/>
+        </style>
+    </object>
+</interface>

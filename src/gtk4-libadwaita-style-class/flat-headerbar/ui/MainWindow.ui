@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<interface>
+    <requires lib="gtk" version="4.0"/>
+    <requires lib="adw" version="1.0"/>
+    <template class="ExampleWindow" parent="GtkApplicationWindow">
+        <property name="title">Python e GTK 4: PyGObject libadwaita style class flat HeaderBar ui file</property>
+        <property name="default-width">683</property>
+        <property name="default-height">384</property>
+        <child type="titlebar">
+            <object class="GtkHeaderBar" id="header_bar">
+                <style>
+                    <class name="flat"/>
+                </style>
+                <child type="end">
+                    <object class="GtkMenuButton">
+                        <property name="icon-name">open-menu-symbolic</property>
+                        <property name="menu-model">primary_menu</property>
+                    </object>
+                </child>
+            </object>
+        </child>
+    </template>
+
+    <menu id="primary_menu">
+        <section>
+            <item>
+                <attribute name="label" translatable="yes">_Preferences</attribute>
+                <attribute name="action">app.preferences</attribute>
+            </item>
+        </section>
+    </menu>
+</interface>

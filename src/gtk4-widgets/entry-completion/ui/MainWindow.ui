@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<interface>
+    <requires lib="gtk" version="4.0"/>
+    <requires lib="adw" version="1.0"/>
+    <template class="ExampleWindow" parent="GtkApplicationWindow">
+        <property name="title">Python e GTK 4: PyGObject Gtk.EntryCompletion() ui file</property>
+        <property name="default-width">683</property>
+        <property name="default-height">384</property>
+        <child type="titlebar">
+            <object class="GtkHeaderBar" id="header_bar">
+                <child type="end">
+                    <object class="GtkMenuButton">
+                        <property name="icon-name">open-menu-symbolic</property>
+                        <property name="menu-model">primary_menu</property>
+                    </object>
+                </child>
+            </object>
+        </child>
+        <child>
+            <object class="GtkBox">
+                <property name="orientation">vertical</property>
+                <property name="margin-top">12</property>
+                <property name="margin-end">12</property>
+                <property name="margin-bottom">12</property>
+                <property name="margin-start">12</property>
+                <property name="spacing">12</property>
+                <child>
+                    <object class="GtkLabel">
+                        <property name="label">Digite o nome de algum estado brasileiro:</property>
+                    </object>
+                </child>
+                <child>
+                    <object class="GtkEntry">
+                        <property name="completion">completion</property>
+                    </object>
+                </child>
+            </object>
+        </child>
+    </template>
+
+    <object class="GtkEntryCompletion" id="completion">
+        <property name="model">model</property>
+        <property name="text_column">0</property>
+        <child>
+            <object class="GtkCellRendererText" id="cellrenderertext"/>
+            <attributes>
+                <attribute name="text">0</attribute>
+            </attributes>
+        </child>
+    </object>
+
+    <object class="GtkListStore" id="model">
+        <columns>
+            <column type="gchararray"/>
+        </columns>
+        <data>
+            <row>
+                <col id="0">Acre</col>
+            </row>
+            <row>
+                <col id="0">Alagoas</col>
+            </row>
+            <row>
+                <col id="0">Amapá</col>
+            </row>
+            <row>
+                <col id="0">Amazonas</col>
+            </row>
+            <row>
+                <col id="0">Bahia</col>
+            </row>
+            <row>
+                <col id="0">Ceará</col>
+            </row>
+            <row>
+                <col id="0">Distrito Federal</col>
+            </row>
+            <row>
+                <col id="0">Espírito Santo</col>
+            </row>
+            <row>
+                <col id="0">Goiás</col>
+            </row>
+            <row>
+                <col id="0">Maranhão</col>
+            </row>
+            <row>
+                <col id="0">Mato Grosso</col>
+            </row>
+            <row>
+                <col id="0">Mato Grosso do Sul</col>
+            </row>
+            <row>
+                <col id="0">Minas Gerais</col>
+            </row>
+            <row>
+                <col id="0">Pará</col>
+            </row>
+            <row>
+                <col id="0">Paraíba</col>
+            </row>
+            <row>
+                <col id="0">Paraná</col>
+            </row>
+            <row>
+                <col id="0">Pernambuco</col>
+            </row>
+            <row>
+                <col id="0">Piauí</col>
+            </row>
+            <row>
+                <col id="0">Rio de Janeiro</col>
+            </row>
+            <row>
+                <col id="0">Rio Grande do Norte</col>
+            </row>
+            <row>
+                <col id="0">Rio Grande do Sul</col>
+            </row>
+            <row>
+                <col id="0">Rondônia</col>
+            </row>
+            <row>
+                <col id="0">Roraima</col>
+            </row>
+            <row>
+                <col id="0">Santa Catarina</col>
+            </row>
+            <row>
+                <col id="0">São Paulo</col>
+            </row>
+            <row>
+                <col id="0">Sergipe</col>
+            </row>
+            <row>
+                <col id="0">Tocantins</col>
+            </row>
+        </data>
+    </object>
+
+    <menu id="primary_menu">
+        <section>
+            <item>
+                <attribute name="label" translatable="yes">_Preferences</attribute>
+                <attribute name="action">app.preferences</attribute>
+            </item>
+        </section>
+    </menu>
+</interface>

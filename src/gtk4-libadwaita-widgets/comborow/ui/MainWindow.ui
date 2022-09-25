@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<interface>
+    <requires lib="gtk" version="4.0"/>
+    <requires lib="adw" version="1.0"/>
+    <template class="ExampleWindow" parent="GtkApplicationWindow">
+        <property name="title">Python e GTK 4: PyGObject libadwaita Adw.ComboRow() ui file</property>
+        <property name="default-width">683</property>
+        <property name="default-height">384</property>
+        <child type="titlebar">
+            <object class="GtkHeaderBar" id="header_bar">
+                <child type="end">
+                    <object class="GtkMenuButton">
+                        <property name="icon-name">open-menu-symbolic</property>
+                        <property name="menu-model">primary_menu</property>
+                    </object>
+                </child>
+            </object>
+        </child>
+        <child>
+            <object class="GtkBox">
+                <property name="orientation">vertical</property>
+                <property name="margin-top">12</property>
+                <property name="margin-end">12</property>
+                <property name="margin-bottom">12</property>
+                <property name="margin-start">12</property>
+                <property name="spacing">12</property>
+                <child>
+                    <object class="GtkListBox">
+                        <property name="selection-mode">none</property>
+                        <style>
+                            <class name="boxed-list"/>
+                        </style>
+                        <child>
+                            <object class="AdwComboRow">
+                                <property name="icon-name">edit-find-symbolic</property>
+                                <property name="title">Libadwaita</property>
+                                <property name="subtitle">Adw.ComboRow()</property>
+                                <property name="model">model</property>
+                                <signal name="notify::selected" handler="on_adw_combo_row_selected" swapped="no"/>
+                                <signal name="notify::selected-item" handler="on_adw_combo_row_selected_item"
+                                        swapped="no"/>
+                            </object>
+                        </child>
+                    </object>
+                </child>
+            </object>
+        </child>
+    </template>
+
+    <object class="GtkStringList" id="model">
+        <items>
+            <item translatable="yes">Item 01</item>
+            <item translatable="yes">Item 02</item>
+            <item translatable="yes">Item 03</item>
+        </items>
+    </object>
+
+    <menu id="primary_menu">
+        <section>
+            <item>
+                <attribute name="label" translatable="yes">_Preferences</attribute>
+                <attribute name="action">app.preferences</attribute>
+            </item>
+        </section>
+    </menu>
+</interface>

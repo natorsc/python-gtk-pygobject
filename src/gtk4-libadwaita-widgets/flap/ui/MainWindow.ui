@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<interface>
+    <requires lib="gtk" version="4.0"/>
+    <requires lib="adw" version="1.0"/>
+    <template class="ExampleWindow" parent="GtkApplicationWindow">
+        <property name="title">Python e GTK 4: PyGObject libadwaita Adw.Flap() ui file</property>
+        <property name="default-width">683</property>
+        <property name="default-height">384</property>
+        <child type="titlebar">
+            <object class="GtkHeaderBar" id="header_bar">
+                <child type="start">
+                    <object class="GtkToggleButton">
+                        <property name="icon-name">sidebar-show-right-symbolic</property>
+                        <signal name="clicked" handler="on_flap_button_toggled" swapped="no"/>
+                    </object>
+                </child>
+                <child type="end">
+                    <object class="GtkMenuButton">
+                        <property name="icon-name">open-menu-symbolic</property>
+                        <property name="menu-model">primary_menu</property>
+                    </object>
+                </child>
+            </object>
+        </child>
+        <child>
+            <object class="AdwFlap" id="adw_flap">
+                <property name="content">stack</property>
+                <property name="flap">stacksidebar</property>
+                <property name="locked">True</property>
+                <property name="reveal-flap">false</property>
+            </object>
+        </child>
+    </template>
+
+    <object class="GtkStackSidebar" id="stacksidebar">
+        <property name="stack">stack</property>
+    </object>
+
+    <object class="GtkStack" id="stack">
+        <child>
+            <object class="GtkStackPage">
+                <property name="name">page01</property>
+                <property name="title" translatable="yes">Página 01</property>
+                <property name="child">
+                    <object class="GtkBox">
+                        <property name="orientation">vertical</property>
+                        <property name="spacing">6</property>
+                        <child>
+                            <object class="GtkLabel">
+                                <property name="label">Página 01</property>
+                                <property name="vexpand">True</property>
+                            </object>
+                        </child>
+                    </object>
+                </property>
+            </object>
+        </child>
+        <!-- Página 02 -->
+        <child>
+            <object class="GtkStackPage" id="page02">
+                <property name="name">page02</property>
+                <property name="title" translatable="yes">Página 02</property>
+                <property name="child">
+                    <object class="GtkBox">
+                        <property name="orientation">vertical</property>
+                        <property name="spacing">6</property>
+                        <child>
+                            <object class="GtkLabel">
+                                <property name="label">Página 02</property>
+                                <property name="vexpand">True</property>
+                            </object>
+                        </child>
+                    </object>
+                </property>
+            </object>
+        </child>
+    </object>
+
+    <menu id="primary_menu">
+        <section>
+            <item>
+                <attribute name="label" translatable="yes">_Preferences</attribute>
+                <attribute name="action">app.preferences</attribute>
+            </item>
+        </section>
+    </menu>
+</interface>

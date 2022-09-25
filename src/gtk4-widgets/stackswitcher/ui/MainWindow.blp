@@ -1,0 +1,75 @@
+using Gtk 4.0;
+
+template ExampleWindow : ApplicationWindow {
+  title: "Python e GTK 4: PyGObject Gtk.GtkStackSwitcher() ui file.";
+  default-width: 683;
+  default-height: 384;
+
+  [titlebar]
+  HeaderBar {
+    title-widget: stackswitcher;
+
+    [end]
+    MenuButton {
+      icon-name: "open-menu-symbolic";
+      menu-model: primary_menu;
+    }
+  }
+
+  Box {
+    orientation: vertical;
+    homogeneous: true;
+    margin-top: 12;
+    margin-end: 12;
+    margin-bottom: 12;
+    margin-start: 12;
+    spacing: 12;
+
+    Stack stack {
+      vexpand: true;
+
+      StackPage {
+        name: "page01";
+        title: _("Página 01");
+        child: 
+        Box {
+          orientation: vertical;
+
+          Label {
+            label: "Página 01";
+          }
+        }
+
+        ;
+      }
+
+      StackPage page02 {
+        name: "page02";
+        title: _("Página 02");
+        child: 
+        Box {
+          orientation: vertical;
+
+          Label {
+            label: "Página 02";
+          }
+        }
+
+        ;
+      }
+    }
+  }
+}
+
+StackSwitcher stackswitcher {
+  stack: stack;
+}
+
+menu primary_menu {
+  section {
+    item {
+      label: _("Preferências");
+      action: "app.preferences";
+    }
+  }
+}

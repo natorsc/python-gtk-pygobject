@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<interface>
+    <requires lib="gtk" version="4.0"/>
+    <requires lib="adw" version="1.0"/>
+    <template class="ExampleWindow" parent="GtkApplicationWindow">
+        <property name="title">Python e GTK 4: PyGObject libadwaita style class inline ui file</property>
+        <property name="default-width">683</property>
+        <property name="default-height">384</property>
+        <child type="titlebar">
+            <object class="GtkHeaderBar" id="header_bar">
+                <child type="end">
+                    <object class="GtkMenuButton">
+                        <property name="icon-name">open-menu-symbolic</property>
+                        <property name="menu-model">primary_menu</property>
+                    </object>
+                </child>
+            </object>
+        </child>
+        <child>
+            <object class="GtkBox">
+                <property name="orientation">vertical</property>
+                <property name="margin-top">12</property>
+                <property name="margin-end">12</property>
+                <property name="margin-bottom">12</property>
+                <property name="margin-start">12</property>
+                <property name="spacing">12</property>
+                <child>
+                    <object class="GtkSearchBar">
+                        <property name="show_close_button">true</property>
+                        <property name="search-mode-enabled">true</property>
+                        <child>
+                            <object class="GtkEntry">
+                                <property name="placeholder-text">GtkSearchBar</property>
+                                <property name="primary-icon-name">system-search-symbolic</property>
+                                <signal name="activate" handler="on_key_enter_pressed" swapped="no"/>
+                                <signal name="icon-press" handler="on_icon_pressed" swapped="no"/>
+                            </object>
+                        </child>
+                    </object>
+                </child>
+                <child>
+                    <object class="GtkSearchBar">
+                        <property name="show_close_button">true</property>
+                        <property name="search-mode-enabled">true</property>
+                        <style>
+                            <class name="inline"/>
+                        </style>
+                        <child>
+                            <object class="GtkEntry">
+                                <property name="placeholder-text">GtkSearchBar com a classe inline</property>
+                                <property name="primary-icon-name">system-search-symbolic</property>
+                                <signal name="activate" handler="on_key_enter_pressed" swapped="no"/>
+                                <signal name="icon-press" handler="on_icon_pressed" swapped="no"/>
+                            </object>
+                        </child>
+                    </object>
+                </child>
+            </object>
+        </child>
+    </template>
+
+    <menu id="primary_menu">
+        <section>
+            <item>
+                <attribute name="label" translatable="yes">_Preferences</attribute>
+                <attribute name="action">app.preferences</attribute>
+            </item>
+        </section>
+    </menu>
+</interface>

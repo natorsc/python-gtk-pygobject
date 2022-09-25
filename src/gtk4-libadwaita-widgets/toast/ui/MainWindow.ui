@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<interface>
+    <requires lib="gtk" version="4.0"/>
+    <requires lib="adw" version="1.0"/>
+    <template class="ExampleWindow" parent="GtkApplicationWindow">
+        <property name="title">Python e GTK 4: PyGObject libadwaita Adw.Toast() ui file</property>
+        <property name="default-width">683</property>
+        <property name="default-height">384</property>
+        <child type="titlebar">
+            <object class="GtkHeaderBar" id="header_bar">
+                <child type="end">
+                    <object class="GtkMenuButton">
+                        <property name="icon-name">open-menu-symbolic</property>
+                        <property name="menu-model">primary_menu</property>
+                    </object>
+                </child>
+            </object>
+        </child>
+        <child>
+            <object class="AdwToastOverlay" id="toast_overlay">
+                <property name="margin-top">12</property>
+                <property name="margin-end">12</property>
+                <property name="margin-bottom">12</property>
+                <property name="margin-start">12</property>
+                <child>
+                    <object class="GtkButton" id="button">
+                        <property name="label">Clique aqui</property>
+                        <property name="valign">center</property>
+                        <property name="vexpand">true</property>
+                        <signal name="clicked" handler="on_button_clicked" swapped="no"/>
+                    </object>
+                </child>
+            </object>
+        </child>
+
+        <object class="AdwToast" id="toast">
+            <signal name="dismissed" handler="on_toast_dismissed" swapped="no"/>
+        </object>
+    </template>
+
+    <menu id="primary_menu">
+        <section>
+            <item>
+                <attribute name="label" translatable="yes">_Preferences</attribute>
+                <attribute name="action">app.preferences</attribute>
+            </item>
+        </section>
+    </menu>
+</interface>

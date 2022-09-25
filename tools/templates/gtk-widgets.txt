@@ -1,0 +1,20 @@
+# Informações do widget **{}**
+
+- **GTK versão**: {}
+- **PyGObject versão**: {}.
+
+## Propriedades:
+
+- {}
+
+## Sinais (signals):
+
+- {}
+
+## Métodos GET:
+
+- {}
+
+## Métodos SET:
+
+- {}
