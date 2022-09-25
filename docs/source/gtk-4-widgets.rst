@@ -46,6 +46,10 @@ Gtk ApplicationWindow
 
    ..  literalinclude:: ../../src/gtk4-widgets/applicationwindow/MainWindow.py
 
+.. tab:: Python Ui
+
+   ..  literalinclude:: ../../src/gtk4-widgets/applicationwindow/ui/MainWindow.py
+
 .. tab:: UI
 
    ..  literalinclude:: ../../src/gtk4-widgets/applicationwindow/ui/MainWindow.ui
