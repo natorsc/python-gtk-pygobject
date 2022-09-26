@@ -1,74 +1,72 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <interface>
-    <requires lib="gtk" version="4.0"/>
-    <requires lib="adw" version="1.0"/>
-    <template class="ExampleWindow" parent="GtkApplicationWindow">
-        <property name="title">Python e GTK 4: PyGObject Gtk.ComboBoxText() ui file</property>
-        <property name="default-width">683</property>
-        <property name="default-height">384</property>
-        <child type="titlebar">
-            <object class="GtkHeaderBar" id="header_bar">
-                <child type="end">
-                    <object class="GtkMenuButton">
-                        <property name="icon-name">open-menu-symbolic</property>
-                        <property name="menu-model">primary_menu</property>
-                    </object>
-                </child>
-            </object>
+  <requires lib="gtk" version="4.0"/>
+  <template class="ExampleWindow" parent="GtkApplicationWindow">
+    <property name="title">Python e GTK 4: PyGObject Gtk.ComboBoxText() ui file</property>
+    <property name="default-width">683</property>
+    <property name="default-height">384</property>
+    <child type="titlebar">
+      <object class="GtkHeaderBar" id="header_bar">
+        <child type="end">
+          <object class="GtkMenuButton">
+            <property name="icon-name">open-menu-symbolic</property>
+            <property name="menu-model">primary_menu</property>
+          </object>
         </child>
+      </object>
+    </child>
+    <child>
+      <object class="GtkBox">
+        <property name="orientation">vertical</property>
+        <property name="margin-top">12</property>
+        <property name="margin-end">12</property>
+        <property name="margin-bottom">12</property>
+        <property name="margin-start">12</property>
+        <property name="spacing">12</property>
         <child>
-            <object class="GtkBox">
-                <property name="orientation">vertical</property>
-                <property name="margin-top">12</property>
-                <property name="margin-end">12</property>
-                <property name="margin-bottom">12</property>
-                <property name="margin-start">12</property>
-                <property name="spacing">12</property>
-                <child>
-                    <object class="GtkComboBoxText">
-                        <property name="active">0</property>
-                        <items>
-                            <item translatable="yes" id="acre">Acre</item>
-                            <item translatable="yes" id="alagoas">Alagoas</item>
-                            <item translatable="yes" id="amapá">Amapá</item>
-                            <item translatable="yes" id="amazonas">Amazonas</item>
-                            <item translatable="yes" id="bahia">Bahia</item>
-                            <item translatable="yes" id="ceará">Ceará</item>
-                            <item translatable="yes" id="distrito Federal">Distrito Federal</item>
-                            <item translatable="yes" id="espírito Santo">Espírito Santo</item>
-                            <item translatable="yes" id="goiás">Goiás</item>
-                            <item translatable="yes" id="maranhão">Maranhão</item>
-                            <item translatable="yes" id="mato Grosso">Mato Grosso</item>
-                            <item translatable="yes" id="mato Grosso do Sul">Mato Grosso do Sul</item>
-                            <item translatable="yes" id="minas Gerais">Minas Gerais</item>
-                            <item translatable="yes" id="pará">Pará</item>
-                            <item translatable="yes" id="paraíba">Paraíba</item>
-                            <item translatable="yes" id="paraná">Paraná</item>
-                            <item translatable="yes" id="pernambuco">Pernambuco</item>
-                            <item translatable="yes" id="piauí">Piauí</item>
-                            <item translatable="yes" id="rio de Janeiro">Rio de Janeiro</item>
-                            <item translatable="yes" id="rio Grande do Norte">Rio Grande do Norte</item>
-                            <item translatable="yes" id="rio Grande do Sul">Rio Grande do Sul</item>
-                            <item translatable="yes" id="rondônia">Rondônia</item>
-                            <item translatable="yes" id="roraima">Roraima</item>
-                            <item translatable="yes" id="santa Catarina">Santa Catarina</item>
-                            <item translatable="yes" id="são Paulo">São Paulo</item>
-                            <item translatable="yes" id="sergipe">Sergipe</item>
-                            <item translatable="yes" id="tocantins">Tocantins</item>
-                        </items>
-                        <signal name="changed" handler="on_combo_box_text_changed" swapped="no"/>
-                    </object>
-                </child>
-            </object>
+          <object class="GtkComboBoxText">
+            <items>
+              <item>Acre</item>
+              <item>Alagoas</item>
+              <item>Amapá</item>
+              <item>Amazonas</item>
+              <item>Bahia</item>
+              <item>Ceará</item>
+              <item>Distrito Federal</item>
+              <item>Espírito Santo</item>
+              <item>Goiás</item>
+              <item>Maranhão</item>
+              <item>Mato Grosso</item>
+              <item>Mato Grosso do Sul</item>
+              <item>Minas Gerais</item>
+              <item>Pará</item>
+              <item>Paraíba</item>
+              <item>Paraná</item>
+              <item>Pernambuco</item>
+              <item>Piauí</item>
+              <item>Rio de Janeiro</item>
+              <item>Rio Grande do Norte</item>
+              <item>Rio Grande do Sul</item>
+              <item>Rondônia</item>
+              <item>Roraima</item>
+              <item>Santa Catarina</item>
+              <item>São Paulo</item>
+              <item>Sergipe</item>
+              <item>Tocantins</item>
+            </items>
+            <property name="active">0</property>
+            <signal name="changed" handler="on_combo_box_text_changed"/>
+          </object>
         </child>
-    </template>
-
-    <menu id="primary_menu">
-        <section>
-            <item>
-                <attribute name="label" translatable="yes">_Preferences</attribute>
-                <attribute name="action">app.preferences</attribute>
-            </item>
-        </section>
-    </menu>
+      </object>
+    </child>
+  </template>
+  <menu id="primary_menu">
+    <section>
+      <item>
+        <attribute name="label" translatable="true">Preferências</attribute>
+        <attribute name="action">app.preferences</attribute>
+      </item>
+    </section>
+  </menu>
 </interface>

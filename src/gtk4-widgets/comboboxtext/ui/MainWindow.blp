@@ -1,0 +1,47 @@
+using Gtk 4.0;
+
+template ExampleWindow : ApplicationWindow {
+  title: "Python e GTK 4: PyGObject Gtk.ComboBoxText() ui file";
+  default-width: 683;
+  default-height: 384;
+
+  [titlebar]
+  HeaderBar header_bar {
+    [end]
+    MenuButton {
+      icon-name: "open-menu-symbolic";
+      menu-model: primary_menu;
+    }
+  }
+
+  Box {
+    orientation: vertical;
+    margin-top: 12;
+    margin-end: 12;
+    margin-bottom: 12;
+    margin-start: 12;
+    spacing: 12;
+
+    Gtk.ComboBoxText {
+      items [
+        "Acre", "Alagoas", "Amapá", "Amazonas", "Bahia", "Ceará",
+        "Distrito Federal", "Espírito Santo", "Goiás", "Maranhão",
+        "Mato Grosso", "Mato Grosso do Sul", "Minas Gerais", "Pará",
+        "Paraíba", "Paraná", "Pernambuco", "Piauí", "Rio de Janeiro",
+        "Rio Grande do Norte", "Rio Grande do Sul", "Rondônia", "Roraima",
+        "Santa Catarina", "São Paulo", "Sergipe", "Tocantins",
+      ]
+      active: 0;
+      changed => on_combo_box_text_changed();
+    }
+  }
+}
+
+menu primary_menu {
+  section {
+    item {
+      label: _("Preferências");
+      action: "app.preferences";
+    }
+  }
+}

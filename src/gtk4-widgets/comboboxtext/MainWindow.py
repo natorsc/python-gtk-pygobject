@@ -6,7 +6,7 @@ import gi
 gi.require_version(namespace='Gtk', version='4.0')
 gi.require_version(namespace='Adw', version='1')
 
-from gi.repository import Adw, Gtk, Gio
+from gi.repository import Adw, Gio, Gtk
 
 Adw.init()
 
