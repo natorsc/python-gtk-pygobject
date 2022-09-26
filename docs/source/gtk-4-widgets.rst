@@ -208,6 +208,10 @@ Gtk ColorButton
 
    ..  literalinclude:: ../../src/gtk4-widgets/colorbutton/MainWindow.py
 
+.. tab:: Python load ui
+
+   ..  literalinclude:: ../../src/gtk4-widgets/colorbutton/ui/MainWindow.py
+
 .. tab:: UI
 
    ..  literalinclude:: ../../src/gtk4-widgets/colorbutton/ui/MainWindow.ui
