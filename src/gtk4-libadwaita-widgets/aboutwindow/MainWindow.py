@@ -11,8 +11,6 @@ from gi.repository import Adw, Gio, Gtk
 Adw.init()
 
 
-
-
 class ExampleWindow(Gtk.ApplicationWindow):
 
     def __init__(self, **kwargs):
@@ -41,11 +39,12 @@ class ExampleWindow(Gtk.ApplicationWindow):
         vbox.set_margin_bottom(margin=12)
         vbox.set_margin_start(margin=12)
         self.set_child(child=vbox)
-        
+
         label = Gtk.Label.new()
         label.set_label(str='Clique no botão de menu para exibir a janela de sobre')
         vbox.append(child=label)
-        
+
+
 class ExampleApplication(Adw.Application):
 
     def __init__(self):
@@ -78,15 +77,15 @@ class ExampleApplication(Adw.Application):
         dialog.set_version('0.0.1')
         dialog.set_developer_name('Renato Cruz (natorsc)')
         dialog.set_license_type(Gtk.License(Gtk.License.MIT_X11))
-        dialog.set_comments('Criando interfaces gráficas com a linguagem de' 
-        'programação Python (PyGObject) e o toolkit gráfico Gtk 4')
+        dialog.set_comments('Criando interfaces gráficas com a linguagem de'
+                            'programação Python (PyGObject) e o toolkit gráfico Gtk 4')
         dialog.set_website('https://gtk.justcode.com.br')
         dialog.set_issue_url("https://github.com/natorsc/gui-python-pygobject-gtk4/issues")
         dialog.add_credit_section('Contributors', ['Name-01', 'Name-02'])
         dialog.set_translator_credits('Translator')
         dialog.set_copyright('© 2022 Renato Cruz (natorsc)')
         dialog.set_developers(['natorsc https://github.com/natorsc'])
-        dialog.set_application_icon('python-symbolic')
+        dialog.set_application_icon('help-about-symbolic')
         dialog.present()
 
     def exit_app(self, action, param):
@@ -105,9 +104,3 @@ if __name__ == '__main__':
 
     app = ExampleApplication()
     app.run(sys.argv)
-
-
-
-
-
-

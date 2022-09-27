@@ -14,7 +14,7 @@ Libadwaita Widgets
 Adw AboutWindow
 ---------------
 
-.. figure:: ../images/gtk4-libadwaita-widgets/gtk-4-pygobject-adw-aboutwindow.webp
+.. figure:: ../images/gtk4-libadwaita-widgets/gtk-4-pygobject-adw-aboutwindowv.webp
    :alt: Python e GTK 4: PyGObject libadwaita Adw.AboutWindow().
 
    Python e GTK 4: PyGObject libadwaita Adw.AboutWindow().
