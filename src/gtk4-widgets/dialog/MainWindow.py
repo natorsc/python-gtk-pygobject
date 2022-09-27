@@ -14,14 +14,16 @@ Adw.init()
 class CustomDialog(Gtk.Dialog):
     """Exemplo de uma janela de dialogo personalizada."""
 
-    def __init__(self, parent):
-        super().__init__(transient_for=parent, use_header_bar=True)
-        self.parent = parent
+    def __init__(self, **kwargs):
+        super().__init__(**kwargs)
+        self.parent = kwargs.get('transient_for')
 
         self.set_title(title='Janela de dialogo personalizada')
         self.use_header_bar = True
-        self.set_modal(modal=True)
         self.connect('response', self.dialog_response)
+
+        self.set_width = 683
+        self.set_height = 384
 
         # Criando os botões.
         self.add_buttons(
@@ -42,7 +44,7 @@ class CustomDialog(Gtk.Dialog):
         # Acessando o box do dialogo.
         content_area = self.get_content_area()
         content_area.set_orientation(orientation=Gtk.Orientation.VERTICAL)
-        content_area.set_spacing(spacing=12)
+        content_area.set_spacing(spacing=24)
         content_area.set_margin_top(margin=12)
         content_area.set_margin_end(margin=12)
         content_area.set_margin_bottom(margin=12)
@@ -55,7 +57,6 @@ class CustomDialog(Gtk.Dialog):
         self.entry.set_placeholder_text(text='Digite um texto qualquer.')
         content_area.append(child=self.entry)
 
-        self.show()
 
     def dialog_response(self, dialog, response):
         # Verificando qual botão foi pressionado.
@@ -119,7 +120,8 @@ class ExampleWindow(Gtk.ApplicationWindow):
         vbox.append(child=button_open_dialog)
 
     def open_dialog(self, button):
-        CustomDialog(parent=self)
+        custom_dialog = CustomDialog(transient_for=self, use_header_bar=True)
+        custom_dialog.present()
 
 
 class ExampleApplication(Adw.Application):
