@@ -11,6 +11,20 @@ Libadwaita Widgets
 
    Ao se utilizar a biblioteca ``libadwaita`` juntamente com arquivos de interface (``*.ui``) é **obrigatório** o uso de ``Adw.init()`` no código.
 
+Adw AboutWindow
+---------------
+
+.. figure:: ../images/gtk4-libadwaita-widgets/gtk-4-pygobject-adw-aboutwindow.webp
+   :alt: Python e GTK 4: PyGObject libadwaita Adw.AboutWindow().
+
+   Python e GTK 4: PyGObject libadwaita Adw.AboutWindow().
+
+.. tab:: Python
+
+    ..  literalinclude:: ../../src/gtk4-libadwaita-widgets/aboutwindow/MainWindow.py
+
+--------------
+
 Adw ActionRow
 -------------
 
