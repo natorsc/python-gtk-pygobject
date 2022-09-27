@@ -57,7 +57,6 @@ class CustomDialog(Gtk.Dialog):
         self.entry.set_placeholder_text(text='Digite um texto qualquer.')
         content_area.append(child=self.entry)
 
-
     def dialog_response(self, dialog, response):
         # Verificando qual botão foi pressionado.
         if response == Gtk.ResponseType.OK:
