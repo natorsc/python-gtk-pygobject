@@ -16,7 +16,7 @@ Adw.init()
 
 BASE_DIR = Path(__file__).resolve().parent
 ROOT_DIR = BASE_DIR.parent.parent.parent
-FILENAME = str(BASE_DIR.joinpath('MainWindow.ui'))
+APPLICATION_WINDOW = str(BASE_DIR.joinpath('MainWindow.ui'))
 
 
 # Não utilizar no Gnome Builder. Configurar via meson.
@@ -33,7 +33,7 @@ CUSTOM_IMAGE = str(
 )
 
 
-@Gtk.Template(filename=FILENAME)
+@Gtk.Template(filename=APPLICATION_WINDOW)
 class ExampleWindow(Gtk.ApplicationWindow):
     __gtype_name__ = 'ExampleWindow'
 

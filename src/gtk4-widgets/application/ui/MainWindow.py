@@ -15,7 +15,7 @@ from gi.repository import Adw, Gio, Gtk
 Adw.init()
 
 BASE_DIR = Path(__file__).resolve().parent
-FILENAME = str(BASE_DIR.joinpath('MainWindow.ui'))
+APPLICATION_WINDOW = str(BASE_DIR.joinpath('MainWindow.ui'))
 
 # Não utilizar no Gnome Builder. Configurar via meson.
 # [!] O Compilador Blueprint deve estar instalado [!].
@@ -29,7 +29,7 @@ if sys.platform == 'linux':
 
 
 # Acessando o arquivo de inteface.
-@Gtk.Template(filename=FILENAME)
+@Gtk.Template(filename=APPLICATION_WINDOW)
 class ExampleWindow(Gtk.ApplicationWindow):
     __gtype_name__ = 'ExampleWindow'
 

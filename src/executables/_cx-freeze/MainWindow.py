@@ -18,7 +18,7 @@ BASE_DIR = Path(__file__).resolve().parent
 FILENAME = str(BASE_DIR.joinpath('ui', 'MainWindow.ui'))
 
 
-@Gtk.Template(filename=FILENAME)
+@Gtk.Template(filename=APPLICATION_WINDOW)
 class ExampleWindow(Gtk.ApplicationWindow):
     __gtype_name__ = 'ExampleWindow'
 
