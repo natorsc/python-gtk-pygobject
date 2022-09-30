@@ -21,11 +21,12 @@ FILENAME = str(BASE_DIR.joinpath('MainWindow.ui'))
 # Não utilizar no Gnome Builder. Configurar via meson.
 # [!] O Compilador Blueprint deve estar instalado [!].
 if sys.platform == 'linux':
-    subprocess.run(
-        args=['blueprint-compiler', 'compile',
-              f'{BASE_DIR.joinpath("MainWindow.blp")}', '--output',
-              f'{BASE_DIR.joinpath("MainWindow.ui")}'],
-    )
+    for data in BASE_DIR.iterdir():
+        if data.is_file() and data.suffix == '.blp':
+            subprocess.run(
+                args=['blueprint-compiler', 'compile', f'{data}', '--output',
+                      f'{BASE_DIR.joinpath(data.stem)}.ui'],
+            )
 
 
 @Gtk.Template(filename=FILENAME)
