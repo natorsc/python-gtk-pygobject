@@ -72,13 +72,23 @@ Pix
 --------------
 
 .. toctree::
+   :caption: Gtk 4:
    :maxdepth: 2
-   :caption: Conteúdo:
 
-   tutorials
+   Sobre <gtk-4>
+   Widgets <gtk-4-widgets>
+
+.. toctree::
+   :maxdepth: 2
+   :caption: Libadwaita:
+
+   Style Classes <gtk-4-libadwaita-style-class>
+   Widgets <gtk-4-libadwaita-widgets>
+
+.. toctree::
+   :maxdepth: 2
+   :caption: Extra:
+
+   Blueprint <gtk-4-blueprint>
    tips
-   gtk-4
-   gtk-4-blueprint
-   gtk-4-widgets
-   gtk-4-libadwaita-widgets
-   gtk-4-libadwaita-style-class
+   tutorials
