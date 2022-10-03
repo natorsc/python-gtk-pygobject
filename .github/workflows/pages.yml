@@ -43,9 +43,9 @@ jobs:
         working-directory: ./docs/data
         run: pip install -r requirements-doc.txt
 
-      - name: Sphinx make html 🌎
+      - name: Sphinx make dirhtml 🌎
         working-directory: ./docs
-        run: make html
+        run: make dirhtml
 
       - name: Upload artifact 🚀
         uses: actions/upload-pages-artifact@v1
