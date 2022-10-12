@@ -657,6 +657,29 @@ Gtk SearchBar
 
 --------------
 
+Gtk ShortcutsWindow
+-------------------
+
+.. figure:: ../images/gtk4-widgets/gtk-4-pygobject-shortcuts-window.webp
+   :alt: Python e GTK 4: PyGObject Gtk.ShortcutsWindow().
+
+   Python e GTK 4: PyGObject Gtk.ShortcutsWindow().
+
+.. tab:: Python load ui
+
+   .. literalinclude:: ../../src/gtk4-widgets/shortcuts-window/ui/MainWindow.py
+
+.. tab:: UI
+
+   .. literalinclude:: ../../src/gtk4-widgets/shortcuts-window/ui/ShortcutsWindow.ui
+      :language: html
+
+.. tab:: Blueprint
+
+   .. literalinclude:: ../../src/gtk4-widgets/shortcuts-window/ui/ShortcutsWindow.blp
+
+--------------
+
 Gtk Signal e Slots
 ------------------
 

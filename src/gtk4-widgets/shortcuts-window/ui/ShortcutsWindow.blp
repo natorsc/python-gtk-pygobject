@@ -1,0 +1,26 @@
+using Gtk 4.0;
+
+template ShortcutsWindow: ShortcutsWindow {
+  modal: true;
+
+  ShortcutsSection {
+    section-name: "shortcuts";
+    max-height: 10;
+
+    ShortcutsGroup {
+      title: C_("shortcut window", "Geral");
+
+      ShortcutsShortcut {
+        title: C_("shortcut window", "Exibir atalhos");
+        action-name: "app.shortcuts-window";
+        accelerator: "<primary>&1";
+      }
+
+      ShortcutsShortcut {
+        title: C_("shortcut window", "Sair");
+        action-name: "app.quit";
+        accelerator: "<primary>&q";
+      }
+    }
+  }
+}

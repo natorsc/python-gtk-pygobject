@@ -118,7 +118,7 @@ poetry export \
 Executar localmente a documentação:
 
 ```bash
-python3 -m http.server -d docs/build/html
+python3 -m http.server -d docs/build/dirhtml
 ```
 
 ---
