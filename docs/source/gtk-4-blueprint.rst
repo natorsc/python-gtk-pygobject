@@ -9,4 +9,4 @@ GTK 4 Blueprint
 
 Blueprint é uma nova linguagem de marcação para criação de interfaces gráficas com Gtk 4.
 
-Um artigo sobre a instalação, configuração e utilização da linguagem de marcação Blueprint está disponível no blog `justcode.com.br <https://blog.justcode.com.br/series/python-e-gtk-4>`__.
+Um artigo sobre a instalação, configuração e utilização da linguagem de marcação Blueprint está disponível no blog `justcode.com.br <https://justcode.com.br/?p=83>`__.
