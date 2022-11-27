@@ -10,11 +10,8 @@ Tutoriais
 Blog
 ----
 
-- `Python e Gtk 4: Preparando o ambiente de desenvolvimento no Linux <https://blog.justcode.com.br/python-e-gtk-4-preparando-o-ambiente-de-desenvolvimento-no-linux>`__.
-- `Python e Gtk 4: Preparando o ambiente de desenvolvimento no Windows <https://blog.justcode.com.br/python-e-gtk-4-preparando-o-ambiente-de-desenvolvimento-no-windows>`__.
-- `Como ativar a ferramenta de depuração interativa Gtk Inspector <https://blog.justcode.com.br/como-ativar-a-ferramenta-de-depuracao-interativa-gtk-inspector>`__.
-- `Como instalar o aplicativo Gtk 4 icon browser <https://blog.justcode.com.br/como-instalar-o-aplicativo-gtk-4-icon-browser>`__.
-- `Python e Gtk 4: Conhecendo o IDE Gnome Builder <https://blog.justcode.com.br/python-e-gtk-4-conhecendo-o-ide-gnome-builder>`__.
-- `Python e Gtk 4: Classes de estilo utilizadas pelo Gtk 4 e libadwaita <https://blog.justcode.com.br/python-e-gtk-4-classes-de-estilo-utilizadas-pelo-gtk-4-e-libadwaita>`__.
-- `Python e Gtk 4: Blueprint e blueprint-compiler <https://blog.justcode.com.br/python-e-gtk-4-blueprint-e-blueprint-compiler>`__.
-- `Python e Gtk 4: Pango Markup <https://blog.justcode.com.br/python-e-gtk-4-pango-markup>`__.
+- `Gtk 4: linguagem de marcação Pango Markup <https://justcode.com.br/?p=99>`__.
+- `Gtk 4: Linguagem de marcação Blueprint <https://justcode.com.br/?p=83>`__.
+- `Gtk 4: Conhecendo o IDE Gnome Builder <https://justcode.com.br/p=103>`__.
+- `Gtk 4 e Python: Preparando o ambiente no Windows <https://justcode.com.br/?p=105>`__.
+- `Gtk 4: Ambiente de desenvolvimento no Linux <https://justcode.com.br/?p=64>`__.
