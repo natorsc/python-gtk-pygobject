@@ -254,23 +254,23 @@ Adw ComboRow
 Adw ExpanderRow
 ---------------
 
-.. figure:: ../images/gtk4-libadwaita-widgets/gtk-4-pygobject-adw-expanderrow.webp
+.. figure:: ../images/gtk4-libadwaita-widgets/gtk-4-pygobject-adw-expander-row.webp
    :alt: Python e GTK 4: PyGObject libadwaita Adw.ExpanderRow().
 
    Python e GTK 4: PyGObject libadwaita Adw.ExpanderRow().
 
 .. tab:: Python
 
-    ..  literalinclude:: ../../src/gtk4-libadwaita-widgets/expanderrow/MainWindow.py
+    ..  literalinclude:: ../../src/gtk4-libadwaita-widgets/expander-row/MainWindow.py
 
 .. tab:: UI
 
-    ..  literalinclude:: ../../src/gtk4-libadwaita-widgets/expanderrow/ui/MainWindow.ui
+    ..  literalinclude:: ../../src/gtk4-libadwaita-widgets/expander-row/ui/MainWindow.ui
       :language: html
 
 .. tab:: Blueprint
 
-    ..  literalinclude:: ../../src/gtk4-libadwaita-widgets/expanderrow/ui/MainWindow.blp
+    ..  literalinclude:: ../../src/gtk4-libadwaita-widgets/expander-row/ui/MainWindow.blp
 
 --------------
 

@@ -115,10 +115,24 @@ poetry export \
 -o docs/data/requirements-doc.txt
 ```
 
-Executar localmente a documentação:
+### Documentação.
+
+Acessar a pasta da documentação:
 
 ```bash
-python3 -m http.server -d docs/build/dirhtml
+cd docs
+```
+
+Criar a documentação:
+
+```bash
+make dirhtml
+```
+
+Executando um servidor local para a documentação:
+
+```bash
+python3 -m http.server -d build/dirhtml
 ```
 
 ---

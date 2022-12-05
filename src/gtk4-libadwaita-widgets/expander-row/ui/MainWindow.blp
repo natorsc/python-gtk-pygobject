@@ -1,0 +1,93 @@
+using Gtk 4.0;
+using Adw 1;
+
+template ExampleWindow : ApplicationWindow {
+  title: "Python e GTK 4: PyGObject Gtk.ListBox() Adw.ExpanderRow() ui file";
+  default-width: 683;
+  default-height: 384;
+
+  [titlebar]
+  HeaderBar header_bar {
+    [end]
+    MenuButton {
+      icon-name: "open-menu-symbolic";
+      menu-model: primary_menu;
+    }
+  }
+
+  Box {
+    orientation: vertical;
+    margin-top: 12;
+    margin-end: 12;
+    margin-bottom: 12;
+    margin-start: 12;
+    spacing: 12;
+
+    ListBox {
+      selection-mode: none;
+
+      styles [
+        "boxed-list",
+      ]
+
+      Adw.ExpanderRow {
+        title: "Item 01";
+        subtitle: "Adw.ExpanderRow()";
+
+        Label {
+          use-markup: true;
+          label: "<span size=\"large\">Lorem ipsum</span>\n\nLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor\nincididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis\nnostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.\nDuis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore\neu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident,\nsunt in culpa qui officia deserunt mollit anim id est laborum.";
+        }
+      }
+
+      Adw.ExpanderRow {
+        title: "Item 02";
+        subtitle: "Adw.ExpanderRow()";
+
+        Label {
+          use-markup: true;
+          label: "<span size=\"large\">Lorem ipsum</span>\n\nLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor\nincididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis\nnostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.\nDuis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore\neu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident,\nsunt in culpa qui officia deserunt mollit anim id est laborum.";
+        }
+      }
+
+      Adw.ExpanderRow {
+        title: "Item 03";
+        subtitle: "Adw.ExpanderRow()";
+
+        Label {
+          use-markup: true;
+          label: "<span size=\"large\">Lorem ipsum</span>\n\nLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor\nincididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis\nnostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.\nDuis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore\neu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident,\nsunt in culpa qui officia deserunt mollit anim id est laborum.";
+        }
+      }
+
+      Adw.ExpanderRow {
+        title: "Item 04";
+        subtitle: "Adw.ExpanderRow()";
+
+        Label {
+          use-markup: true;
+          label: "<span size=\"large\">Lorem ipsum</span>\n\nLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor\nincididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis\nnostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.\nDuis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore\neu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident,\nsunt in culpa qui officia deserunt mollit anim id est laborum.";
+        }
+      }
+
+      Adw.ExpanderRow {
+        title: "Item 05";
+        subtitle: "Adw.ExpanderRow()";
+
+        Label {
+          use-markup: true;
+          label: "<span size=\"large\">Lorem ipsum</span>\n\nLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor\nincididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis\nnostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.\nDuis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore\neu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident,\nsunt in culpa qui officia deserunt mollit anim id est laborum.";
+        }
+      }
+    }
+  }
+}
+
+menu primary_menu {
+  section {
+    item {
+      label: _("Preferências");
+      action: "app.preferences";
+    }
+  }
+}

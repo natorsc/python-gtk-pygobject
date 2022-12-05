@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-"""Python e GTK 4: PyGObject libadwaita Adw.ExpanderRow() ui file."""
+"""Python e GTK 4: PyGObject Gtk.ListBox() Adw.ExpanderRow()."""
 
 import subprocess
 import sys
@@ -17,8 +17,8 @@ Adw.init()
 BASE_DIR = Path(__file__).resolve().parent
 APPLICATION_WINDOW = str(BASE_DIR.joinpath('MainWindow.ui'))
 
-
 # Não utilizar no Gnome Builder. Configurar via meson.
+# Tutorial está no blog, acesse o README.md.
 # [!] O Compilador Blueprint deve estar instalado [!].
 if sys.platform == 'linux':
     for data in BASE_DIR.iterdir():
@@ -35,13 +35,6 @@ class ExampleWindow(Gtk.ApplicationWindow):
 
     def __init__(self, **kwargs):
         super().__init__(**kwargs)
-
-    @Gtk.Template.Callback()
-    def on_switch_button_clicked(self, switch, GParamBoolean):
-        if switch.get_active():
-            print('Botão marcado')
-        else:
-            print('Botão desmarcado')
 
 
 class ExampleApplication(Adw.Application):

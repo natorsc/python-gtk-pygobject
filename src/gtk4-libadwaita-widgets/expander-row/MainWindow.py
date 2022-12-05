@@ -1,5 +1,6 @@
 # -*- coding: utf-8 -*-
-"""Python e GTK 4: PyGObject libadwaita Adw.ExpanderRow()."""
+"""Python e GTK 4: PyGObject Gtk.ListBox() Adw.ExpanderRow()."""
+
 
 import gi
 
@@ -10,13 +11,26 @@ from gi.repository import Adw, Gio, Gtk
 
 Adw.init()
 
+text = '''<big>Lorem ipsum</big>
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore
+eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+sunt in culpa qui officia deserunt mollit anim id est laborum.
+'''
+
 
 class ExampleWindow(Gtk.ApplicationWindow):
+    items = ['Item 01', 'Item 02', 'Item 03', 'Item 04', 'Item 05']
 
     def __init__(self, **kwargs):
         super().__init__(**kwargs)
 
-        self.set_title(title='Python e GTK 4: PyGObject libadwaita Adw.ExpanderRow()')
+        self.set_title(
+            title='Python e GTK 4: PyGObject Gtk.ListBox() Adw.ExpanderRow()'
+        )
         self.set_default_size(width=int(1366 / 2), height=int(768 / 2))
         self.set_size_request(width=int(1366 / 2), height=int(768 / 2))
 
@@ -38,47 +52,20 @@ class ExampleWindow(Gtk.ApplicationWindow):
         vbox.set_margin_start(margin=12)
         self.set_child(child=vbox)
 
-        listbox = Gtk.ListBox.new()
-        listbox.set_selection_mode(mode=Gtk.SelectionMode.NONE)
-        listbox.get_style_context().add_class(class_name='boxed-list')
-        vbox.append(child=listbox)
+        self.listbox = Gtk.ListBox.new()
+        self.listbox.set_selection_mode(mode=Gtk.SelectionMode.NONE)
+        self.listbox.get_style_context().add_class(class_name='boxed-list')
+        vbox.append(child=self.listbox)
 
-        adw_expander_row = Adw.ExpanderRow.new()
-        adw_expander_row.set_icon_name(icon_name='edit-find-symbolic')
-        adw_expander_row.set_title(title='Libadwaita')
-        adw_expander_row.set_subtitle(subtitle='Adw.ExpanderRow()')
-        listbox.append(child=adw_expander_row)
+        for item in self.items:
+            label = Gtk.Label.new()
+            label.set_markup(str=text)
 
-        switch_01 = Gtk.Switch.new()
-        switch_01.set_valign(align=Gtk.Align.CENTER)
-        switch_01.connect('notify::active', self.on_switch_button_clicked)
-
-        adw_action_row_01 = Adw.ActionRow.new()
-        adw_action_row_01.set_icon_name(icon_name='edit-find-symbolic')
-        adw_action_row_01.set_title(title='Libadwaita')
-        adw_action_row_01.set_subtitle(subtitle='Adw.ActionRow()')
-        adw_action_row_01.add_suffix(widget=switch_01)
-        adw_expander_row.add_row(child=adw_action_row_01)
-
-        switch_02 = Gtk.Switch.new()
-        switch_02.set_valign(align=Gtk.Align.CENTER)
-        switch_02.connect('notify::active', self.on_switch_button_clicked)
-
-        adw_action_row_02 = Adw.ActionRow.new()
-        adw_action_row_02.set_icon_name(icon_name='edit-find-symbolic')
-        adw_action_row_02.set_title(
-            title='Libadwaita - Ao clicar na linha widget ativa e desativa'
-        )
-        adw_action_row_02.set_subtitle(subtitle='Adw.ActionRow()')
-        adw_action_row_02.add_suffix(widget=switch_02)
-        adw_action_row_02.set_activatable_widget(widget=switch_02)
-        adw_expander_row.add_row(child=adw_action_row_02)
-
-    def on_switch_button_clicked(self, switch, GParamBoolean):
-        if switch.get_active():
-            print('Botão marcado')
-        else:
-            print('Botão desmarcado')
+            adw_expander_row = Adw.ExpanderRow.new()
+            adw_expander_row.set_title(title=item)
+            adw_expander_row.set_subtitle(subtitle='Adw.ExpanderRow()')
+            adw_expander_row.add_row(child=label)
+            self.listbox.append(child=adw_expander_row)
 
 
 class ExampleApplication(Adw.Application):
