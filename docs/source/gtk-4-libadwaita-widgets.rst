@@ -251,13 +251,36 @@ Adw ComboRow
 
 --------------
 
+Adw EntryRow
+------------
+
+.. figure:: ../images/gtk4-libadwaita-widgets/gtk-4-pygobject-adw-entry-row.webp
+   :alt: Python e GTK 4: PyGObject Gtk.ListBox() Adw.EntryRow()().
+
+   Python e GTK 4: PyGObject Gtk.ListBox() Adw.EntryRow().
+
+.. tab:: Python
+
+    ..  literalinclude:: ../../src/gtk4-libadwaita-widgets/entry-row/MainWindow.py
+
+.. tab:: UI
+
+    ..  literalinclude:: ../../src/gtk4-libadwaita-widgets/entry-row/ui/MainWindow.ui
+      :language: html
+
+.. tab:: Blueprint
+
+    ..  literalinclude:: ../../src/gtk4-libadwaita-widgets/entry-row/ui/MainWindow.blp
+
+--------------
+
 Adw ExpanderRow
 ---------------
 
 .. figure:: ../images/gtk4-libadwaita-widgets/gtk-4-pygobject-adw-expander-row.webp
-   :alt: Python e GTK 4: PyGObject libadwaita Adw.ExpanderRow().
+   :alt: Python e GTK 4: PyGObject Gtk.ListBox() Adw.ExpanderRow().
 
-   Python e GTK 4: PyGObject libadwaita Adw.ExpanderRow().
+   Python e GTK 4: PyGObject Gtk.ListBox() Adw.ExpanderRow().
 
 .. tab:: Python
 
