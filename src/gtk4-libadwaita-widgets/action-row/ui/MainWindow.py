@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-"""Python e GTK 4: PyGObject libadwaita Adw.ActionRow() ui file."""
+"""Python e GTK 4: PyGObject Gtk.ListBox() Adw.ActionRow()."""
 
 import subprocess
 import sys
@@ -18,6 +18,7 @@ BASE_DIR = Path(__file__).resolve().parent
 APPLICATION_WINDOW = str(BASE_DIR.joinpath('MainWindow.ui'))
 
 # Não utilizar no Gnome Builder. Configurar via meson.
+# Tutorial está no blog, acesse o README.md.
 # [!] O Compilador Blueprint deve estar instalado [!].
 if sys.platform == 'linux':
     for data in BASE_DIR.iterdir():

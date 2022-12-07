@@ -47,8 +47,13 @@ class ExampleWindow(Gtk.ApplicationWindow):
         vbox.append(child=self.listbox)
 
         for item in self.items:
+            icon = Gtk.Image.new_from_icon_name(
+                icon_name='accessories-text-editor-symbolic'
+            )
+
             adw_entry_row = Adw.EntryRow.new()
             adw_entry_row.set_title(title=item)
+            adw_entry_row.add_prefix(widget=icon)
             adw_entry_row.set_show_apply_button(show_apply_button=True)
             adw_entry_row.set_activates_default(activates=True)
             adw_entry_row.connect('apply', self.on_apply_button_pressed)

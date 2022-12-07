@@ -2,7 +2,7 @@ using Gtk 4.0;
 using Adw 1;
 
 template ExampleWindow : ApplicationWindow {
-  title: "Python e GTK 4: PyGObject Gtk.ListBox() Adw.EntryRow() ui file";
+  title: "Python e GTK 4: PyGObject Gtk.ListBox() Adw.ActionRow() ui file";
   default-width: 683;
   default-height: 384;
 
@@ -30,63 +30,83 @@ template ExampleWindow : ApplicationWindow {
         "boxed-list",
       ]
 
-      Adw.EntryRow {
-        title: "Title 01";
-        activates-default: true;
-        show-apply-button: true;
-        apply => on_apply_button_pressed();
+      Adw.ActionRow {
+        title: "Item 01";
+        subtitle: "Adw.ActionRow()";
 
         [prefix]
         Image {
           icon-name: "accessories-text-editor-symbolic";
         }
+
+        [suffix]
+        Switch {
+          valign: center;
+          notify::active => on_switch_button_clicked();
+        }
       }
 
-      Adw.EntryRow {
-        title: "Title 02";
-        activates-default: true;
-        show-apply-button: true;
-        apply => on_apply_button_pressed();
+      Adw.ActionRow {
+        title: "Item 02";
+        subtitle: "Adw.ActionRow()";
 
         [prefix]
         Image {
           icon-name: "accessories-text-editor-symbolic";
         }
+
+        [suffix]
+        Switch {
+          valign: center;
+          notify::active => on_switch_button_clicked();
+        }
       }
 
-      Adw.EntryRow {
-        title: "Title 03";
-        activates-default: true;
-        show-apply-button: true;
-        apply => on_apply_button_pressed();
+      Adw.ActionRow {
+        title: "Item 03";
+        subtitle: "Adw.ActionRow()";
+
+        [prefix]
+        Image {
+          icon-name: "accessories-text-editor-symbolic";
+        }
+
+        [suffix]
+        Switch {
+          valign: center;
+          notify::active => on_switch_button_clicked();
+        }
+      }
+
+      Adw.ActionRow {
+        title: "Item 04";
+        subtitle: "Adw.ActionRow()";
+
+        [prefix]
+        Image {
+          icon-name: "accessories-text-editor-symbolic";
+        }
         
+        [suffix]
+        Switch {
+          valign: center;
+          notify::active => on_switch_button_clicked();
+        }
+      }
+
+      Adw.ActionRow {
+        title: "Item 05";
+        subtitle: "Adw.ActionRow()";
+
         [prefix]
         Image {
           icon-name: "accessories-text-editor-symbolic";
         }
-      }
 
-      Adw.EntryRow {
-        title: "Title 04";
-        activates-default: true;
-        show-apply-button: true;
-        apply => on_apply_button_pressed();
-
-        [prefix]
-        Image {
-          icon-name: "accessories-text-editor-symbolic";
-        }
-      }
-
-      Adw.EntryRow {
-        title: "Title 05";
-        activates-default: true;
-        show-apply-button: true;
-        apply => on_apply_button_pressed();
-        
-        [prefix]
-        Image {
-          icon-name: "accessories-text-editor-symbolic";
+        [suffix]
+        Switch {
+          valign: center;
+          notify::active => on_switch_button_clicked();
         }
       }
     }

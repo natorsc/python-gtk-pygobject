@@ -1,7 +1,6 @@
 # -*- coding: utf-8 -*-
 """Python e GTK 4: PyGObject Gtk.ListBox() Adw.ExpanderRow()."""
 
-
 import gi
 
 gi.require_version(namespace='Gtk', version='4.0')
@@ -11,19 +10,10 @@ from gi.repository import Adw, Gio, Gtk
 
 Adw.init()
 
-text = '''<big>Lorem ipsum</big>
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
-nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore
-eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-sunt in culpa qui officia deserunt mollit anim id est laborum.
-'''
-
+text = '<big>Lorem ipsum</big>\n\nLorem ipsum dolor sit amet, consectetur...'
 
 class ExampleWindow(Gtk.ApplicationWindow):
-    items = ['Item 01', 'Item 02', 'Item 03', 'Item 04', 'Item 05']
+    items = ['Item 01', 'Item 02', 'Item 03', 'Item 04']
 
     def __init__(self, **kwargs):
         super().__init__(**kwargs)
@@ -58,10 +48,16 @@ class ExampleWindow(Gtk.ApplicationWindow):
         vbox.append(child=self.listbox)
 
         for item in self.items:
+            icon = Gtk.Image.new_from_icon_name(
+                icon_name='accessories-text-editor-symbolic'
+            )
+
             label = Gtk.Label.new()
             label.set_markup(str=text)
+            label.set_wrap(wrap=True)
 
             adw_expander_row = Adw.ExpanderRow.new()
+            adw_expander_row.add_prefix(widget=icon)
             adw_expander_row.set_title(title=item)
             adw_expander_row.set_subtitle(subtitle='Adw.ExpanderRow()')
             adw_expander_row.add_row(child=label)

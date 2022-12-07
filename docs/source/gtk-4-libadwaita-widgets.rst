@@ -28,23 +28,23 @@ Adw AboutWindow
 Adw ActionRow
 -------------
 
-.. figure:: ../images/gtk4-libadwaita-widgets/gtk-4-pygobject-adw-actionrow.webp
+.. figure:: ../images/gtk4-libadwaita-widgets/gtk-4-pygobject-adw-action-row.webp
    :alt: Python e GTK 4: PyGObject libadwaita Adw.ActionRow().
 
    Python e GTK 4: PyGObject libadwaita Adw.ActionRow().
 
 .. tab:: Python
 
-    ..  literalinclude:: ../../src/gtk4-libadwaita-widgets/actionrow/MainWindow.py
+    ..  literalinclude:: ../../src/gtk4-libadwaita-widgets/action-row/MainWindow.py
 
 .. tab:: UI
 
-    ..  literalinclude:: ../../src/gtk4-libadwaita-widgets/actionrow/ui/MainWindow.ui
+    ..  literalinclude:: ../../src/gtk4-libadwaita-widgets/action-row/ui/MainWindow.ui
       :language: html
 
 .. tab:: Blueprint
 
-    ..  literalinclude:: ../../src/gtk4-libadwaita-widgets/actionrow/ui/MainWindow.blp
+    ..  literalinclude:: ../../src/gtk4-libadwaita-widgets/action-row/ui/MainWindow.blp
 
 --------------
 
