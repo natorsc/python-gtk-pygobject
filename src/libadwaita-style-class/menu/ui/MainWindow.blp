@@ -1,0 +1,104 @@
+using Gtk 4.0;
+using Adw 1;
+
+template $ExampleWindow : Adw.ApplicationWindow {
+  title: "Python e GTK: PyGObject libadwaita style class menu ui file";
+  default-width: 683;
+  default-height: 384;
+
+  Gtk.Box {
+    orientation: vertical;
+    spacing: 12;
+
+    [titlebar]
+    Gtk.HeaderBar header_bar {
+      [end]
+      Gtk.MenuButton {
+        icon-name: "open-menu-symbolic";
+        menu-model: primary_menu;
+      }
+    }
+
+    Gtk.Box {
+      orientation: horizontal;
+      homogeneous: true;
+      margin-top: 12;
+      margin-end: 12;
+      margin-bottom: 12;
+      margin-start: 12;
+      spacing: 12;
+
+      Gtk.MenuButton {
+        label: "Popover";
+        popover: popover-01;
+        valign: center;
+      }
+
+      Gtk.MenuButton {
+        label: "Popover class menu";
+        popover: popover-02;
+      }
+    }
+  }
+}
+
+Gtk.Popover popover-01 {
+  Gtk.Box {
+    orientation: vertical;
+    homogeneous: true;
+    margin-top: 12;
+    margin-end: 12;
+    margin-bottom: 12;
+    margin-start: 12;
+    spacing: 12;
+
+    Gtk.Button {
+      label: "Item 01";
+    }
+
+    Gtk.Button {
+      label: "Item 02";
+    }
+
+    Gtk.Button {
+      label: "Item 03";
+    }
+  }
+}
+
+Gtk.Popover popover-02 {
+  styles [
+    "menu",
+  ]
+
+  Gtk.Box {
+    orientation: vertical;
+    homogeneous: true;
+    margin-top: 12;
+    margin-end: 12;
+    margin-bottom: 12;
+    margin-start: 12;
+    spacing: 12;
+
+    Gtk.Button {
+      label: "Item 01";
+    }
+
+    Gtk.Button {
+      label: "Item 02";
+    }
+
+    Gtk.Button {
+      label: "Item 03";
+    }
+  }
+}
+
+menu primary_menu {
+  section {
+    item {
+      label: _("Preferences");
+      action: "app.preferences";
+    }
+  }
+}

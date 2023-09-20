@@ -1,0 +1,107 @@
+using Gtk 4.0;
+using Adw 1;
+
+template $ExampleWindow:ApplicationWindow {
+  title: "Python e GTK: PyGObject Adw.ComboRow()";
+  default-width: 683;
+  default-height: 384;
+
+  [titlebar]
+  Gtk.HeaderBar header_bar {
+    [end]
+    Gtk.MenuButton {
+      icon-name: "open-menu-symbolic";
+      menu-model: primary_menu;
+    }
+  }
+
+  Gtk.Box {
+    orientation: vertical;
+    margin-top: 12;
+    margin-end: 12;
+    margin-bottom: 12;
+    margin-start: 12;
+    spacing: 12;
+
+    ListBox {
+      selection-mode: none;
+
+      styles [
+        "boxed-list",
+      ]
+
+      Adw.ComboRow {
+        title: "Title 01";
+        model: model;
+        notify::selected => $on_adw_combo_row_selected();
+        notify::selected-item => $on_adw_combo_row_selected_item();
+
+        [prefix]
+        Image {
+          icon-name: "accessories-text-editor-symbolic";
+        }
+      }
+
+      Adw.ComboRow {
+        title: "Title 02";
+        model: model;
+        notify::selected => $on_adw_combo_row_selected();
+        notify::selected-item => $on_adw_combo_row_selected_item();
+
+        [prefix]
+        Image {
+          icon-name: "accessories-text-editor-symbolic";
+        }
+      }
+
+      Adw.ComboRow {
+        title: "Title 03";
+        model: model;
+        notify::selected => $on_adw_combo_row_selected();
+        notify::selected-item => $on_adw_combo_row_selected_item();
+        
+        [prefix]
+        Image {
+          icon-name: "accessories-text-editor-symbolic";
+        }
+      }
+
+      Adw.ComboRow {
+        title: "Title 04";
+        model: model;
+        notify::selected => $on_adw_combo_row_selected();
+        notify::selected-item => $on_adw_combo_row_selected_item();
+
+        [prefix]
+        Image {
+          icon-name: "accessories-text-editor-symbolic";
+        }
+      }
+
+      Adw.ComboRow {
+        title: "Title 05";
+        model: model;
+        notify::selected => $on_adw_combo_row_selected();
+        notify::selected-item => $on_adw_combo_row_selected_item();
+        
+        [prefix]
+        Image {
+          icon-name: "accessories-text-editor-symbolic";
+        }
+      }
+    }
+  }
+}
+
+StringList model {
+  strings ['Item 01', 'Item 02', 'Item 03', 'Item 04', 'Item 05']
+}
+
+menu primary_menu {
+  section {
+    item {
+      label: _("Preferences");
+      action: "app.preferences";
+    }
+  }
+}

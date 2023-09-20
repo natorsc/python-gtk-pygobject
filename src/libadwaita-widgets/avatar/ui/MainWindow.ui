@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<interface>
+  <requires lib="gtk" version="4.0"/>
+  <template class="ExampleWindow" parent="AdwApplicationWindow">
+    <property name="title">Python e GTK: PyGObject libadwaita Adw.Avatar() ui file</property>
+    <property name="default-width">683</property>
+    <property name="default-height">384</property>
+    <child>
+      <object class="GtkBox">
+        <property name="orientation">1</property>
+        <property name="spacing">12</property>
+        <child type="titlebar">
+          <object class="GtkHeaderBar" id="header_bar">
+            <child type="end">
+              <object class="GtkMenuButton">
+                <property name="icon-name">open-menu-symbolic</property>
+                <property name="menu-model">primary_menu</property>
+              </object>
+            </child>
+          </object>
+        </child>
+        <child>
+          <object class="GtkBox">
+            <property name="orientation">0</property>
+            <property name="homogeneous">true</property>
+            <property name="spacing">0</property>
+            <child>
+              <object class="AdwAvatar">
+                <property name="size">100</property>
+                <property name="text">Renato Cruz</property>
+                <property name="show-initials">false</property>
+              </object>
+            </child>
+            <child>
+              <object class="AdwAvatar">
+                <property name="size">100</property>
+                <property name="text">Renato Cruz</property>
+                <property name="show-initials">true</property>
+              </object>
+            </child>
+            <child>
+              <object class="AdwAvatar">
+                <property name="size">100</property>
+                <property name="text">Renato Cruz</property>
+                <property name="show-initials">false</property>
+                <property name="icon-name">contact-new-symbolic</property>
+              </object>
+            </child>
+          </object>
+        </child>
+      </object>
+    </child>
+  </template>
+  <menu id="primary_menu">
+    <section>
+      <item>
+        <attribute name="label" translatable="true">Preferences</attribute>
+        <attribute name="action">app.preferences</attribute>
+      </item>
+    </section>
+  </menu>
+</interface>

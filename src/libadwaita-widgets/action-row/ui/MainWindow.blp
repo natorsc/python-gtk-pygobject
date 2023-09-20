@@ -1,0 +1,120 @@
+using Gtk 4.0;
+using Adw 1;
+
+template $ExampleWindow : Adw.ApplicationWindow {
+  title: "Python e GTK: PyGObject Adw.ActionRow() ui file";
+  default-width: 683;
+  default-height: 384;
+
+  Gtk.Box {
+    orientation: vertical;
+    spacing: 12;
+
+    [titlebar]
+    Gtk.HeaderBar header_bar {
+      [end]
+      Gtk.MenuButton {
+        icon-name: "open-menu-symbolic";
+        menu-model: primary_menu;
+      }
+    }
+
+    Gtk.ListBox {
+      selection-mode: none;
+      margin-end: 12;
+      margin-start: 12;
+      styles [
+        "boxed-list",
+      ]
+
+      Adw.ActionRow {
+        title: "Item 01";
+        subtitle: "Adw.ActionRow()";
+
+        [prefix]
+        Gtk.Image {
+          icon-name: "accessories-text-editor-symbolic";
+        }
+
+        [suffix]
+        Gtk.Switch {
+          valign: center;
+          notify::active => $on_switch_button_clicked();
+        }
+      }
+
+      Adw.ActionRow {
+        title: "Item 02";
+        subtitle: "Adw.ActionRow()";
+
+        [prefix]
+        Gtk.Image {
+          icon-name: "accessories-text-editor-symbolic";
+        }
+
+        [suffix]
+        Gtk.Switch {
+          valign: center;
+          notify::active => $on_switch_button_clicked();
+        }
+      }
+
+      Adw.ActionRow {
+        title: "Item 03";
+        subtitle: "Adw.ActionRow()";
+
+        [prefix]
+        Gtk.Image {
+          icon-name: "accessories-text-editor-symbolic";
+        }
+
+        [suffix]
+        Gtk.Switch {
+          valign: center;
+          notify::active => $on_switch_button_clicked();
+        }
+      }
+
+      Adw.ActionRow {
+        title: "Item 04";
+        subtitle: "Adw.ActionRow()";
+
+        [prefix]
+        Gtk.Image {
+          icon-name: "accessories-text-editor-symbolic";
+        }
+        
+        [suffix]
+        Gtk.Switch {
+          valign: center;
+          notify::active => $on_switch_button_clicked();
+        }
+      }
+
+      Adw.ActionRow {
+        title: "Item 05";
+        subtitle: "Adw.ActionRow()";
+
+        [prefix]
+        Gtk.Image {
+          icon-name: "accessories-text-editor-symbolic";
+        }
+
+        [suffix]
+        Gtk.Switch {
+          valign: center;
+          notify::active => $on_switch_button_clicked();
+        }
+      }
+    }
+  }
+}
+
+menu primary_menu {
+  section {
+    item {
+      label: _("Preferences");
+      action: "app.preferences";
+    }
+  }
+}

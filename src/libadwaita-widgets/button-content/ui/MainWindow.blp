@@ -1,0 +1,43 @@
+using Gtk 4.0;
+using Adw 1;
+
+template $ExampleWindow : Adw.ApplicationWindow {
+  title: "Python e GTK: PyGObject libadwaita Adw.ButtonContent() ui file";
+  default-width: 683;
+  default-height: 384;
+
+  Gtk.Box {
+    orientation: vertical;
+    spacing: 12;
+
+    [titlebar]
+    Gtk.HeaderBar header_bar {
+      [end]
+      Gtk.MenuButton {
+        icon-name: "open-menu-symbolic";
+        menu-model: primary_menu;
+      }
+    }
+
+    Gtk.Button {
+      margin-start: 12;
+      margin-end: 12;
+      clicked => $on_button_clicked();
+      child:
+      Adw.ButtonContent {
+        icon-name: "document-open-symbolic";
+        label: _("Open");
+        use-underline: true;
+      };
+    }
+  }
+}
+
+menu primary_menu {
+  section {
+    item {
+      label: _("Preferences");
+      action: "app.preferences";
+    }
+  }
+}

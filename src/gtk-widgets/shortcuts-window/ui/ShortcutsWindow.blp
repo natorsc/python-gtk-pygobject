@@ -1,0 +1,26 @@
+using Gtk 4.0;
+
+template $ShortcutsWindow: Gtk.ShortcutsWindow {
+  modal: true;
+
+  Gtk.ShortcutsSection {
+    section-name: "shortcuts";
+    max-height: 10;
+
+    Gtk.ShortcutsGroup {
+      title: C_("ShortcutsWindow", "General");
+
+      Gtk.ShortcutsShortcut {
+        title: C_("ShortcutsWindow", "Display shortcuts");
+        action-name: "app.shortcuts-window";
+        accelerator: "<primary>&1";
+      }
+
+      Gtk.ShortcutsShortcut {
+        title: C_("ShortcutsWindow", "Exit");
+        action-name: "app.quit";
+        accelerator: "<primary>&q";
+      }
+    }
+  }
+}

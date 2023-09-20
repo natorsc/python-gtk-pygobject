@@ -1,0 +1,60 @@
+using Gtk 4.0;
+using Adw 1;
+
+template $ExampleWindow : Adw.ApplicationWindow {
+  title: "Python e GTK: PyGObject libadwaita style class caption-heading ui file";
+  default-width: 683;
+  default-height: 384;
+
+  Gtk.Box {
+    orientation: vertical;
+    spacing: 12;
+
+    [titlebar]
+    Gtk.HeaderBar header_bar {
+      [end]
+      Gtk.MenuButton {
+        icon-name: "open-menu-symbolic";
+        menu-model: primary_menu;
+      }
+    }
+
+    Gtk.Box {
+      orientation: vertical;
+      margin-top: 12;
+      margin-end: 12;
+      margin-bottom: 12;
+      margin-start: 12;
+      spacing: 12;
+
+      Gtk.Label {
+        label: "The caption-heading style class makes the text smaller. It should be used to differentiate the subtext that accompanies the text in the regular body style.";
+        vexpand: true;
+        wrap: true;
+      }
+
+      Gtk.Label label_caption_heading {
+        label: "Lorem Ipsum is simply dummy...\nClasses: ['caption-heading'].";
+        vexpand: true;
+        wrap: true;
+        styles [
+          "caption-heading",
+        ]
+      }
+
+      Gtk.Button {
+        label: 'Add/remove class';
+        clicked => $on_button_clicked();
+      }
+    }
+  }
+}
+
+menu primary_menu {
+  section {
+    item {
+      label: _("Preferences");
+      action: "app.preferences";
+    }
+  }
+}

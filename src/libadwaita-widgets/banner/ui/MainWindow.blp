@@ -1,0 +1,47 @@
+using Gtk 4.0;
+using Adw 1;
+
+template $ExampleWindow : Adw.ApplicationWindow {
+  title: "Python e GTK: PyGObject libadwaita Adw.Banner() ui file";
+  default-width: 683;
+  default-height: 384;
+
+  Gtk.Box {
+    orientation: vertical;
+
+    [titlebar]
+    Gtk.HeaderBar header_bar {
+      [end]
+      Gtk.MenuButton {
+        icon-name: "open-menu-symbolic";
+        menu-model: primary_menu;
+      }
+    }
+
+    Gtk.Overlay overlay {
+        [overlay]
+        Adw.Banner banner {
+            title: "Banner title";
+            button-label: "Close";
+            valign: start;
+            button-clicked => $on_button_banner_clicked();
+        }
+
+        Gtk.Button {
+            label: "Open Banner";
+            vexpand: true;
+            valign: center;
+            clicked => $on_button_clicked();
+        }
+    }
+  }
+}
+
+menu primary_menu {
+  section {
+    item {
+      label: _("Preferences");
+      action: "app.preferences";
+    }
+  }
+}

@@ -1,0 +1,91 @@
+using Gtk 4.0;
+using Adw 1;
+
+template $ExampleWindow: Gtk.ApplicationWindow {
+  title: "Python e GTK: PyGObject libadwaita Adw.Clamp() ui file";
+  default-width: 683;
+  default-height: 384;
+
+  [titlebar]
+  Gtk.HeaderBar header_bar {
+    [end]
+    Gtk.MenuButton {
+      icon-name: "open-menu-symbolic";
+      menu-model: primary_menu;
+    }
+  }
+
+  Adw.Clamp {
+    child:     Gtk.Box {
+      orientation: vertical;
+      margin-top: 24;
+      margin-bottom: 24;
+      margin-start: 12;
+      margin-end: 12;
+      spacing: 24;
+
+      ListBox {
+        selection-mode: none;
+
+        styles [
+          "boxed-list",
+        ]
+
+        Gtk.ListBoxRow {
+          Gtk.Label {
+            label: "Item 01";
+          }
+        }
+
+        Gtk.ListBoxRow {
+          Gtk.Label {
+            label: "Item 02";
+          }
+        }
+
+        Gtk.ListBoxRow {
+          Gtk.Label {
+            label: "Item 03";
+          }
+        }
+      }
+
+      ListBox {
+        selection-mode: none;
+
+        styles [
+          "boxed-list",
+        ]
+
+        Gtk.ListBoxRow {
+          Gtk.Label {
+            label: "Item 04";
+          }
+        }
+
+        Gtk.ListBoxRow {
+          Gtk.Label {
+            label: "Item 05";
+          }
+        }
+
+        Gtk.ListBoxRow {
+          Gtk.Label {
+            label: "Item 06";
+          }
+        }
+      }
+    }
+
+    ;
+  }
+}
+
+menu primary_menu {
+  section {
+    item {
+      label: _("Preferences");
+      action: "app.preferences";
+    }
+  }
+}

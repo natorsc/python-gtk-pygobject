@@ -1,0 +1,21 @@
+# Informações do widget **{widget_name}**
+
+- **Versão do GTK**: {gtk_version}.
+- **Versão da libadwaita**: {libadwaita_version}.
+- **Versão do PyGObject**: {pygobject_version}.
+
+## Propriedades:
+
+- {widget_props}
+
+## Sinais (signals):
+
+- {widget_signals}
+
+## Métodos GET:
+
+- {methods_get}
+
+## Métodos SET:
+
+- {methods_set}
