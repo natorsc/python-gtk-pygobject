@@ -14,6 +14,11 @@
 Libadwaita
 ==========
 
+Sobre
+-----
+
+.. danger:: 🚜 Em construção 🚧
+
 A biblioteca `libadwaita <https://gnome.pages.gitlab.gnome.org/libadwaita/doc/>`__ é uma biblioteca de interface do usuário para o desenvolvimento de aplicativos GNOME, que foi introduzida com o GNOME 40. Ela fornece um conjunto de widgets e componentes para construir interfaces do usuário modernas e consistentes para aplicativos GNOME.
 
 A libadwaita tem como objetivo fornecer um conjunto de diretrizes de design e estilo para aplicativos GNOME. Ela inclui um conjunto de widgets que seguem essas diretrizes e um tema de estilo que pode ser aplicado a toda a interface do usuário do aplicativo.
