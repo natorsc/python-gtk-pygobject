@@ -21,6 +21,12 @@ def requirements_txt(shell: bool = True) -> None:
         cwd=ROOT_DIR,
         shell=shell,
     )
+    subprocess.call(
+        args='poetry export --only docs --without-hashes -f requirements.txt '
+             '-o docs/data/requirements-doc.txt',
+        cwd=ROOT_DIR,
+        shell=shell,
+    )
 
 
 if __name__ == "__main__":

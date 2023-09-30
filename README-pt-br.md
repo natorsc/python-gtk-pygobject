@@ -23,10 +23,9 @@ Selecione o idioma:
 - [Tecnologias utilizadas](#🛠-tecnologias-utilizadas).
 - [Autor](#🤓-autor).
 - [Doações](#💝-doações).
+- [Documentação](#📚-documentação).
+- [Tutoriais](#🤓-tutoriais).
 - [Extra](#💡-extra).
-- [GTK](#🖥-gtk).
-- [Libadwaita](#📱-libadwaita).
-  - [Classes de estilo](#classes-de-estilo)
 
 ## 📝 Descrição
 
@@ -47,6 +46,11 @@ Até o presente momento as seguintes tecnologias são utilizadas na construção
 [![Gnome](https://img.shields.io/badge/-Gnome-blue?logo=gnome&logoColor=white)](https://www.gnome.org/ "Ir para o site.")
 &emsp;
 [![Flatpak](https://img.shields.io/badge/-Flathub-blue?logo=flathub&logoColor=white)](https://flatpak.org/ "Ir para o site.")
+&emsp;
+[![Sphinx](https://img.shields.io/badge/-Sphinx-blue?logo=sphinx&logoColor=white)](https://www.sphinx-doc.org/en/master/ "Ir para o site.")
+&emsp;
+[![Furo](https://img.shields.io/badge/-Furo-blue?logo=github&logoColor=white)](https://github.com/pradyunsg/furo "Ir para o Github.")
+
 
 ---
 
@@ -76,13 +80,25 @@ Obrigado por sua doação é através dela que consigo manter este conteúdo �
 
 ### Ko-Fi
 
-[![Ko-Fi](https://img.shields.io/badge/-Ko%20Fi-0D47A1?logo=ko-fi&logoColor=white)](https://ko-fi.com/natorsc "Help this project with a donation.")
+[![Ko-Fi](https://img.shields.io/badge/-Ko%20Fi-0D47A1?logo=ko-fi&logoColor=white)](https://ko-fi.com/natorsc "Ajude este projeto com uma doação.")
 
 ### Pix
 
-<img src="./docs/images/readme/pix-qr-code.png" alt="drawing" width="150"/>
+<img src="./docs/images/readme/pix-qr-code.png" alt="Ajude este projeto com uma doação." title="Ajude este projeto com uma doação." width="150"/>
 
 **Chave**: `b1839493-2afe-484d-9272-82a3e402b36f`
+
+---
+
+## 📚 Documentação
+
+Para facilitar a localização e organização dos conteúdos a documentação deste projeto está disponível em [https://gtk.justcode.com.br/](https://gtk.justcode.com.br/).
+
+---
+
+## 🤓 Tutoriais
+
+Tutoriais sobre GTK e suas ferramentas de desenvolvimento estão disponíveis em [https://blog.justcode.com.br/series/gtk-toolkit](https://blog.justcode.com.br/series/gtk-toolkit).
 
 ---
 

@@ -23,10 +23,9 @@ Select your language:
 - [Tecnologias utilizadas](#🛠-technologies-used).
 - [Author](#🤓-author).
 - [Donations](#💝-donations).
+- [Documentation](#📚-documentation).
+- [Tutorials](#🤓-tutorials).
 - [Extra](#💡-extra).
-- [GTK](#🖥-gtk).
-- [Libadwaita](#📱-libadwaita).
-  - [Style class](#style-class)
 
 ## 📝 Description
 
@@ -47,6 +46,10 @@ To date, the following technologies are used in the construction of the project:
 [![Gnome](https://img.shields.io/badge/-Gnome-blue?logo=gnome&logoColor=white)](https://www.gnome.org/ "Go to website.")
 &emsp;
 [![Flatpak](https://img.shields.io/badge/-Flathub-blue?logo=flathub&logoColor=white)](https://flatpak.org/ "Go to website.")
+&emsp;
+[![Sphinx](https://img.shields.io/badge/-Sphinx-blue?logo=sphinx&logoColor=white)](https://www.sphinx-doc.org/en/master/ "Go to website.")
+&emsp;
+[![Furo](https://img.shields.io/badge/-Furo-blue?logo=github&logoColor=white)](https://github.com/pradyunsg/furo "Go to Github.")
 
 ---
 
@@ -83,6 +86,18 @@ Thank you for your donation, it is through it that I am able to maintain this co
 <img src="./docs/images/readme/pix-qr-code.png" alt="drawing" width="150"/>
 
 **Chave**: `b1839493-2afe-484d-9272-82a3e402b36f`
+
+---
+
+## 📚 Documentation
+
+To facilitate the location and organization of content, the documentation for this project is available at [https://gtk.justcode.com.br/](https://gtk.justcode.com.br/).
+
+---
+
+## 🤓 Tutorials
+
+Tutorials about GTK and its development tools are available at [https://blog.justcode.com.br/series/gtk-toolkit](https://blog.justcode.com.br/series/gtk-toolkit).
 
 ---
 
