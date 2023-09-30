@@ -69,14 +69,14 @@ Pix
 📚 Documentação
 ---------------
 
-Para facilitar a localização e organização dos conteúdos a documentação deste projeto está disponível em [https://gtk.justcode.com.br/](https://gtk.justcode.com.br/).
+Para facilitar a localização e organização dos conteúdos a documentação deste projeto está disponível em `https://gtk.justcode.com.br/ <https://github.com/natorsc>`__.
 
 --------------
 
 🤓 Tutoriais
 ------------
 
-Tutoriais sobre GTK e suas ferramentas de desenvolvimento estão disponíveis em [https://blog.justcode.com.br/series/gtk-toolkit](https://blog.justcode.com.br/series/gtk-toolkit).
+Tutoriais sobre GTK e suas ferramentas de desenvolvimento estão disponíveis em `https://blog.justcode.com.br/series/gtk-toolkit <https://blog.justcode.com.br/series/gtk-toolkit>`__.
 
 --------------
 
