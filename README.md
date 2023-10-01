@@ -91,13 +91,13 @@ Thank you for your donation, it is through it that I am able to maintain this co
 
 ## 📚 Documentation
 
-To facilitate the location and organization of content, the documentation for this project is available at [https://gtk.justcode.com.br/](https://gtk.justcode.com.br/).
+To facilitate the location and organization of the contents, the documentation of this project is available at 'https://gtk.justcode.com.br/ <https://github.com/natorsc>'__.
 
 ---
 
 ## 🤓 Tutorials
 
-Tutorials about GTK and its development tools are available at [https://blog.justcode.com.br/series/gtk-toolkit](https://blog.justcode.com.br/series/gtk-toolkit).
+Tutorials on the GTK graphical toolkit and its development tools are available at 'https://blog.justcode.com.br/series/gtk-toolkit <https://blog.justcode.com.br/series/gtk-toolkit>'__.
 
 ---
 
