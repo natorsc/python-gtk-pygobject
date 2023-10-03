@@ -2,6 +2,7 @@
 """Python e GTK: PyGObject libadwaita Adw.Application() ui file."""
 
 import sys
+from collections.abc import Callable
 from pathlib import Path
 
 import gi
@@ -11,16 +12,17 @@ gi.require_version(namespace='Adw', version='1')
 
 from gi.repository import Adw, Gio, Gtk
 
-Adw.init()
-
 BASE_DIR = Path(__file__).resolve().parent
 APPLICATION_WINDOW = str(BASE_DIR.joinpath('MainWindow.ui'))
 
 _MODULES = BASE_DIR.parent.parent.parent.joinpath('_modules')
 sys.path.insert(0, str(_MODULES))
+
 import _tools
 
 _tools.compile_blueprint_ui(ui_dir=BASE_DIR)
+
+Adw.init()
 
 
 @Gtk.Template(filename=APPLICATION_WINDOW)
@@ -58,7 +60,7 @@ class ExampleApplication(Gtk.Application):
     def exit_app(self, action, param):
         self.quit()
 
-    def create_action(self, name, callback, shortcuts=None):
+    def create_action(self, name: str, callback: Callable[[str, str], None], shortcuts: str | None = None):
         action = Gio.SimpleAction.new(name=name, parameter_type=None)
         action.connect('activate', callback)
         self.add_action(action=action)

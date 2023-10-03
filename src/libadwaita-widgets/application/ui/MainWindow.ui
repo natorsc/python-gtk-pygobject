@@ -10,12 +10,10 @@ corresponding .blp file and regenerate this file with blueprint-compiler.
     <property name="title">Python e GTK: PyGObject libadwaita Adw.Application() ui file</property>
     <property name="default-width">683</property>
     <property name="default-height">384</property>
-    <child>
-      <object class="GtkBox">
-        <property name="orientation">1</property>
-        <property name="spacing">12</property>
-        <child type="titlebar">
-          <object class="GtkHeaderBar" id="header_bar">
+    <property name="content">
+      <object class="AdwToolbarView">
+        <child type="top">
+          <object class="GtkHeaderBar">
             <child type="end">
               <object class="GtkMenuButton">
                 <property name="icon-name">open-menu-symbolic</property>
@@ -24,8 +22,14 @@ corresponding .blp file and regenerate this file with blueprint-compiler.
             </child>
           </object>
         </child>
+        <property name="content">
+          <object class="GtkBox">
+            <property name="orientation">1</property>
+            <property name="spacing">12</property>
+          </object>
+        </property>
       </object>
-    </child>
+    </property>
   </template>
   <menu id="primary_menu">
     <section>
