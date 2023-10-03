@@ -62,7 +62,8 @@ class ExampleApplication(Gtk.Application):
     def exit_app(self, action, param):
         self.quit()
 
-    def create_action(self, name, callback, shortcuts=None):
+    def create_action(self, name: str, callback: Callable[[str, str], None],
+                      shortcuts: str | None = None):
         action = Gio.SimpleAction.new(name=name, parameter_type=None)
         action.connect('activate', callback)
         self.add_action(action=action)

@@ -70,7 +70,8 @@ class ExampleApplication(Gtk.Application):
         """Callback is executed when the shortcut keys `Ctrl + q` are pressed."""
         self.quit()
 
-    def create_action(self, name, callback, shortcuts=None):
+    def create_action(self, name: str, callback: Callable[[str, str], None],
+                      shortcuts: str | None = None):
         """Adds an action to the application.
 
         Args:
