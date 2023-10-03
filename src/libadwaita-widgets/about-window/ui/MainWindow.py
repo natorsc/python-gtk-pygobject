@@ -2,6 +2,7 @@
 """Python e GTK: PyGObject libadwaita Adw.AboutWindow() ui file."""
 
 import sys
+from collections.abc import Callable
 from pathlib import Path
 
 import gi
@@ -11,16 +12,17 @@ gi.require_version(namespace='Adw', version='1')
 
 from gi.repository import Adw, Gio, Gtk
 
-Adw.init()
-
 BASE_DIR = Path(__file__).resolve().parent
 APPLICATION_WINDOW = str(BASE_DIR.joinpath('MainWindow.ui'))
 
 _MODULES = BASE_DIR.parent.parent.parent.joinpath('_modules')
 sys.path.insert(0, str(_MODULES))
+
 import _tools
 
 _tools.compile_blueprint_ui(ui_dir=BASE_DIR)
+
+Adw.init()
 
 
 @Gtk.Template(filename=APPLICATION_WINDOW)
@@ -63,14 +65,15 @@ class ExampleApplication(Gtk.Application):
         dialog.set_version('0.0.1')
         dialog.set_developer_name('Renato Cruz (natorsc)')
         dialog.set_license_type(Gtk.License(Gtk.License.MIT_X11))
-        dialog.set_comments('Creating graphical interfaces with the'
-                            'Python programming language (PyGObject) and the'
-                            ' Gtk graphics toolkit')
+        dialog.set_comments(
+            'Creating graphical interfaces with the Python programming '
+            'language (PyGObject) and the GTK graphics toolkit'
+        )
         dialog.set_website('https://gtk.justcode.com.br')
         dialog.set_issue_url(
             "https://github.com/natorsc/gui-python-pygobject-gtk/issues")
         dialog.add_credit_section('Contributors', ['Name-01', 'Name-02'])
-        dialog.set_translator_credits('Translator')
+        dialog.set_translator_credits('Renato Cruz')
         dialog.set_copyright('© 2022 Renato Cruz (natorsc)')
         dialog.set_developers(['natorsc https://github.com/natorsc'])
         dialog.set_application_icon('help-about-symbolic')
@@ -79,7 +82,8 @@ class ExampleApplication(Gtk.Application):
     def exit_app(self, action, param):
         self.quit()
 
-    def create_action(self, name, callback, shortcuts=None):
+    def create_action(self, name: str, callback: Callable[[str, str], None],
+                      shortcuts: str | None = None):
         action = Gio.SimpleAction.new(name=name, parameter_type=None)
         action.connect('activate', callback)
         self.add_action(action=action)
