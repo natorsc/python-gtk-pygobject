@@ -28,6 +28,10 @@ class ExampleWindow(Adw.ApplicationWindow):
         self.set_content(content=adw_toolbar_view)
 
         vbox = Gtk.Box.new(orientation=Gtk.Orientation.VERTICAL, spacing=12)
+        vbox.set_margin_top(margin=12)
+        vbox.set_margin_end(margin=12)
+        vbox.set_margin_bottom(margin=12)
+        vbox.set_margin_start(margin=12)
         adw_toolbar_view.set_content(content=vbox)
 
         header_bar = Gtk.HeaderBar.new()
