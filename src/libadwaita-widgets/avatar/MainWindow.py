@@ -1,6 +1,8 @@
 # -*- coding: utf-8 -*-
 """Python e GTK: PyGObject libadwaita Adw.Avatar()."""
 
+from collections.abc import Callable
+
 import gi
 
 gi.require_version(namespace='Gtk', version='4.0')
@@ -20,11 +22,19 @@ class ExampleWindow(Adw.ApplicationWindow):
         self.set_default_size(width=int(1366 / 2), height=int(768 / 2))
         self.set_size_request(width=int(1366 / 2), height=int(768 / 2))
 
+        adw_toolbar_view = Adw.ToolbarView.new()
+        self.set_content(content=adw_toolbar_view)
+
         vbox = Gtk.Box.new(orientation=Gtk.Orientation.VERTICAL, spacing=12)
-        self.set_content(content=vbox)
+        vbox.set_homogeneous(homogeneous=True)
+        vbox.set_margin_top(margin=12)
+        vbox.set_margin_end(margin=12)
+        vbox.set_margin_bottom(margin=12)
+        vbox.set_margin_start(margin=12)
+        adw_toolbar_view.set_content(content=vbox)
 
         header_bar = Gtk.HeaderBar.new()
-        vbox.append(child=header_bar)
+        adw_toolbar_view.add_top_bar(widget=header_bar)
 
         menu_button_model = Gio.Menu()
         menu_button_model.append(

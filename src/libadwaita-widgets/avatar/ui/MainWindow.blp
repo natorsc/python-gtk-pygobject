@@ -2,25 +2,28 @@ using Gtk 4.0;
 using Adw 1;
 
 template $ExampleWindow : Adw.ApplicationWindow {
-  title: "Python e GTK: PyGObject libadwaita Adw.Avatar() ui file";
+  title: 'Python e GTK: PyGObject libadwaita Adw.Avatar() ui file';
   default-width: 683;
   default-height: 384;
-  Gtk.Box {
-    orientation: vertical;
-    spacing: 12;
-    [titlebar]
-    Gtk.HeaderBar header_bar {
+  content: 
+  Adw.ToolbarView {
+    [top]
+    HeaderBar {
       [end]
-      Gtk.MenuButton {
-        icon-name: "open-menu-symbolic";
+      MenuButton {
+        icon-name: 'open-menu-symbolic';
         menu-model: primary_menu;
       }
     }
-
-    Gtk.Box {
+    content: 
+    Box {
       orientation: horizontal;
       homogeneous: true;
-      spacing: 0;
+      spacing: 12;
+      margin-top: 12;
+      margin-end: 12;
+      margin-bottom: 12;
+      margin-start: 12;
 
       Adw.Avatar {
         size: 100;
@@ -41,14 +44,18 @@ template $ExampleWindow : Adw.ApplicationWindow {
         icon-name: "contact-new-symbolic";
       }
     }
+
+    ;
   }
+
+  ;
 }
 
 menu primary_menu {
   section {
     item {
-      label: _("Preferences");
-      action: "app.preferences";
+      label: _('Preferences');
+      action: 'app.preferences';
     }
   }
 }
