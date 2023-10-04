@@ -25,14 +25,6 @@ class ExampleWindow(Adw.ApplicationWindow):
         adw_toolbar_view = Adw.ToolbarView.new()
         self.set_content(content=adw_toolbar_view)
 
-        vbox = Gtk.Box.new(orientation=Gtk.Orientation.VERTICAL, spacing=12)
-        vbox.set_homogeneous(homogeneous=True)
-        vbox.set_margin_top(margin=12)
-        vbox.set_margin_end(margin=12)
-        vbox.set_margin_bottom(margin=12)
-        vbox.set_margin_start(margin=12)
-        adw_toolbar_view.set_content(content=vbox)
-
         header_bar = Gtk.HeaderBar.new()
         adw_toolbar_view.add_top_bar(widget=header_bar)
 
@@ -46,6 +38,14 @@ class ExampleWindow(Adw.ApplicationWindow):
         menu_button.set_icon_name(icon_name='open-menu-symbolic')
         menu_button.set_menu_model(menu_model=menu_button_model)
         header_bar.pack_end(child=menu_button)
+
+        vbox = Gtk.Box.new(orientation=Gtk.Orientation.VERTICAL, spacing=12)
+        vbox.set_homogeneous(homogeneous=True)
+        vbox.set_margin_top(margin=12)
+        vbox.set_margin_end(margin=12)
+        vbox.set_margin_bottom(margin=12)
+        vbox.set_margin_start(margin=12)
+        adw_toolbar_view.set_content(content=vbox)
 
         hbox = Gtk.Box.new(orientation=Gtk.Orientation.HORIZONTAL, spacing=0)
         hbox.set_homogeneous(homogeneous=True)

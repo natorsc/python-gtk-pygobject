@@ -1,6 +1,8 @@
 # -*- coding: utf-8 -*-
 """Python e GTK: PyGObject libadwaita Adw.Banner()."""
 
+from collections.abc import Callable
+
 import gi
 
 gi.require_version(namespace='Gtk', version='4.0')
@@ -17,15 +19,16 @@ class ExampleWindow(Adw.ApplicationWindow):
         super().__init__(**kwargs)
 
         self.set_title(
-            title='Python e GTK: PyGObject libadwaita Adw.Banner()')
+            title='Python e GTK: PyGObject libadwaita Adw.Banner()',
+        )
         self.set_default_size(width=int(1366 / 2), height=int(768 / 2))
         self.set_size_request(width=int(1366 / 2), height=int(768 / 2))
 
-        vbox = Gtk.Box.new(orientation=Gtk.Orientation.VERTICAL, spacing=0)
-        self.set_content(content=vbox)
+        adw_toolbar_view = Adw.ToolbarView.new()
+        self.set_content(content=adw_toolbar_view)
 
         header_bar = Gtk.HeaderBar.new()
-        vbox.append(child=header_bar)
+        adw_toolbar_view.add_top_bar(widget=header_bar)
 
         menu_button_model = Gio.Menu()
         menu_button_model.append(
@@ -38,6 +41,13 @@ class ExampleWindow(Adw.ApplicationWindow):
         menu_button.set_menu_model(menu_model=menu_button_model)
         header_bar.pack_end(child=menu_button)
 
+        vbox = Gtk.Box.new(orientation=Gtk.Orientation.VERTICAL, spacing=12)
+        vbox.set_margin_top(margin=12)
+        vbox.set_margin_end(margin=12)
+        vbox.set_margin_bottom(margin=12)
+        vbox.set_margin_start(margin=12)
+        adw_toolbar_view.set_content(content=vbox)
+
         overlay = Gtk.Overlay.new()
         vbox.append(child=overlay)
 
@@ -47,7 +57,7 @@ class ExampleWindow(Adw.ApplicationWindow):
         self.banner.connect('button-clicked', self.on_button_banner_clicked)
         overlay.add_overlay(widget=self.banner)
 
-        button = Gtk.Button.new_with_label(label='Click here')
+        button = Gtk.Button.new_with_label(label='Open Banner')
         button.set_vexpand(expand=True)
         button.set_valign(align=Gtk.Align.CENTER)
         button.connect('clicked', self.on_button_clicked)
