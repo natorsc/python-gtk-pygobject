@@ -1,6 +1,8 @@
 # -*- coding: utf-8 -*-
 """Python e GTK: PyGObject libadwaita Adw.Carousel()."""
 
+from collections.abc import Callable
+
 import gi
 
 gi.require_version(namespace='Gtk', version='4.0')
@@ -11,18 +13,22 @@ from gi.repository import Adw, Gio, Gtk
 Adw.init()
 
 
-class ExampleWindow(Gtk.ApplicationWindow):
+class ExampleWindow(Adw.ApplicationWindow):
 
     def __init__(self, **kwargs):
         super().__init__(**kwargs)
 
         self.set_title(
-            title='Python e GTK: PyGObject libadwaita Adw.Carousel()')
+            title='Python e GTK: PyGObject libadwaita Adw.Carousel()',
+        )
         self.set_default_size(width=int(1366 / 2), height=int(768 / 2))
         self.set_size_request(width=int(1366 / 2), height=int(768 / 2))
 
+        adw_toolbar_view = Adw.ToolbarView.new()
+        self.set_content(content=adw_toolbar_view)
+
         header_bar = Gtk.HeaderBar.new()
-        self.set_titlebar(titlebar=header_bar)
+        adw_toolbar_view.add_top_bar(widget=header_bar)
 
         menu_button_model = Gio.Menu()
         menu_button_model.append(
@@ -36,11 +42,11 @@ class ExampleWindow(Gtk.ApplicationWindow):
         header_bar.pack_end(child=menu_button)
 
         vbox = Gtk.Box.new(orientation=Gtk.Orientation.VERTICAL, spacing=12)
-        vbox.set_margin_top(12)
-        vbox.set_margin_end(12)
-        vbox.set_margin_bottom(12)
-        vbox.set_margin_start(12)
-        self.set_child(child=vbox)
+        vbox.set_margin_top(margin=12)
+        vbox.set_margin_end(margin=12)
+        vbox.set_margin_bottom(margin=12)
+        vbox.set_margin_start(margin=12)
+        adw_toolbar_view.set_content(content=vbox)
 
         label = Gtk.Label.new(
             str='Drag or use the mouse scroller to change pages.'

@@ -2,6 +2,7 @@
 """Python e GTK: PyGObject libadwaita Adw.Carousel() ui file."""
 
 import sys
+from collections.abc import Callable
 from pathlib import Path
 
 import gi
@@ -11,20 +12,21 @@ gi.require_version(namespace='Adw', version='1')
 
 from gi.repository import Adw, Gio, Gtk
 
-Adw.init()
-
 BASE_DIR = Path(__file__).resolve().parent
 APPLICATION_WINDOW = str(BASE_DIR.joinpath('MainWindow.ui'))
 
 _MODULES = BASE_DIR.parent.parent.parent.joinpath('_modules')
 sys.path.insert(0, str(_MODULES))
+
 import _tools
 
 _tools.compile_blueprint_ui(ui_dir=BASE_DIR)
 
+Adw.init()
+
 
 @Gtk.Template(filename=APPLICATION_WINDOW)
-class ExampleWindow(Gtk.ApplicationWindow):
+class ExampleWindow(Adw.ApplicationWindow):
     __gtype_name__ = 'ExampleWindow'
 
     def __init__(self, **kwargs):
