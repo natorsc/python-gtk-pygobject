@@ -49,7 +49,7 @@ class ExampleWindow(Adw.ApplicationWindow):
         adw_toolbar_view.set_content(content=vbox)
 
 
-class ExampleApplication(Gtk.Application):
+class ExampleApplication(Adw.Application):
 
     def __init__(self):
         super().__init__(application_id='br.com.justcode.PyGObject',

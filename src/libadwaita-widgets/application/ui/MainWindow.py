@@ -14,7 +14,7 @@ gi.require_version(namespace='Adw', version='1')
 from gi.repository import Adw, Gio, Gtk
 
 BASE_DIR = Path(__file__).resolve().parent
-APPLICATION_WINDOW = str(BASE_DIR.joinpath('MainWindow.ui'))
+UI = str(BASE_DIR.joinpath('MainWindow.ui'))
 
 _MODULES = BASE_DIR.parent.parent.parent.joinpath('_modules')
 sys.path.append(str(_MODULES))
@@ -26,7 +26,7 @@ _tools.compile_blueprint_ui(ui_dir=BASE_DIR)
 Adw.init()
 
 
-@Gtk.Template(filename=APPLICATION_WINDOW)
+@Gtk.Template(filename=UI)
 class ExampleWindow(Adw.ApplicationWindow):
     __gtype_name__ = 'ExampleWindow'
 
@@ -34,7 +34,7 @@ class ExampleWindow(Adw.ApplicationWindow):
         super().__init__(**kwargs)
 
 
-class ExampleApplication(Gtk.Application):
+class ExampleApplication(Adw.Application):
 
     def __init__(self):
         super().__init__(application_id='br.com.justcode.PyGObject',

@@ -13,7 +13,7 @@ from gi.repository import Adw, Gio, Gtk
 Adw.init()
 
 
-class ExampleWindow(Gtk.ApplicationWindow):
+class ExampleWindow(Adw.ApplicationWindow):
 
     def __init__(self, **kwargs):
         super().__init__(**kwargs)
@@ -50,7 +50,7 @@ class ExampleWindow(Gtk.ApplicationWindow):
         vbox.append(child=adw_password_entry_row)
 
 
-class ExampleApplication(Gtk.Application):
+class ExampleApplication(Adw.Application):
 
     def __init__(self):
         super().__init__(application_id='br.com.justcode.PyGObject',

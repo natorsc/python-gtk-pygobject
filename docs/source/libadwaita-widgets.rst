@@ -365,54 +365,6 @@ Adw.ExpanderRow
 
 --------------
 
-Adw.Flap
-~~~~~~~~
-
-.. figure:: ../images/libadwaita-widgets/flap.png
-   :alt: Adw.Flap
-
-   Adw.Flap
-
-.. tab:: Python
-
-   ..  literalinclude:: ../../src/libadwaita-widgets/flap/MainWindow.py
-
-.. tab:: Python load ui
-
-   ..  literalinclude:: ../../src/libadwaita-widgets/flap/ui/MainWindow.py
-
-.. tab:: UI
-
-   ..  literalinclude:: ../../src/libadwaita-widgets/flap/ui/MainWindow.ui
-      :language: html
-
-.. tab:: Blueprint
-
-   ..  literalinclude:: ../../src/libadwaita-widgets/flap/ui/MainWindow.blp
-
---------------
-
-Adw.Leaflet
-~~~~~~~~~~~
-
-.. warning:: Criar código Python e Blueprint.
-
-.. figure:: ../images/libadwaita-widgets/leaflet.png
-   :alt: Adw.Leaflet
-
-   Adw.Leaflet
-
-.. tab:: Python load ui
-
-   ..  literalinclude:: ../../src/libadwaita-widgets/leaflet/ui/MainWindow.py
-
-.. tab:: UI
-
-   ..  literalinclude:: ../../src/libadwaita-widgets/leaflet/ui/MainWindow.ui
-      :language: html
-
---------------
-
 Adw.MessageDialog
 ~~~~~~~~~~~~~~~~~
 

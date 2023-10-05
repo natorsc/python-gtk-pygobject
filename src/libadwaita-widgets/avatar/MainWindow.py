@@ -74,7 +74,7 @@ class ExampleWindow(Adw.ApplicationWindow):
         hbox.append(child=avatar_03)
 
 
-class ExampleApplication(Gtk.Application):
+class ExampleApplication(Adw.Application):
 
     def __init__(self):
         super().__init__(application_id='br.com.justcode.PyGObject',

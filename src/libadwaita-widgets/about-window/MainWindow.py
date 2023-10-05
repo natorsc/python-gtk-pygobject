@@ -57,7 +57,7 @@ class ExampleWindow(Adw.ApplicationWindow):
         vbox.append(child=label)
 
 
-class ExampleApplication(Gtk.Application):
+class ExampleApplication(Adw.Application):
 
     def __init__(self):
         super().__init__(application_id='br.com.justcode.PyGObject',

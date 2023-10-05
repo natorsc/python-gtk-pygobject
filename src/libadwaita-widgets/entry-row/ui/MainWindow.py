@@ -16,7 +16,7 @@ from gi.repository import Adw, Gio, Gtk
 Adw.init()
 
 BASE_DIR = Path(__file__).resolve().parent
-APPLICATION_WINDOW = str(BASE_DIR.joinpath('MainWindow.ui'))
+UI = str(BASE_DIR.joinpath('MainWindow.ui'))
 
 _MODULES = BASE_DIR.parent.parent.parent.joinpath('_modules')
 sys.path.append(str(_MODULES))
@@ -25,8 +25,8 @@ import _tools
 _tools.compile_blueprint_ui(ui_dir=BASE_DIR)
 
 
-@Gtk.Template(filename=APPLICATION_WINDOW)
-class ExampleWindow(Gtk.ApplicationWindow):
+@Gtk.Template(filename=UI)
+class ExampleWindow(Adw.ApplicationWindow):
     __gtype_name__ = 'ExampleWindow'
 
     def __init__(self, **kwargs):
@@ -37,7 +37,7 @@ class ExampleWindow(Gtk.ApplicationWindow):
         print(f'Entry value = {entry_row.get_text()}')
 
 
-class ExampleApplication(Gtk.Application):
+class ExampleApplication(Adw.Application):
 
     def __init__(self):
         super().__init__(application_id='br.com.justcode.PyGObject',

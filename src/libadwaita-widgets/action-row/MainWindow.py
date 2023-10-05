@@ -79,7 +79,7 @@ class ExampleWindow(Adw.ApplicationWindow):
             print('Button unchecked')
 
 
-class ExampleApplication(Gtk.Application):
+class ExampleApplication(Adw.Application):
 
     def __init__(self):
         super().__init__(application_id='br.com.justcode.PyGObject',

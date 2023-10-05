@@ -38,7 +38,7 @@ class Dialog(Adw.MessageDialog):
             print('CANCEL button pressed')
 
 
-class ExampleWindow(Gtk.ApplicationWindow):
+class ExampleWindow(Adw.ApplicationWindow):
 
     def __init__(self, **kwargs):
         super().__init__(**kwargs)
@@ -102,7 +102,7 @@ class ExampleWindow(Gtk.ApplicationWindow):
             print('CANCEL button pressed')
 
 
-class ExampleApplication(Gtk.Application):
+class ExampleApplication(Adw.Application):
 
     def __init__(self):
         super().__init__(application_id='br.com.justcode.PyGObject',

@@ -15,20 +15,23 @@ Adw.init()
 text = '<big>Lorem ipsum</big>\n\nLorem ipsum dolor sit amet, consectetur...'
 
 
-class ExampleWindow(Gtk.ApplicationWindow):
+class ExampleWindow(Adw.ApplicationWindow):
     items = ['Item 01', 'Item 02', 'Item 03', 'Item 04']
 
     def __init__(self, **kwargs):
         super().__init__(**kwargs)
 
         self.set_title(
-            title='Python e GTK: PyGObject Gtk.ListBox() Adw.ExpanderRow()'
+            title='Python e GTK: PyGObject Gtk.ListBox() Adw.ExpanderRow()',
         )
         self.set_default_size(width=int(1366 / 2), height=int(768 / 2))
         self.set_size_request(width=int(1366 / 2), height=int(768 / 2))
 
+        adw_toolbar_view = Adw.ToolbarView.new()
+        self.set_content(content=adw_toolbar_view)
+
         header_bar = Gtk.HeaderBar.new()
-        self.set_titlebar(titlebar=header_bar)
+        adw_toolbar_view.add_top_bar(widget=header_bar)
 
         menu_button_model = Gio.Menu()
         menu_button_model.append(
@@ -46,12 +49,12 @@ class ExampleWindow(Gtk.ApplicationWindow):
         vbox.set_margin_end(margin=12)
         vbox.set_margin_bottom(margin=12)
         vbox.set_margin_start(margin=12)
-        self.set_child(child=vbox)
+        adw_toolbar_view.set_content(content=vbox)
 
-        self.listbox = Gtk.ListBox.new()
-        self.listbox.set_selection_mode(mode=Gtk.SelectionMode.NONE)
-        self.listbox.add_css_class(css_class='boxed-list')
-        vbox.append(child=self.listbox)
+        self.list_box = Gtk.ListBox.new()
+        self.list_box.set_selection_mode(mode=Gtk.SelectionMode.NONE)
+        self.list_box.add_css_class(css_class='boxed-list')
+        vbox.append(child=self.list_box)
 
         for item in self.items:
             icon = Gtk.Image.new_from_icon_name(
@@ -67,10 +70,10 @@ class ExampleWindow(Gtk.ApplicationWindow):
             adw_expander_row.set_title(title=item)
             adw_expander_row.set_subtitle(subtitle='Adw.ExpanderRow()')
             adw_expander_row.add_row(child=label)
-            self.listbox.append(child=adw_expander_row)
+            self.list_box.append(child=adw_expander_row)
 
 
-class ExampleApplication(Gtk.Application):
+class ExampleApplication(Adw.Application):
 
     def __init__(self):
         super().__init__(application_id='br.com.justcode.PyGObject',

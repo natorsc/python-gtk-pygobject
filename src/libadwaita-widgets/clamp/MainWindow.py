@@ -13,17 +13,20 @@ from gi.repository import Adw, Gio, Gtk
 Adw.init()
 
 
-class ExampleWindow(Gtk.ApplicationWindow):
+class ExampleWindow(Adw.ApplicationWindow):
 
     def __init__(self, **kwargs):
         super().__init__(**kwargs)
 
         self.set_title(title='Python e GTK: PyGObject libadwaita Adw.Clamp()')
         self.set_default_size(width=int(1366 / 2), height=int(768 / 2))
-        # self.set_size_request(width=int(1366 / 2), height=int(768 / 2))
+        self.set_size_request(width=int(1366 / 2), height=int(768 / 2))
+
+        adw_toolbar_view = Adw.ToolbarView.new()
+        self.set_content(content=adw_toolbar_view)
 
         header_bar = Gtk.HeaderBar.new()
-        self.set_titlebar(titlebar=header_bar)
+        adw_toolbar_view.add_top_bar(widget=header_bar)
 
         menu_button_model = Gio.Menu()
         menu_button_model.append(
@@ -37,35 +40,23 @@ class ExampleWindow(Gtk.ApplicationWindow):
         header_bar.pack_end(child=menu_button)
 
         adw_clamp = Adw.Clamp.new()
-        self.set_child(child=adw_clamp)
-
-        vbox = Gtk.Box.new(orientation=Gtk.Orientation.VERTICAL, spacing=24)
-        vbox.set_margin_top(margin=24)
-        vbox.set_margin_end(margin=24)
-        vbox.set_margin_bottom(margin=12)
-        vbox.set_margin_start(margin=24)
+        adw_toolbar_view.set_content(content=adw_clamp)
+        
+        vbox = Gtk.Box.new(orientation=Gtk.Orientation.VERTICAL, spacing=12)
         adw_clamp.set_child(child=vbox)
 
-        listbox_01 = Gtk.ListBox.new()
-        listbox_01.set_selection_mode(mode=Gtk.SelectionMode.NONE)
-        listbox_01.add_css_class(css_class='boxed-list')
-        vbox.append(child=listbox_01)
+        list_box = Gtk.ListBox.new()
+        list_box.set_selection_mode(mode=Gtk.SelectionMode.NONE)
+        list_box.add_css_class(css_class='boxed-list')
+        vbox.append(child=list_box)
 
         for n in range(1, 4):
-            label = Gtk.Label.new(str=f'Item {n}')
-            listbox_01.append(child=label)
-
-        listbox_02 = Gtk.ListBox.new()
-        listbox_02.set_selection_mode(mode=Gtk.SelectionMode.NONE)
-        listbox_02.add_css_class(css_class='boxed-list')
-        vbox.append(child=listbox_02)
-
-        for n in range(4, 7):
-            label = Gtk.Label.new(str=f'Item {n}')
-            listbox_02.append(child=label)
+            adw_action_row = Adw.ActionRow.new()
+            adw_action_row.set_title(title=f'Item {n}')
+            list_box.append(child=adw_action_row)
 
 
-class ExampleApplication(Gtk.Application):
+class ExampleApplication(Adw.Application):
 
     def __init__(self):
         super().__init__(application_id='br.com.justcode.PyGObject',

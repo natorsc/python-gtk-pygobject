@@ -6,104 +6,57 @@ corresponding .blp file and regenerate this file with blueprint-compiler.
 -->
 <interface>
   <requires lib="gtk" version="4.0"/>
-  <template class="ExampleWindow" parent="GtkApplicationWindow">
+  <template class="ExampleWindow" parent="AdwApplicationWindow">
     <property name="title">Python e GTK: PyGObject libadwaita Adw.Clamp() ui file</property>
     <property name="default-width">683</property>
     <property name="default-height">384</property>
-    <child type="titlebar">
-      <object class="GtkHeaderBar" id="header_bar">
-        <child type="end">
-          <object class="GtkMenuButton">
-            <property name="icon-name">open-menu-symbolic</property>
-            <property name="menu-model">primary_menu</property>
+    <property name="content">
+      <object class="AdwToolbarView">
+        <child type="top">
+          <object class="GtkHeaderBar">
+            <child type="end">
+              <object class="GtkMenuButton">
+                <property name="icon-name">open-menu-symbolic</property>
+                <property name="menu-model">primary_menu</property>
+              </object>
+            </child>
           </object>
         </child>
-      </object>
-    </child>
-    <child>
-      <object class="AdwClamp">
-        <property name="child">
-          <object class="GtkBox">
-            <property name="orientation">1</property>
-            <property name="margin-top">24</property>
-            <property name="margin-bottom">24</property>
-            <property name="margin-start">12</property>
-            <property name="margin-end">12</property>
-            <property name="spacing">24</property>
-            <child>
-              <object class="GtkListBox">
-                <property name="selection-mode">0</property>
-                <style>
-                  <class name="boxed-list"/>
-                </style>
+        <property name="content">
+          <object class="AdwClamp">
+            <property name="child">
+              <object class="GtkBox">
+                <property name="orientation">1</property>
+                <property name="spacing">12</property>
                 <child>
-                  <object class="GtkListBoxRow">
+                  <object class="GtkListBox">
+                    <property name="selection-mode">0</property>
+                    <style>
+                      <class name="boxed-list"/>
+                    </style>
                     <child>
-                      <object class="GtkLabel">
-                        <property name="label">Item 01</property>
+                      <object class="AdwActionRow">
+                        <property name="title">Item 01</property>
                       </object>
                     </child>
-                  </object>
-                </child>
-                <child>
-                  <object class="GtkListBoxRow">
                     <child>
-                      <object class="GtkLabel">
-                        <property name="label">Item 02</property>
+                      <object class="AdwActionRow">
+                        <property name="title">Item 02</property>
                       </object>
                     </child>
-                  </object>
-                </child>
-                <child>
-                  <object class="GtkListBoxRow">
                     <child>
-                      <object class="GtkLabel">
-                        <property name="label">Item 03</property>
+                      <object class="AdwActionRow">
+                        <property name="title">Item 03</property>
                       </object>
                     </child>
                   </object>
                 </child>
               </object>
-            </child>
-            <child>
-              <object class="GtkListBox">
-                <property name="selection-mode">0</property>
-                <style>
-                  <class name="boxed-list"/>
-                </style>
-                <child>
-                  <object class="GtkListBoxRow">
-                    <child>
-                      <object class="GtkLabel">
-                        <property name="label">Item 04</property>
-                      </object>
-                    </child>
-                  </object>
-                </child>
-                <child>
-                  <object class="GtkListBoxRow">
-                    <child>
-                      <object class="GtkLabel">
-                        <property name="label">Item 05</property>
-                      </object>
-                    </child>
-                  </object>
-                </child>
-                <child>
-                  <object class="GtkListBoxRow">
-                    <child>
-                      <object class="GtkLabel">
-                        <property name="label">Item 06</property>
-                      </object>
-                    </child>
-                  </object>
-                </child>
-              </object>
-            </child>
+            </property>
           </object>
         </property>
       </object>
-    </child>
+    </property>
   </template>
   <menu id="primary_menu">
     <section>
