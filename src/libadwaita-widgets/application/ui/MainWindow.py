@@ -2,8 +2,9 @@
 """Python e GTK: PyGObject libadwaita Adw.Application() ui file."""
 
 import sys
-from collections.abc import Callable
 from pathlib import Path
+
+from collections.abc import Callable
 
 import gi
 
@@ -16,7 +17,7 @@ BASE_DIR = Path(__file__).resolve().parent
 APPLICATION_WINDOW = str(BASE_DIR.joinpath('MainWindow.ui'))
 
 _MODULES = BASE_DIR.parent.parent.parent.joinpath('_modules')
-sys.path.insert(0, str(_MODULES))
+sys.path.append(str(_MODULES))
 
 import _tools
 

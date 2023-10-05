@@ -1,6 +1,8 @@
 # -*- coding: utf-8 -*-
 """Python e GTK: PyGObject Gtk.Box() horizontal."""
 
+from collections.abc import Callable
+
 import gi
 
 gi.require_version(namespace='Gtk', version='4.0')

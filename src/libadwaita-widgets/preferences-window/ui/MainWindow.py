@@ -19,7 +19,7 @@ BASE_DIR = Path(__file__).resolve().parent
 APPLICATION_WINDOW = str(BASE_DIR.joinpath('MainWindow.ui'))
 
 _MODULES = BASE_DIR.parent.parent.parent.joinpath('_modules')
-sys.path.insert(0, str(_MODULES))
+sys.path.append(str(_MODULES))
 import _tools
 
 _tools.compile_blueprint_ui(ui_dir=BASE_DIR)

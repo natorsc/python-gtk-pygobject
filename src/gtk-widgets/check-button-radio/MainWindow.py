@@ -4,6 +4,8 @@
 In GTK 4 or higher, the RadioButton is a CheckButton that has a group.
 """
 
+from collections.abc import Callable
+
 import gi
 
 gi.require_version(namespace='Gtk', version='4.0')

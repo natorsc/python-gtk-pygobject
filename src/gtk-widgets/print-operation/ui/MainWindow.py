@@ -4,6 +4,8 @@
 import sys
 from pathlib import Path
 
+from collections.abc import Callable
+
 import gi
 
 gi.require_version(namespace='Gtk', version='4.0')
@@ -25,7 +27,7 @@ Lorem <b>ipsum</b> <span foreground="red">dolor</span> <big>sit</big> amet,
 <small>ut</small> <tt>labore</tt> et dolore magna aliqua.\n"""
 
 _MODULES = BASE_DIR.parent.parent.parent.joinpath('_modules')
-sys.path.insert(0, str(_MODULES))
+sys.path.append(str(_MODULES))
 import _tools
 
 _tools.compile_blueprint_ui(ui_dir=BASE_DIR)

@@ -3,6 +3,8 @@
 
 from pathlib import Path
 
+from collections.abc import Callable
+
 import gi
 
 gi.require_version(namespace='Gtk', version='4.0')

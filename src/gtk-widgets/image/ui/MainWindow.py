@@ -11,6 +11,8 @@ If you want to load an image, use `Gtk.Picture()`.
 import sys
 from pathlib import Path
 
+from collections.abc import Callable
+
 import gi
 
 gi.require_version(namespace='Gtk', version='4.0')
@@ -29,7 +31,7 @@ CUSTOM_IMAGE = str(
 )
 
 _MODULES = BASE_DIR.parent.parent.parent.joinpath('_modules')
-sys.path.insert(0, str(_MODULES))
+sys.path.append(str(_MODULES))
 import _tools
 
 _tools.compile_blueprint_ui(ui_dir=BASE_DIR)
