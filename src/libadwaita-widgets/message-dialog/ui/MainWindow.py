@@ -1,8 +1,5 @@
 # -*- coding: utf-8 -*-
-"""Python e GTK: PyGObject libadwaita Adw.MessageDialog() ui file.
-
-blueprint-compiler: `error: unsupported XML tag: <responses>`.
-"""
+"""Python e GTK: PyGObject libadwaita Adw.MessageDialog() ui file."""
 
 import sys
 from pathlib import Path
@@ -20,27 +17,22 @@ Adw.init()
 
 BASE_DIR = Path(__file__).resolve().parent
 UI = str(BASE_DIR.joinpath('MainWindow.ui'))
+DIALOG = str(BASE_DIR.joinpath('AdwMessageDialog.ui'))
 
 _MODULES = BASE_DIR.parent.parent.parent.joinpath('_modules')
 sys.path.append(str(_MODULES))
+
 import _tools
 
 _tools.compile_blueprint_ui(ui_dir=BASE_DIR)
 
 
-@Gtk.Template(filename=UI)
-class ExampleWindow(Adw.ApplicationWindow):
-    __gtype_name__ = 'ExampleWindow'
-
-    dialog = Gtk.Template.Child()
+@Gtk.Template(filename=DIALOG)
+class MessageDialog(Adw.MessageDialog):
+    __gtype_name__ = 'MessageDialog'
 
     def __init__(self, **kwargs):
-        super(ExampleWindow, self).__init__(**kwargs)
-
-    @Gtk.Template.Callback()
-    def on_button_clicked(self, button):
-        self.dialog.set_transient_for(parent=self)
-        self.dialog.present()
+        super(MessageDialog, self).__init__(**kwargs)
 
     @Gtk.Template.Callback()
     def dialog_response(self, dialog, response):
@@ -48,6 +40,19 @@ class ExampleWindow(Adw.ApplicationWindow):
             print('OK button pressed')
         elif response == Gtk.ResponseType.CANCEL.value_nick:
             print('CANCEL button pressed')
+
+
+@Gtk.Template(filename=UI)
+class ExampleWindow(Adw.ApplicationWindow):
+    __gtype_name__ = 'ExampleWindow'
+
+    def __init__(self, **kwargs):
+        super(ExampleWindow, self).__init__(**kwargs)
+
+    @Gtk.Template.Callback()
+    def on_button_clicked(self, button):
+        dialog = MessageDialog(transient_for=self)
+        dialog.present()
 
 
 class ExampleApplication(Adw.Application):

@@ -14,6 +14,7 @@ Adw.init()
 
 
 class Dialog(Adw.MessageDialog):
+    
     def __init__(self, **kwargs):
         super().__init__(**kwargs)
 
@@ -22,12 +23,12 @@ class Dialog(Adw.MessageDialog):
         self.add_response(Gtk.ResponseType.CANCEL.value_nick, 'Cancelar')
         self.set_response_appearance(
             response=Gtk.ResponseType.CANCEL.value_nick,
-            appearance=Adw.ResponseAppearance.DESTRUCTIVE
+            appearance=Adw.ResponseAppearance.DESTRUCTIVE,
         )
         self.add_response(Gtk.ResponseType.OK.value_nick, 'OK')
         self.set_response_appearance(
             response=Gtk.ResponseType.OK.value_nick,
-            appearance=Adw.ResponseAppearance.SUGGESTED
+            appearance=Adw.ResponseAppearance.SUGGESTED,
         )
         self.connect('response', self.dialog_response)
 
@@ -44,12 +45,16 @@ class ExampleWindow(Adw.ApplicationWindow):
         super().__init__(**kwargs)
 
         self.set_title(
-            title='Python e GTK: PyGObject libadwaita Adw.MessageDialog()')
+            title='Python e GTK: PyGObject libadwaita Adw.MessageDialog()',
+        )
         self.set_default_size(width=int(1366 / 2), height=int(768 / 2))
         self.set_size_request(width=int(1366 / 2), height=int(768 / 2))
 
+        adw_toolbar_view = Adw.ToolbarView.new()
+        self.set_content(content=adw_toolbar_view)
+
         header_bar = Gtk.HeaderBar.new()
-        self.set_titlebar(titlebar=header_bar)
+        adw_toolbar_view.add_top_bar(widget=header_bar)
 
         menu_button_model = Gio.Menu()
         menu_button_model.append(
@@ -67,33 +72,36 @@ class ExampleWindow(Adw.ApplicationWindow):
         vbox.set_margin_end(margin=12)
         vbox.set_margin_bottom(margin=12)
         vbox.set_margin_start(margin=12)
-        self.set_child(child=vbox)
+        adw_toolbar_view.set_content(content=vbox)
 
         button = Gtk.Button.new_with_label(label='Click here')
+        button.set_valign(align=Gtk.Align.CENTER)
+        button.set_vexpand(expand=True)
         button.connect('clicked', self.on_button_clicked)
         vbox.append(child=button)
 
     def on_button_clicked(self, button):
-        # Utilizando uma classe.
-        dialog = Dialog(transient_for=self)
-        dialog.present()
-
-        # dialog = Adw.MessageDialog.new(parent=self)
-        # dialog.set_heading(heading='Dialog header')
-        # dialog.set_body(
-        #     body='Body of the dialog window, you can use markup.')
-        # dialog.add_response(Gtk.ResponseType.CANCEL.value_nick, 'Cancelar')
-        # dialog.set_response_appearance(
-        #     response=Gtk.ResponseType.CANCEL.value_nick,
-        #     appearance=Adw.ResponseAppearance.DESTRUCTIVE
-        # )
-        # dialog.add_response(Gtk.ResponseType.OK.value_nick, 'OK')
-        # dialog.set_response_appearance(
-        #     response=Gtk.ResponseType.OK.value_nick,
-        #     appearance=Adw.ResponseAppearance.SUGGESTED
-        # )
-        # dialog.connect('response', self.dialog_response)
+        # Using a class.
+        # dialog = Dialog(transient_for=self)
         # dialog.present()
+
+        dialog = Adw.MessageDialog.new(parent=self)
+        dialog.set_heading(heading='Dialog header')
+        dialog.set_body(
+            body='Body of the dialog window, you can use markup.',
+        )
+        dialog.add_response(Gtk.ResponseType.CANCEL.value_nick, 'Cancelar')
+        dialog.set_response_appearance(
+            response=Gtk.ResponseType.CANCEL.value_nick,
+            appearance=Adw.ResponseAppearance.DESTRUCTIVE,
+        )
+        dialog.add_response(Gtk.ResponseType.OK.value_nick, 'OK')
+        dialog.set_response_appearance(
+            response=Gtk.ResponseType.OK.value_nick,
+            appearance=Adw.ResponseAppearance.SUGGESTED,
+        )
+        dialog.connect('response', self.dialog_response)
+        dialog.present()
 
     def dialog_response(self, dialog, response):
         if response == Gtk.ResponseType.OK.value_nick:
