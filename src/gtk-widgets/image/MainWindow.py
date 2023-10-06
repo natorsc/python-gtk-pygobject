@@ -10,7 +10,7 @@ If you want to load an image, use `Gtk.Picture()`.
 
 from pathlib import Path
 
-from collections.abc import Callable
+
 
 import gi
 

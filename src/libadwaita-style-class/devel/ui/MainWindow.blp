@@ -2,27 +2,21 @@ using Gtk 4.0;
 using Adw 1;
 
 template $ExampleWindow : Adw.ApplicationWindow {
-  title: "Python e GTK: PyGObject libadwaita style class devel ui file";
+  title: 'Python and GTK: PyGObject libadwaita style classes';
   default-width: 683;
   default-height: 384;
-  styles [
-    "devel",
-  ]
-
-  Gtk.Box {
-    orientation: vertical;
-    spacing: 12;
-
-    [titlebar]
-    Gtk.HeaderBar header_bar {
+  content: 
+  Adw.ToolbarView {
+    [top]
+    Adw.HeaderBar {
       [end]
-      Gtk.MenuButton {
-        icon-name: "open-menu-symbolic";
+      MenuButton {
+        icon-name: 'open-menu-symbolic';
         menu-model: primary_menu;
       }
     }
-
-    Gtk.Box {
+    content: 
+    Box {
       orientation: vertical;
       margin-top: 12;
       margin-end: 12;
@@ -30,25 +24,30 @@ template $ExampleWindow : Adw.ApplicationWindow {
       margin-start: 12;
       spacing: 12;
 
-      Gtk.Label label {
-        label: "Classes: ['background','csd','devel']";
-        wrap: true;
-        vexpand: true;
+      Button button {
+        label: 'Lorem Ipsum';
+        styles [
+          'background',
+        ]
       }
 
-      Gtk.Button {
-        label: 'Add/remove class';
+      Button {
+        label: 'Add/Remove class';
         clicked => $on_button_clicked();
       }
     }
+
+    ;
   }
+
+  ;
 }
 
 menu primary_menu {
   section {
     item {
-      label: _("Preferences");
-      action: "app.preferences";
+      label: _('Preferences');
+      action: 'app.preferences';
     }
   }
 }

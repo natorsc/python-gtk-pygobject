@@ -8,7 +8,7 @@ template $ExampleWindow : Adw.ApplicationWindow {
   content: 
   Adw.ToolbarView {
     [top]
-    HeaderBar {
+    Adw.HeaderBar {
       [end]
       MenuButton {
         icon-name: 'open-menu-symbolic';
@@ -27,15 +27,15 @@ template $ExampleWindow : Adw.ApplicationWindow {
       Gtk.ListBox {
         selection-mode: none;
         styles [
-          "boxed-list",
+          'boxed-list',
         ]
 
         Adw.ActionRow {
-          title: "Item 01";
-          subtitle: "Adw.ActionRow()";
+          title: 'Item 01';
+          subtitle: 'Adw.ActionRow()';
           [prefix]
           Gtk.Image {
-            icon-name: "accessories-text-editor-symbolic";
+            icon-name: 'accessories-text-editor-symbolic';
           }
           [suffix]
           Gtk.Switch {
@@ -45,28 +45,12 @@ template $ExampleWindow : Adw.ApplicationWindow {
         }
 
         Adw.ActionRow {
-          title: "Item 02";
-          subtitle: "Adw.ActionRow()";
+          title: 'Item 02';
+          subtitle: 'Adw.ActionRow()';
 
           [prefix]
           Gtk.Image {
-            icon-name: "accessories-text-editor-symbolic";
-          }
-
-          [suffix]
-          Gtk.Switch {
-            valign: center;
-            notify::active => $on_switch_button_clicked();
-          }
-        }
-
-        Adw.ActionRow {
-          title: "Item 03";
-          subtitle: "Adw.ActionRow()";
-
-          [prefix]
-          Gtk.Image {
-            icon-name: "accessories-text-editor-symbolic";
+            icon-name: 'accessories-text-editor-symbolic';
           }
 
           [suffix]
@@ -77,12 +61,28 @@ template $ExampleWindow : Adw.ApplicationWindow {
         }
 
         Adw.ActionRow {
-          title: "Item 04";
-          subtitle: "Adw.ActionRow()";
+          title: 'Item 03';
+          subtitle: 'Adw.ActionRow()';
 
           [prefix]
           Gtk.Image {
-            icon-name: "accessories-text-editor-symbolic";
+            icon-name: 'accessories-text-editor-symbolic';
+          }
+
+          [suffix]
+          Gtk.Switch {
+            valign: center;
+            notify::active => $on_switch_button_clicked();
+          }
+        }
+
+        Adw.ActionRow {
+          title: 'Item 04';
+          subtitle: 'Adw.ActionRow()';
+
+          [prefix]
+          Gtk.Image {
+            icon-name: 'accessories-text-editor-symbolic';
           }
           
           [suffix]
@@ -93,12 +93,12 @@ template $ExampleWindow : Adw.ApplicationWindow {
         }
 
         Adw.ActionRow {
-          title: "Item 05";
-          subtitle: "Adw.ActionRow()";
+          title: 'Item 05';
+          subtitle: 'Adw.ActionRow()';
 
           [prefix]
           Gtk.Image {
-            icon-name: "accessories-text-editor-symbolic";
+            icon-name: 'accessories-text-editor-symbolic';
           }
 
           [suffix]

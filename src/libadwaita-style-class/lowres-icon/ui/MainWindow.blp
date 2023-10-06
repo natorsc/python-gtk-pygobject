@@ -2,24 +2,21 @@ using Gtk 4.0;
 using Adw 1;
 
 template $ExampleWindow : Adw.ApplicationWindow {
-  title: "Python e GTK: PyGObject libadwaita style class lowres-icon ui file";
+  title: 'Python and GTK: PyGObject libadwaita style classes';
   default-width: 683;
   default-height: 384;
-
-  Gtk.Box {
-    orientation: vertical;
-    spacing: 12;
-
-    [titlebar]
-    Gtk.HeaderBar header_bar {
+  content: 
+  Adw.ToolbarView {
+    [top]
+    Adw.HeaderBar {
       [end]
-      Gtk.MenuButton {
-        icon-name: "open-menu-symbolic";
+      MenuButton {
+        icon-name: 'open-menu-symbolic';
         menu-model: primary_menu;
       }
     }
-
-    Gtk.Box {
+    content: 
+    Box {
       orientation: vertical;
       margin-top: 12;
       margin-end: 12;
@@ -27,35 +24,30 @@ template $ExampleWindow : Adw.ApplicationWindow {
       margin-start: 12;
       spacing: 12;
 
-      Gtk.Label label {
-        label: "GNOME application icons require a shadow to be readable on a light background. The .icon-dropshadow and .lowres-icon style classes provide this when used with GtkImage or any other widget that contains an image.\n.lowres-icon should be used for icons 32×32 or smaller, and .icon-dropshadow should be used otherwise.\nClasses: ['icon-dropshadow']";
-        vexpand: true;
-        wrap: true;
-      }
-
-      Gtk.Image image_lowres_icon {
-        icon-name: "software-update-urgent-symbolic";
-        pixel-size: 32;
+      Button button {
+        label: 'Lorem Ipsum';
         styles [
-          "lowres-icon",
+          'background',
         ]
       }
 
-      Gtk.Button {
-        label: 'Add/remove class';
-        vexpand: true;
-        valign: end;
+      Button {
+        label: 'Add/Remove class';
         clicked => $on_button_clicked();
       }
     }
+
+    ;
   }
+
+  ;
 }
 
 menu primary_menu {
   section {
     item {
-      label: _("Preferences");
-      action: "app.preferences";
+      label: _('Preferences');
+      action: 'app.preferences';
     }
   }
 }

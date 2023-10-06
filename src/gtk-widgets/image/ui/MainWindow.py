@@ -11,7 +11,7 @@ If you want to load an image, use `Gtk.Picture()`.
 import sys
 from pathlib import Path
 
-from collections.abc import Callable
+
 
 import gi
 

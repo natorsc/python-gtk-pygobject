@@ -1,7 +1,5 @@
 # -*- coding: utf-8 -*-
-"""Python e GTK: PyGObject libadwaita style class devel."""
-
-from collections.abc import Callable
+"""Python and GTK: PyGObject libadwaita style classe."""
 
 import gi
 
@@ -18,16 +16,17 @@ class ExampleWindow(Adw.ApplicationWindow):
     def __init__(self, **kwargs):
         super().__init__(**kwargs)
 
-        self.set_title(title='Python and GTK: PyGObject style class devel')
+        self.set_title(
+            title='Python e GTK: PyGObject libadwaita style classe',
+        )
         self.set_default_size(width=int(1366 / 2), height=int(768 / 2))
         self.set_size_request(width=int(1366 / 2), height=int(768 / 2))
-        self.add_css_class(css_class='devel')
 
-        mbox = Gtk.Box.new(orientation=Gtk.Orientation.VERTICAL, spacing=12)
-        self.set_content(content=mbox)
+        adw_toolbar_view = Adw.ToolbarView.new()
+        self.set_content(content=adw_toolbar_view)
 
-        header_bar = Gtk.HeaderBar.new()
-        mbox.append(child=header_bar)
+        adw_header_bar = Adw.HeaderBar.new()
+        adw_toolbar_view.add_top_bar(widget=adw_header_bar)
 
         menu_button_model = Gio.Menu()
         menu_button_model.append(
@@ -38,34 +37,33 @@ class ExampleWindow(Adw.ApplicationWindow):
         menu_button = Gtk.MenuButton.new()
         menu_button.set_icon_name(icon_name='open-menu-symbolic')
         menu_button.set_menu_model(menu_model=menu_button_model)
-        header_bar.pack_end(child=menu_button)
+        adw_header_bar.pack_end(child=menu_button)
 
         vbox = Gtk.Box.new(orientation=Gtk.Orientation.VERTICAL, spacing=12)
         vbox.set_margin_top(margin=12)
         vbox.set_margin_end(margin=12)
         vbox.set_margin_bottom(margin=12)
         vbox.set_margin_start(margin=12)
-        mbox.append(child=vbox)
+        adw_toolbar_view.set_content(content=vbox)
 
-        self.label = Gtk.Label.new(str="Classes: ['background','csd','devel']")
-        self.label.set_vexpand(expand=True)
-        vbox.append(child=self.label)
+        self.button = Gtk.Button.new_with_label(label='Lorem Ipsum')
+        self.button.add_css_class(css_class='background')
+        vbox.append(child=self.button)
 
         button = Gtk.Button.new_with_label(label='Add/remove class')
+        button.set_vexpand(expand=True)
+        button.set_valign(align=Gtk.Align.END)
         button.connect('clicked', self.on_button_clicked)
         vbox.append(child=button)
 
     def on_button_clicked(self, button):
-        if 'devel' in self.get_css_classes():
-            self.remove_css_class(css_class='devel')
+        if 'background' in self.button.get_css_classes():
+            self.button.remove_css_class(css_class='background')
         else:
-            self.add_css_class(css_class='devel')
-        self.label.set_text(
-            str=f'Classes: {self.get_css_classes()}',
-        )
+            self.button.add_css_class(css_class='background')
 
 
-class ExampleApplication(Gtk.Application):
+class ExampleApplication(Adw.Application):
 
     def __init__(self):
         super().__init__(application_id='br.com.justcode.PyGObject',
@@ -92,8 +90,7 @@ class ExampleApplication(Gtk.Application):
     def exit_app(self, action, param):
         self.quit()
 
-    def create_action(self, name: str, callback: Callable[[str, str], None],
-                      shortcuts: str | None = None):
+    def create_action(self, name, callback, shortcuts=None):
         action = Gio.SimpleAction.new(name=name, parameter_type=None)
         action.connect('activate', callback)
         self.add_action(action=action)

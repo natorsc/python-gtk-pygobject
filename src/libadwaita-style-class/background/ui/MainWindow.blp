@@ -2,24 +2,21 @@ using Gtk 4.0;
 using Adw 1;
 
 template $ExampleWindow : Adw.ApplicationWindow {
-  title: "Python e GTK: PyGObject libadwaita style class background ui file";
+  title: 'Python and GTK: PyGObject libadwaita style classes background';
   default-width: 683;
   default-height: 384;
-
-  Gtk.Box {
-    orientation: vertical;
-    spacing: 12;
-
-    [titlebar]
-    Gtk.HeaderBar header_bar {
+  content: 
+  Adw.ToolbarView {
+    [top]
+    Adw.HeaderBar {
       [end]
-      Gtk.MenuButton {
-        icon-name: "open-menu-symbolic";
+      MenuButton {
+        icon-name: 'open-menu-symbolic';
         menu-model: primary_menu;
       }
     }
-
-    Gtk.Box {
+    content: 
+    Box {
       orientation: vertical;
       margin-top: 12;
       margin-end: 12;
@@ -27,32 +24,32 @@ template $ExampleWindow : Adw.ApplicationWindow {
       margin-start: 12;
       spacing: 12;
 
-      Gtk.Label {
-        label: 'The .background style class can be used with any widget to provide the default background and foreground colors of the window.\n\nThis can be useful when a widget needs an opaque background - for example, a child flap inside an AdwFlap.';
-        wrap: true;
-        vexpand: true;
-      }
-
-      Gtk.Button button_background {
-        label: 'Classes: [text-button]';
+      Button button {
+        label: 'Lorem Ipsum';
         styles [
-          "background",
+          'background',
         ]
       }
 
-      Gtk.Button {
-        label: 'Add/remove class';
+      Button {
+        label: 'Add/Remove class';
+        vexpand: true;
+        valign: end;
         clicked => $on_button_clicked();
       }
     }
+
+    ;
   }
+
+  ;
 }
 
 menu primary_menu {
   section {
     item {
-      label: _("Preferences");
-      action: "app.preferences";
+      label: _('Preferences');
+      action: 'app.preferences';
     }
   }
 }

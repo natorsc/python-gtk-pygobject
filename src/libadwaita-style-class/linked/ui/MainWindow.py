@@ -1,10 +1,9 @@
 # -*- coding: utf-8 -*-
-"""Python e GTK: PyGObject libadwaita style class linked ui file."""
+"""Python and GTK: PyGObject libadwaita style classe."""
 
 import sys
 from pathlib import Path
 
-from collections.abc import Callable
 
 import gi
 
@@ -13,44 +12,37 @@ gi.require_version(namespace='Adw', version='1')
 
 from gi.repository import Adw, Gio, Gtk
 
-Adw.init()
-
 BASE_DIR = Path(__file__).resolve().parent
-APPLICATION_WINDOW = str(BASE_DIR.joinpath('MainWindow.ui'))
+UI = str(BASE_DIR.joinpath('MainWindow.ui'))
 
 _MODULES = BASE_DIR.parent.parent.parent.joinpath('_modules')
 sys.path.append(str(_MODULES))
+
 import _tools
 
 _tools.compile_blueprint_ui(ui_dir=BASE_DIR)
 
+Adw.init()
 
-@Gtk.Template(filename=APPLICATION_WINDOW)
+
+@Gtk.Template(filename=UI)
 class ExampleWindow(Adw.ApplicationWindow):
     __gtype_name__ = 'ExampleWindow'
 
-    label = Gtk.Template.Child(name='label')
-    hbox_linked = Gtk.Template.Child(name='hbox_linked')
+    button = Gtk.Template.Child(name='button')
 
     def __init__(self, **kwargs):
         super().__init__(**kwargs)
 
-        for i in range(4):
-            button = Gtk.Button.new_with_label(label=f'Button {i}')
-            self.hbox_linked.append(child=button)
-
     @Gtk.Template.Callback()
     def on_button_clicked(self, button):
-        if 'linked' in self.hbox_linked.get_css_classes():
-            self.hbox_linked.remove_css_class(css_class='linked')
+        if 'background' in self.button.get_css_classes():
+            self.button.remove_css_class(css_class='background')
         else:
-            self.hbox_linked.add_css_class(css_class='linked')
-        self.label.set_text(
-            str=f'Classes: {self.hbox_linked.get_css_classes()}',
-        )
+            self.button.add_css_class(css_class='background')
 
 
-class ExampleApplication(Gtk.Application):
+class ExampleApplication(Adw.Application):
 
     def __init__(self):
         super().__init__(application_id='br.com.justcode.PyGObject',
@@ -77,8 +69,7 @@ class ExampleApplication(Gtk.Application):
     def exit_app(self, action, param):
         self.quit()
 
-    def create_action(self, name: str, callback: Callable[[str, str], None],
-                      shortcuts: str | None = None):
+    def create_action(self, name, callback, shortcuts=None):
         action = Gio.SimpleAction.new(name=name, parameter_type=None)
         action.connect('activate', callback)
         self.add_action(action=action)

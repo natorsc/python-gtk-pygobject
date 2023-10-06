@@ -8,7 +8,7 @@ template $ExampleWindow : Adw.ApplicationWindow {
   content: 
   Adw.ToolbarView {
     [top]
-    HeaderBar {
+    Adw.HeaderBar {
       [end]
       MenuButton {
         icon-name: 'open-menu-symbolic';
@@ -27,66 +27,66 @@ template $ExampleWindow : Adw.ApplicationWindow {
       ListBox {
         selection-mode: none;
         styles [
-          "boxed-list",
+          'boxed-list',
         ]
 
         Adw.EntryRow {
-          title: "Title 01";
+          title: 'Title 01';
           activates-default: true;
           show-apply-button: true;
           apply => $on_apply_button_pressed();
 
           [prefix]
           Image {
-            icon-name: "accessories-text-editor-symbolic";
+            icon-name: 'accessories-text-editor-symbolic';
           }
         }
 
         Adw.EntryRow {
-          title: "Title 02";
+          title: 'Title 02';
           activates-default: true;
           show-apply-button: true;
           apply => $on_apply_button_pressed();
 
           [prefix]
           Image {
-            icon-name: "accessories-text-editor-symbolic";
+            icon-name: 'accessories-text-editor-symbolic';
           }
         }
 
         Adw.EntryRow {
-          title: "Title 03";
+          title: 'Title 03';
           activates-default: true;
           show-apply-button: true;
           apply => $on_apply_button_pressed();
           
           [prefix]
           Image {
-            icon-name: "accessories-text-editor-symbolic";
+            icon-name: 'accessories-text-editor-symbolic';
           }
         }
 
         Adw.EntryRow {
-          title: "Title 04";
+          title: 'Title 04';
           activates-default: true;
           show-apply-button: true;
           apply => $on_apply_button_pressed();
 
           [prefix]
           Image {
-            icon-name: "accessories-text-editor-symbolic";
+            icon-name: 'accessories-text-editor-symbolic';
           }
         }
 
         Adw.EntryRow {
-          title: "Title 05";
+          title: 'Title 05';
           activates-default: true;
           show-apply-button: true;
           apply => $on_apply_button_pressed();
           
           [prefix]
           Image {
-            icon-name: "accessories-text-editor-symbolic";
+            icon-name: 'accessories-text-editor-symbolic';
           }
         }
       }

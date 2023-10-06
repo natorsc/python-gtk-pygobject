@@ -1,25 +1,22 @@
- using Gtk 4.0;
+using Gtk 4.0;
 using Adw 1;
 
 template $ExampleWindow : Adw.ApplicationWindow {
-  title: "Python e GTK: PyGObject libadwaita style class navigation-sidebar ui file";
+  title: 'Python and GTK: PyGObject libadwaita style classes';
   default-width: 683;
   default-height: 384;
-
-  Gtk.Box {
-    orientation: vertical;
-    spacing: 12;
-
-    [titlebar]
-    Gtk.HeaderBar header_bar {
+  content: 
+  Adw.ToolbarView {
+    [top]
+    Adw.HeaderBar {
       [end]
-      Gtk.MenuButton {
-        icon-name: "open-menu-symbolic";
+      MenuButton {
+        icon-name: 'open-menu-symbolic';
         menu-model: primary_menu;
       }
     }
-
-    Gtk.Box {
+    content: 
+    Box {
       orientation: vertical;
       margin-top: 12;
       margin-end: 12;
@@ -27,50 +24,30 @@ template $ExampleWindow : Adw.ApplicationWindow {
       margin-start: 12;
       spacing: 12;
 
-      Gtk.Label label {
-        label: "Classes: ['navigation-sidebar'].";
-      }
-
-      Gtk.ListBox list_box {
-        selection-mode: none;
+      Button button {
+        label: 'Lorem Ipsum';
         styles [
-          "navigation-sidebar",
+          'background',
         ]
-
-        Gtk.ListBoxRow {
-          Gtk.Label {
-            label: "ListBox - 01";
-          }
-        }
-
-        Gtk.ListBoxRow {
-          Gtk.Label {
-            label: "ListBox - 02";
-          }
-        }
-
-        Gtk.ListBoxRow {
-          Gtk.Label {
-            label: "ListBox - 03";
-          }
-        }
       }
 
-      Gtk.Button {
-        label: 'Add/remove class';
-        vexpand: true;
-        valign: end;
+      Button {
+        label: 'Add/Remove class';
         clicked => $on_button_clicked();
       }
     }
+
+    ;
   }
+
+  ;
 }
 
 menu primary_menu {
   section {
     item {
-      label: _("Preferences");
-      action: "app.preferences";
+      label: _('Preferences');
+      action: 'app.preferences';
     }
   }
 }

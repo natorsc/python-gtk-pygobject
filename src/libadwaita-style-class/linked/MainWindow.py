@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 """Python e GTK: PyGObject libadwaita style class linked."""
 
-from collections.abc import Callable
+
 
 import gi
 
@@ -76,7 +76,7 @@ class ExampleWindow(Adw.ApplicationWindow):
         )
 
 
-class ExampleApplication(Gtk.Application):
+class ExampleApplication(Adw.Application):
 
     def __init__(self):
         super().__init__(application_id='br.com.justcode.PyGObject',
@@ -103,8 +103,7 @@ class ExampleApplication(Gtk.Application):
     def exit_app(self, action, param):
         self.quit()
 
-    def create_action(self, name: str, callback: Callable[[str, str], None],
-                      shortcuts: str | None = None):
+    def create_action(self, name, callback, shortcuts=None):
         action = Gio.SimpleAction.new(name=name, parameter_type=None)
         action.connect('activate', callback)
         self.add_action(action=action)
@@ -116,7 +115,5 @@ class ExampleApplication(Gtk.Application):
 
 
 if __name__ == '__main__':
-    import sys
-
     app = ExampleApplication()
     app.run(sys.argv)

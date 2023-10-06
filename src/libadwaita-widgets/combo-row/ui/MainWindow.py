@@ -7,7 +7,7 @@ blueprint-compiler: `error: unsupported XML tag: <items>`.
 import sys
 from pathlib import Path
 
-from collections.abc import Callable
+
 
 import gi
 

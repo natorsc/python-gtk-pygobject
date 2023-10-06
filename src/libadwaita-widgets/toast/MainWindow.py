@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 """Python e GTK: PyGObject libadwaita Adw.Toast()."""
 
-from collections.abc import Callable
+
 
 import gi
 
@@ -22,8 +22,11 @@ class ExampleWindow(Adw.ApplicationWindow):
         self.set_default_size(width=int(1366 / 2), height=int(768 / 2))
         self.set_size_request(width=int(1366 / 2), height=int(768 / 2))
 
-        header_bar = Gtk.HeaderBar.new()
-        self.set_titlebar(titlebar=header_bar)
+        adw_toolbar_view = Adw.ToolbarView.new()
+        self.set_content(content=adw_toolbar_view)
+
+        adw_header_bar = Adw.HeaderBar.new()
+        adw_toolbar_view.add_top_bar(widget=adw_header_bar)
 
         menu_button_model = Gio.Menu()
         menu_button_model.append(
@@ -34,33 +37,48 @@ class ExampleWindow(Adw.ApplicationWindow):
         menu_button = Gtk.MenuButton.new()
         menu_button.set_icon_name(icon_name='open-menu-symbolic')
         menu_button.set_menu_model(menu_model=menu_button_model)
-        header_bar.pack_end(child=menu_button)
+        adw_header_bar.pack_end(child=menu_button)
 
         self.toast_overlay = Adw.ToastOverlay.new()
-        self.set_child(child=self.toast_overlay)
-
+        adw_toolbar_view.set_content(content=self.toast_overlay)
+        
         vbox = Gtk.Box.new(orientation=Gtk.Orientation.VERTICAL, spacing=12)
         vbox.set_margin_top(margin=12)
         vbox.set_margin_end(margin=12)
         vbox.set_margin_bottom(margin=12)
         vbox.set_margin_start(margin=12)
         self.toast_overlay.set_child(child=vbox)
-
+        
         self.button = Gtk.Button.new_with_label(label='Click here')
+        self.button.set_valign(Gtk.Align.CENTER)
+        self.button.set_vexpand(expand=True)
         self.button.connect('clicked', self.on_button_clicked)
         vbox.append(child=self.button)
 
-        self.toast = Adw.Toast.new(title='')
+        self.toast = Adw.Toast.new(title='Lorem Ipsum')
+        self.toast.set_button_label(button_label='Undo')
+        self.toast.set_action_name(action_name='app.toast')
         self.toast.connect('dismissed', self.on_toast_dismissed)
+        self.toast.connect('button-clicked', self.on_toast_button_clicked)
 
+         
     def on_button_clicked(self, button):
         button.set_sensitive(sensitive=False)
-        self.toast.set_title(title='Toast message')
         self.toast_overlay.add_toast(self.toast)
 
+
     def on_toast_dismissed(self, toast):
-        print('The toast was closed')
+        """Emitted when the toast has been dismissed."""
+        print('[!] dismissed [!]')
+        print('Emitted when the toast has been dismissed')
         self.button.set_sensitive(sensitive=True)
+
+
+    def on_toast_button_clicked(self, toast):
+        """Emitted after the button has been clicked."""
+        print('[!] button-clicked [!]')
+        print('Emitted after the button has been clicked.')
+
 
 
 class ExampleApplication(Adw.Application):
@@ -71,6 +89,7 @@ class ExampleApplication(Adw.Application):
 
         self.create_action('quit', self.exit_app, ['<primary>q'])
         self.create_action('preferences', self.on_preferences_action)
+        self.create_action('toast', self.on_toast_action)
 
     def do_activate(self):
         win = self.props.active_window
@@ -86,6 +105,12 @@ class ExampleApplication(Adw.Application):
 
     def on_preferences_action(self, action, param):
         print('Action `app.preferences` was active.')
+
+    def on_toast_action(self, action, param):
+        """It will be activated when clicking the button."""
+        print('[!] action-name [!]')
+        print('Action `app.toast` was active.')
+        print('It will be activated when clicking the button')
 
     def exit_app(self, action, param):
         self.quit()

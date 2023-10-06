@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 """Python e GTK: PyGObject libadwaita Adw.CarouselIndicatorDots()."""
 
-from collections.abc import Callable
+
 
 import gi
 
@@ -27,8 +27,8 @@ class ExampleWindow(Adw.ApplicationWindow):
         adw_toolbar_view = Adw.ToolbarView.new()
         self.set_content(content=adw_toolbar_view)
 
-        header_bar = Gtk.HeaderBar.new()
-        adw_toolbar_view.add_top_bar(widget=header_bar)
+        adw_header_bar = Adw.HeaderBar.new()
+        adw_toolbar_view.add_top_bar(widget=adw_header_bar)
 
         menu_button_model = Gio.Menu()
         menu_button_model.append(
@@ -39,7 +39,7 @@ class ExampleWindow(Adw.ApplicationWindow):
         menu_button = Gtk.MenuButton.new()
         menu_button.set_icon_name(icon_name='open-menu-symbolic')
         menu_button.set_menu_model(menu_model=menu_button_model)
-        header_bar.pack_end(child=menu_button)
+        adw_header_bar.pack_end(child=menu_button)
 
         vbox = Gtk.Box.new(orientation=Gtk.Orientation.VERTICAL, spacing=12)
         vbox.set_margin_top(margin=12)

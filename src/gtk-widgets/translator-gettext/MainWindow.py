@@ -5,7 +5,7 @@ import configparser
 import gettext
 from pathlib import Path
 
-from collections.abc import Callable
+
 
 import gi
 

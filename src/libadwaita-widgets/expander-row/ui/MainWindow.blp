@@ -8,7 +8,7 @@ template $ExampleWindow : Adw.ApplicationWindow {
   content: 
   Adw.ToolbarView {
     [top]
-    HeaderBar {
+    Adw.HeaderBar {
       [end]
       MenuButton {
         icon-name: 'open-menu-symbolic';
@@ -28,68 +28,68 @@ template $ExampleWindow : Adw.ApplicationWindow {
         selection-mode: none;
 
         styles [
-          "boxed-list",
+          'boxed-list',
         ]
 
         Adw.ExpanderRow {
-          title: "Item 01";
-          subtitle: "Adw.ExpanderRow()";
+          title: 'Item 01';
+          subtitle: 'Adw.ExpanderRow()';
           
           [prefix]
           Image {
-            icon-name: "accessories-text-editor-symbolic";
+            icon-name: 'accessories-text-editor-symbolic';
           }
 
           Gtk.Label {
-            label: "<big>Lorem ipsum</big>\n\nLorem ipsum dolor sit amet, consectetur...";
+            label: '<big>Lorem ipsum</big>\n\nLorem ipsum dolor sit amet, consectetur...';
             use-markup: true;
             wrap: true;
           }
         }
 
         Adw.ExpanderRow {
-          title: "Item 02";
-          subtitle: "Adw.ExpanderRow()";
+          title: 'Item 02';
+          subtitle: 'Adw.ExpanderRow()';
 
           [prefix]
           Image {
-            icon-name: "accessories-text-editor-symbolic";
+            icon-name: 'accessories-text-editor-symbolic';
           }
 
           Gtk.Label {
-            label: "<big>Lorem ipsum</big>\n\nLorem ipsum dolor sit amet, consectetur...";
+            label: '<big>Lorem ipsum</big>\n\nLorem ipsum dolor sit amet, consectetur...';
             use-markup: true;
             wrap: true;
           }
         }
 
         Adw.ExpanderRow {
-          title: "Item 03";
-          subtitle: "Adw.ExpanderRow()";
+          title: 'Item 03';
+          subtitle: 'Adw.ExpanderRow()';
           
           [prefix]
           Image {
-            icon-name: "accessories-text-editor-symbolic";
+            icon-name: 'accessories-text-editor-symbolic';
           }
 
           Gtk.Label {
-            label: "<big>Lorem ipsum</big>\n\nLorem ipsum dolor sit amet, consectetur...";
+            label: '<big>Lorem ipsum</big>\n\nLorem ipsum dolor sit amet, consectetur...';
             use-markup: true;
             wrap: true;
           }
         }
 
         Adw.ExpanderRow {
-          title: "Item 04";
-          subtitle: "Adw.ExpanderRow()";
+          title: 'Item 04';
+          subtitle: 'Adw.ExpanderRow()';
           
           [prefix]
           Image {
-            icon-name: "accessories-text-editor-symbolic";
+            icon-name: 'accessories-text-editor-symbolic';
           }
 
           Gtk.Label {
-            label: "<big>Lorem ipsum</big>\n\nLorem ipsum dolor sit amet, consectetur...";
+            label: '<big>Lorem ipsum</big>\n\nLorem ipsum dolor sit amet, consectetur...';
             use-markup: true;
             wrap: true;
           }

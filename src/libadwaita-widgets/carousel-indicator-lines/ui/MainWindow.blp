@@ -8,7 +8,7 @@ template $ExampleWindow : Adw.ApplicationWindow {
   content: 
   Adw.ToolbarView {
     [top]
-    HeaderBar {
+    Adw.HeaderBar {
       [end]
       MenuButton {
         icon-name: 'open-menu-symbolic';
@@ -25,7 +25,7 @@ template $ExampleWindow : Adw.ApplicationWindow {
       margin-start: 12;
       
       Gtk.Label {
-        label: "Drag or use the mouse scroller to change pages.";
+        label: 'Drag or use the mouse scroller to change pages.';
       }
 
       Separator {
@@ -42,7 +42,7 @@ template $ExampleWindow : Adw.ApplicationWindow {
           orientation: vertical;
 
           Gtk.Label {
-            label: "Page 01.";
+            label: 'Page 01.';
           }
         }
 
@@ -50,7 +50,7 @@ template $ExampleWindow : Adw.ApplicationWindow {
           orientation: vertical;
 
           Gtk.Label {
-            label: "Page 02.";
+            label: 'Page 02.';
           }
         }
 
@@ -58,7 +58,7 @@ template $ExampleWindow : Adw.ApplicationWindow {
           orientation: vertical;
 
           Gtk.Label {
-            label: "Page 03.";
+            label: 'Page 03.';
           }
         }
       }

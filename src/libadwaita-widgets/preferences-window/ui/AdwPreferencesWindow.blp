@@ -2,21 +2,21 @@ using Gtk 4.0;
 using Adw 1;
 
 template $PreferencesWindow : Adw.PreferencesWindow {
-  title: "Python e GTK: PyGObject libadwaita Adw.PreferencesWindow() ui file";
+  title: 'Python e GTK: PyGObject libadwaita Adw.PreferencesWindow() ui file';
   modal: true;
   default-width: 455;
   default-height: 256;
 
   Adw.PreferencesPage {
     Adw.PreferencesGroup {
-      title: "AdwPreferencesPage";
-      description: "AdwPreferencesGroup";
+      title: 'AdwPreferencesPage';
+      description: 'AdwPreferencesGroup';
       header-suffix: header_suffix;
 
       Adw.ActionRow {
-        icon-name: "edit-find-symbolic";
-        title: "Libadwaita";
-        subtitle: "Adw.ActionRow()";
+        icon-name: 'edit-find-symbolic';
+        title: 'Libadwaita';
+        subtitle: 'Adw.ActionRow()';
 
         Switch {
           valign: center;
@@ -25,9 +25,9 @@ template $PreferencesWindow : Adw.PreferencesWindow {
       }
 
       Adw.ActionRow {
-        icon-name: "edit-find-symbolic";
-        title: "Libadwaita - Clicking on the widget line toggles it on and off\n                                ";
-        subtitle: "Adw.ActionRow()";
+        icon-name: 'edit-find-symbolic';
+        title: 'Libadwaita - Clicking on the widget line toggles it on and off\n                                ';
+        subtitle: 'Adw.ActionRow()';
         activatable-widget: switch;
 
         Switch switch {
@@ -40,10 +40,10 @@ template $PreferencesWindow : Adw.PreferencesWindow {
 }
 
 Button header_suffix {
-  icon-name: "list-add-symbolic";
+  icon-name: 'list-add-symbolic';
   clicked => $on_button_clicked();
 
   styles [
-    "flat",
+    'flat',
   ]
 }

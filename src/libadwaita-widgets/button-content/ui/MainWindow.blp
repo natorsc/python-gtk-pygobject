@@ -8,7 +8,7 @@ template $ExampleWindow : Adw.ApplicationWindow {
   content: 
   Adw.ToolbarView {
     [top]
-    HeaderBar {
+    Adw.HeaderBar {
       [end]
       MenuButton {
         icon-name: 'open-menu-symbolic';
@@ -30,8 +30,8 @@ template $ExampleWindow : Adw.ApplicationWindow {
         clicked => $on_button_clicked();
         child:
         Adw.ButtonContent {
-          icon-name: "document-open-symbolic";
-          label: _("Open");
+          icon-name: 'document-open-symbolic';
+          label: _('Open');
           use-underline: true;
         }
 

@@ -1,53 +1,66 @@
 using Gtk 4.0;
 using Adw 1;
 
-template $ExampleWindow: Gtk.ApplicationWindow {
-  title: "Python e GTK: PyGObject libadwaita Adw.Toast() ui file";
+template $ExampleWindow : Adw.ApplicationWindow {
+  title: 'Python e GTK: PyGObject libadwaita Adw.Toast() ui file';
   default-width: 683;
   default-height: 384;
-
-  [titlebar]
-  Gtk.HeaderBar header_bar {
-    [end]
-    Gtk.MenuButton {
-      icon-name: "open-menu-symbolic";
-      menu-model: primary_menu;
-    }
-  }
-
-  Adw.ToastOverlay toast_overlay {
-    margin-top: 12;
-    margin-end: 12;
-    margin-bottom: 12;
-    margin-start: 12;
-
-    Gtk.Box {
-      orientation: vertical;
-      margin-top: 12;
-      margin-end: 12;
-      margin-bottom: 12;
-      margin-start: 12;
-      spacing: 12;
-
-      Button button {
-        label: "Click here";
-        valign: center;
-        vexpand: true;
-        clicked => $on_button_clicked();
+  content: 
+  Adw.ToolbarView {
+    [top]
+    Adw.HeaderBar {
+      [end]
+      MenuButton {
+        icon-name: 'open-menu-symbolic';
+        menu-model: primary_menu;
       }
     }
+    content: 
+    Adw.ToastOverlay toast_overlay {
+      child:
+      Box {
+        orientation: vertical;
+        spacing: 12;
+        margin-top: 12;
+        margin-end: 12;
+        margin-bottom: 12;
+        margin-start: 12;
+
+        Button button {
+          label: 'Click here';
+          valign: center;
+          vexpand: true;
+          clicked => $on_button_clicked();
+        }
+      }
+
+      ;
+    }
+
+    ;
   }
+
+  ;
 }
 
 Adw.Toast toast {
+  title: 'Lorem Ipsum';
+  button-label: 'Undo';
+  action-name: 'app.toast';
   dismissed => $on_toast_dismissed();
+  button-clicked => $on_toast_button_clicked();
 }
 
 menu primary_menu {
   section {
     item {
-      label: _("Preferences");
-      action: "app.preferences";
+      label: _('Preferences');
+      action: 'app.preferences';
     }
   }
 }
+
+  
+
+
+

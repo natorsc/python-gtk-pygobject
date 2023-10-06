@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 """Python e GTK: PyGObject libadwaita Adw.SplitButton()."""
 
-from collections.abc import Callable
+
 
 import gi
 
@@ -19,12 +19,16 @@ class ExampleWindow(Adw.ApplicationWindow):
         super().__init__(**kwargs)
 
         self.set_title(
-            title='Python e GTK: PyGObject libadwaita Adw.SplitButton()')
+            title='Python e GTK: PyGObject libadwaita Adw.SplitButton()',
+        )
         self.set_default_size(width=int(1366 / 2), height=int(768 / 2))
         self.set_size_request(width=int(1366 / 2), height=int(768 / 2))
 
-        header_bar = Gtk.HeaderBar.new()
-        self.set_titlebar(titlebar=header_bar)
+        adw_toolbar_view = Adw.ToolbarView.new()
+        self.set_content(content=adw_toolbar_view)
+
+        adw_header_bar = Adw.HeaderBar.new()
+        adw_toolbar_view.add_top_bar(widget=adw_header_bar)
 
         menu_button_model = Gio.Menu()
         menu_button_model.append(
@@ -35,14 +39,14 @@ class ExampleWindow(Adw.ApplicationWindow):
         menu_button = Gtk.MenuButton.new()
         menu_button.set_icon_name(icon_name='open-menu-symbolic')
         menu_button.set_menu_model(menu_model=menu_button_model)
-        header_bar.pack_end(child=menu_button)
+        adw_header_bar.pack_end(child=menu_button)
 
         vbox = Gtk.Box.new(orientation=Gtk.Orientation.VERTICAL, spacing=12)
         vbox.set_margin_top(margin=12)
         vbox.set_margin_end(margin=12)
         vbox.set_margin_bottom(margin=12)
         vbox.set_margin_start(margin=12)
-        self.set_child(child=vbox)
+        adw_toolbar_view.set_content(content=vbox)
 
         gio_menu = Gio.Menu.new()
 

@@ -1,10 +1,9 @@
 # -*- coding: utf-8 -*-
-"""Python e GTK: PyGObject libadwaita style class title ui file."""
+"""Python and GTK: PyGObject libadwaita style classe."""
 
 import sys
 from pathlib import Path
 
-from collections.abc import Callable
 
 import gi
 
@@ -13,39 +12,37 @@ gi.require_version(namespace='Adw', version='1')
 
 from gi.repository import Adw, Gio, Gtk
 
-Adw.init()
-
 BASE_DIR = Path(__file__).resolve().parent
-APPLICATION_WINDOW = str(BASE_DIR.joinpath('MainWindow.ui'))
+UI = str(BASE_DIR.joinpath('MainWindow.ui'))
 
 _MODULES = BASE_DIR.parent.parent.parent.joinpath('_modules')
 sys.path.append(str(_MODULES))
+
 import _tools
 
 _tools.compile_blueprint_ui(ui_dir=BASE_DIR)
 
+Adw.init()
 
-@Gtk.Template(filename=APPLICATION_WINDOW)
+
+@Gtk.Template(filename=UI)
 class ExampleWindow(Adw.ApplicationWindow):
     __gtype_name__ = 'ExampleWindow'
 
-    label_title_1 = Gtk.Template.Child(name='label_title_1')
+    button = Gtk.Template.Child(name='button')
 
     def __init__(self, **kwargs):
         super().__init__(**kwargs)
 
     @Gtk.Template.Callback()
     def on_button_clicked(self, button):
-        if 'title-1' in self.label_title_1.get_css_classes():
-            self.label_title_1.remove_css_class(css_class='title-1')
+        if 'background' in self.button.get_css_classes():
+            self.button.remove_css_class(css_class='background')
         else:
-            self.label_title_1.add_css_class(css_class='title-1')
-        self.label_title_1.set_text(
-            str=f'Label with the class: {self.label_title_1.get_css_classes()}',
-        )
+            self.button.add_css_class(css_class='background')
 
 
-class ExampleApplication(Gtk.Application):
+class ExampleApplication(Adw.Application):
 
     def __init__(self):
         super().__init__(application_id='br.com.justcode.PyGObject',
@@ -72,8 +69,7 @@ class ExampleApplication(Gtk.Application):
     def exit_app(self, action, param):
         self.quit()
 
-    def create_action(self, name: str, callback: Callable[[str, str], None],
-                      shortcuts: str | None = None):
+    def create_action(self, name, callback, shortcuts=None):
         action = Gio.SimpleAction.new(name=name, parameter_type=None)
         action.connect('activate', callback)
         self.add_action(action=action)

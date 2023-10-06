@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 """Python e GTK: PyGObject Gtk.ActionBar()."""
 
-from collections.abc import Callable
+
 
 import gi
 

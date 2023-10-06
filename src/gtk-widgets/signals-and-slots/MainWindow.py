@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 """Python e GTK: PyGObject Signal e Slots."""
 
-from collections.abc import Callable
+
 
 import gi
 

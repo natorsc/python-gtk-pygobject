@@ -8,7 +8,7 @@ template $ExampleWindow : Adw.ApplicationWindow {
   content: 
   Adw.ToolbarView {
     [top]
-    HeaderBar {
+    Adw.HeaderBar {
       [end]
       MenuButton {
         icon-name: 'open-menu-symbolic';
@@ -27,66 +27,66 @@ template $ExampleWindow : Adw.ApplicationWindow {
       ListBox {
         selection-mode: none;
         styles [
-          "boxed-list",
+          'boxed-list',
         ]
 
         Adw.ComboRow {
-          title: "Title 01";
+          title: 'Title 01';
           model: model;
           notify::selected => $on_adw_combo_row_selected();
           notify::selected-item => $on_adw_combo_row_selected_item();
 
           [prefix]
           Image {
-            icon-name: "accessories-text-editor-symbolic";
+            icon-name: 'accessories-text-editor-symbolic';
           }
         }
 
         Adw.ComboRow {
-          title: "Title 02";
+          title: 'Title 02';
           model: model;
           notify::selected => $on_adw_combo_row_selected();
           notify::selected-item => $on_adw_combo_row_selected_item();
 
           [prefix]
           Image {
-            icon-name: "accessories-text-editor-symbolic";
+            icon-name: 'accessories-text-editor-symbolic';
           }
         }
 
         Adw.ComboRow {
-          title: "Title 03";
+          title: 'Title 03';
           model: model;
           notify::selected => $on_adw_combo_row_selected();
           notify::selected-item => $on_adw_combo_row_selected_item();
               
           [prefix]
           Image {
-            icon-name: "accessories-text-editor-symbolic";
+            icon-name: 'accessories-text-editor-symbolic';
           }
         }
 
         Adw.ComboRow {
-          title: "Title 04";
+          title: 'Title 04';
           model: model;
           notify::selected => $on_adw_combo_row_selected();
           notify::selected-item => $on_adw_combo_row_selected_item();
           
           [prefix]
           Image {
-            icon-name: "accessories-text-editor-symbolic";
+            icon-name: 'accessories-text-editor-symbolic';
           }
         }
 
         Adw.ComboRow {
-          title: "Title 05";
+          title: 'Title 05';
           model: model;
           notify::selected => $on_adw_combo_row_selected();
           notify::selected-item => $on_adw_combo_row_selected_item();
           
           [prefix]
           Image {
-            icon-name: "accessories-text-editor-symbolic";
+            icon-name: 'accessories-text-editor-symbolic';
           }
         }
       }

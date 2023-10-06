@@ -1,15 +1,15 @@
 using Gtk 4.0;
 
 template $ExampleWindow: Gtk.ApplicationWindow {
-  title: "Python e GTK: PyGObject libadwaita Adw.PreferencesWindow() ui file";
+  title: 'Python e GTK: PyGObject libadwaita Adw.PreferencesWindow() ui file';
   default-width: 683;
   default-height: 384;
 
   [titlebar]
-  Gtk.HeaderBar header_bar {
+  Gtk.HeaderBar adw_header_bar {
     [end]
     Gtk.MenuButton {
-      icon-name: "open-menu-symbolic";
+      icon-name: 'open-menu-symbolic';
       menu-model: primary_menu;
     }
   }
@@ -23,7 +23,7 @@ template $ExampleWindow: Gtk.ApplicationWindow {
     spacing: 12;
 
     Gtk.Label {
-      label: "Acesse o menu e clique em preferências.";
+      label: 'Acesse o menu e clique em preferências.';
     }
   }
 }
@@ -31,8 +31,8 @@ template $ExampleWindow: Gtk.ApplicationWindow {
 menu primary_menu {
   section {
     item {
-      label: _("_Preferências");
-      action: "app.preferences";
+      label: _('_Preferências');
+      action: 'app.preferences';
     }
   }
 }

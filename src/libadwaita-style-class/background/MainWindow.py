@@ -1,7 +1,5 @@
 # -*- coding: utf-8 -*-
-"""Python e GTK: PyGObject libadwaita style class background."""
-
-from collections.abc import Callable
+"""Python e GTK: PyGObject libadwaita style classe background."""
 
 import gi
 
@@ -13,18 +11,22 @@ from gi.repository import Adw, Gio, Gtk
 Adw.init()
 
 
-class ExampleWindow(Gtk.ApplicationWindow):
+class ExampleWindow(Adw.ApplicationWindow):
 
     def __init__(self, **kwargs):
         super().__init__(**kwargs)
 
         self.set_title(
-            title='Python e GTK: PyGObject libadwaita style class background')
+            title='Python e GTK: PyGObject libadwaita style classe background',
+        )
         self.set_default_size(width=int(1366 / 2), height=int(768 / 2))
         self.set_size_request(width=int(1366 / 2), height=int(768 / 2))
 
-        header_bar = Gtk.HeaderBar.new()
-        self.set_titlebar(titlebar=header_bar)
+        adw_toolbar_view = Adw.ToolbarView.new()
+        self.set_content(content=adw_toolbar_view)
+
+        adw_header_bar = Adw.HeaderBar.new()
+        adw_toolbar_view.add_top_bar(widget=adw_header_bar)
 
         menu_button_model = Gio.Menu()
         menu_button_model.append(
@@ -35,47 +37,33 @@ class ExampleWindow(Gtk.ApplicationWindow):
         menu_button = Gtk.MenuButton.new()
         menu_button.set_icon_name(icon_name='open-menu-symbolic')
         menu_button.set_menu_model(menu_model=menu_button_model)
-        header_bar.pack_end(child=menu_button)
+        adw_header_bar.pack_end(child=menu_button)
 
         vbox = Gtk.Box.new(orientation=Gtk.Orientation.VERTICAL, spacing=12)
         vbox.set_margin_top(margin=12)
         vbox.set_margin_end(margin=12)
         vbox.set_margin_bottom(margin=12)
         vbox.set_margin_start(margin=12)
-        self.set_child(child=vbox)
+        adw_toolbar_view.set_content(content=vbox)
 
-        label = Gtk.Label.new(
-            str='The .background style class can be used with any '
-                'widget to provide the default background and foreground '
-                'of the window.\n\nThis can be useful when a widget needs an '
-                'opaque background - for example, a child flap inside an '
-                'AdwFlap.'
-        )
-        label.set_wrap(wrap=True)
-        label.set_vexpand(expand=True)
-        vbox.append(child=label)
-
-        self.button_class = Gtk.Button.new_with_label(
-            label='Classes: [text-button]',
-        )
-        self.button_class.add_css_class(css_class='background')
-        vbox.append(child=self.button_class)
+        self.button = Gtk.Button.new_with_label(label='Lorem Ipsum')
+        self.button.add_css_class(css_class='background')
+        vbox.append(child=self.button)
 
         button = Gtk.Button.new_with_label(label='Add/remove class')
+        button.set_vexpand(expand=True)
+        button.set_valign(align=Gtk.Align.END)
         button.connect('clicked', self.on_button_clicked)
         vbox.append(child=button)
 
     def on_button_clicked(self, button):
-        if 'background' in self.button_class.get_css_classes():
-            self.button_class.remove_css_class(css_class='background')
+        if 'background' in self.button.get_css_classes():
+            self.button.remove_css_class(css_class='background')
         else:
-            self.button_class.add_css_class(css_class='background')
-        self.button_class.set_label(
-            label=f'Classes: {self.button_class.get_css_classes()}',
-        )
+            self.button.add_css_class(css_class='background')
 
 
-class ExampleApplication(Gtk.Application):
+class ExampleApplication(Adw.Application):
 
     def __init__(self):
         super().__init__(application_id='br.com.justcode.PyGObject',
@@ -102,8 +90,7 @@ class ExampleApplication(Gtk.Application):
     def exit_app(self, action, param):
         self.quit()
 
-    def create_action(self, name: str, callback: Callable[[str, str], None],
-                      shortcuts: str | None = None):
+    def create_action(self, name, callback, shortcuts=None):
         action = Gio.SimpleAction.new(name=name, parameter_type=None)
         action.connect('activate', callback)
         self.add_action(action=action)
