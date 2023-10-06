@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-"""Python and GTK: PyGObject libadwaita style classe."""
+"""Python e GTK: PyGObject libadwaita style classe devel."""
 
 import gi
 
@@ -17,7 +17,7 @@ class ExampleWindow(Adw.ApplicationWindow):
         super().__init__(**kwargs)
 
         self.set_title(
-            title='Python e GTK: PyGObject libadwaita style classe',
+            title='Python e GTK: PyGObject libadwaita style classe devel',
         )
         self.set_default_size(width=int(1366 / 2), height=int(768 / 2))
         self.set_size_request(width=int(1366 / 2), height=int(768 / 2))
@@ -25,8 +25,9 @@ class ExampleWindow(Adw.ApplicationWindow):
         adw_toolbar_view = Adw.ToolbarView.new()
         self.set_content(content=adw_toolbar_view)
 
-        adw_header_bar = Adw.HeaderBar.new()
-        adw_toolbar_view.add_top_bar(widget=adw_header_bar)
+        self.adw_header_bar = Adw.HeaderBar.new()
+        self.adw_header_bar.add_css_class(css_class='devel')
+        adw_toolbar_view.add_top_bar(widget=self.adw_header_bar)
 
         menu_button_model = Gio.Menu()
         menu_button_model.append(
@@ -37,7 +38,7 @@ class ExampleWindow(Adw.ApplicationWindow):
         menu_button = Gtk.MenuButton.new()
         menu_button.set_icon_name(icon_name='open-menu-symbolic')
         menu_button.set_menu_model(menu_model=menu_button_model)
-        adw_header_bar.pack_end(child=menu_button)
+        self.adw_header_bar.pack_end(child=menu_button)
 
         vbox = Gtk.Box.new(orientation=Gtk.Orientation.VERTICAL, spacing=12)
         vbox.set_margin_top(margin=12)
@@ -46,10 +47,6 @@ class ExampleWindow(Adw.ApplicationWindow):
         vbox.set_margin_start(margin=12)
         adw_toolbar_view.set_content(content=vbox)
 
-        self.button = Gtk.Button.new_with_label(label='Lorem Ipsum')
-        self.button.add_css_class(css_class='background')
-        vbox.append(child=self.button)
-
         button = Gtk.Button.new_with_label(label='Add/remove class')
         button.set_vexpand(expand=True)
         button.set_valign(align=Gtk.Align.END)
@@ -57,10 +54,10 @@ class ExampleWindow(Adw.ApplicationWindow):
         vbox.append(child=button)
 
     def on_button_clicked(self, button):
-        if 'background' in self.button.get_css_classes():
-            self.button.remove_css_class(css_class='background')
+        if 'devel' in self.adw_header_bar.get_css_classes():
+            self.adw_header_bar.remove_css_class(css_class='devel')
         else:
-            self.button.add_css_class(css_class='background')
+            self.adw_header_bar.add_css_class(css_class='devel')
 
 
 class ExampleApplication(Adw.Application):

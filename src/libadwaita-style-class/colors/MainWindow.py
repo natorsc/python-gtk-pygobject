@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-"""Python and GTK: PyGObject libadwaita style classe."""
+"""Python e GTK: PyGObject libadwaita style classe colors."""
 
 import gi
 
@@ -17,7 +17,7 @@ class ExampleWindow(Adw.ApplicationWindow):
         super().__init__(**kwargs)
 
         self.set_title(
-            title='Python e GTK: PyGObject libadwaita style classe',
+            title='Python e GTK: PyGObject libadwaita style classe colors',
         )
         self.set_default_size(width=int(1366 / 2), height=int(768 / 2))
         self.set_size_request(width=int(1366 / 2), height=int(768 / 2))
@@ -46,9 +46,21 @@ class ExampleWindow(Adw.ApplicationWindow):
         vbox.set_margin_start(margin=12)
         adw_toolbar_view.set_content(content=vbox)
 
-        self.button = Gtk.Button.new_with_label(label='Lorem Ipsum')
-        self.button.add_css_class(css_class='background')
-        vbox.append(child=self.button)
+        self.label_accent = Gtk.Label.new(str='Lorem Ipsum')
+        self.label_accent.add_css_class(css_class='accent')
+        vbox.append(child=self.label_accent)
+
+        self.label_success = Gtk.Label.new(str='Lorem Ipsum')
+        self.label_success.add_css_class(css_class='success')
+        vbox.append(child=self.label_success)
+
+        self.label_warning = Gtk.Label.new(str='Lorem Ipsum')
+        self.label_warning.add_css_class(css_class='warning')
+        vbox.append(child=self.label_warning)
+
+        self.label_error = Gtk.Label.new(str='Lorem Ipsum')
+        self.label_error.add_css_class(css_class='error')
+        vbox.append(child=self.label_error)
 
         button = Gtk.Button.new_with_label(label='Add/remove class')
         button.set_vexpand(expand=True)
@@ -57,10 +69,17 @@ class ExampleWindow(Adw.ApplicationWindow):
         vbox.append(child=button)
 
     def on_button_clicked(self, button):
-        if 'background' in self.button.get_css_classes():
-            self.button.remove_css_class(css_class='background')
+        if 'accent' in self.label_accent.get_css_classes():
+            self.label_accent.remove_css_class(css_class='accent')
+            self.label_success.remove_css_class(css_class='success')
+            self.label_warning.remove_css_class(css_class='warning')
+            self.label_error.remove_css_class(css_class='error')
+
         else:
-            self.button.add_css_class(css_class='background')
+            self.label_accent.add_css_class(css_class='accent')
+            self.label_success.add_css_class(css_class='success')
+            self.label_warning.add_css_class(css_class='warning')
+            self.label_error.add_css_class(css_class='error')
 
 
 class ExampleApplication(Adw.Application):

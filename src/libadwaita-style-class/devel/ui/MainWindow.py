@@ -1,9 +1,8 @@
 # -*- coding: utf-8 -*-
-"""Python and GTK: PyGObject libadwaita style classe."""
+"""Python and GTK: PyGObject libadwaita style class devel."""
 
 import sys
 from pathlib import Path
-
 
 import gi
 
@@ -29,17 +28,17 @@ Adw.init()
 class ExampleWindow(Adw.ApplicationWindow):
     __gtype_name__ = 'ExampleWindow'
 
-    button = Gtk.Template.Child(name='button')
+    adw_header_bar = Gtk.Template.Child(name='adw_header_bar')
 
     def __init__(self, **kwargs):
         super().__init__(**kwargs)
 
     @Gtk.Template.Callback()
     def on_button_clicked(self, button):
-        if 'background' in self.button.get_css_classes():
-            self.button.remove_css_class(css_class='background')
+        if 'devel' in self.adw_header_bar.get_css_classes():
+            self.adw_header_bar.remove_css_class(css_class='devel')
         else:
-            self.button.add_css_class(css_class='background')
+            self.adw_header_bar.add_css_class(css_class='devel')
 
 
 class ExampleApplication(Adw.Application):

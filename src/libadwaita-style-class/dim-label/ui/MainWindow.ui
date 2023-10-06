@@ -7,15 +7,13 @@ corresponding .blp file and regenerate this file with blueprint-compiler.
 <interface>
   <requires lib="gtk" version="4.0"/>
   <template class="ExampleWindow" parent="AdwApplicationWindow">
-    <property name="title">Python e GTK: PyGObject libadwaita style class dim-label ui file</property>
+    <property name="title">Python and GTK: PyGObject libadwaita style classs dim-label</property>
     <property name="default-width">683</property>
     <property name="default-height">384</property>
-    <child>
-      <object class="GtkBox">
-        <property name="orientation">1</property>
-        <property name="spacing">12</property>
-        <child type="titlebar">
-          <object class="GtkHeaderBar" id="header_bar">
+    <property name="content">
+      <object class="AdwToolbarView">
+        <child type="top">
+          <object class="AdwHeaderBar">
             <child type="end">
               <object class="GtkMenuButton">
                 <property name="icon-name">open-menu-symbolic</property>
@@ -24,7 +22,7 @@ corresponding .blp file and regenerate this file with blueprint-compiler.
             </child>
           </object>
         </child>
-        <child>
+        <property name="content">
           <object class="GtkBox">
             <property name="orientation">1</property>
             <property name="margin-top">12</property>
@@ -33,11 +31,8 @@ corresponding .blp file and regenerate this file with blueprint-compiler.
             <property name="margin-start">12</property>
             <property name="spacing">12</property>
             <child>
-              <object class="GtkLabel" id="label_dim_label">
-                <property name="label">Lorem Ipsum is simply dummy...
-Classes: ['dim-label'].</property>
-                <property name="vexpand">true</property>
-                <property name="wrap">true</property>
+              <object class="GtkLabel" id="label">
+                <property name="label">Lorem Ipsum</property>
                 <style>
                   <class name="dim-label"/>
                 </style>
@@ -45,14 +40,16 @@ Classes: ['dim-label'].</property>
             </child>
             <child>
               <object class="GtkButton">
-                <property name="label">Add/remove class</property>
+                <property name="label">Add/Remove class</property>
+                <property name="vexpand">true</property>
+                <property name="valign">2</property>
                 <signal name="clicked" handler="on_button_clicked"/>
               </object>
             </child>
           </object>
-        </child>
+        </property>
       </object>
-    </child>
+    </property>
   </template>
   <menu id="primary_menu">
     <section>

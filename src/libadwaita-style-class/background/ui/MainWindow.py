@@ -1,9 +1,8 @@
 # -*- coding: utf-8 -*-
-"""Python and GTK: PyGObject libadwaita style classe background."""
+"""Python and GTK: PyGObject libadwaita style class background."""
 
 import sys
 from pathlib import Path
-
 
 import gi
 

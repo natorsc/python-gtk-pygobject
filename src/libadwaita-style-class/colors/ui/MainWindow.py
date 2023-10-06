@@ -1,9 +1,8 @@
 # -*- coding: utf-8 -*-
-"""Python and GTK: PyGObject libadwaita style classe."""
+"""Python and GTK: PyGObject libadwaita style class colors."""
 
 import sys
 from pathlib import Path
-
 
 import gi
 
@@ -29,17 +28,27 @@ Adw.init()
 class ExampleWindow(Adw.ApplicationWindow):
     __gtype_name__ = 'ExampleWindow'
 
-    button = Gtk.Template.Child(name='button')
+    label_accent = Gtk.Template.Child(name='label_accent')
+    label_success = Gtk.Template.Child(name='label_success')
+    label_warning = Gtk.Template.Child(name='label_warning')
+    label_error = Gtk.Template.Child(name='label_error')
 
     def __init__(self, **kwargs):
         super().__init__(**kwargs)
 
     @Gtk.Template.Callback()
     def on_button_clicked(self, button):
-        if 'background' in self.button.get_css_classes():
-            self.button.remove_css_class(css_class='background')
+        if 'accent' in self.label_accent.get_css_classes():
+            self.label_accent.remove_css_class(css_class='accent')
+            self.label_success.remove_css_class(css_class='success')
+            self.label_warning.remove_css_class(css_class='warning')
+            self.label_error.remove_css_class(css_class='error')
+
         else:
-            self.button.add_css_class(css_class='background')
+            self.label_accent.add_css_class(css_class='accent')
+            self.label_success.add_css_class(css_class='success')
+            self.label_warning.add_css_class(css_class='warning')
+            self.label_error.add_css_class(css_class='error')
 
 
 class ExampleApplication(Adw.Application):

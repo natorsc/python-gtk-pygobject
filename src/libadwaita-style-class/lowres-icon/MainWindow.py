@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-"""Python and GTK: PyGObject libadwaita style classe."""
+"""Python and GTK: PyGObject libadwaita style class."""
 
 import gi
 

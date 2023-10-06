@@ -1,9 +1,8 @@
 # -*- coding: utf-8 -*-
-"""Python and GTK: PyGObject libadwaita style classe."""
+"""Python and GTK: PyGObject libadwaita style class boxed-list."""
 
 import sys
 from pathlib import Path
-
 
 import gi
 
@@ -29,17 +28,17 @@ Adw.init()
 class ExampleWindow(Adw.ApplicationWindow):
     __gtype_name__ = 'ExampleWindow'
 
-    button = Gtk.Template.Child(name='button')
+    list_box = Gtk.Template.Child(name='list_box')
 
     def __init__(self, **kwargs):
         super().__init__(**kwargs)
 
     @Gtk.Template.Callback()
     def on_button_clicked(self, button):
-        if 'background' in self.button.get_css_classes():
-            self.button.remove_css_class(css_class='background')
+        if 'boxed-list' in self.list_box.get_css_classes():
+            self.list_box.remove_css_class(css_class='boxed-list')
         else:
-            self.button.add_css_class(css_class='background')
+            self.list_box.add_css_class(css_class='boxed-list')
 
 
 class ExampleApplication(Adw.Application):

@@ -1,9 +1,8 @@
 # -*- coding: utf-8 -*-
-"""Python and GTK: PyGObject libadwaita style classe."""
+"""Python and GTK: PyGObject libadwaita style class compact."""
 
 import sys
 from pathlib import Path
-
 
 import gi
 
@@ -29,17 +28,17 @@ Adw.init()
 class ExampleWindow(Adw.ApplicationWindow):
     __gtype_name__ = 'ExampleWindow'
 
-    button = Gtk.Template.Child(name='button')
+    status_page = Gtk.Template.Child(name='status_page')
 
     def __init__(self, **kwargs):
         super().__init__(**kwargs)
 
     @Gtk.Template.Callback()
     def on_button_clicked(self, button):
-        if 'background' in self.button.get_css_classes():
-            self.button.remove_css_class(css_class='background')
+        if 'compact' in self.status_page.get_css_classes():
+            self.status_page.remove_css_class(css_class='compact')
         else:
-            self.button.add_css_class(css_class='background')
+            self.status_page.add_css_class(css_class='compact')
 
 
 class ExampleApplication(Adw.Application):

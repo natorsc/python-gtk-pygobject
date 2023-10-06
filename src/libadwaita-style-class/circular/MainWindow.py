@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-"""Python and GTK: PyGObject libadwaita style classe."""
+"""Python e GTK: PyGObject libadwaita style classe circular."""
 
 import gi
 
@@ -17,7 +17,7 @@ class ExampleWindow(Adw.ApplicationWindow):
         super().__init__(**kwargs)
 
         self.set_title(
-            title='Python e GTK: PyGObject libadwaita style classe',
+            title='Python e GTK: PyGObject libadwaita style classe circular',
         )
         self.set_default_size(width=int(1366 / 2), height=int(768 / 2))
         self.set_size_request(width=int(1366 / 2), height=int(768 / 2))
@@ -46,8 +46,12 @@ class ExampleWindow(Adw.ApplicationWindow):
         vbox.set_margin_start(margin=12)
         adw_toolbar_view.set_content(content=vbox)
 
-        self.button = Gtk.Button.new_with_label(label='Lorem Ipsum')
-        self.button.add_css_class(css_class='background')
+        self.button = Gtk.Button.new_from_icon_name(
+            icon_name='face-smile-big-symbolic',
+        )
+        self.button.set_halign(align=Gtk.Align.CENTER)
+        self.button.set_hexpand(expand=False)
+        self.button.add_css_class(css_class='circular')
         vbox.append(child=self.button)
 
         button = Gtk.Button.new_with_label(label='Add/remove class')
@@ -57,10 +61,10 @@ class ExampleWindow(Adw.ApplicationWindow):
         vbox.append(child=button)
 
     def on_button_clicked(self, button):
-        if 'background' in self.button.get_css_classes():
-            self.button.remove_css_class(css_class='background')
+        if 'circular' in self.button.get_css_classes():
+            self.button.remove_css_class(css_class='circular')
         else:
-            self.button.add_css_class(css_class='background')
+            self.button.add_css_class(css_class='circular')
 
 
 class ExampleApplication(Adw.Application):

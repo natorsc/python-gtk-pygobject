@@ -2,10 +2,10 @@ using Gtk 4.0;
 using Adw 1;
 
 template $ExampleWindow : Adw.ApplicationWindow {
-  title: 'Python and GTK: PyGObject libadwaita style classes';
+  title: 'Python and GTK: PyGObject libadwaita style classs caption-heading';
   default-width: 683;
   default-height: 384;
-  content: 
+  content:
   Adw.ToolbarView {
     [top]
     Adw.HeaderBar {
@@ -15,7 +15,7 @@ template $ExampleWindow : Adw.ApplicationWindow {
         menu-model: primary_menu;
       }
     }
-    content: 
+    content:
     Box {
       orientation: vertical;
       margin-top: 12;
@@ -24,15 +24,17 @@ template $ExampleWindow : Adw.ApplicationWindow {
       margin-start: 12;
       spacing: 12;
 
-      Button button {
+      Label label {
         label: 'Lorem Ipsum';
         styles [
-          'background',
+          'caption-heading',
         ]
       }
 
       Button {
         label: 'Add/Remove class';
+        vexpand: true;
+        valign: end;
         clicked => $on_button_clicked();
       }
     }

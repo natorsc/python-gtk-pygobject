@@ -1,9 +1,8 @@
 # -*- coding: utf-8 -*-
-"""Python and GTK: PyGObject libadwaita style classe."""
+"""Python and GTK: PyGObject libadwaita style class circular."""
 
 import sys
 from pathlib import Path
-
 
 import gi
 
@@ -36,10 +35,10 @@ class ExampleWindow(Adw.ApplicationWindow):
 
     @Gtk.Template.Callback()
     def on_button_clicked(self, button):
-        if 'background' in self.button.get_css_classes():
-            self.button.remove_css_class(css_class='background')
+        if 'circular' in self.button.get_css_classes():
+            self.button.remove_css_class(css_class='circular')
         else:
-            self.button.add_css_class(css_class='background')
+            self.button.add_css_class(css_class='circular')
 
 
 class ExampleApplication(Adw.Application):

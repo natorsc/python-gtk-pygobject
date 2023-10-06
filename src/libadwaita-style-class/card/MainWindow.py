@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-"""Python and GTK: PyGObject libadwaita style classe."""
+"""Python e GTK: PyGObject libadwaita style classe card."""
 
 import gi
 
@@ -17,7 +17,7 @@ class ExampleWindow(Adw.ApplicationWindow):
         super().__init__(**kwargs)
 
         self.set_title(
-            title='Python e GTK: PyGObject libadwaita style classe',
+            title='Python e GTK: PyGObject libadwaita style classe card',
         )
         self.set_default_size(width=int(1366 / 2), height=int(768 / 2))
         self.set_size_request(width=int(1366 / 2), height=int(768 / 2))
@@ -40,15 +40,16 @@ class ExampleWindow(Adw.ApplicationWindow):
         adw_header_bar.pack_end(child=menu_button)
 
         vbox = Gtk.Box.new(orientation=Gtk.Orientation.VERTICAL, spacing=12)
+        vbox.set_homogeneous(homogeneous=True)
         vbox.set_margin_top(margin=12)
         vbox.set_margin_end(margin=12)
         vbox.set_margin_bottom(margin=12)
         vbox.set_margin_start(margin=12)
         adw_toolbar_view.set_content(content=vbox)
 
-        self.button = Gtk.Button.new_with_label(label='Lorem Ipsum')
-        self.button.add_css_class(css_class='background')
-        vbox.append(child=self.button)
+        self.label = Gtk.Label.new(str='Lorem Ipsum')
+        self.label.add_css_class(css_class='card')
+        vbox.append(child=self.label)
 
         button = Gtk.Button.new_with_label(label='Add/remove class')
         button.set_vexpand(expand=True)
@@ -57,10 +58,10 @@ class ExampleWindow(Adw.ApplicationWindow):
         vbox.append(child=button)
 
     def on_button_clicked(self, button):
-        if 'background' in self.button.get_css_classes():
-            self.button.remove_css_class(css_class='background')
+        if 'card' in self.label.get_css_classes():
+            self.label.remove_css_class(css_class='card')
         else:
-            self.button.add_css_class(css_class='background')
+            self.label.add_css_class(css_class='card')
 
 
 class ExampleApplication(Adw.Application):
