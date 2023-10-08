@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-"""Python and GTK: PyGObject libadwaita style class."""
+"""Python e GTK: PyGObject libadwaita style classe flat."""
 
 import gi
 
@@ -17,7 +17,7 @@ class ExampleWindow(Adw.ApplicationWindow):
         super().__init__(**kwargs)
 
         self.set_title(
-            title='Python e GTK: PyGObject libadwaita style classe',
+            title='Python e GTK: PyGObject libadwaita style classe flat',
         )
         self.set_default_size(width=int(1366 / 2), height=int(768 / 2))
         self.set_size_request(width=int(1366 / 2), height=int(768 / 2))
@@ -47,7 +47,7 @@ class ExampleWindow(Adw.ApplicationWindow):
         adw_toolbar_view.set_content(content=vbox)
 
         self.button = Gtk.Button.new_with_label(label='Lorem Ipsum')
-        self.button.add_css_class(css_class='background')
+        self.button.add_css_class(css_class='flat')
         vbox.append(child=self.button)
 
         button = Gtk.Button.new_with_label(label='Add/remove class')
@@ -57,10 +57,10 @@ class ExampleWindow(Adw.ApplicationWindow):
         vbox.append(child=button)
 
     def on_button_clicked(self, button):
-        if 'background' in self.button.get_css_classes():
-            self.button.remove_css_class(css_class='background')
+        if 'flat' in self.button.get_css_classes():
+            self.button.remove_css_class(css_class='flat')
         else:
-            self.button.add_css_class(css_class='background')
+            self.button.add_css_class(css_class='flat')
 
 
 class ExampleApplication(Adw.Application):

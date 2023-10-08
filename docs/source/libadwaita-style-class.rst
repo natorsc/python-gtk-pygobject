@@ -365,33 +365,6 @@ Flat
 
 --------------
 
-Background
-----------
-
-.. figure:: ../images/libadwaita-style-class/flat-header-bar.png
-   :alt: Adw style class flat headerbar
-
-   Adw style class flat headerbar
-
-.. tab:: Python
-
-   ..  literalinclude:: ../../src/libadwaita-style-class/flat-header-bar/MainWindow.py
-
-.. tab:: Python load ui
-
-   ..  literalinclude:: ../../src/libadwaita-style-class/flat-header-bar/ui/MainWindow.py
-
-.. tab:: UI
-
-   ..  literalinclude:: ../../src/libadwaita-style-class/flat-header-bar/ui/MainWindow.ui
-      :language: html
-
-.. tab:: Blueprint
-
-   ..  literalinclude:: ../../src/libadwaita-style-class/flat-header-bar/ui/MainWindow.blp
-
---------------
-
 Frame
 -----
 

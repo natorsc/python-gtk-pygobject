@@ -1,9 +1,8 @@
 # -*- coding: utf-8 -*-
-"""Python and GTK: PyGObject libadwaita style class."""
+"""Python and GTK: PyGObject libadwaita style class monospace."""
 
 import sys
 from pathlib import Path
-
 
 import gi
 
@@ -13,7 +12,7 @@ gi.require_version(namespace='Adw', version='1')
 from gi.repository import Adw, Gio, Gtk
 
 BASE_DIR = Path(__file__).resolve().parent
-UI = str(BASE_DIR.joinpath('MainWindow.ui'))
+UI = BASE_DIR.joinpath('MainWindow.ui')
 
 _MODULES = BASE_DIR.parent.parent.parent.joinpath('_modules')
 sys.path.append(str(_MODULES))
@@ -25,21 +24,21 @@ _tools.compile_blueprint_ui(ui_dir=BASE_DIR)
 Adw.init()
 
 
-@Gtk.Template(filename=UI)
+@Gtk.Template(filename=str(UI))
 class ExampleWindow(Adw.ApplicationWindow):
     __gtype_name__ = 'ExampleWindow'
 
-    button = Gtk.Template.Child(name='button')
+    label = Gtk.Template.Child(name='label')
 
     def __init__(self, **kwargs):
         super().__init__(**kwargs)
 
     @Gtk.Template.Callback()
     def on_button_clicked(self, button):
-        if 'background' in self.button.get_css_classes():
-            self.button.remove_css_class(css_class='background')
+        if 'monospace' in self.label.get_css_classes():
+            self.label.remove_css_class(css_class='monospace')
         else:
-            self.button.add_css_class(css_class='background')
+            self.label.add_css_class(css_class='monospace')
 
 
 class ExampleApplication(Adw.Application):

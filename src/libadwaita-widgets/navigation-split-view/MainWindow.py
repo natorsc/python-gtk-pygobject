@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-"""Python and GTK: PyGObject libadwaita style class."""
+"""Python e GTK: PyGObject libadwaita Adw.NavigationSplitView."""
 
 import gi
 
@@ -17,13 +17,33 @@ class ExampleWindow(Adw.ApplicationWindow):
         super().__init__(**kwargs)
 
         self.set_title(
-            title='Python e GTK: PyGObject libadwaita style classe',
+            title='Python e GTK: PyGObject libadwaita Adw.NavigationSplitView',
         )
         self.set_default_size(width=int(1366 / 2), height=int(768 / 2))
         self.set_size_request(width=int(1366 / 2), height=int(768 / 2))
+        # Como definir? (How to define?).
+        self.set_property('width-request', 280)
+        self.set_property('height-request', 200)
+
+        adw_breakpoint_condition = Adw.BreakpointCondition.new_length(
+            type=Adw.BreakpointConditionLengthType.MAX_WIDTH,
+            value=400,
+            unit=Adw.LengthUnit.SP,
+        )
+
+        adw_breakpoint = Adw.Breakpoint.new(condition=adw_breakpoint_condition)
+        self.add_breakpoint(breakpoint=adw_breakpoint)
 
         adw_toolbar_view = Adw.ToolbarView.new()
-        self.set_content(content=adw_toolbar_view)
+
+        adw_navigation_page = Adw.NavigationPage.new(
+            child=adw_toolbar_view,
+            title='Python e GTK: PyGObject libadwaita Adw.NavigationSplitView',
+        )
+
+        adw_navigation_split_view = Adw.NavigationSplitView.new()
+        adw_navigation_split_view.set_sidebar(sidebar=adw_navigation_page)
+        self.set_content(content=adw_navigation_split_view)
 
         adw_header_bar = Adw.HeaderBar.new()
         adw_toolbar_view.add_top_bar(widget=adw_header_bar)
@@ -46,15 +66,32 @@ class ExampleWindow(Adw.ApplicationWindow):
         vbox.set_margin_start(margin=12)
         adw_toolbar_view.set_content(content=vbox)
 
-        self.button = Gtk.Button.new_with_label(label='Lorem Ipsum')
-        self.button.add_css_class(css_class='background')
-        vbox.append(child=self.button)
-
-        button = Gtk.Button.new_with_label(label='Add/remove class')
-        button.set_vexpand(expand=True)
-        button.set_valign(align=Gtk.Align.END)
-        button.connect('clicked', self.on_button_clicked)
+        button = Gtk.Button.new_with_label(label='Content')
+        button.set_action_name(action_name='navigation.push')
+        # Como definir? (How to define?).
+        # button.set_action_target('\'content\'')
         vbox.append(child=button)
+
+        toolbar_view_content = Adw.ToolbarView.new()
+
+        navegation_page_content = Adw.NavigationPage.new(
+            child=toolbar_view_content,
+            title='Content',
+        )
+        adw_navigation_split_view.set_content(content=navegation_page_content)
+
+        header_bar_content = Adw.HeaderBar.new()
+        toolbar_view_content.add_top_bar(widget=header_bar_content)
+
+        content_page = Gtk.Box.new(orientation=Gtk.Orientation.VERTICAL, spacing=12)
+        content_page.set_margin_top(margin=12)
+        content_page.set_margin_end(margin=12)
+        content_page.set_margin_bottom(margin=12)
+        content_page.set_margin_start(margin=12)
+        toolbar_view_content.set_content(content=content_page)
+
+        label = Gtk.Label.new(str='Content')
+        content_page.append(child=label)
 
     def on_button_clicked(self, button):
         if 'background' in self.button.get_css_classes():

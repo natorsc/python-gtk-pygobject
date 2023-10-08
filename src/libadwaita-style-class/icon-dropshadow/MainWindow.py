@@ -1,5 +1,7 @@
 # -*- coding: utf-8 -*-
-"""Python and GTK: PyGObject libadwaita style class."""
+"""Python e GTK: PyGObject libadwaita style classe icon-dropshadow."""
+
+from pathlib import Path
 
 import gi
 
@@ -10,6 +12,11 @@ from gi.repository import Adw, Gio, Gtk
 
 Adw.init()
 
+BASE_DIR = Path(__file__).resolve().parent
+ICON = BASE_DIR.parent.parent.joinpath(
+    'data', 'icons', 'icon-128x128.svg',
+)
+
 
 class ExampleWindow(Adw.ApplicationWindow):
 
@@ -17,7 +24,7 @@ class ExampleWindow(Adw.ApplicationWindow):
         super().__init__(**kwargs)
 
         self.set_title(
-            title='Python e GTK: PyGObject libadwaita style classe',
+            title='Python e GTK: PyGObject libadwaita style classe icon-dropshadow',
         )
         self.set_default_size(width=int(1366 / 2), height=int(768 / 2))
         self.set_size_request(width=int(1366 / 2), height=int(768 / 2))
@@ -46,9 +53,9 @@ class ExampleWindow(Adw.ApplicationWindow):
         vbox.set_margin_start(margin=12)
         adw_toolbar_view.set_content(content=vbox)
 
-        self.button = Gtk.Button.new_with_label(label='Lorem Ipsum')
-        self.button.add_css_class(css_class='background')
-        vbox.append(child=self.button)
+        self.image = Gtk.Image.new_from_file(filename=str(ICON))
+        self.image.add_css_class(css_class='lowres-icon')
+        vbox.append(child=self.image)
 
         button = Gtk.Button.new_with_label(label='Add/remove class')
         button.set_vexpand(expand=True)
@@ -57,10 +64,10 @@ class ExampleWindow(Adw.ApplicationWindow):
         vbox.append(child=button)
 
     def on_button_clicked(self, button):
-        if 'background' in self.button.get_css_classes():
-            self.button.remove_css_class(css_class='background')
+        if 'icon-dropshadow' in self.image.get_css_classes():
+            self.image.remove_css_class(css_class='icon-dropshadow')
         else:
-            self.button.add_css_class(css_class='background')
+            self.image.add_css_class(css_class='icon-dropshadow')
 
 
 class ExampleApplication(Adw.Application):

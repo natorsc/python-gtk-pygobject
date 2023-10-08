@@ -1,9 +1,8 @@
 # -*- coding: utf-8 -*-
-"""Python and GTK: PyGObject libadwaita style class."""
+"""Python and GTK: PyGObject libadwaita style class background."""
 
 import sys
 from pathlib import Path
-
 
 import gi
 
@@ -13,7 +12,7 @@ gi.require_version(namespace='Adw', version='1')
 from gi.repository import Adw, Gio, Gtk
 
 BASE_DIR = Path(__file__).resolve().parent
-UI = str(BASE_DIR.joinpath('MainWindow.ui'))
+UI = BASE_DIR.joinpath('MainWindow.ui')
 
 _MODULES = BASE_DIR.parent.parent.parent.joinpath('_modules')
 sys.path.append(str(_MODULES))
@@ -25,7 +24,7 @@ _tools.compile_blueprint_ui(ui_dir=BASE_DIR)
 Adw.init()
 
 
-@Gtk.Template(filename=UI)
+@Gtk.Template(filename=str(UI))
 class ExampleWindow(Adw.ApplicationWindow):
     __gtype_name__ = 'ExampleWindow'
 

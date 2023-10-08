@@ -1,0 +1,98 @@
+using Gtk 4.0;
+using Adw 1;
+
+template $ExampleWindow : Adw.ApplicationWindow {
+  title: 'Python e GTK: PyGObject libadwaita Adw.NavigationSplitView';
+  width-request: 280;
+  height-request: 200;
+  default-width: 683;
+  default-height: 384;
+
+  Adw.Breakpoint {
+    condition ("max-width: 400")
+    setters {
+      split_view.collapsed: true;
+    }
+  }
+
+  content: 
+  Adw.NavigationSplitView split_view {
+    sidebar:
+    Adw.NavigationPage {
+      title: _('Sidebar');
+      child: 
+      Adw.ToolbarView {
+        [top]
+        Adw.HeaderBar {
+          [end]
+          MenuButton {
+            icon-name: 'open-menu-symbolic';
+            menu-model: primary_menu;
+          }
+        }
+        content: 
+        Box {
+          orientation: vertical;
+          spacing: 12;
+          margin-top: 12;
+          margin-end: 12;
+          margin-bottom: 12;
+          margin-start: 12;
+
+          Button {
+            label: 'Content';
+            action-name: 'navigation.push';
+            action-target: '\'content\'';
+          }
+        }
+
+        ;
+      }
+
+      ;
+    }
+
+    ;
+    content: 
+    Adw.NavigationPage {
+      title: _('Content');
+      tag: 'content';
+      child: 
+      Adw.ToolbarView {
+        [top]
+        Adw.HeaderBar {
+        }
+        content: 
+        Box {
+          orientation: vertical;
+          spacing: 12;
+          margin-top: 12;
+          margin-end: 12;
+          margin-bottom: 12;
+          margin-start: 12;
+
+          Label {
+            label: 'Content';
+          }
+        }
+
+        ;
+      }
+
+      ;
+    }
+
+    ;
+  }
+
+  ;
+}
+
+menu primary_menu {
+  section {
+    item {
+      label: _('Preferences');
+      action: 'app.preferences';
+    }
+  }
+}

@@ -368,8 +368,6 @@ Adw.ExpanderRow
 Adw.MessageDialog
 ~~~~~~~~~~~~~~~~~
 
-.. note:: Verificar se existe a necessidade de utilizar Blueprint.
-
 .. figure:: ../images/libadwaita-widgets/message-dialog.png
    :alt: Adw.MessageDialog
 
@@ -387,6 +385,33 @@ Adw.MessageDialog
 
    ..  literalinclude:: ../../src/libadwaita-widgets/message-dialog/ui/MainWindow.ui
       :language: html
+
+--------------
+
+Adw.NavigationSplitView
+~~~~~~~~~~~~~~~~~~~~~~~
+
+.. figure:: ../images/libadwaita-widgets/navigation-split-view.png
+   :alt: Adw.NavigationSplitView
+
+   Adw.NavigationSplitView
+
+.. tab:: Python
+
+   ..  literalinclude:: ../../src/libadwaita-widgets/navigation-split-view/MainWindow.py
+
+.. tab:: Python load ui
+
+   ..  literalinclude:: ../../src/libadwaita-widgets/navigation-split-view/ui/MainWindow.py
+
+.. tab:: UI
+
+   ..  literalinclude:: ../../src/libadwaita-widgets/navigation-split-view/ui/MainWindow.ui
+      :language: html
+
+.. tab:: Blueprint
+
+   ..  literalinclude:: ../../src/libadwaita-widgets/navigation-split-view/ui/MainWindow.blp
 
 --------------
 

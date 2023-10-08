@@ -11,7 +11,7 @@ from gi.repository import Adw, Gio, Gtk
 Adw.init()
 
 
-class ExampleWindow(Adw.ApplicationWindow):
+class ExampleWindow(Gtk.ApplicationWindow):
 
     def __init__(self, **kwargs):
         super().__init__(**kwargs)
@@ -22,12 +22,9 @@ class ExampleWindow(Adw.ApplicationWindow):
         self.set_default_size(width=int(1366 / 2), height=int(768 / 2))
         self.set_size_request(width=int(1366 / 2), height=int(768 / 2))
 
-        adw_toolbar_view = Adw.ToolbarView.new()
-        self.set_content(content=adw_toolbar_view)
-
         self.adw_header_bar = Adw.HeaderBar.new()
         self.adw_header_bar.add_css_class(css_class='devel')
-        adw_toolbar_view.add_top_bar(widget=self.adw_header_bar)
+        self.set_titlebar(self.adw_header_bar)
 
         menu_button_model = Gio.Menu()
         menu_button_model.append(
@@ -45,7 +42,7 @@ class ExampleWindow(Adw.ApplicationWindow):
         vbox.set_margin_end(margin=12)
         vbox.set_margin_bottom(margin=12)
         vbox.set_margin_start(margin=12)
-        adw_toolbar_view.set_content(content=vbox)
+        self.set_child(child=vbox)
 
         button = Gtk.Button.new_with_label(label='Add/remove class')
         button.set_vexpand(expand=True)

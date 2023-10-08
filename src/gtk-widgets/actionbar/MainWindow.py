@@ -1,8 +1,6 @@
 # -*- coding: utf-8 -*-
 """Python e GTK: PyGObject Gtk.ActionBar()."""
 
-
-
 import gi
 
 gi.require_version(namespace='Gtk', version='4.0')
@@ -26,6 +24,7 @@ class ExampleWindow(Gtk.ApplicationWindow):
         self.set_size_request(width=int(1366 / 2), height=int(768 / 2))
 
         header_bar = Gtk.HeaderBar.new()
+        header_bar.add_css_class(css_class='devel')
         self.set_titlebar(titlebar=header_bar)
 
         menu_button_model = Gio.Menu()
@@ -87,8 +86,7 @@ class ExampleApplication(Gtk.Application):
     def exit_app(self, action, param):
         self.quit()
 
-    def create_action(self, name: str, callback: Callable[[str, str], None],
-                      shortcuts: str | None = None):
+    def create_action(self, name, callback, shortcuts=None):
         action = Gio.SimpleAction.new(name=name, parameter_type=None)
         action.connect('activate', callback)
         self.add_action(action=action)
