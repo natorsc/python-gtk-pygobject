@@ -129,6 +129,7 @@ Tutoriais sobre o toolkit gráfico GTK e suas ferramentas de desenvolvimento est
 - [App Icon Preview](https://flathub.org/apps/details/org.gnome.design.AppIconPreview).
 - [Symbolic Preview](https://flathub.org/apps/details/org.gnome.design.SymbolicPreview).
 - [Color Palette](https://flathub.org/apps/details/org.gnome.design.Palette).
+- [Gnome icon library online](https://teams.pages.gitlab.gnome.org/Design/icon-development-kit-www/).
 
 ### Softwares
 
