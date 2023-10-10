@@ -2,10 +2,10 @@ using Gtk 4.0;
 using Adw 1;
 
 template $ExampleWindow : Adw.ApplicationWindow {
-  title: 'Python and GTK: PyGObject libadwaita style classs background';
+  title: 'Python and GTK: PyGObject libadwaita style classs osd';
   default-width: 683;
   default-height: 384;
-  content:
+  content: 
   Adw.ToolbarView {
     [top]
     Adw.HeaderBar {
@@ -15,7 +15,7 @@ template $ExampleWindow : Adw.ApplicationWindow {
         menu-model: primary_menu;
       }
     }
-    content:
+    content: 
     Box {
       orientation: vertical;
       margin-top: 12;
@@ -27,7 +27,7 @@ template $ExampleWindow : Adw.ApplicationWindow {
       Button button {
         label: 'Lorem Ipsum';
         styles [
-          'background',
+          'osd',
         ]
       }
 

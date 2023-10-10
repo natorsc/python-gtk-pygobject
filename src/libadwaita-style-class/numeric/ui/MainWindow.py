@@ -1,9 +1,8 @@
 # -*- coding: utf-8 -*-
-"""Python and GTK: PyGObject libadwaita style class."""
+"""Python and GTK: PyGObject libadwaita style class numeric."""
 
 import sys
 from pathlib import Path
-
 
 import gi
 
@@ -29,17 +28,18 @@ Adw.init()
 class ExampleWindow(Adw.ApplicationWindow):
     __gtype_name__ = 'ExampleWindow'
 
-    button = Gtk.Template.Child(name='button')
+    label = Gtk.Template.Child(name='label')
 
     def __init__(self, **kwargs):
         super().__init__(**kwargs)
 
     @Gtk.Template.Callback()
     def on_button_clicked(self, button):
-        if 'background' in self.button.get_css_classes():
-            self.button.remove_css_class(css_class='background')
+        print('aqui')
+        if 'numeric' in self.label.get_css_classes():
+            self.label.remove_css_class(css_class='numeric')
         else:
-            self.button.add_css_class(css_class='background')
+            self.label.add_css_class(css_class='numeric')
 
 
 class ExampleApplication(Adw.Application):

@@ -2,7 +2,7 @@
 <interface>
   <requires lib="gtk" version="4.0"/>
   <template class="ExampleWindow" parent="AdwApplicationWindow">
-    <property name="title">Python and GTK: PyGObject libadwaita style classs title</property>
+    <property name="title">Python and GTK: PyGObject libadwaita style classs property</property>
     <property name="default-width">683</property>
     <property name="default-height">384</property>
     <property name="content">
@@ -26,11 +26,17 @@
             <property name="margin-start">12</property>
             <property name="spacing">12</property>
             <child>
-              <object class="GtkLabel" id="label">
-                <property name="label">Lorem Ipsum</property>
-                <style>
-                  <class name="title-1"/>
-                </style>
+              <object class="GtkListBox">
+                <child>
+                  <object class="AdwActionRow" id="adw_action_row">
+                    <property name="title">Lorem Ipsum</property>
+                    <property name="subtitle">Lorem Ipsum</property>
+                    <property name="subtitle-selectable">true</property>
+                    <style>
+                      <class name="property"/>
+                    </style>
+                  </object>
+                </child>
               </object>
             </child>
             <child>
