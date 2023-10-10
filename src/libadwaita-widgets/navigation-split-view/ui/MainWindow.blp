@@ -9,7 +9,7 @@ template $ExampleWindow : Adw.ApplicationWindow {
   default-height: 384;
 
   Adw.Breakpoint {
-    condition ("max-width: 400")
+    condition ('max-width: 400')
     setters {
       split_view.collapsed: true;
     }

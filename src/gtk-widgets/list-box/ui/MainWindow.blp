@@ -1,7 +1,7 @@
 using Gtk 4.0;
 
 template $ExampleWindow: Gtk.ApplicationWindow {
-  title: "Python e GTK: PyGObject Gtk.ListBox() ui file.";
+  title: 'Python e GTK: PyGObject Gtk.ListBox() ui file.';
   default-width: 683;
   default-height: 384;
 
@@ -9,7 +9,7 @@ template $ExampleWindow: Gtk.ApplicationWindow {
   Gtk.HeaderBar header_bar {
     [end]
     Gtk.MenuButton {
-      icon-name: "open-menu-symbolic";
+      icon-name: 'open-menu-symbolic';
       menu-model: primary_menu;
     }
   }
@@ -26,14 +26,14 @@ template $ExampleWindow: Gtk.ApplicationWindow {
     Gtk.ListBox {
       selection-mode: none;
         styles [
-          "boxed-list",
+          'boxed-list',
         ]
       Gtk.ListBoxRow{
         selectable: false;
         Gtk.Box {
           orientation: horizontal;
           Gtk.Label {
-            label: "Line 01";
+            label: 'Line 01';
             hexpand: true;
             xalign: 0;
             margin-top: 6;
@@ -54,7 +54,7 @@ template $ExampleWindow: Gtk.ApplicationWindow {
         Gtk.Box {
           orientation: horizontal;
           Gtk.Label {
-            label: "Line 02";
+            label: 'Line 02';
             hexpand: true;
             xalign: 0;
             margin-top: 6;
@@ -75,7 +75,7 @@ template $ExampleWindow: Gtk.ApplicationWindow {
         Gtk.Box {
           orientation: horizontal;
           Gtk.Label {
-            label: "Line 03";
+            label: 'Line 03';
             hexpand: true;
             xalign: 0;
             margin-top: 6;
@@ -99,21 +99,21 @@ template $ExampleWindow: Gtk.ApplicationWindow {
       vexpand: true;
       row-activated => $on_row_clicked();
       styles [
-        "boxed-list",
+        'boxed-list',
       ]
       Gtk.ListBoxRow {
         Gtk.Label {
-          label: "Line 01";
+          label: 'Line 01';
         }
       }
       Gtk.ListBoxRow {
         Gtk.Label {
-          label: "Line 02";
+          label: 'Line 02';
         }
       }
       Gtk.ListBoxRow {
         Gtk.Label {
-          label: "Line 03";
+          label: 'Line 03';
         }
       }
     }
@@ -123,8 +123,8 @@ template $ExampleWindow: Gtk.ApplicationWindow {
 menu primary_menu {
   section {
     item {
-      label: _("Preferences");
-      action: "app.preferences";
+      label: _('Preferences');
+      action: 'app.preferences';
     }
   }
 }

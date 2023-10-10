@@ -2,7 +2,7 @@ using Gtk 4.0;
 using Gio 2.0;
 
 template $ExampleWindow: Gtk.ApplicationWindow {
-  title: "Python e GTK: PyGObject Gtk.FileDialog() (save) ui file";
+  title: 'Python e GTK: PyGObject Gtk.FileDialog() (save) ui file';
   default-width: 683;
   default-height: 384;
 
@@ -10,7 +10,7 @@ template $ExampleWindow: Gtk.ApplicationWindow {
   Gtk.HeaderBar header_bar {
     [end]
     Gtk.MenuButton {
-      icon-name: "open-menu-symbolic";
+      icon-name: 'open-menu-symbolic';
       menu-model: primary_menu;
     }
   }
@@ -24,28 +24,28 @@ template $ExampleWindow: Gtk.ApplicationWindow {
     spacing: 12;
 
     Gtk.Button {
-      label: "Save";
+      label: 'Save';
       clicked => $on_button_save_clicked();
     }
   }
 }
 
 Gtk.FileFilter filter_all_files {
-  name: "All";
-  patterns [ "*" ]
-  suffixes [ "*" ]
+  name: 'All';
+  patterns [ '*' ]
+  suffixes [ '*' ]
 }
 
 Gtk.FileFilter filter_py_files {
-  mime-types [ "text/x-python" ]
-  patterns [ "*.py" ]
-  suffixes [ "py" ]
+  mime-types [ 'text/x-python' ]
+  patterns [ '*.py' ]
+  suffixes [ 'py' ]
 }
 
 Gtk.FileFilter filter_txt_files {
-  mime-types [ "text/plain" ]
-  patterns [ "*.txt" ]
-  suffixes [ "txt" ]
+  mime-types [ 'text/plain' ]
+  patterns [ '*.txt' ]
+  suffixes [ 'txt' ]
 }
 
 Gio.ListStore gio_list_store {
@@ -55,8 +55,8 @@ Gio.ListStore gio_list_store {
 menu primary_menu {
   section {
     item {
-      label: _("Preferences");
-      action: "app.preferences";
+      label: _('Preferences');
+      action: 'app.preferences';
     }
   }
 }
