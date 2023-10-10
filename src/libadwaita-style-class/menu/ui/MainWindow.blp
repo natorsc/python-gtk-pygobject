@@ -2,7 +2,7 @@ using Gtk 4.0;
 using Adw 1;
 
 template $ExampleWindow : Adw.ApplicationWindow {
-  title: 'Python and GTK: PyGObject libadwaita style classs background';
+  title: 'Python and GTK: PyGObject libadwaita style classs menu';
   default-width: 683;
   default-height: 384;
   content:
@@ -24,11 +24,11 @@ template $ExampleWindow : Adw.ApplicationWindow {
       margin-start: 12;
       spacing: 12;
 
-      Button button {
-        label: 'Lorem Ipsum';
-        styles [
-          'background',
-        ]
+      MenuButton {
+        label: 'Open popover';
+        menu-model: menu_model;
+        popover: popover_menu;
+
       }
 
       Button {
@@ -43,6 +43,22 @@ template $ExampleWindow : Adw.ApplicationWindow {
   }
 
   ;
+}
+
+PopoverMenu popover_menu {
+  menu-model: menu_model;
+  styles [
+    'menu',
+  ]
+}
+
+menu menu_model {
+  item {
+    label: _("Item 01");
+  }
+  item {
+    label: _("Item 01");
+  }
 }
 
 menu primary_menu {

@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-"""Python and GTK: PyGObject libadwaita style class."""
+"""Python and GTK: PyGObject libadwaita style class menu."""
 
 import gi
 
@@ -17,7 +17,7 @@ class ExampleWindow(Adw.ApplicationWindow):
         super().__init__(**kwargs)
 
         self.set_title(
-            title='Python e GTK: PyGObject libadwaita style classe',
+            title='Python e GTK: PyGObject libadwaita style classe menu',
         )
         self.set_default_size(width=int(1366 / 2), height=int(768 / 2))
         self.set_size_request(width=int(1366 / 2), height=int(768 / 2))
@@ -46,9 +46,24 @@ class ExampleWindow(Adw.ApplicationWindow):
         vbox.set_margin_start(margin=12)
         adw_toolbar_view.set_content(content=vbox)
 
-        self.button = Gtk.Button.new_with_label(label='Lorem Ipsum')
-        self.button.add_css_class(css_class='background')
-        vbox.append(child=self.button)
+        gio_menu = Gio.Menu.new()
+
+        gio_menu_item_01 = Gio.MenuItem.new()
+        gio_menu_item_01.set_label(label='Item 01')
+        gio_menu.append_item(gio_menu_item_01)
+
+        gio_menu_item_02 = Gio.MenuItem.new()
+        gio_menu_item_02.set_label(label='Item 02')
+        gio_menu.append_item(gio_menu_item_02)
+
+        self.popover_menu = Gtk.PopoverMenu.new_from_model(gio_menu)
+        self.popover_menu.add_css_class(css_class='menu')
+
+        menu_button = Gtk.MenuButton.new()
+        menu_button.set_label(label='Open popover')
+        menu_button.set_popover(popover=self.popover_menu)
+        menu_button.set_menu_model(menu_model=menu_button_model)
+        vbox.append(child=menu_button)
 
         button = Gtk.Button.new_with_label(label='Add/remove class')
         button.set_vexpand(expand=True)
@@ -57,10 +72,10 @@ class ExampleWindow(Adw.ApplicationWindow):
         vbox.append(child=button)
 
     def on_button_clicked(self, button):
-        if 'background' in self.button.get_css_classes():
-            self.button.remove_css_class(css_class='background')
+        if 'menu' in self.popover_menu.get_css_classes():
+            self.popover_menu.remove_css_class(css_class='menu')
         else:
-            self.button.add_css_class(css_class='background')
+            self.popover_menu.add_css_class(css_class='menu')
 
 
 class ExampleApplication(Adw.Application):
