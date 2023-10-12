@@ -1,7 +1,7 @@
 :og:site_name: justCode
 :og:author: Renato Cruz (natorsc)
 :og:type: article
-:og:image: ../images/readme/python-gtk-from-zero-to-app-pt-br-1600x840.png
+:og:image: ../images/readme/python-gtk-from-zero-to-app-pt-br-1600x840.webp
 :og:title: Classes de estilo do GTK e da biblioteca Libadwaita - justCode
 :og:description: Classes de estilo que podem ser aplicados em aplicativos que utilizam o toolkit GTK e a biblioteca Libadwaita.
 
@@ -17,7 +17,7 @@ Libadwaita classes de estilo
 Background
 ----------
 
-.. figure:: ../images/libadwaita-style-class/background.png
+.. figure:: ../images/libadwaita-style-class/background.webp
    :alt: Adw style class background
 
    Adw style class background
@@ -44,7 +44,7 @@ Background
 Body
 ----
 
-.. figure:: ../images/libadwaita-style-class/body.png
+.. figure:: ../images/libadwaita-style-class/body.webp
    :alt: Adw style class body
 
    Adw style class body
@@ -71,7 +71,7 @@ Body
 Boxed-list
 ----------
 
-.. figure:: ../images/libadwaita-style-class/boxed-list.png
+.. figure:: ../images/libadwaita-style-class/boxed-list.webp
    :alt: Adw style class boxed-list
 
    Adw style class boxed-list
@@ -98,7 +98,7 @@ Boxed-list
 Caption
 -------
 
-.. figure:: ../images/libadwaita-style-class/caption.png
+.. figure:: ../images/libadwaita-style-class/caption.webp
    :alt: Adw style class caption
 
    Adw style class caption
@@ -125,7 +125,7 @@ Caption
 Caption-heading
 ---------------
 
-.. figure:: ../images/libadwaita-style-class/caption-heading.png
+.. figure:: ../images/libadwaita-style-class/caption-heading.webp
    :alt: Adw style class caption-heading
 
    Adw style class caption-heading
@@ -152,7 +152,7 @@ Caption-heading
 Card
 ----
 
-.. figure:: ../images/libadwaita-style-class/card.png
+.. figure:: ../images/libadwaita-style-class/card.webp
    :alt: Adw style class card
 
    Adw style class card
@@ -179,7 +179,7 @@ Card
 Circular
 --------
 
-.. figure:: ../images/libadwaita-style-class/circular.png
+.. figure:: ../images/libadwaita-style-class/circular.webp
    :alt: Adw style class circular
 
    Adw style class circular
@@ -206,7 +206,7 @@ Circular
 Colors
 ------
 
-.. figure:: ../images/libadwaita-style-class/colors.png
+.. figure:: ../images/libadwaita-style-class/colors.webp
    :alt: Adw style class colors
 
    Adw style class colors
@@ -233,7 +233,7 @@ Colors
 Compact
 -------
 
-.. figure:: ../images/libadwaita-style-class/compact.png
+.. figure:: ../images/libadwaita-style-class/compact.webp
    :alt: Adw style class compact
 
    Adw style class compact
@@ -260,7 +260,7 @@ Compact
 Destructive-action
 ------------------
 
-.. figure:: ../images/libadwaita-style-class/destructive-action.png
+.. figure:: ../images/libadwaita-style-class/destructive-action.webp
    :alt: Adw style class destructive-action
 
    Adw style class destructive-action
@@ -287,7 +287,7 @@ Destructive-action
 Devel
 -----
 
-.. figure:: ../images/libadwaita-style-class/devel.png
+.. figure:: ../images/libadwaita-style-class/devel.webp
    :alt: Adw style class devel
 
    Adw style class devel
@@ -314,7 +314,7 @@ Devel
 Dim-label
 ---------
 
-.. figure:: ../images/libadwaita-style-class/dim-label.png
+.. figure:: ../images/libadwaita-style-class/dim-label.webp
    :alt: Adw style class dim-label
 
    Adw style class dim-label
@@ -341,7 +341,7 @@ Dim-label
 Flat
 ----
 
-.. figure:: ../images/libadwaita-style-class/flat.png
+.. figure:: ../images/libadwaita-style-class/flat.webp
    :alt: Adw style class flat
 
    Adw style class flat
@@ -368,7 +368,7 @@ Flat
 Frame
 -----
 
-.. figure:: ../images/libadwaita-style-class/frame.png
+.. figure:: ../images/libadwaita-style-class/frame.webp
    :alt: Adw style class frame
 
    Adw style class frame
@@ -395,7 +395,7 @@ Frame
 Heading
 -------
 
-.. figure:: ../images/libadwaita-style-class/heading.png
+.. figure:: ../images/libadwaita-style-class/heading.webp
    :alt: Adw style class heading
 
    Adw style class heading
@@ -422,7 +422,7 @@ Heading
 Icon-dropshadow
 ---------------
 
-.. figure:: ../images/libadwaita-style-class/icon-dropshadow.png
+.. figure:: ../images/libadwaita-style-class/icon-dropshadow.webp
    :alt: Adw style class icon-dropshadow
 
    Adw style class icon-dropshadow
@@ -449,7 +449,7 @@ Icon-dropshadow
 Inline
 ------
 
-.. figure:: ../images/libadwaita-style-class/inline.png
+.. figure:: ../images/libadwaita-style-class/inline.webp
    :alt: Adw style class inline
 
    Adw style class inline
@@ -476,7 +476,7 @@ Inline
 Linked
 ------
 
-.. figure:: ../images/libadwaita-style-class/linked.png
+.. figure:: ../images/libadwaita-style-class/linked.webp
    :alt: Adw style class linked
 
    Adw style class linked
@@ -503,7 +503,7 @@ Linked
 Lowres-icon
 -----------
 
-.. figure:: ../images/libadwaita-style-class/lowres-icon.png
+.. figure:: ../images/libadwaita-style-class/lowres-icon.webp
    :alt: Adw style class lowres-icon
 
    Adw style class lowres-icon
@@ -530,7 +530,7 @@ Lowres-icon
 Menu
 ----
 
-.. figure:: ../images/libadwaita-style-class/menu.png
+.. figure:: ../images/libadwaita-style-class/menu.webp
    :alt: Adw style class menu
 
    Adw style class menu
@@ -557,7 +557,7 @@ Menu
 Monospace
 ---------
 
-.. figure:: ../images/libadwaita-style-class/monospace.png
+.. figure:: ../images/libadwaita-style-class/monospace.webp
    :alt: Adw style class monospace
 
    Adw style class monospace
@@ -584,7 +584,7 @@ Monospace
 Navigation-sidebar
 ------------------
 
-.. figure:: ../images/libadwaita-style-class/navigation-sidebar.png
+.. figure:: ../images/libadwaita-style-class/navigation-sidebar.webp
    :alt: Adw style class navigation-sidebar
 
    Adw style class navigation-sidebar
@@ -611,7 +611,7 @@ Navigation-sidebar
 Numeric
 -------
 
-.. figure:: ../images/libadwaita-style-class/numeric.png
+.. figure:: ../images/libadwaita-style-class/numeric.webp
    :alt: Adw style class numeric
 
    Adw style class numeric
@@ -638,7 +638,7 @@ Numeric
 Opaque
 ------
 
-.. figure:: ../images/libadwaita-style-class/opaque.png
+.. figure:: ../images/libadwaita-style-class/opaque.webp
    :alt: Adw style class opaque
 
    Adw style class opaque
@@ -665,7 +665,7 @@ Opaque
 Osd
 ---
 
-.. figure:: ../images/libadwaita-style-class/osd.png
+.. figure:: ../images/libadwaita-style-class/osd.webp
    :alt: Adw style class osd
 
    Adw style class osd
@@ -692,7 +692,7 @@ Osd
 Pill
 ----
 
-.. figure:: ../images/libadwaita-style-class/pill.png
+.. figure:: ../images/libadwaita-style-class/pill.webp
    :alt: Adw style class pill
 
    Adw style class pill
@@ -716,10 +716,37 @@ Pill
 
 --------------
 
+property
+--------
+
+.. figure:: ../images/libadwaita-style-class/property.webp
+   :alt: Adw style class property
+
+   Adw style class property
+
+.. tab:: Python
+
+   ..  literalinclude:: ../../src/libadwaita-style-class/property/MainWindow.py
+
+.. tab:: Python load ui
+
+   ..  literalinclude:: ../../src/libadwaita-style-class/property/ui/MainWindow.py
+
+.. tab:: UI
+
+   ..  literalinclude:: ../../src/libadwaita-style-class/property/ui/MainWindow.ui
+      :language: html
+
+.. tab:: Blueprint
+
+   ..  literalinclude:: ../../src/libadwaita-style-class/property/ui/MainWindow.blp
+
+--------------
+
 Selection-mode
 --------------
 
-.. figure:: ../images/libadwaita-style-class/selection-mode.png
+.. figure:: ../images/libadwaita-style-class/selection-mode.webp
    :alt: Adw style class selection-mode
 
    Adw style class selection-mode
@@ -746,7 +773,7 @@ Selection-mode
 Spacer
 ------
 
-.. figure:: ../images/libadwaita-style-class/spacer.png
+.. figure:: ../images/libadwaita-style-class/spacer.webp
    :alt: Adw style class spacer
 
    Adw style class spacer
@@ -773,7 +800,7 @@ Spacer
 Suggested-action
 ----------------
 
-.. figure:: ../images/libadwaita-style-class/suggested-action.png
+.. figure:: ../images/libadwaita-style-class/suggested-action.webp
    :alt: Adw style class suggested-action
 
    Adw style class suggested-action
@@ -800,7 +827,7 @@ Suggested-action
 Title
 -----
 
-.. figure:: ../images/libadwaita-style-class/title.png
+.. figure:: ../images/libadwaita-style-class/title.webp
    :alt: Adw style class title
 
    Adw style class title
@@ -827,7 +854,7 @@ Title
 Toolbar
 -------
 
-.. figure:: ../images/libadwaita-style-class/toolbar.png
+.. figure:: ../images/libadwaita-style-class/toolbar.webp
    :alt: Adw style class toolbar
 
    Adw style class toolbar
@@ -854,7 +881,7 @@ Toolbar
 View
 ----
 
-.. figure:: ../images/libadwaita-style-class/view.png
+.. figure:: ../images/libadwaita-style-class/view.webp
    :alt: Adw style class view
 
    Adw style class view

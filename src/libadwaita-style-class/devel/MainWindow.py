@@ -11,7 +11,7 @@ from gi.repository import Adw, Gio, Gtk
 Adw.init()
 
 
-class ExampleWindow(Gtk.ApplicationWindow):
+class ExampleWindow(Adw.ApplicationWindow):
 
     def __init__(self, **kwargs):
         super().__init__(**kwargs)
@@ -21,10 +21,16 @@ class ExampleWindow(Gtk.ApplicationWindow):
         )
         self.set_default_size(width=int(1366 / 2), height=int(768 / 2))
         self.set_size_request(width=int(1366 / 2), height=int(768 / 2))
+        self.add_css_class(css_class='devel')
+
+        adw_toast_overlay = Adw.ToastOverlay.new()
+        self.set_content(content=adw_toast_overlay)
+
+        adw_toolbar_view = Adw.ToolbarView.new()
+        adw_toast_overlay.set_child(child=adw_toolbar_view)
 
         self.adw_header_bar = Adw.HeaderBar.new()
-        self.adw_header_bar.add_css_class(css_class='devel')
-        self.set_titlebar(self.adw_header_bar)
+        adw_toolbar_view.add_top_bar(widget=self.adw_header_bar)
 
         menu_button_model = Gio.Menu()
         menu_button_model.append(
@@ -42,7 +48,10 @@ class ExampleWindow(Gtk.ApplicationWindow):
         vbox.set_margin_end(margin=12)
         vbox.set_margin_bottom(margin=12)
         vbox.set_margin_start(margin=12)
-        self.set_child(child=vbox)
+        adw_toolbar_view.set_content(content=vbox)
+
+        label = Gtk.Label.new(str='Lorem Ipsum')
+        vbox.append(child=label)
 
         button = Gtk.Button.new_with_label(label='Add/remove class')
         button.set_vexpand(expand=True)
@@ -51,10 +60,10 @@ class ExampleWindow(Gtk.ApplicationWindow):
         vbox.append(child=button)
 
     def on_button_clicked(self, button):
-        if 'devel' in self.adw_header_bar.get_css_classes():
-            self.adw_header_bar.remove_css_class(css_class='devel')
+        if 'devel' in self.get_css_classes():
+            self.remove_css_class(css_class='devel')
         else:
-            self.adw_header_bar.add_css_class(css_class='devel')
+            self.add_css_class(css_class='devel')
 
 
 class ExampleApplication(Adw.Application):

@@ -35,7 +35,6 @@ class ExampleWindow(Adw.ApplicationWindow):
 
     @Gtk.Template.Callback()
     def on_button_clicked(self, button):
-        print('aqui')
         if 'numeric' in self.label.get_css_classes():
             self.label.remove_css_class(css_class='numeric')
         else:

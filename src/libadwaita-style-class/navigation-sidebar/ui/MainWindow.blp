@@ -2,13 +2,14 @@ using Gtk 4.0;
 using Adw 1;
 
 template $ExampleWindow : Adw.ApplicationWindow {
-  title: 'Python and GTK: PyGObject libadwaita style classs boxed-list';
+  title: 'Python and GTK: PyGObject libadwaita style classs navigation-sidebar';
   default-width: 683;
   default-height: 384;
-  content:
-  Adw.ToolbarView {
-    [top]
-    Adw.HeaderBar {
+  Adw.ToastOverlay {
+    child:
+    Adw.ToolbarView {
+      [top]
+      Adw.HeaderBar {
       [end]
       MenuButton {
         icon-name: 'open-menu-symbolic';
@@ -50,6 +51,7 @@ template $ExampleWindow : Adw.ApplicationWindow {
   }
 
   ;
+  }
 }
 
 menu primary_menu {

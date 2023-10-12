@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-"""Python and GTK: PyGObject libadwaita style class boxed-list."""
+"""Python and GTK: PyGObject libadwaita style class navigation-sidebar."""
 
 import gi
 
@@ -17,13 +17,16 @@ class ExampleWindow(Adw.ApplicationWindow):
         super().__init__(**kwargs)
 
         self.set_title(
-            title='Python e GTK: PyGObject libadwaita style classe boxed-list',
+            title='Python e GTK: PyGObject libadwaita style classe navigation-sidebar',
         )
         self.set_default_size(width=int(1366 / 2), height=int(768 / 2))
         self.set_size_request(width=int(1366 / 2), height=int(768 / 2))
 
+        adw_toast_overlay = Adw.ToastOverlay.new()
+        self.set_content(content=adw_toast_overlay)
+
         adw_toolbar_view = Adw.ToolbarView.new()
-        self.set_content(content=adw_toolbar_view)
+        adw_toast_overlay.set_child(child=adw_toolbar_view)
 
         adw_header_bar = Adw.HeaderBar.new()
         adw_toolbar_view.add_top_bar(widget=adw_header_bar)

@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-"""Python and GTK: PyGObject libadwaita style class boxed-list."""
+"""Python and GTK: PyGObject libadwaita style class navigation-sidebar."""
 
 import sys
 from pathlib import Path

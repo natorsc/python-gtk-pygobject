@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-"""Python and GTK: PyGObject libadwaita style class background."""
+"""Python and GTK: PyGObject libadwaita style class inline."""
 
 import sys
 from pathlib import Path
@@ -28,17 +28,28 @@ Adw.init()
 class ExampleWindow(Adw.ApplicationWindow):
     __gtype_name__ = 'ExampleWindow'
 
-    button = Gtk.Template.Child(name='button')
+    search_bar = Gtk.Template.Child(name='search_bar')
 
     def __init__(self, **kwargs):
         super().__init__(**kwargs)
 
     @Gtk.Template.Callback()
-    def on_button_clicked(self, button):
-        if 'background' in self.button.get_css_classes():
-            self.button.remove_css_class(css_class='background')
+    def on_button_search_clicked(self, toggle_button):
+        if self.search_bar.get_search_mode():
+            self.search_bar.set_search_mode(search_mode=False)
         else:
-            self.button.add_css_class(css_class='background')
+            self.search_bar.set_search_mode(search_mode=True)
+
+    @Gtk.Template.Callback()
+    def on_search_entry_changed(self, search_entry):
+        print(search_entry.get_text())
+
+    @Gtk.Template.Callback()
+    def on_button_clicked(self, button):
+        if 'inline' in self.search_bar.get_css_classes():
+            self.search_bar.remove_css_class(css_class='inline')
+        else:
+            self.search_bar.add_css_class(css_class='inline')
 
 
 class ExampleApplication(Adw.Application):

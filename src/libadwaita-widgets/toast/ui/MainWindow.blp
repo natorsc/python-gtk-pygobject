@@ -5,8 +5,9 @@ template $ExampleWindow : Adw.ApplicationWindow {
   title: 'Python e GTK: PyGObject libadwaita Adw.Toast() ui file';
   default-width: 683;
   default-height: 384;
-  content: 
-  Adw.ToolbarView {
+  Adw.ToastOverlay {
+    child:
+    Adw.ToolbarView {
     [top]
     Adw.HeaderBar {
       [end]
@@ -40,9 +41,9 @@ template $ExampleWindow : Adw.ApplicationWindow {
     ;
   }
 
-  ;
+    ;
+  }
 }
-
 Adw.Toast toast {
   title: 'Lorem Ipsum';
   button-label: 'Undo';

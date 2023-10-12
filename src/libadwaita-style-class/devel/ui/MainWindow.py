@@ -25,20 +25,18 @@ Adw.init()
 
 
 @Gtk.Template(filename=str(UI))
-class ExampleWindow(Gtk.ApplicationWindow):
+class ExampleWindow(Adw.ApplicationWindow):
     __gtype_name__ = 'ExampleWindow'
-
-    adw_header_bar = Gtk.Template.Child(name='adw_header_bar')
 
     def __init__(self, **kwargs):
         super().__init__(**kwargs)
 
     @Gtk.Template.Callback()
     def on_button_clicked(self, button):
-        if 'devel' in self.adw_header_bar.get_css_classes():
-            self.adw_header_bar.remove_css_class(css_class='devel')
+        if 'devel' in self.get_css_classes():
+            self.remove_css_class(css_class='devel')
         else:
-            self.adw_header_bar.add_css_class(css_class='devel')
+            self.add_css_class(css_class='devel')
 
 
 class ExampleApplication(Adw.Application):

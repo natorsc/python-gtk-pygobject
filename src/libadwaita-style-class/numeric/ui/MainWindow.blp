@@ -5,10 +5,11 @@ template $ExampleWindow : Adw.ApplicationWindow {
   title: 'Python and GTK: PyGObject libadwaita style classs numeric';
   default-width: 683;
   default-height: 384;
-  content:
-  Adw.ToolbarView {
-    [top]
-    Adw.HeaderBar {
+  Adw.ToastOverlay {
+    child:
+    Adw.ToolbarView {
+      [top]
+      Adw.HeaderBar {
       [end]
       MenuButton {
         icon-name: 'open-menu-symbolic';
@@ -43,6 +44,7 @@ template $ExampleWindow : Adw.ApplicationWindow {
   }
 
   ;
+  }
 }
 
 menu primary_menu {

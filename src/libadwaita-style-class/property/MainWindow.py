@@ -22,8 +22,11 @@ class ExampleWindow(Adw.ApplicationWindow):
         self.set_default_size(width=int(1366 / 2), height=int(768 / 2))
         self.set_size_request(width=int(1366 / 2), height=int(768 / 2))
 
+        adw_toast_overlay = Adw.ToastOverlay.new()
+        self.set_content(content=adw_toast_overlay)
+
         adw_toolbar_view = Adw.ToolbarView.new()
-        self.set_content(content=adw_toolbar_view)
+        adw_toast_overlay.set_child(child=adw_toolbar_view)
 
         adw_header_bar = Adw.HeaderBar.new()
         adw_toolbar_view.add_top_bar(widget=adw_header_bar)
@@ -62,13 +65,12 @@ class ExampleWindow(Adw.ApplicationWindow):
         button.connect('clicked', self.on_button_clicked)
         vbox.append(child=button)
 
-
     def on_button_clicked(self, button):
         if 'property' in self.adw_action_row.get_css_classes():
             self.adw_action_row.remove_css_class(css_class='property')
         else:
             self.adw_action_row.add_css_class(css_class='property')
-    
+
 
 class ExampleApplication(Adw.Application):
 

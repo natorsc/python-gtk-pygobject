@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-"""Python e GTK: PyGObject libadwaita style classe background."""
+"""Python e GTK: PyGObject libadwaita style classe inline."""
 
 import gi
 
@@ -17,16 +17,24 @@ class ExampleWindow(Adw.ApplicationWindow):
         super().__init__(**kwargs)
 
         self.set_title(
-            title='Python e GTK: PyGObject libadwaita style classe background',
+            title='Python e GTK: PyGObject libadwaita style classe inline',
         )
         self.set_default_size(width=int(1366 / 2), height=int(768 / 2))
         self.set_size_request(width=int(1366 / 2), height=int(768 / 2))
 
+        adw_toast_overlay = Adw.ToastOverlay.new()
+        self.set_content(content=adw_toast_overlay)
+
         adw_toolbar_view = Adw.ToolbarView.new()
-        self.set_content(content=adw_toolbar_view)
+        adw_toast_overlay.set_child(child=adw_toolbar_view)
 
         adw_header_bar = Adw.HeaderBar.new()
         adw_toolbar_view.add_top_bar(widget=adw_header_bar)
+
+        toggle_button = Gtk.ToggleButton.new()
+        toggle_button.set_icon_name(icon_name='system-search-symbolic')
+        toggle_button.connect('toggled', self.on_button_search_clicked)
+        adw_header_bar.pack_start(child=toggle_button)
 
         menu_button_model = Gio.Menu()
         menu_button_model.append(
@@ -46,9 +54,15 @@ class ExampleWindow(Adw.ApplicationWindow):
         vbox.set_margin_start(margin=12)
         adw_toolbar_view.set_content(content=vbox)
 
-        self.button = Gtk.Button.new_with_label(label='Lorem Ipsum')
-        self.button.add_css_class(css_class='background')
-        vbox.append(child=self.button)
+        search_entry = Gtk.SearchEntry.new()
+        search_entry.set_placeholder_text(text='Lorem Ipsum')
+        search_entry.connect('search_changed', self.on_search_entry_changed)
+
+        self.search_bar = Gtk.SearchBar.new()
+        self.search_bar.connect_entry(entry=search_entry)
+        self.search_bar.set_child(child=search_entry)
+        self.search_bar.add_css_class(css_class='inline')
+        vbox.append(child=self.search_bar)
 
         button = Gtk.Button.new_with_label(label='Add/remove class')
         button.set_vexpand(expand=True)
@@ -56,11 +70,20 @@ class ExampleWindow(Adw.ApplicationWindow):
         button.connect('clicked', self.on_button_clicked)
         vbox.append(child=button)
 
-    def on_button_clicked(self, button):
-        if 'background' in self.button.get_css_classes():
-            self.button.remove_css_class(css_class='background')
+    def on_button_search_clicked(self, toggle_button):
+        if self.search_bar.get_search_mode():
+            self.search_bar.set_search_mode(search_mode=False)
         else:
-            self.button.add_css_class(css_class='background')
+            self.search_bar.set_search_mode(search_mode=True)
+
+    def on_search_entry_changed(self, search_entry):
+        print(search_entry.get_text())
+
+    def on_button_clicked(self, button):
+        if 'inline' in self.search_bar.get_css_classes():
+            self.search_bar.remove_css_class(css_class='inline')
+        else:
+            self.search_bar.add_css_class(css_class='inline')
 
 
 class ExampleApplication(Adw.Application):

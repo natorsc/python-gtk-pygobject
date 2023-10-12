@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-"""Python and GTK: PyGObject libadwaita style class caption."""
+"""Python and GTK: PyGObject libadwaita style class card."""
 
 import sys
 from pathlib import Path

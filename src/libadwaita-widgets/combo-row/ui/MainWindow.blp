@@ -5,8 +5,9 @@ template $ExampleWindow : Adw.ApplicationWindow {
   title: 'Python e GTK: PyGObject Adw.ComboRow()';
   default-width: 683;
   default-height: 384;
-  content: 
-  Adw.ToolbarView {
+  Adw.ToastOverlay {
+    child:
+    Adw.ToolbarView {
     [top]
     Adw.HeaderBar {
       [end]
@@ -95,9 +96,9 @@ template $ExampleWindow : Adw.ApplicationWindow {
     ;
   }
 
-  ;
+    ;
+  }
 }
-
 StringList model {
   strings ['Item 01', 'Item 02', 'Item 03', 'Item 04', 'Item 05']
 }

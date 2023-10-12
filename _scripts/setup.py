@@ -9,19 +9,19 @@ ROOT_DIR = BASE_DIR.parent
 
 
 def requirements_txt(shell: bool = True) -> None:
-    subprocess.call(
+    subprocess.run(
         args='poetry export --without-hashes -f requirements.txt '
              '-o requirements.txt',
         cwd=ROOT_DIR,
         shell=shell,
     )
-    subprocess.call(
+    subprocess.run(
         args='poetry export --with dev --without-hashes -f requirements.txt '
              '-o requirements-dev.txt',
         cwd=ROOT_DIR,
         shell=shell,
     )
-    subprocess.call(
+    subprocess.run(
         args='poetry export --only docs --without-hashes -f requirements.txt '
              '-o docs/data/requirements-doc.txt',
         cwd=ROOT_DIR,

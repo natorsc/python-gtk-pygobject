@@ -22,8 +22,11 @@ class ExampleWindow(Adw.ApplicationWindow):
         self.set_default_size(width=int(1366 / 2), height=int(768 / 2))
         self.set_size_request(width=int(1366 / 2), height=int(768 / 2))
 
+        adw_toast_overlay = Adw.ToastOverlay.new()
+        self.set_content(content=adw_toast_overlay)
+
         adw_toolbar_view = Adw.ToolbarView.new()
-        self.set_content(content=adw_toolbar_view)
+        adw_toast_overlay.set_child(child=adw_toolbar_view)
 
         adw_header_bar = Adw.HeaderBar.new()
         adw_toolbar_view.add_top_bar(widget=adw_header_bar)
@@ -46,23 +49,23 @@ class ExampleWindow(Adw.ApplicationWindow):
         vbox.set_margin_start(margin=12)
         adw_toolbar_view.set_content(content=vbox)
 
-        gio_menu = Gio.Menu.new()
+        gio_menu_model = Gio.Menu.new()
 
         gio_menu_item_01 = Gio.MenuItem.new()
         gio_menu_item_01.set_label(label='Item 01')
-        gio_menu.append_item(gio_menu_item_01)
+        gio_menu_model.append_item(gio_menu_item_01)
 
         gio_menu_item_02 = Gio.MenuItem.new()
         gio_menu_item_02.set_label(label='Item 02')
-        gio_menu.append_item(gio_menu_item_02)
+        gio_menu_model.append_item(gio_menu_item_02)
 
-        self.popover_menu = Gtk.PopoverMenu.new_from_model(gio_menu)
+        self.popover_menu = Gtk.PopoverMenu.new_from_model(gio_menu_model)
         self.popover_menu.add_css_class(css_class='menu')
 
         menu_button = Gtk.MenuButton.new()
         menu_button.set_label(label='Open popover')
         menu_button.set_popover(popover=self.popover_menu)
-        menu_button.set_menu_model(menu_model=menu_button_model)
+        menu_button.set_menu_model(menu_model=gio_menu_model)
         vbox.append(child=menu_button)
 
         button = Gtk.Button.new_with_label(label='Add/remove class')

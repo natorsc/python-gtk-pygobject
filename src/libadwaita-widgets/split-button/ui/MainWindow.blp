@@ -5,8 +5,9 @@ template $ExampleWindow : Adw.ApplicationWindow {
   title: 'Python e GTK: PyGObject libadwaita Adw.SplitButton ui file';
   default-width: 683;
   default-height: 384;
-  content: 
-  Adw.ToolbarView {
+  Adw.ToastOverlay {
+    child:
+    Adw.ToolbarView {
     [top]
     Adw.HeaderBar {
       [end]
@@ -42,9 +43,9 @@ template $ExampleWindow : Adw.ApplicationWindow {
     ;
   }
 
-  ;
+    ;
+  }
 }
-
 PopoverMenu popover_menu {
   menu-model: adw_split_button_menu;
 }

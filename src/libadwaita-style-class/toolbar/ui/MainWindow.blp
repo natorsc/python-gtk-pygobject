@@ -2,13 +2,14 @@ using Gtk 4.0;
 using Adw 1;
 
 template $ExampleWindow : Adw.ApplicationWindow {
-  title: 'Python and GTK: PyGObject libadwaita style classs background';
+  title: 'Python and GTK: PyGObject libadwaita style classs toolbar';
   default-width: 683;
   default-height: 384;
-  content:
-  Adw.ToolbarView {
-    [top]
-    Adw.HeaderBar {
+  Adw.ToastOverlay {
+    child:
+    Adw.ToolbarView {
+      [top]
+      Adw.HeaderBar {
       [end]
       MenuButton {
         icon-name: 'open-menu-symbolic';
@@ -24,11 +25,20 @@ template $ExampleWindow : Adw.ApplicationWindow {
       margin-start: 12;
       spacing: 12;
 
-      Button button {
-        label: 'Lorem Ipsum';
+      Box hbox {
+        orientation: horizontal;
         styles [
-          'background',
-        ]
+            'toolbar',
+          ]
+        Button {
+          icon-name: 'document-open-symbolic';
+        }
+        Button {
+          icon-name: 'document-open-symbolic';
+        }
+        Button {
+          icon-name: 'document-open-symbolic';
+        }
       }
 
       Button {
@@ -43,6 +53,7 @@ template $ExampleWindow : Adw.ApplicationWindow {
   }
 
   ;
+  }
 }
 
 menu primary_menu {

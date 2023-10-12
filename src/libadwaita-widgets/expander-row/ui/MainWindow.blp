@@ -5,8 +5,9 @@ template $ExampleWindow : Adw.ApplicationWindow {
   title: 'Python e GTK: PyGObject Adw.ExpanderRow() ui file';
   default-width: 683;
   default-height: 384;
-  content: 
-  Adw.ToolbarView {
+  Adw.ToastOverlay {
+    child:
+    Adw.ToolbarView {
     [top]
     Adw.HeaderBar {
       [end]
@@ -100,9 +101,9 @@ template $ExampleWindow : Adw.ApplicationWindow {
     ;
   }
 
-  ;
+    ;
+  }
 }
-
 menu primary_menu {
   section {
     item {

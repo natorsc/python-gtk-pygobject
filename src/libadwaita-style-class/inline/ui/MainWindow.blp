@@ -2,41 +2,59 @@ using Gtk 4.0;
 using Adw 1;
 
 template $ExampleWindow : Adw.ApplicationWindow {
-  title: 'Python and GTK: PyGObject libadwaita style classs background';
+  title: 'Python and GTK: PyGObject libadwaita style classs inline';
   default-width: 683;
   default-height: 384;
-  content: 
-  Adw.ToolbarView {
-    [top]
-    Adw.HeaderBar {
-      [end]
-      MenuButton {
-        icon-name: 'open-menu-symbolic';
-        menu-model: primary_menu;
-      }
-    }
-    content: 
-    Box {
-      orientation: vertical;
-      margin-top: 12;
-      margin-end: 12;
-      margin-bottom: 12;
-      margin-start: 12;
-      spacing: 12;
+  content:
+  Adw.ToastOverlay {
+    child:
+    Adw.ToolbarView {
+      [top]
+      Adw.HeaderBar {
+        [start]
+        ToggleButton {
+          icon-name: 'system-search-symbolic';
+          toggled => $on_button_search_clicked();
+        }
 
-      Button button {
-        label: 'Lorem Ipsum';
-        styles [
-          'background',
-        ]
+        [end]
+        MenuButton {
+          icon-name: 'open-menu-symbolic';
+          menu-model: primary_menu;
+        }
+      }
+      content:
+      Box {
+        orientation: vertical;
+        margin-top: 12;
+        margin-end: 12;
+        margin-bottom: 12;
+        margin-start: 12;
+        spacing: 12;
+
+        SearchBar search_bar {
+          styles [
+            'inline',
+          ]
+          child:
+            SearchEntry {
+              activates-default: true;
+              placeholder-text: 'Lorem Ipsum';
+              search-changed => $on_search_entry_changed();
+            }
+
+            ;
+        }
+
+        Button {
+          label: 'Add/Remove class';
+          vexpand: true;
+          valign: end;
+          clicked => $on_button_clicked();
+        }
       }
 
-      Button {
-        label: 'Add/Remove class';
-        vexpand: true;
-        valign: end;
-        clicked => $on_button_clicked();
-      }
+      ;
     }
 
     ;

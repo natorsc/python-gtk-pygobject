@@ -6,39 +6,52 @@ corresponding .blp file and regenerate this file with blueprint-compiler.
 -->
 <interface>
   <requires lib="gtk" version="4.0"/>
-  <template class="ExampleWindow" parent="GtkApplicationWindow">
+  <template class="ExampleWindow" parent="AdwApplicationWindow">
     <property name="title">Python and GTK: PyGObject libadwaita style classs devel</property>
     <property name="default-width">683</property>
     <property name="default-height">384</property>
-    <child type="titlebar">
-      <object class="AdwHeaderBar" id="adw_header_bar">
-        <style>
-          <class name="devel"/>
-        </style>
-        <child type="end">
-          <object class="GtkMenuButton">
-            <property name="icon-name">open-menu-symbolic</property>
-            <property name="menu-model">primary_menu</property>
-          </object>
-        </child>
-      </object>
-    </child>
+    <style>
+      <class name="devel"/>
+    </style>
     <child>
-      <object class="GtkBox">
-        <property name="orientation">1</property>
-        <property name="margin-top">12</property>
-        <property name="margin-end">12</property>
-        <property name="margin-bottom">12</property>
-        <property name="margin-start">12</property>
-        <property name="spacing">12</property>
-        <child>
-          <object class="GtkButton">
-            <property name="label">Add/Remove class</property>
-            <property name="vexpand">true</property>
-            <property name="valign">2</property>
-            <signal name="clicked" handler="on_button_clicked"/>
+      <object class="AdwToastOverlay">
+        <property name="child">
+          <object class="AdwToolbarView">
+            <child type="top">
+              <object class="AdwHeaderBar">
+                <child type="end">
+                  <object class="GtkMenuButton">
+                    <property name="icon-name">open-menu-symbolic</property>
+                    <property name="menu-model">primary_menu</property>
+                  </object>
+                </child>
+              </object>
+            </child>
+            <property name="content">
+              <object class="GtkBox">
+                <property name="orientation">1</property>
+                <property name="margin-top">12</property>
+                <property name="margin-end">12</property>
+                <property name="margin-bottom">12</property>
+                <property name="margin-start">12</property>
+                <property name="spacing">12</property>
+                <child>
+                  <object class="GtkLabel">
+                    <property name="label">Lorem Ipsum</property>
+                  </object>
+                </child>
+                <child>
+                  <object class="GtkButton">
+                    <property name="label">Add/Remove class</property>
+                    <property name="vexpand">true</property>
+                    <property name="valign">2</property>
+                    <signal name="clicked" handler="on_button_clicked"/>
+                  </object>
+                </child>
+              </object>
+            </property>
           </object>
-        </child>
+        </property>
       </object>
     </child>
   </template>

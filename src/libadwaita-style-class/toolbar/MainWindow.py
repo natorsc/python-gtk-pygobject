@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-"""Python and GTK: PyGObject libadwaita style class."""
+"""Python and GTK: PyGObject libadwaita style class toolbar."""
 
 import gi
 
@@ -17,13 +17,16 @@ class ExampleWindow(Adw.ApplicationWindow):
         super().__init__(**kwargs)
 
         self.set_title(
-            title='Python e GTK: PyGObject libadwaita style classe',
+            title='Python e GTK: PyGObject libadwaita style classe toolbar',
         )
         self.set_default_size(width=int(1366 / 2), height=int(768 / 2))
         self.set_size_request(width=int(1366 / 2), height=int(768 / 2))
 
+        adw_toast_overlay = Adw.ToastOverlay.new()
+        self.set_content(content=adw_toast_overlay)
+
         adw_toolbar_view = Adw.ToolbarView.new()
-        self.set_content(content=adw_toolbar_view)
+        adw_toast_overlay.set_child(child=adw_toolbar_view)
 
         adw_header_bar = Adw.HeaderBar.new()
         adw_toolbar_view.add_top_bar(widget=adw_header_bar)
@@ -46,9 +49,15 @@ class ExampleWindow(Adw.ApplicationWindow):
         vbox.set_margin_start(margin=12)
         adw_toolbar_view.set_content(content=vbox)
 
-        self.button = Gtk.Button.new_with_label(label='Lorem Ipsum')
-        self.button.add_css_class(css_class='background')
-        vbox.append(child=self.button)
+        self.hbox = Gtk.Box.new(orientation=Gtk.Orientation.HORIZONTAL, spacing=0)
+        self.hbox.add_css_class(css_class='toolbar')
+        vbox.append(child=self.hbox)
+
+        for _ in range(3):
+            button = Gtk.Button.new_from_icon_name(
+                icon_name='document-open-symbolic',
+            )
+            self.hbox.append(child=button)
 
         button = Gtk.Button.new_with_label(label='Add/remove class')
         button.set_vexpand(expand=True)
@@ -57,10 +66,10 @@ class ExampleWindow(Adw.ApplicationWindow):
         vbox.append(child=button)
 
     def on_button_clicked(self, button):
-        if 'background' in self.button.get_css_classes():
-            self.button.remove_css_class(css_class='background')
+        if 'toolbar' in self.hbox.get_css_classes():
+            self.hbox.remove_css_class(css_class='toolbar')
         else:
-            self.button.add_css_class(css_class='background')
+            self.hbox.add_css_class(css_class='toolbar')
 
 
 class ExampleApplication(Adw.Application):
