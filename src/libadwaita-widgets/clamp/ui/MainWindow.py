@@ -1,10 +1,8 @@
 # -*- coding: utf-8 -*-
-"""Python e GTK: PyGObject libadwaita Adw.Clamp() ui file."""
+"""Python and GTK: PyGObject libadwaita Adw.Clamp."""
 
 import sys
 from pathlib import Path
-
-
 
 import gi
 

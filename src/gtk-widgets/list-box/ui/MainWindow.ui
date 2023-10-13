@@ -7,7 +7,7 @@ corresponding .blp file and regenerate this file with blueprint-compiler.
 <interface>
   <requires lib="gtk" version="4.0"/>
   <template class="ExampleWindow" parent="GtkApplicationWindow">
-    <property name="title">Python e GTK: PyGObject Gtk.ListBox() ui file.</property>
+    <property name="title">Python and GTK: PyGObject Gtk.ListBox.</property>
     <property name="default-width">683</property>
     <property name="default-height">384</property>
     <child type="titlebar">

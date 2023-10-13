@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-"""Python e GTK: PyGObject Gtk.DropDown() ui file."""
+"""Python and GTK: PyGObject Gtk.DropDown."""
 
 import sys
 from pathlib import Path

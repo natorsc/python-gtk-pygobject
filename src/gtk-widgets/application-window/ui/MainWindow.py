@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-"""Python e GTK: PyGObject Gtk.ApplicationWindow() ui file."""
+"""Python and GTK: PyGObject Gtk.ApplicationWindow."""
 
 import sys
 from pathlib import Path

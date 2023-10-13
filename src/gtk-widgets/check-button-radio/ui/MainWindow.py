@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-"""Python e GTK: PyGObject Gtk.CheckButton() radio ui file.
+"""Python and GTK: PyGObject Gtk.CheckButton() radio ui file.
 
 In GTK 4 or higher, the RadioButton is a CheckButton that has a group.
 """

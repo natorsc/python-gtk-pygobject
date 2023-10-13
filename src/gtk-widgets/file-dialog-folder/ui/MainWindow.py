@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-"""Python e GTK: PyGObject Gtk.FileDialog() (folder) ui file."""
+"""Python and GTK: PyGObject Gtk.FileDialog() (folder) ui file."""
 
 import sys
 from pathlib import Path

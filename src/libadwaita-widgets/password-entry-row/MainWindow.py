@@ -1,7 +1,5 @@
 # -*- coding: utf-8 -*-
-"""Python e GTK: PyGObject Adw.PasswordEntryRow()."""
-
-
+"""Python and GTK: PyGObject Adw.PasswordEntryRow"""
 
 import gi
 
@@ -19,7 +17,7 @@ class ExampleWindow(Adw.ApplicationWindow):
         super().__init__(**kwargs)
 
         self.set_title(
-            title='Python e GTK: PyGObject Adw.PasswordEntryRow()',
+            title='Python and GTK: PyGObject Adw.PasswordEntryRow()',
         )
         self.set_default_size(width=int(1366 / 2), height=int(768 / 2))
         self.set_size_request(width=int(1366 / 2), height=int(768 / 2))
@@ -50,7 +48,7 @@ class ExampleWindow(Adw.ApplicationWindow):
         vbox.set_margin_bottom(margin=12)
         vbox.set_margin_start(margin=12)
         adw_toolbar_view.set_content(content=vbox)
-        
+
         adw_password_entry_row = Adw.PasswordEntryRow.new()
         adw_password_entry_row.set_valign(align=Gtk.Align.CENTER)
         vbox.append(child=adw_password_entry_row)

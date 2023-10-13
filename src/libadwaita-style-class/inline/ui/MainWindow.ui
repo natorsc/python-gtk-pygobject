@@ -15,7 +15,7 @@ corresponding .blp file and regenerate this file with blueprint-compiler.
         <property name="child">
           <object class="AdwToolbarView">
             <child type="top">
-              <object class="AdwHeaderBar">
+              <object class="AdwHeaderBar" id="header_bar">
                 <child type="start">
                   <object class="GtkToggleButton">
                     <property name="icon-name">system-search-symbolic</property>

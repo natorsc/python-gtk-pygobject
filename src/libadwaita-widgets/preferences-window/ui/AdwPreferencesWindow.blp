@@ -2,48 +2,42 @@ using Gtk 4.0;
 using Adw 1;
 
 template $PreferencesWindow : Adw.PreferencesWindow {
-  title: 'Python e GTK: PyGObject libadwaita Adw.PreferencesWindow() ui file';
-  modal: true;
-  default-width: 455;
-  default-height: 256;
+  title: 'Python and GTK: PyGObject libadwaita Adw.PreferencesWindow';
+  default-width: 683;
+  default-height: 384;
 
-  Adw.PreferencesPage {
-    Adw.PreferencesGroup {
-      title: 'AdwPreferencesPage';
-      description: 'AdwPreferencesGroup';
-      header-suffix: header_suffix;
+  Adw.ToastOverlay {
+    child:
+    Adw.ToolbarView {
+      [top]
+      Adw.HeaderBar header_bar {
+      }
+      content:
+      Box {
+        orientation: vertical;
+        spacing: 12;
+        margin-top: 12;
+        margin-end: 12;
+        margin-bottom: 12;
+        margin-start: 12;
 
-      Adw.ActionRow {
-        icon-name: 'edit-find-symbolic';
-        title: 'Libadwaita';
-        subtitle: 'Adw.ActionRow()';
+        Adw.PreferencesPage {
+          Adw.PreferencesGroup {
+            title: 'AdwPreferencesPage';
+            description: 'AdwPreferencesGroup';
 
-        Switch {
-          valign: center;
-          notify::active => $on_switch_button_clicked();
+            Adw.ActionRow {
+              icon-name: 'edit-find-symbolic';
+              title: 'Lorem ipsum';
+              subtitle: 'Lorem ipsum';
+            }
+          }
         }
       }
 
-      Adw.ActionRow {
-        icon-name: 'edit-find-symbolic';
-        title: 'Libadwaita - Clicking on the widget line toggles it on and off\n                                ';
-        subtitle: 'Adw.ActionRow()';
-        activatable-widget: switch;
-
-        Switch switch {
-          valign: center;
-          notify::active => $on_switch_button_clicked();
-        }
-      }
+      ;
     }
+
+    ;
   }
-}
-
-Button header_suffix {
-  icon-name: 'list-add-symbolic';
-  clicked => $on_button_clicked();
-
-  styles [
-    'flat',
-  ]
 }

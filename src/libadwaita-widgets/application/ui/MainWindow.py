@@ -1,10 +1,8 @@
 # -*- coding: utf-8 -*-
-"""Python e GTK: PyGObject libadwaita Adw.Application() ui file."""
+"""Python and GTK: PyGObject libadwaita Adw.Application."""
 
 import sys
 from pathlib import Path
-
-
 
 import gi
 

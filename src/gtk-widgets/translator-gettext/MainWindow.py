@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-"""Python and GTK: PyGObject internationalization with gettext()."""
+"""Python and GTK: PyGObject internationalization with gettext"""
 
 import configparser
 import gettext
@@ -21,7 +21,7 @@ APPLICATION_ID = 'br.com.justcode.PyGObject'
 BASE_DIR = Path(__file__).resolve().parent
 LOCALES_DIR = BASE_DIR.joinpath('locales')
 CONFIG_FILE = BASE_DIR.joinpath('config.ini')
-window_title = 'Python e GTK: Gtk.ApplicationWindow()'
+window_title = 'Python and GTK: Gtk.ApplicationWindow()'
 
 # The default language of the operating system will be used.
 # gettext.bindtextdomain(APPLICATION_ID, LOCALES_DIR)
@@ -44,7 +44,7 @@ class ExampleWindow(Gtk.ApplicationWindow):
         super().__init__(**kwargs)
 
         self.set_title(
-            _('Python e GTK: PyGObject internacionalização com gettext().'),
+            _('Python and GTK: PyGObject internacionalização com gettext().'),
         )
         self.set_default_size(width=int(1366 / 2), height=int(768 / 2))
         self.set_size_request(width=int(1366 / 2), height=int(768 / 2))

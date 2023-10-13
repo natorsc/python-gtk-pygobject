@@ -1,10 +1,8 @@
 # -*- coding: utf-8 -*-
-"""Python e GTK: PyGObject Adw.ExpanderRow()."""
+"""Python and GTK: PyGObject Adw.ExpanderRow"""
 
 import sys
 from pathlib import Path
-
-
 
 import gi
 

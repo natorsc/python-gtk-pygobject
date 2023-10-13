@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-"""Python e GTK: PyGObject Gtk.SearchBar() ui file."""
+"""Python and GTK: PyGObject Gtk.SearchBar."""
 
 import sys
 from pathlib import Path

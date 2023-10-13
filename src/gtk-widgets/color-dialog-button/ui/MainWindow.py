@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-"""Python e GTK: PyGObject Gtk.ColorDialogButton() ui file."""
+"""Python and GTK: PyGObject Gtk.ColorDialogButton."""
 
 import sys
 from pathlib import Path

@@ -1,7 +1,5 @@
 # -*- coding: utf-8 -*-
-"""Python e GTK: PyGObject libadwaita Adw.StatusPage()."""
-
-
+"""Python and GTK: PyGObject libadwaita Adw.StatusPage"""
 
 import gi
 
@@ -19,7 +17,7 @@ class ExampleWindow(Adw.ApplicationWindow):
         super().__init__(**kwargs)
 
         self.set_title(
-            title='Python e GTK: PyGObject libadwaita Adw.StatusPage()',
+            title='Python and GTK: PyGObject libadwaita Adw.StatusPage',
         )
         self.set_default_size(width=int(1366 / 2), height=int(768 / 2))
         self.set_size_request(width=int(1366 / 2), height=int(768 / 2))

@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-"""Python e GTK: PyGObject Gtk.Box() vertical."""
+"""Python and GTK: PyGObject Gtk.Box() vertical."""
 
 
 
@@ -18,7 +18,7 @@ class ExampleWindow(Gtk.ApplicationWindow):
     def __init__(self, **kwargs):
         super().__init__(**kwargs)
 
-        self.set_title(title='Python e GTK: PyGObject Gtk.Box() vertical')
+        self.set_title(title='Python and GTK: PyGObject Gtk.Box() vertical')
         self.set_default_size(width=int(1366 / 2), height=int(768 / 2))
         self.set_size_request(width=int(1366 / 2), height=int(768 / 2))
 

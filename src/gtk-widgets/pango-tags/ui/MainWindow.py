@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-"""Python e GTK: PyGObject PyGObject Pango ui file."""
+"""Python and GTK: PyGObject PyGObject Pango ui file."""
 
 import sys
 from pathlib import Path

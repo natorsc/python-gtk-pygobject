@@ -1,10 +1,8 @@
 # -*- coding: utf-8 -*-
-"""Python e GTK: PyGObject libadwaita Adw.ViewStack() ui file."""
+"""Python and GTK: PyGObject libadwaita Adw.ViewStack."""
 
 import sys
 from pathlib import Path
-
-
 
 import gi
 
@@ -13,16 +11,17 @@ gi.require_version(namespace='Adw', version='1')
 
 from gi.repository import Adw, Gio, Gtk
 
-Adw.init()
-
 BASE_DIR = Path(__file__).resolve().parent
 UI = BASE_DIR.joinpath('MainWindow.ui')
 
 _MODULES = BASE_DIR.parent.parent.parent.joinpath('_modules')
 sys.path.append(str(_MODULES))
+
 import _tools
 
 _tools.compile_blueprint_ui(ui_dir=BASE_DIR)
+
+Adw.init()
 
 
 @Gtk.Template(filename=str(UI))

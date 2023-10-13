@@ -1,10 +1,8 @@
 # -*- coding: utf-8 -*-
-"""Python e GTK: PyGObject libadwaita Adw.ButtonContent() ui file."""
+"""Python and GTK: PyGObject libadwaita Adw.ButtonContent."""
 
 import sys
 from pathlib import Path
-
-
 
 import gi
 

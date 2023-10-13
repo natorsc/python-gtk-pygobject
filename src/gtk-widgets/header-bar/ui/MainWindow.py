@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-"""Python e GTK: PyGObject Gtk.HeaderBar() ui file."""
+"""Python and GTK: PyGObject Gtk.HeaderBar."""
 
 import sys
 from pathlib import Path

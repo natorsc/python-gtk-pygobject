@@ -1,7 +1,5 @@
 # -*- coding: utf-8 -*-
-"""Python e GTK: PyGObject libadwaita Adw.MessageDialog()."""
-
-
+"""Python and GTK: PyGObject libadwaita Adw.MessageDialog"""
 
 import gi
 
@@ -14,7 +12,7 @@ Adw.init()
 
 
 class Dialog(Adw.MessageDialog):
-    
+
     def __init__(self, **kwargs):
         super().__init__(**kwargs)
 
@@ -45,7 +43,7 @@ class ExampleWindow(Adw.ApplicationWindow):
         super().__init__(**kwargs)
 
         self.set_title(
-            title='Python e GTK: PyGObject libadwaita Adw.MessageDialog()',
+            title='Python and GTK: PyGObject libadwaita Adw.MessageDialog()',
         )
         self.set_default_size(width=int(1366 / 2), height=int(768 / 2))
         self.set_size_request(width=int(1366 / 2), height=int(768 / 2))

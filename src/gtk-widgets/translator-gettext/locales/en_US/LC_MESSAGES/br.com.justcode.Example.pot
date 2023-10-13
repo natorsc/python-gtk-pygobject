@@ -18,7 +18,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 #: MainWindow.py:42
-msgid "Python e GTK: PyGObject internacionalização com gettext()."
+msgid "Python and GTK: PyGObject internacionalização com gettext()."
 msgstr ""
 
 #: MainWindow.py:58

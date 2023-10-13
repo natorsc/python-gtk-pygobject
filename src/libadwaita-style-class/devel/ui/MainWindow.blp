@@ -8,11 +8,13 @@ template $ExampleWindow : Adw.ApplicationWindow {
   styles [
     'devel',
   ]
+
+  content:
   Adw.ToastOverlay {
     child:
     Adw.ToolbarView {
       [top]
-      Adw.HeaderBar {
+      Adw.HeaderBar header_bar {
       [end]
       MenuButton {
         icon-name: 'open-menu-symbolic';
@@ -45,7 +47,9 @@ template $ExampleWindow : Adw.ApplicationWindow {
 
     ;
   }
+  ;
 }
+
 menu primary_menu {
   section {
     item {

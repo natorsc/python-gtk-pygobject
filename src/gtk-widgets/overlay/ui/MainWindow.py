@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-"""Python e GTK: PyGObject Gtk.Overlay() ui file."""
+"""Python and GTK: PyGObject Gtk.Overlay."""
 
 import sys
 from pathlib import Path

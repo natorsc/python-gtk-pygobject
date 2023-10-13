@@ -1,7 +1,5 @@
 # -*- coding: utf-8 -*-
-"""Python e GTK: PyGObject Adw.ActionRow()."""
-
-
+"""Python and GTK: PyGObject Adw.ActionRow"""
 
 import gi
 
@@ -20,7 +18,7 @@ class ExampleWindow(Adw.ApplicationWindow):
         super().__init__(**kwargs)
 
         self.set_title(
-            title='Python e GTK: PyGObject Adw.ActionRow()'
+            title='Python and GTK: PyGObject Adw.ActionRow',
         )
         self.set_default_size(width=int(1366 / 2), height=int(768 / 2))
         self.set_size_request(width=int(1366 / 2), height=int(768 / 2))
@@ -70,7 +68,7 @@ class ExampleWindow(Adw.ApplicationWindow):
 
             adw_action_row = Adw.ActionRow.new()
             adw_action_row.set_title(title=item)
-            adw_action_row.set_subtitle(subtitle='Adw.ActionRow()')
+            adw_action_row.set_subtitle(subtitle='Adw.ActionRow')
             adw_action_row.add_prefix(widget=icon)
             adw_action_row.add_suffix(widget=switch)
             self.listbox.append(child=adw_action_row)

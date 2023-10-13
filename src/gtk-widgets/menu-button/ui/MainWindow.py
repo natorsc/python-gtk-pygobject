@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-"""Python e GTK: PyGObject Gtk.MenuButton() ui file."""
+"""Python and GTK: PyGObject Gtk.MenuButton."""
 
 import sys
 from pathlib import Path

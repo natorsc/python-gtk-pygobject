@@ -1,10 +1,8 @@
 # -*- coding: utf-8 -*-
-"""Python e GTK: PyGObject libadwaita Adw.PreferencesPage() ui file."""
+"""Python and GTK: PyGObject libadwaita Adw.PreferencesPage."""
 
 import sys
 from pathlib import Path
-
-
 
 import gi
 
@@ -76,7 +74,7 @@ class ExampleApplication(Adw.Application):
         action.connect('activate', callback)
         self.add_action(action=action)
         if shortcuts:
-            self.set_accels_for_action(
+            self.set_accels')_action(
                 detailed_action_name=f'app.{name}',
                 accels=shortcuts,
             )

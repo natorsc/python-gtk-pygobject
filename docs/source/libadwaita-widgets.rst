@@ -1,7 +1,7 @@
 :og:site_name: justCode
 :og:author: Renato Cruz (natorsc)
 :og:type: article
-:og:image: ../images/readme/python-gtk-from-zero-to-app-pt-br-1600x840.png
+:og:image: ../images/readme/python-gtk-from-zero-to-app-pt-br-1600x840.webp
 :og:title: Libadwaita widgets exemplos de código - justCode
 :og:description: Exemplos de código sobre construção de interfaces gráficas com a linguagem de programação Python (PyGObject), o toolkit gráfico GTK e a biblioteca libadwaita.
 
@@ -17,7 +17,7 @@ Libadwaita Widgets
 Adw.AboutWindow
 ~~~~~~~~~~~~~~~
 
-.. figure:: ../images/libadwaita-widgets/about-window.png
+.. figure:: ../images/libadwaita-widgets/about-window.webp
    :alt: Adw.AboutWindow
 
    Adw.AboutWindow
@@ -44,7 +44,7 @@ Adw.AboutWindow
 Adw.ActionRow
 ~~~~~~~~~~~~~
 
-.. figure:: ../images/libadwaita-widgets/action-row.png
+.. figure:: ../images/libadwaita-widgets/action-row.webp
    :alt: Adw.ActionRow
 
    Adw.ActionRow
@@ -71,7 +71,7 @@ Adw.ActionRow
 Adw.Application
 ~~~~~~~~~~~~~~~
 
-.. figure:: ../images/libadwaita-widgets/application.png
+.. figure:: ../images/libadwaita-widgets/application.webp
    :alt: Adw.Application
 
    Adw.Application
@@ -98,7 +98,7 @@ Adw.Application
 Adw.Avatar
 ~~~~~~~~~~
 
-.. figure:: ../images/libadwaita-widgets/avatar.png
+.. figure:: ../images/libadwaita-widgets/avatar.webp
    :alt: Adw.Avatar
 
    Adw.Avatar
@@ -125,7 +125,7 @@ Adw.Avatar
 Adw.Banner
 ~~~~~~~~~~
 
-.. figure:: ../images/libadwaita-widgets/banner.png
+.. figure:: ../images/libadwaita-widgets/banner.webp
    :alt: Adw.Banner
 
    Adw.Banner
@@ -152,7 +152,7 @@ Adw.Banner
 Adw.ButtonContent
 ~~~~~~~~~~~~~~~~~
 
-.. figure:: ../images/libadwaita-widgets/button-content.png
+.. figure:: ../images/libadwaita-widgets/button-content.webp
    :alt: Adw.ButtonContent
 
    Adw.ButtonContent
@@ -179,7 +179,7 @@ Adw.ButtonContent
 Adw.Carousel
 ~~~~~~~~~~~~
 
-.. figure:: ../images/libadwaita-widgets/carousel.png
+.. figure:: ../images/libadwaita-widgets/carousel.webp
    :alt: Adw.Carousel
 
    Adw.Carousel
@@ -206,7 +206,7 @@ Adw.Carousel
 Adw.CarouselIndicatorDots
 ~~~~~~~~~~~~~~~~~~~~~~~~~
 
-.. figure:: ../images/libadwaita-widgets/carousel-indicator-dots.png
+.. figure:: ../images/libadwaita-widgets/carousel-indicator-dots.webp
    :alt: Adw.CarouselIndicatorDots
 
    Adw.CarouselIndicatorDots
@@ -233,7 +233,7 @@ Adw.CarouselIndicatorDots
 Adw.CarouselIndicatorLines
 ~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-.. figure:: ../images/libadwaita-widgets/carousel-indicator-lines.png
+.. figure:: ../images/libadwaita-widgets/carousel-indicator-lines.webp
    :alt: Adw.CarouselIndicatorLines
 
    Adw.CarouselIndicatorLines
@@ -260,7 +260,7 @@ Adw.CarouselIndicatorLines
 Adw.Clamp
 ~~~~~~~~~
 
-.. figure:: ../images/libadwaita-widgets/clamp.png
+.. figure:: ../images/libadwaita-widgets/clamp.webp
    :alt: Adw.Clamp
 
    Adw.Clamp
@@ -287,7 +287,7 @@ Adw.Clamp
 Adw.ComboRow
 ~~~~~~~~~~~~
 
-.. figure:: ../images/libadwaita-widgets/combo-row.png
+.. figure:: ../images/libadwaita-widgets/combo-row.webp
    :alt: Adw.ComboRow
 
    Adw.ComboRow
@@ -314,7 +314,7 @@ Adw.ComboRow
 Adw.EntryRow
 ~~~~~~~~~~~~
 
-.. figure:: ../images/libadwaita-widgets/entry-row.png
+.. figure:: ../images/libadwaita-widgets/entry-row.webp
    :alt: Adw.EntryRow
 
    Adw.EntryRow
@@ -341,7 +341,7 @@ Adw.EntryRow
 Adw.ExpanderRow
 ~~~~~~~~~~~~~~~
 
-.. figure:: ../images/libadwaita-widgets/expander-row.png
+.. figure:: ../images/libadwaita-widgets/expander-row.webp
    :alt: Adw.ExpanderRow
 
    Adw.ExpanderRow
@@ -368,7 +368,7 @@ Adw.ExpanderRow
 Adw.MessageDialog
 ~~~~~~~~~~~~~~~~~
 
-.. figure:: ../images/libadwaita-widgets/message-dialog.png
+.. figure:: ../images/libadwaita-widgets/message-dialog.webp
    :alt: Adw.MessageDialog
 
    Adw.MessageDialog
@@ -391,14 +391,10 @@ Adw.MessageDialog
 Adw.NavigationSplitView
 ~~~~~~~~~~~~~~~~~~~~~~~
 
-.. figure:: ../images/libadwaita-widgets/navigation-split-view.png
+.. figure:: ../images/libadwaita-widgets/navigation-split-view.webp
    :alt: Adw.NavigationSplitView
 
    Adw.NavigationSplitView
-
-.. tab:: Python
-
-   ..  literalinclude:: ../../src/libadwaita-widgets/navigation-split-view/MainWindow.py
 
 .. tab:: Python load ui
 
@@ -418,14 +414,10 @@ Adw.NavigationSplitView
 Adw.PasswordEntryRow
 ~~~~~~~~~~~~~~~~~~~~
 
-.. figure:: ../images/libadwaita-widgets/password-entry-row.png
+.. figure:: ../images/libadwaita-widgets/password-entry-row.webp
    :alt: Adw.PasswordEntryRow
 
    Adw.PasswordEntryRow
-
-.. tab:: Python
-
-   ..  literalinclude:: ../../src/libadwaita-widgets/password-entry-row/MainWindow.py
 
 .. tab:: Python load ui
 
@@ -445,7 +437,7 @@ Adw.PasswordEntryRow
 Adw.PreferencesPage
 ~~~~~~~~~~~~~~~~~~~
 
-.. figure:: ../images/libadwaita-widgets/preferences-page.png
+.. figure:: ../images/libadwaita-widgets/preferences-page.webp
    :alt: Adw.PreferencesPage
 
    Adw.PreferencesPage
@@ -472,7 +464,7 @@ Adw.PreferencesPage
 Adw.PreferencesWindow
 ~~~~~~~~~~~~~~~~~~~~~
 
-.. figure:: ../images/libadwaita-widgets/preferences-window.png
+.. figure:: ../images/libadwaita-widgets/preferences-window.webp
    :alt: Adw.PreferencesWindow
 
    Adw.PreferencesWindow
@@ -499,7 +491,7 @@ Adw.PreferencesWindow
 Adw.SplitButton
 ~~~~~~~~~~~~~~~
 
-.. figure:: ../images/libadwaita-widgets/split-button.png
+.. figure:: ../images/libadwaita-widgets/split-button.webp
    :alt: Adw.SplitButton
 
    Adw.SplitButton
@@ -526,7 +518,7 @@ Adw.SplitButton
 Adw.StatusPage
 ~~~~~~~~~~~~~~
 
-.. figure:: ../images/libadwaita-widgets/status-page.png
+.. figure:: ../images/libadwaita-widgets/status-page.webp
    :alt: Adw.StatusPage
 
    Adw.StatusPage
@@ -553,7 +545,7 @@ Adw.StatusPage
 Adw.Toast
 ~~~~~~~~~
 
-.. figure:: ../images/libadwaita-widgets/toast.png
+.. figure:: ../images/libadwaita-widgets/toast.webp
    :alt: Adw.Toast
 
    Adw.Toast
@@ -582,14 +574,10 @@ Adw.ViewStack
 
 .. warning:: Criar código com Blueprint
 
-.. figure:: ../images/libadwaita-widgets/view-stack.png
+.. figure:: ../images/libadwaita-widgets/view-stack.webp
    :alt: Adw.ViewStack
 
    Adw.ViewStack
-
-.. tab:: Python
-
-   ..  literalinclude:: ../../src/libadwaita-widgets/view-stack/MainWindow.py
 
 .. tab:: Python load ui
 

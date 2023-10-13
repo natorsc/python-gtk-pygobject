@@ -1,13 +1,11 @@
 # -*- coding: utf-8 -*-
-"""Python e GTK: PyGObject Gtk.ListBox() Adw.ComboRow().
+"""Python and GTK: PyGObject Gtk.ListBox() Adw.ComboRow().
 
 blueprint-compiler: `error: unsupported XML tag: <items>`.
 """
 
 import sys
 from pathlib import Path
-
-
 
 import gi
 

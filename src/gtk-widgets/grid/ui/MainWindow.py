@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-"""Python e GTK: PyGObject Gtk.Grid() ui file."""
+"""Python and GTK: PyGObject Gtk.Grid."""
 
 import sys
 from pathlib import Path

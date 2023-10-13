@@ -1,7 +1,5 @@
 # -*- coding: utf-8 -*-
-"""Python e GTK: PyGObject Adw.ExpanderRow()."""
-
-
+"""Python and GTK: PyGObject Adw.ExpanderRow"""
 
 import gi
 
@@ -22,7 +20,7 @@ class ExampleWindow(Adw.ApplicationWindow):
         super().__init__(**kwargs)
 
         self.set_title(
-            title='Python e GTK: PyGObject Gtk.ListBox() Adw.ExpanderRow()',
+            title='Python and GTK: PyGObject Gtk.ListBox() Adw.ExpanderRow()',
         )
         self.set_default_size(width=int(1366 / 2), height=int(768 / 2))
         self.set_size_request(width=int(1366 / 2), height=int(768 / 2))
@@ -71,7 +69,7 @@ class ExampleWindow(Adw.ApplicationWindow):
             adw_expander_row = Adw.ExpanderRow.new()
             adw_expander_row.add_prefix(widget=icon)
             adw_expander_row.set_title(title=item)
-            adw_expander_row.set_subtitle(subtitle='Adw.ExpanderRow()')
+            adw_expander_row.set_subtitle(subtitle='Adw.ExpanderRow')
             adw_expander_row.add_row(child=label)
             self.list_box.append(child=adw_expander_row)
 

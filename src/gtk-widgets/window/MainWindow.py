@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-"""Python e GTK: PyGObject Gtk.Window()."""
+"""Python and GTK: PyGObject Gtk.Window"""
 
 
 
@@ -17,7 +17,7 @@ class NewWindow(Gtk.Window):
     def __init__(self, **kwargs):
         super().__init__(**kwargs)
 
-        self.set_title(title='Python e GTK: PyGObject Gtk.Window()')
+        self.set_title(title='Python and GTK: PyGObject Gtk.Window')
         self.set_modal(modal=True)
         self.set_default_size(width=int(1366 / 3), height=int(768 / 3))
         self.set_size_request(width=int(1366 / 3), height=int(768 / 3))
@@ -43,7 +43,7 @@ class ExampleWindow(Gtk.ApplicationWindow):
     def __init__(self, **kwargs):
         super().__init__(**kwargs)
 
-        self.set_title(title='Python e GTK: PyGObject Gtk.ApplicationWindow()')
+        self.set_title(title='Python and GTK: PyGObject Gtk.ApplicationWindow')
         self.set_default_size(width=int(1366 / 2), height=int(768 / 2))
         self.set_size_request(width=int(1366 / 2), height=int(768 / 2))
 

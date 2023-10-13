@@ -1,28 +1,29 @@
 # -*- coding: utf-8 -*-
-"""Python e GTK: PyGObject libadwaita Adw.PreferencesWindow() ui file."""
+"""Python and GTK: PyGObject libadwaita Adw.PreferencesWindow."""
 
 import sys
 from pathlib import Path
 
-import gi
-
 from AdwPreferencesWindow import AdwPreferencesWindow
+
+import gi
 
 gi.require_version(namespace='Gtk', version='4.0')
 gi.require_version(namespace='Adw', version='1')
 
 from gi.repository import Adw, Gio, Gtk
 
-Adw.init()
-
 BASE_DIR = Path(__file__).resolve().parent
 UI = BASE_DIR.joinpath('MainWindow.ui')
 
 _MODULES = BASE_DIR.parent.parent.parent.joinpath('_modules')
 sys.path.append(str(_MODULES))
+
 import _tools
 
 _tools.compile_blueprint_ui(ui_dir=BASE_DIR)
+
+Adw.init()
 
 
 @Gtk.Template(filename=str(UI))
@@ -31,6 +32,11 @@ class ExampleWindow(Adw.ApplicationWindow):
 
     def __init__(self, **kwargs):
         super().__init__(**kwargs)
+
+    @Gtk.Template.Callback()
+    def on_button_clicked(self, button):
+        adw_preferences_window = AdwPreferencesWindow(transient_for=self)
+        adw_preferences_window.present()
 
 
 class ExampleApplication(Adw.Application):
@@ -55,8 +61,7 @@ class ExampleApplication(Adw.Application):
         Gtk.Application.do_shutdown(self)
 
     def on_preferences_action(self, action, param):
-        adw_preferences_window = AdwPreferencesWindow()
-        adw_preferences_window.present()
+        print('Action `app.preferences` was active.')
 
     def exit_app(self, action, param):
         self.quit()

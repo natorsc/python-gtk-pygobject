@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-"""Python e GTK: PyGObject Gtk.Image().
+"""Python and GTK: PyGObject Gtk.Image().
 
 It is suitable for loading icons.
 

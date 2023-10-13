@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-"""Python e GTK: PyGObject Gtk.FlowBox() ui file."""
+"""Python and GTK: PyGObject Gtk.FlowBox."""
 
 import sys
 from pathlib import Path

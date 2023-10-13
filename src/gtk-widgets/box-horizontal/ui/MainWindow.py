@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-"""Python e GTK: PyGObject Gtk.Box() horizontal ui file."""
+"""Python and GTK: PyGObject Gtk.Box() horizontal ui file."""
 
 import sys
 from pathlib import Path

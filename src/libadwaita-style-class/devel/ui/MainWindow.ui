@@ -13,12 +13,12 @@ corresponding .blp file and regenerate this file with blueprint-compiler.
     <style>
       <class name="devel"/>
     </style>
-    <child>
+    <property name="content">
       <object class="AdwToastOverlay">
         <property name="child">
           <object class="AdwToolbarView">
             <child type="top">
-              <object class="AdwHeaderBar">
+              <object class="AdwHeaderBar" id="header_bar">
                 <child type="end">
                   <object class="GtkMenuButton">
                     <property name="icon-name">open-menu-symbolic</property>
@@ -53,7 +53,7 @@ corresponding .blp file and regenerate this file with blueprint-compiler.
           </object>
         </property>
       </object>
-    </child>
+    </property>
   </template>
   <menu id="primary_menu">
     <section>

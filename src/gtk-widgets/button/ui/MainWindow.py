@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-"""Python e GTK: PyGObject Gtk.Button() ui file."""
+"""Python and GTK: PyGObject Gtk.Button."""
 
 import subprocess
 import sys

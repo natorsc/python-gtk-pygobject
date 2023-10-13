@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-"""Python e GTK: PyGObject Gtk.Fixed() ui file."""
+"""Python and GTK: PyGObject Gtk.Fixed."""
 
 import sys
 from pathlib import Path

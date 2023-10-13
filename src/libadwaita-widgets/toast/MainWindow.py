@@ -1,7 +1,5 @@
 # -*- coding: utf-8 -*-
-"""Python e GTK: PyGObject libadwaita Adw.Toast()."""
-
-
+"""Python and GTK: PyGObject libadwaita Adw.Toast"""
 
 import gi
 
@@ -18,15 +16,15 @@ class ExampleWindow(Adw.ApplicationWindow):
     def __init__(self, **kwargs):
         super().__init__(**kwargs)
 
-        self.set_title(title='Python e GTK: PyGObject libadwaita Adw.Toast()')
+        self.set_title(title='Python and GTK: PyGObject libadwaita Adw.Toast')
         self.set_default_size(width=int(1366 / 2), height=int(768 / 2))
         self.set_size_request(width=int(1366 / 2), height=int(768 / 2))
 
-        adw_toast_overlay = Adw.ToastOverlay.new()
-        self.set_content(content=adw_toast_overlay)
+        self.adw_toast_overlay = Adw.ToastOverlay.new()
+        self.set_content(content=self.adw_toast_overlay)
 
         adw_toolbar_view = Adw.ToolbarView.new()
-        adw_toast_overlay.set_child(child=adw_toolbar_view)
+        self.adw_toast_overlay.set_child(child=adw_toolbar_view)
 
         adw_header_bar = Adw.HeaderBar.new()
         adw_toolbar_view.add_top_bar(widget=adw_header_bar)
@@ -42,19 +40,16 @@ class ExampleWindow(Adw.ApplicationWindow):
         menu_button.set_menu_model(menu_model=menu_button_model)
         adw_header_bar.pack_end(child=menu_button)
 
-        self.toast_overlay = Adw.ToastOverlay.new()
-        adw_toolbar_view.set_content(content=self.toast_overlay)
-        
         vbox = Gtk.Box.new(orientation=Gtk.Orientation.VERTICAL, spacing=12)
         vbox.set_margin_top(margin=12)
         vbox.set_margin_end(margin=12)
         vbox.set_margin_bottom(margin=12)
         vbox.set_margin_start(margin=12)
-        self.toast_overlay.set_child(child=vbox)
-        
+        adw_toolbar_view.set_content(content=vbox)
+
         self.button = Gtk.Button.new_with_label(label='Click here')
-        self.button.set_valign(Gtk.Align.CENTER)
         self.button.set_vexpand(expand=True)
+        self.button.set_valign(align=Gtk.Align.END)
         self.button.connect('clicked', self.on_button_clicked)
         vbox.append(child=self.button)
 
@@ -64,11 +59,9 @@ class ExampleWindow(Adw.ApplicationWindow):
         self.toast.connect('dismissed', self.on_toast_dismissed)
         self.toast.connect('button-clicked', self.on_toast_button_clicked)
 
-         
     def on_button_clicked(self, button):
         button.set_sensitive(sensitive=False)
-        self.toast_overlay.add_toast(self.toast)
-
+        self.adw_toast_overlay.add_toast(self.toast)
 
     def on_toast_dismissed(self, toast):
         """Emitted when the toast has been dismissed."""
@@ -76,12 +69,10 @@ class ExampleWindow(Adw.ApplicationWindow):
         print('Emitted when the toast has been dismissed')
         self.button.set_sensitive(sensitive=True)
 
-
     def on_toast_button_clicked(self, toast):
         """Emitted after the button has been clicked."""
         print('[!] button-clicked [!]')
         print('Emitted after the button has been clicked.')
-
 
 
 class ExampleApplication(Adw.Application):

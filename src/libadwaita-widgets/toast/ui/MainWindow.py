@@ -1,10 +1,8 @@
 # -*- coding: utf-8 -*-
-"""Python e GTK: PyGObject libadwaita Adw.Toast() ui file."""
+"""Python and GTK: PyGObject libadwaita Adw.Toast."""
 
 import sys
 from pathlib import Path
-
-
 
 import gi
 
@@ -29,9 +27,9 @@ _tools.compile_blueprint_ui(ui_dir=BASE_DIR)
 class ExampleWindow(Adw.ApplicationWindow):
     __gtype_name__ = 'ExampleWindow'
 
-    button = Gtk.Template.Child()
-    toast = Gtk.Template.Child()
-    toast_overlay = Gtk.Template.Child()
+    button = Gtk.Template.Child(name='button')
+    toast = Gtk.Template.Child(name='toast')
+    adw_toast_overlay = Gtk.Template.Child(name='adw_toast_overlay')
 
     def __init__(self, **kwargs):
         super().__init__(**kwargs)
@@ -39,7 +37,7 @@ class ExampleWindow(Adw.ApplicationWindow):
     @Gtk.Template.Callback()
     def on_button_clicked(self, button):
         button.set_sensitive(sensitive=False)
-        self.toast_overlay.add_toast(self.toast)
+        self.adw_toast_overlay.add_toast(self.toast)
 
     @Gtk.Template.Callback()
     def on_toast_dismissed(self, toast):

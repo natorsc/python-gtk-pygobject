@@ -2,14 +2,16 @@ using Gtk 4.0;
 using Adw 1;
 
 template $ExampleWindow : Adw.ApplicationWindow {
-  title: 'Python e GTK: PyGObject libadwaita Adw.PreferencesPage() ui file';
+  title: 'Python and GTK: PyGObject libadwaita Adw.PreferencesPage';
   default-width: 683;
-  default-height: 384;
+default-height: 384;
+
+  content:
   Adw.ToastOverlay {
     child:
     Adw.ToolbarView {
     [top]
-    Adw.HeaderBar {
+    Adw.HeaderBar header_bar {
       [end]
       MenuButton {
         icon-name: 'open-menu-symbolic';
@@ -62,7 +64,9 @@ template $ExampleWindow : Adw.ApplicationWindow {
 
     ;
   }
+  ;
 }
+
 menu primary_menu {
   section {
     item {

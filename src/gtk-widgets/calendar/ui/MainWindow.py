@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-"""Python e GTK: PyGObject Gtk.Calendar() ui file."""
+"""Python and GTK: PyGObject Gtk.Calendar."""
 
 import sys
 from pathlib import Path

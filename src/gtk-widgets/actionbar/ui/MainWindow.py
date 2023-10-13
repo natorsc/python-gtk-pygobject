@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-"""Python e GTK: PyGObject Gtk.ActionBar() ui file."""
+"""Python and GTK: PyGObject Gtk.ActionBar."""
 
 import sys
 from pathlib import Path

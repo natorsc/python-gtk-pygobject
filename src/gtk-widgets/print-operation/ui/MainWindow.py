@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-"""Python e GTK: PyGObject PyGObject Gtk.PrintOperation ui file."""
+"""Python and GTK: PyGObject PyGObject Gtk.PrintOperation ui file."""
 
 import sys
 from pathlib import Path

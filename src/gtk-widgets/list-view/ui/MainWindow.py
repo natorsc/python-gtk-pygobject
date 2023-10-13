@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-"""Python e GTK: PyGObject Gtk.ListView() ui file."""
+"""Python and GTK: PyGObject Gtk.ListView."""
 
 import sys
 from pathlib import Path

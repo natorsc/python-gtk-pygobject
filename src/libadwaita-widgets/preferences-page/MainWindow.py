@@ -1,7 +1,5 @@
 # -*- coding: utf-8 -*-
-"""Python e GTK: PyGObject libadwaita Adw.PreferencesPage()."""
-
-
+"""Python and GTK: PyGObject libadwaita Adw.PreferencesPage"""
 
 import gi
 
@@ -19,7 +17,7 @@ class ExampleWindow(Adw.ApplicationWindow):
         super().__init__(**kwargs)
 
         self.set_title(
-            title='Python e GTK: PyGObject libadwaita Adw.AdwPreferencesPage()',
+            title='Python and GTK: PyGObject libadwaita Adw.AdwPreferencesPage',
         )
         self.set_default_size(width=int(1366 / 2), height=int(768 / 2))
         self.set_size_request(width=int(1366 / 2), height=int(768 / 2))
@@ -76,7 +74,7 @@ class ExampleWindow(Adw.ApplicationWindow):
                 icon_name='edit-find-symbolic'),
         )
         adw_action_row_01.set_title(title='Libadwaita')
-        adw_action_row_01.set_subtitle(subtitle='Adw.ActionRow()')
+        adw_action_row_01.set_subtitle(subtitle='Adw.ActionRow')
         adw_action_row_01.add_suffix(widget=switch_01)
         adw_preferences_group.add(child=adw_action_row_01)
 
@@ -92,7 +90,7 @@ class ExampleWindow(Adw.ApplicationWindow):
         adw_action_row_02.set_title(
             title='Libadwaita - Clicking on the widget line toggles it on and off'
         )
-        adw_action_row_02.set_subtitle(subtitle='Adw.ActionRow()')
+        adw_action_row_02.set_subtitle(subtitle='Adw.ActionRow')
         adw_action_row_02.add_suffix(widget=switch_02)
         adw_action_row_02.set_activatable_widget(widget=switch_02)
         adw_preferences_group.add(child=adw_action_row_02)

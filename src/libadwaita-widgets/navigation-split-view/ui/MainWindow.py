@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-"""Python e GTK: PyGObject libadwaita Adw.NavigationSplitView."""
+"""Python and GTK: PyGObject libadwaita Adw.NavigationSplitView."""
 
 import sys
 from pathlib import Path

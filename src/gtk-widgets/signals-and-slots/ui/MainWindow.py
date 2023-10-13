@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-"""Python e GTK: PyGObject Signal e Slots ui file."""
+"""Python and GTK: PyGObject Signal e Slots ui file."""
 
 import sys
 from pathlib import Path

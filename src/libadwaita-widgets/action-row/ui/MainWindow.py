@@ -1,10 +1,8 @@
 # -*- coding: utf-8 -*-
-"""Python e GTK: PyGObject Gtk.ListBox() Adw.ActionRow() ui file."""
+"""Python and GTK: PyGObject Gtk.ListBox() Adw.ActionRow."""
 
 import sys
 from pathlib import Path
-
-
 
 import gi
 

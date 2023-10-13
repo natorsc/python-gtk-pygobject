@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-"""Python e GTK: PyGObject Gtk.FileDialog() (open) ui file."""
+"""Python and GTK: PyGObject Gtk.FileDialog() (open) ui file."""
 
 import subprocess
 import sys

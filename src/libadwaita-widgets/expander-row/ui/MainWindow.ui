@@ -7,121 +7,125 @@ corresponding .blp file and regenerate this file with blueprint-compiler.
 <interface>
   <requires lib="gtk" version="4.0"/>
   <template class="ExampleWindow" parent="AdwApplicationWindow">
-    <property name="title">Python e GTK: PyGObject Adw.ExpanderRow() ui file</property>
+    <property name="title">Python and GTK: PyGObject Adw.ExpanderRow</property>
     <property name="default-width">683</property>
     <property name="default-height">384</property>
-    <property name="content">
-      <object class="AdwToolbarView">
-        <child type="top">
-          <object class="GtkHeaderBar">
-            <child type="end">
-              <object class="GtkMenuButton">
-                <property name="icon-name">open-menu-symbolic</property>
-                <property name="menu-model">primary_menu</property>
-              </object>
-            </child>
-          </object>
-        </child>
-        <property name="content">
-          <object class="GtkBox">
-            <property name="orientation">1</property>
-            <property name="spacing">12</property>
-            <property name="margin-top">12</property>
-            <property name="margin-end">12</property>
-            <property name="margin-bottom">12</property>
-            <property name="margin-start">12</property>
-            <child>
-              <object class="GtkListBox">
-                <property name="selection-mode">0</property>
-                <style>
-                  <class name="boxed-list"/>
-                </style>
-                <child>
-                  <object class="AdwExpanderRow">
-                    <property name="title">Item 01</property>
-                    <property name="subtitle">Adw.ExpanderRow()</property>
-                    <child type="prefix">
-                      <object class="GtkImage">
-                        <property name="icon-name">accessories-text-editor-symbolic</property>
-                      </object>
-                    </child>
-                    <child>
-                      <object class="GtkLabel">
-                        <property name="label">&lt;big&gt;Lorem ipsum&lt;/big&gt;
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</property>
-                        <property name="use-markup">true</property>
-                        <property name="wrap">true</property>
-                      </object>
-                    </child>
-                  </object>
-                </child>
-                <child>
-                  <object class="AdwExpanderRow">
-                    <property name="title">Item 02</property>
-                    <property name="subtitle">Adw.ExpanderRow()</property>
-                    <child type="prefix">
-                      <object class="GtkImage">
-                        <property name="icon-name">accessories-text-editor-symbolic</property>
-                      </object>
-                    </child>
-                    <child>
-                      <object class="GtkLabel">
-                        <property name="label">&lt;big&gt;Lorem ipsum&lt;/big&gt;
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</property>
-                        <property name="use-markup">true</property>
-                        <property name="wrap">true</property>
-                      </object>
-                    </child>
-                  </object>
-                </child>
-                <child>
-                  <object class="AdwExpanderRow">
-                    <property name="title">Item 03</property>
-                    <property name="subtitle">Adw.ExpanderRow()</property>
-                    <child type="prefix">
-                      <object class="GtkImage">
-                        <property name="icon-name">accessories-text-editor-symbolic</property>
-                      </object>
-                    </child>
-                    <child>
-                      <object class="GtkLabel">
-                        <property name="label">&lt;big&gt;Lorem ipsum&lt;/big&gt;
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</property>
-                        <property name="use-markup">true</property>
-                        <property name="wrap">true</property>
-                      </object>
-                    </child>
-                  </object>
-                </child>
-                <child>
-                  <object class="AdwExpanderRow">
-                    <property name="title">Item 04</property>
-                    <property name="subtitle">Adw.ExpanderRow()</property>
-                    <child type="prefix">
-                      <object class="GtkImage">
-                        <property name="icon-name">accessories-text-editor-symbolic</property>
-                      </object>
-                    </child>
-                    <child>
-                      <object class="GtkLabel">
-                        <property name="label">&lt;big&gt;Lorem ipsum&lt;/big&gt;
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</property>
-                        <property name="use-markup">true</property>
-                        <property name="wrap">true</property>
-                      </object>
-                    </child>
+    <child>
+      <object class="AdwToastOverlay">
+        <property name="child">
+          <object class="AdwToolbarView">
+            <child type="top">
+              <object class="AdwHeaderBar">
+                <child type="end">
+                  <object class="GtkMenuButton">
+                    <property name="icon-name">open-menu-symbolic</property>
+                    <property name="menu-model">primary_menu</property>
                   </object>
                 </child>
               </object>
             </child>
+            <property name="content">
+              <object class="GtkBox">
+                <property name="orientation">1</property>
+                <property name="spacing">12</property>
+                <property name="margin-top">12</property>
+                <property name="margin-end">12</property>
+                <property name="margin-bottom">12</property>
+                <property name="margin-start">12</property>
+                <child>
+                  <object class="GtkListBox">
+                    <property name="selection-mode">0</property>
+                    <style>
+                      <class name="boxed-list"/>
+                    </style>
+                    <child>
+                      <object class="AdwExpanderRow">
+                        <property name="title">Item 01</property>
+                        <property name="subtitle">Adw.ExpanderRow()</property>
+                        <child type="prefix">
+                          <object class="GtkImage">
+                            <property name="icon-name">accessories-text-editor-symbolic</property>
+                          </object>
+                        </child>
+                        <child>
+                          <object class="GtkLabel">
+                            <property name="label">&lt;big&gt;Lorem ipsum&lt;/big&gt;
+
+Lorem ipsum dolor sit amet, consectetur...</property>
+                            <property name="use-markup">true</property>
+                            <property name="wrap">true</property>
+                          </object>
+                        </child>
+                      </object>
+                    </child>
+                    <child>
+                      <object class="AdwExpanderRow">
+                        <property name="title">Item 02</property>
+                        <property name="subtitle">Adw.ExpanderRow()</property>
+                        <child type="prefix">
+                          <object class="GtkImage">
+                            <property name="icon-name">accessories-text-editor-symbolic</property>
+                          </object>
+                        </child>
+                        <child>
+                          <object class="GtkLabel">
+                            <property name="label">&lt;big&gt;Lorem ipsum&lt;/big&gt;
+
+Lorem ipsum dolor sit amet, consectetur...</property>
+                            <property name="use-markup">true</property>
+                            <property name="wrap">true</property>
+                          </object>
+                        </child>
+                      </object>
+                    </child>
+                    <child>
+                      <object class="AdwExpanderRow">
+                        <property name="title">Item 03</property>
+                        <property name="subtitle">Adw.ExpanderRow()</property>
+                        <child type="prefix">
+                          <object class="GtkImage">
+                            <property name="icon-name">accessories-text-editor-symbolic</property>
+                          </object>
+                        </child>
+                        <child>
+                          <object class="GtkLabel">
+                            <property name="label">&lt;big&gt;Lorem ipsum&lt;/big&gt;
+
+Lorem ipsum dolor sit amet, consectetur...</property>
+                            <property name="use-markup">true</property>
+                            <property name="wrap">true</property>
+                          </object>
+                        </child>
+                      </object>
+                    </child>
+                    <child>
+                      <object class="AdwExpanderRow">
+                        <property name="title">Item 04</property>
+                        <property name="subtitle">Adw.ExpanderRow()</property>
+                        <child type="prefix">
+                          <object class="GtkImage">
+                            <property name="icon-name">accessories-text-editor-symbolic</property>
+                          </object>
+                        </child>
+                        <child>
+                          <object class="GtkLabel">
+                            <property name="label">&lt;big&gt;Lorem ipsum&lt;/big&gt;
+
+Lorem ipsum dolor sit amet, consectetur...</property>
+                            <property name="use-markup">true</property>
+                            <property name="wrap">true</property>
+                          </object>
+                        </child>
+                      </object>
+                    </child>
+                  </object>
+                </child>
+              </object>
+            </property>
           </object>
         </property>
       </object>
-    </property>
+    </child>
   </template>
   <menu id="primary_menu">
     <section>

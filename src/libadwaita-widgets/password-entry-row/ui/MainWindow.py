@@ -1,10 +1,8 @@
 # -*- coding: utf-8 -*-
-"""Python e GTK: PyGObject Gtk.ListBox() Adw.EntryRow()."""
+"""Python and GTK: PyGObject Gtk.ListBox() Adw.PasswordEntryRow"""
 
 import sys
 from pathlib import Path
-
-
 
 import gi
 

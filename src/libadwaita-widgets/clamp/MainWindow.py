@@ -1,7 +1,5 @@
 # -*- coding: utf-8 -*-
-"""Python e GTK: PyGObject libadwaita Adw.Clamp()."""
-
-
+"""Python and GTK: PyGObject libadwaita Adw.Clamp"""
 
 import gi
 
@@ -18,7 +16,7 @@ class ExampleWindow(Adw.ApplicationWindow):
     def __init__(self, **kwargs):
         super().__init__(**kwargs)
 
-        self.set_title(title='Python e GTK: PyGObject libadwaita Adw.Clamp()')
+        self.set_title(title='Python and GTK: PyGObject libadwaita Adw.Clamp')
         self.set_default_size(width=int(1366 / 2), height=int(768 / 2))
         self.set_size_request(width=int(1366 / 2), height=int(768 / 2))
 
@@ -44,7 +42,7 @@ class ExampleWindow(Adw.ApplicationWindow):
 
         adw_clamp = Adw.Clamp.new()
         adw_toolbar_view.set_content(content=adw_clamp)
-        
+
         vbox = Gtk.Box.new(orientation=Gtk.Orientation.VERTICAL, spacing=12)
         adw_clamp.set_child(child=vbox)
 

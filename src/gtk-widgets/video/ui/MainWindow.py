@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-"""Python e GTK: PyGObject Gtk.Video() ui file."""
+"""Python and GTK: PyGObject Gtk.Video."""
 
 import sys
 from pathlib import Path

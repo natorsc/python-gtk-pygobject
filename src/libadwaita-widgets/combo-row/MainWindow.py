@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-"""Python e GTK: PyGObject Adw.ComboRow()."""
+"""Python and GTK: PyGObject Adw.ComboRow"""
 
 
 
@@ -20,7 +20,7 @@ class ExampleWindow(Adw.ApplicationWindow):
         super().__init__(**kwargs)
 
         self.set_title(
-            title='Python e GTK: PyGObject Gtk.ListBox() Adw.ComboRow()',
+            title='Python and GTK: PyGObject Adw.ComboRow',
         )
         self.set_default_size(width=int(1366 / 2), height=int(768 / 2))
         self.set_size_request(width=int(1366 / 2), height=int(768 / 2))
@@ -66,7 +66,7 @@ class ExampleWindow(Adw.ApplicationWindow):
 
             adw_combo_row = Adw.ComboRow.new()
             adw_combo_row.set_title(title=f'Title {n}')
-            adw_combo_row.set_subtitle(subtitle='Adw.ComboRow()')
+            adw_combo_row.set_subtitle(subtitle='Adw.ComboRow')
             adw_combo_row.add_prefix(widget=icon)
             adw_combo_row.set_model(model=model)
             adw_combo_row.connect(

@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-"""Python e GTK: PyGObject Gtk.StackSidebar() ui file."""
+"""Python and GTK: PyGObject Gtk.StackSidebar."""
 
 import sys
 from pathlib import Path

@@ -4,12 +4,14 @@ using Adw 1;
 template $ExampleWindow : Adw.ApplicationWindow {
   title: 'Python and GTK: PyGObject libadwaita style classs body';
   default-width: 683;
-  default-height: 384;
+default-height: 384;
+
+  content:
   Adw.ToastOverlay {
     child:
     Adw.ToolbarView {
       [top]
-      Adw.HeaderBar {
+      Adw.HeaderBar header_bar {
       [end]
       MenuButton {
         icon-name: 'open-menu-symbolic';
@@ -53,4 +55,5 @@ menu primary_menu {
       action: 'app.preferences';
     }
   }
+  ;
 }

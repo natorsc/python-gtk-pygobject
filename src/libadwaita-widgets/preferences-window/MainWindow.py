@@ -1,7 +1,5 @@
 # -*- coding: utf-8 -*-
-"""Python e GTK: PyGObject libadwaita Adw.PreferencesWindow()."""
-
-
+"""Python and GTK: PyGObject libadwaita Adw.PreferencesWindow."""
 
 import gi
 
@@ -18,7 +16,50 @@ class AdwPreferencesWindow(Adw.PreferencesWindow):
     def __init__(self, **kwargs):
         super().__init__(**kwargs)
         self.set_title(
-            title='Python e GTK: PyGObject libadwaita Adw.PreferencesWindow()',
+            title='Python and GTK: PyGObject libadwaita Adw.PreferencesWindow',
+        )
+        self.set_default_size(width=int(1366 / 2), height=int(768 / 2))
+        self.set_size_request(width=int(1366 / 2), height=int(768 / 2))
+
+        adw_toast_overlay = Adw.ToastOverlay.new()
+        self.set_content(content=adw_toast_overlay)
+
+        adw_toolbar_view = Adw.ToolbarView.new()
+        adw_toast_overlay.set_child(child=adw_toolbar_view)
+
+        adw_header_bar = Adw.HeaderBar.new()
+        adw_toolbar_view.add_top_bar(widget=adw_header_bar)
+
+        vbox = Gtk.Box.new(orientation=Gtk.Orientation.VERTICAL, spacing=12)
+        vbox.set_margin_top(margin=12)
+        vbox.set_margin_end(margin=12)
+        vbox.set_margin_bottom(margin=12)
+        vbox.set_margin_start(margin=12)
+        # adw_toolbar_view.set_content(content=vbox)
+
+        adw_preferences_page = Adw.PreferencesPage.new()
+        adw_toolbar_view.set_content(content=adw_preferences_page)
+        # self.add(page=adw_preferences_page)
+
+        adw_preferences_group = Adw.PreferencesGroup.new()
+        adw_preferences_group.set_title(title='AdwPreferencesPage')
+        adw_preferences_group.set_description(
+            description='AdwPreferencesGroup')
+        adw_preferences_page.add(group=adw_preferences_group)
+
+        adw_action_row_01 = Adw.ActionRow.new()
+        adw_action_row_01.set_title(title='Libadwaita')
+        adw_action_row_01.set_subtitle(subtitle='Adw.ActionRow')
+        adw_preferences_group.add(child=adw_action_row_01)
+
+
+class ExampleWindow(Adw.ApplicationWindow):
+
+    def __init__(self, **kwargs):
+        super().__init__(**kwargs)
+
+        self.set_title(
+            title='Python and GTK: PyGObject libadwaita Adw.PreferencesWindow',
         )
         self.set_default_size(width=int(1366 / 2), height=int(768 / 2))
         self.set_size_request(width=int(1366 / 2), height=int(768 / 2))
@@ -48,98 +89,17 @@ class AdwPreferencesWindow(Adw.PreferencesWindow):
         vbox.set_margin_end(margin=12)
         vbox.set_margin_bottom(margin=12)
         vbox.set_margin_start(margin=12)
-        # adw_toolbar_view.set_content(content=vbox)
+        adw_toolbar_view.set_content(content=vbox)
 
-        adw_preferences_page = Adw.PreferencesPage.new()
-        adw_toolbar_view.set_content(content=adw_preferences_page)
-        # self.add(page=adw_preferences_page)
-
-        button_flat = Gtk.Button.new_with_label(label='Suffix')
-        button_flat.set_icon_name(icon_name='list-add-symbolic')
-        button_flat.add_css_class(css_class='flat')
-        button_flat.connect('clicked', self.on_button_clicked)
-
-        adw_preferences_group = Adw.PreferencesGroup.new()
-        adw_preferences_group.set_title(title='AdwPreferencesPage')
-        adw_preferences_group.set_description(
-            description='AdwPreferencesGroup')
-        adw_preferences_group.set_header_suffix(suffix=button_flat)
-        adw_preferences_page.add(group=adw_preferences_group)
-
-        switch_01 = Gtk.Switch.new()
-        switch_01.set_valign(align=Gtk.Align.CENTER)
-        switch_01.connect('notify::active', self.on_switch_button_clicked)
-
-        adw_action_row_01 = Adw.ActionRow.new()
-        adw_action_row_01.add_prefix(
-            widget=Gtk.Image.new_from_icon_name(
-                icon_name='edit-find-symbolic'),
-        )
-        adw_action_row_01.set_title(title='Libadwaita')
-        adw_action_row_01.set_subtitle(subtitle='Adw.ActionRow()')
-        adw_action_row_01.add_suffix(widget=switch_01)
-        adw_preferences_group.add(child=adw_action_row_01)
-
-        switch_02 = Gtk.Switch.new()
-        switch_02.set_valign(align=Gtk.Align.CENTER)
-        switch_02.connect('notify::active', self.on_switch_button_clicked)
-
-        adw_action_row_02 = Adw.ActionRow.new()
-        adw_action_row_02.add_prefix(
-            widget=Gtk.Image.new_from_icon_name(
-                icon_name='edit-find-symbolic'),
-        )
-        adw_action_row_02.set_title(
-            title='Libadwaita - Clicking on the widget line toggles it on and off'
-        )
-        adw_action_row_02.set_subtitle(subtitle='Adw.ActionRow()')
-        adw_action_row_02.add_suffix(widget=switch_02)
-        adw_action_row_02.set_activatable_widget(widget=switch_02)
-        adw_preferences_group.add(child=adw_action_row_02)
+        button = Gtk.Button.new_with_label(label='Click here')
+        button.set_vexpand(expand=True)
+        button.set_valign(align=Gtk.Align.END)
+        button.connect('clicked', self.on_button_clicked)
+        vbox.append(child=button)
 
     def on_button_clicked(self, button):
-        print('Button pressed.')
-
-    def on_switch_button_clicked(self, switch, GParamBoolean):
-        if switch.get_active():
-            print('Button checked')
-        else:
-            print('Button unchecked')
-
-
-class ExampleWindow(Adw.ApplicationWindow):
-
-    def __init__(self, **kwargs):
-        super().__init__(**kwargs)
-
-        self.set_title(
-            title='Python e GTK: PyGObject libadwaita Adw.AdwPreferencesPage()')
-        self.set_default_size(width=int(1366 / 2), height=int(768 / 2))
-        self.set_size_request(width=int(1366 / 2), height=int(768 / 2))
-
-        adw_header_bar = Adw.HeaderBar.new()
-        self.set_titlebar(titlebar=adw_header_bar)
-
-        menu_button_model = Gio.Menu()
-        menu_button_model.append(
-            label='Preferences',
-            detailed_action='app.preferences',
-        )
-
-        menu_button = Gtk.MenuButton.new()
-        menu_button.set_icon_name(icon_name='open-menu-symbolic')
-        menu_button.set_menu_model(menu_model=menu_button_model)
-        adw_header_bar.pack_end(child=menu_button)
-
-        vbox = Gtk.Box.new(orientation=Gtk.Orientation.VERTICAL, spacing=12)
-        vbox.set_margin_top(margin=12)
-        vbox.set_margin_end(margin=12)
-        vbox.set_margin_bottom(margin=12)
-        vbox.set_margin_start(margin=12)
-        self.set_child(child=vbox)
-
-        label = Gtk.Label.new(str='Acesse o menu e clique em preferências.')
-        vbox.prepend(child=label)
+        adw_preferences_window = AdwPreferencesWindow(transient_for=self)
+        adw_preferences_window.present()
 
 
 class ExampleApplication(Adw.Application):
@@ -164,19 +124,7 @@ class ExampleApplication(Adw.Application):
         Gtk.Application.do_shutdown(self)
 
     def on_preferences_action(self, action, param):
-        adw_preferences_window = AdwPreferencesWindow()
-        adw_preferences_window.set_transient_for(
-            parent=self.get_active_window(),
-        )
-        adw_preferences_window.set_default_size(
-            width=int(1366 / 3),
-            height=int(768 / 3),
-        )
-        adw_preferences_window.set_size_request(
-            width=int(1366 / 3),
-            height=int(768 / 3),
-        )
-        adw_preferences_window.present()
+        print('Action `app.preferences` was active.')
 
     def exit_app(self, action, param):
         self.quit()
