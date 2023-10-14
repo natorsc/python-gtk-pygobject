@@ -1,9 +1,9 @@
 Selecione o idioma:
 
-[![English](./docs/images/flags/united-states-32.png 'English')](./README.md)&emsp;
-[![Português](./docs/images/flags/brazil-32.png 'Português')](./README-pt-br.md)
+[![English](./docs/images/flags/united-states-32.webp 'English')](./README.md)&emsp;
+[![Português](./docs/images/flags/brazil-32.webp 'Português')](./README-pt-br.md)
 
-![Criando interfaces gráficas com Python (PyGObject) e GTK](./docs/images/readme/python-gtk-from-zero-to-app-pt-br-1600x840.png "Criando interfaces gráficas com Python (PyGObject) e GTK")
+![Criando interfaces gráficas com Python (PyGObject) e GTK](./docs/images/readme/python-gtk-from-zero-to-app-pt-br-1600x840.webp "Criando interfaces gráficas com Python (PyGObject) e GTK")
 
 <br>
 
@@ -76,7 +76,7 @@ Obrigado por sua doação é através dela que consigo manter este conteúdo �
 
 [![Buy me a coffee](https://img.shields.io/badge/-Buy%20me%20a%20coffee-B71C1C?logo=buymeacoffee&logoColor=white)](https://www.buymeacoffee.com/natorsc "Support this project with a donation.")
 
-<img src="./docs/images/readme/bmc-qr-code.png" alt="drawing" width="150"/>
+<img src="./docs/images/readme/bmc-qr-code.webp" alt="drawing" width="150"/>
 
 ### Ko-Fi
 
@@ -84,7 +84,7 @@ Obrigado por sua doação é através dela que consigo manter este conteúdo �
 
 ### Pix
 
-<img src="./docs/images/readme/pix-qr-code.png" alt="Ajude este projeto com uma doação." title="Ajude este projeto com uma doação." width="150"/>
+<img src="./docs/images/readme/pix-qr-code.webp" alt="Ajude este projeto com uma doação." title="Ajude este projeto com uma doação." width="150"/>
 
 **Chave**: `b1839493-2afe-484d-9272-82a3e402b36f`
 

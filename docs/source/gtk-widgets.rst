@@ -1,7 +1,7 @@
 :og:site_name: justCode
 :og:author: Renato Cruz (natorsc)
 :og:type: article
-:og:image: ../images/readme/python-gtk-from-zero-to-app-pt-br-1600x840.png
+:og:image: ../images/readme/python-gtk-from-zero-to-app-pt-br-1600x840.webp
 :og:title: GTK widgets exemplos de código - justCode
 :og:description: Exemplos de código sobre construção de interfaces gráficas com a linguagem de programação Python (PyGObject) e o toolkit gráfico GTK.
 
@@ -17,7 +17,7 @@ GTK Widgets
 Gtk.ActionBar
 ~~~~~~~~~~~~~
 
-.. figure:: ../images/gtk-widgets/actionbar.png
+.. figure:: ../images/gtk-widgets/actionbar.webp
    :alt: Gtk.ActionBar
 
    Gtk.ActionBar
@@ -44,7 +44,7 @@ Gtk.ActionBar
 Gtk.Application
 ~~~~~~~~~~~~~~~
 
-.. figure:: ../images/gtk-widgets/application.png
+.. figure:: ../images/gtk-widgets/application.webp
    :alt: Gtk.Application
 
    Gtk.Application
@@ -71,7 +71,7 @@ Gtk.Application
 Gtk.ApplicationWindow
 ~~~~~~~~~~~~~~~~~~~~~
 
-.. figure:: ../images/gtk-widgets/application-window.png
+.. figure:: ../images/gtk-widgets/application-window.webp
    :alt: Gtk.ApplicationWindow
 
    Gtk.ApplicationWindow
@@ -98,7 +98,7 @@ Gtk.ApplicationWindow
 Gtk.Box (horizontal)
 ~~~~~~~~~~~~~~~~~~~~
 
-.. figure:: ../images/gtk-widgets/box-horizontal.png
+.. figure:: ../images/gtk-widgets/box-horizontal.webp
    :alt: Gtk.Box (horizontal)
 
    Gtk.Box (horizontal)
@@ -125,7 +125,7 @@ Gtk.Box (horizontal)
 Gtk.Box (vertical)
 ~~~~~~~~~~~~~~~~~~
 
-.. figure:: ../images/gtk-widgets/box-vertical.png
+.. figure:: ../images/gtk-widgets/box-vertical.webp
    :alt: Gtk.Box (vertical)
 
    Gtk.Box (vertical)
@@ -152,7 +152,7 @@ Gtk.Box (vertical)
 Gtk.Button
 ~~~~~~~~~~
 
-.. figure:: ../images/gtk-widgets/button.png
+.. figure:: ../images/gtk-widgets/button.webp
    :alt: Gtk.Button
 
    Gtk.Button
@@ -179,7 +179,7 @@ Gtk.Button
 Gtk.Calendar
 ~~~~~~~~~~~~
 
-.. figure:: ../images/gtk-widgets/calendar.png
+.. figure:: ../images/gtk-widgets/calendar.webp
    :alt: Gtk.Calendar
 
    Gtk.Calendar
@@ -206,7 +206,7 @@ Gtk.Calendar
 Gtk.CheckButton
 ~~~~~~~~~~~~~~~
 
-.. figure:: ../images/gtk-widgets/check-button.png
+.. figure:: ../images/gtk-widgets/check-button.webp
    :alt: Gtk.CheckButton
 
    Gtk.CheckButton
@@ -233,7 +233,7 @@ Gtk.CheckButton
 Gtk.CheckButton (radio)
 ~~~~~~~~~~~~~~~~~~~~~~~
 
-.. figure:: ../images/gtk-widgets/check-button-radio.png
+.. figure:: ../images/gtk-widgets/check-button-radio.webp
    :alt: Gtk.CheckButton (radio)
 
    Gtk.CheckButton (radio)
@@ -260,7 +260,7 @@ Gtk.CheckButton (radio)
 Gtk.ColorDialogButton
 ~~~~~~~~~~~~~~~~~~~~~
 
-.. figure:: ../images/gtk-widgets/color-dialog-button.png
+.. figure:: ../images/gtk-widgets/color-dialog-button.webp
    :alt: Gtk.ColorDialogButton
 
    Gtk.ColorDialogButton
@@ -287,7 +287,7 @@ Gtk.ColorDialogButton
 Drag and drop
 ~~~~~~~~~~~~~
 
-.. figure:: ../images/gtk-widgets/drag-and-drop.png
+.. figure:: ../images/gtk-widgets/drag-and-drop.webp
    :alt: Drag and drop
 
    Drag and drop
@@ -301,7 +301,7 @@ Drag and drop
 Gtk.DropDown
 ~~~~~~~~~~~~
 
-.. figure:: ../images/gtk-widgets/drop-down.png
+.. figure:: ../images/gtk-widgets/drop-down.webp
    :alt: Gtk.DropDown
 
    Gtk.DropDown
@@ -328,7 +328,7 @@ Gtk.DropDown
 Gtk.Entry
 ~~~~~~~~~
 
-.. figure:: ../images/gtk-widgets/entry.png
+.. figure:: ../images/gtk-widgets/entry.webp
    :alt: Gtk.Entry
 
    Gtk.Entry
@@ -355,7 +355,7 @@ Gtk.Entry
 Gtk.FileDialog (folder)
 ~~~~~~~~~~~~~~~~~~~~~~~
 
-.. figure:: ../images/gtk-widgets/file-dialog-folder.png
+.. figure:: ../images/gtk-widgets/file-dialog-folder.webp
    :alt: Gtk.FileDialog (folder)
 
    Gtk.FileDialog (folder)
@@ -382,7 +382,7 @@ Gtk.FileDialog (folder)
 Gtk.FileDialog (open)
 ~~~~~~~~~~~~~~~~~~~~~
 
-.. figure:: ../images/gtk-widgets/file-dialog-open.png
+.. figure:: ../images/gtk-widgets/file-dialog-open.webp
    :alt: Gtk.FileDialog (open)
 
    Gtk.FileDialog (open)
@@ -409,7 +409,7 @@ Gtk.FileDialog (open)
 Gtk.FileDialog (save)
 ~~~~~~~~~~~~~~~~~~~~~
 
-.. figure:: ../images/gtk-widgets/file-dialog-save.png
+.. figure:: ../images/gtk-widgets/file-dialog-save.webp
    :alt: Gtk.FileDialog (save)
 
    Gtk.FileDialog (save)
@@ -436,7 +436,7 @@ Gtk.FileDialog (save)
 Gtk.Fixed
 ~~~~~~~~~
 
-.. figure:: ../images/gtk-widgets/fixed.png
+.. figure:: ../images/gtk-widgets/fixed.webp
    :alt: Gtk.Fixed
 
    Gtk.Fixed
@@ -463,7 +463,7 @@ Gtk.Fixed
 Gtk.FlowBox
 ~~~~~~~~~~~
 
-.. figure:: ../images/gtk-widgets/flow-box.png
+.. figure:: ../images/gtk-widgets/flow-box.webp
    :alt: Gtk.FlowBox
 
    Gtk.FlowBox
@@ -490,7 +490,7 @@ Gtk.FlowBox
 Gtk.Grid
 ~~~~~~~~
 
-.. figure:: ../images/gtk-widgets/grid.png
+.. figure:: ../images/gtk-widgets/grid.webp
    :alt: Gtk.Grid
 
    Gtk.Grid
@@ -517,7 +517,7 @@ Gtk.Grid
 Gtk.HeaderBar
 ~~~~~~~~~~~~~
 
-.. figure:: ../images/gtk-widgets/header-bar.png
+.. figure:: ../images/gtk-widgets/header-bar.webp
    :alt: Gtk.HeaderBar
 
    Gtk.HeaderBar
@@ -544,7 +544,7 @@ Gtk.HeaderBar
 Gtk.Image
 ~~~~~~~~~
 
-.. figure:: ../images/gtk-widgets/image.png
+.. figure:: ../images/gtk-widgets/image.webp
    :alt: Gtk.Image
 
    Gtk.Image
@@ -571,7 +571,7 @@ Gtk.Image
 Gtk.ListBox
 ~~~~~~~~~~~
 
-.. figure:: ../images/gtk-widgets/list-box.png
+.. figure:: ../images/gtk-widgets/list-box.webp
    :alt: Gtk.ListBox
 
    Gtk.ListBox
@@ -600,7 +600,7 @@ Gtk.ListView
 
 .. warning:: Criar código em Python.
 
-.. figure:: ../images/gtk-widgets/list-view.png
+.. figure:: ../images/gtk-widgets/list-view.webp
    :alt: Gtk.ListView
 
    Gtk.ListView
@@ -623,7 +623,7 @@ Gtk.ListView
 Gtk.MenuButton
 ~~~~~~~~~~~~~~
 
-.. figure:: ../images/gtk-widgets/menu-button.png
+.. figure:: ../images/gtk-widgets/menu-button.webp
    :alt: Gtk.MenuButton
 
    Gtk.MenuButton
@@ -660,7 +660,7 @@ Erro:
 Gtk.Overlay
 ~~~~~~~~~~~
 
-.. figure:: ../images/gtk-widgets/overlay.png
+.. figure:: ../images/gtk-widgets/overlay.webp
    :alt: Gtk.Overlay
 
    Gtk.Overlay
@@ -687,7 +687,7 @@ Gtk.Overlay
 Pango tags
 ~~~~~~~~~~
 
-.. figure:: ../images/gtk-widgets/pango-tags.png
+.. figure:: ../images/gtk-widgets/pango-tags.webp
    :alt: Pango tags
 
    Pango tags
@@ -714,7 +714,7 @@ Pango tags
 Gtk.Picture
 ~~~~~~~~~~~
 
-.. figure:: ../images/gtk-widgets/picture.png
+.. figure:: ../images/gtk-widgets/picture.webp
    :alt: Gtk.Picture
 
    Gtk.Picture
@@ -741,7 +741,7 @@ Gtk.Picture
 Gtk.PrintOperation
 ~~~~~~~~~~~~~~~~~~
 
-.. figure:: ../images/gtk-widgets/print-operation.png
+.. figure:: ../images/gtk-widgets/print-operation.webp
    :alt: Gtk.PrintOperation
 
    Gtk.PrintOperation
@@ -768,7 +768,7 @@ Gtk.PrintOperation
 Gtk.SearchBar
 ~~~~~~~~~~~~~
 
-.. figure:: ../images/gtk-widgets/search-bar.png
+.. figure:: ../images/gtk-widgets/search-bar.webp
    :alt: Gtk.SearchBar
 
    Gtk.SearchBar
@@ -797,7 +797,7 @@ Gtk.ShortcutsWindow
 
 .. warning:: Criar código em Python.
 
-.. figure:: ../images/gtk-widgets/shortcuts-window.png
+.. figure:: ../images/gtk-widgets/shortcuts-window.webp
    :alt: Gtk.ShortcutsWindow
 
    Gtk.ShortcutsWindow
@@ -820,7 +820,7 @@ Gtk.ShortcutsWindow
 Signals and slots
 ~~~~~~~~~~~~~~~~~
 
-.. figure:: ../images/gtk-widgets/signals-and-slots.png
+.. figure:: ../images/gtk-widgets/signals-and-slots.webp
    :alt: Signals and slots
 
    Signals and slots
@@ -847,7 +847,7 @@ Signals and slots
 Gtk.StackSidebar
 ~~~~~~~~~~~~~~~~
 
-.. figure:: ../images/gtk-widgets/stack-sidebar.png
+.. figure:: ../images/gtk-widgets/stack-sidebar.webp
    :alt: Gtk.StackSidebar
 
    Gtk.StackSidebar
@@ -874,7 +874,7 @@ Gtk.StackSidebar
 Gtk.StackSwitcher
 ~~~~~~~~~~~~~~~~~
 
-.. figure:: ../images/gtk-widgets/stack-switcher.png
+.. figure:: ../images/gtk-widgets/stack-switcher.webp
    :alt: Gtk.StackSwitcher
 
    Gtk.StackSwitcher
@@ -901,7 +901,7 @@ Gtk.StackSwitcher
 Gtk.Switch
 ~~~~~~~~~~
 
-.. figure:: ../images/gtk-widgets/switch.png
+.. figure:: ../images/gtk-widgets/switch.webp
    :alt: Gtk.Switch
 
    Gtk.Switch
@@ -939,7 +939,7 @@ Translation (gettext)
 Gtk.Video
 ~~~~~~~~~
 
-.. figure:: ../images/gtk-widgets/video.png
+.. figure:: ../images/gtk-widgets/video.webp
    :alt: Gtk.Video
 
    Gtk.Video
@@ -966,7 +966,7 @@ Gtk.Video
 Gtk.Window
 ~~~~~~~~~~
 
-.. figure:: ../images/gtk-widgets/window.png
+.. figure:: ../images/gtk-widgets/window.webp
    :alt: Gtk.Window
 
    Gtk.Window

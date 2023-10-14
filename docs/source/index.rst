@@ -1,7 +1,7 @@
 :og:site_name: GTK justCode
 :og:author: Renato Cruz (natorsc)
 :og:type: site
-:og:image: ../images/readme/python-gtk-from-zero-to-app-pt-br-1600x840.png
+:og:image: ../images/readme/python-gtk-from-zero-to-app-pt-br-1600x840.webp
 :og:title: Criando interfaces gráficas com Python (PyGObject) e GTK
 :og:description: Aprenda a criar interfaces gráficas com o toolkit GTK e a linguagem de programação Python.
 
@@ -14,7 +14,7 @@
 Criando interfaces gráficas com Python (PyGObject) e GTK
 ========================================================
 
-.. image:: ../images/readme/python-gtk-from-zero-to-app-pt-br-1600x840.png
+.. image:: ../images/readme/python-gtk-from-zero-to-app-pt-br-1600x840.webp
 
 📝 Descrição
 ------------
@@ -46,7 +46,7 @@ Buy me a coffee
 
 |Buy me a coffee|
 
-.. image:: ../images/readme/bmc-qr-code.png
+.. image:: ../images/readme/bmc-qr-code.webp
   :width: 150
   :alt: Ajude este projeto com uma doação.
 
@@ -58,7 +58,7 @@ Ko-Fi
 Pix
 ~~~
 
-.. image:: ../images/readme/pix-qr-code.png
+.. image:: ../images/readme/pix-qr-code.webp
   :width: 150
   :alt: Ajude este projeto com uma doação.
 

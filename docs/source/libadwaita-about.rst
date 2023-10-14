@@ -1,7 +1,7 @@
 :og:site_name: justCode
 :og:author: Renato Cruz (natorsc)
 :og:type: article
-:og:image: ../images/readme/python-gtk-from-zero-to-app-pt-br-1600x840.png
+:og:image: ../images/readme/python-gtk-from-zero-to-app-pt-br-1600x840.webp
 :og:title: Sobre a biblioteca Libadwaita - justCode
 :og:description: Libadwaita é um conjunto de ferramentas GTK projetado para ajudar os desenvolvedores a criar interfaces gráficas modernas e responsivas.
 
