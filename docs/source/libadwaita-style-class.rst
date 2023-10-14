@@ -18,9 +18,11 @@ Background
 ----------
 
 .. figure:: ../images/libadwaita-style-class/background.webp
-   :alt: Adw style class background
+  :alt: Adw style class background
+  :width: 805
+  :height: 506
 
-   Adw style class background
+  Adw style class background
 
 .. tab:: Python
 
@@ -45,9 +47,11 @@ Body
 ----
 
 .. figure:: ../images/libadwaita-style-class/body.webp
-   :alt: Adw style class body
+  :alt: Adw style class body
+  :width: 805
+  :height: 506
 
-   Adw style class body
+  Adw style class body
 
 .. tab:: Python
 
@@ -72,9 +76,11 @@ Boxed-list
 ----------
 
 .. figure:: ../images/libadwaita-style-class/boxed-list.webp
-   :alt: Adw style class boxed-list
+  :alt: Adw style class boxed-list
+  :width: 805
+  :height: 506
 
-   Adw style class boxed-list
+  Adw style class boxed-list
 
 .. tab:: Python
 
@@ -99,9 +105,11 @@ Caption
 -------
 
 .. figure:: ../images/libadwaita-style-class/caption.webp
-   :alt: Adw style class caption
+  :alt: Adw style class caption
+  :width: 805
+  :height: 506
 
-   Adw style class caption
+  Adw style class caption
 
 .. tab:: Python
 
@@ -126,9 +134,11 @@ Caption-heading
 ---------------
 
 .. figure:: ../images/libadwaita-style-class/caption-heading.webp
-   :alt: Adw style class caption-heading
+  :alt: Adw style class caption-heading
+  :width: 805
+  :height: 506
 
-   Adw style class caption-heading
+  Adw style class caption-heading
 
 .. tab:: Python
 
@@ -153,9 +163,11 @@ Card
 ----
 
 .. figure:: ../images/libadwaita-style-class/card.webp
-   :alt: Adw style class card
+  :alt: Adw style class card
+  :width: 805
+  :height: 506
 
-   Adw style class card
+  Adw style class card
 
 .. tab:: Python
 
@@ -180,9 +192,11 @@ Circular
 --------
 
 .. figure:: ../images/libadwaita-style-class/circular.webp
-   :alt: Adw style class circular
+  :alt: Adw style class circular
+  :width: 805
+  :height: 506
 
-   Adw style class circular
+  Adw style class circular
 
 .. tab:: Python
 
@@ -207,9 +221,11 @@ Colors
 ------
 
 .. figure:: ../images/libadwaita-style-class/colors.webp
-   :alt: Adw style class colors
+  :alt: Adw style class colors
+  :width: 805
+  :height: 506
 
-   Adw style class colors
+  Adw style class colors
 
 .. tab:: Python
 
@@ -234,9 +250,11 @@ Compact
 -------
 
 .. figure:: ../images/libadwaita-style-class/compact.webp
-   :alt: Adw style class compact
+  :alt: Adw style class compact
+  :width: 805
+  :height: 506
 
-   Adw style class compact
+  Adw style class compact
 
 .. tab:: Python
 
@@ -261,9 +279,11 @@ Destructive-action
 ------------------
 
 .. figure:: ../images/libadwaita-style-class/destructive-action.webp
-   :alt: Adw style class destructive-action
+  :alt: Adw style class destructive-action
+  :width: 805
+  :height: 506
 
-   Adw style class destructive-action
+  Adw style class destructive-action
 
 .. tab:: Python
 
@@ -288,9 +308,11 @@ Devel
 -----
 
 .. figure:: ../images/libadwaita-style-class/devel.webp
-   :alt: Adw style class devel
+  :alt: Adw style class devel
+  :width: 805
+  :height: 506
 
-   Adw style class devel
+  Adw style class devel
 
 .. tab:: Python
 
@@ -315,9 +337,11 @@ Dim-label
 ---------
 
 .. figure:: ../images/libadwaita-style-class/dim-label.webp
-   :alt: Adw style class dim-label
+  :alt: Adw style class dim-label
+  :width: 805
+  :height: 506
 
-   Adw style class dim-label
+  Adw style class dim-label
 
 .. tab:: Python
 
@@ -342,9 +366,11 @@ Flat
 ----
 
 .. figure:: ../images/libadwaita-style-class/flat.webp
-   :alt: Adw style class flat
+  :alt: Adw style class flat
+  :width: 805
+  :height: 506
 
-   Adw style class flat
+  Adw style class flat
 
 .. tab:: Python
 
@@ -369,9 +395,11 @@ Frame
 -----
 
 .. figure:: ../images/libadwaita-style-class/frame.webp
-   :alt: Adw style class frame
+  :alt: Adw style class frame
+  :width: 805
+  :height: 506
 
-   Adw style class frame
+  Adw style class frame
 
 .. tab:: Python
 
@@ -396,9 +424,11 @@ Heading
 -------
 
 .. figure:: ../images/libadwaita-style-class/heading.webp
-   :alt: Adw style class heading
+  :alt: Adw style class heading
+  :width: 805
+  :height: 506
 
-   Adw style class heading
+  Adw style class heading
 
 .. tab:: Python
 
@@ -423,9 +453,11 @@ Icon-dropshadow
 ---------------
 
 .. figure:: ../images/libadwaita-style-class/icon-dropshadow.webp
-   :alt: Adw style class icon-dropshadow
+  :alt: Adw style class icon-dropshadow
+  :width: 805
+  :height: 506
 
-   Adw style class icon-dropshadow
+  Adw style class icon-dropshadow
 
 .. tab:: Python
 
@@ -450,9 +482,11 @@ Inline
 ------
 
 .. figure:: ../images/libadwaita-style-class/inline.webp
-   :alt: Adw style class inline
+  :alt: Adw style class inline
+  :width: 805
+  :height: 506
 
-   Adw style class inline
+  Adw style class inline
 
 .. tab:: Python
 
@@ -477,9 +511,11 @@ Linked
 ------
 
 .. figure:: ../images/libadwaita-style-class/linked.webp
-   :alt: Adw style class linked
+  :alt: Adw style class linked
+  :width: 805
+  :height: 506
 
-   Adw style class linked
+  Adw style class linked
 
 .. tab:: Python
 
@@ -504,9 +540,11 @@ Lowres-icon
 -----------
 
 .. figure:: ../images/libadwaita-style-class/lowres-icon.webp
-   :alt: Adw style class lowres-icon
+  :alt: Adw style class lowres-icon
+  :width: 805
+  :height: 506
 
-   Adw style class lowres-icon
+  Adw style class lowres-icon
 
 .. tab:: Python
 
@@ -531,9 +569,11 @@ Menu
 ----
 
 .. figure:: ../images/libadwaita-style-class/menu.webp
-   :alt: Adw style class menu
+  :alt: Adw style class menu
+  :width: 805
+  :height: 506
 
-   Adw style class menu
+  Adw style class menu
 
 .. tab:: Python
 
@@ -558,9 +598,11 @@ Monospace
 ---------
 
 .. figure:: ../images/libadwaita-style-class/monospace.webp
-   :alt: Adw style class monospace
+  :alt: Adw style class monospace
+  :width: 805
+  :height: 506
 
-   Adw style class monospace
+  Adw style class monospace
 
 .. tab:: Python
 
@@ -585,9 +627,11 @@ Navigation-sidebar
 ------------------
 
 .. figure:: ../images/libadwaita-style-class/navigation-sidebar.webp
-   :alt: Adw style class navigation-sidebar
+  :alt: Adw style class navigation-sidebar
+  :width: 805
+  :height: 506
 
-   Adw style class navigation-sidebar
+  Adw style class navigation-sidebar
 
 .. tab:: Python
 
@@ -612,9 +656,11 @@ Numeric
 -------
 
 .. figure:: ../images/libadwaita-style-class/numeric.webp
-   :alt: Adw style class numeric
+  :alt: Adw style class numeric
+  :width: 805
+  :height: 506
 
-   Adw style class numeric
+  Adw style class numeric
 
 .. tab:: Python
 
@@ -639,9 +685,11 @@ Opaque
 ------
 
 .. figure:: ../images/libadwaita-style-class/opaque.webp
-   :alt: Adw style class opaque
+  :alt: Adw style class opaque
+  :width: 805
+  :height: 506
 
-   Adw style class opaque
+  Adw style class opaque
 
 .. tab:: Python
 
@@ -666,9 +714,11 @@ Osd
 ---
 
 .. figure:: ../images/libadwaita-style-class/osd.webp
-   :alt: Adw style class osd
+  :alt: Adw style class osd
+  :width: 805
+  :height: 506
 
-   Adw style class osd
+  Adw style class osd
 
 .. tab:: Python
 
@@ -693,9 +743,11 @@ Pill
 ----
 
 .. figure:: ../images/libadwaita-style-class/pill.webp
-   :alt: Adw style class pill
+  :alt: Adw style class pill
+  :width: 805
+  :height: 506
 
-   Adw style class pill
+  Adw style class pill
 
 .. tab:: Python
 
@@ -720,9 +772,11 @@ property
 --------
 
 .. figure:: ../images/libadwaita-style-class/property.webp
-   :alt: Adw style class property
+  :alt: Adw style class property
+  :width: 805
+  :height: 506
 
-   Adw style class property
+  Adw style class property
 
 .. tab:: Python
 
@@ -747,9 +801,11 @@ Selection-mode
 --------------
 
 .. figure:: ../images/libadwaita-style-class/selection-mode.webp
-   :alt: Adw style class selection-mode
+  :alt: Adw style class selection-mode
+  :width: 805
+  :height: 506
 
-   Adw style class selection-mode
+  Adw style class selection-mode
 
 .. tab:: Python
 
@@ -774,9 +830,11 @@ Spacer
 ------
 
 .. figure:: ../images/libadwaita-style-class/spacer.webp
-   :alt: Adw style class spacer
+  :alt: Adw style class spacer
+  :width: 805
+  :height: 506
 
-   Adw style class spacer
+  Adw style class spacer
 
 .. tab:: Python
 
@@ -801,9 +859,11 @@ Suggested-action
 ----------------
 
 .. figure:: ../images/libadwaita-style-class/suggested-action.webp
-   :alt: Adw style class suggested-action
+  :alt: Adw style class suggested-action
+  :width: 805
+  :height: 506
 
-   Adw style class suggested-action
+  Adw style class suggested-action
 
 .. tab:: Python
 
@@ -828,9 +888,11 @@ Title
 -----
 
 .. figure:: ../images/libadwaita-style-class/title.webp
-   :alt: Adw style class title
+  :alt: Adw style class title
+  :width: 805
+  :height: 506
 
-   Adw style class title
+  Adw style class title
 
 .. tab:: Python
 
@@ -855,9 +917,11 @@ Toolbar
 -------
 
 .. figure:: ../images/libadwaita-style-class/toolbar.webp
-   :alt: Adw style class toolbar
+  :alt: Adw style class toolbar
+  :width: 805
+  :height: 506
 
-   Adw style class toolbar
+  Adw style class toolbar
 
 .. tab:: Python
 
@@ -882,9 +946,11 @@ View
 ----
 
 .. figure:: ../images/libadwaita-style-class/view.webp
-   :alt: Adw style class view
+  :alt: Adw style class view
+  :width: 805
+  :height: 506
 
-   Adw style class view
+  Adw style class view
 
 .. tab:: Python
 

@@ -18,9 +18,11 @@ Gtk.ActionBar
 ~~~~~~~~~~~~~
 
 .. figure:: ../images/gtk-widgets/actionbar.webp
-   :alt: Gtk.ActionBar
+  :alt: Gtk.ActionBar
+  :width: 805
+  :height: 506
 
-   Gtk.ActionBar
+  Gtk.ActionBar
 
 .. tab:: Python
 
@@ -45,9 +47,11 @@ Gtk.Application
 ~~~~~~~~~~~~~~~
 
 .. figure:: ../images/gtk-widgets/application.webp
-   :alt: Gtk.Application
+  :alt: Gtk.Application
+  :width: 805
+  :height: 506
 
-   Gtk.Application
+  Gtk.Application
 
 .. tab:: Python
 
@@ -72,9 +76,11 @@ Gtk.ApplicationWindow
 ~~~~~~~~~~~~~~~~~~~~~
 
 .. figure:: ../images/gtk-widgets/application-window.webp
-   :alt: Gtk.ApplicationWindow
+  :alt: Gtk.ApplicationWindow
+  :width: 805
+  :height: 506
 
-   Gtk.ApplicationWindow
+  Gtk.ApplicationWindow
 
 .. tab:: Python
 
@@ -99,9 +105,11 @@ Gtk.Box (horizontal)
 ~~~~~~~~~~~~~~~~~~~~
 
 .. figure:: ../images/gtk-widgets/box-horizontal.webp
-   :alt: Gtk.Box (horizontal)
+  :alt: Gtk.Box (horizontal)
+  :width: 805
+  :height: 506
 
-   Gtk.Box (horizontal)
+  Gtk.Box (horizontal)
 
 .. tab:: Python
 
@@ -126,9 +134,11 @@ Gtk.Box (vertical)
 ~~~~~~~~~~~~~~~~~~
 
 .. figure:: ../images/gtk-widgets/box-vertical.webp
-   :alt: Gtk.Box (vertical)
+  :alt: Gtk.Box (vertical)
+  :width: 805
+  :height: 506
 
-   Gtk.Box (vertical)
+  Gtk.Box (vertical)
 
 .. tab:: Python
 
@@ -153,9 +163,11 @@ Gtk.Button
 ~~~~~~~~~~
 
 .. figure:: ../images/gtk-widgets/button.webp
-   :alt: Gtk.Button
+  :alt: Gtk.Button
+  :width: 805
+  :height: 506
 
-   Gtk.Button
+  Gtk.Button
 
 .. tab:: Python
 
@@ -180,9 +192,11 @@ Gtk.Calendar
 ~~~~~~~~~~~~
 
 .. figure:: ../images/gtk-widgets/calendar.webp
-   :alt: Gtk.Calendar
+  :alt: Gtk.Calendar
+  :width: 805
+  :height: 506
 
-   Gtk.Calendar
+  Gtk.Calendar
 
 .. tab:: Python
 
@@ -207,9 +221,11 @@ Gtk.CheckButton
 ~~~~~~~~~~~~~~~
 
 .. figure:: ../images/gtk-widgets/check-button.webp
-   :alt: Gtk.CheckButton
+  :alt: Gtk.CheckButton
+  :width: 805
+  :height: 506
 
-   Gtk.CheckButton
+  Gtk.CheckButton
 
 .. tab:: Python
 
@@ -234,9 +250,11 @@ Gtk.CheckButton (radio)
 ~~~~~~~~~~~~~~~~~~~~~~~
 
 .. figure:: ../images/gtk-widgets/check-button-radio.webp
-   :alt: Gtk.CheckButton (radio)
+  :alt: Gtk.CheckButton (radio)
+  :width: 805
+  :height: 506
 
-   Gtk.CheckButton (radio)
+  Gtk.CheckButton (radio)
 
 .. tab:: Python
 
@@ -261,9 +279,11 @@ Gtk.ColorDialogButton
 ~~~~~~~~~~~~~~~~~~~~~
 
 .. figure:: ../images/gtk-widgets/color-dialog-button.webp
-   :alt: Gtk.ColorDialogButton
+  :alt: Gtk.ColorDialogButton
+  :width: 805
+  :height: 506
 
-   Gtk.ColorDialogButton
+  Gtk.ColorDialogButton
 
 .. tab:: Python
 
@@ -288,9 +308,11 @@ Drag and drop
 ~~~~~~~~~~~~~
 
 .. figure:: ../images/gtk-widgets/drag-and-drop.webp
-   :alt: Drag and drop
+  :alt: Drag and drop
+  :width: 805
+  :height: 506
 
-   Drag and drop
+  Drag and drop
 
 .. tab:: Python
 
@@ -302,9 +324,11 @@ Gtk.DropDown
 ~~~~~~~~~~~~
 
 .. figure:: ../images/gtk-widgets/drop-down.webp
-   :alt: Gtk.DropDown
+  :alt: Gtk.DropDown
+  :width: 805
+  :height: 506
 
-   Gtk.DropDown
+  Gtk.DropDown
 
 .. tab:: Python
 
@@ -329,9 +353,11 @@ Gtk.Entry
 ~~~~~~~~~
 
 .. figure:: ../images/gtk-widgets/entry.webp
-   :alt: Gtk.Entry
+  :alt: Gtk.Entry
+  :width: 805
+  :height: 506
 
-   Gtk.Entry
+  Gtk.Entry
 
 .. tab:: Python
 
@@ -356,9 +382,11 @@ Gtk.FileDialog (folder)
 ~~~~~~~~~~~~~~~~~~~~~~~
 
 .. figure:: ../images/gtk-widgets/file-dialog-folder.webp
-   :alt: Gtk.FileDialog (folder)
+  :alt: Gtk.FileDialog (folder)
+  :width: 805
+  :height: 506
 
-   Gtk.FileDialog (folder)
+  Gtk.FileDialog (folder)
 
 .. tab:: Python
 
@@ -383,9 +411,11 @@ Gtk.FileDialog (open)
 ~~~~~~~~~~~~~~~~~~~~~
 
 .. figure:: ../images/gtk-widgets/file-dialog-open.webp
-   :alt: Gtk.FileDialog (open)
+  :alt: Gtk.FileDialog (open)
+  :width: 805
+  :height: 506
 
-   Gtk.FileDialog (open)
+  Gtk.FileDialog (open)
 
 .. tab:: Python
 
@@ -410,9 +440,11 @@ Gtk.FileDialog (save)
 ~~~~~~~~~~~~~~~~~~~~~
 
 .. figure:: ../images/gtk-widgets/file-dialog-save.webp
-   :alt: Gtk.FileDialog (save)
+  :alt: Gtk.FileDialog (save)
+  :width: 805
+  :height: 506
 
-   Gtk.FileDialog (save)
+  Gtk.FileDialog (save)
 
 .. tab:: Python
 
@@ -437,9 +469,11 @@ Gtk.Fixed
 ~~~~~~~~~
 
 .. figure:: ../images/gtk-widgets/fixed.webp
-   :alt: Gtk.Fixed
+  :alt: Gtk.Fixed
+  :width: 805
+  :height: 506
 
-   Gtk.Fixed
+  Gtk.Fixed
 
 .. tab:: Python
 
@@ -464,9 +498,11 @@ Gtk.FlowBox
 ~~~~~~~~~~~
 
 .. figure:: ../images/gtk-widgets/flow-box.webp
-   :alt: Gtk.FlowBox
+  :alt: Gtk.FlowBox
+  :width: 805
+  :height: 506
 
-   Gtk.FlowBox
+  Gtk.FlowBox
 
 .. tab:: Python
 
@@ -491,9 +527,11 @@ Gtk.Grid
 ~~~~~~~~
 
 .. figure:: ../images/gtk-widgets/grid.webp
-   :alt: Gtk.Grid
+  :alt: Gtk.Grid
+  :width: 805
+  :height: 506
 
-   Gtk.Grid
+  Gtk.Grid
 
 .. tab:: Python
 
@@ -518,9 +556,11 @@ Gtk.HeaderBar
 ~~~~~~~~~~~~~
 
 .. figure:: ../images/gtk-widgets/header-bar.webp
-   :alt: Gtk.HeaderBar
+  :alt: Gtk.HeaderBar
+  :width: 805
+  :height: 506
 
-   Gtk.HeaderBar
+  Gtk.HeaderBar
 
 .. tab:: Python
 
@@ -545,9 +585,11 @@ Gtk.Image
 ~~~~~~~~~
 
 .. figure:: ../images/gtk-widgets/image.webp
-   :alt: Gtk.Image
+  :alt: Gtk.Image
+  :width: 805
+  :height: 506
 
-   Gtk.Image
+  Gtk.Image
 
 .. tab:: Python
 
@@ -572,9 +614,11 @@ Gtk.ListBox
 ~~~~~~~~~~~
 
 .. figure:: ../images/gtk-widgets/list-box.webp
-   :alt: Gtk.ListBox
+  :alt: Gtk.ListBox
+  :width: 805
+  :height: 506
 
-   Gtk.ListBox
+  Gtk.ListBox
 
 .. tab:: Python
 
@@ -601,9 +645,11 @@ Gtk.ListView
 .. warning:: Criar código em Python.
 
 .. figure:: ../images/gtk-widgets/list-view.webp
-   :alt: Gtk.ListView
+  :alt: Gtk.ListView
+  :width: 805
+  :height: 506
 
-   Gtk.ListView
+  Gtk.ListView
 
 .. tab:: Python load ui
 
@@ -624,9 +670,11 @@ Gtk.MenuButton
 ~~~~~~~~~~~~~~
 
 .. figure:: ../images/gtk-widgets/menu-button.webp
-   :alt: Gtk.MenuButton
+  :alt: Gtk.MenuButton
+  :width: 805
+  :height: 506
 
-   Gtk.MenuButton
+  Gtk.MenuButton
 
 Erro:
 
@@ -661,9 +709,11 @@ Gtk.Overlay
 ~~~~~~~~~~~
 
 .. figure:: ../images/gtk-widgets/overlay.webp
-   :alt: Gtk.Overlay
+  :alt: Gtk.Overlay
+  :width: 805
+  :height: 506
 
-   Gtk.Overlay
+  Gtk.Overlay
 
 .. tab:: Python
 
@@ -688,9 +738,11 @@ Pango tags
 ~~~~~~~~~~
 
 .. figure:: ../images/gtk-widgets/pango-tags.webp
-   :alt: Pango tags
+  :alt: Pango tags
+  :width: 805
+  :height: 506
 
-   Pango tags
+  Pango tags
 
 .. tab:: Python
 
@@ -715,9 +767,11 @@ Gtk.Picture
 ~~~~~~~~~~~
 
 .. figure:: ../images/gtk-widgets/picture.webp
-   :alt: Gtk.Picture
+  :alt: Gtk.Picture
+  :width: 805
+  :height: 506
 
-   Gtk.Picture
+  Gtk.Picture
 
 .. tab:: Python
 
@@ -742,9 +796,11 @@ Gtk.PrintOperation
 ~~~~~~~~~~~~~~~~~~
 
 .. figure:: ../images/gtk-widgets/print-operation.webp
-   :alt: Gtk.PrintOperation
+  :alt: Gtk.PrintOperation
+  :width: 805
+  :height: 506
 
-   Gtk.PrintOperation
+  Gtk.PrintOperation
 
 .. tab:: Python
 
@@ -769,9 +825,11 @@ Gtk.SearchBar
 ~~~~~~~~~~~~~
 
 .. figure:: ../images/gtk-widgets/search-bar.webp
-   :alt: Gtk.SearchBar
+  :alt: Gtk.SearchBar
+  :width: 805
+  :height: 506
 
-   Gtk.SearchBar
+  Gtk.SearchBar
 
 .. tab:: Python
 
@@ -798,9 +856,11 @@ Gtk.ShortcutsWindow
 .. warning:: Criar código em Python.
 
 .. figure:: ../images/gtk-widgets/shortcuts-window.webp
-   :alt: Gtk.ShortcutsWindow
+  :alt: Gtk.ShortcutsWindow
+  :width: 805
+  :height: 506
 
-   Gtk.ShortcutsWindow
+  Gtk.ShortcutsWindow
 
 .. tab:: Python load ui
 
@@ -821,9 +881,11 @@ Signals and slots
 ~~~~~~~~~~~~~~~~~
 
 .. figure:: ../images/gtk-widgets/signals-and-slots.webp
-   :alt: Signals and slots
+  :alt: Signals and slots
+  :width: 805
+  :height: 506
 
-   Signals and slots
+  Signals and slots
 
 .. tab:: Python
 
@@ -848,9 +910,11 @@ Gtk.StackSidebar
 ~~~~~~~~~~~~~~~~
 
 .. figure:: ../images/gtk-widgets/stack-sidebar.webp
-   :alt: Gtk.StackSidebar
+  :alt: Gtk.StackSidebar
+  :width: 805
+  :height: 506
 
-   Gtk.StackSidebar
+  Gtk.StackSidebar
 
 .. tab:: Python
 
@@ -875,9 +939,11 @@ Gtk.StackSwitcher
 ~~~~~~~~~~~~~~~~~
 
 .. figure:: ../images/gtk-widgets/stack-switcher.webp
-   :alt: Gtk.StackSwitcher
+  :alt: Gtk.StackSwitcher
+  :width: 805
+  :height: 506
 
-   Gtk.StackSwitcher
+  Gtk.StackSwitcher
 
 .. tab:: Python
 
@@ -902,9 +968,11 @@ Gtk.Switch
 ~~~~~~~~~~
 
 .. figure:: ../images/gtk-widgets/switch.webp
-   :alt: Gtk.Switch
+  :alt: Gtk.Switch
+  :width: 805
+  :height: 506
 
-   Gtk.Switch
+  Gtk.Switch
 
 .. tab:: Python
 
@@ -940,9 +1008,11 @@ Gtk.Video
 ~~~~~~~~~
 
 .. figure:: ../images/gtk-widgets/video.webp
-   :alt: Gtk.Video
+  :alt: Gtk.Video
+  :width: 805
+  :height: 506
 
-   Gtk.Video
+  Gtk.Video
 
 .. tab:: Python
 
@@ -967,9 +1037,11 @@ Gtk.Window
 ~~~~~~~~~~
 
 .. figure:: ../images/gtk-widgets/window.webp
-   :alt: Gtk.Window
+  :alt: Gtk.Window
+  :width: 805
+  :height: 506
 
-   Gtk.Window
+  Gtk.Window
 
 .. tab:: Python
 

@@ -18,9 +18,11 @@ Adw.AboutWindow
 ~~~~~~~~~~~~~~~
 
 .. figure:: ../images/libadwaita-widgets/about-window.webp
-   :alt: Adw.AboutWindow
+  :alt: Adw.AboutWindow
+  :width: 482
+  :height: 706
 
-   Adw.AboutWindow
+  Adw.AboutWindow
 
 .. tab:: Python
 
@@ -45,9 +47,11 @@ Adw.ActionRow
 ~~~~~~~~~~~~~
 
 .. figure:: ../images/libadwaita-widgets/action-row.webp
-   :alt: Adw.ActionRow
+  :alt: Adw.ActionRow
+  :width: 805
+  :height: 506
 
-   Adw.ActionRow
+  Adw.ActionRow
 
 .. tab:: Python
 
@@ -72,9 +76,11 @@ Adw.Application
 ~~~~~~~~~~~~~~~
 
 .. figure:: ../images/libadwaita-widgets/application.webp
-   :alt: Adw.Application
+  :alt: Adw.Application
+  :width: 805
+  :height: 506
 
-   Adw.Application
+  Adw.Application
 
 .. tab:: Python
 
@@ -99,9 +105,11 @@ Adw.Avatar
 ~~~~~~~~~~
 
 .. figure:: ../images/libadwaita-widgets/avatar.webp
-   :alt: Adw.Avatar
+  :alt: Adw.Avatar
+  :width: 805
+  :height: 506
 
-   Adw.Avatar
+  Adw.Avatar
 
 .. tab:: Python
 
@@ -126,9 +134,11 @@ Adw.Banner
 ~~~~~~~~~~
 
 .. figure:: ../images/libadwaita-widgets/banner.webp
-   :alt: Adw.Banner
+  :alt: Adw.Banner
+  :width: 805
+  :height: 506
 
-   Adw.Banner
+  Adw.Banner
 
 .. tab:: Python
 
@@ -153,9 +163,11 @@ Adw.ButtonContent
 ~~~~~~~~~~~~~~~~~
 
 .. figure:: ../images/libadwaita-widgets/button-content.webp
-   :alt: Adw.ButtonContent
+  :alt: Adw.ButtonContent
+  :width: 805
+  :height: 506
 
-   Adw.ButtonContent
+  Adw.ButtonContent
 
 .. tab:: Python
 
@@ -180,9 +192,11 @@ Adw.Carousel
 ~~~~~~~~~~~~
 
 .. figure:: ../images/libadwaita-widgets/carousel.webp
-   :alt: Adw.Carousel
+  :alt: Adw.Carousel
+  :width: 805
+  :height: 506
 
-   Adw.Carousel
+  Adw.Carousel
 
 .. tab:: Python
 
@@ -207,9 +221,11 @@ Adw.CarouselIndicatorDots
 ~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. figure:: ../images/libadwaita-widgets/carousel-indicator-dots.webp
-   :alt: Adw.CarouselIndicatorDots
+  :alt: Adw.CarouselIndicatorDots
+  :width: 805
+  :height: 506
 
-   Adw.CarouselIndicatorDots
+  Adw.CarouselIndicatorDots
 
 .. tab:: Python
 
@@ -234,9 +250,11 @@ Adw.CarouselIndicatorLines
 ~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. figure:: ../images/libadwaita-widgets/carousel-indicator-lines.webp
-   :alt: Adw.CarouselIndicatorLines
+  :alt: Adw.CarouselIndicatorLines
+  :width: 805
+  :height: 506
 
-   Adw.CarouselIndicatorLines
+  Adw.CarouselIndicatorLines
 
 .. tab:: Python
 
@@ -261,9 +279,11 @@ Adw.Clamp
 ~~~~~~~~~
 
 .. figure:: ../images/libadwaita-widgets/clamp.webp
-   :alt: Adw.Clamp
+  :alt: Adw.Clamp
+  :width: 805
+  :height: 506
 
-   Adw.Clamp
+  Adw.Clamp
 
 .. tab:: Python
 
@@ -288,9 +308,11 @@ Adw.ComboRow
 ~~~~~~~~~~~~
 
 .. figure:: ../images/libadwaita-widgets/combo-row.webp
-   :alt: Adw.ComboRow
+  :alt: Adw.ComboRow
+  :width: 805
+  :height: 506
 
-   Adw.ComboRow
+  Adw.ComboRow
 
 .. tab:: Python
 
@@ -315,9 +337,11 @@ Adw.EntryRow
 ~~~~~~~~~~~~
 
 .. figure:: ../images/libadwaita-widgets/entry-row.webp
-   :alt: Adw.EntryRow
+  :alt: Adw.EntryRow
+  :width: 805
+  :height: 506
 
-   Adw.EntryRow
+  Adw.EntryRow
 
 .. tab:: Python
 
@@ -342,9 +366,11 @@ Adw.ExpanderRow
 ~~~~~~~~~~~~~~~
 
 .. figure:: ../images/libadwaita-widgets/expander-row.webp
-   :alt: Adw.ExpanderRow
+  :alt: Adw.ExpanderRow
+  :width: 805
+  :height: 506
 
-   Adw.ExpanderRow
+  Adw.ExpanderRow
 
 .. tab:: Python
 
@@ -369,9 +395,11 @@ Adw.MessageDialog
 ~~~~~~~~~~~~~~~~~
 
 .. figure:: ../images/libadwaita-widgets/message-dialog.webp
-   :alt: Adw.MessageDialog
+  :alt: Adw.MessageDialog
+  :width: 805
+  :height: 506
 
-   Adw.MessageDialog
+  Adw.MessageDialog
 
 .. tab:: Python
 
@@ -392,9 +420,11 @@ Adw.NavigationSplitView
 ~~~~~~~~~~~~~~~~~~~~~~~
 
 .. figure:: ../images/libadwaita-widgets/navigation-split-view.webp
-   :alt: Adw.NavigationSplitView
+  :alt: Adw.NavigationSplitView
+  :width: 805
+  :height: 506
 
-   Adw.NavigationSplitView
+  Adw.NavigationSplitView
 
 .. tab:: Python load ui
 
@@ -415,9 +445,11 @@ Adw.PasswordEntryRow
 ~~~~~~~~~~~~~~~~~~~~
 
 .. figure:: ../images/libadwaita-widgets/password-entry-row.webp
-   :alt: Adw.PasswordEntryRow
+  :alt: Adw.PasswordEntryRow
+  :width: 805
+  :height: 506
 
-   Adw.PasswordEntryRow
+  Adw.PasswordEntryRow
 
 .. tab:: Python load ui
 
@@ -438,9 +470,11 @@ Adw.PreferencesPage
 ~~~~~~~~~~~~~~~~~~~
 
 .. figure:: ../images/libadwaita-widgets/preferences-page.webp
-   :alt: Adw.PreferencesPage
+  :alt: Adw.PreferencesPage
+  :width: 805
+  :height: 506
 
-   Adw.PreferencesPage
+  Adw.PreferencesPage
 
 .. tab:: Python
 
@@ -465,9 +499,11 @@ Adw.PreferencesWindow
 ~~~~~~~~~~~~~~~~~~~~~
 
 .. figure:: ../images/libadwaita-widgets/preferences-window.webp
-   :alt: Adw.PreferencesWindow
+  :alt: Adw.PreferencesWindow
+  :width: 805
+  :height: 506
 
-   Adw.PreferencesWindow
+  Adw.PreferencesWindow
 
 .. tab:: Python
 
@@ -492,9 +528,11 @@ Adw.SplitButton
 ~~~~~~~~~~~~~~~
 
 .. figure:: ../images/libadwaita-widgets/split-button.webp
-   :alt: Adw.SplitButton
+  :alt: Adw.SplitButton
+  :width: 805
+  :height: 506
 
-   Adw.SplitButton
+  Adw.SplitButton
 
 .. tab:: Python
 
@@ -519,9 +557,11 @@ Adw.StatusPage
 ~~~~~~~~~~~~~~
 
 .. figure:: ../images/libadwaita-widgets/status-page.webp
-   :alt: Adw.StatusPage
+  :alt: Adw.StatusPage
+  :width: 805
+  :height: 506
 
-   Adw.StatusPage
+  Adw.StatusPage
 
 .. tab:: Python
 
@@ -546,9 +586,11 @@ Adw.Toast
 ~~~~~~~~~
 
 .. figure:: ../images/libadwaita-widgets/toast.webp
-   :alt: Adw.Toast
+  :alt: Adw.Toast
+  :width: 805
+  :height: 506
 
-   Adw.Toast
+  Adw.Toast
 
 .. tab:: Python
 
@@ -575,9 +617,11 @@ Adw.ViewStack
 .. warning:: Criar código com Blueprint
 
 .. figure:: ../images/libadwaita-widgets/view-stack.webp
-   :alt: Adw.ViewStack
+  :alt: Adw.ViewStack
+  :width: 805
+  :height: 506
 
-   Adw.ViewStack
+  Adw.ViewStack
 
 .. tab:: Python load ui
 

@@ -15,6 +15,9 @@ Criando interfaces gráficas com Python (PyGObject) e GTK
 ========================================================
 
 .. image:: ../images/readme/python-gtk-from-zero-to-app-pt-br-1600x840.webp
+  :alt: Criando interfaces gráficas com Python (PyGObject) e GTK
+  :width: 1600
+  :height: 840
 
 📝 Descrição
 ------------
@@ -47,8 +50,9 @@ Buy me a coffee
 |Buy me a coffee|
 
 .. image:: ../images/readme/bmc-qr-code.webp
-  :width: 150
   :alt: Ajude este projeto com uma doação.
+  :width: 150
+  :height: 150
 
 Ko-Fi
 ~~~~~
@@ -59,8 +63,9 @@ Pix
 ~~~
 
 .. image:: ../images/readme/pix-qr-code.webp
-  :width: 150
   :alt: Ajude este projeto com uma doação.
+  :width: 150
+  :height: 150
 
 **Chave**: ``b1839493-2afe-484d-9272-82a3e402b36f``
 
