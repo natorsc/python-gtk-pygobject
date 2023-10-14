@@ -142,6 +142,12 @@ Tutoriais sobre o toolkit gráfico GTK e suas ferramentas de desenvolvimento est
 - [Site oficial](https://www.flatpak.org/).
 - [flathub](https://flathub.org/).
 
+### Visual Studio Code
+
+- [Gnome Magic (bedsteler20)](https://marketplace.visualstudio.com/items?itemName=bedsteler20.gnome-magic).
+- [GTK Blueprint (Bodil Stokke)](https://marketplace.visualstudio.com/items?itemName=bodil.blueprint-gtk).
+- [Flatpak (Bilal Elmoussaoui)](https://marketplace.visualstudio.com/items?itemName=bilelmoussaoui.flatpak-vscode).
+
 ---
 
 ## 🚨 Deprecated
