@@ -1,0 +1,23 @@
+using Gtk 4.0;
+using Adw 1;
+
+template $Page01 : Adw.NavigationPage {
+  title: _('Página 01');
+  tag: 'page01';
+  child: Adw.ToolbarView {
+    [top]
+    Adw.HeaderBar header_bar_content {}
+
+    content: Box {
+      orientation: vertical;
+      spacing: 12;
+      margin-top: 12;
+      margin-end: 12;
+      margin-bottom: 12;
+      margin-start: 12;
+      Gtk.Label {
+        label: 'Página 01';
+      }
+    };
+  };
+}
