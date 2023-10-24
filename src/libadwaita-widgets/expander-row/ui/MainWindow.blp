@@ -4,110 +4,86 @@ using Adw 1;
 template $ExampleWindow : Adw.ApplicationWindow {
   title: 'Python and GTK: PyGObject Adw.ExpanderRow';
   default-width: 683;
-default-height: 384;
-
-  content:
-  Adw.ToastOverlay {
-    child:
-    Adw.ToolbarView {
-    [top]
-    Adw.HeaderBar header_bar {
-      [end]
-      MenuButton {
-        icon-name: 'open-menu-symbolic';
-        menu-model: primary_menu;
-      }
-    }
-    content: 
-    Box {
-      orientation: vertical;
-      spacing: 12;
-      margin-top: 12;
-      margin-end: 12;
-      margin-bottom: 12;
-      margin-start: 12;
-
-      ListBox {
-        selection-mode: none;
-
-        styles [
-          'boxed-list',
-        ]
-
-        Adw.ExpanderRow {
-          title: 'Item 01';
-          subtitle: 'Adw.ExpanderRow()';
-          
-          [prefix]
-          Image {
-            icon-name: 'accessories-text-editor-symbolic';
-          }
-
-          Gtk.Label {
-            label: '<big>Lorem ipsum</big>\n\nLorem ipsum dolor sit amet, consectetur...';
-            use-markup: true;
-            wrap: true;
-          }
-        }
-
-        Adw.ExpanderRow {
-          title: 'Item 02';
-          subtitle: 'Adw.ExpanderRow()';
-
-          [prefix]
-          Image {
-            icon-name: 'accessories-text-editor-symbolic';
-          }
-
-          Gtk.Label {
-            label: '<big>Lorem ipsum</big>\n\nLorem ipsum dolor sit amet, consectetur...';
-            use-markup: true;
-            wrap: true;
-          }
-        }
-
-        Adw.ExpanderRow {
-          title: 'Item 03';
-          subtitle: 'Adw.ExpanderRow()';
-          
-          [prefix]
-          Image {
-            icon-name: 'accessories-text-editor-symbolic';
-          }
-
-          Gtk.Label {
-            label: '<big>Lorem ipsum</big>\n\nLorem ipsum dolor sit amet, consectetur...';
-            use-markup: true;
-            wrap: true;
-          }
-        }
-
-        Adw.ExpanderRow {
-          title: 'Item 04';
-          subtitle: 'Adw.ExpanderRow()';
-          
-          [prefix]
-          Image {
-            icon-name: 'accessories-text-editor-symbolic';
-          }
-
-          Gtk.Label {
-            label: '<big>Lorem ipsum</big>\n\nLorem ipsum dolor sit amet, consectetur...';
-            use-markup: true;
-            wrap: true;
-          }
+  default-height: 384;
+  content: Adw.ToastOverlay {
+    child: Adw.ToolbarView {
+      [top]
+      Adw.HeaderBar header_bar {
+        [end]
+        MenuButton {
+          icon-name: 'open-menu-symbolic';
+          menu-model: primary_menu;
         }
       }
-    }
-
-    ;
-  }
-
-    ;
-  }
-  ;
+      content: Gtk.Box {
+        orientation: vertical;
+        spacing: 12;
+        margin-top: 12;
+        margin-end: 12;
+        margin-bottom: 12;
+        margin-start: 12;
+        ListBox {
+          selection-mode: none;
+          styles [
+            'boxed-list',
+          ]
+          Adw.ExpanderRow {
+            title: 'Item 01';
+            subtitle: 'Adw.ExpanderRow()';
+            [prefix]
+            Image {
+              icon-name: 'accessories-text-editor-symbolic';
+            }
+            Gtk.Label {
+              label: '<big>Lorem ipsum</big>\n\nLorem ipsum dolor sit amet, consectetur...';
+              use-markup: true;
+              wrap: true;
+            }
+          }
+          Adw.ExpanderRow {
+            title: 'Item 02';
+            subtitle: 'Adw.ExpanderRow()';
+            [prefix]
+            Image {
+              icon-name: 'accessories-text-editor-symbolic';
+            }
+            Gtk.Label {
+              label: '<big>Lorem ipsum</big>\n\nLorem ipsum dolor sit amet, consectetur...';
+              use-markup: true;
+              wrap: true;
+            }
+          }
+          Adw.ExpanderRow {
+            title: 'Item 03';
+            subtitle: 'Adw.ExpanderRow()';
+            [prefix]
+            Image {
+              icon-name: 'accessories-text-editor-symbolic';
+            }
+            Gtk.Label {
+              label: '<big>Lorem ipsum</big>\n\nLorem ipsum dolor sit amet, consectetur...';
+              use-markup: true;
+              wrap: true;
+            }
+          }
+          Adw.ExpanderRow {
+            title: 'Item 04';
+            subtitle: 'Adw.ExpanderRow()';
+            [prefix]
+            Gtk.Image {
+              icon-name: 'accessories-text-editor-symbolic';
+            }
+            Gtk.Label {
+              label: '<big>Lorem ipsum</big>\n\nLorem ipsum dolor sit amet, consectetur...';
+              use-markup: true;
+              wrap: true;
+            }
+          }
+        }
+      };
+    };
+  };
 }
-
 menu primary_menu {
   section {
     item {

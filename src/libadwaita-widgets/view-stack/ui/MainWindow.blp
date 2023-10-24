@@ -7,7 +7,6 @@ template $ExampleWindow : Adw.ApplicationWindow {
   default-height: 384;
   width-request: 500;
   height-request: 300;
-
   Adw.Breakpoint {
     condition ('max-width: 550')
     setters {
@@ -15,28 +14,21 @@ template $ExampleWindow : Adw.ApplicationWindow {
       header_bar.title-widget: title_widget;
     }
   }
-
-  content:
-  Adw.ToastOverlay {
-    child:
-    Adw.ToolbarView {
+  content: Adw.ToastOverlay {
+    child: Adw.ToolbarView {
       [top]
       Adw.HeaderBar header_bar {
         title-widget:
         Adw.ViewSwitcher {
           stack: stack;
           policy: wide;
-        }
-
-        ;
+        };
       }
-    content: 
-      Adw.ViewStack stack {
+      content: Adw.ViewStack stack {
         Adw.ViewStackPage {
           name: 'page01';
           title: 'Page 01';
-          child:
-          Box {
+          child: Gtk.Box {
             orientation: vertical;
             margin-top: 12;
             margin-end: 12;
@@ -46,16 +38,12 @@ template $ExampleWindow : Adw.ApplicationWindow {
             Label {
               label: 'Page 01';
             }
-          }
-
-          ;
+          };
         }
-
         Adw.ViewStackPage {
           name: 'page02';
           title: 'Page 02';
-          child:
-          Box {
+          child: Gtk.Box {
             orientation: vertical;
             margin-top: 12;
             margin-end: 12;
@@ -65,26 +53,16 @@ template $ExampleWindow : Adw.ApplicationWindow {
             Label {
               label: 'Page 02';
             }
-          }
-
-          ;
+          };
         }
-      }
-
-      ;
-
+      };
       [bottom]
       Adw.ViewSwitcherBar switcher_bar {
         stack: stack;
       }
-    }
-
-    ;
-  }
-
-  ;
+    };
+  };
 }
-
 Label title_widget {
   label: 'Python and GTK: PyGObject libadwaita Adw.ViewStack';
 }

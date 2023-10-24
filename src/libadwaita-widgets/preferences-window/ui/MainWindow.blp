@@ -4,12 +4,9 @@ using Adw 1;
 template $ExampleWindow : Adw.ApplicationWindow {
   title: 'Python and GTK: PyGObject libadwaita Adw.PreferencesWindow';
   default-width: 683;
-default-height: 384;
-
-  content:
-  Adw.ToastOverlay {
-    child:
-    Adw.ToolbarView {
+  default-height: 384;
+  content: Adw.ToastOverlay {
+    child: Adw.ToolbarView {
       [top]
       Adw.HeaderBar header_bar {
         [end]
@@ -18,31 +15,23 @@ default-height: 384;
           menu-model: primary_menu;
         }
       }
-      content:
-      Box {
+      content: Box {
         orientation: vertical;
         margin-top: 12;
         margin-end: 12;
         margin-bottom: 12;
         margin-start: 12;
         spacing: 12;
-
         Button {
           label: 'Click here';
           vexpand: true;
           valign: end;
           clicked => $on_button_clicked();
         }
-      }
-
-      ;
-    }
-
-    ;
-  }
-  ;
+      };
+    };
+  };
 }
-
 menu primary_menu {
   section {
     item {

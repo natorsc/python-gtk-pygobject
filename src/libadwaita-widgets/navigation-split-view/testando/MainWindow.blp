@@ -11,12 +11,12 @@ template $ExampleWindow : Adw.ApplicationWindow {
   Adw.Breakpoint {
     condition ('max-width: 400')
     setters {
-      split_view.collapsed: true;
+      adw_navigation_split_view.collapsed: true;
     }
   }
 
-  content: Adw.ToastOverlay toast_overlay {
-    Adw.NavigationSplitView split_view {
+  content: Adw.ToastOverlay adw_toast_overlay {
+    Adw.NavigationSplitView adw_navigation_split_view {
       sidebar: Adw.NavigationPage {
         title: _('Sidebar');
         child: Adw.ToolbarView {
@@ -28,20 +28,17 @@ template $ExampleWindow : Adw.ApplicationWindow {
               menu-model: primary_menu;
             }
           }
-          
           content: Gtk.ScrolledWindow {
             Gtk.ListBox {
               selection-mode: browse;
               activate-on-single-click: true;
               row-activated => $on_list_activated();
               styles ['navigation-sidebar']
-              
               Adw.ActionRow {
                 name: 'page01';
                 title: _('Página 01');
                 activatable: true;
               }
-
               Adw.ActionRow {
                 name: 'page02';
                 title: _('Página 02');
@@ -51,24 +48,20 @@ template $ExampleWindow : Adw.ApplicationWindow {
           };
         };
       };
-      
       content: Adw.NavigationPage {
         title: _('Content');
         tag: 'content';
-
         child: Adw.ToolbarView adw_toolbar_view_content {
           [top]
           Adw.HeaderBar header_bar_content {}
-
-          content: Box {
+          content: Gtk.Box {
             orientation: vertical;
             spacing: 12;
             margin-top: 12;
             margin-end: 12;
             margin-bottom: 12;
             margin-start: 12;
-
-            Label {
+            Gtk.Label {
               label: 'Olá Mundo.';
             }
           };
@@ -77,8 +70,6 @@ template $ExampleWindow : Adw.ApplicationWindow {
     }
   };
 }
-
-
 
 menu primary_menu {
   section {

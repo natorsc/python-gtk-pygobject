@@ -7,8 +7,7 @@ template $Page02 : Adw.NavigationPage {
   child: Adw.ToolbarView {
     [top]
     Adw.HeaderBar header_bar_content {}
-
-    content: Box {
+    content: Gtk.Box {
       orientation: vertical;
       spacing: 12;
       margin-top: 12;
@@ -16,7 +15,7 @@ template $Page02 : Adw.NavigationPage {
       margin-bottom: 12;
       margin-start: 12;
       Gtk.Label {
-        label: 'Página 02';
+        label: _('Página 02');
       }
     };
   };

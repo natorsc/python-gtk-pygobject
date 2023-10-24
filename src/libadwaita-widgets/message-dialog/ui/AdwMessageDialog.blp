@@ -7,7 +7,6 @@ template $MessageDialog : Adw.MessageDialog {
   default-response: 'OK';
   close-response: 'Cancelar';
   response => $dialog_response();
-
   responses [
     cancel: _('_Cancelar') destructive,
     ok: _('_OK') suggested,
