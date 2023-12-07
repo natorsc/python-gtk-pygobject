@@ -588,6 +588,21 @@ Adw.Toast
 
 --------------
 
+Adw.ToolbarView
+===============
+
+.. figure:: ../images/libadwaita-widgets/toolbar-view.webp
+  :alt: Adw.ToolbarView
+  :width: 683
+
+  Adw.ToolbarView
+
+.. tab:: Python
+
+   ..  literalinclude:: ../../src/libadwaita-widgets/toolbar-view/MainWindow.py
+
+--------------
+
 Adw.ViewStack
 =============
 

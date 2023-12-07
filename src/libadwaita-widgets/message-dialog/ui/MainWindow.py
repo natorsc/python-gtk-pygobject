@@ -17,8 +17,8 @@ BASE_DIR = Path(__file__).resolve().parent
 UI = BASE_DIR.joinpath('MainWindow.ui')
 DIALOG = str(BASE_DIR.joinpath('AdwMessageDialog.ui'))
 
-_MODULES = BASE_DIR.parent.parent.parent.joinpath('_modules')
-sys.path.append(str(_MODULES))
+_SCRIPTS = BASE_DIR.parent.parent.parent.parent.joinpath('_scripts')
+sys.path.append(str(_SCRIPTS))
 
 import _tools
 

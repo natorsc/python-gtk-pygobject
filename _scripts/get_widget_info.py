@@ -24,8 +24,9 @@ LIBADWAITA_VERSION = (
 )
 PYGOBJECT_VERSION = GObject.pygobject_version
 
-
+# Adicione o widget.
 WIDGET = Gtk.Button.new()
+WIDGET = Adw.ToolbarView.new()
 
 methods_get = [method for method in dir(WIDGET) if method.startswith('get_')]
 methods_set = [method for method in dir(WIDGET) if method.startswith('set_')]

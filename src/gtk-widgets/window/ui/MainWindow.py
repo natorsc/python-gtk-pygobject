@@ -16,11 +16,11 @@ from gi.repository import Adw, Gio, Gtk
 Adw.init()
 
 BASE_DIR = Path(__file__).resolve().parent
-APPLICATION_WINDOW = str(BASE_DIR.joinpath('MainWindow.ui'))
+
 NEW_WINDOW = str(BASE_DIR.joinpath('NewWindow.ui'))
 
-_MODULES = BASE_DIR.parent.parent.parent.joinpath('_modules')
-sys.path.append(str(_MODULES))
+_SCRIPTS = BASE_DIR.parent.parent.parent.parent.joinpath('_scripts')
+sys.path.append(str(_SCRIPTS))
 import _tools
 
 _tools.compile_blueprint_ui(ui_dir=BASE_DIR)
@@ -37,6 +37,8 @@ class NewWindow(Gtk.Window):
     def on_button_close_clicked(self, button):
         self.destroy()
 
+
+APPLICATION_WINDOW = str(BASE_DIR.joinpath('MainWindow.ui'))
 
 @Gtk.Template(filename=APPLICATION_WINDOW)
 class ExampleWindow(Gtk.ApplicationWindow):

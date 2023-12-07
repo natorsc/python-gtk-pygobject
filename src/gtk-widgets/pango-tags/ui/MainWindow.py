@@ -17,19 +17,21 @@ Adw.init()
 
 BASE_DIR = Path(__file__).resolve().parent
 SRC_DIR = BASE_DIR.parent.parent.parent
-APPLICATION_WINDOW = str(BASE_DIR.joinpath('MainWindow.ui'))
+
 TEMPLATE = SRC_DIR.joinpath('data', 'pango', 'template.txt')
 
 with open(TEMPLATE, mode='r', encoding='utf8') as f:
     text = f.read()
     f.close()
 
-_MODULES = BASE_DIR.parent.parent.parent.joinpath('_modules')
-sys.path.append(str(_MODULES))
+_SCRIPTS = BASE_DIR.parent.parent.parent.parent.joinpath('_scripts')
+sys.path.append(str(_SCRIPTS))
 import _tools
 
 _tools.compile_blueprint_ui(ui_dir=BASE_DIR)
 
+
+APPLICATION_WINDOW = str(BASE_DIR.joinpath('MainWindow.ui'))
 
 @Gtk.Template(filename=APPLICATION_WINDOW)
 class ExampleWindow(Gtk.ApplicationWindow):

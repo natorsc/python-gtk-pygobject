@@ -47,7 +47,7 @@ class ExampleWindow(Gtk.ApplicationWindow):
             _('Python and GTK: PyGObject internacionalização com gettext().'),
         )
         self.set_default_size(width=int(1366 / 2), height=int(768 / 2))
-        self.set_size_request(width=int(1366 / 2), height=int(768 / 2))
+        self.set_size_request(width=int(1366 / 3), height=int(768 / 3))
 
         header_bar = Gtk.HeaderBar.new()
         self.set_titlebar(titlebar=header_bar)

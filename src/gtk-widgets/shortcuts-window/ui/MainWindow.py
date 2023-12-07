@@ -16,11 +16,11 @@ from gi.repository import Adw, Gio, Gtk
 Adw.init()
 
 BASE_DIR = Path(__file__).resolve().parent
-APPLICATION_WINDOW = str(BASE_DIR.joinpath('MainWindow.ui'))
+
 SHORTCUTS_WINDOW = str(BASE_DIR.joinpath('ShortcutsWindow.ui'))
 
-_MODULES = BASE_DIR.parent.parent.parent.joinpath('_modules')
-sys.path.append(str(_MODULES))
+_SCRIPTS = BASE_DIR.parent.parent.parent.parent.joinpath('_scripts')
+sys.path.append(str(_SCRIPTS))
 import _tools
 
 _tools.compile_blueprint_ui(ui_dir=BASE_DIR)
@@ -33,6 +33,8 @@ class ShortcutsWindow(Gtk.ShortcutsWindow):
     def __init__(self, **kwargs):
         super().__init__(**kwargs)
 
+
+APPLICATION_WINDOW = str(BASE_DIR.joinpath('MainWindow.ui'))
 
 @Gtk.Template(filename=APPLICATION_WINDOW)
 class ExampleWindow(Gtk.ApplicationWindow):

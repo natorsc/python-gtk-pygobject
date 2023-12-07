@@ -12,7 +12,6 @@ Adw.init()
 
 
 class ExampleWindow(Gtk.ApplicationWindow):
-    # Lista com o nome dos ícones.
     icons = ['call-start-symbolic', 'call-stop-symbolic',
              'contact-new-symbolic', 'address-book-new-symbolic']
 
@@ -21,10 +20,9 @@ class ExampleWindow(Gtk.ApplicationWindow):
 
         self.set_title(title='Python and GTK: PyGObject Gtk.ActionBar')
         self.set_default_size(width=int(1366 / 2), height=int(768 / 2))
-        self.set_size_request(width=int(1366 / 2), height=int(768 / 2))
+        self.set_size_request(width=int(1366 / 3), height=int(768 / 3))
 
         header_bar = Gtk.HeaderBar.new()
-        header_bar.add_css_class(css_class='devel')
         self.set_titlebar(titlebar=header_bar)
 
         menu_button_model = Gio.Menu()

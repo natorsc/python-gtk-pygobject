@@ -1,6 +1,6 @@
 import datetime
 project = 'Python e GTK'
-copyright = f'2022-{datetime.datetime.year}, Renato Cruz (natorsc)'
+copyright = f'2022-{datetime.datetime.today().year}, Renato Cruz (natorsc)'
 author = 'Renato Cruz (natorsc)'
 
 ogp_site_name = 'Python e GTK - justCode'

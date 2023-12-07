@@ -20,7 +20,7 @@ class ExampleWindow(Adw.ApplicationWindow):
             title='Python and GTK: PyGObject libadwaita style classe devel',
         )
         self.set_default_size(width=int(1366 / 2), height=int(768 / 2))
-        self.set_size_request(width=int(1366 / 2), height=int(768 / 2))
+        self.set_size_request(width=int(1366 / 3), height=int(768 / 3))
         self.add_css_class(css_class='devel')
 
         adw_toast_overlay = Adw.ToastOverlay.new()

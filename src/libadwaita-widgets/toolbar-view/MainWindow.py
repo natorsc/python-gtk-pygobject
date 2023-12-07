@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-"""Python and GTK: PyGObject libadwaita style classe heading."""
+"""Python and GTK: PyGObject libadwaita Adw.ToolbarView"""
 
 import gi
 
@@ -17,7 +17,7 @@ class ExampleWindow(Adw.ApplicationWindow):
         super().__init__(**kwargs)
 
         self.set_title(
-            title='Python and GTK: PyGObject libadwaita style classe heading',
+            title='Python and GTK: PyGObject libadwaita Adw.ToolbarView',
         )
         self.set_default_size(width=int(1366 / 2), height=int(768 / 2))
         self.set_size_request(width=int(1366 / 3), height=int(768 / 3))
@@ -42,28 +42,58 @@ class ExampleWindow(Adw.ApplicationWindow):
         menu_button.set_menu_model(menu_model=menu_button_model)
         adw_header_bar.pack_end(child=menu_button)
 
-        vbox = Gtk.Box.new(orientation=Gtk.Orientation.VERTICAL, spacing=12)
-        vbox.set_margin_top(margin=12)
-        vbox.set_margin_end(margin=12)
-        vbox.set_margin_bottom(margin=12)
-        vbox.set_margin_start(margin=12)
-        adw_toolbar_view.set_content(content=vbox)
+        adw_preferences_page = Adw.PreferencesPage.new()
+        adw_toolbar_view.set_content(content=adw_preferences_page)
 
-        self.label = Gtk.Label.new(str='Lorem Ipsum')
-        self.label.add_css_class(css_class='heading')
-        vbox.append(child=self.label)
+        button_flat = Gtk.Button.new_with_label(label='Suffix')
+        button_flat.set_icon_name(icon_name='list-add-symbolic')
+        button_flat.add_css_class(css_class='flat')
 
-        button = Gtk.Button.new_with_label(label='Add/remove class')
-        button.set_vexpand(expand=True)
-        button.set_valign(align=Gtk.Align.END)
-        button.connect('clicked', self.on_button_clicked)
-        vbox.append(child=button)
+        adw_preferences_group = Adw.PreferencesGroup.new()
+        adw_preferences_group.set_title(title='AdwPreferencesPage')
+        adw_preferences_group.set_description(
+            description='AdwPreferencesGroup')
+        adw_preferences_group.set_header_suffix(suffix=button_flat)
+        adw_preferences_page.add(group=adw_preferences_group)
 
-    def on_button_clicked(self, button):
-        if 'heading' in self.label.get_css_classes():
-            self.label.remove_css_class(css_class='heading')
-        else:
-            self.label.add_css_class(css_class='heading')
+        switch_01 = Gtk.Switch.new()
+        switch_01.set_valign(align=Gtk.Align.CENTER)
+
+        adw_action_row_01 = Adw.ActionRow.new()
+        adw_action_row_01.add_prefix(
+            widget=Gtk.Image.new_from_icon_name(
+                icon_name='edit-find-symbolic'),
+        )
+        adw_action_row_01.set_title(title='Libadwaita')
+        adw_action_row_01.set_subtitle(subtitle='Adw.ActionRow')
+        adw_action_row_01.add_suffix(widget=switch_01)
+        adw_preferences_group.add(child=adw_action_row_01)
+
+        switch_02 = Gtk.Switch.new()
+        switch_02.set_valign(align=Gtk.Align.CENTER)
+
+        adw_action_row_02 = Adw.ActionRow.new()
+        adw_action_row_02.add_prefix(
+            widget=Gtk.Image.new_from_icon_name(
+                icon_name='edit-find-symbolic'),
+        )
+        adw_action_row_02.set_title(title='Libadwaita')
+        adw_action_row_02.set_subtitle(subtitle='Adw.ActionRow')
+        adw_action_row_02.add_suffix(widget=switch_02)
+        adw_action_row_02.set_activatable_widget(widget=switch_02)
+        adw_preferences_group.add(child=adw_action_row_02)
+
+        # Barra inferior.
+        hbox_bottom_bar = Gtk.Box.new(orientation=Gtk.Orientation.HORIZONTAL, spacing=12)
+        hbox_bottom_bar.set_margin_top(margin=12)
+        hbox_bottom_bar.set_margin_end(margin=12)
+        hbox_bottom_bar.set_margin_bottom(margin=12)
+        hbox_bottom_bar.set_margin_start(margin=12)
+        adw_toolbar_view.add_bottom_bar(widget=hbox_bottom_bar)
+
+        label = Gtk.Label.new()
+        label.set_text(str='Adw.ToolbarView - Barra inferior')
+        hbox_bottom_bar.append(child=label)
 
 
 class ExampleApplication(Adw.Application):

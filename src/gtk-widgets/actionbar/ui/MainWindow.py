@@ -23,8 +23,8 @@ import _tools
 
 _tools.compile_blueprint_ui(ui_dir=BASE_DIR)
 
-APPLICATION_WINDOW = str(BASE_DIR.joinpath('MainWindow.ui'))
 
+APPLICATION_WINDOW = str(BASE_DIR.joinpath('MainWindow.ui'))
 
 @Gtk.Template(filename=APPLICATION_WINDOW)
 class ExampleWindow(Gtk.ApplicationWindow):
