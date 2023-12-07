@@ -1,103 +1,84 @@
-Select your language:
-
-[![English](./docs/images/flags/united-states-32.webp 'English')](./README.md)&emsp;
-[![Português](./docs/images/flags/brazil-32.webp 'Português')](./README-pt-br.md)
-
-![Creating graphical interfaces with Python (PyGObject) and GTK](./docs/images/readme/python-gtk-from-zero-to-app-1600x840.webp "Creating graphical interfaces with Python (PyGObject) and GTK")
+![Criando interfaces gráficas com Python (PyGObject) e GTK](./docs/images/pygobject-gtk-1600x840.webp "Criando interfaces gráficas com Python (PyGObject) e GTK")
 
 <br>
 
-[![natorsc - gui-python-pygobject-gtk](https://img.shields.io/static/v1?label=natorsc&message=gui-python-pygobject-gtk&color=blue&logo=github)](https://github.com/natorsc/gui-python-pygobject-gtk "Go to repository.")
+[![natorsc - pygobject-gtk](https://img.shields.io/static/v1?label=natorsc&message=pygobject-gtk&color=blue&logo=github)](https://github.com/natorsc/pygobject-gtk "Ir para o repositório.")
 &emsp;
-[![stars - gui-python-pygobject-gtk](https://img.shields.io/github/stars/natorsc/gui-python-pygobject-gtk?style=social)](https://github.com/natorsc/gui-python-pygobject-gtk)
+[![stars - pygobject-gtk](https://img.shields.io/github/stars/natorsc/pygobject-gtk?style=social)](https://github.com/natorsc/pygobject-gtk)
 &emsp;
-[![forks - gui-python-pygobject-gtk](https://img.shields.io/github/forks/natorsc/gui-python-pygobject-gtk?style=social)](https://github.com/natorsc/gui-python-pygobject-gtk)
+[![forks - pygobject-gtk](https://img.shields.io/github/forks/natorsc/pygobject-gtk?style=social)](https://github.com/natorsc/pygobject-gtk)
 
 [![License MIT](https://img.shields.io/static/v1?label=License&message=MIT&color=blue)](./LICENSE)
 
-# Creating graphical interfaces with Python (PyGObject) and GTK
+[![pdm-managed](https://img.shields.io/badge/pdm-managed-blueviolet)](https://pdm-project.org)
 
-## Table of contents
+# Criando interfaces gráficas com Python (PyGObject) e GTK
 
-- [Description](#📝-description).
-- [Tecnologias utilizadas](#🛠-technologies-used).
-- [Author](#🤓-author).
-- [Donations](#💝-donations).
-- [Documentation](#📚-documentation).
-- [Tutorials](#🤓-tutorials).
-- [Extra](#💡-extra).
+## 📝 Descrição
 
-## 📝 Description
-
-Repository created to document tips, tutorials and code examples on building graphical interfaces with the Python programming language (PyGObject) and the GTK graphical toolkit.
+Repositório criado para centralizar dicas, tutoriais e exemplos de código sobre a construção de interfaces gráficas com a linguagem de programação Python (PyGObject) e o tookit gráfico GTK.
 
 ---
 
-## 🛠 Technologies used
+## 🛠 Tecnologias utilizadas
 
-To date, the following technologies are used in the construction of the project:
+Até o presente momento as seguintes tecnologias são utilizadas na construção do projeto:
 
-[![Python](https://img.shields.io/badge/-Python-blue?logo=python&logoColor=white)](https://www.python.org/ "Go to website.")
+[![Python](https://img.shields.io/badge/-Python-blue?logo=python&logoColor=white)](https://www.python.org/ "Ir para o site.")
 &emsp;
-[![PyGObject](https://img.shields.io/badge/-PyGObject-blue?logo=pypi&logoColor=white)](https://pypi.org/project/PyGObject/ "Go to PyPi.")
+[![GTK](https://img.shields.io/badge/-GTK-blue?logo=gtk&logoColor=white)](https://www.gtk.org/ "Ir para o site.")
 &emsp;
-[![GTK](https://img.shields.io/badge/-GTK-blue?logo=gnome&logoColor=white)](https://www.gtk.org/ "Go to website.")
+[![Sphinx](https://img.shields.io/badge/-Sphinx-blue?logo=sphinx&logoColor=white)](https://www.sphinx-doc.org/ "Ir para o site.")
 &emsp;
-[![Gnome](https://img.shields.io/badge/-Gnome-blue?logo=gnome&logoColor=white)](https://www.gnome.org/ "Go to website.")
+[![Furo](https://img.shields.io/badge/-Furo-blue?logo=github&logoColor=white)](https://github.com/pradyunsg/furo/ "Ir para o Github.")
 &emsp;
-[![Flatpak](https://img.shields.io/badge/-Flathub-blue?logo=flathub&logoColor=white)](https://flatpak.org/ "Go to website.")
-&emsp;
-[![Sphinx](https://img.shields.io/badge/-Sphinx-blue?logo=sphinx&logoColor=white)](https://www.sphinx-doc.org/en/master/ "Go to website.")
-&emsp;
-[![Furo](https://img.shields.io/badge/-Furo-blue?logo=github&logoColor=white)](https://github.com/pradyunsg/furo "Go to Github.")
+[![PDM](https://img.shields.io/badge/-PDM-blue?logo=pdm&logoColor=white)](https://pdm-project.org "Ir para o PDM.")
 
 ---
 
-## 🤓 Author
+## 🤓 Autor
 
-Repository made with 💙 by Renato Cruz 🤜🤛 Get in touch!
+Repositório feito com 💙 por [Renato Cruz](https://github.com/natorsc) 🤜🤛 Entre em contato!
 
-[![Email](https://img.shields.io/badge/-Email-7E57C2?logo=gmail&logoColor=white)](mailto:natorsc@gmail.com "Send email.")
-&emsp;
-[![LinkedIn](https://img.shields.io/badge/-LinkedIn-0277BD?logo=linkedin&logoColor=white)](https://www.linkedin.com/in/natorsc "Access.")
+[![Email](https://img.shields.io/badge/-Email-blueviolet?logo=gmail&logoColor=white)](mailto:natorsc@gmail.com "Enviar e-mail.")
 
-One of the playlists I usually listen to when I'm studying or "coding" 😁:
+Acompanhe conteúdos sobre programação e tecnologia em:
 
-[![Spotify](https://img.shields.io/badge/-Spotify-1B5E20?logo=spotify&logoColor=white)](https://open.spotify.com/playlist/1xf3u29puXlnrWO7MsaHL5?si=A-LgwRJXSvOno_e6trpi5w&utm_source=copy-link "Access playlist.")
+[![justCode](https://img.shields.io/badge/-justCode-grey?logo=wordpress&logoColor=white)](https://justcode.com.br/ "Acessar o justCode.")
+
+Uma das playlist que costumo ouvir quando estou estudando ou "codando" 😁:
+
+[![Spotify](https://img.shields.io/badge/-Spotify-darkgreen?logo=spotify&logoColor=white)](https://open.spotify.com/playlist/1xf3u29puXlnrWO7MsaHL5?si=A-LgwRJXSvOno_e6trpi5w&utm_source=copy-link "Acessar playlist.")
 
 ---
 
-## 💝 Donations
+## 💝 Doações
 
-Thank you for your donation, it is through it that I am able to maintain this content 😊.
+Obrigado por sua doação é através dela que consigo manter este conteúdo 😊.
 
 ### Buy me a coffee
 
-[![Buy me a coffee](https://img.shields.io/badge/-Buy%20me%20a%20coffee-B71C1C?logo=buymeacoffee&logoColor=white)](https://www.buymeacoffee.com/natorsc "Support this project with a donation.")
+[![Buy me a coffee](https://img.shields.io/badge/-Buy%20me%20a%20coffee-red?logo=buymeacoffee&logoColor=white)](https://www.buymeacoffee.com/natorsc "Mantenha este projeto com uma doação.")
 
-<img src="./docs/images/readme/bmc-qr-code.webp" alt="drawing" width="150"/>
+<img src="./docs/images/donations/bmc-qr-code.webp" alt="Buy me a coffee" title="Mantenha este projeto com uma doação." width="150"/>
 
 ### Ko-Fi
 
-[![Ko-Fi](https://img.shields.io/badge/-Ko%20Fi-0D47A1?logo=ko-fi&logoColor=white)](https://ko-fi.com/natorsc "Help this project with a donation.")
+[![Ko-Fi](https://img.shields.io/badge/-Ko%20Fi-orange?logo=ko-fi&logoColor=white)](https://ko-fi.com/natorsc "Mantenha este projeto com uma doação.")
 
-### Pix (Brazil)
+### Pix
 
-<img src="./docs/images/readme/pix-qr-code.webp" alt="drawing" width="150"/>
+<img src="./docs/images/donations/pix-qr-code.webp" alt="Chave Pix" title="Mantenha este projeto com uma doação." width="150"/>
 
 **Chave**: `b1839493-2afe-484d-9272-82a3e402b36f`
 
 ---
 
-## 📚 Documentation
+## 📚 Documentação
 
-To facilitate the location and organization of the contents, the documentation of this project is available at 'https://gtk.justcode.com.br/ <https://github.com/natorsc>'__.
+Para facilitar a localização e organização dos conteúdos, a documentação deste projeto está disponível em:
 
----
-
-## 🤓 Tutorials
-
-Tutorials on the GTK graphical toolkit and its development tools are available at 'https://blog.justcode.com.br/series/gtk-toolkit <https://blog.justcode.com.br/series/gtk-toolkit>'__.
+- [https://gtk.justcode.com.br/](https://gtk.justcode.com.br/).
 
 ---
 
@@ -105,20 +86,20 @@ Tutorials on the GTK graphical toolkit and its development tools are available a
 
 ### GTK
 
-- [Documentation GTK 3](https://docs.gtk.org/gtk3/).
-- [Documentation GTK 4](https://docs.gtk.org/gtk4/).
+- [Documentação GTK 3](https://docs.gtk.org/gtk3/).
+- [Documentação GTK 4](https://docs.gtk.org/gtk4/).
 
 ### Libadwaita
 
-- [Documentation 1.x](https://gnome.pages.gitlab.gnome.org/libadwaita/doc/1-latest/).
+- [Documentação 1.x](https://gnome.pages.gitlab.gnome.org/libadwaita/doc/1-latest/).
 
 ### GNOME
 
-- [Official site](https://www.gnome.org/).
+- [Site oficial](https://www.gnome.org/).
 - [Blog](https://blogs.gnome.org/).
 - [GNOME Human Interface Guidelines (HIG)](https://wiki.gnome.org/Design/HIG).
 
-### Development
+### Desenvolvimento
 
 - [GNOME Builder](https://apps.gnome.org/pt-BR/app/org.gnome.Builder/).
 - [Workbench](https://apps.gnome.org/pt-BR/app/re.sonny.Workbench/).
@@ -130,7 +111,7 @@ Tutorials on the GTK graphical toolkit and its development tools are available a
 - [Color Palette](https://flathub.org/apps/details/org.gnome.design.Palette).
 - [Gnome icon library online](https://teams.pages.gitlab.gnome.org/Design/icon-development-kit-www/).
 
-### Software
+### Softwares
 
 - [GNOME Apps](https://apps.gnome.org/pt-BR/).
 - [GNOME circle](https://circle.gnome.org/).
@@ -138,24 +119,13 @@ Tutorials on the GTK graphical toolkit and its development tools are available a
 
 ### Flatpak
 
-- [Official site](https://www.flatpak.org/).
-- [Flathub](https://flathub.org/).
+- [Site oficial](https://www.flatpak.org/).
+- [flathub](https://flathub.org/).
 
 ### Visual Studio Code
 
 - [Gnome Magic (bedsteler20)](https://marketplace.visualstudio.com/items?itemName=bedsteler20.gnome-magic).
 - [GTK Blueprint (Bodil Stokke)](https://marketplace.visualstudio.com/items?itemName=bodil.blueprint-gtk).
 - [Flatpak (Bilal Elmoussaoui)](https://marketplace.visualstudio.com/items?itemName=bilelmoussaoui.flatpak-vscode).
-
----
-
-## 🚨 Deprecated
-
-- `Gtk.EntryCompletation`: There is no substitute.
-- `Gtk.FontButton`: Use `Gtk.FontDialogButton`.
-- `Gtk.InfoBar`: Use `Gtk.Revealer` with a `Gtk.Box`.
-- `Gtk.Dialog`: Use `Gtk.Window`.
-- `Gtk.FileChooserDialog`: Use `Gtk.FileDialog`.
-- `Gtk.TreeView`: Use `Gtk.ListView` for lists and `Gtk.ColumnView` for tabular lists.
 
 ---

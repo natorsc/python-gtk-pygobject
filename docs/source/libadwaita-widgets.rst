@@ -1,7 +1,4 @@
-:og:site_name: justCode
 :og:author: Renato Cruz (natorsc)
-:og:type: article
-:og:image: ../images/readme/python-gtk-from-zero-to-app-pt-br-1600x840.webp
 :og:title: Libadwaita widgets exemplos de código - justCode
 :og:description: Exemplos de código sobre construção de interfaces gráficas com a linguagem de programação Python (PyGObject), o toolkit gráfico GTK e a biblioteca libadwaita.
 
@@ -9,18 +6,18 @@
    :author: Renato Cruz (natorsc)
    :description: Exemplos de código sobre construção de interfaces gráficas com a linguagem de programação Python (PyGObject), o toolkit gráfico GTK e a biblioteca libadwaita.
    :description lang=en: Code examples for building graphical interfaces with the Python programming language (PyGObject), the GTK graphical toolkit and the libadwaita library.
-   :keywords: Gnome, GTK, Libadwaita, Python, PyGObject, GTK Blueprint,
+   :keywords: Gnome, GTK, Libadwaita, Python, PyGObject, Blueprint,
 
-Libadwaita Widgets
-------------------
+=======
+Widgets
+=======
 
 Adw.AboutWindow
-~~~~~~~~~~~~~~~
+===============
 
 .. figure:: ../images/libadwaita-widgets/about-window.webp
   :alt: Adw.AboutWindow
-  :width: 482
-  :height: 706
+  :width: 384
 
   Adw.AboutWindow
 
@@ -44,12 +41,11 @@ Adw.AboutWindow
 --------------
 
 Adw.ActionRow
-~~~~~~~~~~~~~
+=============
 
 .. figure:: ../images/libadwaita-widgets/action-row.webp
   :alt: Adw.ActionRow
-  :width: 805
-  :height: 506
+  :width: 683
 
   Adw.ActionRow
 
@@ -73,12 +69,11 @@ Adw.ActionRow
 --------------
 
 Adw.Application
-~~~~~~~~~~~~~~~
+===============
 
 .. figure:: ../images/libadwaita-widgets/application.webp
   :alt: Adw.Application
-  :width: 805
-  :height: 506
+  :width: 683
 
   Adw.Application
 
@@ -102,12 +97,11 @@ Adw.Application
 --------------
 
 Adw.Avatar
-~~~~~~~~~~
+==========
 
 .. figure:: ../images/libadwaita-widgets/avatar.webp
   :alt: Adw.Avatar
-  :width: 805
-  :height: 506
+  :width: 683
 
   Adw.Avatar
 
@@ -131,12 +125,11 @@ Adw.Avatar
 --------------
 
 Adw.Banner
-~~~~~~~~~~
+==========
 
 .. figure:: ../images/libadwaita-widgets/banner.webp
   :alt: Adw.Banner
-  :width: 805
-  :height: 506
+  :width: 683
 
   Adw.Banner
 
@@ -160,12 +153,11 @@ Adw.Banner
 --------------
 
 Adw.ButtonContent
-~~~~~~~~~~~~~~~~~
+=================
 
 .. figure:: ../images/libadwaita-widgets/button-content.webp
   :alt: Adw.ButtonContent
-  :width: 805
-  :height: 506
+  :width: 683
 
   Adw.ButtonContent
 
@@ -189,12 +181,11 @@ Adw.ButtonContent
 --------------
 
 Adw.Carousel
-~~~~~~~~~~~~
+============
 
 .. figure:: ../images/libadwaita-widgets/carousel.webp
   :alt: Adw.Carousel
-  :width: 805
-  :height: 506
+  :width: 683
 
   Adw.Carousel
 
@@ -218,12 +209,11 @@ Adw.Carousel
 --------------
 
 Adw.CarouselIndicatorDots
-~~~~~~~~~~~~~~~~~~~~~~~~~
+=========================
 
 .. figure:: ../images/libadwaita-widgets/carousel-indicator-dots.webp
   :alt: Adw.CarouselIndicatorDots
-  :width: 805
-  :height: 506
+  :width: 683
 
   Adw.CarouselIndicatorDots
 
@@ -247,12 +237,11 @@ Adw.CarouselIndicatorDots
 --------------
 
 Adw.CarouselIndicatorLines
-~~~~~~~~~~~~~~~~~~~~~~~~~~
+==========================
 
 .. figure:: ../images/libadwaita-widgets/carousel-indicator-lines.webp
   :alt: Adw.CarouselIndicatorLines
-  :width: 805
-  :height: 506
+  :width: 683
 
   Adw.CarouselIndicatorLines
 
@@ -276,12 +265,11 @@ Adw.CarouselIndicatorLines
 --------------
 
 Adw.Clamp
-~~~~~~~~~
+=========
 
 .. figure:: ../images/libadwaita-widgets/clamp.webp
   :alt: Adw.Clamp
-  :width: 805
-  :height: 506
+  :width: 683
 
   Adw.Clamp
 
@@ -305,12 +293,11 @@ Adw.Clamp
 --------------
 
 Adw.ComboRow
-~~~~~~~~~~~~
+============
 
 .. figure:: ../images/libadwaita-widgets/combo-row.webp
   :alt: Adw.ComboRow
-  :width: 805
-  :height: 506
+  :width: 683
 
   Adw.ComboRow
 
@@ -334,12 +321,11 @@ Adw.ComboRow
 --------------
 
 Adw.EntryRow
-~~~~~~~~~~~~
+============
 
 .. figure:: ../images/libadwaita-widgets/entry-row.webp
   :alt: Adw.EntryRow
-  :width: 805
-  :height: 506
+  :width: 683
 
   Adw.EntryRow
 
@@ -363,12 +349,11 @@ Adw.EntryRow
 --------------
 
 Adw.ExpanderRow
-~~~~~~~~~~~~~~~
+===============
 
 .. figure:: ../images/libadwaita-widgets/expander-row.webp
   :alt: Adw.ExpanderRow
-  :width: 805
-  :height: 506
+  :width: 683
 
   Adw.ExpanderRow
 
@@ -392,12 +377,11 @@ Adw.ExpanderRow
 --------------
 
 Adw.MessageDialog
-~~~~~~~~~~~~~~~~~
+=================
 
 .. figure:: ../images/libadwaita-widgets/message-dialog.webp
   :alt: Adw.MessageDialog
-  :width: 805
-  :height: 506
+  :width: 683
 
   Adw.MessageDialog
 
@@ -417,12 +401,11 @@ Adw.MessageDialog
 --------------
 
 Adw.NavigationSplitView
-~~~~~~~~~~~~~~~~~~~~~~~
+=======================
 
 .. figure:: ../images/libadwaita-widgets/navigation-split-view.webp
   :alt: Adw.NavigationSplitView
-  :width: 805
-  :height: 506
+  :width: 683
 
   Adw.NavigationSplitView
 
@@ -442,12 +425,11 @@ Adw.NavigationSplitView
 --------------
 
 Adw.PasswordEntryRow
-~~~~~~~~~~~~~~~~~~~~
+====================
 
 .. figure:: ../images/libadwaita-widgets/password-entry-row.webp
   :alt: Adw.PasswordEntryRow
-  :width: 805
-  :height: 506
+  :width: 683
 
   Adw.PasswordEntryRow
 
@@ -467,12 +449,11 @@ Adw.PasswordEntryRow
 --------------
 
 Adw.PreferencesPage
-~~~~~~~~~~~~~~~~~~~
+===================
 
 .. figure:: ../images/libadwaita-widgets/preferences-page.webp
   :alt: Adw.PreferencesPage
-  :width: 805
-  :height: 506
+  :width: 683
 
   Adw.PreferencesPage
 
@@ -496,12 +477,11 @@ Adw.PreferencesPage
 --------------
 
 Adw.PreferencesWindow
-~~~~~~~~~~~~~~~~~~~~~
+=====================
 
 .. figure:: ../images/libadwaita-widgets/preferences-window.webp
   :alt: Adw.PreferencesWindow
-  :width: 805
-  :height: 506
+  :width: 683
 
   Adw.PreferencesWindow
 
@@ -525,12 +505,11 @@ Adw.PreferencesWindow
 --------------
 
 Adw.SplitButton
-~~~~~~~~~~~~~~~
+===============
 
 .. figure:: ../images/libadwaita-widgets/split-button.webp
   :alt: Adw.SplitButton
-  :width: 805
-  :height: 506
+  :width: 683
 
   Adw.SplitButton
 
@@ -554,12 +533,11 @@ Adw.SplitButton
 --------------
 
 Adw.StatusPage
-~~~~~~~~~~~~~~
+==============
 
 .. figure:: ../images/libadwaita-widgets/status-page.webp
   :alt: Adw.StatusPage
-  :width: 805
-  :height: 506
+  :width: 683
 
   Adw.StatusPage
 
@@ -583,12 +561,11 @@ Adw.StatusPage
 --------------
 
 Adw.Toast
-~~~~~~~~~
+=========
 
 .. figure:: ../images/libadwaita-widgets/toast.webp
   :alt: Adw.Toast
-  :width: 805
-  :height: 506
+  :width: 683
 
   Adw.Toast
 
@@ -612,14 +589,13 @@ Adw.Toast
 --------------
 
 Adw.ViewStack
-~~~~~~~~~~~~~
+=============
 
 .. warning:: Criar código com Blueprint
 
 .. figure:: ../images/libadwaita-widgets/view-stack.webp
   :alt: Adw.ViewStack
-  :width: 805
-  :height: 506
+  :width: 683
 
   Adw.ViewStack
 

@@ -1,7 +1,4 @@
-:og:site_name: justCode
 :og:author: Renato Cruz (natorsc)
-:og:type: article
-:og:image: ../images/readme/python-gtk-from-zero-to-app-pt-br-1600x840.webp
 :og:title: Sobre o toolkit GTK - justCode
 :og:description: O GTK é um toolkit de desenvolvimento de interface gráfica do usuário (GUI - Graphical User Interface) multiplataforma, escrito na linguagem de programação C.
 
@@ -9,13 +6,11 @@
    :author: Renato Cruz (natorsc)
    :description: O GTK é um toolkit de desenvolvimento de interface gráfica do usuário (GUI - Graphical User Interface) multiplataforma, escrito na linguagem de programação C.
    :description lang=en: GTK is a cross-platform graphical user interface (GUI) development toolkit written in the C programming language.
-   :keywords: Gnome, GTK, libadwaita, Python, PyGObject, GTK Blueprint,
+   :keywords: Gnome, GTK, libadwaita, Python, PyGObject, Blueprint,
 
-GTK
-===
-
+=====
 Sobre
------
+=====
 
 O `GTK <https://www.gtk.org/>`__ é um toolkit de desenvolvimento de interface gráfica do usuário (GUI - Graphical User Interface) multiplataforma, escrito na linguagem de programação C.
 
@@ -27,80 +22,80 @@ O GTK é escrito em C e é distribuído sob a Licença Pública Geral `GNU LGPL 
 
 Ele também possui bindings para outras linguagens de programação:
 
--  `C++ <https://www.cplusplus.com/>`__.
--  `C# <https://docs.microsoft.com/pt-br/dotnet/csharp/>`__.
--  `C <https://pt.wikipedia.org/wiki/C_(linguagem_de_programa%C3%A7%C3%A3o)>`__.
--  `JavaScript <https://www.javascript.com/>`__.
--  `Python <https://www.python.org/>`__.
--  `Rust <https://www.rust-lang.org/pt-BR>`__.
--  `Vala <https://wiki.gnome.org/Projects/Vala>`__.
+- `C++ <https://www.cplusplus.com/>`__.
+- `C# <https://docs.microsoft.com/pt-br/dotnet/csharp/>`__.
+- `C <https://pt.wikipedia.org/wiki/C_(linguagem_de_programa%C3%A7%C3%A3o)>`__.
+- `JavaScript <https://www.javascript.com/>`__.
+- `Python <https://www.python.org/>`__.
+- `Rust <https://www.rust-lang.org/pt-BR>`__.
+- `Vala <https://wiki.gnome.org/Projects/Vala>`__.
 
-.. note:: Linguagens suportadas oficialmente. Existem bindings não oficiais.
+.. note:: Essas são as linguagens suportadas oficialmente, contudo existem bindings não oficiais.
 
 Bibliotecas
------------
+===========
 
 O kit de ferramentas (toolkit) GTK tem um design modular, entre suas principais bibliotecas temos e módulos temos:
 
 GTK
-~~~
+---
 
 A biblioteca `GTK <https://docs.gtk.org/gtk4/index.html>`__ constrói o núcleo do kit de ferramentas e contém todos os widgets.
 
 GDK
-~~~
+---
 
 O `GDK <https://docs.gtk.org/gdk3/index.html>`__ fornece uma interface para desenhar gráficos em uma variedade de plataformas, incluindo X11, Wayland, Microsoft Windows e macOS. Ele oferece suporte a recursos como janelas, eventos, gráficos 2D, imagens e manipulação de cores.
 
 GdkPixbuf
-~~~~~~~~~
+---------
 
 A biblioteca `GdkPixbuf <https://docs.gtk.org/gdk-pixbuf/index.html>`__ permite o carregamento e manipulação de imagens (PNG, JPEG, GIF e etc).
 
 GObject
-~~~~~~~
+-------
 
 A biblioteca `GObject <https://docs.gtk.org/gobject/index.html>`__ fornece uma API para programação orientada a objetos (OOP) na linguagem de programação C.
 
 GLib
-~~~~
+----
 
 `GLib <https://docs.gtk.org/glib/index.html>`__ é uma biblioteca de baixo nível que forma a base do GTK.
 
 Ele fornece manipulação de estrutura de dados para C, wrappers de portabilidade e interfaces para funcionalidade de tempo de execução como um loop de eventos, threads, carregamento dinâmico e um sistema de objetos.
 
 GIO
-~~~
+---
 
 A biblioteca `GIO <https://docs.gtk.org/gio/index.html>`__ implementa suporte a operações de entrada e saída (I/O, networking, IPC e etc).
 
 GSK
-~~~
+---
 
 A bliblioteca `GSK <https://docs.gtk.org/gsk4/index.html>`__ é utilizada para otimizar o desenho e a atualização do widget.
 
 Graphene
-~~~~~~~~
+--------
 
 A biblioteca `Graphene <https://ebassi.github.io/graphene/>`__ implementa o suporte a gráficos, vetores e matrizes.
 
 ATK
-~~~
+---
 
 A biblioteca `ATK <https://docs.gtk.org/atk/index.html>`__ implementa o suporte a leitores de tela, ampliadores de texto (lupas) e dispositivos de entrada alternativos.
 
 Cairo
-~~~~~
+-----
 
 `Cairo <https://www.cairographics.org/>`__ é uma biblioteca para gráficos 2D com suporte para vários dispositivos de saída (incluindo o X Window System, Win32) ao mesmo tempo em que produz uma saída consistente em todas as mídias, aproveitando a aceleração do hardware de exibição quando disponível.
 
 pango
-~~~~~
+-----
 
 `Pango <https://docs.gtk.org/Pango/index.html>`__ é uma biblioteca para layout e renderização de texto com ênfase na internacionalização. Ele forma o núcleo do manuseio de texto e fonte para GTK.
 
 OpenGL e Vulkan
-~~~~~~~~~~~~~~~
+---------------
 
 As bibliotecas `OpenGL <https://www.opengl.org/>`__ e `Vulkan <https://www.vulkan.org/>`__ permitem a utilizaçao da GPU.
 

@@ -1,26 +1,23 @@
-:og:site_name: justCode
 :og:author: Renato Cruz (natorsc)
-:og:type: article
-:og:image: ../images/readme/python-gtk-from-zero-to-app-pt-br-1600x840.webp
-:og:title: GTK widgets exemplos de código - justCode
+:og:title: Exemplos de código dos widget GTK - justCode
 :og:description: Exemplos de código sobre construção de interfaces gráficas com a linguagem de programação Python (PyGObject) e o toolkit gráfico GTK.
 
 .. meta::
    :author: Renato Cruz (natorsc)
    :description: Exemplos de código sobre construção de interfaces gráficas com a linguagem de programação Python (PyGObject) e o toolkit gráfico GTK.
    :description lang=en: Code samples on building graphical interfaces with the Python programming language (PyGObject) and the GTK graphics toolkit.
-   :keywords: Gnome, GTK, Libadwaita, Python, PyGObject, GTK Blueprint,
+   :keywords: Gnome, GTK, Libadwaita, Python, PyGObject, Blueprint,
 
-GTK Widgets
------------
+=======
+Widgets
+=======
 
 Gtk.ActionBar
-~~~~~~~~~~~~~
+=============
 
 .. figure:: ../images/gtk-widgets/actionbar.webp
   :alt: Gtk.ActionBar
-  :width: 805
-  :height: 506
+  :width: 683
 
   Gtk.ActionBar
 
@@ -44,12 +41,11 @@ Gtk.ActionBar
 --------------
 
 Gtk.Application
-~~~~~~~~~~~~~~~
+===============
 
 .. figure:: ../images/gtk-widgets/application.webp
   :alt: Gtk.Application
-  :width: 805
-  :height: 506
+  :width: 683
 
   Gtk.Application
 
@@ -73,12 +69,11 @@ Gtk.Application
 --------------
 
 Gtk.ApplicationWindow
-~~~~~~~~~~~~~~~~~~~~~
+=====================
 
 .. figure:: ../images/gtk-widgets/application-window.webp
   :alt: Gtk.ApplicationWindow
-  :width: 805
-  :height: 506
+  :width: 683
 
   Gtk.ApplicationWindow
 
@@ -102,12 +97,11 @@ Gtk.ApplicationWindow
 --------------
 
 Gtk.Box (horizontal)
-~~~~~~~~~~~~~~~~~~~~
+====================
 
 .. figure:: ../images/gtk-widgets/box-horizontal.webp
   :alt: Gtk.Box (horizontal)
-  :width: 805
-  :height: 506
+  :width: 683
 
   Gtk.Box (horizontal)
 
@@ -131,12 +125,11 @@ Gtk.Box (horizontal)
 --------------
 
 Gtk.Box (vertical)
-~~~~~~~~~~~~~~~~~~
+==================
 
 .. figure:: ../images/gtk-widgets/box-vertical.webp
   :alt: Gtk.Box (vertical)
-  :width: 805
-  :height: 506
+  :width: 683
 
   Gtk.Box (vertical)
 
@@ -160,12 +153,11 @@ Gtk.Box (vertical)
 --------------
 
 Gtk.Button
-~~~~~~~~~~
+==========
 
 .. figure:: ../images/gtk-widgets/button.webp
   :alt: Gtk.Button
-  :width: 805
-  :height: 506
+  :width: 683
 
   Gtk.Button
 
@@ -189,12 +181,11 @@ Gtk.Button
 --------------
 
 Gtk.Calendar
-~~~~~~~~~~~~
+============
 
 .. figure:: ../images/gtk-widgets/calendar.webp
   :alt: Gtk.Calendar
-  :width: 805
-  :height: 506
+  :width: 683
 
   Gtk.Calendar
 
@@ -218,12 +209,11 @@ Gtk.Calendar
 --------------
 
 Gtk.CheckButton
-~~~~~~~~~~~~~~~
+===============
 
 .. figure:: ../images/gtk-widgets/check-button.webp
   :alt: Gtk.CheckButton
-  :width: 805
-  :height: 506
+  :width: 683
 
   Gtk.CheckButton
 
@@ -247,12 +237,11 @@ Gtk.CheckButton
 --------------
 
 Gtk.CheckButton (radio)
-~~~~~~~~~~~~~~~~~~~~~~~
+=======================
 
 .. figure:: ../images/gtk-widgets/check-button-radio.webp
   :alt: Gtk.CheckButton (radio)
-  :width: 805
-  :height: 506
+  :width: 683
 
   Gtk.CheckButton (radio)
 
@@ -276,12 +265,11 @@ Gtk.CheckButton (radio)
 --------------
 
 Gtk.ColorDialogButton
-~~~~~~~~~~~~~~~~~~~~~
+=====================
 
 .. figure:: ../images/gtk-widgets/color-dialog-button.webp
   :alt: Gtk.ColorDialogButton
-  :width: 805
-  :height: 506
+  :width: 683
 
   Gtk.ColorDialogButton
 
@@ -305,12 +293,11 @@ Gtk.ColorDialogButton
 --------------
 
 Drag and drop
-~~~~~~~~~~~~~
+=============
 
 .. figure:: ../images/gtk-widgets/drag-and-drop.webp
   :alt: Drag and drop
-  :width: 805
-  :height: 506
+  :width: 683
 
   Drag and drop
 
@@ -321,12 +308,11 @@ Drag and drop
 --------------
 
 Gtk.DropDown
-~~~~~~~~~~~~
+============
 
 .. figure:: ../images/gtk-widgets/drop-down.webp
   :alt: Gtk.DropDown
-  :width: 805
-  :height: 506
+  :width: 683
 
   Gtk.DropDown
 
@@ -350,12 +336,11 @@ Gtk.DropDown
 --------------
 
 Gtk.Entry
-~~~~~~~~~
+=========
 
 .. figure:: ../images/gtk-widgets/entry.webp
   :alt: Gtk.Entry
-  :width: 805
-  :height: 506
+  :width: 683
 
   Gtk.Entry
 
@@ -379,12 +364,11 @@ Gtk.Entry
 --------------
 
 Gtk.FileDialog (folder)
-~~~~~~~~~~~~~~~~~~~~~~~
+=======================
 
 .. figure:: ../images/gtk-widgets/file-dialog-folder.webp
   :alt: Gtk.FileDialog (folder)
-  :width: 805
-  :height: 506
+  :width: 683
 
   Gtk.FileDialog (folder)
 
@@ -408,12 +392,11 @@ Gtk.FileDialog (folder)
 --------------
 
 Gtk.FileDialog (open)
-~~~~~~~~~~~~~~~~~~~~~
+=====================
 
 .. figure:: ../images/gtk-widgets/file-dialog-open.webp
   :alt: Gtk.FileDialog (open)
-  :width: 805
-  :height: 506
+  :width: 683
 
   Gtk.FileDialog (open)
 
@@ -437,12 +420,11 @@ Gtk.FileDialog (open)
 --------------
 
 Gtk.FileDialog (save)
-~~~~~~~~~~~~~~~~~~~~~
+=====================
 
 .. figure:: ../images/gtk-widgets/file-dialog-save.webp
   :alt: Gtk.FileDialog (save)
-  :width: 805
-  :height: 506
+  :width: 683
 
   Gtk.FileDialog (save)
 
@@ -466,12 +448,11 @@ Gtk.FileDialog (save)
 --------------
 
 Gtk.Fixed
-~~~~~~~~~
+=========
 
 .. figure:: ../images/gtk-widgets/fixed.webp
   :alt: Gtk.Fixed
-  :width: 805
-  :height: 506
+  :width: 683
 
   Gtk.Fixed
 
@@ -495,12 +476,11 @@ Gtk.Fixed
 --------------
 
 Gtk.FlowBox
-~~~~~~~~~~~
+===========
 
 .. figure:: ../images/gtk-widgets/flow-box.webp
   :alt: Gtk.FlowBox
-  :width: 805
-  :height: 506
+  :width: 683
 
   Gtk.FlowBox
 
@@ -524,12 +504,11 @@ Gtk.FlowBox
 --------------
 
 Gtk.Grid
-~~~~~~~~
+========
 
 .. figure:: ../images/gtk-widgets/grid.webp
   :alt: Gtk.Grid
-  :width: 805
-  :height: 506
+  :width: 683
 
   Gtk.Grid
 
@@ -553,12 +532,11 @@ Gtk.Grid
 --------------
 
 Gtk.HeaderBar
-~~~~~~~~~~~~~
+=============
 
 .. figure:: ../images/gtk-widgets/header-bar.webp
   :alt: Gtk.HeaderBar
-  :width: 805
-  :height: 506
+  :width: 683
 
   Gtk.HeaderBar
 
@@ -582,12 +560,11 @@ Gtk.HeaderBar
 --------------
 
 Gtk.Image
-~~~~~~~~~
+=========
 
 .. figure:: ../images/gtk-widgets/image.webp
   :alt: Gtk.Image
-  :width: 805
-  :height: 506
+  :width: 683
 
   Gtk.Image
 
@@ -611,12 +588,11 @@ Gtk.Image
 --------------
 
 Gtk.ListBox
-~~~~~~~~~~~
+===========
 
 .. figure:: ../images/gtk-widgets/list-box.webp
   :alt: Gtk.ListBox
-  :width: 805
-  :height: 506
+  :width: 683
 
   Gtk.ListBox
 
@@ -640,14 +616,13 @@ Gtk.ListBox
 --------------
 
 Gtk.ListView
-~~~~~~~~~~~~
+============
 
 .. warning:: Criar código em Python.
 
 .. figure:: ../images/gtk-widgets/list-view.webp
   :alt: Gtk.ListView
-  :width: 805
-  :height: 506
+  :width: 683
 
   Gtk.ListView
 
@@ -667,12 +642,11 @@ Gtk.ListView
 --------------
 
 Gtk.MenuButton
-~~~~~~~~~~~~~~
+==============
 
 .. figure:: ../images/gtk-widgets/menu-button.webp
   :alt: Gtk.MenuButton
-  :width: 805
-  :height: 506
+  :width: 683
 
   Gtk.MenuButton
 
@@ -706,12 +680,11 @@ Erro:
 --------------
 
 Gtk.Overlay
-~~~~~~~~~~~
+===========
 
 .. figure:: ../images/gtk-widgets/overlay.webp
   :alt: Gtk.Overlay
-  :width: 805
-  :height: 506
+  :width: 683
 
   Gtk.Overlay
 
@@ -735,12 +708,11 @@ Gtk.Overlay
 --------------
 
 Pango tags
-~~~~~~~~~~
+==========
 
 .. figure:: ../images/gtk-widgets/pango-tags.webp
   :alt: Pango tags
-  :width: 805
-  :height: 506
+  :width: 683
 
   Pango tags
 
@@ -764,12 +736,11 @@ Pango tags
 --------------
 
 Gtk.Picture
-~~~~~~~~~~~
+===========
 
 .. figure:: ../images/gtk-widgets/picture.webp
   :alt: Gtk.Picture
-  :width: 805
-  :height: 506
+  :width: 683
 
   Gtk.Picture
 
@@ -793,12 +764,11 @@ Gtk.Picture
 --------------
 
 Gtk.PrintOperation
-~~~~~~~~~~~~~~~~~~
+==================
 
 .. figure:: ../images/gtk-widgets/print-operation.webp
   :alt: Gtk.PrintOperation
-  :width: 805
-  :height: 506
+  :width: 683
 
   Gtk.PrintOperation
 
@@ -822,12 +792,11 @@ Gtk.PrintOperation
 --------------
 
 Gtk.SearchBar
-~~~~~~~~~~~~~
+=============
 
 .. figure:: ../images/gtk-widgets/search-bar.webp
   :alt: Gtk.SearchBar
-  :width: 805
-  :height: 506
+  :width: 683
 
   Gtk.SearchBar
 
@@ -851,14 +820,13 @@ Gtk.SearchBar
 --------------
 
 Gtk.ShortcutsWindow
-~~~~~~~~~~~~~~~~~~~
+===================
 
 .. warning:: Criar código em Python.
 
 .. figure:: ../images/gtk-widgets/shortcuts-window.webp
   :alt: Gtk.ShortcutsWindow
-  :width: 805
-  :height: 506
+  :width: 683
 
   Gtk.ShortcutsWindow
 
@@ -878,12 +846,11 @@ Gtk.ShortcutsWindow
 --------------
 
 Signals and slots
-~~~~~~~~~~~~~~~~~
+=================
 
 .. figure:: ../images/gtk-widgets/signals-and-slots.webp
   :alt: Signals and slots
-  :width: 805
-  :height: 506
+  :width: 683
 
   Signals and slots
 
@@ -907,12 +874,11 @@ Signals and slots
 --------------
 
 Gtk.StackSidebar
-~~~~~~~~~~~~~~~~
+================
 
 .. figure:: ../images/gtk-widgets/stack-sidebar.webp
   :alt: Gtk.StackSidebar
-  :width: 805
-  :height: 506
+  :width: 683
 
   Gtk.StackSidebar
 
@@ -936,12 +902,11 @@ Gtk.StackSidebar
 --------------
 
 Gtk.StackSwitcher
-~~~~~~~~~~~~~~~~~
+=================
 
 .. figure:: ../images/gtk-widgets/stack-switcher.webp
   :alt: Gtk.StackSwitcher
-  :width: 805
-  :height: 506
+  :width: 683
 
   Gtk.StackSwitcher
 
@@ -965,12 +930,11 @@ Gtk.StackSwitcher
 --------------
 
 Gtk.Switch
-~~~~~~~~~~
+==========
 
 .. figure:: ../images/gtk-widgets/switch.webp
   :alt: Gtk.Switch
-  :width: 805
-  :height: 506
+  :width: 683
 
   Gtk.Switch
 
@@ -994,7 +958,7 @@ Gtk.Switch
 --------------
 
 Translation (gettext)
-~~~~~~~~~~~~~~~~~~~~~
+=====================
 
 .. warning:: Corrigir código e adicionar imagem.
 
@@ -1005,12 +969,11 @@ Translation (gettext)
 --------------
 
 Gtk.Video
-~~~~~~~~~
+=========
 
 .. figure:: ../images/gtk-widgets/video.webp
   :alt: Gtk.Video
-  :width: 805
-  :height: 506
+  :width: 683
 
   Gtk.Video
 
@@ -1034,12 +997,11 @@ Gtk.Video
 --------------
 
 Gtk.Window
-~~~~~~~~~~
+==========
 
 .. figure:: ../images/gtk-widgets/window.webp
   :alt: Gtk.Window
-  :width: 805
-  :height: 506
+  :width: 683
 
   Gtk.Window
 

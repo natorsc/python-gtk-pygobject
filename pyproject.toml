@@ -1,47 +1,29 @@
-[tool.poetry]
-name = "gui-python-pygobject-gtk"
-version = "0.2.1"
-description = "Criando interfaces gráficas com a linguagem de programação Python (PyGObject) e o toolkit gráfico GTK."
-authors = ["Renato Cruz <natorsc@gmail.com>"]
-readme = "README.md"
-license = "MIT"
-homepage = "https://gtk.justcode.com.br/"
-documentation = "https://gtk.justcode.com.br/"
-repository = "https://github.com/natorsc/gui-python-pygobject-gtk"
-keywords = ["python", "pygobject", "gtk", "libadwaita", "blueprint", "gnome", "gnome builder"]
-
-classifiers = [
-    "Topic :: Software Development",
-    "Topic :: Desktop Environment",
-    "Topic :: Desktop Environment :: Gnome",
-    "Environment :: X11 Applications :: GTK",
-    "Environment :: X11 Applications :: Gnome",
-    "Operating System :: Microsoft",
-    "Operating System :: Microsoft :: Windows :: Windows 10",
-    "Operating System :: POSIX :: Linux",
-    "Programming Language :: Python :: 3.10",
-    "Programming Language :: Python :: 3.11",
-    "License :: OSI Approved :: MIT License",
+[project]
+name = "pygobject-gtk"
+version = "0.0.1"
+description = "Criando interfaces gráficas com Python (PyGObject) e GTK"
+authors = [
+    {name = "Renato Cruz", email = "natorsc@gmail.com"},
 ]
+dependencies = [
+    "pygobject>=3.46.0",
+]
+requires-python = ">=3.10,<3.13"
+readme = "README.md"
+license = {text = "MIT"}
 
-[tool.poetry.dependencies]
-python = ">=3.9,<3.12"
-pygobject = "^3.44.1"
-
-[tool.poetry.group.dev.dependencies]
-pylint = "^2.17.4"
-autopep8 = "^2.0.2"
-pygobject-stubs = "^2.8.0"
-
-
-[tool.poetry.group.docs.dependencies]
-sphinx = "^7.2.6"
-sphinx-copybutton = "^0.5.2"
-sphinx-inline-tabs = "^2023.4.21"
-sphinxext-opengraph = "^0.8.2"
-sphinx-sitemap = "^2.5.1"
-furo = "^2023.9.10"
-
-[build-system]
-requires = ["poetry-core"]
-build-backend = "poetry.core.masonry.api"
+[project.optional-dependencies]
+docs = [
+    "sphinx>=7.2.6",
+    "sphinx-copybutton>=0.5.2",
+    "sphinx-inline-tabs>=2023.4.21",
+    "sphinxext-opengraph>=0.9.0",
+    "sphinx-sitemap>=2.5.1",
+    "furo>=2023.9.10",
+]
+[tool.pdm.dev-dependencies]
+dev = [
+    "pylint>=3.0.2",
+    "autopep8>=2.0.4",
+    "pygobject-stubs>=2.10.0",
+]

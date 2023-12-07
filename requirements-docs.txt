@@ -19,10 +19,8 @@ MarkupSafe==2.1.3
 mccabe==0.7.0
 packaging==23.2
 platformdirs==4.1.0
-pycairo==1.25.1
 pycodestyle==2.11.1
 pygments==2.17.2
-pygobject==3.46.0
 pygobject-stubs==2.10.0
 pylint==3.0.2
 requests==2.31.0
