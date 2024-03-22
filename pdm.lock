@@ -4,7 +4,7 @@
 [metadata]
 groups = ["default", "dev", "docs"]
 strategy = ["cross_platform"]
-lock_version = "4.4"
+lock_version = "4.4.1"
 content_hash = "sha256:65acd5f8f31bc6455518c7115ee4cf032a4e5e9ac48c93ceeace4c09788aa85a"
 
 [[package]]
@@ -19,29 +19,29 @@ files = [
 
 [[package]]
 name = "astroid"
-version = "3.0.1"
+version = "3.1.0"
 requires_python = ">=3.8.0"
 summary = "An abstract syntax tree for Python with inference support."
 dependencies = [
     "typing-extensions>=4.0.0; python_version < \"3.11\"",
 ]
 files = [
-    {file = "astroid-3.0.1-py3-none-any.whl", hash = "sha256:7d5895c9825e18079c5aeac0572bc2e4c83205c95d416e0b4fee8bc361d2d9ca"},
-    {file = "astroid-3.0.1.tar.gz", hash = "sha256:86b0bb7d7da0be1a7c4aedb7974e391b32d4ed89e33de6ed6902b4b15c97577e"},
+    {file = "astroid-3.1.0-py3-none-any.whl", hash = "sha256:951798f922990137ac090c53af473db7ab4e70c770e6d7fae0cec59f74411819"},
+    {file = "astroid-3.1.0.tar.gz", hash = "sha256:ac248253bfa4bd924a0de213707e7ebeeb3138abeb48d798784ead1e56d419d4"},
 ]
 
 [[package]]
 name = "autopep8"
-version = "2.0.4"
-requires_python = ">=3.6"
+version = "2.1.0"
+requires_python = ">=3.8"
 summary = "A tool that automatically formats Python code to conform to the PEP 8 style guide"
 dependencies = [
-    "pycodestyle>=2.10.0",
+    "pycodestyle>=2.11.0",
     "tomli; python_version < \"3.11\"",
 ]
 files = [
-    {file = "autopep8-2.0.4-py2.py3-none-any.whl", hash = "sha256:067959ca4a07b24dbd5345efa8325f5f58da4298dab0dde0443d5ed765de80cb"},
-    {file = "autopep8-2.0.4.tar.gz", hash = "sha256:2913064abd97b3419d1cc83ea71f042cb821f87e45b9c88cad5ad3c4ea87fe0c"},
+    {file = "autopep8-2.1.0-py2.py3-none-any.whl", hash = "sha256:2bb76888c5edbcafe6aabab3c47ba534f5a2c2d245c2eddced4a30c4b4946357"},
+    {file = "autopep8-2.1.0.tar.gz", hash = "sha256:1fa8964e4618929488f4ec36795c7ff12924a68b8bf01366c094fc52f770b6e7"},
 ]
 
 [[package]]
@@ -167,7 +167,7 @@ files = [
 
 [[package]]
 name = "furo"
-version = "2023.9.10"
+version = "2024.1.29"
 requires_python = ">=3.8"
 summary = "A clean customisable Sphinx documentation theme."
 dependencies = [
@@ -177,8 +177,8 @@ dependencies = [
     "sphinx<8.0,>=6.0",
 ]
 files = [
-    {file = "furo-2023.9.10-py3-none-any.whl", hash = "sha256:513092538537dc5c596691da06e3c370714ec99bc438680edc1debffb73e5bfc"},
-    {file = "furo-2023.9.10.tar.gz", hash = "sha256:5707530a476d2a63b8cad83b4f961f3739a69f4b058bcf38a03a39fa537195b2"},
+    {file = "furo-2024.1.29-py3-none-any.whl", hash = "sha256:3548be2cef45a32f8cdc0272d415fcb3e5fa6a0eb4ddfe21df3ecf1fe45a13cf"},
+    {file = "furo-2024.1.29.tar.gz", hash = "sha256:4d6b2fe3f10a6e36eb9cc24c1e7beb38d7a23fc7b3c382867503b7fcac8a1e02"},
 ]
 
 [[package]]
@@ -333,14 +333,14 @@ files = [
 
 [[package]]
 name = "pygobject"
-version = "3.46.0"
-requires_python = ">=3.8, <4"
+version = "3.48.1"
+requires_python = "<4,>=3.8"
 summary = "Python bindings for GObject Introspection"
 dependencies = [
-    "pycairo>=1.16.0",
+    "pycairo>=1.16",
 ]
 files = [
-    {file = "PyGObject-3.46.0.tar.gz", hash = "sha256:481437b05af0a66b7c366ea052710eb3aacbb979d22d30b797f7ec29347ab1e6"},
+    {file = "pygobject-3.48.1.tar.gz", hash = "sha256:2c4cd7c805ee9e727904172423a7519338017fd7e122b62218ac211627436875"},
 ]
 
 [[package]]
@@ -354,24 +354,24 @@ files = [
 
 [[package]]
 name = "pylint"
-version = "3.0.2"
+version = "3.1.0"
 requires_python = ">=3.8.0"
 summary = "python code static checker"
 dependencies = [
-    "astroid<=3.1.0-dev0,>=3.0.1",
+    "astroid<=3.2.0-dev0,>=3.1.0",
     "colorama>=0.4.5; sys_platform == \"win32\"",
     "dill>=0.2; python_version < \"3.11\"",
     "dill>=0.3.6; python_version >= \"3.11\"",
     "dill>=0.3.7; python_version >= \"3.12\"",
-    "isort<6,>=4.2.5",
+    "isort!=5.13.0,<6,>=4.2.5",
     "mccabe<0.8,>=0.6",
     "platformdirs>=2.2.0",
     "tomli>=1.1.0; python_version < \"3.11\"",
     "tomlkit>=0.10.1",
 ]
 files = [
-    {file = "pylint-3.0.2-py3-none-any.whl", hash = "sha256:60ed5f3a9ff8b61839ff0348b3624ceeb9e6c2a92c514d81c9cc273da3b6bcda"},
-    {file = "pylint-3.0.2.tar.gz", hash = "sha256:0d4c286ef6d2f66c8bfb527a7f8a629009e42c99707dec821a03e1b51a4c1496"},
+    {file = "pylint-3.1.0-py3-none-any.whl", hash = "sha256:507a5b60953874766d8a366e8e8c7af63e058b26345cfcb5f91f89d987fd6b74"},
+    {file = "pylint-3.1.0.tar.gz", hash = "sha256:6a69beb4a6f63debebaab0a3477ecd0f559aa726af4954fc948c51f7a2549e23"},
 ]
 
 [[package]]
@@ -575,15 +575,15 @@ files = [
 
 [[package]]
 name = "sphinxext-opengraph"
-version = "0.9.0"
+version = "0.9.1"
 requires_python = ">=3.8"
 summary = "Sphinx Extension to enable OGP support"
 dependencies = [
     "sphinx>=4.0",
 ]
 files = [
-    {file = "sphinxext-opengraph-0.9.0.tar.gz", hash = "sha256:4e57e25b6d56f47b9c06a5a5d68a2a00ed3577c8a39e459b52118c6bfe5e8c8b"},
-    {file = "sphinxext_opengraph-0.9.0-py3-none-any.whl", hash = "sha256:ab1eb2ffb531fb85b695e719dba7b0245b0643f6b6c0d1cc258d15a81e72a9f1"},
+    {file = "sphinxext-opengraph-0.9.1.tar.gz", hash = "sha256:dd2868a1e7c9497977fbbf44cc0844a42af39ca65fe1bb0272518af225d06fc5"},
+    {file = "sphinxext_opengraph-0.9.1-py3-none-any.whl", hash = "sha256:b3b230cc6a5b5189139df937f0d9c7b23c7c204493b22646273687969dcb760e"},
 ]
 
 [[package]]
