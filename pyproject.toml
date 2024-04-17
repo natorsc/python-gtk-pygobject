@@ -1,0 +1,32 @@
+[project]
+name = "pygobject-gtk"
+version = "0.1.0"
+description = "Criando interfaces gráficas com Python (PyGObject) e GTK."
+authors = [
+    {name = "Renato Cruz", email = "natorsc@gmail.com"},
+]
+dependencies = [
+    "pygobject>=3.48.2",
+]
+requires-python = ">=3.11,<3.13"
+readme = "README.md"
+license = {text = "MIT"}
+
+
+[project.optional-dependencies]
+docs = [
+    "sphinx>=7.2.6",
+    "sphinx-copybutton>=0.5.2",
+    "sphinx-inline-tabs>=2023.4.21",
+    "sphinxext-opengraph>=0.9.1",
+    "sphinx-sitemap>=2.5.1",
+    "furo>=2024.1.29",
+]
+[tool.pdm]
+distribution = false
+
+[tool.pdm.dev-dependencies]
+dev = [
+    "pygobject-stubs>=2.11.0",
+    "python-lsp-server[all]>=1.11.0",
+]

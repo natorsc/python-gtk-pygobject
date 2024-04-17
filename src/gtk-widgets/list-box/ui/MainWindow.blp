@@ -1,0 +1,130 @@
+using Gtk 4.0;
+
+template $ExampleWindow: Gtk.ApplicationWindow {
+  title: 'Python and GTK: PyGObject Gtk.ListBox.';
+  default-width: 683;
+  default-height: 384;
+
+  [titlebar]
+  Gtk.HeaderBar header_bar {
+    [end]
+    Gtk.MenuButton {
+      icon-name: 'open-menu-symbolic';
+      menu-model: primary_menu;
+    }
+  }
+
+  Gtk.Box {
+    orientation: vertical;
+    homogeneous: true;
+    margin-top: 12;
+    margin-end: 12;
+    margin-bottom: 12;
+    margin-start: 12;
+    spacing: 12;
+
+    Gtk.ListBox {
+      selection-mode: none;
+        styles [
+          'boxed-list',
+        ]
+      Gtk.ListBoxRow{
+        selectable: false;
+        Gtk.Box {
+          orientation: horizontal;
+          Gtk.Label {
+            label: 'Line 01';
+            hexpand: true;
+            xalign: 0;
+            margin-top: 6;
+            margin-end: 6;
+            margin-bottom: 6;
+            margin-start: 6;
+          }
+          Gtk.Switch{
+            margin-top: 6;
+            margin-end: 6;
+            margin-bottom: 6;
+            margin-start: 6;
+          }
+        }
+      }
+      Gtk.ListBoxRow{
+        selectable: false;
+        Gtk.Box {
+          orientation: horizontal;
+          Gtk.Label {
+            label: 'Line 02';
+            hexpand: true;
+            xalign: 0;
+            margin-top: 6;
+            margin-end: 6;
+            margin-bottom: 6;
+            margin-start: 6;
+          }
+          Gtk.Switch{
+            margin-top: 6;
+            margin-end: 6;
+            margin-bottom: 6;
+            margin-start: 6;
+          }
+        }
+      }
+      Gtk.ListBoxRow{
+        selectable: false;
+        Gtk.Box {
+          orientation: horizontal;
+          Gtk.Label {
+            label: 'Line 03';
+            hexpand: true;
+            xalign: 0;
+            margin-top: 6;
+            margin-end: 6;
+            margin-bottom: 6;
+            margin-start: 6;
+          }
+          Gtk.Switch{
+            margin-top: 6;
+            margin-end: 6;
+            margin-bottom: 6;
+            margin-start: 6;
+          }
+        }
+      }
+    }
+
+    Gtk.ListBox {
+      selection-mode: single;
+      show-separators: true;
+      vexpand: true;
+      row-activated => $on_row_clicked();
+      styles [
+        'boxed-list',
+      ]
+      Gtk.ListBoxRow {
+        Gtk.Label {
+          label: 'Line 01';
+        }
+      }
+      Gtk.ListBoxRow {
+        Gtk.Label {
+          label: 'Line 02';
+        }
+      }
+      Gtk.ListBoxRow {
+        Gtk.Label {
+          label: 'Line 03';
+        }
+      }
+    }
+  }
+}
+
+menu primary_menu {
+  section {
+    item {
+      label: _('Preferences');
+      action: 'app.preferences';
+    }
+  }
+}
