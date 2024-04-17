@@ -1,10 +1,8 @@
 # -*- coding: utf-8 -*-
 """Python and GTK: PyGObject Gtk.ShortcutsWindow."""
 
+import pathlib
 import sys
-from pathlib import Path
-
-
 
 import gi
 
@@ -15,18 +13,10 @@ from gi.repository import Adw, Gio, Gtk
 
 Adw.init()
 
-BASE_DIR = Path(__file__).resolve().parent
-
-SHORTCUTS_WINDOW = str(BASE_DIR.joinpath('ShortcutsWindow.ui'))
-
-_SCRIPTS = BASE_DIR.parent.parent.parent.parent.joinpath('_scripts')
-sys.path.append(str(_SCRIPTS))
-import _tools
-
-_tools.compile_blueprint_ui(ui_dir=BASE_DIR)
+BASE_DIR = pathlib.Path(__file__).resolve().parent
 
 
-@Gtk.Template(filename=SHORTCUTS_WINDOW)
+@Gtk.Template(filename=str(BASE_DIR.joinpath('ShortcutsWindow.ui')))
 class ShortcutsWindow(Gtk.ShortcutsWindow):
     __gtype_name__ = 'ShortcutsWindow'
 
@@ -34,9 +24,9 @@ class ShortcutsWindow(Gtk.ShortcutsWindow):
         super().__init__(**kwargs)
 
 
-APPLICATION_WINDOW = str(BASE_DIR.joinpath('MainWindow.ui'))
 
-@Gtk.Template(filename=APPLICATION_WINDOW)
+
+@Gtk.Template(filename=str(BASE_DIR.joinpath('MainWindow.ui')))
 class ExampleWindow(Gtk.ApplicationWindow):
     __gtype_name__ = 'ExampleWindow'
 

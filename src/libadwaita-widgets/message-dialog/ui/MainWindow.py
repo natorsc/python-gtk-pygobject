@@ -2,7 +2,7 @@
 """Python and GTK: PyGObject libadwaita Adw.MessageDialog."""
 
 import sys
-from pathlib import Path
+import pathlib
 
 import gi
 
@@ -13,16 +13,16 @@ from gi.repository import Adw, Gio, Gtk
 
 Adw.init()
 
-BASE_DIR = Path(__file__).resolve().parent
+
 UI = BASE_DIR.joinpath('MainWindow.ui')
 DIALOG = str(BASE_DIR.joinpath('AdwMessageDialog.ui'))
 
-_SCRIPTS = BASE_DIR.parent.parent.parent.parent.joinpath('_scripts')
-sys.path.append(str(_SCRIPTS))
 
-import _tools
 
-_tools.compile_blueprint_ui(ui_dir=BASE_DIR)
+
+
+
+
 
 
 @Gtk.Template(filename=DIALOG)

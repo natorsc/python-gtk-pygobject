@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 """Python and GTK: PyGObject Gtk.Picture"""
 
-from pathlib import Path
+import pathlib
 
 
 
@@ -14,7 +14,7 @@ from gi.repository import Adw, Gio, Gtk
 
 Adw.init()
 
-BASE_DIR = Path(__file__).resolve().parent
+
 SRC_DIR = BASE_DIR.parent.parent
 PICTURE = str(SRC_DIR.joinpath('data', 'images', 'thunderstorm.jpg'))
 

@@ -1,10 +1,8 @@
 # -*- coding: utf-8 -*-
 """Python and GTK: PyGObject Gtk.Window."""
 
+import pathlib
 import sys
-from pathlib import Path
-
-
 
 import gi
 
@@ -15,18 +13,10 @@ from gi.repository import Adw, Gio, Gtk
 
 Adw.init()
 
-BASE_DIR = Path(__file__).resolve().parent
-
-NEW_WINDOW = str(BASE_DIR.joinpath('NewWindow.ui'))
-
-_SCRIPTS = BASE_DIR.parent.parent.parent.parent.joinpath('_scripts')
-sys.path.append(str(_SCRIPTS))
-import _tools
-
-_tools.compile_blueprint_ui(ui_dir=BASE_DIR)
+BASE_DIR = pathlib.Path(__file__).resolve().parent
 
 
-@Gtk.Template(filename=NEW_WINDOW)
+@Gtk.Template(filename=str(BASE_DIR.joinpath('NewWindow.ui')))
 class NewWindow(Gtk.Window):
     __gtype_name__ = 'NewWindow'
 
@@ -38,9 +28,9 @@ class NewWindow(Gtk.Window):
         self.destroy()
 
 
-APPLICATION_WINDOW = str(BASE_DIR.joinpath('MainWindow.ui'))
 
-@Gtk.Template(filename=APPLICATION_WINDOW)
+
+@Gtk.Template(filename=str(BASE_DIR.joinpath('MainWindow.ui')))
 class ExampleWindow(Gtk.ApplicationWindow):
     __gtype_name__ = 'ExampleWindow'
 

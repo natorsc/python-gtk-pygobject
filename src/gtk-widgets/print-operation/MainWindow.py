@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 """Python and GTK: PyGObject Gtk.PrintOperation"""
 
-from pathlib import Path
+import pathlib
 
 
 
@@ -14,7 +14,7 @@ from gi.repository import Adw, Gio, Gtk, Pango, PangoCairo
 
 Adw.init()
 
-BASE_DIR = Path(__file__).resolve().parent
+
 PDF_FILE = str(BASE_DIR.joinpath('file-name.pdf'))
 
 TEXT = """<span size="xx-large">Lorem</span>

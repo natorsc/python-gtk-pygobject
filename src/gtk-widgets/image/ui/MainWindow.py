@@ -8,10 +8,8 @@ The size is calculated automatically by GTK.
 If you want to load an image, use `Gtk.Picture()`.
 """
 
+import pathlib
 import sys
-from pathlib import Path
-
-
 
 import gi
 
@@ -22,24 +20,15 @@ from gi.repository import Adw, Gio, Gtk
 
 Adw.init()
 
-BASE_DIR = Path(__file__).resolve().parent
-SRC_DIR = BASE_DIR.parent.parent.parent
-
-
+BASE_DIR = pathlib.Path(__file__).resolve().parent
 CUSTOM_IMAGE = str(
-    SRC_DIR.joinpath('data', 'icons', 'br.com.justcode.Exemplo.png')
+    BASE_DIR.parent.parent.parent.joinpath(
+        'data', 'icons', 'br.com.justcode.PyGObject.png',
+    )
 )
 
-_SCRIPTS = BASE_DIR.parent.parent.parent.parent.joinpath('_scripts')
-sys.path.append(str(_SCRIPTS))
-import _tools
 
-_tools.compile_blueprint_ui(ui_dir=BASE_DIR)
-
-
-APPLICATION_WINDOW = str(BASE_DIR.joinpath('MainWindow.ui'))
-
-@Gtk.Template(filename=APPLICATION_WINDOW)
+@Gtk.Template(filename=str(BASE_DIR.joinpath('MainWindow.ui')))
 class ExampleWindow(Gtk.ApplicationWindow):
     __gtype_name__ = 'ExampleWindow'
 

@@ -2,7 +2,7 @@
 """Python and GTK: PyGObject libadwaita style class icon-dropshadow."""
 
 import sys
-from pathlib import Path
+import pathlib
 
 import gi
 
@@ -11,18 +11,18 @@ gi.require_version(namespace='Adw', version='1')
 
 from gi.repository import Adw, Gio, Gtk
 
-BASE_DIR = Path(__file__).resolve().parent
+
 UI = BASE_DIR.joinpath('MainWindow.ui')
 ICON = BASE_DIR.parent.parent.parent.joinpath(
     'data', 'icons', 'icon-128x128.svg',
 )
 
-_SCRIPTS = BASE_DIR.parent.parent.parent.parent.joinpath('_scripts')
-sys.path.append(str(_SCRIPTS))
 
-import _tools
 
-_tools.compile_blueprint_ui(ui_dir=BASE_DIR)
+
+
+
+
 
 Adw.init()
 

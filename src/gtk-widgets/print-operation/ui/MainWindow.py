@@ -1,23 +1,19 @@
 # -*- coding: utf-8 -*-
 """Python and GTK: PyGObject PyGObject Gtk.PrintOperation ui file."""
 
+import pathlib
 import sys
-from pathlib import Path
-
-
 
 import gi
 
 gi.require_version(namespace='Gtk', version='4.0')
 gi.require_version(namespace='Adw', version='1')
 
-from gi.repository import Adw, Gio, Gtk, Pango, PangoCairo
+from gi.repository import Adw, Gio, Gtk
 
 Adw.init()
 
-BASE_DIR = Path(__file__).resolve().parent
-SRC_DIR = BASE_DIR.parent.parent.parent
-
+BASE_DIR = pathlib.Path(__file__).resolve().parent
 PDF_FILE = str(BASE_DIR.joinpath('file-name.pdf'))
 
 TEXT = """<span size="xx-large">Lorem</span>
@@ -26,16 +22,8 @@ Lorem <b>ipsum</b> <span foreground="red">dolor</span> <big>sit</big> amet,
 <span background="green">eiusmod</span> tempor incididunt 
 <small>ut</small> <tt>labore</tt> et dolore magna aliqua.\n"""
 
-_SCRIPTS = BASE_DIR.parent.parent.parent.parent.joinpath('_scripts')
-sys.path.append(str(_SCRIPTS))
-import _tools
 
-_tools.compile_blueprint_ui(ui_dir=BASE_DIR)
-
-
-APPLICATION_WINDOW = str(BASE_DIR.joinpath('MainWindow.ui'))
-
-@Gtk.Template(filename=APPLICATION_WINDOW)
+@Gtk.Template(filename=str(BASE_DIR.joinpath('MainWindow.ui')))
 class ExampleWindow(Gtk.ApplicationWindow):
     __gtype_name__ = 'ExampleWindow'
 

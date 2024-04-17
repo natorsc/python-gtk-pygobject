@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 """Python and GTK: PyGObject libadwaita style classe lowres-icon."""
 
-from pathlib import Path
+import pathlib
 
 import gi
 
@@ -12,7 +12,7 @@ from gi.repository import Adw, Gio, Gtk
 
 Adw.init()
 
-BASE_DIR = Path(__file__).resolve().parent
+
 ICON = BASE_DIR.parent.parent.joinpath(
     'data', 'icons', 'icon-32x32.svg',
 )

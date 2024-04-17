@@ -3,7 +3,7 @@
 
 import configparser
 import gettext
-from pathlib import Path
+import pathlib
 
 
 
@@ -18,7 +18,7 @@ Adw.init()
 
 APPLICATION_ID = 'br.com.justcode.PyGObject'
 
-BASE_DIR = Path(__file__).resolve().parent
+
 LOCALES_DIR = BASE_DIR.joinpath('locales')
 CONFIG_FILE = BASE_DIR.joinpath('config.ini')
 window_title = 'Python and GTK: Gtk.ApplicationWindow()'

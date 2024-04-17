@@ -1,10 +1,8 @@
 # -*- coding: utf-8 -*-
 """Python and GTK: PyGObject Gtk.Video."""
 
+import pathlib
 import sys
-from pathlib import Path
-
-
 
 import gi
 
@@ -15,24 +13,27 @@ from gi.repository import Adw, Gio, Gtk
 
 Adw.init()
 
-BASE_DIR = Path(__file__).resolve().parent
-SRC_DIR = BASE_DIR.parent.parent.parent
+BASE_DIR = pathlib.Path(__file__).resolve().parent
+
+
+
 
 VIDEO = str(
-    SRC_DIR.joinpath('data', 'videos',
-                     'beautiful-sunset-view-nature-background.mp4')
+    BASE_DIR.parent.parent.parent.joinpath(
+        'data', 'videos','video.mp4'
+    )
 )
 
-_SCRIPTS = BASE_DIR.parent.parent.parent.parent.joinpath('_scripts')
-sys.path.append(str(_SCRIPTS))
-import _tools
-
-_tools.compile_blueprint_ui(ui_dir=BASE_DIR)
 
 
-APPLICATION_WINDOW = str(BASE_DIR.joinpath('MainWindow.ui'))
 
-@Gtk.Template(filename=APPLICATION_WINDOW)
+
+
+
+
+
+
+@Gtk.Template(filename=str(BASE_DIR.joinpath('MainWindow.ui')))
 class ExampleWindow(Gtk.ApplicationWindow):
     __gtype_name__ = 'ExampleWindow'
 

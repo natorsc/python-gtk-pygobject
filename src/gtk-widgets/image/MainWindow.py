@@ -8,7 +8,7 @@ The size is calculated automatically by GTK.
 If you want to load an image, use `Gtk.Picture()`.
 """
 
-from pathlib import Path
+import pathlib
 
 
 
@@ -21,7 +21,7 @@ from gi.repository import Adw, Gio, Gtk
 
 Adw.init()
 
-BASE_DIR = Path(__file__).resolve().parent
+
 SRC_DIR = BASE_DIR.parent.parent
 CUSTOM_IMAGE = str(
     SRC_DIR.joinpath('data', 'icons', 'br.com.justcode.Exemplo.png')
