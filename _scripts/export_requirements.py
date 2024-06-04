@@ -13,9 +13,4 @@ subprocess.call(
     args=['pdm', 'export', '--without-hashes', '-o', 'requirements.txt'],
     cwd=ROOT_DIR,
 )
-subprocess.call(
-    args=['pdm', 'export', '--without-hashes', '--prod',
-          '--no-default', '-G', 'docs', '-o', 'requirements-docs.txt'],
-    cwd=ROOT_DIR,
-)
 print('[!] Arquivos requirements gerados [!]')

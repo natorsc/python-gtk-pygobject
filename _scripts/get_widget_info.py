@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-"""Script para coletar informações dos widgets GTK."""
+"""Get GTK widget info."""
 
 from pathlib import Path
 
@@ -14,7 +14,10 @@ Adw.init()
 
 
 BASE_DIR = Path(__file__).resolve().parent
-DATA_DIR = BASE_DIR.joinpath('data')
+DATA_DIR = BASE_DIR.joinpath('templates')
+OUTPUT_DIR = BASE_DIR.joinpath('output')
+if not OUTPUT_DIR.exists():
+    OUTPUT_DIR.mkdir()
 
 GTK_VERSION = (
     Gtk.get_major_version(), Gtk.get_minor_version(), Gtk.get_micro_version(),
@@ -26,7 +29,7 @@ PYGOBJECT_VERSION = GObject.pygobject_version
 
 # Adicione o widget.
 WIDGET = Gtk.Button.new()
-WIDGET = Adw.ToolbarView.new()
+# WIDGET = Adw.ToolbarView.new()
 
 methods_get = [method for method in dir(WIDGET) if method.startswith('get_')]
 methods_set = [method for method in dir(WIDGET) if method.startswith('set_')]
@@ -36,7 +39,7 @@ template = data.read()
 
 widget_name = WIDGET.get_name()
 
-output = DATA_DIR.joinpath(f'{widget_name}.md')
+output = OUTPUT_DIR.joinpath(f'{widget_name}.md')
 output.write_text(
     encoding='utf-8',
     data=template.format(
