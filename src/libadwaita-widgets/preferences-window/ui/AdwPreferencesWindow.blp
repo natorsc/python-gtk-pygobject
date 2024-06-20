@@ -1,15 +1,16 @@
 using Gtk 4.0;
 using Adw 1;
 
-template $PreferencesWindow : Adw.PreferencesWindow {
-  title: 'Python and GTK: PyGObject libadwaita Adw.PreferencesWindow';
+template $PreferencesWindow: Adw.PreferencesWindow {
+  title: 'Python - PyGObject - GTK';
   default-width: 683;
   default-height: 384;
+
   Adw.ToastOverlay {
     child: Adw.ToolbarView {
       [top]
-      Adw.HeaderBar header_bar {
-      }
+      Adw.HeaderBar header_bar {}
+
       content: Box {
         orientation: vertical;
         spacing: 12;
@@ -17,14 +18,16 @@ template $PreferencesWindow : Adw.PreferencesWindow {
         margin-end: 12;
         margin-bottom: 12;
         margin-start: 12;
+
         Adw.PreferencesPage {
           Adw.PreferencesGroup {
-            title: 'AdwPreferencesPage';
+            title: 'Python - PyGObject - GTK';
             description: 'AdwPreferencesGroup';
+
             Adw.ActionRow {
               icon-name: 'edit-find-symbolic';
-              title: 'Lorem ipsum';
-              subtitle: 'Lorem ipsum';
+              title: 'Python - PyGObject - GTK';
+              subtitle: 'Python - PyGObject - GTK';
             }
           }
         }

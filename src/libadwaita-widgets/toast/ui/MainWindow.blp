@@ -1,11 +1,12 @@
 using Gtk 4.0;
 using Adw 1;
 
-template $ExampleWindow : Adw.ApplicationWindow {
-  title: 'Python and GTK: PyGObject libadwaita Adw.Toast';
+template $ExampleWindow: Adw.ApplicationWindow {
+  title: 'Python - PyGObject - GTK';
   default-width: 683;
   default-height: 384;
-  content: Adw.ToastOverlay  adw_toast_overlay {
+
+  content: Adw.ToastOverlay adw_toast_overlay {
     child: Adw.ToolbarView {
       [top]
       Adw.HeaderBar header_bar {
@@ -15,6 +16,7 @@ template $ExampleWindow : Adw.ApplicationWindow {
           menu-model: primary_menu;
         }
       }
+
       content: Adw.ToastOverlay toast_overlay {
         child: Box {
           orientation: vertical;
@@ -23,6 +25,7 @@ template $ExampleWindow : Adw.ApplicationWindow {
           margin-end: 12;
           margin-bottom: 12;
           margin-start: 12;
+
           Button button {
             label: 'Click here';
             vexpand: true;
@@ -34,13 +37,15 @@ template $ExampleWindow : Adw.ApplicationWindow {
     };
   };
 }
+
 Adw.Toast toast {
-  title: 'Lorem Ipsum';
+  title: 'Python - PyGObject - GTK';
   button-label: 'Undo';
   action-name: 'app.toast';
   dismissed => $on_toast_dismissed();
   button-clicked => $on_toast_button_clicked();
 }
+
 menu primary_menu {
   section {
     item {

@@ -1,10 +1,9 @@
 # -*- coding: utf-8 -*-
-"""Python and GTK: PyGObject internationalization with gettext"""
+"""Python - PyGObject - GTK"""
 
 import configparser
 import gettext
 import pathlib
-
 
 
 import gi
@@ -33,13 +32,14 @@ if CONFIG_FILE.exists():
     config.read(CONFIG_FILE)
     language = config[APPLICATION_ID]['language']
     if language != 'default':
-        lang = gettext.translation(APPLICATION_ID, localedir=LOCALES_DIR, languages=[language])
+        lang = gettext.translation(
+            APPLICATION_ID, localedir=LOCALES_DIR, languages=[language]
+        )
         lang.install()
         _ = lang.gettext
 
 
 class ExampleWindow(Gtk.ApplicationWindow):
-
     def __init__(self, **kwargs):
         super().__init__(**kwargs)
 
@@ -100,10 +100,11 @@ class ExampleWindow(Gtk.ApplicationWindow):
 
 
 class ExampleApplication(Gtk.Application):
-
     def __init__(self):
-        super().__init__(application_id='br.com.justcode.PyGObject',
-                         flags=Gio.ApplicationFlags.FLAGS_NONE)
+        super().__init__(
+            application_id='br.com.justcode.PyGObject',
+            flags=Gio.ApplicationFlags.FLAGS_NONE,
+        )
 
         self.create_action('quit', self.exit_app, ['<primary>q'])
         self.create_action('preferences', self.on_preferences_action)

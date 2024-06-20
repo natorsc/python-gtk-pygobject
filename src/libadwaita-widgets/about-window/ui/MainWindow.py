@@ -11,20 +11,14 @@ gi.require_version(namespace='Adw', version='1')
 
 from gi.repository import Adw, Gio, Gtk
 
-
-UI = BASE_DIR.joinpath('MainWindow.ui')
-
-
-
-
-
-
+BASE_DIR = pathlib.Path(__file__).resolve().parent
+UI = BASE_DIR / 'MainWindow.ui'
 
 
 Adw.init()
 
 
-@Gtk.Template(filename=str(UI))
+@Gtk.Template(filename=UI)
 class ExampleWindow(Adw.ApplicationWindow):
     __gtype_name__ = 'ExampleWindow'
 
@@ -33,10 +27,11 @@ class ExampleWindow(Adw.ApplicationWindow):
 
 
 class ExampleApplication(Adw.Application):
-
     def __init__(self):
-        super().__init__(application_id='br.com.justcode.PyGObject',
-                         flags=Gio.ApplicationFlags.FLAGS_NONE)
+        super().__init__(
+            application_id='br.com.justcode.PyGObject',
+            flags=Gio.ApplicationFlags.FLAGS_NONE,
+        )
 
         self.create_action('quit', self.exit_app, ['<primary>q'])
         self.create_action('preferences', self.on_preferences_action)
@@ -70,7 +65,8 @@ class ExampleApplication(Adw.Application):
         )
         dialog.set_website('https://gtk.justcode.com.br')
         dialog.set_issue_url(
-            "https://github.com/natorsc/gui-python-pygobject-gtk/issues")
+            'https://github.com/natorsc/gui-python-pygobject-gtk/issues'
+        )
         dialog.add_credit_section('Contributors', ['Name-01', 'Name-02'])
         dialog.set_translator_credits('Renato Cruz')
         dialog.set_copyright('© 2022 Renato Cruz (natorsc)')

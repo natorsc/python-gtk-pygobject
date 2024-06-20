@@ -1,7 +1,7 @@
 using Gtk 4.0;
 
 template $ExampleWindow: Gtk.ApplicationWindow {
-  title: 'Python and GTK: PyGObject Gtk.Overlay.';
+  title: 'Python - PyGObject - GTK';
   default-width: 683;
   default-height: 384;
 
@@ -24,12 +24,12 @@ template $ExampleWindow: Gtk.ApplicationWindow {
       margin-bottom: 12;
       margin-start: 12;
       spacing: 12;
-    
+
       Gtk.Button {
         label: 'This Button is below the others';
       }
     }
-    
+
     [overlay]
     Gtk.Button {
       icon-name: 'go-previous';

@@ -1,7 +1,7 @@
 using Gtk 4.0;
 
 template $ExampleWindow: Gtk.ApplicationWindow {
-  title: 'Python and GTK: PyGObject Gtk.ListBox.';
+  title: 'Python - PyGObject - GTK';
   default-width: 683;
   default-height: 384;
 
@@ -25,13 +25,17 @@ template $ExampleWindow: Gtk.ApplicationWindow {
 
     Gtk.ListBox {
       selection-mode: none;
-        styles [
-          'boxed-list',
-        ]
-      Gtk.ListBoxRow{
+
+      styles [
+        'boxed-list',
+      ]
+
+      Gtk.ListBoxRow {
         selectable: false;
+
         Gtk.Box {
           orientation: horizontal;
+
           Gtk.Label {
             label: 'Line 01';
             hexpand: true;
@@ -41,7 +45,8 @@ template $ExampleWindow: Gtk.ApplicationWindow {
             margin-bottom: 6;
             margin-start: 6;
           }
-          Gtk.Switch{
+
+          Gtk.Switch {
             margin-top: 6;
             margin-end: 6;
             margin-bottom: 6;
@@ -49,10 +54,13 @@ template $ExampleWindow: Gtk.ApplicationWindow {
           }
         }
       }
-      Gtk.ListBoxRow{
+
+      Gtk.ListBoxRow {
         selectable: false;
+
         Gtk.Box {
           orientation: horizontal;
+
           Gtk.Label {
             label: 'Line 02';
             hexpand: true;
@@ -62,7 +70,8 @@ template $ExampleWindow: Gtk.ApplicationWindow {
             margin-bottom: 6;
             margin-start: 6;
           }
-          Gtk.Switch{
+
+          Gtk.Switch {
             margin-top: 6;
             margin-end: 6;
             margin-bottom: 6;
@@ -70,10 +79,13 @@ template $ExampleWindow: Gtk.ApplicationWindow {
           }
         }
       }
-      Gtk.ListBoxRow{
+
+      Gtk.ListBoxRow {
         selectable: false;
+
         Gtk.Box {
           orientation: horizontal;
+
           Gtk.Label {
             label: 'Line 03';
             hexpand: true;
@@ -83,7 +95,8 @@ template $ExampleWindow: Gtk.ApplicationWindow {
             margin-bottom: 6;
             margin-start: 6;
           }
-          Gtk.Switch{
+
+          Gtk.Switch {
             margin-top: 6;
             margin-end: 6;
             margin-bottom: 6;
@@ -98,19 +111,23 @@ template $ExampleWindow: Gtk.ApplicationWindow {
       show-separators: true;
       vexpand: true;
       row-activated => $on_row_clicked();
+
       styles [
         'boxed-list',
       ]
+
       Gtk.ListBoxRow {
         Gtk.Label {
           label: 'Line 01';
         }
       }
+
       Gtk.ListBoxRow {
         Gtk.Label {
           label: 'Line 02';
         }
       }
+
       Gtk.ListBoxRow {
         Gtk.Label {
           label: 'Line 03';

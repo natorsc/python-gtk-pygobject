@@ -1,10 +1,11 @@
 using Gtk 4.0;
 using Adw 1;
 
-template $ExampleWindow : Adw.ApplicationWindow {
-  title: 'Python and GTK: PyGObject libadwaita Adw.SplitButton ui file';
+template $ExampleWindow: Adw.ApplicationWindow {
+  title: 'Python - PyGObject - GTK';
   default-width: 683;
   default-height: 384;
+
   content: Adw.ToastOverlay {
     child: Adw.ToolbarView {
       [top]
@@ -15,6 +16,7 @@ template $ExampleWindow : Adw.ApplicationWindow {
           menu-model: primary_menu;
         }
       }
+
       content: Gtk.Box {
         orientation: vertical;
         spacing: 12;
@@ -22,10 +24,12 @@ template $ExampleWindow : Adw.ApplicationWindow {
         margin-end: 12;
         margin-bottom: 12;
         margin-start: 12;
+
         Adw.SplitButton {
           halign: center;
           popover: popover_menu;
           clicked => $on_split_button_clicked();
+
           child: Adw.ButtonContent {
             icon-name: 'document-open-symbolic';
             label: _('_Open');
@@ -36,39 +40,48 @@ template $ExampleWindow : Adw.ApplicationWindow {
     };
   };
 }
+
 PopoverMenu popover_menu {
   menu-model: adw_split_button_menu;
 }
+
 menu adw_split_button_menu {
   section {
     item {
       label: _('Item 01');
       action: 'app.split-button-menu-item-activate';
     }
+
     submenu {
       label: _('Submenu');
+
       item {
         label: _('Item 02');
         action: 'app.split-button-menu-item-activate';
       }
     }
+
     section {
       label: _('Editar');
+
       item {
         label: _('Item 03');
         action: 'app.split-button-menu-item-activate';
       }
+
       item {
         label: _('Item 04');
         action: 'app.split-button-menu-item-activate';
       }
     }
+
     item {
       label: _('Sair');
       action: 'app.quit';
     }
   }
 }
+
 menu primary_menu {
   section {
     item {

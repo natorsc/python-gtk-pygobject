@@ -1,10 +1,11 @@
 using Gtk 4.0;
 using Adw 1;
 
-template $ExampleWindow : Adw.ApplicationWindow {
-  title: 'Python and GTK: PyGObject Adw.ExpanderRow';
+template $ExampleWindow: Adw.ApplicationWindow {
+  title: 'Python - PyGObject - GTK';
   default-width: 683;
   default-height: 384;
+
   content: Adw.ToastOverlay {
     child: Adw.ToolbarView {
       [top]
@@ -15,6 +16,7 @@ template $ExampleWindow : Adw.ApplicationWindow {
           menu-model: primary_menu;
         }
       }
+
       content: Gtk.Box {
         orientation: vertical;
         spacing: 12;
@@ -22,57 +24,71 @@ template $ExampleWindow : Adw.ApplicationWindow {
         margin-end: 12;
         margin-bottom: 12;
         margin-start: 12;
+
         ListBox {
           selection-mode: none;
+
           styles [
             'boxed-list',
           ]
+
           Adw.ExpanderRow {
-            title: 'Item 01';
-            subtitle: 'Adw.ExpanderRow()';
+            title: 'Python - PyGObject - GTK';
+            subtitle: 'Python - PyGObject - GTK';
+
             [prefix]
             Image {
               icon-name: 'accessories-text-editor-symbolic';
             }
+
             Gtk.Label {
               label: '<big>Lorem ipsum</big>\n\nLorem ipsum dolor sit amet, consectetur...';
               use-markup: true;
               wrap: true;
             }
           }
+
           Adw.ExpanderRow {
-            title: 'Item 02';
-            subtitle: 'Adw.ExpanderRow()';
+            title: 'Python - PyGObject - GTK';
+            subtitle: 'Python - PyGObject - GTK';
+
             [prefix]
             Image {
               icon-name: 'accessories-text-editor-symbolic';
             }
+
             Gtk.Label {
               label: '<big>Lorem ipsum</big>\n\nLorem ipsum dolor sit amet, consectetur...';
               use-markup: true;
               wrap: true;
             }
           }
+
           Adw.ExpanderRow {
-            title: 'Item 03';
-            subtitle: 'Adw.ExpanderRow()';
+            title: 'Python - PyGObject - GTK';
+            subtitle: 'Python - PyGObject - GTK';
+
             [prefix]
             Image {
               icon-name: 'accessories-text-editor-symbolic';
             }
+
             Gtk.Label {
               label: '<big>Lorem ipsum</big>\n\nLorem ipsum dolor sit amet, consectetur...';
               use-markup: true;
               wrap: true;
             }
           }
+
           Adw.ExpanderRow {
-            title: 'Item 04';
-            subtitle: 'Adw.ExpanderRow()';
+            title: 'Python - PyGObject - GTK';
+            subtitle: 'Python - PyGObject - GTK';
+
             [prefix]
             Gtk.Image {
               icon-name: 'accessories-text-editor-symbolic';
             }
+
             Gtk.Label {
               label: '<big>Lorem ipsum</big>\n\nLorem ipsum dolor sit amet, consectetur...';
               use-markup: true;
@@ -84,6 +100,7 @@ template $ExampleWindow : Adw.ApplicationWindow {
     };
   };
 }
+
 menu primary_menu {
   section {
     item {

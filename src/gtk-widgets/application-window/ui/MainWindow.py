@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-"""Python and GTK: PyGObject Gtk.ApplicationWindow."""
+"""Python - PyGObject - GTK"""
 
 import pathlib
 import sys
@@ -29,10 +29,11 @@ class ExampleWindow(Gtk.ApplicationWindow):
 
 # This class can be placed in a separate file (e.g. main.py).
 class ExampleApplication(Gtk.Application):
-
     def __init__(self):
-        super().__init__(application_id='br.com.justcode.PyGObject',
-                         flags=Gio.ApplicationFlags.FLAGS_NONE)
+        super().__init__(
+            application_id='br.com.justcode.PyGObject',
+            flags=Gio.ApplicationFlags.FLAGS_NONE,
+        )
 
         # Menu actions.
         # `<primary>q` = `Ctrl + q`.

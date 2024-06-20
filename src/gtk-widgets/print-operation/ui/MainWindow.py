@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-"""Python and GTK: PyGObject PyGObject Gtk.PrintOperation ui file."""
+"""Python - PyGObject - GTK"""
 
 import pathlib
 import sys
@@ -69,7 +69,8 @@ class ExampleWindow(Gtk.ApplicationWindow):
         print_operation.set_n_pages(n_pages=1)
         print_operation.set_print_settings(print_settings=self.print_settings)
         print_operation.set_default_page_setup(
-            default_page_setup=self.page_setup)
+            default_page_setup=self.page_setup
+        )
         print_operation.connect('begin-print', self.on_begin_print)
         print_operation.connect('draw-page', self.on_draw_page)
 
@@ -85,12 +86,14 @@ class ExampleWindow(Gtk.ApplicationWindow):
         print_operation.set_n_pages(n_pages=1)
         print_operation.set_print_settings(print_settings=self.print_settings)
         print_operation.set_default_page_setup(
-            default_page_setup=self.page_setup)
+            default_page_setup=self.page_setup
+        )
         print_operation.connect('begin-print', self.on_begin_print)
         print_operation.connect('draw-page', self.on_draw_page)
 
         response = print_operation.run(
-            action=Gtk.PrintOperationAction.PREVIEW, parent=self)
+            action=Gtk.PrintOperationAction.PREVIEW, parent=self
+        )
         self._check_print_dialog_response(response=response)
 
     @Gtk.Template.Callback()
@@ -109,12 +112,14 @@ class ExampleWindow(Gtk.ApplicationWindow):
         print_operation.set_n_pages(n_pages=1)
         print_operation.set_print_settings(print_settings=self.print_settings)
         print_operation.set_default_page_setup(
-            default_page_setup=self.page_setup)
+            default_page_setup=self.page_setup
+        )
         print_operation.connect('begin-print', self.on_begin_print)
         print_operation.connect('draw-page', self.on_draw_page)
         print_operation.set_export_filename(PDF_FILE)
         response = print_operation.run(
-            action=Gtk.PrintOperationAction.EXPORT, parent=self)
+            action=Gtk.PrintOperationAction.EXPORT, parent=self
+        )
         if response == Gtk.PrintOperationResult.APPLY:
             print('Arquivo exportado com sucesso')
 
@@ -147,10 +152,11 @@ class ExampleWindow(Gtk.ApplicationWindow):
 
 
 class ExampleApplication(Gtk.Application):
-
     def __init__(self):
-        super().__init__(application_id='br.com.justcode.PyGObject',
-                         flags=Gio.ApplicationFlags.FLAGS_NONE)
+        super().__init__(
+            application_id='br.com.justcode.PyGObject',
+            flags=Gio.ApplicationFlags.FLAGS_NONE,
+        )
 
         self.create_action('quit', self.exit_app, ['<primary>q'])
         self.create_action('preferences', self.on_preferences_action)

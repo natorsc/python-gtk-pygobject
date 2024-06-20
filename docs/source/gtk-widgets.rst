@@ -1,14 +1,4 @@
-:og:author: Renato Cruz (natorsc)
-:og:title: Exemplos de código dos widget GTK - justCode
-:og:description: Exemplos de código sobre construção de interfaces gráficas com a linguagem de programação Python (PyGObject) e o toolkit gráfico GTK.
 
-.. meta::
-   :author: Renato Cruz (natorsc)
-   :description: Exemplos de código sobre construção de interfaces gráficas com a linguagem de programação Python (PyGObject) e o toolkit gráfico GTK.
-   :description lang=en: Code samples on building graphical interfaces with the Python programming language (PyGObject) and the GTK graphics toolkit.
-   :keywords: Gnome, GTK, Libadwaita, Python, PyGObject, Blueprint,
-
-=======
 Widgets
 =======
 

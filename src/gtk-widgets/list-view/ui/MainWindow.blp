@@ -1,7 +1,7 @@
 using Gtk 4.0;
 
 template $ExampleWindow: Gtk.ApplicationWindow {
-  title: 'Python and GTK: PyGObject Gtk.ListView';
+  title: 'Python - PyGObject - GTK';
   default-width: 683;
   default-height: 384;
 
@@ -24,6 +24,7 @@ template $ExampleWindow: Gtk.ApplicationWindow {
 
     Gtk.ListView {
       activate => $on_list_view_row_activate();
+
       factory: Gtk.BuilderListItemFactory {
         template Gtk.ListItem {
           child: Gtk.Label {
@@ -31,9 +32,14 @@ template $ExampleWindow: Gtk.ApplicationWindow {
           };
         }
       };
+
       model: Gtk.SingleSelection {
         model: Gtk.StringList {
-          strings [ 'Item 01', 'Item 02', 'Item 03' ]
+          strings [
+            'Item 01',
+            'Item 02',
+            'Item 03'
+          ]
         };
       };
     }

@@ -1,10 +1,11 @@
 using Gtk 4.0;
 using Adw 1;
 
-template $ExampleWindow : Adw.ApplicationWindow {
-  title: 'Python and GTK: PyGObject libadwaita Adw.PreferencesPage';
+template $ExampleWindow: Adw.ApplicationWindow {
+  title: 'Python - PyGObject - GTK';
   default-width: 683;
   default-height: 384;
+
   content: Adw.ToastOverlay {
     child: Adw.ToolbarView {
       [top]
@@ -15,6 +16,7 @@ template $ExampleWindow : Adw.ApplicationWindow {
           menu-model: primary_menu;
         }
       }
+
       content: Gtk.Box {
         orientation: vertical;
         spacing: 12;
@@ -22,25 +24,30 @@ template $ExampleWindow : Adw.ApplicationWindow {
         margin-end: 12;
         margin-bottom: 12;
         margin-start: 12;
+
         Adw.PreferencesPage {
           Adw.PreferencesGroup {
-            title: 'AdwPreferencesPage';
+            title: 'Python - PyGObject - GTK';
             description: 'AdwPreferencesGroup';
             header-suffix: header_suffix;
+
             Adw.ActionRow {
               icon-name: 'edit-find-symbolic';
-              title: 'Libadwaita';
-              subtitle: 'Adw.ActionRow()';
+              title: 'Python - PyGObject - GTK';
+              subtitle: 'Python - PyGObject - GTK';
+
               Switch {
                 valign: center;
                 notify::active => $on_switch_button_clicked();
               }
             }
+
             Adw.ActionRow {
               icon-name: 'edit-find-symbolic';
-              title: 'Libadwaita - Clicking on the widget line toggles it on and off\n';
-              subtitle: 'Adw.ActionRow()';
+              title: 'Python - PyGObject - GTK';
+              subtitle: 'Python - PyGObject - GTK';
               activatable-widget: switch;
+
               Switch switch {
                 valign: center;
                 notify::active => $on_switch_button_clicked();
@@ -52,13 +59,16 @@ template $ExampleWindow : Adw.ApplicationWindow {
     };
   };
 }
+
 Button header_suffix {
   icon-name: 'list-add-symbolic';
   clicked => $on_button_clicked();
+
   styles [
     'flat',
   ]
 }
+
 menu primary_menu {
   section {
     item {

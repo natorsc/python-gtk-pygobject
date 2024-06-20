@@ -7,7 +7,7 @@ corresponding .blp file and regenerate this file with blueprint-compiler.
 <interface>
   <requires lib="gtk" version="4.0"/>
   <template class="NewWindow" parent="GtkWindow">
-    <property name="title">Python and GTK: PyGObject Gtk.Window</property>
+    <property name="title">Python - PyGObject - GTK</property>
     <property name="modal">true</property>
     <property name="default-width">455</property>
     <property name="default-height">256</property>

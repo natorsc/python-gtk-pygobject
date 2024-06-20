@@ -12,7 +12,6 @@ Adw.init()
 
 
 class Dialog(Adw.MessageDialog):
-
     def __init__(self, **kwargs):
         super().__init__(**kwargs)
 
@@ -38,13 +37,11 @@ class Dialog(Adw.MessageDialog):
 
 
 class ExampleWindow(Adw.ApplicationWindow):
-
     def __init__(self, **kwargs):
         super().__init__(**kwargs)
 
-        self.set_title(
-            title='Python and GTK: PyGObject libadwaita Adw.MessageDialog()',
-        )
+        self.set_title(title='Python - PyGObject - GTK')
+
         self.set_default_size(width=int(1366 / 2), height=int(768 / 2))
         self.set_size_request(width=int(1366 / 3), height=int(768 / 3))
 
@@ -112,10 +109,11 @@ class ExampleWindow(Adw.ApplicationWindow):
 
 
 class ExampleApplication(Adw.Application):
-
     def __init__(self):
-        super().__init__(application_id='br.com.justcode.PyGObject',
-                         flags=Gio.ApplicationFlags.FLAGS_NONE)
+        super().__init__(
+            application_id='br.com.justcode.PyGObject',
+            flags=Gio.ApplicationFlags.FLAGS_NONE,
+        )
 
         self.create_action('quit', self.exit_app, ['<primary>q'])
         self.create_action('preferences', self.on_preferences_action)

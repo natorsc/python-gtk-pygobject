@@ -1,7 +1,7 @@
 using Gtk 4.0;
 
 template $ExampleWindow: Gtk.ApplicationWindow {
-  title: 'Python and GTK: PyGObject Gtk.SearchBar';
+  title: 'Python - PyGObject - GTK';
   default-width: 683;
   default-height: 384;
 
@@ -26,11 +26,12 @@ template $ExampleWindow: Gtk.ApplicationWindow {
       child: entry;
       halign: start;
       valign: start;
+
       styles [
         'inline',
       ]
     }
-    
+
     [overlay]
     Gtk.Box {
       orientation: vertical;
@@ -39,7 +40,7 @@ template $ExampleWindow: Gtk.ApplicationWindow {
       margin-bottom: 12;
       margin-start: 12;
       spacing: 12;
-    
+
       Gtk.Label {
         label: 'Click on the search icon.';
         vexpand: true;

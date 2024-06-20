@@ -1,10 +1,11 @@
 using Gtk 4.0;
 using Adw 1;
 
-template $ExampleWindow : Adw.ApplicationWindow {
-  title: 'Python and GTK: PyGObject libadwaita Adw.AboutWindow';
+template $ExampleWindow: Adw.ApplicationWindow {
+  title: 'Python - PyGObject - GTK';
   default-width: 683;
   default-height: 384;
+
   content: Adw.ToastOverlay {
     child: Adw.ToolbarView {
       [top]
@@ -15,6 +16,7 @@ template $ExampleWindow : Adw.ApplicationWindow {
           menu-model: primary_menu;
         }
       }
+
       content: Gtk.Box {
         orientation: vertical;
         spacing: 12;
@@ -22,6 +24,7 @@ template $ExampleWindow : Adw.ApplicationWindow {
         margin-end: 12;
         margin-bottom: 12;
         margin-start: 12;
+
         Gtk.Label {
           label: 'Access the menu and click on the about button';
           vexpand: true;
@@ -30,12 +33,14 @@ template $ExampleWindow : Adw.ApplicationWindow {
     };
   };
 }
+
 menu primary_menu {
   section {
     item {
       label: _('Preferences');
       action: 'app.preferences';
     }
+
     item {
       label: _('About');
       action: 'app.about';

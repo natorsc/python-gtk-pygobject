@@ -12,13 +12,11 @@ Adw.init()
 
 
 class ExampleWindow(Adw.ApplicationWindow):
-
     def __init__(self, **kwargs):
         super().__init__(**kwargs)
 
-        self.set_title(
-            title='Python and GTK: PyGObject libadwaita Adw.CarouselIndicatorDots()',
-        )
+        self.set_title(title='Python - PyGObject - GTK')
+
         self.set_default_size(width=int(1366 / 2), height=int(768 / 2))
         self.set_size_request(width=int(1366 / 3), height=int(768 / 3))
 
@@ -66,7 +64,8 @@ class ExampleWindow(Adw.ApplicationWindow):
 
         for n in range(1, 11):
             page = Gtk.Box.new(
-                orientation=Gtk.Orientation.VERTICAL, spacing=12)
+                orientation=Gtk.Orientation.VERTICAL, spacing=12
+            )
             adw_carousel.insert(child=page, position=n)
 
             label = Gtk.Label.new(str=f'Page {n}')
@@ -82,10 +81,11 @@ class ExampleWindow(Adw.ApplicationWindow):
 
 
 class ExampleApplication(Adw.Application):
-
     def __init__(self):
-        super().__init__(application_id='br.com.justcode.PyGObject',
-                         flags=Gio.ApplicationFlags.FLAGS_NONE)
+        super().__init__(
+            application_id='br.com.justcode.PyGObject',
+            flags=Gio.ApplicationFlags.FLAGS_NONE,
+        )
 
         self.create_action('quit', self.exit_app, ['<primary>q'])
         self.create_action('preferences', self.on_preferences_action)

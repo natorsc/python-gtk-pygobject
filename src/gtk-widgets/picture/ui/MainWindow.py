@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-"""Python and GTK: PyGObject Gtk.Picture."""
+"""Python - PyGObject - GTK"""
 
 import pathlib
 import sys
@@ -14,8 +14,11 @@ from gi.repository import Adw, Gio, Gtk
 Adw.init()
 
 BASE_DIR = pathlib.Path(__file__).resolve().parent
-PICTURE = str(BASE_DIR.parent.parent.parent.joinpath(
-    'data', 'images', 'thunderstorm.jpg',
+PICTURE = str(
+    BASE_DIR.parent.parent.parent.joinpath(
+        'data',
+        'images',
+        'thunderstorm.jpg',
     ),
 )
 
@@ -34,10 +37,11 @@ class ExampleWindow(Gtk.ApplicationWindow):
 
 
 class ExampleApplication(Gtk.Application):
-
     def __init__(self):
-        super().__init__(application_id='br.com.justcode.PyGObject',
-                         flags=Gio.ApplicationFlags.FLAGS_NONE)
+        super().__init__(
+            application_id='br.com.justcode.PyGObject',
+            flags=Gio.ApplicationFlags.FLAGS_NONE,
+        )
 
         self.create_action('quit', self.exit_app, ['<primary>q'])
         self.create_action('preferences', self.on_preferences_action)

@@ -1,7 +1,5 @@
 # -*- coding: utf-8 -*-
-"""Python and GTK: PyGObject Gtk.Grid"""
-
-
+"""Python - PyGObject - GTK"""
 
 import gi
 
@@ -14,11 +12,10 @@ Adw.init()
 
 
 class ExampleWindow(Gtk.ApplicationWindow):
-
     def __init__(self, **kwargs):
         super().__init__(**kwargs)
 
-        self.set_title(title='Python and GTK: PyGObject Gtk.Grid')
+        self.set_title(title='Python - PyGObject - GTK')
         self.set_default_size(width=int(1366 / 2), height=int(768 / 2))
         self.set_size_request(width=int(1366 / 3), height=int(768 / 3))
 
@@ -81,7 +78,8 @@ class ExampleWindow(Gtk.ApplicationWindow):
             child=button3,
             sibling=button1,
             side=Gtk.PositionType.BOTTOM,
-            width=1, height=2
+            width=1,
+            height=2,
         )
         # Button 4 is referenced to Button 3, it should be to the right of
         # Button 3 (RIGHT), it merges 2 columns and 1 row.
@@ -90,7 +88,7 @@ class ExampleWindow(Gtk.ApplicationWindow):
             sibling=button3,
             side=Gtk.PositionType.RIGHT,
             width=2,
-            height=1
+            height=1,
         )
         # Button 5 is in column 1, row 2 and merges 1 column and 1 row.
         grid.attach(child=button5, column=1, row=2, width=1, height=1)
@@ -101,15 +99,16 @@ class ExampleWindow(Gtk.ApplicationWindow):
             sibling=button5,
             side=Gtk.PositionType.RIGHT,
             width=1,
-            height=1
+            height=1,
         )
 
 
 class ExampleApplication(Gtk.Application):
-
     def __init__(self):
-        super().__init__(application_id='br.com.justcode.PyGObject',
-                         flags=Gio.ApplicationFlags.FLAGS_NONE)
+        super().__init__(
+            application_id='br.com.justcode.PyGObject',
+            flags=Gio.ApplicationFlags.FLAGS_NONE,
+        )
 
         self.create_action('quit', self.exit_app, ['<primary>q'])
         self.create_action('preferences', self.on_preferences_action)

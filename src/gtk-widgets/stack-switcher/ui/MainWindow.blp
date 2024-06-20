@@ -1,7 +1,7 @@
 using Gtk 4.0;
 
 template $ExampleWindow: Gtk.ApplicationWindow {
-  title: 'Python and GTK: PyGObject Gtk.GtkStackSwitcher.';
+  title: 'Python - PyGObject - GTK';
   default-width: 683;
   default-height: 384;
 
@@ -10,7 +10,7 @@ template $ExampleWindow: Gtk.ApplicationWindow {
     title-widget: Gtk.StackSwitcher {
       stack: stack;
     };
-  
+
     [end]
     Gtk.MenuButton {
       icon-name: 'open-menu-symbolic';
@@ -32,44 +32,48 @@ template $ExampleWindow: Gtk.ApplicationWindow {
 
       Gtk.StackPage {
         name: 'page1';
-        title: 'Page 01';
-        child:
-          Gtk.Box {
-            orientation: vertical;
-            spacing: 6;
-            Gtk.Button {
-              label: 'Button 01';
-            }
-            Gtk.Button {
-              label: 'Button 02';
-            }
-            Gtk.Button {
-              label: 'Button 03';
-            }
+        title: 'Python - PyGObject - GTK';
+
+        child: Gtk.Box {
+          orientation: vertical;
+          spacing: 6;
+
+          Gtk.Button {
+            label: 'Button 01';
           }
-        ;
+
+          Gtk.Button {
+            label: 'Button 02';
+          }
+
+          Gtk.Button {
+            label: 'Button 03';
+          }
+        };
       }
 
       Gtk.StackPage {
         name: 'page2';
-        title: 'Page 02';
-        child:
-          Gtk.Box {
-            orientation: vertical;
-            spacing: 6;
-            Gtk.Label {
-              label: 'Line 01';
-            }
-            Gtk.Label {
-              label: 'Line 02';
-            }
-            Gtk.Label {
-              label: 'Line 03';
-            }
+        title: 'Python - PyGObject - GTK';
+
+        child: Gtk.Box {
+          orientation: vertical;
+          spacing: 6;
+
+          Gtk.Label {
+            label: 'Line 01';
           }
-        ;
+
+          Gtk.Label {
+            label: 'Line 02';
+          }
+
+          Gtk.Label {
+            label: 'Line 03';
+          }
+        };
       }
-    }  
+    }
   }
 }
 

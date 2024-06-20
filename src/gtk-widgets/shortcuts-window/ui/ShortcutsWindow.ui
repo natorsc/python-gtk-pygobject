@@ -14,17 +14,17 @@ corresponding .blp file and regenerate this file with blueprint-compiler.
         <property name="max-height">10</property>
         <child>
           <object class="GtkShortcutsGroup">
-            <property name="title" translatable="true" context="ShortcutsWindow">General</property>
+            <property name="title">Python - PyGObject - GTK</property>
             <child>
               <object class="GtkShortcutsShortcut">
-                <property name="title" translatable="true" context="ShortcutsWindow">Display shortcuts</property>
+                <property name="title">Python - PyGObject - GTK</property>
                 <property name="action-name">app.shortcuts-window</property>
                 <property name="accelerator">&lt;primary&gt;&amp;1</property>
               </object>
             </child>
             <child>
               <object class="GtkShortcutsShortcut">
-                <property name="title" translatable="true" context="ShortcutsWindow">Exit</property>
+                <property name="title">Python - PyGObject - GTK</property>
                 <property name="action-name">app.quit</property>
                 <property name="accelerator">&lt;primary&gt;&amp;q</property>
               </object>

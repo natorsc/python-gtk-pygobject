@@ -1,7 +1,5 @@
 # -*- coding: utf-8 -*-
-"""Python and GTK: PyGObject Gtk.MenuButton"""
-
-
+"""Python - PyGObject - GTK"""
 
 import gi
 
@@ -14,10 +12,9 @@ Adw.init()
 
 
 class ExampleWindow(Gtk.ApplicationWindow):
-
     def __init__(self, **kwargs):
         super().__init__(**kwargs)
-        self.set_title(title='Python and GTK: PyGObject Gtk.MenuButton')
+        self.set_title(title='Python - PyGObject - GTK')
         self.set_default_size(width=int(1366 / 2), height=int(768 / 2))
         self.set_size_request(width=int(1366 / 3), height=int(768 / 3))
 
@@ -25,7 +22,9 @@ class ExampleWindow(Gtk.ApplicationWindow):
         self.set_titlebar(titlebar=header_bar)
 
         menu_model = Gio.Menu()
-        menu_model.append(label='Preferences', detailed_action='app.preferences')
+        menu_model.append(
+            label='Preferences', detailed_action='app.preferences'
+        )
 
         menu_button = Gtk.MenuButton.new()
         menu_button.set_icon_name(icon_name='open-menu-symbolic')
@@ -49,9 +48,11 @@ class ExampleWindow(Gtk.ApplicationWindow):
         section.append(label='Item 02', detailed_action='win.item2')
         menu_model.append_section(label='Section title', section=section)
         self.create_win_action(
-            name='item1', callback=self.on_menu_item_clicked)
+            name='item1', callback=self.on_menu_item_clicked
+        )
         self.create_win_action(
-            name='item2', callback=self.on_menu_item_clicked)
+            name='item2', callback=self.on_menu_item_clicked
+        )
 
         # Criando um submenu.
         submenu = Gio.Menu.new()
@@ -59,9 +60,11 @@ class ExampleWindow(Gtk.ApplicationWindow):
         submenu.append(label='Item 04', detailed_action=f'win.item4')
         menu_model.append_submenu(label='Sub-menu title', submenu=submenu)
         self.create_win_action(
-            name='item3', callback=self.on_menu_item_clicked)
+            name='item3', callback=self.on_menu_item_clicked
+        )
         self.create_win_action(
-            name='item4', callback=self.on_menu_item_clicked)
+            name='item4', callback=self.on_menu_item_clicked
+        )
 
     def on_menu_item_clicked(self, action, param):
         print(action.get_name())
@@ -78,10 +81,11 @@ class ExampleWindow(Gtk.ApplicationWindow):
 
 
 class ExampleApplication(Gtk.Application):
-
     def __init__(self):
-        super().__init__(application_id='br.com.justcode.PyGObject',
-                         flags=Gio.ApplicationFlags.FLAGS_NONE)
+        super().__init__(
+            application_id='br.com.justcode.PyGObject',
+            flags=Gio.ApplicationFlags.FLAGS_NONE,
+        )
 
         self.create_action('quit', self.exit_app, ['<primary>q'])
         self.create_action('preferences', self.on_preferences_action)

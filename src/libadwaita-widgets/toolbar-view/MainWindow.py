@@ -12,13 +12,10 @@ Adw.init()
 
 
 class ExampleWindow(Adw.ApplicationWindow):
-
     def __init__(self, **kwargs):
         super().__init__(**kwargs)
 
-        self.set_title(
-            title='Python and GTK: PyGObject libadwaita Adw.ToolbarView',
-        )
+        self.set_title(title='Python - PyGObject - GTK')
         self.set_default_size(width=int(1366 / 2), height=int(768 / 2))
         self.set_size_request(width=int(1366 / 3), height=int(768 / 3))
 
@@ -52,7 +49,8 @@ class ExampleWindow(Adw.ApplicationWindow):
         adw_preferences_group = Adw.PreferencesGroup.new()
         adw_preferences_group.set_title(title='AdwPreferencesPage')
         adw_preferences_group.set_description(
-            description='AdwPreferencesGroup')
+            description='AdwPreferencesGroup'
+        )
         adw_preferences_group.set_header_suffix(suffix=button_flat)
         adw_preferences_page.add(group=adw_preferences_group)
 
@@ -62,7 +60,8 @@ class ExampleWindow(Adw.ApplicationWindow):
         adw_action_row_01 = Adw.ActionRow.new()
         adw_action_row_01.add_prefix(
             widget=Gtk.Image.new_from_icon_name(
-                icon_name='edit-find-symbolic'),
+                icon_name='edit-find-symbolic'
+            ),
         )
         adw_action_row_01.set_title(title='Libadwaita')
         adw_action_row_01.set_subtitle(subtitle='Adw.ActionRow')
@@ -75,7 +74,8 @@ class ExampleWindow(Adw.ApplicationWindow):
         adw_action_row_02 = Adw.ActionRow.new()
         adw_action_row_02.add_prefix(
             widget=Gtk.Image.new_from_icon_name(
-                icon_name='edit-find-symbolic'),
+                icon_name='edit-find-symbolic'
+            ),
         )
         adw_action_row_02.set_title(title='Libadwaita')
         adw_action_row_02.set_subtitle(subtitle='Adw.ActionRow')
@@ -84,7 +84,9 @@ class ExampleWindow(Adw.ApplicationWindow):
         adw_preferences_group.add(child=adw_action_row_02)
 
         # Barra inferior.
-        hbox_bottom_bar = Gtk.Box.new(orientation=Gtk.Orientation.HORIZONTAL, spacing=12)
+        hbox_bottom_bar = Gtk.Box.new(
+            orientation=Gtk.Orientation.HORIZONTAL, spacing=12
+        )
         hbox_bottom_bar.set_margin_top(margin=12)
         hbox_bottom_bar.set_margin_end(margin=12)
         hbox_bottom_bar.set_margin_bottom(margin=12)
@@ -97,10 +99,11 @@ class ExampleWindow(Adw.ApplicationWindow):
 
 
 class ExampleApplication(Adw.Application):
-
     def __init__(self):
-        super().__init__(application_id='br.com.justcode.PyGObject',
-                         flags=Gio.ApplicationFlags.FLAGS_NONE)
+        super().__init__(
+            application_id='br.com.justcode.PyGObject',
+            flags=Gio.ApplicationFlags.FLAGS_NONE,
+        )
 
         self.create_action('quit', self.exit_app, ['<primary>q'])
         self.create_action('preferences', self.on_preferences_action)

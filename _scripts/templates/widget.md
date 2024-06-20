@@ -6,7 +6,7 @@
 
 ## Propriedades:
 
-Sintaxe: `widget.props.nome_da_propriedade`.
+Sintaxe: `widget.props.property_name`.
 
 - {widget_props}.
 

@@ -1,7 +1,7 @@
 using Gtk 4.0;
 
 template $ExampleWindow: Gtk.ApplicationWindow {
-  title: 'Python and GTK: PyGObject Gtk.MenuButton';
+  title: 'Python - PyGObject - GTK';
   default-width: 683;
   default-height: 384;
 
@@ -22,19 +22,22 @@ menu primary_menu {
       action: 'app.preferences';
     }
   }
+
   section {
     label: _('Section title');
     // Shorthand (forma abreviada).
     item ('Item 01', 'win.item1')
     item ('Item 02', 'win.item2')
-
   }
+
   submenu {
     label: _('Sub-menu title');
+
     item {
       label: _('Item 03');
       action: 'win.item3';
     }
+
     item ('Item 04', 'win.item4')
   }
 }

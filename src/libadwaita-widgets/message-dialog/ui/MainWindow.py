@@ -13,16 +13,9 @@ from gi.repository import Adw, Gio, Gtk
 
 Adw.init()
 
-
-UI = BASE_DIR.joinpath('MainWindow.ui')
+BASE_DIR = pathlib.Path(__file__).resolve().parent
+UI = BASE_DIR / 'MainWindow.ui'
 DIALOG = str(BASE_DIR.joinpath('AdwMessageDialog.ui'))
-
-
-
-
-
-
-
 
 
 @Gtk.Template(filename=DIALOG)
@@ -40,7 +33,7 @@ class MessageDialog(Adw.MessageDialog):
             print('CANCEL button pressed')
 
 
-@Gtk.Template(filename=str(UI))
+@Gtk.Template(filename=UI)
 class ExampleWindow(Adw.ApplicationWindow):
     __gtype_name__ = 'ExampleWindow'
 
@@ -54,10 +47,11 @@ class ExampleWindow(Adw.ApplicationWindow):
 
 
 class ExampleApplication(Adw.Application):
-
     def __init__(self):
-        super().__init__(application_id='br.com.justcode.PyGObject',
-                         flags=Gio.ApplicationFlags.FLAGS_NONE)
+        super().__init__(
+            application_id='br.com.justcode.PyGObject',
+            flags=Gio.ApplicationFlags.FLAGS_NONE,
+        )
 
         self.create_action('quit', self.exit_app, ['<primary>q'])
         self.create_action('preferences', self.on_preferences_action)

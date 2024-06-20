@@ -1,12 +1,14 @@
 using Gtk 4.0;
 using Adw 1;
 
-template $Page02 : Adw.NavigationPage {
-  title: _('Página 02');
+template $Page02: Adw.NavigationPage {
+  title: 'Python - PyGObject - GTK';
   tag: 'page02';
+
   child: Adw.ToolbarView {
     [top]
     Adw.HeaderBar header_bar_content {}
+
     content: Gtk.Box {
       orientation: vertical;
       spacing: 12;
@@ -14,6 +16,7 @@ template $Page02 : Adw.NavigationPage {
       margin-end: 12;
       margin-bottom: 12;
       margin-start: 12;
+
       Gtk.Label {
         label: _('Página 02');
       }

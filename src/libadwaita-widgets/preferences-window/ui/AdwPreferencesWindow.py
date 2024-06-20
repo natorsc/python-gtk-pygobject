@@ -11,23 +11,16 @@ gi.require_version(namespace='Adw', version='1')
 
 from gi.repository import Adw, Gio, Gtk
 
-
+BASE_DIR = pathlib.Path(__file__).resolve().parent
 UI = BASE_DIR.joinpath('AdwPreferencesWindow.ui')
-
-
-
-
-
-
 
 
 Adw.init()
 
 
-@Gtk.Template(filename=str(UI))
+@Gtk.Template(filename=UI)
 class AdwPreferencesWindow(Adw.PreferencesWindow):
     __gtype_name__ = 'PreferencesWindow'
-
 
     def __init__(self, **kwargs):
         super().__init__(**kwargs)
@@ -38,4 +31,3 @@ class AdwPreferencesWindow(Adw.PreferencesWindow):
     #         self.button.remove_css_class(css_class='background')
     #     else:
     #         self.button.add_css_class(css_class='background')
-

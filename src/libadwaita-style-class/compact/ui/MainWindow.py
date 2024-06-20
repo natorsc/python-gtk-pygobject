@@ -12,7 +12,7 @@ gi.require_version(namespace='Adw', version='1')
 from gi.repository import Adw, Gio, Gtk
 
 
-UI = BASE_DIR.joinpath('MainWindow.ui')
+UI = BASE_DIR / 'MainWindow.ui'
 
 
 
@@ -24,7 +24,7 @@ UI = BASE_DIR.joinpath('MainWindow.ui')
 Adw.init()
 
 
-@Gtk.Template(filename=str(UI))
+@Gtk.Template(filename=UI)
 class ExampleWindow(Adw.ApplicationWindow):
     __gtype_name__ = 'ExampleWindow'
 

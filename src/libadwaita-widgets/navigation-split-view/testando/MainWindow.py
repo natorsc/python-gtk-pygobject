@@ -12,13 +12,7 @@ gi.require_version(namespace='Adw', version='1')
 from gi.repository import Adw, Gio, Gtk
 
 
-UI = BASE_DIR.joinpath('MainWindow.ui')
-
-
-
-
-
-
+UI = BASE_DIR / 'MainWindow.ui'
 
 
 Adw.init()
@@ -26,7 +20,8 @@ Adw.init()
 from Page01 import Page01
 from Page02 import Page02
 
-@Gtk.Template(filename=str(UI))
+
+@Gtk.Template(filename=UI)
 class ExampleWindow(Adw.ApplicationWindow):
     __gtype_name__ = 'ExampleWindow'
 
@@ -50,10 +45,11 @@ class ExampleWindow(Adw.ApplicationWindow):
 
 
 class ExampleApplication(Adw.Application):
-
     def __init__(self):
-        super().__init__(application_id='br.com.justcode.PyGObject',
-                         flags=Gio.ApplicationFlags.FLAGS_NONE)
+        super().__init__(
+            application_id='br.com.justcode.PyGObject',
+            flags=Gio.ApplicationFlags.FLAGS_NONE,
+        )
 
         self.create_action('quit', self.exit_app, ['<primary>q'])
         self.create_action('preferences', self.on_preferences_action)

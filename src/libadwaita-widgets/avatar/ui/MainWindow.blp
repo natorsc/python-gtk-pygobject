@@ -1,10 +1,11 @@
 using Gtk 4.0;
 using Adw 1;
 
-template $ExampleWindow : Adw.ApplicationWindow {
-  title: 'Python and GTK: PyGObject libadwaita Adw.Avatar';
+template $ExampleWindow: Adw.ApplicationWindow {
+  title: 'Python - PyGObject - GTK';
   default-width: 683;
   default-height: 384;
+
   content: Adw.ToastOverlay {
     child: Adw.ToolbarView {
       [top]
@@ -15,6 +16,7 @@ template $ExampleWindow : Adw.ApplicationWindow {
           menu-model: primary_menu;
         }
       }
+
       content: Gtk.Box {
         orientation: horizontal;
         homogeneous: true;
@@ -23,16 +25,19 @@ template $ExampleWindow : Adw.ApplicationWindow {
         margin-end: 12;
         margin-bottom: 12;
         margin-start: 12;
+
         Adw.Avatar {
           size: 100;
           text: 'Renato Cruz';
           show-initials: false;
         }
+
         Adw.Avatar {
           size: 100;
           text: 'Renato Cruz';
           show-initials: true;
         }
+
         Adw.Avatar {
           size: 100;
           text: 'Renato Cruz';
@@ -43,6 +48,7 @@ template $ExampleWindow : Adw.ApplicationWindow {
     };
   };
 }
+
 menu primary_menu {
   section {
     item {

@@ -1,33 +1,37 @@
 using Gtk 4.0;
 using Adw 1;
 
-template $ExampleWindow : Adw.ApplicationWindow {
-  title: 'Python and GTK: PyGObject libadwaita Adw.ViewStack';
+template $ExampleWindow: Adw.ApplicationWindow {
+  title: 'Python - PyGObject - GTK';
   default-width: 683;
   default-height: 384;
   width-request: 500;
   height-request: 300;
+
   Adw.Breakpoint {
     condition ('max-width: 550')
+
     setters {
       switcher_bar.reveal: true;
       header_bar.title-widget: title_widget;
     }
   }
+
   content: Adw.ToastOverlay {
     child: Adw.ToolbarView {
       [top]
       Adw.HeaderBar header_bar {
-        title-widget:
-        Adw.ViewSwitcher {
+        title-widget: Adw.ViewSwitcher {
           stack: stack;
           policy: wide;
         };
       }
+
       content: Adw.ViewStack stack {
         Adw.ViewStackPage {
           name: 'page01';
-          title: 'Page 01';
+          title: 'Python - PyGObject - GTK';
+
           child: Gtk.Box {
             orientation: vertical;
             margin-top: 12;
@@ -35,14 +39,17 @@ template $ExampleWindow : Adw.ApplicationWindow {
             margin-bottom: 12;
             margin-start: 12;
             spacing: 12;
+
             Label {
               label: 'Page 01';
             }
           };
         }
+
         Adw.ViewStackPage {
           name: 'page02';
-          title: 'Page 02';
+          title: 'Python - PyGObject - GTK';
+
           child: Gtk.Box {
             orientation: vertical;
             margin-top: 12;
@@ -50,12 +57,14 @@ template $ExampleWindow : Adw.ApplicationWindow {
             margin-bottom: 12;
             margin-start: 12;
             spacing: 12;
+
             Label {
               label: 'Page 02';
             }
           };
         }
       };
+
       [bottom]
       Adw.ViewSwitcherBar switcher_bar {
         stack: stack;
@@ -63,6 +72,7 @@ template $ExampleWindow : Adw.ApplicationWindow {
     };
   };
 }
+
 Label title_widget {
   label: 'Python and GTK: PyGObject libadwaita Adw.ViewStack';
 }

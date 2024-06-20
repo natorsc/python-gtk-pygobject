@@ -1,8 +1,8 @@
 using Gtk 4.0;
 using Adw 1;
 
-template $ExampleWindow : Adw.ApplicationWindow {
-  title: 'Python and GTK: PyGObject libadwaita Adw.NavigationSplitView';
+template $ExampleWindow: Adw.ApplicationWindow {
+  title: 'Python - PyGObject - GTK';
   default-width: 683;
   default-height: 384;
   width-request: 280;
@@ -10,6 +10,7 @@ template $ExampleWindow : Adw.ApplicationWindow {
 
   Adw.Breakpoint {
     condition ('max-width: 400')
+
     setters {
       adw_navigation_split_view.collapsed: true;
     }
@@ -17,10 +18,9 @@ template $ExampleWindow : Adw.ApplicationWindow {
 
   content: Adw.ToastOverlay {
     Adw.NavigationSplitView adw_navigation_split_view {
-      
       sidebar: Adw.NavigationPage {
-        title: _('Sidebar');
-        
+        title: 'Python - PyGObject - GTK';
+
         child: Adw.ToolbarView {
           [top]
           Adw.HeaderBar header_bar {
@@ -30,6 +30,7 @@ template $ExampleWindow : Adw.ApplicationWindow {
               menu-model: primary_menu;
             }
           }
+
           content: Box {
             orientation: vertical;
             spacing: 12;
@@ -44,56 +45,36 @@ template $ExampleWindow : Adw.ApplicationWindow {
               action-target: '\'content\'';
             }
           };
-        }
+        };
+      };
 
-      ;
+      content: Adw.NavigationPage {
+        title: 'Python - PyGObject - GTK';
+        tag: 'content';
+
+        child: Adw.ToolbarView {
+          [top]
+          Adw.HeaderBar header_bar_content {}
+
+          content: Adw.ToastOverlay {
+            child: Box {
+              orientation: vertical;
+              spacing: 12;
+              margin-top: 12;
+              margin-end: 12;
+              margin-bottom: 12;
+              margin-start: 12;
+
+              Label {
+                label: 'Content';
+              }
+            };
+          };
+        };
+      };
     }
-
-    ;
-    content: 
-    Adw.NavigationPage {
-      title: _('Content');
-      tag: 'content';
-
-      child:
-      Adw.ToolbarView {
-        [top]
-        Adw.HeaderBar header_bar_content {
-        }
-
-        content:
-        Adw.ToastOverlay {
-        child:
-          Box {
-            orientation: vertical;
-            spacing: 12;
-            margin-top: 12;
-            margin-end: 12;
-            margin-bottom: 12;
-            margin-start: 12;
-
-            Label {
-              label: 'Content';
-            }
-          }
-
-          ;
-        }
-
-        ;
-      }
-
-      ;
-    }
-
-    ;
-  }
   };
-
 }
-
-
-
 
 menu primary_menu {
   section {

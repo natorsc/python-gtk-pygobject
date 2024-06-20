@@ -1,7 +1,5 @@
 # -*- coding: utf-8 -*-
-"""Python and GTK: PyGObject Gtk.HeaderBar"""
-
-
+"""Python - PyGObject - GTK"""
 
 import gi
 
@@ -14,11 +12,10 @@ Adw.init()
 
 
 class ExampleWindow(Gtk.ApplicationWindow):
-
     def __init__(self, **kwargs):
         super().__init__(**kwargs)
 
-        self.set_title(title='Python and GTK: PyGObject Gtk.HeaderBar')
+        self.set_title(title='Python - PyGObject - GTK')
         self.set_default_size(width=int(1366 / 2), height=int(768 / 2))
         self.set_size_request(width=int(1366 / 3), height=int(768 / 3))
 
@@ -55,7 +52,8 @@ class ExampleWindow(Gtk.ApplicationWindow):
             icon_name='go-previous-symbolic-rtl',
         )
         button_right_arrow.connect(
-            'clicked', self.on_button_right_arrow_cliqued)
+            'clicked', self.on_button_right_arrow_cliqued
+        )
         hbox.append(child=button_right_arrow)
 
     @staticmethod
@@ -72,10 +70,11 @@ class ExampleWindow(Gtk.ApplicationWindow):
 
 
 class ExampleApplication(Gtk.Application):
-
     def __init__(self):
-        super().__init__(application_id='br.com.justcode.PyGObject',
-                         flags=Gio.ApplicationFlags.FLAGS_NONE)
+        super().__init__(
+            application_id='br.com.justcode.PyGObject',
+            flags=Gio.ApplicationFlags.FLAGS_NONE,
+        )
 
         self.create_action('quit', self.exit_app, ['<primary>q'])
         self.create_action('preferences', self.on_preferences_action)

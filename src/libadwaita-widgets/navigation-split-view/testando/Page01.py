@@ -15,19 +15,12 @@ from gi.repository import Adw, Gio, Gtk
 UI = BASE_DIR.joinpath('Page01.ui')
 
 
-
-
-
-
-
-
 Adw.init()
 
 
-@Gtk.Template(filename=str(UI))
+@Gtk.Template(filename=UI)
 class Page01(Adw.NavigationPage):
     __gtype_name__ = 'Page01'
 
     def __init__(self, **kwargs):
         super().__init__(**kwargs)
-

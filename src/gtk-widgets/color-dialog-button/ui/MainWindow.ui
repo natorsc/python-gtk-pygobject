@@ -7,7 +7,7 @@ corresponding .blp file and regenerate this file with blueprint-compiler.
 <interface>
   <requires lib="gtk" version="4.0"/>
   <template class="ExampleWindow" parent="GtkApplicationWindow">
-    <property name="title">Python and GTK: PyGObject Gtk.ColorDialogButton.</property>
+    <property name="title">Python - PyGObject - GTK</property>
     <property name="default-width">683</property>
     <property name="default-height">384</property>
     <child type="titlebar">
@@ -46,7 +46,7 @@ corresponding .blp file and regenerate this file with blueprint-compiler.
     </child>
   </template>
   <object class="GtkColorDialog" id="color_dialog">
-    <property name="title">Select a color.</property>
+    <property name="title">Python - PyGObject - GTK</property>
     <property name="modal">true</property>
   </object>
   <menu id="primary_menu">

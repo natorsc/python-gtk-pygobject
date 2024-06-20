@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-"""Python and GTK: PyGObject Gtk.MenuButton."""
+"""Python - PyGObject - GTK"""
 
 import pathlib
 import sys
@@ -29,13 +29,17 @@ class ExampleWindow(Gtk.ApplicationWindow):
         popover.set_offset(x_offset=-50, y_offset=0)
 
         self.create_win_action(
-            name='item1', callback=self.on_menu_item_clicked)
+            name='item1', callback=self.on_menu_item_clicked
+        )
         self.create_win_action(
-            name='item2', callback=self.on_menu_item_clicked)
+            name='item2', callback=self.on_menu_item_clicked
+        )
         self.create_win_action(
-            name='item3', callback=self.on_menu_item_clicked)
+            name='item3', callback=self.on_menu_item_clicked
+        )
         self.create_win_action(
-            name='item4', callback=self.on_menu_item_clicked)
+            name='item4', callback=self.on_menu_item_clicked
+        )
 
     def on_menu_item_clicked(self, action, param):
         print(action.get_name())
@@ -52,10 +56,11 @@ class ExampleWindow(Gtk.ApplicationWindow):
 
 
 class ExampleApplication(Gtk.Application):
-
     def __init__(self):
-        super().__init__(application_id='br.com.justcode.PyGObject',
-                         flags=Gio.ApplicationFlags.FLAGS_NONE)
+        super().__init__(
+            application_id='br.com.justcode.PyGObject',
+            flags=Gio.ApplicationFlags.FLAGS_NONE,
+        )
 
         self.create_action('quit', self.exit_app, ['<primary>q'])
         self.create_action('preferences', self.on_preferences_action)

@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-"""Python and GTK: PyGObject Gtk.ShortcutsWindow."""
+"""Python - PyGObject - GTK"""
 
 import pathlib
 import sys
@@ -24,8 +24,6 @@ class ShortcutsWindow(Gtk.ShortcutsWindow):
         super().__init__(**kwargs)
 
 
-
-
 @Gtk.Template(filename=str(BASE_DIR.joinpath('MainWindow.ui')))
 class ExampleWindow(Gtk.ApplicationWindow):
     __gtype_name__ = 'ExampleWindow'
@@ -35,16 +33,18 @@ class ExampleWindow(Gtk.ApplicationWindow):
 
 
 class ExampleApplication(Gtk.Application):
-
     def __init__(self):
-        super().__init__(application_id='br.com.justcode.PyGObject',
-                         flags=Gio.ApplicationFlags.FLAGS_NONE)
+        super().__init__(
+            application_id='br.com.justcode.PyGObject',
+            flags=Gio.ApplicationFlags.FLAGS_NONE,
+        )
 
         self.create_action('quit', self.exit_app, ['<primary>q'])
         self.create_action('preferences', self.on_preferences_action)
         self.create_action(
             'shortcuts-window',
-            self.on_shortcuts_window_action, ['<primary>1'],
+            self.on_shortcuts_window_action,
+            ['<primary>1'],
         )
 
     def do_activate(self):
@@ -64,7 +64,8 @@ class ExampleApplication(Gtk.Application):
 
     def on_shortcuts_window_action(self, action, param):
         shortcuts_window = ShortcutsWindow(
-            transient_for=self.get_active_window())
+            transient_for=self.get_active_window()
+        )
         shortcuts_window.present()
 
     def exit_app(self, action, param):

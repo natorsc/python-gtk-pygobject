@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-"""Python and GTK: PyGObject Gtk.Video."""
+"""Python - PyGObject - GTK"""
 
 import pathlib
 import sys
@@ -16,21 +16,9 @@ Adw.init()
 BASE_DIR = pathlib.Path(__file__).resolve().parent
 
 
-
-
 VIDEO = str(
-    BASE_DIR.parent.parent.parent.joinpath(
-        'data', 'videos','video.mp4'
-    )
+    BASE_DIR.parent.parent.parent.joinpath('data', 'videos', 'video.mp4')
 )
-
-
-
-
-
-
-
-
 
 
 @Gtk.Template(filename=str(BASE_DIR.joinpath('MainWindow.ui')))
@@ -46,10 +34,11 @@ class ExampleWindow(Gtk.ApplicationWindow):
 
 
 class ExampleApplication(Gtk.Application):
-
     def __init__(self):
-        super().__init__(application_id='br.com.justcode.PyGObject',
-                         flags=Gio.ApplicationFlags.FLAGS_NONE)
+        super().__init__(
+            application_id='br.com.justcode.PyGObject',
+            flags=Gio.ApplicationFlags.FLAGS_NONE,
+        )
 
         self.create_action('quit', self.exit_app, ['<primary>q'])
         self.create_action('preferences', self.on_preferences_action)

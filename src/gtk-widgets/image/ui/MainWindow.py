@@ -1,12 +1,5 @@
 # -*- coding: utf-8 -*-
-"""Python and GTK: PyGObject Gtk.Image().
-
-It is suitable for loading icons.
-
-The size is calculated automatically by GTK.
-
-If you want to load an image, use `Gtk.Picture()`.
-"""
+"""Python - PyGObject - GTK"""
 
 import pathlib
 import sys
@@ -23,7 +16,9 @@ Adw.init()
 BASE_DIR = pathlib.Path(__file__).resolve().parent
 CUSTOM_IMAGE = str(
     BASE_DIR.parent.parent.parent.joinpath(
-        'data', 'icons', 'br.com.justcode.PyGObject.png',
+        'data',
+        'icons',
+        'br.com.justcode.PyGObject.png',
     )
 )
 
@@ -41,10 +36,11 @@ class ExampleWindow(Gtk.ApplicationWindow):
 
 
 class ExampleApplication(Gtk.Application):
-
     def __init__(self):
-        super().__init__(application_id='br.com.justcode.PyGObject',
-                         flags=Gio.ApplicationFlags.FLAGS_NONE)
+        super().__init__(
+            application_id='br.com.justcode.PyGObject',
+            flags=Gio.ApplicationFlags.FLAGS_NONE,
+        )
 
         self.create_action('quit', self.exit_app, ['<primary>q'])
         self.create_action('preferences', self.on_preferences_action)

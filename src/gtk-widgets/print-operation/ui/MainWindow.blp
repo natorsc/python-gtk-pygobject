@@ -1,7 +1,7 @@
 using Gtk 4.0;
 
 template $ExampleWindow: Gtk.ApplicationWindow {
-  title: 'Python and GTK: PyGObject PyGObject Gtk.PrintOperation';
+  title: 'Python - PyGObject - GTK';
   default-width: 683;
   default-height: 384;
 
@@ -36,14 +36,17 @@ template $ExampleWindow: Gtk.ApplicationWindow {
         label: 'Print';
         clicked => $on_button_open_print_dialog_clicked();
       }
+
       Gtk.Button {
         label: 'View';
         clicked => $on_button_open_preview_clicked();
       }
+
       Gtk.Button {
         label: 'Page setup';
         clicked => $on_button_open_page_setup_dialog_clicked();
       }
+
       Gtk.Button {
         label: 'Export to PDF';
         clicked => $on_button_export_to_pdf_clicked();

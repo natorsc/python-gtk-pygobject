@@ -1,10 +1,11 @@
 using Gtk 4.0;
 using Adw 1;
 
-template $ExampleWindow : Adw.ApplicationWindow {
-  title: 'Python and GTK: PyGObject Adw.ComboRow';
+template $ExampleWindow: Adw.ApplicationWindow {
+  title: 'Python - PyGObject - GTK';
   default-width: 683;
   default-height: 384;
+
   content: Adw.ToastOverlay {
     child: Adw.ToolbarView {
       [top]
@@ -15,6 +16,7 @@ template $ExampleWindow : Adw.ApplicationWindow {
           menu-model: primary_menu;
         }
       }
+
       content: Gtk.Box {
         orientation: vertical;
         spacing: 12;
@@ -22,56 +24,68 @@ template $ExampleWindow : Adw.ApplicationWindow {
         margin-end: 12;
         margin-bottom: 12;
         margin-start: 12;
+
         Gtk.ListBox {
           selection-mode: none;
+
           styles [
             'boxed-list',
           ]
+
           Adw.ComboRow {
-            title: 'Title 01';
+            title: 'Python - PyGObject - GTK';
             model: model;
             notify::selected => $on_adw_combo_row_selected();
             notify::selected-item => $on_adw_combo_row_selected_item();
+
             [prefix]
             Gtk.Image {
               icon-name: 'accessories-text-editor-symbolic';
             }
           }
+
           Adw.ComboRow {
-            title: 'Title 02';
+            title: 'Python - PyGObject - GTK';
             model: model;
             notify::selected => $on_adw_combo_row_selected();
             notify::selected-item => $on_adw_combo_row_selected_item();
+
             [prefix]
             Gtk.Image {
               icon-name: 'accessories-text-editor-symbolic';
             }
           }
+
           Adw.ComboRow {
-            title: 'Title 03';
+            title: 'Python - PyGObject - GTK';
             model: model;
             notify::selected => $on_adw_combo_row_selected();
             notify::selected-item => $on_adw_combo_row_selected_item();
+
             [prefix]
             Image {
               icon-name: 'accessories-text-editor-symbolic';
             }
           }
+
           Adw.ComboRow {
-            title: 'Title 04';
+            title: 'Python - PyGObject - GTK';
             model: model;
             notify::selected => $on_adw_combo_row_selected();
             notify::selected-item => $on_adw_combo_row_selected_item();
+
             [prefix]
             Gtk.Image {
               icon-name: 'accessories-text-editor-symbolic';
             }
           }
+
           Adw.ComboRow {
-            title: 'Title 05';
+            title: 'Python - PyGObject - GTK';
             model: model;
             notify::selected => $on_adw_combo_row_selected();
             notify::selected-item => $on_adw_combo_row_selected_item();
+
             [prefix]
             Image {
               icon-name: 'accessories-text-editor-symbolic';
@@ -82,9 +96,17 @@ template $ExampleWindow : Adw.ApplicationWindow {
     };
   };
 }
+
 Gtk.StringList model {
-  strings ['Item 01', 'Item 02', 'Item 03', 'Item 04', 'Item 05']
+  strings [
+    'Item 01',
+    'Item 02',
+    'Item 03',
+    'Item 04',
+    'Item 05'
+  ]
 }
+
 menu primary_menu {
   section {
     item {

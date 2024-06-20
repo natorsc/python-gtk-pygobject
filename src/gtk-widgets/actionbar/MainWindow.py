@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-"""Python and GTK: PyGObject Gtk.ActionBar"""
+"""Python - PyGObject - GTK"""
 
 import gi
 
@@ -10,15 +10,19 @@ from gi.repository import Adw, Gio, Gtk
 
 Adw.init()
 
+ICONS = [
+    'call-start-symbolic',
+    'call-stop-symbolic',
+    'contact-new-symbolic',
+    'address-book-new-symbolic',
+]
+
 
 class ExampleWindow(Gtk.ApplicationWindow):
-    icons = ['call-start-symbolic', 'call-stop-symbolic',
-             'contact-new-symbolic', 'address-book-new-symbolic']
-
     def __init__(self, **kwargs):
         super().__init__(**kwargs)
 
-        self.set_title(title='Python and GTK: PyGObject Gtk.ActionBar')
+        self.set_title(title='Python - PyGObject - GTK')
         self.set_default_size(width=int(1366 / 2), height=int(768 / 2))
         self.set_size_request(width=int(1366 / 3), height=int(768 / 3))
 
@@ -48,7 +52,7 @@ class ExampleWindow(Gtk.ApplicationWindow):
         actionbar.set_vexpand(expand=True)
         vbox.append(child=actionbar)
 
-        for icon in self.icons:
+        for icon in ICONS:
             button = Gtk.Button.new_from_icon_name(icon_name=icon)
             button.connect('clicked', self.on_button_clicked)
             actionbar.pack_start(child=button)
@@ -58,10 +62,11 @@ class ExampleWindow(Gtk.ApplicationWindow):
 
 
 class ExampleApplication(Gtk.Application):
-
     def __init__(self):
-        super().__init__(application_id='br.com.justcode.PyGObject',
-                         flags=Gio.ApplicationFlags.FLAGS_NONE)
+        super().__init__(
+            application_id='br.com.justcode.PyGObject',
+            flags=Gio.ApplicationFlags.FLAGS_NONE,
+        )
 
         self.create_action('quit', self.exit_app, ['<primary>q'])
         self.create_action('preferences', self.on_preferences_action)

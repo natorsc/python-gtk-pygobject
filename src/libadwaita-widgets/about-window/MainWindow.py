@@ -12,13 +12,11 @@ Adw.init()
 
 
 class ExampleWindow(Adw.ApplicationWindow):
-
     def __init__(self, **kwargs):
         super().__init__(**kwargs)
 
-        self.set_title(
-            title='Python and GTK: PyGObject libadwaita Adw.AboutWindow',
-        )
+        self.set_title(title='Python - PyGObject - GTK')
+
         self.set_default_size(width=int(1366 / 2), height=int(768 / 2))
         self.set_size_request(width=int(1366 / 3), height=int(768 / 3))
 
@@ -60,10 +58,11 @@ class ExampleWindow(Adw.ApplicationWindow):
 
 
 class ExampleApplication(Adw.Application):
-
     def __init__(self):
-        super().__init__(application_id='br.com.justcode.PyGObject',
-                         flags=Gio.ApplicationFlags.FLAGS_NONE)
+        super().__init__(
+            application_id='br.com.justcode.PyGObject',
+            flags=Gio.ApplicationFlags.FLAGS_NONE,
+        )
 
         self.create_action('quit', self.exit_app, ['<primary>q'])
         self.create_action('preferences', self.on_preferences_action)
@@ -97,7 +96,8 @@ class ExampleApplication(Adw.Application):
         )
         dialog.set_website('https://gtk.justcode.com.br')
         dialog.set_issue_url(
-            "https://github.com/natorsc/gui-python-pygobject-gtk4/issues")
+            'https://github.com/natorsc/gui-python-pygobject-gtk4/issues'
+        )
         dialog.add_credit_section('Contributors', ['Name-01', 'Name-02'])
         dialog.set_translator_credits('Renato Cruz')
         dialog.set_copyright('© 2022 Renato Cruz (natorsc)')

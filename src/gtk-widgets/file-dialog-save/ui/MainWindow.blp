@@ -2,7 +2,7 @@ using Gtk 4.0;
 using Gio 2.0;
 
 template $ExampleWindow: Gtk.ApplicationWindow {
-  title: 'Python and GTK: PyGObject Gtk.FileDialog() (save) ui file';
+  title: 'Python - PyGObject - GTK';
   default-width: 683;
   default-height: 384;
 
@@ -32,20 +32,42 @@ template $ExampleWindow: Gtk.ApplicationWindow {
 
 Gtk.FileFilter filter_all_files {
   name: 'All';
-  patterns [ '*' ]
-  suffixes [ '*' ]
+
+  patterns [
+    '*'
+  ]
+
+  suffixes [
+    '*'
+  ]
 }
 
 Gtk.FileFilter filter_py_files {
-  mime-types [ 'text/x-python' ]
-  patterns [ '*.py' ]
-  suffixes [ 'py' ]
+  mime-types [
+    'text/x-python'
+  ]
+
+  patterns [
+    '*.py'
+  ]
+
+  suffixes [
+    'py'
+  ]
 }
 
 Gtk.FileFilter filter_txt_files {
-  mime-types [ 'text/plain' ]
-  patterns [ '*.txt' ]
-  suffixes [ 'txt' ]
+  mime-types [
+    'text/plain'
+  ]
+
+  patterns [
+    '*.txt'
+  ]
+
+  suffixes [
+    'txt'
+  ]
 }
 
 Gio.ListStore gio_list_store {

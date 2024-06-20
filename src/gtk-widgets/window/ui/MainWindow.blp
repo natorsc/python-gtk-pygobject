@@ -1,7 +1,7 @@
 using Gtk 4.0;
 
 template $ExampleWindow: Gtk.ApplicationWindow {
-  title: 'Python and GTK: PyGObject Gtk.Window';
+  title: 'Python - PyGObject - GTK';
   default-width: 683;
   default-height: 384;
 
@@ -24,7 +24,7 @@ template $ExampleWindow: Gtk.ApplicationWindow {
 
     Gtk.Button {
       label: 'Open window';
-     clicked => $on_button_clicked();
+      clicked => $on_button_clicked();
     }
   }
 }
@@ -35,6 +35,7 @@ menu primary_menu {
       label: _('Preferences');
       action: 'app.preferences';
     }
+
     item {
       label: _('Atalhos');
       action: 'app.shortcuts-window';
