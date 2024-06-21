@@ -2,8 +2,8 @@
 
 <br>
 
-[![en](https://img.shields.io/badge/lang-en-red.svg)](./README.md)
-[![pt-br](https://img.shields.io/badge/lang-pt--br-green.svg)](./README.pt-br.md)
+[![en](https://img.shields.io/badge/lang-en-red.svg)](./README)
+[![pt-br](https://img.shields.io/badge/lang-pt--br-green.svg)](./README.pt-br)
 
 <br>
 
@@ -139,7 +139,7 @@ Obrigado por sua doação, é através dela que consigo manter este conteúdo �
 
 ![Gtk.ActionBar](./docs/images/gtk-widgets/actionbar.webp "Gtk.ActionBar")
 
-- [Informações do widget](./docs/widgets-info/GtkActionBar.md).
+- [Informações do widget](./docs/widgets-info/GtkActionBar).
 
 - [Python](./src/gtk-widgets/actionbar/MainWindow.py).
 - [GTK Blueprint](./src/gtk-widgets/actionbar/ui/MainWindow.blp).
@@ -150,469 +150,426 @@ Obrigado por sua doação, é através dela que consigo manter este conteúdo �
 
 #### Gtk.Application
 
-![Gtk.Application](./docs/images/gtk-widgets "Gtk.Application")
+![Gtk.Application](./docs/images/gtk-widgets/application.webp "Gtk.Application")
 
-- [Informações do widget](./docs/widgets-info).
-
-- [Python](./src/gtk-widgets).
-- [GTK Blueprint](./src/gtk-widgets/).
-- [Python load ui](./src/gtk-widgets).
-- [UI](./src/gtk-widgets).
-
+- [Python](./src/gtk-widgets/application/MainWindow.py).
+- [GTK Blueprint](./src/gtk-widgets/application/ui/MainWindow.blp).
+- [Python load ui](./src/gtk-widgets/application/ui/MainWindow.py).
+- [UI](./src/gtk-widgets/application/ui/MainWindow.ui).
 
 ---
 
 #### Gtk.ApplicationWindow
 
-![Gtk.Application](./docs/images/gtk-widgets "Gtk.Application")
+![Gtk.ApplicationWindow](./docs/images/gtk-widgets/application-window.webp "Gtk.ApplicationWindow")
 
-- [Informações do widget](./docs/widgets-info).
+- [Informações do widget](./docs/widgets-info/GtkApplicationWindow).
 
-- [Python](./src/gtk-widgets).
-- [GTK Blueprint](./src/gtk-widgets/).
-- [Python load ui](./src/gtk-widgets).
-- [UI](./src/gtk-widgets).
+- [Python](./src/gtk-widgets/application-window/MainWindow.py).
+- [GTK Blueprint](./src/gtk-widgets/application-window/ui/MainWindow.blp).
+- [Python load ui](./src/gtk-widgets/application-window/ui/MainWindow.py).
+- [UI](./src/gtk-widgets/application-window/ui/MainWindow.ui).
 
 ---
 
 #### Gtk.Box (horizontal)
 
-![Gtk.Application](./docs/images/gtk-widgets "Gtk.Application")
+![Gtk.Box (horizontal)](./docs/images/gtk-widgets/box-horizontal.webp "Gtk.Box (horizontal)")
 
-- [Informações do widget](./docs/widgets-info).
+- [Informações do widget](./docs/widgets-info/GtkBox).
 
-- [Python](./src/gtk-widgets).
-- [GTK Blueprint](./src/gtk-widgets/).
-- [Python load ui](./src/gtk-widgets).
-- [UI](./src/gtk-widgets).
+- [Python](./src/gtk-widgets/box-horizontal/MainWindow.py).
+- [GTK Blueprint](./src/gtk-widgets/box-horizontal/ui/MainWindow.blp).
+- [Python load ui](./src/gtk-widgets/box-horizontal/ui/MainWindow.py).
+- [UI](./src/gtk-widgets/box-horizontal/ui/MainWindow.ui).
 
 ---
 
 #### Gtk.Box (vertical)
 
-![Gtk.Application](./docs/images/gtk-widgets "Gtk.Application")
+![Gtk.Box (vertical)](./docs/images/gtk-widgets/box-vertical.webp "Gtk.Box (vertical)")
 
-- [Informações do widget](./docs/widgets-info).
-
-- [Python](./src/gtk-widgets).
-- [GTK Blueprint](./src/gtk-widgets/).
-- [Python load ui](./src/gtk-widgets).
-- [UI](./src/gtk-widgets).
+- [Informações do widget](./docs/widgets-info/GtkBox).
+- [Python](./src/gtk-widgets/box-vertical/MainWindow.py).
+- [GTK Blueprint](./src/gtk-widgets/box-vertical/ui/MainWindow.blp).
+- [Python load ui](./src/gtk-widgets/box-vertical/ui/MainWindow.py).
+- [UI](./src/gtk-widgets/box-vertical/ui/MainWindow.ui).
 
 ---
 
 #### Gtk.Button
 
-![Gtk.Application](./docs/images/gtk-widgets "Gtk.Application")
+![Gtk.Button](./docs/images/gtk-widgets/button.webp "Gtk.Button")
 
-- [Informações do widget](./docs/widgets-info).
+- [Informações do widget](./docs/widgets-info/GtkButton).
 
-- [Python](./src/gtk-widgets).
-- [GTK Blueprint](./src/gtk-widgets/).
-- [Python load ui](./src/gtk-widgets).
-- [UI](./src/gtk-widgets).
+- [Python](./src/gtk-widgets/button/MainWindow.py).
+- [GTK Blueprint](./src/gtk-widgets/button/ui/MainWindow.blp).
+- [Python load ui](./src/gtk-widgets/button/ui/MainWindow.py).
+- [UI](./src/gtk-widgets/button/ui/MainWindow.ui).
 
 ---
 
 #### Gtk.Calendar
 
-![Gtk.Application](./docs/images/gtk-widgets "Gtk.Application")
+![Gtk.Calendar](./docs/images/gtk-widgets/calendar.webp "Gtk.Calendar")
 
-- [Informações do widget](./docs/widgets-info).
-
-- [Python](./src/gtk-widgets).
-- [GTK Blueprint](./src/gtk-widgets/).
-- [Python load ui](./src/gtk-widgets).
-- [UI](./src/gtk-widgets).
+- [Informações do widget](./docs/widgets-info/GtkCalendar).
+- [Python](./src/gtk-widgets/calendar/MainWindow.py).
+- [GTK Blueprint](./src/gtk-widgets/calendar/ui/MainWindow.blp).
+- [Python load ui](./src/gtk-widgets/calendar/ui/MainWindow.py).
+- [UI](./src/gtk-widgets/calendar/ui/MainWindow.ui).
 
 ---
 
 #### Gtk.CheckButton
 
-![Gtk.Application](./docs/images/gtk-widgets "Gtk.Application")
+![Gtk.CheckButton](./docs/images/gtk-widgets/check-button.webp "Gtk.CheckButton")
 
-- [Informações do widget](./docs/widgets-info).
-
-- [Python](./src/gtk-widgets).
-- [GTK Blueprint](./src/gtk-widgets/).
-- [Python load ui](./src/gtk-widgets).
-- [UI](./src/gtk-widgets).
+- [Informações do widget](./docs/widgets-info/GtkCheckButton).
+- [Python](./src/gtk-widgets/check-button/MainWindow.py).
+- [GTK Blueprint](./src/gtk-widgets/check-button/ui/MainWindow.blp).
+- [Python load ui](./src/gtk-widgets/check-button/ui/MainWindow.py).
+- [UI](./src/gtk-widgets/check-button/ui/MainWindow.ui).
 
 ---
 
 #### Gtk.CheckButton (radio)
 
-![Gtk.Application](./docs/images/gtk-widgets "Gtk.Application")
+![Gtk.CheckButton (radio)](./docs/images/gtk-widgets/check-button-radio.webp "Gtk.CheckButton (radio)")
 
-- [Informações do widget](./docs/widgets-info).
-
-- [Python](./src/gtk-widgets).
-- [GTK Blueprint](./src/gtk-widgets/).
-- [Python load ui](./src/gtk-widgets).
-- [UI](./src/gtk-widgets).
+- [Informações do widget](./docs/widgets-info/GtkCheckButton).
+- [Python](./src/gtk-widgets/check-button-radio/MainWindow.py).
+- [GTK Blueprint](./src/gtk-widgets/check-button-radio/ui/MainWindow.blp).
+- [Python load ui](./src/gtk-widgets/check-button-radio/ui/MainWindow.py).
+- [UI](./src/gtk-widgets/check-button-radio/ui/MainWindow.ui).
 
 ---
 
 #### Gtk.ColorDialogButton
 
-![Gtk.Application](./docs/images/gtk-widgets "Gtk.Application")
+![Gtk.ColorDialogButton](./docs/images/gtk-widgets/color-dialog-button.webp "Gtk.ColorDialogButton")
 
-- [Informações do widget](./docs/widgets-info).
-
-- [Python](./src/gtk-widgets).
-- [GTK Blueprint](./src/gtk-widgets/).
-- [Python load ui](./src/gtk-widgets).
-- [UI](./src/gtk-widgets).
+- [Informações do widget](./docs/widgets-info/GtkColorDialogButton).
+- [Python](./src/gtk-widgets/color-dialog-button/MainWindow.py).
+- [GTK Blueprint](./src/gtk-widgets/color-dialog-button/ui/MainWindow.blp).
+- [Python load ui](./src/gtk-widgets/color-dialog-button/ui/MainWindow.py).
+- [UI](./src/gtk-widgets/color-dialog-button/ui/MainWindow.ui).
 
 ---
 
 #### Drag and drop
 
-![Gtk.Application](./docs/images/gtk-widgets "Gtk.Application")
+![Gtk.Drag and drop](./docs/images/gtk-widgets/drag-and-drop.webp "Gtk.Drag and drop")
 
-- [Informações do widget](./docs/widgets-info).
-
-- [Python](./src/gtk-widgets).
-- [GTK Blueprint](./src/gtk-widgets/).
-- [Python load ui](./src/gtk-widgets).
-- [UI](./src/gtk-widgets).
+- [Python](./src/gtk-widgets/drag-and-drop/MainWindow.py).
 
 ---
 
 #### Gtk.DropDown
 
-![Gtk.Application](./docs/images/gtk-widgets "Gtk.Application")
+![Gtk.DropDown](./docs/images/gtk-widgets/drop-down.webp "Gtk.DropDown")
 
-- [Informações do widget](./docs/widgets-info).
-
-- [Python](./src/gtk-widgets).
-- [GTK Blueprint](./src/gtk-widgets/).
-- [Python load ui](./src/gtk-widgets).
-- [UI](./src/gtk-widgets).
+- [Informações do widget](./docs/widgets-info/GtkDropDown).
+- [Python](./src/gtk-widgets/drop-down/MainWindow.py).
+- [GTK Blueprint](./src/gtk-widgets/drop-down/ui/MainWindow.blp).
+- [Python load ui](./src/gtk-widgets/drop-down/ui/MainWindow.py).
+- [UI](./src/gtk-widgets/drop-down/ui/MainWindow.ui).
 
 ---
 
 #### Gtk.Entry
 
-![Gtk.Application](./docs/images/gtk-widgets "Gtk.Application")
+![Gtk.Entry](./docs/images/gtk-widgets/entry.webp "Gtk.Entry")
 
-- [Informações do widget](./docs/widgets-info).
-
-- [Python](./src/gtk-widgets).
-- [GTK Blueprint](./src/gtk-widgets/).
-- [Python load ui](./src/gtk-widgets).
-- [UI](./src/gtk-widgets).
+- [Informações do widget](./docs/widgets-info/GtkEntry).
+- [Python](./src/gtk-widgets/entry/MainWindow.py).
+- [GTK Blueprint](./src/gtk-widgets/entry/ui/MainWindow.blp).
+- [Python load ui](./src/gtk-widgets/entry/ui/MainWindow.py).
+- [UI](./src/gtk-widgets/entry/ui/MainWindow.ui).
 
 ---
 
 #### Gtk.FileDialog (folder)
 
-![Gtk.Application](./docs/images/gtk-widgets "Gtk.Application")
+![Gtk.FileDialog (folder)](./docs/images/gtk-widgets/file-dialog-folder.webp "Gtk.FileDialog (folder)")
 
-- [Informações do widget](./docs/widgets-info).
-
-- [Python](./src/gtk-widgets).
-- [GTK Blueprint](./src/gtk-widgets/).
-- [Python load ui](./src/gtk-widgets).
-- [UI](./src/gtk-widgets).
+- [Python](./src/gtk-widgets/file-dialog-folder/MainWindow.py).
+- [GTK Blueprint](./src/gtk-widgets/file-dialog-folder/ui/MainWindow.blp).
+- [Python load ui](./src/gtk-widgets/file-dialog-folder/ui/MainWindow.py).
+- [UI](./src/gtk-widgets/file-dialog-folder/ui/MainWindow.ui).
 
 ---
 
 #### Gtk.FileDialog (open)
 
-![Gtk.FileDialog (open)]( "Gtk.FileDialog (open)")
+![Gtk.FileDialog (open)](./docs/images/gtk-widgets/file-dialog-open.webp "Gtk.FileDialog (open)")
 
-- [Python]().
-- [Python load ui]().
-- [UI]().
-- [GTK Blueprint]().
+- [Python](/src/gtk-widgets/file-dialog-open/MainWindow.py).
+- [GTK Blueprint](/src/gtk-widgets/file-dialog-open/ui/MainWindow.blp).
+- [Python load ui](/src/gtk-widgets/file-dialog-open/ui/MainWindow.ui).
+- [UI](/src/gtk-widgets/file-dialog-open/ui/MainWindow.ui).
 
 ---
 
 #### Gtk.FileDialog (save)
 
-![Gtk.Application](./docs/images/gtk-widgets "Gtk.Application")
+![Gtk.FileDialog (save)](./docs/images/gtk-widgets/file-dialog-save.webp "Gtk.FileDialog (save)")
 
-- [Informações do widget](./docs/widgets-info).
-
-- [Python](./src/gtk-widgets).
-- [GTK Blueprint](./src/gtk-widgets/).
-- [Python load ui](./src/gtk-widgets).
-- [UI](./src/gtk-widgets).
+- [Python](./src/gtk-widgets/file-dialog-save/MainWindow.py).
+- [GTK Blueprint](./src/gtk-widgets/file-dialog-save/ui/MainWindow.blp).
+- [Python load ui](./src/gtk-widgets/file-dialog-save/ui/MainWindow.py).
+- [UI](./src/gtk-widgets/file-dialog-save/ui/MainWindow.ui).
 
 ---
 
 #### Gtk.Fixed
 
-![Gtk.Application](./docs/images/gtk-widgets "Gtk.Application")
+![Gtk.Fixed](./docs/images/gtk-widgets/fixed.webp "Gtk.Fixed")
 
-- [Informações do widget](./docs/widgets-info).
-
-- [Python](./src/gtk-widgets).
-- [GTK Blueprint](./src/gtk-widgets/).
-- [Python load ui](./src/gtk-widgets).
-- [UI](./src/gtk-widgets).
+- [Informações do widget](./docs/widgets-info/GtkFixed).
+- [Python](./src/gtk-widgets/fixed/MainWindow.py).
+- [GTK Blueprint](./src/gtk-widgets/fixed/ui/MainWindow.blp).
+- [Python load ui](./src/gtk-widgets/fixed/ui/MainWindow.py).
+- [UI](./src/gtk-widgets/fixed/ui/MainWindow.ui).
 
 ---
 
 #### Gtk.FlowBox
 
-![Gtk.Application](./docs/images/gtk-widgets "Gtk.Application")
+![Gtk.FlowBox](./docs/images/gtk-widgets/flow-box.webp "Gtk.FlowBox")
 
-- [Informações do widget](./docs/widgets-info).
-
-- [Python](./src/gtk-widgets).
-- [GTK Blueprint](./src/gtk-widgets/).
-- [Python load ui](./src/gtk-widgets).
-- [UI](./src/gtk-widgets).
+- [Informações do widget](./docs/widgets-info/GtkFlowBox).
+- [Python](./src/gtk-widgets/flow-box/MainWindow.py).
+- [GTK Blueprint](./src/gtk-widgets/flow-box/ui/MainWindow.blp).
+- [Python load ui](./src/gtk-widgets/flow-box/ui/MainWindow.py).
+- [UI](./src/gtk-widgets/flow-box/ui/MainWindow.ui).
 
 ---
 
 #### Gtk.Grid
 
-![Gtk.Application](./docs/images/gtk-widgets "Gtk.Application")
+![Gtk.Grid](./docs/images/gtk-widgets/grid.webp "Gtk.Grid")
 
-- [Informações do widget](./docs/widgets-info).
-
-- [Python](./src/gtk-widgets).
-- [GTK Blueprint](./src/gtk-widgets/).
-- [Python load ui](./src/gtk-widgets).
-- [UI](./src/gtk-widgets).
+- [Informações do widget](./docs/widgets-info/GtkGrid).
+- [Python](./src/gtk-widgets/grid/MainWindow.py).
+- [GTK Blueprint](./src/gtk-widgets/grid/ui/MainWindow.blp).
+- [Python load ui](./src/gtk-widgets/grid/ui/MainWindow.py).
+- [UI](./src/gtk-widgets/grid/ui/MainWindow.ui).
 
 ---
 
 #### Gtk.HeaderBar
 
-![Gtk.Application](./docs/images/gtk-widgets "Gtk.Application")
+![Gtk.ApplicatHeaderBarion](./docs/images/gtk-widgets/header-bar.webp "Gtk.HeaderBar")
 
-- [Informações do widget](./docs/widgets-info).
-
-- [Python](./src/gtk-widgets).
-- [GTK Blueprint](./src/gtk-widgets/).
-- [Python load ui](./src/gtk-widgets).
-- [UI](./src/gtk-widgets).
+- [Informações do widget](./docs/widgets-info/GtkHeaderBar).
+- [Python](./src/gtk-widgets/header-bar/MainWindow.py).
+- [GTK Blueprint](./src/gtk-widgets/header-bar/ui/MainWindow.blp).
+- [Python load ui](./src/gtk-widgets/header-bar/ui/MainWindow.py).
+- [UI](./src/gtk-widgets/header-bar/ui/MainWindow.ui).
 
 ---
 
 #### Gtk.Image
 
-![Gtk.Application](./docs/images/gtk-widgets "Gtk.Application")
+![Gtk.Image](./docs/images/gtk-widgets/image.webp "Gtk.Image")
 
-- [Informações do widget](./docs/widgets-info).
-
-- [Python](./src/gtk-widgets).
-- [GTK Blueprint](./src/gtk-widgets/).
-- [Python load ui](./src/gtk-widgets).
-- [UI](./src/gtk-widgets).
+- [Informações do widget](./docs/widgets-info/GtkImage).
+- [Python](./src/gtk-widgets/image/MainWindow.py).
+- [GTK Blueprint](./src/gtk-widgets/image/ui/MainWindow.blp).
+- [Python load ui](./src/gtk-widgets/image/ui/MainWindow.py).
+- [UI](./src/gtk-widgets/image/ui/MainWindow.ui).
 
 ---
 
 #### Gtk.ListBox
 
-![Gtk.Application](./docs/images/gtk-widgets "Gtk.Application")
+![Gtk.ListBox](./docs/images/gtk-widgets/list-box.webp "Gtk.ListBox")
 
-- [Informações do widget](./docs/widgets-info).
-
-- [Python](./src/gtk-widgets).
-- [GTK Blueprint](./src/gtk-widgets/).
-- [Python load ui](./src/gtk-widgets).
-- [UI](./src/gtk-widgets).
+- [Informações do widget](./docs/widgets-info/GtkListBox).
+- [Python](./src/gtk-widgets/list-box/MainWindow.py).
+- [GTK Blueprint](./src/gtk-widgets/list-box/ui/MainWindow.blp).
+- [Python load ui](./src/gtk-widgets/list-box/ui/MainWindow.py).
+- [UI](./src/gtk-widgets/list-box/ui/MainWindow.ui).
 
 ---
 
 #### Gtk.ListView
 
-![Gtk.Application](./docs/images/gtk-widgets "Gtk.Application")
+![Gtk.ListView](./docs/images/gtk-widgets/list-view.webp "Gtk.ListView")
 
-- [Informações do widget](./docs/widgets-info).
+> 🚨 Criar código Python.
 
-- [Python](./src/gtk-widgets).
-- [GTK Blueprint](./src/gtk-widgets/).
-- [Python load ui](./src/gtk-widgets).
-- [UI](./src/gtk-widgets).
+- [Informações do widget](./docs/widgets-info/GtkListView).
+- [Python](#gtklistview).
+- [GTK Blueprint](./src/gtk-widgets/list-view/ui/MainWindow.blp).
+- [Python load ui](./src/gtk-widgets/list-view/ui/MainWindow.py).
+- [UI](./src/gtk-widgets/list-view/ui/MainWindow.ui).
 
 ---
 
 #### Gtk.MenuButton
 
-![Gtk.Application](./docs/images/gtk-widgets "Gtk.Application")
+![Gtk.MenuButton](./docs/images/gtk-widgets/menu-button.webp "Gtk.MenuButton")
 
-- [Informações do widget](./docs/widgets-info).
-
-- [Python](./src/gtk-widgets).
-- [GTK Blueprint](./src/gtk-widgets/).
-- [Python load ui](./src/gtk-widgets).
-- [UI](./src/gtk-widgets).
+- [Informações do widget](./docs/widgets-info/GtkMenuButton).
+- [Python](./src/gtk-widgets/menu-button/MainWindow.py).
+- [GTK Blueprint](./src/gtk-widgets/menu-button/ui/MainWindow.blp).
+- [Python load ui](./src/gtk-widgets/menu-button/ui/MainWindow.py).
+- [UI](./src/gtk-widgets/menu-button/ui/MainWindow.ui).
 
 ---
 
 #### Gtk.Overlay
 
-![Gtk.Application](./docs/images/gtk-widgets "Gtk.Application")
+![Gtk.Overlay](./docs/images/gtk-widgets/overlay.webp "Gtk.Overlay")
 
-- [Informações do widget](./docs/widgets-info).
-
-- [Python](./src/gtk-widgets).
-- [GTK Blueprint](./src/gtk-widgets/).
-- [Python load ui](./src/gtk-widgets).
-- [UI](./src/gtk-widgets).
+- [Informações do widget](./docs/widgets-info/GtkOverlay).
+- [Python](./src/gtk-widgets/overlay/MainWindow.py).
+- [GTK Blueprint](./src/gtk-widgets/overlay/ui/MainWindow.blp).
+- [Python load ui](./src/gtk-widgets/overlay/ui/MainWindow.py).
+- [UI](./src/gtk-widgets/overlay/ui/MainWindow.ui).
 
 ---
 
 Pango tags
 ==========
 
-![Gtk.Application](./docs/images/gtk-widgets "Gtk.Application")
+![Gtk.Pango tags](./docs/images/gtk-widgets/pango-tags.webp "Gtk.Pango tags")
 
-- [Informações do widget](./docs/widgets-info).
-
-- [Python](./src/gtk-widgets).
-- [GTK Blueprint](./src/gtk-widgets/).
-- [Python load ui](./src/gtk-widgets).
-- [UI](./src/gtk-widgets).
+- [Python](./src/gtk-widgets/pango-tags/MainWindow.py).
+- [GTK Blueprint](./src/gtk-widgets/pango-tags/ui/MainWindow.blp).
+- [Python load ui](./src/gtk-widgets/pango-tags/ui/MainWindow.py).
+- [UI](./src/gtk-widgets/pango-tags/ui/MainWindow.ui).
 
 ---
 
 #### Gtk.Picture
 
-![Gtk.Application](./docs/images/gtk-widgets "Gtk.Application")
+![Gtk.Picture](./docs/images/gtk-widgets/picture.webp "Gtk.Picture")
 
-- [Informações do widget](./docs/widgets-info).
-
-- [Python](./src/gtk-widgets).
-- [GTK Blueprint](./src/gtk-widgets/).
-- [Python load ui](./src/gtk-widgets).
-- [UI](./src/gtk-widgets).
+- [Informações do widget](./docs/widgets-info/GtkPicture).
+- [Python](./src/gtk-widgets/picture/MainWindow.py).
+- [GTK Blueprint](./src/gtk-widgets/picture/ui/MainWindow.blp).
+- [Python load ui](./src/gtk-widgets/picture/ui/MainWindow.py).
+- [UI](./src/gtk-widgets/picture/ui/MainWindow.ui).
 
 ---
 
 #### Gtk.PrintOperation
 
-![Gtk.Application](./docs/images/gtk-widgets "Gtk.Application")
+![Gtk.PrintOperation](./docs/images/gtk-widgets/print-operation.webp "Gtk.PrintOperation")
 
-- [Informações do widget](./docs/widgets-info).
-
-- [Python](./src/gtk-widgets).
-- [GTK Blueprint](./src/gtk-widgets/).
-- [Python load ui](./src/gtk-widgets).
-- [UI](./src/gtk-widgets).
+- [Python](./src/gtk-widgets/print-operation/MainWindow.py).
+- [GTK Blueprint](./src/gtk-widgets/print-operation/ui/MainWindow.blp).
+- [Python load ui](./src/gtk-widgets/print-operation/ui/MainWindow.py).
+- [UI](./src/gtk-widgets/print-operation/ui/MainWindow.ui).
 
 ---
 
 #### Gtk.SearchBar
 
-![Gtk.Application](./docs/images/gtk-widgets "Gtk.Application")
+![Gtk.SearchBar](./docs/images/gtk-widgets/search-bar.webp "Gtk.SearchBar")
 
-- [Informações do widget](./docs/widgets-info).
-
-- [Python](./src/gtk-widgets).
-- [GTK Blueprint](./src/gtk-widgets/).
-- [Python load ui](./src/gtk-widgets).
-- [UI](./src/gtk-widgets).
+- [Informações do widget](./docs/widgets-info/GtkSearchBar).
+- [Python](./src/gtk-widgets/search-bar/MainWindow.py).
+- [GTK Blueprint](./src/gtk-widgets/search-bar/ui/MainWindow.blp).
+- [Python load ui](./src/gtk-widgets/search-bar/ui/MainWindow.py).
+- [UI](./src/gtk-widgets/search-bar/ui/MainWindow.ui).
 
 ---
 
 #### Gtk.ShortcutsWindow
 
-![Gtk.Application](./docs/images/gtk-widgets "Gtk.Application")
+![Gtk.ShortcutsWindow](./docs/images/gtk-widgets/shortcuts-window.webp "Gtk.ShortcutsWindow")
 
-- [Informações do widget](./docs/widgets-info).
+> 🚨 Criar código Python.
 
-- [Python](./src/gtk-widgets).
-- [GTK Blueprint](./src/gtk-widgets/).
-- [Python load ui](./src/gtk-widgets).
-- [UI](./src/gtk-widgets).
+- [Informações do widget](./docs/widgets-info/GtkShortcutsWindow).
+- [GTK Blueprint](./src/gtk-widgets/shortcuts-window/ui/ShortcutsWindow.blp).
+- [UI](./src/gtk-widgets/shortcuts-window/ui/ShortcutsWindow.ui).
 
 ---
 
 #### Signals and slots
 
-![Gtk.Application](./docs/images/gtk-widgets "Gtk.Application")
+![Signals and slots](./docs/images/gtk-widgets/signals-and-slots.webp "Signals and slots")
 
-- [Informações do widget](./docs/widgets-info).
-
-- [Python](./src/gtk-widgets).
-- [GTK Blueprint](./src/gtk-widgets/).
-- [Python load ui](./src/gtk-widgets).
-- [UI](./src/gtk-widgets).
+- [Python](./src/gtk-widgets/signals-and-slots/MainWindow.py).
+- [GTK Blueprint](./src/gtk-widgets/signals-and-slots/ui/MainWindow.blp).
+- [Python load ui](./src/gtk-widgets/signals-and-slots/ui/MainWindow.py).
+- [UI](./src/gtk-widgets/signals-and-slots/ui/MainWindow.ui).
 
 ---
 
 #### Gtk.StackSidebar
 
-![Gtk.Application](./docs/images/gtk-widgets "Gtk.Application")
+![Gtk.StackSidebar](./docs/images/gtk-widgets/stack-sidebar.webp "Gtk.StackSidebar")
 
-- [Informações do widget](./docs/widgets-info).
-
-- [Python](./src/gtk-widgets).
-- [GTK Blueprint](./src/gtk-widgets/).
-- [Python load ui](./src/gtk-widgets).
-- [UI](./src/gtk-widgets).
+- [Informações do widget](./docs/widgets-info/GtkStackSidebar).
+- [Python](./src/gtk-widgets/stack-sidebar/MainWindow.py).
+- [GTK Blueprint](./src/gtk-widgets/stack-sidebar/ui/MainWindow.blp).
+- [Python load ui](./src/gtk-widgets/stack-sidebar/ui/MainWindow.py).
+- [UI](./src/gtk-widgets/stack-sidebar/ui/MainWindow.ui).
 
 ---
 
 #### Gtk.StackSwitcher
 
-![Gtk.Application](./docs/images/gtk-widgets "Gtk.Application")
+![Gtk.StackSwitcher](./docs/images/gtk-widgets/stack-switcher.webp "Gtk.StackSwitcher")
 
-- [Informações do widget](./docs/widgets-info).
-
-- [Python](./src/gtk-widgets).
-- [GTK Blueprint](./src/gtk-widgets/).
-- [Python load ui](./src/gtk-widgets).
-- [UI](./src/gtk-widgets).
+- [Informações do widget](./docs/widgets-info/GtkStackSwitcher).
+- [Python](./src/gtk-widgets/stack-switcher/MainWindow.py).
+- [GTK Blueprint](./src/gtk-widgets/stack-switcher/ui/MainWindow.blp).
+- [Python load ui](./src/gtk-widgets/stack-switcher/ui/MainWindow.py).
+- [UI](./src/gtk-widgets/stack-switcher/ui/MainWindow.ui).
 
 ---
 
 #### Gtk.Switch
 
-![Gtk.Application](./docs/images/gtk-widgets "Gtk.Application")
+![Gtk.Switch](./docs/images/gtk-widgets/switch.webp "Gtk.Switch")
 
-- [Informações do widget](./docs/widgets-info).
-
-- [Python](./src/gtk-widgets).
-- [GTK Blueprint](./src/gtk-widgets/).
-- [Python load ui](./src/gtk-widgets).
-- [UI](./src/gtk-widgets).
+- [Informações do widget](./docs/widgets-info/GtkSwitch).
+- [Python](./src/gtk-widgets/switch/MainWindow.py).
+- [GTK Blueprint](./src/gtk-widgets/switch/ui/MainWindow.blp).
+- [Python load ui](./src/gtk-widgets/switch/ui/MainWindow.py).
+- [UI](./src/gtk-widgets/switch/ui/MainWindow.ui).
 
 ---
 
 #### Translation (gettext)
 
-![Gtk.Application](./docs/images/gtk-widgets "Gtk.Application")
+![Gtk.Translation (gettext)](./docs/images/gtk-widgets/ "Gtk.Translation (gettext)")
 
-- [Informações do widget](./docs/widgets-info).
+> 🚨 Revisar.
 
-- [Python](./src/gtk-widgets).
-- [GTK Blueprint](./src/gtk-widgets/).
-- [Python load ui](./src/gtk-widgets).
-- [UI](./src/gtk-widgets).
+- [Python](./src/gtk-widgets/translator-gettext/MainWindow.py).
 
 ---
 
 #### Gtk.Video
 
-![Gtk.Application](./docs/images/gtk-widgets "Gtk.Application")
+![Gtk.Video](./docs/images/gtk-widgets/video.webp "Gtk.Video")
 
-- [Informações do widget](./docs/widgets-info).
-
-- [Python](./src/gtk-widgets).
-- [GTK Blueprint](./src/gtk-widgets/).
-- [Python load ui](./src/gtk-widgets).
-- [UI](./src/gtk-widgets).
+- [Informações do widget](./docs/widgets-info/GtkVideo).
+- [Python](./src/gtk-widgets/video/MainWindow.py).
+- [GTK Blueprint](./src/gtk-widgets/video/ui/MainWindow.blp).
+- [Python load ui](./src/gtk-widgets/video/ui/MainWindow.py).
+- [UI](./src/gtk-widgets/video/ui/MainWindow.ui).
 
 ---
 
 #### Gtk.Window
 
-![Gtk.Application](./docs/images/gtk-widgets "Gtk.Application")
+![Gtk.Window](./docs/images/gtk-widgets/window.webp "Gtk.Window")
 
-- [Informações do widget](./docs/widgets-info).
-
-- [Python](./src/gtk-widgets).
-- [GTK Blueprint](./src/gtk-widgets/).
-- [Python load ui](./src/gtk-widgets).
-- [UI](./src/gtk-widgets).
+- [Informações do widget](./docs/widgets-info/GtkWindow).
+- [Python](./src/gtk-widgets/window/MainWindow.py).
+- [GTK Blueprint](./src/gtk-widgets/window/ui/MainWindow.blp).
+- [Python load ui](./src/gtk-widgets/window/ui/MainWindow.py).
+- [UI](./src/gtk-widgets/window/ui/MainWindow.ui).
 
 ---
 
@@ -620,114 +577,267 @@ Pango tags
 
 #### Adw.AboutWindow
 
+![Adw.AboutWindow](./docs/images/libadwaita-widgets/about-window.webp "Adw.AboutWindow")
+
+- [Informações do widget](./docs/widgets-info/AdwAboutWindow).
+- [Python](./src/libadwaita-widgets/about-window/MainWindow.py).
+- [GTK Blueprint](./src/libadwaita-widgets/about-window/ui/MainWindow.blp).
+- [Python load ui](./src/libadwaita-widgets/about-window/ui/MainWindow.py).
+- [UI](./src/libadwaita-widgets/about-window/ui/MainWindow.ui).
 
 ---
 
 #### Adw.ActionRow
 
+![Adw.ActionRow](./docs/images/libadwaita-widgets/action-row.webp "Adw.ActionRow")
+
+- [Informações do widget](./docs/widgets-info/AdwActionRow).
+- [Python](./src/libadwaita-widgets/action-row/MainWindow.py).
+- [GTK Blueprint](./src/libadwaita-widgets/action-row/ui/MainWindow.blp).
+- [Python load ui](./src/libadwaita-widgets/action-row/ui/MainWindow.py).
+- [UI](./src/libadwaita-widgets/action-row/ui/MainWindow.ui).
 
 ---
 
 #### Adw.Application
 
+![Adw.Application](./docs/images/libadwaita-widgets/application.webp "Adw.Application")
+
+- [Python](./src/libadwaita-widgets/application/MainWindow.py).
+- [GTK Blueprint](./src/libadwaita-widgets/application/ui/MainWindow.blp).
+- [Python load ui](./src/libadwaita-widgets/application/ui/MainWindow.py).
+- [UI](./src/libadwaita-widgets/application/ui/MainWindow.ui).
 
 ---
 
 #### Adw.Avatar
 
+![Adw.Avatar](./docs/images/libadwaita-widgets/avatar.webp "Adw.Avatar")
+
+- [Informações do widget](./docs/widgets-info/AdwAvatar).
+- [Python](./src/libadwaita-widgets/avatar/MainWindow.py).
+- [GTK Blueprint](./src/libadwaita-widgets/avatar/ui/MainWindow.blp).
+- [Python load ui](./src/libadwaita-widgets/avatar/ui/MainWindow.py).
+- [UI](./src/libadwaita-widgets/avatar/ui/MainWindow.ui).
 
 ---
 
 #### Adw.Banner
 
+![Adw.Banner](./docs/images/libadwaita-widgets/banner.webp "Adw.Banner")
+
+- [Informações do widget](./docs/widgets-info/AdwBanner).
+- [Python](./src/libadwaita-widgets/banner/MainWindow.py).
+- [GTK Blueprint](./src/libadwaita-widgets/banner/ui/MainWindow.blp).
+- [Python load ui](./src/libadwaita-widgets/banner/ui/MainWindow.py).
+- [UI](./src/libadwaita-widgets/banner/ui/MainWindow.ui).
 
 ---
 
 #### Adw.ButtonContent
 
+![Adw.ButtonContent](./docs/images/libadwaita-widgets/button-content.webp "Adw.ButtonContent")
+
+- [Informações do widget](./docs/widgets-info/AdwButtonContent).
+- [Python](./src/libadwaita-widgets/button-content/MainWindow.py).
+- [GTK Blueprint](./src/libadwaita-widgets/button-content/ui/MainWindow.blp).
+- [Python load ui](./src/libadwaita-widgets/button-content/ui/MainWindow.py).
+- [UI](./src/libadwaita-widgets/button-content/ui/MainWindow.ui).
 
 ---
 
 #### Adw.Carousel
 
+![Adw.Carousel](./docs/images/libadwaita-widgets/carousel.webp "Adw.Carousel")
+
+- [Informações do widget](./docs/widgets-info/AdwCarousel).
+- [Python](./src/libadwaita-widgets/carousel/MainWindow.py).
+- [GTK Blueprint](./src/libadwaita-widgets/carousel/ui/MainWindow.blp).
+- [Python load ui](./src/libadwaita-widgets/carousel/ui/MainWindow.py).
+- [UI](./src/libadwaita-widgets/carousel/ui/MainWindow.ui).
 
 ---
 
 #### Adw.CarouselIndicatorDots
 
+![Adw.CarouselIndicatorDots](./docs/images/libadwaita-widgets/carousel-indicator-dots.webp "Adw.CarouselIndicatorDots")
+
+- [Informações do widget](./docs/widgets-info/AdwCarouselIndicatorDots).
+- [Python](./src/libadwaita-widgets/carousel-indicator-dots/MainWindow.py).
+- [GTK Blueprint](./src/libadwaita-widgets/carousel-indicator-dots/ui/MainWindow.blp).
+- [Python load ui](./src/libadwaita-widgets/carousel-indicator-dots/ui/MainWindow.py).
+- [UI](./src/libadwaita-widgets/carousel-indicator-dots/ui/MainWindow.ui).
 
 ---
 
 #### Adw.CarouselIndicatorLines
 
+![Adw.CarouselIndicatorLines](./docs/images/libadwaita-widgets/carousel-indicator-lines.webp "Adw.CarouselIndicatorLines")
+
+- [Informações do widget](./docs/widgets-info/AdwCarouselIndicatorLines).
+- [Python](./src/libadwaita-widgets/carousel-indicator-lines/MainWindow.py).
+- [GTK Blueprint](./src/libadwaita-widgets/carousel-indicator-lines/ui/MainWindow.blp).
+- [Python load ui](./src/libadwaita-widgets/carousel-indicator-lines/ui/MainWindow.py).
+- [UI](./src/libadwaita-widgets/carousel-indicator-lines/ui/MainWindow.ui).
 
 ---
 
 #### Adw.Clamp
 
+![Adw.Clamp](./docs/images/libadwaita-widgets/clamp.webp "Adw.Clamp")
+
+- [Informações do widget](./docs/widgets-info/AdwClamp).
+- [Python](./src/libadwaita-widgets/clamp/MainWindow.py).
+- [GTK Blueprint](./src/libadwaita-widgets/clamp/ui/MainWindow.blp).
+- [Python load ui](./src/libadwaita-widgets/clamp/ui/MainWindow.py).
+- [UI](./src/libadwaita-widgets/clamp/ui/MainWindow.ui).
 
 ---
 
 #### Adw.ComboRow
 
+![Adw.ComboRow](./docs/images/libadwaita-widgets/combo-row.webp "Adw.ComboRow")
+
+- [Informações do widget](./docs/widgets-info/AdwComboRow).
+- [Python](./src/libadwaita-widgets/combo-row/MainWindow.py).
+- [GTK Blueprint](./src/libadwaita-widgets/combo-row/ui/MainWindow.blp).
+- [Python load ui](./src/libadwaita-widgets/combo-row/ui/MainWindow.py).
+- [UI](./src/libadwaita-widgets/combo-row/ui/MainWindow.ui).
 
 ---
 
 #### Adw.EntryRow
 
+![Adw.EntryRow](./docs/images/libadwaita-widgets/entry-row.webp "Adw.EntryRow")
+
+- [Informações do widget](./docs/widgets-info/AdwEntryRow.md).
+- [Python](./src/libadwaita-widgets/entry-row/MainWindow.py).
+- [GTK Blueprint](./src/libadwaita-widgets/entry-row/ui/MainWindow.blp).
+- [Python load ui](./src/libadwaita-widgets/entry-row/ui/MainWindow.py).
+- [UI](./src/libadwaita-widgets/entry-row/ui/MainWindow.ui).
 
 ---
 
 #### Adw.ExpanderRow
 
+![Adw.ExpanderRow](./docs/images/libadwaita-widgets/expander-row.webp "Adw.ExpanderRow")
+
+- [Informações do widget](./docs/widgets-info/AdwExpanderRow).
+- [Python](./src/libadwaita-widgets/expander-row/MainWindow.py).
+- [GTK Blueprint](./src/libadwaita-widgets/expander-row/ui/MainWindow.blp).
+- [Python load ui](./src/libadwaita-widgets/expander-row/ui/MainWindow.py).
+- [UI](./src/libadwaita-widgets/expander-row/ui/MainWindow.ui).
 
 ---
 
 #### Adw.MessageDialog
 
+![Adw.MessageDialog](./docs/images/libadwaita-widgets/message-dialog.webp "Adw.MessageDialog")
+
+- [Informações do widget](./docs/widgets-info/AdwMessageDialog).
+- [Python](./src/libadwaita-widgets/message-dialog/MainWindow.py).
+- [GTK Blueprint](./src/libadwaita-widgets/message-dialog/ui/AdwMessageDialog.blp).
+- [Python load ui](./src/libadwaita-widgets/message-dialog/ui/MainWindow.py).
+- [UI](./src/libadwaita-widgets/message-dialog/ui/AdwMessageDialog.ui).
 
 ---
 
 #### Adw.NavigationSplitView
 
+![Adw.NavigationSplitView](./docs/images/libadwaita-widgets/navigation-split-view.webp "Adw.NavigationSplitView")
+
+- [Informações do widget](./docs/widgets-info/AdwNavigationSplitView).
+- [GTK Blueprint](./src/libadwaita-widgets/navigation-split-view/ui/MainWindow.blp).
+- [Python load ui](./src/libadwaita-widgets/navigation-split-view/ui/MainWindow.py).
+- [UI](./src/libadwaita-widgets/navigation-split-view/ui/MainWindow.ui).
 
 ---
 
 #### Adw.PasswordEntryRow
 
+![Adw.PasswordEntryRow](./docs/images/libadwaita-widgets/password-entry-row.webp "Adw.PasswordEntryRow")
+
+- [Informações do widget](./docs/widgets-info/AdwPasswordEntryRow).
+- [Python](./src/libadwaita-widgets/password-entry-row/MainWindow.py).
+- [GTK Blueprint](./src/libadwaita-widgets/password-entry-row/ui/MainWindow.blp).
+- [Python load ui](./src/libadwaita-widgets/password-entry-row/ui/MainWindow.py).
+- [UI](./src/libadwaita-widgets/password-entry-row/ui/MainWindow.ui).
 
 ---
 
 #### Adw.PreferencesPage
 
+![Adw.PreferencesPage](./docs/images/libadwaita-widgets/preferences-page.webp "Adw.PreferencesPage")
+
+- [Python](./src/libadwaita-widgets/preferences-page/MainWindow.py).
+- [GTK Blueprint](./src/libadwaita-widgets/preferences-page/ui/MainWindow.blp).
+- [Python load ui](./src/libadwaita-widgets/preferences-page/ui/MainWindow.py).
+- [UI](./src/libadwaita-widgets/preferences-page/ui/MainWindow.ui).
 
 ---
 
 #### Adw.PreferencesWindow
 
+![Adw.PreferencesWindow](./docs/images/libadwaita-widgets/preferences-window.webp "Adw.PreferencesWindow")
+
+- [Python](./src/libadwaita-widgets/preferences-window/MainWindow.py).
+- [GTK Blueprint](./src/libadwaita-widgets/preferences-window/ui/AdwPreferencesWindow.blp).
+- [Python load ui](./src/libadwaita-widgets/preferences-window/ui/AdwPreferencesWindow.py).
+- [UI](./src/libadwaita-widgets/preferences-window/ui/AdwPreferencesWindow.ui).
 
 ---
 
 #### Adw.SplitButton
 
+![Adw.SplitButton](./docs/images/libadwaita-widgets/split-button.webp "Adw.SplitButton")
+
+- [Informações do widget](./docs/widgets-info/AdwSplitButton.md).
+- [Python](./src/libadwaita-widgets/split-button/MainWindow.py).
+- [GTK Blueprint](./src/libadwaita-widgets/split-button/ui/MainWindow.blp).
+- [Python load ui](./src/libadwaita-widgets/split-button/ui/MainWindow.py).
+- [UI](./src/libadwaita-widgets/split-button/ui/MainWindow.ui).
 
 ---
 
 #### Adw.StatusPage
 
+![Adw.StatusPage](./docs/images/libadwaita-widgets/status-page.webp "Adw.StatusPage")
+
+- [Informações do widget](./docs/widgets-info/AdwStatusPage).
+- [Python](./src/libadwaita-widgets/status-page/MainWindow.py).
+- [GTK Blueprint](./src/libadwaita-widgets/status-page/ui/MainWindow.blp).
+- [Python load ui](./src/libadwaita-widgets/status-page/ui/MainWindow.py).
+- [UI](./src/libadwaita-widgets/status-page/ui/MainWindow.ui).
 
 --
 
 #### Adw.Toast
 
+![Adw.Toast](./docs/images/libadwaita-widgets/toast.webp "Adw.Toast")
+
+- [Python](./src/libadwaita-widgets/toast/MainWindow.py).
+- [GTK Blueprint](./src/libadwaita-widgets/toast/ui/MainWindow.blp).
+- [Python load ui](./src/libadwaita-widgets/toast/ui/MainWindow.py).
+- [UI](./src/libadwaita-widgets/toast/ui/MainWindow.ui).
 
 ---
 
 #### Adw.ToolbarView
 
+![Adw.ToolbarView](./docs/images/libadwaita-widgets/toolbar-view.webp "Adw.ToolbarView")
+
+- [Informações do widget](./docs/widgets-info/AdwToolbarView).
+- [Python](./src/libadwaita-widgets/toolbar-view/MainWindow.py).
 
 ---
 
 #### Adw.ViewStack
+
+![Adw.ViewStack](./docs/images/libadwaita-widgets/view-stack.webp "Adw.ViewStack")
+
+- [Informações do widget](./docs/widgets-info/AdwViewStack).
+- [GTK Blueprint](./src/libadwaita-widgets/view-stack/ui/MainWindow.blp).
+- [Python load ui](./src/libadwaita-widgets/view-stack/ui/MainWindow.py).
+- [UI](./src/libadwaita-widgets/view-stack/ui/MainWindow.ui).
 
 ---
