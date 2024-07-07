@@ -32,6 +32,7 @@ preview = true
 quote-style = 'single'
 
 [tool.taskipy.tasks]
-lint = 'ruff check . && ruff check . --diff'
+export = 'poetry export --without-hashes -o requirements.txt'
 format = 'ruff check . --fix && ruff format .'
+lint = 'ruff check . && ruff check . --diff'
 blp_format = 'blueprint-compiler format -f -n .'

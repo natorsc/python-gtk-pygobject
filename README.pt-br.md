@@ -1,9 +1,9 @@
-![Criando interfaces gráficas com Python (PyGObject) e GTK](./docs/images/pygobject-gtk-1600x840.webp "Criando interfaces gráficas com Python (PyGObject) e GTK")
+![Criando interfaces gráficas com Python (PyGObject) e GTK](./docs/images/pytthon-pygobject-gtk.pt-br.webp "Criando interfaces gráficas com Python (PyGObject) e GTK")
 
 <br>
 
-[![en](https://img.shields.io/badge/lang-en-red.svg)](./README)
-[![pt-br](https://img.shields.io/badge/lang-pt--br-green.svg)](./README.pt-br)
+[![en](https://img.shields.io/badge/lang-en-darkred.svg)](./README)
+[![pt-br](https://img.shields.io/badge/lang-pt--br-darkgreen.svg)](./README.pt-br)
 
 <br>
 
@@ -139,8 +139,7 @@ Obrigado por sua doação, é através dela que consigo manter este conteúdo �
 
 ![Gtk.ActionBar](./docs/images/gtk-widgets/actionbar.webp "Gtk.ActionBar")
 
-- [Informações do widget](./docs/widgets-info/GtkActionBar).
-
+- [Informações do widget](./docs/widgets-info/GtkActionBar.md).
 - [Python](./src/gtk-widgets/actionbar/MainWindow.py).
 - [GTK Blueprint](./src/gtk-widgets/actionbar/ui/MainWindow.blp).
 - [Python load ui](./src/gtk-widgets/actionbar/ui/MainWindow.py).
@@ -163,8 +162,7 @@ Obrigado por sua doação, é através dela que consigo manter este conteúdo �
 
 ![Gtk.ApplicationWindow](./docs/images/gtk-widgets/application-window.webp "Gtk.ApplicationWindow")
 
-- [Informações do widget](./docs/widgets-info/GtkApplicationWindow).
-
+- [Informações do widget](./docs/widgets-info/GtkApplicationWindow.md).
 - [Python](./src/gtk-widgets/application-window/MainWindow.py).
 - [GTK Blueprint](./src/gtk-widgets/application-window/ui/MainWindow.blp).
 - [Python load ui](./src/gtk-widgets/application-window/ui/MainWindow.py).
@@ -176,8 +174,7 @@ Obrigado por sua doação, é através dela que consigo manter este conteúdo �
 
 ![Gtk.Box (horizontal)](./docs/images/gtk-widgets/box-horizontal.webp "Gtk.Box (horizontal)")
 
-- [Informações do widget](./docs/widgets-info/GtkBox).
-
+- [Informações do widget](./docs/widgets-info/GtkBox.md).
 - [Python](./src/gtk-widgets/box-horizontal/MainWindow.py).
 - [GTK Blueprint](./src/gtk-widgets/box-horizontal/ui/MainWindow.blp).
 - [Python load ui](./src/gtk-widgets/box-horizontal/ui/MainWindow.py).
@@ -189,7 +186,7 @@ Obrigado por sua doação, é através dela que consigo manter este conteúdo �
 
 ![Gtk.Box (vertical)](./docs/images/gtk-widgets/box-vertical.webp "Gtk.Box (vertical)")
 
-- [Informações do widget](./docs/widgets-info/GtkBox).
+- [Informações do widget](./docs/widgets-info/GtkBox.md).
 - [Python](./src/gtk-widgets/box-vertical/MainWindow.py).
 - [GTK Blueprint](./src/gtk-widgets/box-vertical/ui/MainWindow.blp).
 - [Python load ui](./src/gtk-widgets/box-vertical/ui/MainWindow.py).
@@ -201,8 +198,7 @@ Obrigado por sua doação, é através dela que consigo manter este conteúdo �
 
 ![Gtk.Button](./docs/images/gtk-widgets/button.webp "Gtk.Button")
 
-- [Informações do widget](./docs/widgets-info/GtkButton).
-
+- [Informações do widget](./docs/widgets-info/GtkButton.md).
 - [Python](./src/gtk-widgets/button/MainWindow.py).
 - [GTK Blueprint](./src/gtk-widgets/button/ui/MainWindow.blp).
 - [Python load ui](./src/gtk-widgets/button/ui/MainWindow.py).
@@ -214,7 +210,7 @@ Obrigado por sua doação, é através dela que consigo manter este conteúdo �
 
 ![Gtk.Calendar](./docs/images/gtk-widgets/calendar.webp "Gtk.Calendar")
 
-- [Informações do widget](./docs/widgets-info/GtkCalendar).
+- [Informações do widget](./docs/widgets-info/GtkCalendar.md).
 - [Python](./src/gtk-widgets/calendar/MainWindow.py).
 - [GTK Blueprint](./src/gtk-widgets/calendar/ui/MainWindow.blp).
 - [Python load ui](./src/gtk-widgets/calendar/ui/MainWindow.py).
@@ -226,7 +222,7 @@ Obrigado por sua doação, é através dela que consigo manter este conteúdo �
 
 ![Gtk.CheckButton](./docs/images/gtk-widgets/check-button.webp "Gtk.CheckButton")
 
-- [Informações do widget](./docs/widgets-info/GtkCheckButton).
+- [Informações do widget](./docs/widgets-info/GtkCheckButton.md).
 - [Python](./src/gtk-widgets/check-button/MainWindow.py).
 - [GTK Blueprint](./src/gtk-widgets/check-button/ui/MainWindow.blp).
 - [Python load ui](./src/gtk-widgets/check-button/ui/MainWindow.py).
@@ -238,7 +234,7 @@ Obrigado por sua doação, é através dela que consigo manter este conteúdo �
 
 ![Gtk.CheckButton (radio)](./docs/images/gtk-widgets/check-button-radio.webp "Gtk.CheckButton (radio)")
 
-- [Informações do widget](./docs/widgets-info/GtkCheckButton).
+- [Informações do widget](./docs/widgets-info/GtkCheckButton.md).
 - [Python](./src/gtk-widgets/check-button-radio/MainWindow.py).
 - [GTK Blueprint](./src/gtk-widgets/check-button-radio/ui/MainWindow.blp).
 - [Python load ui](./src/gtk-widgets/check-button-radio/ui/MainWindow.py).
@@ -250,7 +246,7 @@ Obrigado por sua doação, é através dela que consigo manter este conteúdo �
 
 ![Gtk.ColorDialogButton](./docs/images/gtk-widgets/color-dialog-button.webp "Gtk.ColorDialogButton")
 
-- [Informações do widget](./docs/widgets-info/GtkColorDialogButton).
+- [Informações do widget](./docs/widgets-info/GtkColorDialogButton.md).
 - [Python](./src/gtk-widgets/color-dialog-button/MainWindow.py).
 - [GTK Blueprint](./src/gtk-widgets/color-dialog-button/ui/MainWindow.blp).
 - [Python load ui](./src/gtk-widgets/color-dialog-button/ui/MainWindow.py).
@@ -270,7 +266,7 @@ Obrigado por sua doação, é através dela que consigo manter este conteúdo �
 
 ![Gtk.DropDown](./docs/images/gtk-widgets/drop-down.webp "Gtk.DropDown")
 
-- [Informações do widget](./docs/widgets-info/GtkDropDown).
+- [Informações do widget](./docs/widgets-info/GtkDropDown.md).
 - [Python](./src/gtk-widgets/drop-down/MainWindow.py).
 - [GTK Blueprint](./src/gtk-widgets/drop-down/ui/MainWindow.blp).
 - [Python load ui](./src/gtk-widgets/drop-down/ui/MainWindow.py).
@@ -282,7 +278,7 @@ Obrigado por sua doação, é através dela que consigo manter este conteúdo �
 
 ![Gtk.Entry](./docs/images/gtk-widgets/entry.webp "Gtk.Entry")
 
-- [Informações do widget](./docs/widgets-info/GtkEntry).
+- [Informações do widget](./docs/widgets-info/GtkEntry.md).
 - [Python](./src/gtk-widgets/entry/MainWindow.py).
 - [GTK Blueprint](./src/gtk-widgets/entry/ui/MainWindow.blp).
 - [Python load ui](./src/gtk-widgets/entry/ui/MainWindow.py).
@@ -327,7 +323,7 @@ Obrigado por sua doação, é através dela que consigo manter este conteúdo �
 
 ![Gtk.Fixed](./docs/images/gtk-widgets/fixed.webp "Gtk.Fixed")
 
-- [Informações do widget](./docs/widgets-info/GtkFixed).
+- [Informações do widget](./docs/widgets-info/GtkFixed.md).
 - [Python](./src/gtk-widgets/fixed/MainWindow.py).
 - [GTK Blueprint](./src/gtk-widgets/fixed/ui/MainWindow.blp).
 - [Python load ui](./src/gtk-widgets/fixed/ui/MainWindow.py).
@@ -339,7 +335,7 @@ Obrigado por sua doação, é através dela que consigo manter este conteúdo �
 
 ![Gtk.FlowBox](./docs/images/gtk-widgets/flow-box.webp "Gtk.FlowBox")
 
-- [Informações do widget](./docs/widgets-info/GtkFlowBox).
+- [Informações do widget](./docs/widgets-info/GtkFlowBox.md).
 - [Python](./src/gtk-widgets/flow-box/MainWindow.py).
 - [GTK Blueprint](./src/gtk-widgets/flow-box/ui/MainWindow.blp).
 - [Python load ui](./src/gtk-widgets/flow-box/ui/MainWindow.py).
@@ -351,7 +347,7 @@ Obrigado por sua doação, é através dela que consigo manter este conteúdo �
 
 ![Gtk.Grid](./docs/images/gtk-widgets/grid.webp "Gtk.Grid")
 
-- [Informações do widget](./docs/widgets-info/GtkGrid).
+- [Informações do widget](./docs/widgets-info/GtkGrid.md).
 - [Python](./src/gtk-widgets/grid/MainWindow.py).
 - [GTK Blueprint](./src/gtk-widgets/grid/ui/MainWindow.blp).
 - [Python load ui](./src/gtk-widgets/grid/ui/MainWindow.py).
@@ -363,7 +359,7 @@ Obrigado por sua doação, é através dela que consigo manter este conteúdo �
 
 ![Gtk.ApplicatHeaderBarion](./docs/images/gtk-widgets/header-bar.webp "Gtk.HeaderBar")
 
-- [Informações do widget](./docs/widgets-info/GtkHeaderBar).
+- [Informações do widget](./docs/widgets-info/GtkHeaderBar.md).
 - [Python](./src/gtk-widgets/header-bar/MainWindow.py).
 - [GTK Blueprint](./src/gtk-widgets/header-bar/ui/MainWindow.blp).
 - [Python load ui](./src/gtk-widgets/header-bar/ui/MainWindow.py).
@@ -375,7 +371,7 @@ Obrigado por sua doação, é através dela que consigo manter este conteúdo �
 
 ![Gtk.Image](./docs/images/gtk-widgets/image.webp "Gtk.Image")
 
-- [Informações do widget](./docs/widgets-info/GtkImage).
+- [Informações do widget](./docs/widgets-info/GtkImage.md).
 - [Python](./src/gtk-widgets/image/MainWindow.py).
 - [GTK Blueprint](./src/gtk-widgets/image/ui/MainWindow.blp).
 - [Python load ui](./src/gtk-widgets/image/ui/MainWindow.py).
@@ -387,7 +383,7 @@ Obrigado por sua doação, é através dela que consigo manter este conteúdo �
 
 ![Gtk.ListBox](./docs/images/gtk-widgets/list-box.webp "Gtk.ListBox")
 
-- [Informações do widget](./docs/widgets-info/GtkListBox).
+- [Informações do widget](./docs/widgets-info/GtkListBox.md).
 - [Python](./src/gtk-widgets/list-box/MainWindow.py).
 - [GTK Blueprint](./src/gtk-widgets/list-box/ui/MainWindow.blp).
 - [Python load ui](./src/gtk-widgets/list-box/ui/MainWindow.py).
@@ -401,7 +397,7 @@ Obrigado por sua doação, é através dela que consigo manter este conteúdo �
 
 > 🚨 Criar código Python.
 
-- [Informações do widget](./docs/widgets-info/GtkListView).
+- [Informações do widget](./docs/widgets-info/GtkListView.md).
 - [Python](#gtklistview).
 - [GTK Blueprint](./src/gtk-widgets/list-view/ui/MainWindow.blp).
 - [Python load ui](./src/gtk-widgets/list-view/ui/MainWindow.py).
@@ -413,7 +409,7 @@ Obrigado por sua doação, é através dela que consigo manter este conteúdo �
 
 ![Gtk.MenuButton](./docs/images/gtk-widgets/menu-button.webp "Gtk.MenuButton")
 
-- [Informações do widget](./docs/widgets-info/GtkMenuButton).
+- [Informações do widget](./docs/widgets-info/GtkMenuButton.md).
 - [Python](./src/gtk-widgets/menu-button/MainWindow.py).
 - [GTK Blueprint](./src/gtk-widgets/menu-button/ui/MainWindow.blp).
 - [Python load ui](./src/gtk-widgets/menu-button/ui/MainWindow.py).
@@ -425,7 +421,7 @@ Obrigado por sua doação, é através dela que consigo manter este conteúdo �
 
 ![Gtk.Overlay](./docs/images/gtk-widgets/overlay.webp "Gtk.Overlay")
 
-- [Informações do widget](./docs/widgets-info/GtkOverlay).
+- [Informações do widget](./docs/widgets-info/GtkOverlay.md).
 - [Python](./src/gtk-widgets/overlay/MainWindow.py).
 - [GTK Blueprint](./src/gtk-widgets/overlay/ui/MainWindow.blp).
 - [Python load ui](./src/gtk-widgets/overlay/ui/MainWindow.py).
@@ -449,7 +445,7 @@ Pango tags
 
 ![Gtk.Picture](./docs/images/gtk-widgets/picture.webp "Gtk.Picture")
 
-- [Informações do widget](./docs/widgets-info/GtkPicture).
+- [Informações do widget](./docs/widgets-info/GtkPicture.md).
 - [Python](./src/gtk-widgets/picture/MainWindow.py).
 - [GTK Blueprint](./src/gtk-widgets/picture/ui/MainWindow.blp).
 - [Python load ui](./src/gtk-widgets/picture/ui/MainWindow.py).
@@ -472,7 +468,7 @@ Pango tags
 
 ![Gtk.SearchBar](./docs/images/gtk-widgets/search-bar.webp "Gtk.SearchBar")
 
-- [Informações do widget](./docs/widgets-info/GtkSearchBar).
+- [Informações do widget](./docs/widgets-info/GtkSearchBar.md).
 - [Python](./src/gtk-widgets/search-bar/MainWindow.py).
 - [GTK Blueprint](./src/gtk-widgets/search-bar/ui/MainWindow.blp).
 - [Python load ui](./src/gtk-widgets/search-bar/ui/MainWindow.py).
@@ -486,7 +482,7 @@ Pango tags
 
 > 🚨 Criar código Python.
 
-- [Informações do widget](./docs/widgets-info/GtkShortcutsWindow).
+- [Informações do widget](./docs/widgets-info/GtkShortcutsWindow.md).
 - [GTK Blueprint](./src/gtk-widgets/shortcuts-window/ui/ShortcutsWindow.blp).
 - [UI](./src/gtk-widgets/shortcuts-window/ui/ShortcutsWindow.ui).
 
@@ -507,7 +503,7 @@ Pango tags
 
 ![Gtk.StackSidebar](./docs/images/gtk-widgets/stack-sidebar.webp "Gtk.StackSidebar")
 
-- [Informações do widget](./docs/widgets-info/GtkStackSidebar).
+- [Informações do widget](./docs/widgets-info/GtkStackSidebar.md).
 - [Python](./src/gtk-widgets/stack-sidebar/MainWindow.py).
 - [GTK Blueprint](./src/gtk-widgets/stack-sidebar/ui/MainWindow.blp).
 - [Python load ui](./src/gtk-widgets/stack-sidebar/ui/MainWindow.py).
@@ -519,7 +515,7 @@ Pango tags
 
 ![Gtk.StackSwitcher](./docs/images/gtk-widgets/stack-switcher.webp "Gtk.StackSwitcher")
 
-- [Informações do widget](./docs/widgets-info/GtkStackSwitcher).
+- [Informações do widget](./docs/widgets-info/GtkStackSwitcher.md).
 - [Python](./src/gtk-widgets/stack-switcher/MainWindow.py).
 - [GTK Blueprint](./src/gtk-widgets/stack-switcher/ui/MainWindow.blp).
 - [Python load ui](./src/gtk-widgets/stack-switcher/ui/MainWindow.py).
@@ -531,7 +527,7 @@ Pango tags
 
 ![Gtk.Switch](./docs/images/gtk-widgets/switch.webp "Gtk.Switch")
 
-- [Informações do widget](./docs/widgets-info/GtkSwitch).
+- [Informações do widget](./docs/widgets-info/GtkSwitch.md).
 - [Python](./src/gtk-widgets/switch/MainWindow.py).
 - [GTK Blueprint](./src/gtk-widgets/switch/ui/MainWindow.blp).
 - [Python load ui](./src/gtk-widgets/switch/ui/MainWindow.py).
@@ -553,7 +549,7 @@ Pango tags
 
 ![Gtk.Video](./docs/images/gtk-widgets/video.webp "Gtk.Video")
 
-- [Informações do widget](./docs/widgets-info/GtkVideo).
+- [Informações do widget](./docs/widgets-info/GtkVideo.md).
 - [Python](./src/gtk-widgets/video/MainWindow.py).
 - [GTK Blueprint](./src/gtk-widgets/video/ui/MainWindow.blp).
 - [Python load ui](./src/gtk-widgets/video/ui/MainWindow.py).
@@ -565,7 +561,7 @@ Pango tags
 
 ![Gtk.Window](./docs/images/gtk-widgets/window.webp "Gtk.Window")
 
-- [Informações do widget](./docs/widgets-info/GtkWindow).
+- [Informações do widget](./docs/widgets-info/GtkWindow.md).
 - [Python](./src/gtk-widgets/window/MainWindow.py).
 - [GTK Blueprint](./src/gtk-widgets/window/ui/MainWindow.blp).
 - [Python load ui](./src/gtk-widgets/window/ui/MainWindow.py).
@@ -573,13 +569,15 @@ Pango tags
 
 ---
 
+<br>
+
 ### Libadwaita
 
 #### Adw.AboutWindow
 
 ![Adw.AboutWindow](./docs/images/libadwaita-widgets/about-window.webp "Adw.AboutWindow")
 
-- [Informações do widget](./docs/widgets-info/AdwAboutWindow).
+- [Informações do widget](./docs/widgets-info/AdwAboutWindow.md).
 - [Python](./src/libadwaita-widgets/about-window/MainWindow.py).
 - [GTK Blueprint](./src/libadwaita-widgets/about-window/ui/MainWindow.blp).
 - [Python load ui](./src/libadwaita-widgets/about-window/ui/MainWindow.py).
@@ -591,7 +589,7 @@ Pango tags
 
 ![Adw.ActionRow](./docs/images/libadwaita-widgets/action-row.webp "Adw.ActionRow")
 
-- [Informações do widget](./docs/widgets-info/AdwActionRow).
+- [Informações do widget](./docs/widgets-info/AdwActionRow.md).
 - [Python](./src/libadwaita-widgets/action-row/MainWindow.py).
 - [GTK Blueprint](./src/libadwaita-widgets/action-row/ui/MainWindow.blp).
 - [Python load ui](./src/libadwaita-widgets/action-row/ui/MainWindow.py).
@@ -614,7 +612,7 @@ Pango tags
 
 ![Adw.Avatar](./docs/images/libadwaita-widgets/avatar.webp "Adw.Avatar")
 
-- [Informações do widget](./docs/widgets-info/AdwAvatar).
+- [Informações do widget](./docs/widgets-info/AdwAvatar.md).
 - [Python](./src/libadwaita-widgets/avatar/MainWindow.py).
 - [GTK Blueprint](./src/libadwaita-widgets/avatar/ui/MainWindow.blp).
 - [Python load ui](./src/libadwaita-widgets/avatar/ui/MainWindow.py).
@@ -626,7 +624,7 @@ Pango tags
 
 ![Adw.Banner](./docs/images/libadwaita-widgets/banner.webp "Adw.Banner")
 
-- [Informações do widget](./docs/widgets-info/AdwBanner).
+- [Informações do widget](./docs/widgets-info/AdwBanner.md).
 - [Python](./src/libadwaita-widgets/banner/MainWindow.py).
 - [GTK Blueprint](./src/libadwaita-widgets/banner/ui/MainWindow.blp).
 - [Python load ui](./src/libadwaita-widgets/banner/ui/MainWindow.py).
@@ -638,7 +636,7 @@ Pango tags
 
 ![Adw.ButtonContent](./docs/images/libadwaita-widgets/button-content.webp "Adw.ButtonContent")
 
-- [Informações do widget](./docs/widgets-info/AdwButtonContent).
+- [Informações do widget](./docs/widgets-info/AdwButtonContent.md).
 - [Python](./src/libadwaita-widgets/button-content/MainWindow.py).
 - [GTK Blueprint](./src/libadwaita-widgets/button-content/ui/MainWindow.blp).
 - [Python load ui](./src/libadwaita-widgets/button-content/ui/MainWindow.py).
@@ -650,7 +648,7 @@ Pango tags
 
 ![Adw.Carousel](./docs/images/libadwaita-widgets/carousel.webp "Adw.Carousel")
 
-- [Informações do widget](./docs/widgets-info/AdwCarousel).
+- [Informações do widget](./docs/widgets-info/AdwCarousel.md).
 - [Python](./src/libadwaita-widgets/carousel/MainWindow.py).
 - [GTK Blueprint](./src/libadwaita-widgets/carousel/ui/MainWindow.blp).
 - [Python load ui](./src/libadwaita-widgets/carousel/ui/MainWindow.py).
@@ -662,7 +660,7 @@ Pango tags
 
 ![Adw.CarouselIndicatorDots](./docs/images/libadwaita-widgets/carousel-indicator-dots.webp "Adw.CarouselIndicatorDots")
 
-- [Informações do widget](./docs/widgets-info/AdwCarouselIndicatorDots).
+- [Informações do widget](./docs/widgets-info/AdwCarouselIndicatorDots.md).
 - [Python](./src/libadwaita-widgets/carousel-indicator-dots/MainWindow.py).
 - [GTK Blueprint](./src/libadwaita-widgets/carousel-indicator-dots/ui/MainWindow.blp).
 - [Python load ui](./src/libadwaita-widgets/carousel-indicator-dots/ui/MainWindow.py).
@@ -674,7 +672,7 @@ Pango tags
 
 ![Adw.CarouselIndicatorLines](./docs/images/libadwaita-widgets/carousel-indicator-lines.webp "Adw.CarouselIndicatorLines")
 
-- [Informações do widget](./docs/widgets-info/AdwCarouselIndicatorLines).
+- [Informações do widget](./docs/widgets-info/AdwCarouselIndicatorLines.md).
 - [Python](./src/libadwaita-widgets/carousel-indicator-lines/MainWindow.py).
 - [GTK Blueprint](./src/libadwaita-widgets/carousel-indicator-lines/ui/MainWindow.blp).
 - [Python load ui](./src/libadwaita-widgets/carousel-indicator-lines/ui/MainWindow.py).
@@ -686,7 +684,7 @@ Pango tags
 
 ![Adw.Clamp](./docs/images/libadwaita-widgets/clamp.webp "Adw.Clamp")
 
-- [Informações do widget](./docs/widgets-info/AdwClamp).
+- [Informações do widget](./docs/widgets-info/AdwClamp.md).
 - [Python](./src/libadwaita-widgets/clamp/MainWindow.py).
 - [GTK Blueprint](./src/libadwaita-widgets/clamp/ui/MainWindow.blp).
 - [Python load ui](./src/libadwaita-widgets/clamp/ui/MainWindow.py).
@@ -698,7 +696,7 @@ Pango tags
 
 ![Adw.ComboRow](./docs/images/libadwaita-widgets/combo-row.webp "Adw.ComboRow")
 
-- [Informações do widget](./docs/widgets-info/AdwComboRow).
+- [Informações do widget](./docs/widgets-info/AdwComboRow.md).
 - [Python](./src/libadwaita-widgets/combo-row/MainWindow.py).
 - [GTK Blueprint](./src/libadwaita-widgets/combo-row/ui/MainWindow.blp).
 - [Python load ui](./src/libadwaita-widgets/combo-row/ui/MainWindow.py).
@@ -722,7 +720,7 @@ Pango tags
 
 ![Adw.ExpanderRow](./docs/images/libadwaita-widgets/expander-row.webp "Adw.ExpanderRow")
 
-- [Informações do widget](./docs/widgets-info/AdwExpanderRow).
+- [Informações do widget](./docs/widgets-info/AdwExpanderRow.md).
 - [Python](./src/libadwaita-widgets/expander-row/MainWindow.py).
 - [GTK Blueprint](./src/libadwaita-widgets/expander-row/ui/MainWindow.blp).
 - [Python load ui](./src/libadwaita-widgets/expander-row/ui/MainWindow.py).
@@ -734,7 +732,7 @@ Pango tags
 
 ![Adw.MessageDialog](./docs/images/libadwaita-widgets/message-dialog.webp "Adw.MessageDialog")
 
-- [Informações do widget](./docs/widgets-info/AdwMessageDialog).
+- [Informações do widget](./docs/widgets-info/AdwMessageDialog.md).
 - [Python](./src/libadwaita-widgets/message-dialog/MainWindow.py).
 - [GTK Blueprint](./src/libadwaita-widgets/message-dialog/ui/AdwMessageDialog.blp).
 - [Python load ui](./src/libadwaita-widgets/message-dialog/ui/MainWindow.py).
@@ -746,7 +744,7 @@ Pango tags
 
 ![Adw.NavigationSplitView](./docs/images/libadwaita-widgets/navigation-split-view.webp "Adw.NavigationSplitView")
 
-- [Informações do widget](./docs/widgets-info/AdwNavigationSplitView).
+- [Informações do widget](./docs/widgets-info/AdwNavigationSplitView.md).
 - [GTK Blueprint](./src/libadwaita-widgets/navigation-split-view/ui/MainWindow.blp).
 - [Python load ui](./src/libadwaita-widgets/navigation-split-view/ui/MainWindow.py).
 - [UI](./src/libadwaita-widgets/navigation-split-view/ui/MainWindow.ui).
@@ -757,7 +755,7 @@ Pango tags
 
 ![Adw.PasswordEntryRow](./docs/images/libadwaita-widgets/password-entry-row.webp "Adw.PasswordEntryRow")
 
-- [Informações do widget](./docs/widgets-info/AdwPasswordEntryRow).
+- [Informações do widget](./docs/widgets-info/AdwPasswordEntryRow.md).
 - [Python](./src/libadwaita-widgets/password-entry-row/MainWindow.py).
 - [GTK Blueprint](./src/libadwaita-widgets/password-entry-row/ui/MainWindow.blp).
 - [Python load ui](./src/libadwaita-widgets/password-entry-row/ui/MainWindow.py).
@@ -803,7 +801,7 @@ Pango tags
 
 ![Adw.StatusPage](./docs/images/libadwaita-widgets/status-page.webp "Adw.StatusPage")
 
-- [Informações do widget](./docs/widgets-info/AdwStatusPage).
+- [Informações do widget](./docs/widgets-info/AdwStatusPage.md).
 - [Python](./src/libadwaita-widgets/status-page/MainWindow.py).
 - [GTK Blueprint](./src/libadwaita-widgets/status-page/ui/MainWindow.blp).
 - [Python load ui](./src/libadwaita-widgets/status-page/ui/MainWindow.py).
@@ -826,7 +824,7 @@ Pango tags
 
 ![Adw.ToolbarView](./docs/images/libadwaita-widgets/toolbar-view.webp "Adw.ToolbarView")
 
-- [Informações do widget](./docs/widgets-info/AdwToolbarView).
+- [Informações do widget](./docs/widgets-info/AdwToolbarView.md).
 - [Python](./src/libadwaita-widgets/toolbar-view/MainWindow.py).
 
 ---
@@ -835,7 +833,7 @@ Pango tags
 
 ![Adw.ViewStack](./docs/images/libadwaita-widgets/view-stack.webp "Adw.ViewStack")
 
-- [Informações do widget](./docs/widgets-info/AdwViewStack).
+- [Informações do widget](./docs/widgets-info/AdwViewStack.md).
 - [GTK Blueprint](./src/libadwaita-widgets/view-stack/ui/MainWindow.blp).
 - [Python load ui](./src/libadwaita-widgets/view-stack/ui/MainWindow.py).
 - [UI](./src/libadwaita-widgets/view-stack/ui/MainWindow.ui).
