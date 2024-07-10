@@ -24,12 +24,12 @@ corresponding .blp file and regenerate this file with blueprint-compiler.
   <menu id="primary_menu">
     <section>
       <item>
-        <attribute name="label" translatable="true">Preferences</attribute>
+        <attribute name="label" translatable="yes">Preferences</attribute>
         <attribute name="action">app.preferences</attribute>
       </item>
     </section>
     <section>
-      <attribute name="label" translatable="true">Section title</attribute>
+      <attribute name="label" translatable="yes">Section title</attribute>
       <item>
         <attribute name="label">Item 01</attribute>
         <attribute name="action">win.item1</attribute>
@@ -40,9 +40,9 @@ corresponding .blp file and regenerate this file with blueprint-compiler.
       </item>
     </section>
     <submenu>
-      <attribute name="label" translatable="true">Sub-menu title</attribute>
+      <attribute name="label" translatable="yes">Sub-menu title</attribute>
       <item>
-        <attribute name="label" translatable="true">Item 03</attribute>
+        <attribute name="label" translatable="yes">Item 03</attribute>
         <attribute name="action">win.item3</attribute>
       </item>
       <item>

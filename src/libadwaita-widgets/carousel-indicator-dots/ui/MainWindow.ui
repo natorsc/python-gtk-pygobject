@@ -7,7 +7,7 @@ corresponding .blp file and regenerate this file with blueprint-compiler.
 <interface>
   <requires lib="gtk" version="4.0"/>
   <template class="ExampleWindow" parent="AdwApplicationWindow">
-    <property name="title">Python and GTK: PyGObject libadwaita Adw.CarouselIndicatorDots</property>
+    <property name="title">Python - PyGObject - GTK</property>
     <property name="default-width">683</property>
     <property name="default-height">384</property>
     <property name="content">
@@ -95,7 +95,7 @@ corresponding .blp file and regenerate this file with blueprint-compiler.
   <menu id="primary_menu">
     <section>
       <item>
-        <attribute name="label" translatable="true">Preferences</attribute>
+        <attribute name="label" translatable="yes">Preferences</attribute>
         <attribute name="action">app.preferences</attribute>
       </item>
     </section>

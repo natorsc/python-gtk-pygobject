@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-"""Python and GTK: PyGObject Adw.ActionRow"""
+"""Python - GTK - PyGObject."""
 
 import gi
 

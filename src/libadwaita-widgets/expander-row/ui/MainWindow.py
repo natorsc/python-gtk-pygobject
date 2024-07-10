@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-"""Python and GTK: PyGObject Adw.ExpanderRow"""
+"""Python - GTK - PyGObject."""
 
 import sys
 import pathlib

@@ -7,7 +7,7 @@ corresponding .blp file and regenerate this file with blueprint-compiler.
 <interface>
   <requires lib="gtk" version="4.0"/>
   <template class="Page02" parent="AdwNavigationPage">
-    <property name="title" translatable="true">Página 02</property>
+    <property name="title">Python - PyGObject - GTK</property>
     <property name="tag">page02</property>
     <property name="child">
       <object class="AdwToolbarView">
@@ -24,7 +24,7 @@ corresponding .blp file and regenerate this file with blueprint-compiler.
             <property name="margin-start">12</property>
             <child>
               <object class="GtkLabel">
-                <property name="label" translatable="true">Página 02</property>
+                <property name="label" translatable="yes">Página 02</property>
               </object>
             </child>
           </object>

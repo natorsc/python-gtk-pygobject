@@ -7,7 +7,7 @@ corresponding .blp file and regenerate this file with blueprint-compiler.
 <interface>
   <requires lib="gtk" version="4.0"/>
   <template class="ExampleWindow" parent="AdwApplicationWindow">
-    <property name="title">Python and GTK: PyGObject libadwaita Adw.NavigationSplitView</property>
+    <property name="title">Python - PyGObject - GTK</property>
     <property name="default-width">683</property>
     <property name="default-height">384</property>
     <property name="width-request">280</property>
@@ -24,7 +24,7 @@ corresponding .blp file and regenerate this file with blueprint-compiler.
           <object class="AdwNavigationSplitView" id="adw_navigation_split_view">
             <property name="sidebar">
               <object class="AdwNavigationPage">
-                <property name="title" translatable="true">Sidebar</property>
+                <property name="title">Python - PyGObject - GTK</property>
                 <property name="child">
                   <object class="AdwToolbarView">
                     <child type="top">
@@ -50,14 +50,14 @@ corresponding .blp file and regenerate this file with blueprint-compiler.
                             <child>
                               <object class="AdwActionRow">
                                 <property name="name">page01</property>
-                                <property name="title" translatable="true">Página 01</property>
+                                <property name="title">Python - PyGObject - GTK</property>
                                 <property name="activatable">true</property>
                               </object>
                             </child>
                             <child>
                               <object class="AdwActionRow">
                                 <property name="name">page02</property>
-                                <property name="title" translatable="true">Página 02</property>
+                                <property name="title">Python - PyGObject - GTK</property>
                                 <property name="activatable">true</property>
                               </object>
                             </child>
@@ -71,7 +71,7 @@ corresponding .blp file and regenerate this file with blueprint-compiler.
             </property>
             <property name="content">
               <object class="AdwNavigationPage">
-                <property name="title" translatable="true">Content</property>
+                <property name="title">Python - PyGObject - GTK</property>
                 <property name="tag">content</property>
                 <property name="child">
                   <object class="AdwToolbarView" id="adw_toolbar_view_content">
@@ -105,7 +105,7 @@ corresponding .blp file and regenerate this file with blueprint-compiler.
   <menu id="primary_menu">
     <section>
       <item>
-        <attribute name="label" translatable="true">Preferences</attribute>
+        <attribute name="label" translatable="yes">Preferences</attribute>
         <attribute name="action">app.preferences</attribute>
       </item>
     </section>

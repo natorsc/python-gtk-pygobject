@@ -839,3 +839,379 @@ Pango tags
 - [UI](./src/libadwaita-widgets/view-stack/ui/MainWindow.ui).
 
 ---
+
+### Libadwaita style classes
+
+#### Background
+
+![Libaswaita style class background](./docs/images/libadwaita-style-classes "Libaswaita style class background")
+
+- [Python](./src/libadwaita-style-classes).
+- [GTK Blueprint](./src/libadwaita-style-classes).
+- [Python load ui](./src/libadwaita-style-classes).
+- [UI](./src/libadwaita-style-classes).
+
+---
+
+#### Body
+
+![Libaswaita style class body](./docs/images/libadwaita-style-classes "Libaswaita style class body")
+
+- [Python](./src/libadwaita-style-classes).
+- [GTK Blueprint](./src/libadwaita-style-classes).
+- [Python load ui](./src/libadwaita-style-classes).
+- [UI](./src/libadwaita-style-classes).
+
+---
+
+#### Boxed list
+
+![Libaswaita style class boxed-list](./docs/images/libadwaita-style-classes "Libaswaita style class boxed-list")
+
+- [Python](./src/libadwaita-style-classes).
+- [GTK Blueprint](./src/libadwaita-style-classes).
+- [Python load ui](./src/libadwaita-style-classes).
+- [UI](./src/libadwaita-style-classes).
+
+---
+
+#### Boxed list separate
+
+![Libaswaita style class boxed-list-separate](./docs/images/libadwaita-style-classes "Libaswaita style class boxed-list-separate")
+
+- [Python](./src/libadwaita-style-classes).
+- [GTK Blueprint](./src/libadwaita-style-classes).
+- [Python load ui](./src/libadwaita-style-classes).
+- [UI](./src/libadwaita-style-classes).
+
+---
+
+#### Caption
+
+![Libaswaita style class caption](./docs/images/libadwaita-style-classes "Libaswaita style class caption")
+
+- [Python](./src/libadwaita-style-classes).
+- [GTK Blueprint](./src/libadwaita-style-classes).
+- [Python load ui](./src/libadwaita-style-classes).
+- [UI](./src/libadwaita-style-classes).
+
+---
+
+#### Caption heading
+
+![Libaswaita style class caption-heading](./docs/images/libadwaita-style-classes "Libaswaita style class caption-heading")
+
+- [Python](./src/libadwaita-style-classes).
+- [GTK Blueprint](./src/libadwaita-style-classes).
+- [Python load ui](./src/libadwaita-style-classes).
+- [UI](./src/libadwaita-style-classes).
+
+---
+
+#### Card
+
+![Libaswaita style class card](./docs/images/libadwaita-style-classes "Libaswaita style class card")
+
+- [Python](./src/libadwaita-style-classes).
+- [GTK Blueprint](./src/libadwaita-style-classes).
+- [Python load ui](./src/libadwaita-style-classes).
+- [UI](./src/libadwaita-style-classes).
+
+---
+
+#### Circular
+
+![Libaswaita style class circular](./docs/images/libadwaita-style-classes "Libaswaita style class circular")
+
+- [Python](./src/libadwaita-style-classes).
+- [GTK Blueprint](./src/libadwaita-style-classes).
+- [Python load ui](./src/libadwaita-style-classes).
+- [UI](./src/libadwaita-style-classes).
+
+---
+
+#### Colors
+
+![Libaswaita style class colors](./docs/images/libadwaita-style-classes "Libaswaita style class colors")
+
+- [Python](./src/libadwaita-style-classes).
+- [GTK Blueprint](./src/libadwaita-style-classes).
+- [Python load ui](./src/libadwaita-style-classes).
+- [UI](./src/libadwaita-style-classes).
+
+---
+
+#### Compact
+
+![Libaswaita style class compact](./docs/images/libadwaita-style-classes "Libaswaita style class compact")
+
+- [Python](./src/libadwaita-style-classes).
+- [GTK Blueprint](./src/libadwaita-style-classes).
+- [Python load ui](./src/libadwaita-style-classes).
+- [UI](./src/libadwaita-style-classes).
+
+---
+
+#### Destructive action
+
+![Libaswaita style class destructive-action](./docs/images/libadwaita-style-classes "Libaswaita style class destructive-action")
+
+- [Python](./src/libadwaita-style-classes).
+- [GTK Blueprint](./src/libadwaita-style-classes).
+- [Python load ui](./src/libadwaita-style-classes).
+- [UI](./src/libadwaita-style-classes).
+
+---
+
+#### Devel
+
+![Libaswaita style class devel](./docs/images/libadwaita-style-classes "Libaswaita style class devel")
+
+- [Python](./src/libadwaita-style-classes).
+- [GTK Blueprint](./src/libadwaita-style-classes).
+- [Python load ui](./src/libadwaita-style-classes).
+- [UI](./src/libadwaita-style-classes).
+
+---
+
+#### Dim label
+
+![Libaswaita style class dim-label](./docs/images/libadwaita-style-classes "Libaswaita style class dim-label")
+
+- [Python](./src/libadwaita-style-classes).
+- [GTK Blueprint](./src/libadwaita-style-classes).
+- [Python load ui](./src/libadwaita-style-classes).
+- [UI](./src/libadwaita-style-classes).
+
+---
+
+#### Flat
+
+![Libaswaita style class flat](./docs/images/libadwaita-style-classes "Libaswaita style class flat")
+
+- [Python](./src/libadwaita-style-classes).
+- [GTK Blueprint](./src/libadwaita-style-classes).
+- [Python load ui](./src/libadwaita-style-classes).
+- [UI](./src/libadwaita-style-classes).
+
+---
+
+#### Frame
+
+![Libaswaita style class frame](./docs/images/libadwaita-style-classes "Libaswaita style class frame")
+
+- [Python](./src/libadwaita-style-classes).
+- [GTK Blueprint](./src/libadwaita-style-classes).
+- [Python load ui](./src/libadwaita-style-classes).
+- [UI](./src/libadwaita-style-classes).
+
+---
+
+#### Heading
+
+![Libaswaita style class heading](./docs/images/libadwaita-style-classes "Libaswaita style class heading")
+
+- [Python](./src/libadwaita-style-classes).
+- [GTK Blueprint](./src/libadwaita-style-classes).
+- [Python load ui](./src/libadwaita-style-classes).
+- [UI](./src/libadwaita-style-classes).
+
+---
+
+#### Icon dropshadow
+
+![Libaswaita style class icon-dropshadow](./docs/images/libadwaita-style-classes "Libaswaita style class icon-dropshadow")
+
+- [Python](./src/libadwaita-style-classes).
+- [GTK Blueprint](./src/libadwaita-style-classes).
+- [Python load ui](./src/libadwaita-style-classes).
+- [UI](./src/libadwaita-style-classes).
+
+---
+
+#### Inline
+
+![Libaswaita style class inline](./docs/images/libadwaita-style-classes "Libaswaita style class inline")
+
+- [Python](./src/libadwaita-style-classes).
+- [GTK Blueprint](./src/libadwaita-style-classes).
+- [Python load ui](./src/libadwaita-style-classes).
+- [UI](./src/libadwaita-style-classes).
+
+---
+
+#### Linked
+
+![Libaswaita style class linked](./docs/images/libadwaita-style-classes "Libaswaita style class linked")
+
+- [Python](./src/libadwaita-style-classes).
+- [GTK Blueprint](./src/libadwaita-style-classes).
+- [Python load ui](./src/libadwaita-style-classes).
+- [UI](./src/libadwaita-style-classes).
+
+---
+
+#### Lowres icon
+
+![Libaswaita style class lowres-icon](./docs/images/libadwaita-style-classes "Libaswaita style class lowres-icon")
+
+- [Python](./src/libadwaita-style-classes).
+- [GTK Blueprint](./src/libadwaita-style-classes).
+- [Python load ui](./src/libadwaita-style-classes).
+- [UI](./src/libadwaita-style-classes).
+
+---
+
+#### Menu
+
+![Libaswaita style class menu](./docs/images/libadwaita-style-classes "Libaswaita style class menu")
+
+- [Python](./src/libadwaita-style-classes).
+- [GTK Blueprint](./src/libadwaita-style-classes).
+- [Python load ui](./src/libadwaita-style-classes).
+- [UI](./src/libadwaita-style-classes).
+
+---
+
+#### Monospace
+
+![Libaswaita style class monospace](./docs/images/libadwaita-style-classes "Libaswaita style class monospace")
+
+- [Python](./src/libadwaita-style-classes).
+- [GTK Blueprint](./src/libadwaita-style-classes).
+- [Python load ui](./src/libadwaita-style-classes).
+- [UI](./src/libadwaita-style-classes).
+
+---
+
+#### Navigation sidebar
+
+![Libaswaita style class navigation-sidebar](./docs/images/libadwaita-style-classes "Libaswaita style class navigation-sidebar")
+
+- [Python](./src/libadwaita-style-classes).
+- [GTK Blueprint](./src/libadwaita-style-classes).
+- [Python load ui](./src/libadwaita-style-classes).
+- [UI](./src/libadwaita-style-classes).
+
+---
+
+#### Numeric
+
+![Libaswaita style class numeric](./docs/images/libadwaita-style-classes "Libaswaita style class numeric")
+
+- [Python](./src/libadwaita-style-classes).
+- [GTK Blueprint](./src/libadwaita-style-classes).
+- [Python load ui](./src/libadwaita-style-classes).
+- [UI](./src/libadwaita-style-classes).
+
+---
+
+#### Opaque
+
+![Libaswaita style class opaque](./docs/images/libadwaita-style-classes "Libaswaita style class opaque")
+
+- [Python](./src/libadwaita-style-classes).
+- [GTK Blueprint](./src/libadwaita-style-classes).
+- [Python load ui](./src/libadwaita-style-classes).
+- [UI](./src/libadwaita-style-classes).
+
+---
+
+#### Osd
+
+![Libaswaita style class ](./docs/images/libadwaita-style-classes "Libaswaita style class ")
+
+- [Python](./src/libadwaita-style-classes).
+- [GTK Blueprint](./src/libadwaita-style-classes).
+- [Python load ui](./src/libadwaita-style-classes).
+- [UI](./src/libadwaita-style-classes).
+
+---
+
+#### Pill
+
+![Libaswaita style class pill](./docs/images/libadwaita-style-classes "Libaswaita style class pill")
+
+- [Python](./src/libadwaita-style-classes).
+- [GTK Blueprint](./src/libadwaita-style-classes).
+- [Python load ui](./src/libadwaita-style-classes).
+- [UI](./src/libadwaita-style-classes).
+
+---
+
+#### Property
+
+![Libaswaita style class property](./docs/images/libadwaita-style-classes "Libaswaita style class property")
+
+- [Python](./src/libadwaita-style-classes).
+- [GTK Blueprint](./src/libadwaita-style-classes).
+- [Python load ui](./src/libadwaita-style-classes).
+- [UI](./src/libadwaita-style-classes).
+
+---
+
+#### Selection mode
+
+![Libaswaita style class selection-mode](./docs/images/libadwaita-style-classes "Libaswaita style class selection-mode")
+
+- [Python](./src/libadwaita-style-classes).
+- [GTK Blueprint](./src/libadwaita-style-classes).
+- [Python load ui](./src/libadwaita-style-classes).
+- [UI](./src/libadwaita-style-classes).
+
+---
+
+#### Spacer
+
+![Libaswaita style class spacer](./docs/images/libadwaita-style-classes "Libaswaita style class spacer")
+
+- [Python](./src/libadwaita-style-classes).
+- [GTK Blueprint](./src/libadwaita-style-classes).
+- [Python load ui](./src/libadwaita-style-classes).
+- [UI](./src/libadwaita-style-classes).
+
+---
+
+#### Suggested action
+
+![Libaswaita style class suggested-action](./docs/images/libadwaita-style-classes "Libaswaita style class suggested-action")
+
+- [Python](./src/libadwaita-style-classes).
+- [GTK Blueprint](./src/libadwaita-style-classes).
+- [Python load ui](./src/libadwaita-style-classes).
+- [UI](./src/libadwaita-style-classes).
+
+---
+
+#### Title
+
+![Libaswaita style class title](./docs/images/libadwaita-style-classes "Libaswaita style class title")
+
+- [Python](./src/libadwaita-style-classes).
+- [GTK Blueprint](./src/libadwaita-style-classes).
+- [Python load ui](./src/libadwaita-style-classes).
+- [UI](./src/libadwaita-style-classes).
+
+---
+
+#### Toolbar
+
+![Libaswaita style class toolbar](./docs/images/libadwaita-style-classes "Libaswaita style class toolbar")
+
+- [Python](./src/libadwaita-style-classes).
+- [GTK Blueprint](./src/libadwaita-style-classes).
+- [Python load ui](./src/libadwaita-style-classes).
+- [UI](./src/libadwaita-style-classes).
+
+---
+
+#### View
+
+![Libaswaita style class view](./docs/images/libadwaita-style-classes "Libaswaita style class view")
+
+- [Python](./src/libadwaita-style-classes).
+- [GTK Blueprint](./src/libadwaita-style-classes).
+- [Python load ui](./src/libadwaita-style-classes).
+- [UI](./src/libadwaita-style-classes).
+
+---

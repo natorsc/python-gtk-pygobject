@@ -7,7 +7,7 @@ corresponding .blp file and regenerate this file with blueprint-compiler.
 <interface>
   <requires lib="gtk" version="4.0"/>
   <template class="ExampleWindow" parent="AdwApplicationWindow">
-    <property name="title">Python and GTK: PyGObject Adw.ComboRow</property>
+    <property name="title">Python - PyGObject - GTK</property>
     <property name="default-width">683</property>
     <property name="default-height">384</property>
     <property name="content">
@@ -40,7 +40,7 @@ corresponding .blp file and regenerate this file with blueprint-compiler.
                     </style>
                     <child>
                       <object class="AdwComboRow">
-                        <property name="title">Title 01</property>
+                        <property name="title">Python - PyGObject - GTK</property>
                         <property name="model">model</property>
                         <signal name="notify::selected" handler="on_adw_combo_row_selected"/>
                         <signal name="notify::selected-item" handler="on_adw_combo_row_selected_item"/>
@@ -53,7 +53,7 @@ corresponding .blp file and regenerate this file with blueprint-compiler.
                     </child>
                     <child>
                       <object class="AdwComboRow">
-                        <property name="title">Title 02</property>
+                        <property name="title">Python - PyGObject - GTK</property>
                         <property name="model">model</property>
                         <signal name="notify::selected" handler="on_adw_combo_row_selected"/>
                         <signal name="notify::selected-item" handler="on_adw_combo_row_selected_item"/>
@@ -66,7 +66,7 @@ corresponding .blp file and regenerate this file with blueprint-compiler.
                     </child>
                     <child>
                       <object class="AdwComboRow">
-                        <property name="title">Title 03</property>
+                        <property name="title">Python - PyGObject - GTK</property>
                         <property name="model">model</property>
                         <signal name="notify::selected" handler="on_adw_combo_row_selected"/>
                         <signal name="notify::selected-item" handler="on_adw_combo_row_selected_item"/>
@@ -79,7 +79,7 @@ corresponding .blp file and regenerate this file with blueprint-compiler.
                     </child>
                     <child>
                       <object class="AdwComboRow">
-                        <property name="title">Title 04</property>
+                        <property name="title">Python - PyGObject - GTK</property>
                         <property name="model">model</property>
                         <signal name="notify::selected" handler="on_adw_combo_row_selected"/>
                         <signal name="notify::selected-item" handler="on_adw_combo_row_selected_item"/>
@@ -92,7 +92,7 @@ corresponding .blp file and regenerate this file with blueprint-compiler.
                     </child>
                     <child>
                       <object class="AdwComboRow">
-                        <property name="title">Title 05</property>
+                        <property name="title">Python - PyGObject - GTK</property>
                         <property name="model">model</property>
                         <signal name="notify::selected" handler="on_adw_combo_row_selected"/>
                         <signal name="notify::selected-item" handler="on_adw_combo_row_selected_item"/>
@@ -124,7 +124,7 @@ corresponding .blp file and regenerate this file with blueprint-compiler.
   <menu id="primary_menu">
     <section>
       <item>
-        <attribute name="label" translatable="true">Preferences</attribute>
+        <attribute name="label" translatable="yes">Preferences</attribute>
         <attribute name="action">app.preferences</attribute>
       </item>
     </section>

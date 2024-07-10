@@ -7,7 +7,7 @@ corresponding .blp file and regenerate this file with blueprint-compiler.
 <interface>
   <requires lib="gtk" version="4.0"/>
   <template class="ExampleWindow" parent="AdwApplicationWindow">
-    <property name="title">Python and GTK: PyGObject libadwaita Adw.PreferencesPage</property>
+    <property name="title">Python - PyGObject - GTK</property>
     <property name="default-width">683</property>
     <property name="default-height">384</property>
     <property name="content">
@@ -36,14 +36,14 @@ corresponding .blp file and regenerate this file with blueprint-compiler.
                   <object class="AdwPreferencesPage">
                     <child>
                       <object class="AdwPreferencesGroup">
-                        <property name="title">AdwPreferencesPage</property>
+                        <property name="title">Python - PyGObject - GTK</property>
                         <property name="description">AdwPreferencesGroup</property>
                         <property name="header-suffix">header_suffix</property>
                         <child>
                           <object class="AdwActionRow">
                             <property name="icon-name">edit-find-symbolic</property>
-                            <property name="title">Libadwaita</property>
-                            <property name="subtitle">Adw.ActionRow()</property>
+                            <property name="title">Python - PyGObject - GTK</property>
+                            <property name="subtitle">Python - PyGObject - GTK</property>
                             <child>
                               <object class="GtkSwitch">
                                 <property name="valign">3</property>
@@ -55,9 +55,8 @@ corresponding .blp file and regenerate this file with blueprint-compiler.
                         <child>
                           <object class="AdwActionRow">
                             <property name="icon-name">edit-find-symbolic</property>
-                            <property name="title">Libadwaita - Clicking on the widget line toggles it on and off
-</property>
-                            <property name="subtitle">Adw.ActionRow()</property>
+                            <property name="title">Python - PyGObject - GTK</property>
+                            <property name="subtitle">Python - PyGObject - GTK</property>
                             <property name="activatable-widget">switch</property>
                             <child>
                               <object class="GtkSwitch" id="switch">
@@ -88,7 +87,7 @@ corresponding .blp file and regenerate this file with blueprint-compiler.
   <menu id="primary_menu">
     <section>
       <item>
-        <attribute name="label" translatable="true">Preferences</attribute>
+        <attribute name="label" translatable="yes">Preferences</attribute>
         <attribute name="action">app.preferences</attribute>
       </item>
     </section>

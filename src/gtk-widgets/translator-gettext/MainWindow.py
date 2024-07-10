@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-"""Python - PyGObject - GTK"""
+"""Python - GTK - PyGObject."""
 
 import configparser
 import gettext

@@ -7,14 +7,14 @@ corresponding .blp file and regenerate this file with blueprint-compiler.
 <interface>
   <requires lib="gtk" version="4.0"/>
   <template class="MessageDialog" parent="AdwMessageDialog">
-    <property name="heading" translatable="true">Dialog header</property>
-    <property name="body" translatable="true">Body of the dialog window, you can use markup.</property>
+    <property name="heading" translatable="yes">Dialog header</property>
+    <property name="body" translatable="yes">Body of the dialog window, you can use markup.</property>
     <property name="default-response">OK</property>
     <property name="close-response">Cancelar</property>
     <signal name="response" handler="dialog_response"/>
     <responses>
-      <response id="cancel" translatable="true" appearance="destructive">_Cancelar</response>
-      <response id="ok" translatable="true" appearance="suggested">_OK</response>
+      <response id="cancel" translatable="yes" appearance="destructive">_Cancelar</response>
+      <response id="ok" translatable="yes" appearance="suggested">_OK</response>
     </responses>
   </template>
 </interface>

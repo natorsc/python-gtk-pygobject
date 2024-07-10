@@ -35,5 +35,6 @@ def blp_compile(input: pathlib = PROJ_DIR) -> None:
 
 if __name__ == '__main__':
     print('[!] Converting (blp -> ui), please wait... [!]')
-    blp_compile(input=TEST_DIR)
+    blp_compile()
+    # blp_compile(input=TEST_DIR)
     print('[!] Conversion finished [!]')

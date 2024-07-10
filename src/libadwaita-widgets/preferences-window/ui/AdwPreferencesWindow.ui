@@ -7,7 +7,7 @@ corresponding .blp file and regenerate this file with blueprint-compiler.
 <interface>
   <requires lib="gtk" version="4.0"/>
   <template class="PreferencesWindow" parent="AdwPreferencesWindow">
-    <property name="title">Python and GTK: PyGObject libadwaita Adw.PreferencesWindow</property>
+    <property name="title">Python - PyGObject - GTK</property>
     <property name="default-width">683</property>
     <property name="default-height">384</property>
     <child>
@@ -29,13 +29,13 @@ corresponding .blp file and regenerate this file with blueprint-compiler.
                   <object class="AdwPreferencesPage">
                     <child>
                       <object class="AdwPreferencesGroup">
-                        <property name="title">AdwPreferencesPage</property>
+                        <property name="title">Python - PyGObject - GTK</property>
                         <property name="description">AdwPreferencesGroup</property>
                         <child>
                           <object class="AdwActionRow">
                             <property name="icon-name">edit-find-symbolic</property>
-                            <property name="title">Lorem ipsum</property>
-                            <property name="subtitle">Lorem ipsum</property>
+                            <property name="title">Python - PyGObject - GTK</property>
+                            <property name="subtitle">Python - PyGObject - GTK</property>
                           </object>
                         </child>
                       </object>

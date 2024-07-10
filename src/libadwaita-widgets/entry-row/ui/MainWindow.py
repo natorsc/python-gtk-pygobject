@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-"""Python and GTK: PyGObject Gtk.ListBox() Adw.EntryRow"""
+"""Python - GTK - PyGObject."""
 
 import sys
 import pathlib

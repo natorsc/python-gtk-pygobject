@@ -7,7 +7,7 @@ corresponding .blp file and regenerate this file with blueprint-compiler.
 <interface>
   <requires lib="gtk" version="4.0"/>
   <template class="ExampleWindow" parent="AdwApplicationWindow">
-    <property name="title">Python and GTK: PyGObject libadwaita Adw.SplitButton ui file</property>
+    <property name="title">Python - PyGObject - GTK</property>
     <property name="default-width">683</property>
     <property name="default-height">384</property>
     <property name="content">
@@ -40,7 +40,7 @@ corresponding .blp file and regenerate this file with blueprint-compiler.
                     <property name="child">
                       <object class="AdwButtonContent">
                         <property name="icon-name">document-open-symbolic</property>
-                        <property name="label" translatable="true">_Open</property>
+                        <property name="label" translatable="yes">_Open</property>
                         <property name="use-underline">true</property>
                       </object>
                     </property>
@@ -59,29 +59,29 @@ corresponding .blp file and regenerate this file with blueprint-compiler.
   <menu id="adw_split_button_menu">
     <section>
       <item>
-        <attribute name="label" translatable="true">Item 01</attribute>
+        <attribute name="label" translatable="yes">Item 01</attribute>
         <attribute name="action">app.split-button-menu-item-activate</attribute>
       </item>
       <submenu>
-        <attribute name="label" translatable="true">Submenu</attribute>
+        <attribute name="label" translatable="yes">Submenu</attribute>
         <item>
-          <attribute name="label" translatable="true">Item 02</attribute>
+          <attribute name="label" translatable="yes">Item 02</attribute>
           <attribute name="action">app.split-button-menu-item-activate</attribute>
         </item>
       </submenu>
       <section>
-        <attribute name="label" translatable="true">Editar</attribute>
+        <attribute name="label" translatable="yes">Editar</attribute>
         <item>
-          <attribute name="label" translatable="true">Item 03</attribute>
+          <attribute name="label" translatable="yes">Item 03</attribute>
           <attribute name="action">app.split-button-menu-item-activate</attribute>
         </item>
         <item>
-          <attribute name="label" translatable="true">Item 04</attribute>
+          <attribute name="label" translatable="yes">Item 04</attribute>
           <attribute name="action">app.split-button-menu-item-activate</attribute>
         </item>
       </section>
       <item>
-        <attribute name="label" translatable="true">Sair</attribute>
+        <attribute name="label" translatable="yes">Sair</attribute>
         <attribute name="action">app.quit</attribute>
       </item>
     </section>
@@ -89,7 +89,7 @@ corresponding .blp file and regenerate this file with blueprint-compiler.
   <menu id="primary_menu">
     <section>
       <item>
-        <attribute name="label" translatable="true">Preferences</attribute>
+        <attribute name="label" translatable="yes">Preferences</attribute>
         <attribute name="action">app.preferences</attribute>
       </item>
     </section>

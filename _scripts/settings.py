@@ -1,11 +1,10 @@
 # -*- coding: utf-8 -*-
-"""Python - PyGObject - GTK"""
+"""Python - GTK - PyGObject."""
 
 import logging
 import pathlib
 
-from gi.repository import Adw, GObject, Gtk
-from pathlib import Path
+from gi.repository import Adw, Gtk
 
 import gi
 

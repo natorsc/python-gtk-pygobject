@@ -7,7 +7,7 @@ corresponding .blp file and regenerate this file with blueprint-compiler.
 <interface>
   <requires lib="gtk" version="4.0"/>
   <template class="ExampleWindow" parent="AdwApplicationWindow">
-    <property name="title">Python and GTK: PyGObject Adw.EntryRow</property>
+    <property name="title">Python - PyGObject - GTK</property>
     <property name="default-width">683</property>
     <property name="default-height">384</property>
     <property name="content">
@@ -40,7 +40,7 @@ corresponding .blp file and regenerate this file with blueprint-compiler.
                     </style>
                     <child>
                       <object class="AdwEntryRow">
-                        <property name="title">Title 01</property>
+                        <property name="title">Python - PyGObject - GTK</property>
                         <property name="activates-default">true</property>
                         <property name="show-apply-button">true</property>
                         <signal name="apply" handler="on_apply_button_pressed"/>
@@ -53,7 +53,7 @@ corresponding .blp file and regenerate this file with blueprint-compiler.
                     </child>
                     <child>
                       <object class="AdwEntryRow">
-                        <property name="title">Title 02</property>
+                        <property name="title">Python - PyGObject - GTK</property>
                         <property name="activates-default">true</property>
                         <property name="show-apply-button">true</property>
                         <signal name="apply" handler="on_apply_button_pressed"/>
@@ -66,7 +66,7 @@ corresponding .blp file and regenerate this file with blueprint-compiler.
                     </child>
                     <child>
                       <object class="AdwEntryRow">
-                        <property name="title">Title 03</property>
+                        <property name="title">Python - PyGObject - GTK</property>
                         <property name="activates-default">true</property>
                         <property name="show-apply-button">true</property>
                         <signal name="apply" handler="on_apply_button_pressed"/>
@@ -79,7 +79,7 @@ corresponding .blp file and regenerate this file with blueprint-compiler.
                     </child>
                     <child>
                       <object class="AdwEntryRow">
-                        <property name="title">Title 04</property>
+                        <property name="title">Python - PyGObject - GTK</property>
                         <property name="activates-default">true</property>
                         <property name="show-apply-button">true</property>
                         <signal name="apply" handler="on_apply_button_pressed"/>
@@ -92,7 +92,7 @@ corresponding .blp file and regenerate this file with blueprint-compiler.
                     </child>
                     <child>
                       <object class="AdwEntryRow">
-                        <property name="title">Title 05</property>
+                        <property name="title">Python - PyGObject - GTK</property>
                         <property name="activates-default">true</property>
                         <property name="show-apply-button">true</property>
                         <signal name="apply" handler="on_apply_button_pressed"/>
@@ -115,7 +115,7 @@ corresponding .blp file and regenerate this file with blueprint-compiler.
   <menu id="primary_menu">
     <section>
       <item>
-        <attribute name="label" translatable="true">Preferences</attribute>
+        <attribute name="label" translatable="yes">Preferences</attribute>
         <attribute name="action">app.preferences</attribute>
       </item>
     </section>

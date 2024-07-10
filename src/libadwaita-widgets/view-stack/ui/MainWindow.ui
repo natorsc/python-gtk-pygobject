@@ -7,7 +7,7 @@ corresponding .blp file and regenerate this file with blueprint-compiler.
 <interface>
   <requires lib="gtk" version="4.0"/>
   <template class="ExampleWindow" parent="AdwApplicationWindow">
-    <property name="title">Python and GTK: PyGObject libadwaita Adw.ViewStack</property>
+    <property name="title">Python - PyGObject - GTK</property>
     <property name="default-width">683</property>
     <property name="default-height">384</property>
     <property name="width-request">500</property>
@@ -38,7 +38,7 @@ corresponding .blp file and regenerate this file with blueprint-compiler.
                 <child>
                   <object class="AdwViewStackPage">
                     <property name="name">page01</property>
-                    <property name="title">Page 01</property>
+                    <property name="title">Python - PyGObject - GTK</property>
                     <property name="child">
                       <object class="GtkBox">
                         <property name="orientation">1</property>
@@ -59,7 +59,7 @@ corresponding .blp file and regenerate this file with blueprint-compiler.
                 <child>
                   <object class="AdwViewStackPage">
                     <property name="name">page02</property>
-                    <property name="title">Page 02</property>
+                    <property name="title">Python - PyGObject - GTK</property>
                     <property name="child">
                       <object class="GtkBox">
                         <property name="orientation">1</property>
