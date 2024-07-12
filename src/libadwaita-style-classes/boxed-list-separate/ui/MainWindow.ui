@@ -36,7 +36,7 @@ corresponding .blp file and regenerate this file with blueprint-compiler.
                   <object class="GtkListBox" id="list_box">
                     <property name="selection-mode">0</property>
                     <style>
-                      <class name="boxed-list"/>
+                      <class name="boxed-list-separate"/>
                     </style>
                     <child>
                       <object class="AdwActionRow">
