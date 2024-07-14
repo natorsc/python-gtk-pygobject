@@ -139,7 +139,7 @@ Thank you for your donation, it is through it that I am able to maintain this co
 
 ![Gtk.ActionBar](./docs/images/gtk-widgets/actionbar.webp "Gtk.ActionBar")
 
-- [Widget info](./docs/widgets-info/GtkActionBar.md).
+- [Informações do widget](./docs/widgets-info/GtkActionBar.md).
 - [Python](./src/gtk-widgets/actionbar/MainWindow.py).
 - [GTK Blueprint](./src/gtk-widgets/actionbar/ui/MainWindow.blp).
 - [Python load ui](./src/gtk-widgets/actionbar/ui/MainWindow.py).
@@ -162,7 +162,7 @@ Thank you for your donation, it is through it that I am able to maintain this co
 
 ![Gtk.ApplicationWindow](./docs/images/gtk-widgets/application-window.webp "Gtk.ApplicationWindow")
 
-- [Widget info](./docs/widgets-info/GtkApplicationWindow.md).
+- [Informações do widget](./docs/widgets-info/GtkApplicationWindow.md).
 - [Python](./src/gtk-widgets/application-window/MainWindow.py).
 - [GTK Blueprint](./src/gtk-widgets/application-window/ui/MainWindow.blp).
 - [Python load ui](./src/gtk-widgets/application-window/ui/MainWindow.py).
@@ -174,7 +174,7 @@ Thank you for your donation, it is through it that I am able to maintain this co
 
 ![Gtk.Box (horizontal)](./docs/images/gtk-widgets/box-horizontal.webp "Gtk.Box (horizontal)")
 
-- [Widget info](./docs/widgets-info/GtkBox.md).
+- [Informações do widget](./docs/widgets-info/GtkBox.md).
 - [Python](./src/gtk-widgets/box-horizontal/MainWindow.py).
 - [GTK Blueprint](./src/gtk-widgets/box-horizontal/ui/MainWindow.blp).
 - [Python load ui](./src/gtk-widgets/box-horizontal/ui/MainWindow.py).
@@ -186,7 +186,7 @@ Thank you for your donation, it is through it that I am able to maintain this co
 
 ![Gtk.Box (vertical)](./docs/images/gtk-widgets/box-vertical.webp "Gtk.Box (vertical)")
 
-- [Widget info](./docs/widgets-info/GtkBox.md).
+- [Informações do widget](./docs/widgets-info/GtkBox.md).
 - [Python](./src/gtk-widgets/box-vertical/MainWindow.py).
 - [GTK Blueprint](./src/gtk-widgets/box-vertical/ui/MainWindow.blp).
 - [Python load ui](./src/gtk-widgets/box-vertical/ui/MainWindow.py).
@@ -198,7 +198,7 @@ Thank you for your donation, it is through it that I am able to maintain this co
 
 ![Gtk.Button](./docs/images/gtk-widgets/button.webp "Gtk.Button")
 
-- [Widget info](./docs/widgets-info/GtkButton.md).
+- [Informações do widget](./docs/widgets-info/GtkButton.md).
 - [Python](./src/gtk-widgets/button/MainWindow.py).
 - [GTK Blueprint](./src/gtk-widgets/button/ui/MainWindow.blp).
 - [Python load ui](./src/gtk-widgets/button/ui/MainWindow.py).
@@ -210,7 +210,7 @@ Thank you for your donation, it is through it that I am able to maintain this co
 
 ![Gtk.Calendar](./docs/images/gtk-widgets/calendar.webp "Gtk.Calendar")
 
-- [Widget info](./docs/widgets-info/GtkCalendar.md).
+- [Informações do widget](./docs/widgets-info/GtkCalendar.md).
 - [Python](./src/gtk-widgets/calendar/MainWindow.py).
 - [GTK Blueprint](./src/gtk-widgets/calendar/ui/MainWindow.blp).
 - [Python load ui](./src/gtk-widgets/calendar/ui/MainWindow.py).
@@ -222,7 +222,7 @@ Thank you for your donation, it is through it that I am able to maintain this co
 
 ![Gtk.CheckButton](./docs/images/gtk-widgets/check-button.webp "Gtk.CheckButton")
 
-- [Widget info](./docs/widgets-info/GtkCheckButton.md).
+- [Informações do widget](./docs/widgets-info/GtkCheckButton.md).
 - [Python](./src/gtk-widgets/check-button/MainWindow.py).
 - [GTK Blueprint](./src/gtk-widgets/check-button/ui/MainWindow.blp).
 - [Python load ui](./src/gtk-widgets/check-button/ui/MainWindow.py).
@@ -234,7 +234,7 @@ Thank you for your donation, it is through it that I am able to maintain this co
 
 ![Gtk.CheckButton (radio)](./docs/images/gtk-widgets/check-button-radio.webp "Gtk.CheckButton (radio)")
 
-- [Widget info](./docs/widgets-info/GtkCheckButton.md).
+- [Informações do widget](./docs/widgets-info/GtkCheckButton.md).
 - [Python](./src/gtk-widgets/check-button-radio/MainWindow.py).
 - [GTK Blueprint](./src/gtk-widgets/check-button-radio/ui/MainWindow.blp).
 - [Python load ui](./src/gtk-widgets/check-button-radio/ui/MainWindow.py).
@@ -246,7 +246,7 @@ Thank you for your donation, it is through it that I am able to maintain this co
 
 ![Gtk.ColorDialogButton](./docs/images/gtk-widgets/color-dialog-button.webp "Gtk.ColorDialogButton")
 
-- [Widget info](./docs/widgets-info/GtkColorDialogButton.md).
+- [Informações do widget](./docs/widgets-info/GtkColorDialogButton.md).
 - [Python](./src/gtk-widgets/color-dialog-button/MainWindow.py).
 - [GTK Blueprint](./src/gtk-widgets/color-dialog-button/ui/MainWindow.blp).
 - [Python load ui](./src/gtk-widgets/color-dialog-button/ui/MainWindow.py).
@@ -266,7 +266,7 @@ Thank you for your donation, it is through it that I am able to maintain this co
 
 ![Gtk.DropDown](./docs/images/gtk-widgets/drop-down.webp "Gtk.DropDown")
 
-- [Widget info](./docs/widgets-info/GtkDropDown.md).
+- [Informações do widget](./docs/widgets-info/GtkDropDown.md).
 - [Python](./src/gtk-widgets/drop-down/MainWindow.py).
 - [GTK Blueprint](./src/gtk-widgets/drop-down/ui/MainWindow.blp).
 - [Python load ui](./src/gtk-widgets/drop-down/ui/MainWindow.py).
@@ -278,7 +278,7 @@ Thank you for your donation, it is through it that I am able to maintain this co
 
 ![Gtk.Entry](./docs/images/gtk-widgets/entry.webp "Gtk.Entry")
 
-- [Widget info](./docs/widgets-info/GtkEntry.md).
+- [Informações do widget](./docs/widgets-info/GtkEntry.md).
 - [Python](./src/gtk-widgets/entry/MainWindow.py).
 - [GTK Blueprint](./src/gtk-widgets/entry/ui/MainWindow.blp).
 - [Python load ui](./src/gtk-widgets/entry/ui/MainWindow.py).
@@ -323,7 +323,7 @@ Thank you for your donation, it is through it that I am able to maintain this co
 
 ![Gtk.Fixed](./docs/images/gtk-widgets/fixed.webp "Gtk.Fixed")
 
-- [Widget info](./docs/widgets-info/GtkFixed.md).
+- [Informações do widget](./docs/widgets-info/GtkFixed.md).
 - [Python](./src/gtk-widgets/fixed/MainWindow.py).
 - [GTK Blueprint](./src/gtk-widgets/fixed/ui/MainWindow.blp).
 - [Python load ui](./src/gtk-widgets/fixed/ui/MainWindow.py).
@@ -335,7 +335,7 @@ Thank you for your donation, it is through it that I am able to maintain this co
 
 ![Gtk.FlowBox](./docs/images/gtk-widgets/flow-box.webp "Gtk.FlowBox")
 
-- [Widget info](./docs/widgets-info/GtkFlowBox.md).
+- [Informações do widget](./docs/widgets-info/GtkFlowBox.md).
 - [Python](./src/gtk-widgets/flow-box/MainWindow.py).
 - [GTK Blueprint](./src/gtk-widgets/flow-box/ui/MainWindow.blp).
 - [Python load ui](./src/gtk-widgets/flow-box/ui/MainWindow.py).
@@ -347,7 +347,7 @@ Thank you for your donation, it is through it that I am able to maintain this co
 
 ![Gtk.Grid](./docs/images/gtk-widgets/grid.webp "Gtk.Grid")
 
-- [Widget info](./docs/widgets-info/GtkGrid.md).
+- [Informações do widget](./docs/widgets-info/GtkGrid.md).
 - [Python](./src/gtk-widgets/grid/MainWindow.py).
 - [GTK Blueprint](./src/gtk-widgets/grid/ui/MainWindow.blp).
 - [Python load ui](./src/gtk-widgets/grid/ui/MainWindow.py).
@@ -359,7 +359,7 @@ Thank you for your donation, it is through it that I am able to maintain this co
 
 ![Gtk.ApplicatHeaderBarion](./docs/images/gtk-widgets/header-bar.webp "Gtk.HeaderBar")
 
-- [Widget info](./docs/widgets-info/GtkHeaderBar.md).
+- [Informações do widget](./docs/widgets-info/GtkHeaderBar.md).
 - [Python](./src/gtk-widgets/header-bar/MainWindow.py).
 - [GTK Blueprint](./src/gtk-widgets/header-bar/ui/MainWindow.blp).
 - [Python load ui](./src/gtk-widgets/header-bar/ui/MainWindow.py).
@@ -371,7 +371,7 @@ Thank you for your donation, it is through it that I am able to maintain this co
 
 ![Gtk.Image](./docs/images/gtk-widgets/image.webp "Gtk.Image")
 
-- [Widget info](./docs/widgets-info/GtkImage.md).
+- [Informações do widget](./docs/widgets-info/GtkImage.md).
 - [Python](./src/gtk-widgets/image/MainWindow.py).
 - [GTK Blueprint](./src/gtk-widgets/image/ui/MainWindow.blp).
 - [Python load ui](./src/gtk-widgets/image/ui/MainWindow.py).
@@ -383,7 +383,7 @@ Thank you for your donation, it is through it that I am able to maintain this co
 
 ![Gtk.ListBox](./docs/images/gtk-widgets/list-box.webp "Gtk.ListBox")
 
-- [Widget info](./docs/widgets-info/GtkListBox.md).
+- [Informações do widget](./docs/widgets-info/GtkListBox.md).
 - [Python](./src/gtk-widgets/list-box/MainWindow.py).
 - [GTK Blueprint](./src/gtk-widgets/list-box/ui/MainWindow.blp).
 - [Python load ui](./src/gtk-widgets/list-box/ui/MainWindow.py).
@@ -397,7 +397,7 @@ Thank you for your donation, it is through it that I am able to maintain this co
 
 > 🚨 Criar código Python.
 
-- [Widget info](./docs/widgets-info/GtkListView.md).
+- [Informações do widget](./docs/widgets-info/GtkListView.md).
 - [Python](#gtklistview).
 - [GTK Blueprint](./src/gtk-widgets/list-view/ui/MainWindow.blp).
 - [Python load ui](./src/gtk-widgets/list-view/ui/MainWindow.py).
@@ -409,7 +409,7 @@ Thank you for your donation, it is through it that I am able to maintain this co
 
 ![Gtk.MenuButton](./docs/images/gtk-widgets/menu-button.webp "Gtk.MenuButton")
 
-- [Widget info](./docs/widgets-info/GtkMenuButton.md).
+- [Informações do widget](./docs/widgets-info/GtkMenuButton.md).
 - [Python](./src/gtk-widgets/menu-button/MainWindow.py).
 - [GTK Blueprint](./src/gtk-widgets/menu-button/ui/MainWindow.blp).
 - [Python load ui](./src/gtk-widgets/menu-button/ui/MainWindow.py).
@@ -421,7 +421,7 @@ Thank you for your donation, it is through it that I am able to maintain this co
 
 ![Gtk.Overlay](./docs/images/gtk-widgets/overlay.webp "Gtk.Overlay")
 
-- [Widget info](./docs/widgets-info/GtkOverlay.md).
+- [Informações do widget](./docs/widgets-info/GtkOverlay.md).
 - [Python](./src/gtk-widgets/overlay/MainWindow.py).
 - [GTK Blueprint](./src/gtk-widgets/overlay/ui/MainWindow.blp).
 - [Python load ui](./src/gtk-widgets/overlay/ui/MainWindow.py).
@@ -445,7 +445,7 @@ Pango tags
 
 ![Gtk.Picture](./docs/images/gtk-widgets/picture.webp "Gtk.Picture")
 
-- [Widget info](./docs/widgets-info/GtkPicture.md).
+- [Informações do widget](./docs/widgets-info/GtkPicture.md).
 - [Python](./src/gtk-widgets/picture/MainWindow.py).
 - [GTK Blueprint](./src/gtk-widgets/picture/ui/MainWindow.blp).
 - [Python load ui](./src/gtk-widgets/picture/ui/MainWindow.py).
@@ -468,7 +468,7 @@ Pango tags
 
 ![Gtk.SearchBar](./docs/images/gtk-widgets/search-bar.webp "Gtk.SearchBar")
 
-- [Widget info](./docs/widgets-info/GtkSearchBar.md).
+- [Informações do widget](./docs/widgets-info/GtkSearchBar.md).
 - [Python](./src/gtk-widgets/search-bar/MainWindow.py).
 - [GTK Blueprint](./src/gtk-widgets/search-bar/ui/MainWindow.blp).
 - [Python load ui](./src/gtk-widgets/search-bar/ui/MainWindow.py).
@@ -482,7 +482,7 @@ Pango tags
 
 > 🚨 Criar código Python.
 
-- [Widget info](./docs/widgets-info/GtkShortcutsWindow.md).
+- [Informações do widget](./docs/widgets-info/GtkShortcutsWindow.md).
 - [GTK Blueprint](./src/gtk-widgets/shortcuts-window/ui/ShortcutsWindow.blp).
 - [UI](./src/gtk-widgets/shortcuts-window/ui/ShortcutsWindow.ui).
 
@@ -503,7 +503,7 @@ Pango tags
 
 ![Gtk.StackSidebar](./docs/images/gtk-widgets/stack-sidebar.webp "Gtk.StackSidebar")
 
-- [Widget info](./docs/widgets-info/GtkStackSidebar.md).
+- [Informações do widget](./docs/widgets-info/GtkStackSidebar.md).
 - [Python](./src/gtk-widgets/stack-sidebar/MainWindow.py).
 - [GTK Blueprint](./src/gtk-widgets/stack-sidebar/ui/MainWindow.blp).
 - [Python load ui](./src/gtk-widgets/stack-sidebar/ui/MainWindow.py).
@@ -515,7 +515,7 @@ Pango tags
 
 ![Gtk.StackSwitcher](./docs/images/gtk-widgets/stack-switcher.webp "Gtk.StackSwitcher")
 
-- [Widget info](./docs/widgets-info/GtkStackSwitcher.md).
+- [Informações do widget](./docs/widgets-info/GtkStackSwitcher.md).
 - [Python](./src/gtk-widgets/stack-switcher/MainWindow.py).
 - [GTK Blueprint](./src/gtk-widgets/stack-switcher/ui/MainWindow.blp).
 - [Python load ui](./src/gtk-widgets/stack-switcher/ui/MainWindow.py).
@@ -527,7 +527,7 @@ Pango tags
 
 ![Gtk.Switch](./docs/images/gtk-widgets/switch.webp "Gtk.Switch")
 
-- [Widget info](./docs/widgets-info/GtkSwitch.md).
+- [Informações do widget](./docs/widgets-info/GtkSwitch.md).
 - [Python](./src/gtk-widgets/switch/MainWindow.py).
 - [GTK Blueprint](./src/gtk-widgets/switch/ui/MainWindow.blp).
 - [Python load ui](./src/gtk-widgets/switch/ui/MainWindow.py).
@@ -549,7 +549,7 @@ Pango tags
 
 ![Gtk.Video](./docs/images/gtk-widgets/video.webp "Gtk.Video")
 
-- [Widget info](./docs/widgets-info/GtkVideo.md).
+- [Informações do widget](./docs/widgets-info/GtkVideo.md).
 - [Python](./src/gtk-widgets/video/MainWindow.py).
 - [GTK Blueprint](./src/gtk-widgets/video/ui/MainWindow.blp).
 - [Python load ui](./src/gtk-widgets/video/ui/MainWindow.py).
@@ -561,7 +561,7 @@ Pango tags
 
 ![Gtk.Window](./docs/images/gtk-widgets/window.webp "Gtk.Window")
 
-- [Widget info](./docs/widgets-info/GtkWindow.md).
+- [Informações do widget](./docs/widgets-info/GtkWindow.md).
 - [Python](./src/gtk-widgets/window/MainWindow.py).
 - [GTK Blueprint](./src/gtk-widgets/window/ui/MainWindow.blp).
 - [Python load ui](./src/gtk-widgets/window/ui/MainWindow.py).
@@ -577,7 +577,7 @@ Pango tags
 
 ![Adw.AboutWindow](./docs/images/libadwaita-widgets/about-window.webp "Adw.AboutWindow")
 
-- [Widget info](./docs/widgets-info/AdwAboutWindow.md).
+- [Informações do widget](./docs/widgets-info/AdwAboutWindow.md).
 - [Python](./src/libadwaita-widgets/about-window/MainWindow.py).
 - [GTK Blueprint](./src/libadwaita-widgets/about-window/ui/MainWindow.blp).
 - [Python load ui](./src/libadwaita-widgets/about-window/ui/MainWindow.py).
@@ -589,7 +589,7 @@ Pango tags
 
 ![Adw.ActionRow](./docs/images/libadwaita-widgets/action-row.webp "Adw.ActionRow")
 
-- [Widget info](./docs/widgets-info/AdwActionRow.md).
+- [Informações do widget](./docs/widgets-info/AdwActionRow.md).
 - [Python](./src/libadwaita-widgets/action-row/MainWindow.py).
 - [GTK Blueprint](./src/libadwaita-widgets/action-row/ui/MainWindow.blp).
 - [Python load ui](./src/libadwaita-widgets/action-row/ui/MainWindow.py).
@@ -612,7 +612,7 @@ Pango tags
 
 ![Adw.Avatar](./docs/images/libadwaita-widgets/avatar.webp "Adw.Avatar")
 
-- [Widget info](./docs/widgets-info/AdwAvatar.md).
+- [Informações do widget](./docs/widgets-info/AdwAvatar.md).
 - [Python](./src/libadwaita-widgets/avatar/MainWindow.py).
 - [GTK Blueprint](./src/libadwaita-widgets/avatar/ui/MainWindow.blp).
 - [Python load ui](./src/libadwaita-widgets/avatar/ui/MainWindow.py).
@@ -624,7 +624,7 @@ Pango tags
 
 ![Adw.Banner](./docs/images/libadwaita-widgets/banner.webp "Adw.Banner")
 
-- [Widget info](./docs/widgets-info/AdwBanner.md).
+- [Informações do widget](./docs/widgets-info/AdwBanner.md).
 - [Python](./src/libadwaita-widgets/banner/MainWindow.py).
 - [GTK Blueprint](./src/libadwaita-widgets/banner/ui/MainWindow.blp).
 - [Python load ui](./src/libadwaita-widgets/banner/ui/MainWindow.py).
@@ -636,7 +636,7 @@ Pango tags
 
 ![Adw.ButtonContent](./docs/images/libadwaita-widgets/button-content.webp "Adw.ButtonContent")
 
-- [Widget info](./docs/widgets-info/AdwButtonContent.md).
+- [Informações do widget](./docs/widgets-info/AdwButtonContent.md).
 - [Python](./src/libadwaita-widgets/button-content/MainWindow.py).
 - [GTK Blueprint](./src/libadwaita-widgets/button-content/ui/MainWindow.blp).
 - [Python load ui](./src/libadwaita-widgets/button-content/ui/MainWindow.py).
@@ -648,7 +648,7 @@ Pango tags
 
 ![Adw.Carousel](./docs/images/libadwaita-widgets/carousel.webp "Adw.Carousel")
 
-- [Widget info](./docs/widgets-info/AdwCarousel.md).
+- [Informações do widget](./docs/widgets-info/AdwCarousel.md).
 - [Python](./src/libadwaita-widgets/carousel/MainWindow.py).
 - [GTK Blueprint](./src/libadwaita-widgets/carousel/ui/MainWindow.blp).
 - [Python load ui](./src/libadwaita-widgets/carousel/ui/MainWindow.py).
@@ -660,7 +660,7 @@ Pango tags
 
 ![Adw.CarouselIndicatorDots](./docs/images/libadwaita-widgets/carousel-indicator-dots.webp "Adw.CarouselIndicatorDots")
 
-- [Widget info](./docs/widgets-info/AdwCarouselIndicatorDots.md).
+- [Informações do widget](./docs/widgets-info/AdwCarouselIndicatorDots.md).
 - [Python](./src/libadwaita-widgets/carousel-indicator-dots/MainWindow.py).
 - [GTK Blueprint](./src/libadwaita-widgets/carousel-indicator-dots/ui/MainWindow.blp).
 - [Python load ui](./src/libadwaita-widgets/carousel-indicator-dots/ui/MainWindow.py).
@@ -672,7 +672,7 @@ Pango tags
 
 ![Adw.CarouselIndicatorLines](./docs/images/libadwaita-widgets/carousel-indicator-lines.webp "Adw.CarouselIndicatorLines")
 
-- [Widget info](./docs/widgets-info/AdwCarouselIndicatorLines.md).
+- [Informações do widget](./docs/widgets-info/AdwCarouselIndicatorLines.md).
 - [Python](./src/libadwaita-widgets/carousel-indicator-lines/MainWindow.py).
 - [GTK Blueprint](./src/libadwaita-widgets/carousel-indicator-lines/ui/MainWindow.blp).
 - [Python load ui](./src/libadwaita-widgets/carousel-indicator-lines/ui/MainWindow.py).
@@ -684,7 +684,7 @@ Pango tags
 
 ![Adw.Clamp](./docs/images/libadwaita-widgets/clamp.webp "Adw.Clamp")
 
-- [Widget info](./docs/widgets-info/AdwClamp.md).
+- [Informações do widget](./docs/widgets-info/AdwClamp.md).
 - [Python](./src/libadwaita-widgets/clamp/MainWindow.py).
 - [GTK Blueprint](./src/libadwaita-widgets/clamp/ui/MainWindow.blp).
 - [Python load ui](./src/libadwaita-widgets/clamp/ui/MainWindow.py).
@@ -696,7 +696,7 @@ Pango tags
 
 ![Adw.ComboRow](./docs/images/libadwaita-widgets/combo-row.webp "Adw.ComboRow")
 
-- [Widget info](./docs/widgets-info/AdwComboRow.md).
+- [Informações do widget](./docs/widgets-info/AdwComboRow.md).
 - [Python](./src/libadwaita-widgets/combo-row/MainWindow.py).
 - [GTK Blueprint](./src/libadwaita-widgets/combo-row/ui/MainWindow.blp).
 - [Python load ui](./src/libadwaita-widgets/combo-row/ui/MainWindow.py).
@@ -708,7 +708,7 @@ Pango tags
 
 ![Adw.EntryRow](./docs/images/libadwaita-widgets/entry-row.webp "Adw.EntryRow")
 
-- [Widget info](./docs/widgets-info/AdwEntryRow.md).
+- [Informações do widget](./docs/widgets-info/AdwEntryRow.md).
 - [Python](./src/libadwaita-widgets/entry-row/MainWindow.py).
 - [GTK Blueprint](./src/libadwaita-widgets/entry-row/ui/MainWindow.blp).
 - [Python load ui](./src/libadwaita-widgets/entry-row/ui/MainWindow.py).
@@ -720,7 +720,7 @@ Pango tags
 
 ![Adw.ExpanderRow](./docs/images/libadwaita-widgets/expander-row.webp "Adw.ExpanderRow")
 
-- [Widget info](./docs/widgets-info/AdwExpanderRow.md).
+- [Informações do widget](./docs/widgets-info/AdwExpanderRow.md).
 - [Python](./src/libadwaita-widgets/expander-row/MainWindow.py).
 - [GTK Blueprint](./src/libadwaita-widgets/expander-row/ui/MainWindow.blp).
 - [Python load ui](./src/libadwaita-widgets/expander-row/ui/MainWindow.py).
@@ -732,7 +732,7 @@ Pango tags
 
 ![Adw.MessageDialog](./docs/images/libadwaita-widgets/message-dialog.webp "Adw.MessageDialog")
 
-- [Widget info](./docs/widgets-info/AdwMessageDialog.md).
+- [Informações do widget](./docs/widgets-info/AdwMessageDialog.md).
 - [Python](./src/libadwaita-widgets/message-dialog/MainWindow.py).
 - [GTK Blueprint](./src/libadwaita-widgets/message-dialog/ui/AdwMessageDialog.blp).
 - [Python load ui](./src/libadwaita-widgets/message-dialog/ui/MainWindow.py).
@@ -744,7 +744,8 @@ Pango tags
 
 ![Adw.NavigationSplitView](./docs/images/libadwaita-widgets/navigation-split-view.webp "Adw.NavigationSplitView")
 
-- [Widget info](./docs/widgets-info/AdwNavigationSplitView.md).
+- [Informações do widget](./docs/widgets-info/AdwNavigationSplitView.md).
+- [Python](./src/libadwaita-widgets/navigation-split-view/MainWindow.py).
 - [GTK Blueprint](./src/libadwaita-widgets/navigation-split-view/ui/MainWindow.blp).
 - [Python load ui](./src/libadwaita-widgets/navigation-split-view/ui/MainWindow.py).
 - [UI](./src/libadwaita-widgets/navigation-split-view/ui/MainWindow.ui).
@@ -755,7 +756,7 @@ Pango tags
 
 ![Adw.PasswordEntryRow](./docs/images/libadwaita-widgets/password-entry-row.webp "Adw.PasswordEntryRow")
 
-- [Widget info](./docs/widgets-info/AdwPasswordEntryRow.md).
+- [Informações do widget](./docs/widgets-info/AdwPasswordEntryRow.md).
 - [Python](./src/libadwaita-widgets/password-entry-row/MainWindow.py).
 - [GTK Blueprint](./src/libadwaita-widgets/password-entry-row/ui/MainWindow.blp).
 - [Python load ui](./src/libadwaita-widgets/password-entry-row/ui/MainWindow.py).
@@ -789,7 +790,7 @@ Pango tags
 
 ![Adw.SplitButton](./docs/images/libadwaita-widgets/split-button.webp "Adw.SplitButton")
 
-- [Widget info](./docs/widgets-info/AdwSplitButton.md).
+- [Informações do widget](./docs/widgets-info/AdwSplitButton.md).
 - [Python](./src/libadwaita-widgets/split-button/MainWindow.py).
 - [GTK Blueprint](./src/libadwaita-widgets/split-button/ui/MainWindow.blp).
 - [Python load ui](./src/libadwaita-widgets/split-button/ui/MainWindow.py).
@@ -801,7 +802,7 @@ Pango tags
 
 ![Adw.StatusPage](./docs/images/libadwaita-widgets/status-page.webp "Adw.StatusPage")
 
-- [Widget info](./docs/widgets-info/AdwStatusPage.md).
+- [Informações do widget](./docs/widgets-info/AdwStatusPage.md).
 - [Python](./src/libadwaita-widgets/status-page/MainWindow.py).
 - [GTK Blueprint](./src/libadwaita-widgets/status-page/ui/MainWindow.blp).
 - [Python load ui](./src/libadwaita-widgets/status-page/ui/MainWindow.py).
@@ -824,7 +825,7 @@ Pango tags
 
 ![Adw.ToolbarView](./docs/images/libadwaita-widgets/toolbar-view.webp "Adw.ToolbarView")
 
-- [Widget info](./docs/widgets-info/AdwToolbarView.md).
+- [Informações do widget](./docs/widgets-info/AdwToolbarView.md).
 - [Python](./src/libadwaita-widgets/toolbar-view/MainWindow.py).
 
 ---
@@ -833,9 +834,387 @@ Pango tags
 
 ![Adw.ViewStack](./docs/images/libadwaita-widgets/view-stack.webp "Adw.ViewStack")
 
-- [Widget info](./docs/widgets-info/AdwViewStack.md).
+- [Informações do widget](./docs/widgets-info/AdwViewStack.md).
 - [GTK Blueprint](./src/libadwaita-widgets/view-stack/ui/MainWindow.blp).
 - [Python load ui](./src/libadwaita-widgets/view-stack/ui/MainWindow.py).
 - [UI](./src/libadwaita-widgets/view-stack/ui/MainWindow.ui).
+
+---
+
+### Libadwaita style classes
+
+#### Background
+
+![Libaswaita style class background](./docs/images/libadwaita-style-classes/background.webp "Libaswaita style class background")
+
+- [Python](./src/libadwaita-style-classes/background/MainWindow.py).
+- [GTK Blueprint](./src/libadwaita-style-classes/background/ui/MainWindow.blp).
+- [Python load ui](./src/libadwaita-style-classes/background/ui/MainWindow.py).
+- [UI](./src/libadwaita-style-classes/background/ui/MainWindow.ui).
+
+---
+
+#### Body
+
+![Libaswaita style class body](./docs/images/libadwaita-style-classes/body.webp "Libaswaita style class body")
+
+- [Python](./src/libadwaita-style-classes/body/MainWindow.py).
+- [GTK Blueprint](./src/libadwaita-style-classes/body/ui/MainWindow.blp).
+- [Python load ui](./src/libadwaita-style-classes/body/ui/MainWindow.py).
+- [UI](./src/libadwaita-style-classes/body/ui/MainWindow.ui).
+
+---
+
+#### Boxed list
+
+![Libaswaita style class boxed-list](./docs/images/libadwaita-style-classes/boxed-list.webp "Libaswaita style class boxed-list")
+
+- [Python](./src/libadwaita-style-classes/boxed-list/MainWindow.py).
+- [GTK Blueprint](./src/libadwaita-style-classes/boxed-list/ui/MainWindow.blp).
+- [Python load ui](./src/libadwaita-style-classes/boxed-list/ui/MainWindow.py).
+- [UI](./src/libadwaita-style-classes/boxed-list/ui/MainWindow.ui).
+
+---
+
+#### Boxed list separate
+
+> ToDo.
+
+![Libaswaita style class boxed-list-separate](./docs/images/libadwaita-style-classes "Libaswaita style class boxed-list-separate")
+
+- [Python](./src/libadwaita-style-classes).
+- [GTK Blueprint](./src/libadwaita-style-classes).
+- [Python load ui](./src/libadwaita-style-classes).
+- [UI](./src/libadwaita-style-classes).
+
+---
+
+#### Caption
+
+![Libaswaita style class caption](./docs/images/libadwaita-style-classes/caption.webp "Libaswaita style class caption")
+
+- [Python](./src/libadwaita-style-classes/caption/MainWindow.py).
+- [GTK Blueprint](./src/libadwaita-style-classes/caption/ui/MainWindow.blp).
+- [Python load ui](./src/libadwaita-style-classes/caption/ui/MainWindow.py).
+- [UI](./src/libadwaita-style-classes/caption/ui/MainWindow.ui).
+
+---
+
+#### Caption heading
+
+![Libaswaita style class caption-heading](./docs/images/libadwaita-style-classes/caption-heading.webp "Libaswaita style class caption-heading")
+
+- [Python](./src/libadwaita-style-classes/caption-heading/MainWindow.py).
+- [GTK Blueprint](./src/libadwaita-style-classes/caption-heading/ui/MainWindow.blp).
+- [Python load ui](./src/libadwaita-style-classes/caption-heading/ui/MainWindow.py).
+- [UI](./src/libadwaita-style-classes/caption-heading/ui/MainWindow.ui).
+
+---
+
+#### Card
+
+![Libaswaita style class card](./docs/images/libadwaita-style-classes/card.webp "Libaswaita style class card")
+
+- [Python](./src/libadwaita-style-classes/card/MainWindow.py).
+- [GTK Blueprint](./src/libadwaita-style-classes/card/ui/MainWindow.blp).
+- [Python load ui](./src/libadwaita-style-classes/card/ui/MainWindow.py).
+- [UI](./src/libadwaita-style-classes/card/ui/MainWindow.ui).
+
+---
+
+#### Circular
+
+![Libaswaita style class circular](./docs/images/libadwaita-style-classes/circular.webp "Libaswaita style class circular")
+
+- [Python](./src/libadwaita-style-classes/circular/MainWindow.py).
+- [GTK Blueprint](./src/libadwaita-style-classes/circular/ui/MainWindow.blp).
+- [Python load ui](./src/libadwaita-style-classes/circular/ui/MainWindow.py).
+- [UI](./src/libadwaita-style-classes/circular/ui/MainWindow.ui).
+
+---
+
+#### Colors
+
+![Libaswaita style class colors](./docs/images/libadwaita-style-classes/colors.webp "Libaswaita style class colors")
+
+- [Python](./src/libadwaita-style-classes/colors/MainWindow.py).
+- [GTK Blueprint](./src/libadwaita-style-classes/colors/ui/MainWindow.blp).
+- [Python load ui](./src/libadwaita-style-classes/colors/ui/MainWindow.py).
+- [UI](./src/libadwaita-style-classes/colors/ui/MainWindow.ui).
+
+---
+
+#### Compact
+
+![Libaswaita style class compact](./docs/images/libadwaita-style-classes/compact.webp "Libaswaita style class compact")
+
+- [Python](./src/libadwaita-style-classes/compact/MainWindow.py).
+- [GTK Blueprint](./src/libadwaita-style-classes/compact/ui/MainWindow.blp).
+- [Python load ui](./src/libadwaita-style-classes/compact/ui/MainWindow.py).
+- [UI](./src/libadwaita-style-classes/compact/ui/MainWindow.ui).
+
+---
+
+#### Destructive action
+
+![Libaswaita style class destructive-action](./docs/images/libadwaita-style-classes/destructive-action.webp "Libaswaita style class destructive-action")
+
+- [Python](./src/libadwaita-style-classes/destructive-action/MainWindow.py).
+- [GTK Blueprint](./src/libadwaita-style-classes/destructive-action/ui/MainWindow.blp).
+- [Python load ui](./src/libadwaita-style-classes/destructive-action/ui/MainWindow.py).
+- [UI](./src/libadwaita-style-classes/destructive-action/ui/MainWindow.ui).
+
+---
+
+#### Devel
+
+![Libaswaita style class devel](./docs/images/libadwaita-style-classes/devel.webp "Libaswaita style class devel")
+
+- [Python](./src/libadwaita-style-classes/devel/MainWindow.py).
+- [GTK Blueprint](./src/libadwaita-style-classes/devel/ui/MainWindow.blp).
+- [Python load ui](./src/libadwaita-style-classes/devel/ui/MainWindow.py).
+- [UI](./src/libadwaita-style-classes/devel/ui/MainWindow.ui).
+
+---
+
+#### Dim label
+
+![Libaswaita style class dim-label](./docs/images/libadwaita-style-classes/dim-label.webp "Libaswaita style class dim-label")
+
+- [Python](./src/libadwaita-style-classes/dim-label/MainWindow.py).
+- [GTK Blueprint](./src/libadwaita-style-classes/dim-label/ui/MainWindow.blp).
+- [Python load ui](./src/libadwaita-style-classes/dim-label/ui/MainWindow.py).
+- [UI](./src/libadwaita-style-classes/dim-label/ui/MainWindow.ui).
+
+---
+
+#### Flat
+
+![Libaswaita style class flat](./docs/images/libadwaita-style-classes/flat.webp "Libaswaita style class flat")
+
+- [Python](./src/libadwaita-style-classes/flat/MainWindow.py).
+- [GTK Blueprint](./src/libadwaita-style-classes/flat/ui/MainWindow.blp).
+- [Python load ui](./src/libadwaita-style-classes/flat/ui/MainWindow.py).
+- [UI](./src/libadwaita-style-classes/flat/ui/MainWindow.ui).
+
+---
+
+#### Frame
+
+![Libaswaita style class frame](./docs/images/libadwaita-style-classes "Libaswaita style class frame")
+
+- [Python](./src/libadwaita-style-classes).
+- [GTK Blueprint](./src/libadwaita-style-classes).
+- [Python load ui](./src/libadwaita-style-classes).
+- [UI](./src/libadwaita-style-classes).
+
+---
+
+#### Heading
+
+![Libaswaita style class heading](./docs/images/libadwaita-style-classes/frame.webp "Libaswaita style class heading")
+
+- [Python](./src/libadwaita-style-classes/frame/MainWindow.py).
+- [GTK Blueprint](./src/libadwaita-style-classes/frame/ui/MainWindow.blp).
+- [Python load ui](./src/libadwaita-style-classes/frame/ui/MainWindow.py).
+- [UI](./src/libadwaita-style-classes/frame/ui/MainWindow.ui).
+
+---
+
+#### Icon dropshadow
+
+![Libaswaita style class icon-dropshadow](./docs/images/libadwaita-style-classes/icon-dropshadow.webp "Libaswaita style class icon-dropshadow")
+
+- [Python](./src/libadwaita-style-classes/icon-dropshadow/MainWindow.py).
+- [GTK Blueprint](./src/libadwaita-style-classes/icon-dropshadow/ui/MainWindow.blp).
+- [Python load ui](./src/libadwaita-style-classes/icon-dropshadow/ui/MainWindow.py).
+- [UI](./src/libadwaita-style-classes/icon-dropshadow/ui/MainWindow.ui).
+
+---
+
+#### Inline
+
+![Libaswaita style class inline](./docs/images/libadwaita-style-classes/inline.webp "Libaswaita style class inline")
+
+- [Python](./src/libadwaita-style-classes/inline/MainWindow.py).
+- [GTK Blueprint](./src/libadwaita-style-classes/inline/ui/MainWindow.blp).
+- [Python load ui](./src/libadwaita-style-classes/inline/ui/MainWindow.py).
+- [UI](./src/libadwaita-style-classes/inline/ui/MainWindow.ui).
+
+---
+
+#### Linked
+
+![Libaswaita style class linked](./docs/images/libadwaita-style-classes/linked.webp "Libaswaita style class linked")
+
+- [Python](./src/libadwaita-style-classes/linked/MainWindow.py).
+- [GTK Blueprint](./src/libadwaita-style-classes/linked/ui/MainWindow.blp).
+- [Python load ui](./src/libadwaita-style-classes/linked/ui/MainWindow.py).
+- [UI](./src/libadwaita-style-classes/linked/ui/MainWindow.ui).
+
+---
+
+#### Lowres icon
+
+![Libaswaita style class lowres-icon](./docs/images/libadwaita-style-classes/lowres-icon.webp "Libaswaita style class lowres-icon")
+
+- [Python](./src/libadwaita-style-classes/lowres-icon/MainWindow.py).
+- [GTK Blueprint](./src/libadwaita-style-classes/lowres-icon/ui/MainWindow.blp).
+- [Python load ui](./src/libadwaita-style-classes/lowres-icon/ui/MainWindow.py).
+- [UI](./src/libadwaita-style-classes/lowres-icon/ui/MainWindow.ui).
+
+---
+
+#### Menu
+
+![Libaswaita style class menu](./docs/images/libadwaita-style-classes/menu.webp "Libaswaita style class menu")
+
+- [Python](./src/libadwaita-style-classes/menu/MainWindow.py).
+- [GTK Blueprint](./src/libadwaita-style-classes/menu/ui/MainWindow.blp).
+- [Python load ui](./src/libadwaita-style-classes/menu/ui/MainWindow.py).
+- [UI](./src/libadwaita-style-classes/menu/ui/MainWindow.ui).
+
+---
+
+#### Monospace
+
+![Libaswaita style class monospace](./docs/images/libadwaita-style-classes/monospace.webp "Libaswaita style class monospace")
+
+- [Python](./src/libadwaita-style-classes/monospace/MainWindow.py).
+- [GTK Blueprint](./src/libadwaita-style-classes/monospace/ui/MainWindow.blp).
+- [Python load ui](./src/libadwaita-style-classes/monospace/ui/MainWindow.py).
+- [UI](./src/libadwaita-style-classes/monospace/ui/MainWindow.ui).
+
+---
+
+#### Navigation sidebar
+
+![Libaswaita style class navigation-sidebar](./docs/images/libadwaita-style-classes/navigation-sidebar.webp "Libaswaita style class navigation-sidebar")
+
+- [Python](./src/libadwaita-style-classes/navigation-sidebar/MainWindow.py).
+- [GTK Blueprint](./src/libadwaita-style-classes/navigation-sidebar/ui/MainWindow.blp).
+- [Python load ui](./src/libadwaita-style-classes/navigation-sidebar/ui/MainWindow.py).
+- [UI](./src/libadwaita-style-classes/navigation-sidebar/ui/MainWindow.ui).
+
+---
+
+#### Numeric
+
+![Libaswaita style class numeric](./docs/images/libadwaita-style-classes/numeric.webp "Libaswaita style class numeric")
+
+- [Python](./src/libadwaita-style-classes/numeric/MainWindow.py).
+- [GTK Blueprint](./src/libadwaita-style-classes/numeric/ui/MainWindow.blp).
+- [Python load ui](./src/libadwaita-style-classes/numeric/ui/MainWindow.py).
+- [UI](./src/libadwaita-style-classes/numeric/ui/MainWindow.ui).
+
+---
+
+#### Opaque
+
+![Libaswaita style class opaque](./docs/images/libadwaita-style-classes/opaque.webp "Libaswaita style class opaque")
+
+- [Python](./src/libadwaita-style-classes/opaque/MainWindow.py).
+- [GTK Blueprint](./src/libadwaita-style-classes/opaque/ui/MainWindow.blp).
+- [Python load ui](./src/libadwaita-style-classes/opaque/ui/MainWindow.py).
+- [UI](./src/libadwaita-style-classes/opaque/ui/MainWindow.ui).
+
+---
+
+#### Osd
+
+![Libaswaita style class ](./docs/images/libadwaita-style-classes/osd.webp "Libaswaita style class ")
+
+- [Python](./src/libadwaita-style-classes/osd/MainWindow.py).
+- [GTK Blueprint](./src/libadwaita-style-classes/osd/ui/MainWindow.blp).
+- [Python load ui](./src/libadwaita-style-classes/osd/ui/MainWindow.py).
+- [UI](./src/libadwaita-style-classes/osd/ui/MainWindow.ui).
+
+---
+
+#### Pill
+
+![Libaswaita style class pill](./docs/images/libadwaita-style-classes/pill.webp "Libaswaita style class pill")
+
+- [Python](./src/libadwaita-style-classes/pill/MainWindow.py).
+- [GTK Blueprint](./src/libadwaita-style-classes/pill/ui/MainWindow.blp).
+- [Python load ui](./src/libadwaita-style-classes/pill/ui/MainWindow.py).
+- [UI](./src/libadwaita-style-classes/pill/ui/MainWindow.ui).
+
+---
+
+#### Property
+
+![Libaswaita style class property](./docs/images/libadwaita-style-classes/property.webp "Libaswaita style class property")
+
+- [Python](./src/libadwaita-style-classes/property/MainWindow.py).
+- [GTK Blueprint](./src/libadwaita-style-classes/property/ui/MainWindow.blp).
+- [Python load ui](./src/libadwaita-style-classes/property/ui/MainWindow.py).
+- [UI](./src/libadwaita-style-classes/property/ui/MainWindow.ui).
+
+---
+
+#### Selection mode
+
+![Libaswaita style class selection-mode](./docs/images/libadwaita-style-classes/selection-mode.webp "Libaswaita style class selection-mode")
+
+- [Python](./src/libadwaita-style-classes/selection-mode/MainWindow.py).
+- [GTK Blueprint](./src/libadwaita-style-classes/selection-mode/ui/MainWindow.blp).
+- [Python load ui](./src/libadwaita-style-classes/selection-mode/ui/MainWindow.py).
+- [UI](./src/libadwaita-style-classes/selection-mode/ui/MainWindow.ui).
+
+---
+
+#### Spacer
+
+![Libaswaita style class spacer](./docs/images/libadwaita-style-classes/spacer.webp "Libaswaita style class spacer")
+
+- [Python](./src/libadwaita-style-classes/spacer/MainWindow.py).
+- [GTK Blueprint](./src/libadwaita-style-classes/spacer/ui/MainWindow.blp).
+- [Python load ui](./src/libadwaita-style-classes/spacer/ui/MainWindow.ui).
+- [UI](./src/libadwaita-style-classes/spacer/ui/MainWindow.ui).
+
+---
+
+#### Suggested action
+
+![Libaswaita style class suggested-action](./docs/images/libadwaita-style-classes/suggested-action.webp "Libaswaita style class suggested-action")
+
+- [Python](./src/libadwaita-style-classes/suggested-action/MainWindow.py).
+- [GTK Blueprint](./src/libadwaita-style-classes/suggested-action/ui/MainWindow.blp).
+- [Python load ui](./src/libadwaita-style-classes/suggested-action/ui/MainWindow.py).
+- [UI](./src/libadwaita-style-classes/suggested-action/ui/MainWindow.ui).
+
+---
+
+#### Title
+
+![Libaswaita style class title](./docs/images/libadwaita-style-classes/title.webp "Libaswaita style class title")
+
+- [Python](./src/libadwaita-style-classes/title/MainWindow.py).
+- [GTK Blueprint](./src/libadwaita-style-classes/title/ui/MainWindow.blp).
+- [Python load ui](./src/libadwaita-style-classes/title/ui/MainWindow.py).
+- [UI](./src/libadwaita-style-classes/title/ui/MainWindow.ui).
+
+---
+
+#### Toolbar
+
+![Libaswaita style class toolbar](./docs/images/libadwaita-style-classes/toolbar.webp "Libaswaita style class toolbar")
+
+- [Python](./src/libadwaita-style-classes/toolbar/MainWindow.py).
+- [GTK Blueprint](./src/libadwaita-style-classes/toolbar/ui/MainWindow.blp).
+- [Python load ui](./src/libadwaita-style-classes/toolbar/ui/MainWindow.py).
+- [UI](./src/libadwaita-style-classes/toolbar/ui/MainWindow.ui).
+
+---
+
+#### View
+
+![Libaswaita style class view](./docs/images/libadwaita-style-classes/view.webp "Libaswaita style class view")
+
+- [Python](./src/libadwaita-style-classes/view/MainWindow.py).
+- [GTK Blueprint](./src/libadwaita-style-classes/view/ui/MainWindow.blp).
+- [Python load ui](./src/libadwaita-style-classes/view/ui/MainWindow.py).
+- [UI](./src/libadwaita-style-classes/view/ui/MainWindow.ui).
 
 ---
