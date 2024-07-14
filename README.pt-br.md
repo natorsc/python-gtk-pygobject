@@ -745,6 +745,7 @@ Pango tags
 ![Adw.NavigationSplitView](./docs/images/libadwaita-widgets/navigation-split-view.webp "Adw.NavigationSplitView")
 
 - [Informações do widget](./docs/widgets-info/AdwNavigationSplitView.md).
+- [Python](./src/libadwaita-widgets/navigation-split-view/MainWindow.py).
 - [GTK Blueprint](./src/libadwaita-widgets/navigation-split-view/ui/MainWindow.blp).
 - [Python load ui](./src/libadwaita-widgets/navigation-split-view/ui/MainWindow.py).
 - [UI](./src/libadwaita-widgets/navigation-split-view/ui/MainWindow.ui).
