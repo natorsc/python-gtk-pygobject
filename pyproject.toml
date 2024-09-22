@@ -7,12 +7,12 @@ readme = "README.md"
 package-mode = false
 
 [tool.poetry.dependencies]
-python = "^3.12"
-pygobject = "^3.48.2"
+python = ">=3.11,<3.14"
+pygobject = "^3.50.0"
 
 [tool.poetry.group.dev.dependencies]
 taskipy = "^1.13.0"
-ruff = "^0.4.10"
+ruff = "^0.6.7"
 pygobject-stubs = "^2.11.0"
 
 [build-system]
@@ -21,7 +21,7 @@ build-backend = "poetry.core.masonry.api"
 
 [tool.ruff]
 line-length = 79
-extend-exclude = ['migrations']
+# extend-exclude = ['']
 
 [tool.ruff.lint]
 preview = true
@@ -33,6 +33,7 @@ quote-style = 'single'
 
 [tool.taskipy.tasks]
 export = 'poetry export --without-hashes -o requirements.txt'
-format = 'ruff check . --fix && ruff format .'
-lint = 'ruff check . && ruff check . --diff'
-blp_format = 'blueprint-compiler format -f -n .'
+export_dev = 'poetry export --without-hashes --with dev -o requirements-dev.txt'
+format = 'ruff format .'
+lint = 'ruff check . --select I --fix && ruff format .'
+blp = 'blueprint-compiler format -f -n .'

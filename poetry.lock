@@ -52,44 +52,36 @@ test = ["enum34", "ipaddress", "mock", "pywin32", "wmi"]
 
 [[package]]
 name = "pycairo"
-version = "1.26.1"
+version = "1.27.0"
 description = "Python interface for cairo"
 optional = false
-python-versions = ">=3.8"
+python-versions = ">=3.9"
 files = [
-    {file = "pycairo-1.26.1-cp310-cp310-win32.whl", hash = "sha256:b93b9e3072826a346f1f79cb1becc403d1ba4a3971cad61d144db0fe6dcb6be8"},
-    {file = "pycairo-1.26.1-cp310-cp310-win_amd64.whl", hash = "sha256:acfc76924ed668d8fea50f6cc6097b9a57ef6cd3dc3f2fa20814380d639a6dd2"},
-    {file = "pycairo-1.26.1-cp310-cp310-win_arm64.whl", hash = "sha256:067191315c3b4d09cad1ec57cdb8fc1d72e2574e89389c268a94f22d4fa98b5f"},
-    {file = "pycairo-1.26.1-cp311-cp311-win32.whl", hash = "sha256:56a29623aa7b4adbde5024c61ff001455b5a3def79e512742ea45ab36c3fe24b"},
-    {file = "pycairo-1.26.1-cp311-cp311-win_amd64.whl", hash = "sha256:8d2889e03a095de5da9e68a589b691a3ada09d60ef18b5fc1b1b99f2a7794297"},
-    {file = "pycairo-1.26.1-cp311-cp311-win_arm64.whl", hash = "sha256:7a307111de345304ed8eadd7f81ebd7fb1fc711224aa314a4e8e33af7dfa3d27"},
-    {file = "pycairo-1.26.1-cp312-cp312-win32.whl", hash = "sha256:5cc1808e9e30ccd0f4d84ba7700db5aab5673f8b6b901760369ebb88a0823436"},
-    {file = "pycairo-1.26.1-cp312-cp312-win_amd64.whl", hash = "sha256:36131a726f568b2dbc5e78ff50fbaa379e69db00614d46d66b1e4289caf9b1ce"},
-    {file = "pycairo-1.26.1-cp312-cp312-win_arm64.whl", hash = "sha256:5577b51543ea4c283c15f436d891e9eaf6fd43fe74882adb032fba2c271f3fe9"},
-    {file = "pycairo-1.26.1-cp38-cp38-win32.whl", hash = "sha256:27ec7b42c58af35dc11352881262dce4254378b0f11be0959d1c13edb4539d2c"},
-    {file = "pycairo-1.26.1-cp38-cp38-win_amd64.whl", hash = "sha256:27357994d277b3fd10a45e9ef58f80a4cb5e3291fe76c5edd58d2d06335eb8e7"},
-    {file = "pycairo-1.26.1-cp39-cp39-win32.whl", hash = "sha256:e68300d1c2196d1d34de3432885ae9ff78e10426fa16f765742a11c6f8fe0a71"},
-    {file = "pycairo-1.26.1-cp39-cp39-win_amd64.whl", hash = "sha256:ce049930e294c29b53c68dcaab3df97cc5de7eb1d3d8e8a9f5c77e7164cd6e85"},
-    {file = "pycairo-1.26.1-cp39-cp39-win_arm64.whl", hash = "sha256:22e1db531d4ed3167a98f0ea165bfa2a30df9d6eb22361c38158c031065999a4"},
-    {file = "pycairo-1.26.1.tar.gz", hash = "sha256:a11b999ce55b798dbf13516ab038e0ce8b6ec299b208d7c4e767a6f7e68e8430"},
+    {file = "pycairo-1.27.0-cp310-cp310-win32.whl", hash = "sha256:e20f431244634cf244ab6b4c3a2e540e65746eed1324573cf291981c3e65fc05"},
+    {file = "pycairo-1.27.0-cp310-cp310-win_amd64.whl", hash = "sha256:03bf570e3919901572987bc69237b648fe0de242439980be3e606b396e3318c9"},
+    {file = "pycairo-1.27.0-cp311-cp311-win32.whl", hash = "sha256:9a9b79f92a434dae65c34c830bb9abdbd92654195e73d52663cbe45af1ad14b2"},
+    {file = "pycairo-1.27.0-cp311-cp311-win_amd64.whl", hash = "sha256:d40a6d80b15dacb3672dc454df4bc4ab3988c6b3f36353b24a255dc59a1c8aea"},
+    {file = "pycairo-1.27.0-cp312-cp312-win32.whl", hash = "sha256:e2239b9bb6c05edae5f3be97128e85147a155465e644f4d98ea0ceac7afc04ee"},
+    {file = "pycairo-1.27.0-cp312-cp312-win_amd64.whl", hash = "sha256:27cb4d3a80e3b9990af552818515a8e466e0317063a6e61585533f1a86f1b7d5"},
+    {file = "pycairo-1.27.0-cp313-cp313-win32.whl", hash = "sha256:01505c138a313df2469f812405963532fc2511fb9bca9bdc8e0ab94c55d1ced8"},
+    {file = "pycairo-1.27.0-cp313-cp313-win_amd64.whl", hash = "sha256:b0349d744c068b6644ae23da6ada111c8a8a7e323b56cbce3707cba5bdb474cc"},
+    {file = "pycairo-1.27.0-cp39-cp39-win32.whl", hash = "sha256:f9ca8430751f1fdcd3f072377560c9e15608b9a42d61375469db853566993c9b"},
+    {file = "pycairo-1.27.0-cp39-cp39-win_amd64.whl", hash = "sha256:1b1321652a6e27c4de3069709b1cae22aed2707fd8c5e889c04a95669228af2a"},
+    {file = "pycairo-1.27.0.tar.gz", hash = "sha256:5cb21e7a00a2afcafea7f14390235be33497a2cce53a98a19389492a60628430"},
 ]
 
 [[package]]
 name = "pygobject"
-version = "3.48.2"
+version = "3.50.0"
 description = "Python bindings for GObject Introspection"
 optional = false
-python-versions = "<4,>=3.8"
+python-versions = "<4.0,>=3.9"
 files = [
-    {file = "pygobject-3.48.2.tar.gz", hash = "sha256:c3c0a7afbe5b2c1c64dc0530109b4dd571085153dbedfbccb8ec7c5ad233f977"},
+    {file = "pygobject-3.50.0.tar.gz", hash = "sha256:4500ad3dbf331773d8dedf7212544c999a76fc96b63a91b3dcac1e5925a1d103"},
 ]
 
 [package.dependencies]
 pycairo = ">=1.16"
-
-[package.extras]
-dev = ["flake8", "pytest", "pytest-cov"]
-docs = ["sphinx (>=4.0,<5.0)", "sphinx-rtd-theme (>=0.5,<2.0)"]
 
 [[package]]
 name = "pygobject-stubs"
@@ -106,28 +98,29 @@ dev = ["PyGObject", "black (>=24.1.1)", "codespell", "isort (>=5.13.2)", "pre-co
 
 [[package]]
 name = "ruff"
-version = "0.4.10"
+version = "0.6.7"
 description = "An extremely fast Python linter and code formatter, written in Rust."
 optional = false
 python-versions = ">=3.7"
 files = [
-    {file = "ruff-0.4.10-py3-none-macosx_10_12_x86_64.whl", hash = "sha256:5c2c4d0859305ac5a16310eec40e4e9a9dec5dcdfbe92697acd99624e8638dac"},
-    {file = "ruff-0.4.10-py3-none-macosx_11_0_arm64.whl", hash = "sha256:a79489607d1495685cdd911a323a35871abfb7a95d4f98fc6f85e799227ac46e"},
-    {file = "ruff-0.4.10-py3-none-manylinux_2_17_aarch64.manylinux2014_aarch64.whl", hash = "sha256:b1dd1681dfa90a41b8376a61af05cc4dc5ff32c8f14f5fe20dba9ff5deb80cd6"},
-    {file = "ruff-0.4.10-py3-none-manylinux_2_17_armv7l.manylinux2014_armv7l.whl", hash = "sha256:c75c53bb79d71310dc79fb69eb4902fba804a81f374bc86a9b117a8d077a1784"},
-    {file = "ruff-0.4.10-py3-none-manylinux_2_17_i686.manylinux2014_i686.whl", hash = "sha256:18238c80ee3d9100d3535d8eb15a59c4a0753b45cc55f8bf38f38d6a597b9739"},
-    {file = "ruff-0.4.10-py3-none-manylinux_2_17_ppc64.manylinux2014_ppc64.whl", hash = "sha256:d8f71885bce242da344989cae08e263de29752f094233f932d4f5cfb4ef36a81"},
-    {file = "ruff-0.4.10-py3-none-manylinux_2_17_ppc64le.manylinux2014_ppc64le.whl", hash = "sha256:330421543bd3222cdfec481e8ff3460e8702ed1e58b494cf9d9e4bf90db52b9d"},
-    {file = "ruff-0.4.10-py3-none-manylinux_2_17_s390x.manylinux2014_s390x.whl", hash = "sha256:9e9b6fb3a37b772628415b00c4fc892f97954275394ed611056a4b8a2631365e"},
-    {file = "ruff-0.4.10-py3-none-manylinux_2_17_x86_64.manylinux2014_x86_64.whl", hash = "sha256:0f54c481b39a762d48f64d97351048e842861c6662d63ec599f67d515cb417f6"},
-    {file = "ruff-0.4.10-py3-none-musllinux_1_2_aarch64.whl", hash = "sha256:67fe086b433b965c22de0b4259ddfe6fa541c95bf418499bedb9ad5fb8d1c631"},
-    {file = "ruff-0.4.10-py3-none-musllinux_1_2_armv7l.whl", hash = "sha256:acfaaab59543382085f9eb51f8e87bac26bf96b164839955f244d07125a982ef"},
-    {file = "ruff-0.4.10-py3-none-musllinux_1_2_i686.whl", hash = "sha256:3cea07079962b2941244191569cf3a05541477286f5cafea638cd3aa94b56815"},
-    {file = "ruff-0.4.10-py3-none-musllinux_1_2_x86_64.whl", hash = "sha256:338a64ef0748f8c3a80d7f05785930f7965d71ca260904a9321d13be24b79695"},
-    {file = "ruff-0.4.10-py3-none-win32.whl", hash = "sha256:ffe3cd2f89cb54561c62e5fa20e8f182c0a444934bf430515a4b422f1ab7b7ca"},
-    {file = "ruff-0.4.10-py3-none-win_amd64.whl", hash = "sha256:67f67cef43c55ffc8cc59e8e0b97e9e60b4837c8f21e8ab5ffd5d66e196e25f7"},
-    {file = "ruff-0.4.10-py3-none-win_arm64.whl", hash = "sha256:dd1fcee327c20addac7916ca4e2653fbbf2e8388d8a6477ce5b4e986b68ae6c0"},
-    {file = "ruff-0.4.10.tar.gz", hash = "sha256:3aa4f2bc388a30d346c56524f7cacca85945ba124945fe489952aadb6b5cd804"},
+    {file = "ruff-0.6.7-py3-none-linux_armv6l.whl", hash = "sha256:08277b217534bfdcc2e1377f7f933e1c7957453e8a79764d004e44c40db923f2"},
+    {file = "ruff-0.6.7-py3-none-macosx_10_12_x86_64.whl", hash = "sha256:c6707a32e03b791f4448dc0dce24b636cbcdee4dd5607adc24e5ee73fd86c00a"},
+    {file = "ruff-0.6.7-py3-none-macosx_11_0_arm64.whl", hash = "sha256:533d66b7774ef224e7cf91506a7dafcc9e8ec7c059263ec46629e54e7b1f90ab"},
+    {file = "ruff-0.6.7-py3-none-manylinux_2_17_aarch64.manylinux2014_aarch64.whl", hash = "sha256:17a86aac6f915932d259f7bec79173e356165518859f94649d8c50b81ff087e9"},
+    {file = "ruff-0.6.7-py3-none-manylinux_2_17_armv7l.manylinux2014_armv7l.whl", hash = "sha256:b3f8822defd260ae2460ea3832b24d37d203c3577f48b055590a426a722d50ef"},
+    {file = "ruff-0.6.7-py3-none-manylinux_2_17_i686.manylinux2014_i686.whl", hash = "sha256:9ba4efe5c6dbbb58be58dd83feedb83b5e95c00091bf09987b4baf510fee5c99"},
+    {file = "ruff-0.6.7-py3-none-manylinux_2_17_ppc64.manylinux2014_ppc64.whl", hash = "sha256:525201b77f94d2b54868f0cbe5edc018e64c22563da6c5c2e5c107a4e85c1c0d"},
+    {file = "ruff-0.6.7-py3-none-manylinux_2_17_ppc64le.manylinux2014_ppc64le.whl", hash = "sha256:8854450839f339e1049fdbe15d875384242b8e85d5c6947bb2faad33c651020b"},
+    {file = "ruff-0.6.7-py3-none-manylinux_2_17_s390x.manylinux2014_s390x.whl", hash = "sha256:2f0b62056246234d59cbf2ea66e84812dc9ec4540518e37553513392c171cb18"},
+    {file = "ruff-0.6.7-py3-none-manylinux_2_17_x86_64.manylinux2014_x86_64.whl", hash = "sha256:6b1462fa56c832dc0cea5b4041cfc9c97813505d11cce74ebc6d1aae068de36b"},
+    {file = "ruff-0.6.7-py3-none-musllinux_1_2_aarch64.whl", hash = "sha256:02b083770e4cdb1495ed313f5694c62808e71764ec6ee5db84eedd82fd32d8f5"},
+    {file = "ruff-0.6.7-py3-none-musllinux_1_2_armv7l.whl", hash = "sha256:0c05fd37013de36dfa883a3854fae57b3113aaa8abf5dea79202675991d48624"},
+    {file = "ruff-0.6.7-py3-none-musllinux_1_2_i686.whl", hash = "sha256:f49c9caa28d9bbfac4a637ae10327b3db00f47d038f3fbb2195c4d682e925b14"},
+    {file = "ruff-0.6.7-py3-none-musllinux_1_2_x86_64.whl", hash = "sha256:a0e1655868164e114ba43a908fd2d64a271a23660195017c17691fb6355d59bb"},
+    {file = "ruff-0.6.7-py3-none-win32.whl", hash = "sha256:a939ca435b49f6966a7dd64b765c9df16f1faed0ca3b6f16acdf7731969deb35"},
+    {file = "ruff-0.6.7-py3-none-win_amd64.whl", hash = "sha256:590445eec5653f36248584579c06252ad2e110a5d1f32db5420de35fb0e1c977"},
+    {file = "ruff-0.6.7-py3-none-win_arm64.whl", hash = "sha256:b28f0d5e2f771c1fe3c7a45d3f53916fc74a480698c4b5731f0bea61e52137c8"},
+    {file = "ruff-0.6.7.tar.gz", hash = "sha256:44e52129d82266fa59b587e2cd74def5637b730a69c4542525dfdecfaae38bd5"},
 ]
 
 [[package]]
@@ -160,5 +153,5 @@ files = [
 
 [metadata]
 lock-version = "2.0"
-python-versions = "^3.12"
-content-hash = "7e6d04c92cf13cacbd6594d760eb63ff50b0e76e452edf052f06c8a902f610ff"
+python-versions = ">=3.11,<3.14"
+content-hash = "03cec83ac10c5df5926dacb07bc9e394e49aeacf2c2a87b0c7071bfd6d5363b9"

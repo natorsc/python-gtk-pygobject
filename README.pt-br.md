@@ -7,8 +7,6 @@
 
 <br>
 
-🚜 Em processo de atualização 20/06/2024 🚧
-
 [![natorsc - pygobject-gtk](https://img.shields.io/static/v1?label=natorsc&message=pygobject-gtk&color=blue&logo=github)](https://github.com/natorsc/pygobject-gtk "Ir para o repositório.")
 &emsp;
 [![stars - pygobject-gtk](https://img.shields.io/github/stars/natorsc/pygobject-gtk?style=social)](https://github.com/natorsc/pygobject-gtk)

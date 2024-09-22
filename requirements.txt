@@ -1,2 +1,2 @@
-pycairo==1.26.0 ; python_version >= "3.12" and python_version < "4"
-pygobject==3.48.2 ; python_version >= "3.12" and python_version < "4"
+pycairo==1.27.0 ; python_version >= "3.11" and python_version < "3.14"
+pygobject==3.50.0 ; python_version >= "3.11" and python_version < "3.14"
