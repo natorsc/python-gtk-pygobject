@@ -7,13 +7,13 @@ readme = "README.md"
 package-mode = false
 
 [tool.poetry.dependencies]
-python = ">=3.11,<3.14"
+python = ">=3.12,<3.14"
 pygobject = "^3.50.0"
 
 [tool.poetry.group.dev.dependencies]
-taskipy = "^1.13.0"
-ruff = "^0.6.7"
-pygobject-stubs = "^2.11.0"
+taskipy = "^1.14.1"
+ruff = "^0.8.4"
+pygobject-stubs = "^2.12.0"
 
 [build-system]
 requires = ["poetry-core"]
@@ -24,11 +24,9 @@ line-length = 79
 # extend-exclude = ['']
 
 [tool.ruff.lint]
-preview = true
 select = ['I', 'F', 'E', 'W', 'PL', 'PT']
 
 [tool.ruff.format]
-preview = true
 quote-style = 'single'
 
 [tool.taskipy.tasks]
